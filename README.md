@@ -195,6 +195,12 @@ This is a restriction on certificate shape and raw pointwise drift, not a lower
 bound on all drift analyses or evidence of a faster algorithm. The child package
 has its own manifest and evidence, and leaves the original proof core unchanged.
 
+The follow-up [window-locality study](research/window-locality/README.md)
+computes exact minimum budgets for two-bridge summands at n=3,4,5,6. An exact
+local witness also supports an all-n quadratic obstruction for that wider
+class. Its all-n gauge/flux argument is currently paper-only, awaiting Lean;
+the finite optima have independent rational primal/dual checks.
+
 ## Relation to existing MT results
 
 Under the classical MT criterion, the known expected bound is

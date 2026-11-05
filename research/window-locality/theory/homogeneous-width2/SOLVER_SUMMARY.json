@@ -1,0 +1,12 @@
+{
+  "rows": 3024,
+  "variables": 108,
+  "nonzeros": 110892,
+  "status": 2,
+  "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is Basic)",
+  "scope": "homogeneous bulk width-2 profile table only",
+  "dual_status": 0,
+  "dual_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "dual_support": 91,
+  "dual_residual": 6.620572146065484e-14
+}

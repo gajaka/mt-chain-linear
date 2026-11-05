@@ -1,0 +1,39 @@
+{
+  "all_length_claim": false,
+  "certificate_sha256": "3c91320963e9f1a814de7e31d64df8ee0d45541d686c09a0bf25072b5d4d85ed",
+  "counts": {
+    "active_profiles": 2432,
+    "active_raw_mass": 73344,
+    "good_profiles": 160,
+    "good_raw_mass": 9600,
+    "profiles": 2592,
+    "raw_draw_evaluations": 87552,
+    "raw_mass": 82944
+  },
+  "dual_identity_columns_checked": 289,
+  "dual_objective": "155367060233583448184219143564144484220700809533521417807/26939499482212480441975457570373731557889404604676817056",
+  "dual_support_rows": 234,
+  "feature_count": 289,
+  "gap": "0",
+  "initial_objective_sha256": "80b66f0b944fb2d3d6440a76663be67b1c22d82902925c632c5e3e6ab9cef653",
+  "lean_checked": false,
+  "minimum_drift": "1",
+  "minimum_value": "12/7",
+  "n": 5,
+  "nanoda_checked": false,
+  "pinned_core_sources": {
+    "formal/mt/core/Chain.lean": "551779df094e539792ed5256078615c73d1fe1733ae83dd6b1fff5a30ab24a1d",
+    "formal/mt/core/ChainKernel.lean": "ba155ace55634b928b4a1a19fbd4e1c9d9a6ab9102462d8cceb219901529f6d2",
+    "formal/mt/core/FreshDraws.lean": "c5b46028ba195cfd0d280b14933a999ebbb6b177feb4b4ce130788d06d2bdb9e"
+  },
+  "positive_dual_support_rows": 234,
+  "primal_objective": "155367060233583448184219143564144484220700809533521417807/26939499482212480441975457570373731557889404604676817056",
+  "raw_pass_symmetry_checks": 36,
+  "raw_state_coverage": "Exact profile symmetry, with all 36 raw redraws per active profile",
+  "seconds": 0.3366515,
+  "specification_sha256": "ac09cd7cce91c05579f1bbb76f0d935148ee6087f8bd055013351a08007ec02d",
+  "status": "EXACT_OPTIMUM",
+  "trust": "Independent standard-library Fraction certificate check; no optimizer imported",
+  "verifier_sha256": "2f19e689f70e6e116ba43fb4d5bc6a40ad40a5f75831c68f9caf2d93e766f782",
+  "width": 2
+}

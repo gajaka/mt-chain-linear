@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pyc
+evidence/*/matrix.npz
+evidence/*/diagnostic-model.mps

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "scope": "exact local bulk identity, with original four-label tables and original 36 redraws",
+  "dual_sha256": "48e04688dd89a800a035a382344665c1525e03b9db9598a9bfdc3b2301da7ae2",
+  "support_rows": 91,
+  "positive_weight_sum": "1",
+  "raw_columns": 432,
+  "window_functionals": 4,
+  "coefficient_sum_each_column": "0",
+  "individual_coefficient_abs_bound": "1",
+  "flux_cumulative_coefficient_abs_bounds": [
+    "1",
+    "2",
+    "1"
+  ],
+  "solver_status_trusted": false,
+  "saved_sparse_rows_trusted": false,
+  "elapsed_seconds": 0.207431458
+}

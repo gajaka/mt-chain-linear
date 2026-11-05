@@ -1,0 +1,285 @@
+{
+  "all_n": {
+    "claim": "n>=8 implies E_initial[V]/delta >= floor((n-6)^2/4)/20736 for every width-2 certificate",
+    "finite_raw_identity": {
+      "bytes": 205732,
+      "path": "theory/homogeneous-width2/DUAL_EXACT.json",
+      "sha256": "48e04688dd89a800a035a382344665c1525e03b9db9598a9bfdc3b2301da7ae2"
+    },
+    "independent_raw_identity_check": {
+      "bytes": 944,
+      "path": "evidence/bulk-dual-independent-001.json",
+      "sha256": "e5554ca7f5b6d42ae9313663af681c6ba555468f3c976d897718b17b3c0ac07c"
+    },
+    "lean_checked": false,
+    "nanoda_checked": false,
+    "paper": {
+      "bytes": 7833,
+      "path": "theory/GAUGE_AND_FLUX.md",
+      "sha256": "14cdee45bc93d981648dd0107e2a2e56e1dbd93727a9935e557eec5d45d21c46"
+    },
+    "status": "PAPER_PROOF_WITH_INDEPENDENT_INTERNAL_REVIEW"
+  },
+  "cases": [
+    {
+      "case": "n3-r1-attempt-001",
+      "certificate": {
+        "bytes": 8777,
+        "path": "evidence/n3-r1-attempt-001/CERTIFICATE.json",
+        "sha256": "260ffb82141251fc87ec76635864285472f68843df1310276861848ee5cdad30"
+      },
+      "dual_support": 23,
+      "generation_source": "provenance/window_lp-v1.py",
+      "independent_verification": {
+        "bytes": 1575,
+        "path": "evidence/n3-r1-attempt-001/independent-verification-001.json",
+        "sha256": "297176a645318731beb647012f12ba6f78ef9ae08688e0fe9e3ac08e991c4642"
+      },
+      "inputs": {
+        "bytes": 553,
+        "path": "evidence/n3-r1-attempt-001/INPUTS.json",
+        "sha256": "0876d34e3be062861b5447ea9130264b450196400f40ad93d38ae01384b3252a"
+      },
+      "n": 3,
+      "objective": "211081/172480",
+      "objective_decimal": 1.2237998608534322,
+      "profile_states": 72,
+      "result": {
+        "bytes": 727,
+        "path": "evidence/n3-r1-attempt-001/RESULT.json",
+        "sha256": "c785a33505439a37b56a9ef2403e694afcd78d5d56c973b787a595cd68aa3613"
+      },
+      "rows": 108,
+      "status": "EXACT_OPTIMUM",
+      "variables": 31,
+      "width": 1
+    },
+    {
+      "case": "n3-r2-attempt-001",
+      "certificate": {
+        "bytes": 20494,
+        "path": "evidence/n3-r2-attempt-001/CERTIFICATE.json",
+        "sha256": "ad1e92791b9536c895af83d0bf23767fc534acdac4207beb83c6942dbb2c6892"
+      },
+      "dual_support": 45,
+      "generation_source": "provenance/window_lp-v1.py",
+      "independent_verification": {
+        "bytes": 2038,
+        "path": "evidence/n3-r2-attempt-001/independent-verification-001.json",
+        "sha256": "e05255adeeb06f7e2dd944dcaeb3cf56117fbeaed128b2d7c855989f9ad5b45e"
+      },
+      "inputs": {
+        "bytes": 553,
+        "path": "evidence/n3-r2-attempt-001/INPUTS.json",
+        "sha256": "82ecb01c917dfa64b36c3ddeb613eb9247d743f7a6378cdbce5e23d4bab8e889"
+      },
+      "n": 3,
+      "objective": "139689479/124678400",
+      "objective_decimal": 1.120398392985473,
+      "profile_states": 72,
+      "result": {
+        "bytes": 737,
+        "path": "evidence/n3-r2-attempt-001/RESULT.json",
+        "sha256": "50cc91100da700e432b710674ea4f5923ebc2a243f1105668cd4d8d145c40ac5"
+      },
+      "rows": 108,
+      "status": "EXACT_OPTIMUM",
+      "variables": 73,
+      "width": 2
+    },
+    {
+      "case": "n3-r3-attempt-001",
+      "certificate": {
+        "bytes": 23476,
+        "path": "evidence/n3-r3-attempt-001/CERTIFICATE.json",
+        "sha256": "050262c19f01730a3d787a1ca81677529c5e49b06f908ff4ffb68a7fe5b938dd"
+      },
+      "dual_support": 54,
+      "generation_source": "provenance/window_lp-v1.py",
+      "independent_verification": {
+        "bytes": 1571,
+        "path": "evidence/n3-r3-attempt-001/independent-verification-001.json",
+        "sha256": "d3ac95041072beff4d145cbf5937a4c0e2b34bca758a238fc779121e2655dcf7"
+      },
+      "inputs": {
+        "bytes": 553,
+        "path": "evidence/n3-r3-attempt-001/INPUTS.json",
+        "sha256": "656b8829f64dafdfdf5b1be9e9c8181758ab37e57eaa088246008a34e1d8e79f"
+      },
+      "n": 3,
+      "objective": "12517/11424",
+      "objective_decimal": 1.0956757703081232,
+      "profile_states": 72,
+      "result": {
+        "bytes": 722,
+        "path": "evidence/n3-r3-attempt-001/RESULT.json",
+        "sha256": "61ddafef636595115580cc9993ce9f2445b363a4c3fa1909be727cedb0ec63d3"
+      },
+      "rows": 108,
+      "status": "EXACT_OPTIMUM",
+      "variables": 73,
+      "width": 3
+    },
+    {
+      "case": "n4-r1-attempt-001",
+      "certificate": {
+        "bytes": 16202,
+        "path": "evidence/n4-r1-attempt-001/CERTIFICATE.json",
+        "sha256": "ff4a149bf8628da838e3b354a6e3dbe00a666cba95d540c3824149fbe7735e24"
+      },
+      "dual_support": 39,
+      "generation_source": "provenance/window_lp-v1.py",
+      "independent_verification": {
+        "bytes": 1599,
+        "path": "evidence/n4-r1-attempt-001/independent-verification-001.json",
+        "sha256": "dea18bcd75fcb5acd75e6fc71ae3b793569930d370ab7995b61f1a24d8c668cf"
+      },
+      "inputs": {
+        "bytes": 553,
+        "path": "evidence/n4-r1-attempt-001/INPUTS.json",
+        "sha256": "034d93f83c063ab90a8fbda90c2a550ccbc9e19ca3653785f3eb225097427304"
+      },
+      "n": 4,
+      "objective": "3349223626493/980297624096",
+      "objective_decimal": 3.416537533263482,
+      "profile_states": 432,
+      "result": {
+        "bytes": 753,
+        "path": "evidence/n4-r1-attempt-001/RESULT.json",
+        "sha256": "3e8c49d5b00689a14aa60d4314b810de5237922ef04c7b9dd2720fb93b7e992a"
+      },
+      "rows": 752,
+      "status": "EXACT_OPTIMUM",
+      "variables": 49,
+      "width": 1
+    },
+    {
+      "case": "n4-r2-attempt-001",
+      "certificate": {
+        "bytes": 74388,
+        "path": "evidence/n4-r2-attempt-001/CERTIFICATE.json",
+        "sha256": "80cfaea3c6c9dca1dc4b7c28522d6834be70c368b59525bf4de66ae4d1805875"
+      },
+      "dual_support": 139,
+      "generation_source": "provenance/window_lp-v1.py",
+      "independent_verification": {
+        "bytes": 1702,
+        "path": "evidence/n4-r2-attempt-001/independent-verification-001.json",
+        "sha256": "7aae56247299fb72f9a5cd0af914ebfbebbbb7aa7a1ccab0523803567ed526e4"
+      },
+      "inputs": {
+        "bytes": 553,
+        "path": "evidence/n4-r2-attempt-001/INPUTS.json",
+        "sha256": "5d8c5fa3ffe5a38a543df77e80462335833ac36193ce3fafc7ccbc83cb84f529"
+      },
+      "n": 4,
+      "objective": "15425517587168481173967715723353404423/5976797796263367946229369478844593600",
+      "objective_decimal": 2.5809000258988775,
+      "profile_states": 432,
+      "result": {
+        "bytes": 854,
+        "path": "evidence/n4-r2-attempt-001/RESULT.json",
+        "sha256": "d323f4fa348f972174db1cff209b39e0cffb1d35823ef448265cb0b90437aed5"
+      },
+      "rows": 752,
+      "status": "EXACT_OPTIMUM",
+      "variables": 181,
+      "width": 2
+    },
+    {
+      "case": "n5-r2-attempt-001",
+      "certificate": {
+        "bytes": 145461,
+        "path": "evidence/n5-r2-attempt-001/CERTIFICATE.json",
+        "sha256": "3c91320963e9f1a814de7e31d64df8ee0d45541d686c09a0bf25072b5d4d85ed"
+      },
+      "dual_support": 234,
+      "generation_source": "provenance/window_lp-v1.py",
+      "independent_verification": {
+        "bytes": 1782,
+        "path": "evidence/n5-r2-attempt-001/independent-verification-001.json",
+        "sha256": "ac3c9f614cb72e5976609e470bc3fb3e7ce0e098e1a862535785373e17c565a9"
+      },
+      "inputs": {
+        "bytes": 553,
+        "path": "evidence/n5-r2-attempt-001/INPUTS.json",
+        "sha256": "2715c9c6649664b4516128ecac19c84bc6d31d549ae086b34a0b5d6dac566301"
+      },
+      "n": 5,
+      "objective": "155367060233583448184219143564144484220700809533521417807/26939499482212480441975457570373731557889404604676817056",
+      "objective_decimal": 5.767258606128472,
+      "profile_states": 2592,
+      "result": {
+        "bytes": 920,
+        "path": "evidence/n5-r2-attempt-001/RESULT.json",
+        "sha256": "fbf93909ae17fae0f516fff678c18e653a8cdeccc9af7b70d169095f7a0dc089"
+      },
+      "rows": 4864,
+      "status": "EXACT_OPTIMUM",
+      "variables": 289,
+      "width": 2
+    },
+    {
+      "case": "n6-r2-attempt-001",
+      "generation_source": "provenance/window_lp-v1.py",
+      "inputs": {
+        "bytes": 553,
+        "path": "evidence/n6-r2-attempt-001/INPUTS.json",
+        "sha256": "836df5183e15af88945ecf42f2147948511a7d80bd90a9037a08f40eacc20666"
+      },
+      "n": 6,
+      "result": {
+        "bytes": 571,
+        "path": "evidence/n6-r2-attempt-001/RESULT.json",
+        "sha256": "1a8577a7c6ab2cea1d323992895481be1c21fdf73c7b2a4bbab7c32ce5f2f5fd"
+      },
+      "status": "UNKNOWN",
+      "width": 2
+    },
+    {
+      "case": "n6-r2-attempt-002",
+      "certificate": {
+        "bytes": 211738,
+        "path": "evidence/n6-r2-attempt-002/CERTIFICATE.json",
+        "sha256": "3c1ccdd2d67ac27ebec71f9f45e263b0878534d8eabaf48a67f741f5857dad0b"
+      },
+      "dual_support": 324,
+      "generation_source": "scripts/window_lp.py",
+      "independent_verification": {
+        "bytes": 1801,
+        "path": "evidence/n6-r2-attempt-002/independent-verification-001.json",
+        "sha256": "7130bcb41afee2fbe01c098148e8f330cdbab910ab5c480ba72a209aee00f7cc"
+      },
+      "inputs": {
+        "bytes": 611,
+        "path": "evidence/n6-r2-attempt-002/INPUTS.json",
+        "sha256": "c20f819001ef67fcf32cf75b9c7b88f16e8fcf504cc80a5fceda0404d1f79ee1"
+      },
+      "n": 6,
+      "objective": "1069293186471649151320679784014693851417756928394450496141499/89400998153917406831861650387552366631758678723234180392576",
+      "objective_decimal": 11.960640356953268,
+      "profile_states": 15552,
+      "result": {
+        "bytes": 929,
+        "path": "evidence/n6-r2-attempt-002/RESULT.json",
+        "sha256": "a06115aaabdd44bdae36e68bcd01c6402f5adca1c0e453925c7cd021e9d80964"
+      },
+      "rows": 30240,
+      "status": "EXACT_OPTIMUM",
+      "variables": 397,
+      "width": 2
+    }
+  ],
+  "finite_exact_optima": 7,
+  "n6_retry_matrix_identical": true,
+  "n6_retry_only_solver_selection_changed": true,
+  "original_math_sources_changed": false,
+  "retained_unknown_attempts": 1,
+  "scope": [
+    "No all-n inference from the finite optimum table.",
+    "No quadratic upper construction.",
+    "No conclusion for width3 or arbitrary fixed width.",
+    "No novelty or practical speedup claim."
+  ],
+  "status": "FINITE_STUDY_COMPLETE_ALL_N_PAPER_ARGUMENT"
+}

@@ -1,0 +1,27 @@
+{
+  "scope": "Supplementary homogeneous-bulk feasibility gate, distinct from full finite stopped-budget optimization.",
+  "temporary_original_scripts": [
+    "/tmp/window2_homogeneous_gate.py",
+    "/tmp/window2_exact_dual.py"
+  ],
+  "temporary_original_output": "/tmp/window2-homogeneous-gate-001",
+  "python": "research/window-locality/.venv/bin/python",
+  "solver": "scipy.optimize.linprog(method=highs), scipy 1.13.1",
+  "exact_reconstruction": "python-flint 0.6.0 fmpq_mat.rref, followed by Fraction coefficient checks",
+  "independent_raw_verification": "Python standard-library Fraction, no solver or saved sparse row coefficients trusted",
+  "original_commands": [
+    "research/window-locality/.venv/bin/python /tmp/window2_homogeneous_gate.py /tmp/window2-homogeneous-gate-001",
+    "research/window-locality/.venv/bin/python /tmp/window2_exact_dual.py /tmp/window2-homogeneous-gate-001",
+    "research/window-locality/.venv/bin/python research/window-locality/theory/homogeneous-width2/verify_raw_dual.py research/window-locality/theory/homogeneous-width2/DUAL_EXACT.json --output research/window-locality/theory/homogeneous-width2/RAW_VERIFICATION.json"
+  ],
+  "timing_limit": "Original generation and reconstruction wall times were not separately recorded; independent raw verification elapsed time is in RAW_VERIFICATION.json.",
+  "files": {
+    "generate_gate.py": "b6457fe85882bf0362771e7095a37f9a608d27c0ab73296f970d8d89e240f860",
+    "reconstruct_dual.py": "1a6dfc11416c81fe039c8b8bb1c28d8b8da8f87e0193ad68b788a2672c2ade74",
+    "verify_raw_dual.py": "dae68c3cd0c7a888b517bce47072cd46e4e6aa5a66b103e7082c9e9a3742311d",
+    "DUAL_EXACT.json": "48e04688dd89a800a035a382344665c1525e03b9db9598a9bfdc3b2301da7ae2",
+    "DUAL_FLOAT.json": "1e05c777dc96ea29dbfcddf1ac83de5997401cf5e045fe94a37020da8a5885f5",
+    "SOLVER_SUMMARY.json": "296abd6605bca0f79810a83243b9947bf17c03e29affeaed4dd8ecc050881ca8",
+    "RAW_VERIFICATION.json": "23a1cd2a8ebe1c2ab54aae512e4da17ea01a6cab5660c97b7aa78e5a6e398716"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "command": [
+    "scripts/window_lp.py",
+    "--n",
+    "6",
+    "--width",
+    "2",
+    "--solver",
+    "ipm",
+    "--time-limit",
+    "300",
+    "--out",
+    "evidence/n6-r2-attempt-002"
+  ],
+  "highspy": "1.15.1",
+  "n": 6,
+  "numpy": "2.0.2",
+  "python": "/Users/gajaka/projects/mt-chain-linear/research/window-locality/.venv/bin/python",
+  "python_flint": "0.6.0",
+  "python_version": "3.9.6",
+  "scipy": "1.13.1",
+  "script_sha256": "b0f4bc40868f48053544c89d6fb578cf740c67247eaf5dc2109c940d4409b6a4",
+  "spec_sha256": "ac09cd7cce91c05579f1bbb76f0d935148ee6087f8bd055013351a08007ec02d",
+  "width": 2
+}

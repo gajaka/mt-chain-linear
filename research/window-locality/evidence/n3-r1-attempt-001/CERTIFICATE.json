@@ -1,0 +1,675 @@
+{
+  "dual": [
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        0
+      ],
+      "weak": [
+        1,
+        0,
+        0
+      ],
+      "weight": "41/48384"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        0
+      ],
+      "weak": [
+        1,
+        1,
+        0
+      ],
+      "weight": "205/798336"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        1
+      ],
+      "weak": [
+        0,
+        0,
+        0
+      ],
+      "weight": "3599/1016064"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        1
+      ],
+      "weak": [
+        0,
+        0,
+        1
+      ],
+      "weight": "383611/279417600"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        1
+      ],
+      "weak": [
+        1,
+        1,
+        1
+      ],
+      "weight": "138547/62092800"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        2
+      ],
+      "weak": [
+        0,
+        0,
+        0
+      ],
+      "weight": "700769/558835200"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        2
+      ],
+      "weak": [
+        0,
+        0,
+        1
+      ],
+      "weight": "813767/279417600"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        2
+      ],
+      "weak": [
+        0,
+        1,
+        0
+      ],
+      "weight": "2267849/1676505600"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        0,
+        2
+      ],
+      "weak": [
+        1,
+        1,
+        1
+      ],
+      "weight": "30227/558835200"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        1,
+        0
+      ],
+      "weak": [
+        0,
+        1,
+        0
+      ],
+      "weight": "3109103/1676505600"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        1,
+        0
+      ],
+      "weak": [
+        1,
+        0,
+        0
+      ],
+      "weight": "41/48384"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        1,
+        1
+      ],
+      "weak": [
+        0,
+        1,
+        1
+      ],
+      "weight": "6373/5588352"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        1,
+        1
+      ],
+      "weak": [
+        1,
+        0,
+        1
+      ],
+      "weight": "59767/26611200"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        1,
+        1
+      ],
+      "weak": [
+        1,
+        1,
+        1
+      ],
+      "weight": "7883/26611200"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        1,
+        2
+      ],
+      "weak": [
+        0,
+        0,
+        0
+      ],
+      "weight": "776101/186278400"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        1,
+        2
+      ],
+      "weak": [
+        0,
+        1,
+        0
+      ],
+      "weight": "33287/18627840"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        0,
+        1,
+        0
+      ],
+      "weight": "4789/34927200"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        1,
+        1,
+        1
+      ],
+      "weight": "117571/79833600"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        2,
+        1
+      ],
+      "weak": [
+        0,
+        0,
+        1
+      ],
+      "weight": "47887/22809600"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        2,
+        1
+      ],
+      "weak": [
+        0,
+        1,
+        0
+      ],
+      "weight": "48409/20956320"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        2,
+        1
+      ],
+      "weak": [
+        1,
+        1,
+        1
+      ],
+      "weight": "647/11404800"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        2,
+        2
+      ],
+      "weak": [
+        0,
+        0,
+        1
+      ],
+      "weight": "8627/6386688"
+    },
+    {
+      "kind": "drift",
+      "thresholds": [
+        2,
+        2
+      ],
+      "weak": [
+        0,
+        1,
+        1
+      ],
+      "weight": "11353/27941760"
+    }
+  ],
+  "n": 3,
+  "objective": "211081/172480",
+  "objective_denominator": 576,
+  "primal": [
+    "12/7",
+    "0",
+    "135651/102410",
+    "0",
+    "142119/102410",
+    "0",
+    "73497/51205",
+    "-188319/102410",
+    "-3252/7315",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-194787/102410",
+    "0",
+    "-492/665",
+    "-6/95",
+    "0",
+    "0",
+    "0",
+    "0",
+    "-180/133",
+    "0",
+    "-180/133",
+    "-6/95",
+    "0",
+    "558/665",
+    "0",
+    "558/665",
+    "0",
+    "558/665"
+  ],
+  "variables": [
+    {
+      "kind": "offset"
+    },
+    {
+      "i": 0,
+      "kind": "window",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 0,
+      "kind": "window",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 0,
+      "kind": "window",
+      "thresholds": [
+        2,
+        1
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 0,
+      "kind": "window",
+      "thresholds": [
+        2,
+        1
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 0,
+      "kind": "window",
+      "thresholds": [
+        2,
+        2
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 0,
+      "kind": "window",
+      "thresholds": [
+        2,
+        2
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        0,
+        0
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        0,
+        0
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        0,
+        1
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        0,
+        1
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        0,
+        2
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        0,
+        2
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        1,
+        0
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        1,
+        0
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        1,
+        1
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        1,
+        1
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        1,
+        2
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        1,
+        2
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        2,
+        1
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        2,
+        1
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        2,
+        2
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 1,
+      "kind": "window",
+      "thresholds": [
+        2,
+        2
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 2,
+      "kind": "window",
+      "thresholds": [
+        0,
+        0
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 2,
+      "kind": "window",
+      "thresholds": [
+        0,
+        0
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 2,
+      "kind": "window",
+      "thresholds": [
+        1,
+        0
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 2,
+      "kind": "window",
+      "thresholds": [
+        1,
+        0
+      ],
+      "weak": [
+        1
+      ]
+    },
+    {
+      "i": 2,
+      "kind": "window",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        0
+      ]
+    },
+    {
+      "i": 2,
+      "kind": "window",
+      "thresholds": [
+        2,
+        0
+      ],
+      "weak": [
+        1
+      ]
+    }
+  ],
+  "width": 1
+}

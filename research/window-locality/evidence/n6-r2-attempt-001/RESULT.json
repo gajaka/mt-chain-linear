@@ -1,0 +1,20 @@
+{
+  "build_seconds": 0.654004292,
+  "elapsed_seconds": 180.74623375000002,
+  "exact_dual": false,
+  "exact_optimum": false,
+  "exact_primal": false,
+  "exact_reconstruction_error": "ValueError('Numerical solve not optimal; no infeasibility claim')",
+  "input_hashes_unchanged": true,
+  "lean_runs": 0,
+  "n": 6,
+  "nanoda_runs": 0,
+  "numeric_seconds": 180.0014852078166,
+  "numerical_objective": 8.746026679470248,
+  "numerical_status": "HighsModelStatus.kTimeLimit",
+  "profile_states": 15552,
+  "rows": 30240,
+  "status": "UNKNOWN",
+  "variables": 397,
+  "width": 2
+}
