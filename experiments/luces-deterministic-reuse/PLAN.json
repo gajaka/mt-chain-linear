@@ -1,0 +1,210 @@
+{
+  "status": "EXPLORATORY_PLAN_FIXED_BEFORE_NUMERICAL_RUN",
+  "created_utc": "2026-11-05T19:09:44.897527+00:00",
+  "scope": "Deterministic coupling replacement and certified snapshot reuse; MT explicitly excluded by latest user instruction",
+  "source_root": "/Users/gajaka/projects/master-controler",
+  "dataset_root": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset",
+  "python": "/Users/gajaka/.local/state/master-controler-study/2026-10-16-b7ca214/python-env/bin/python",
+  "inputs": [
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/__main__.py",
+      "sha256": "2a507c633c5a4242db3fa2e799d37146192699a8b9b074db54a126b96adc6ec1",
+      "bytes": 680
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certificate_contracts.py",
+      "sha256": "532376c74c04ae0399a7dc75babf732db5a1ea1fbf214ac72f0dcaa2ee314042",
+      "bytes": 4094
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/dynamics.py",
+      "sha256": "7c9026d2924095b1187be161b3a31f4a254ecf5ef03aebcdfbcd1994ccf5322d",
+      "bytes": 6807
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/geodesic.py",
+      "sha256": "8ba6a766c25f3c2a01a3032049d4a8903ac76385a8c56ae44417695d85a178c6",
+      "bytes": 5540
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/observability.py",
+      "sha256": "13104d2ae2c3ecd723ea816f8b1ce067629467200735e22b8024449c0a1758b3",
+      "bytes": 4389
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/panaretos.py",
+      "sha256": "5ca1f67ef50de1f84be99d5506541f4149b79ac81125860709f69ad36bdb224e",
+      "bytes": 6891
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/pp_graph.py",
+      "sha256": "142e43106aab0cd4aa9a9baf73f4cc6ca3556b1d58fc4d8cc74aa0d483add0c5",
+      "bytes": 19700
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/stability.py",
+      "sha256": "deec627f255c7a4057fa4521d0fc7a211b2dfbeef6836c510acd8587609e754a",
+      "bytes": 2253
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/certs/structure.py",
+      "sha256": "a9b455798863adda57480226bc2496418179f176effbb69ec61c46044a3dc81c",
+      "bytes": 3338
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/deviation.py",
+      "sha256": "7f371198c1829cc69f1c33bcf7fe23b08fbf6144bcfb69dfc7080d903103161f",
+      "bytes": 2190
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/deviation_binding.py",
+      "sha256": "89ea20c55c80592db497c5f650f8e7bbc86cec997e0a555ab2572419f6fbca8f",
+      "bytes": 6794
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/lie_group_transport_v2.py",
+      "sha256": "2cdd35e8ac71e9b1a2b0a2d6e66a631dc5d3a7ef698ed22dbb84159dfcbcefbe",
+      "bytes": 10949
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/local_plan_binding.py",
+      "sha256": "daeee12796a02bb80796860c5070ab21d32f8070ddc4cd1328a563e6ffdcbe47",
+      "bytes": 5937
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/local_plan_pvs.py",
+      "sha256": "9f1a94c559f28126b1868c2eedf73f0b9bf9312c04391dbbd5b8bc6da6534394",
+      "bytes": 2319
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/observability_binding.py",
+      "sha256": "a33dc66317eb032da14e38653fa243fbb68f5fcfcc3d93c7cc3cfdad366ebdb7",
+      "bytes": 5980
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/parametric.py",
+      "sha256": "e9296f9bd2214733352518b96d1701b06761aa84055dd2ba5dd4c5ef77e68e87",
+      "bytes": 13354
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/parametric_cli.py",
+      "sha256": "349f7d06544e3bbddc33d459e4a035ddf750c5ffe1346c6685adac71cdd42740",
+      "bytes": 4424
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/runner.py",
+      "sha256": "ee35adeeab49de917d14620f59cdd76d2a751d8b265433f172c6a80cca37ef96",
+      "bytes": 9355
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/tests/test_certificate_contracts.py",
+      "sha256": "3287364a28436e121eb52e5784d36a6ba5400e8e48c24dfe455f7d4818900d35",
+      "bytes": 1705
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/tests/test_deviation.py",
+      "sha256": "b92cac4103f0aa34ec8fbbf959b05a863060de1d66bf6da364af52ec0c1b223b",
+      "bytes": 4655
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/tests/test_local_plan_binding.py",
+      "sha256": "3675fb5ec1d0dc0310d8b2f8d22e146abfdb9dec18cf0bd9c9507c89f884760d",
+      "bytes": 2157
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/tests/test_observability.py",
+      "sha256": "2307f5ff8166a3830b8d25b8abbd3f6797f9ca144d46c8d6c66fc3115dea57d8",
+      "bytes": 2864
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/tests/test_observability_binding.py",
+      "sha256": "4c220f0b16a06b6af4eda12789a7e0344fc36d0d1c9f05fa37d1a3048af304d9",
+      "bytes": 1144
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/utils/common.py",
+      "sha256": "1810d5d822ee6ca498b905c0a1d134516b97ac6c27abdd27793ded774c9eee28",
+      "bytes": 1706
+    },
+    {
+      "path": "/Users/gajaka/projects/master-controler/cert_runner/contracts/local_plan.json",
+      "sha256": "86f65e4d4c779825b809380a204ecb7746cdb50a995baebd0bec2f37b2dc9192",
+      "bytes": 438
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot298_dusk.csv",
+      "sha256": "622b4ced62e268175cb44697630660893162badc9c575e3d2f43798382769bbf",
+      "bytes": 624417
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot303_dusk.csv",
+      "sha256": "341ec561c1fdfeacaf75d2fe7d1f3a433b026783a5a7a256a5beddfece5ff0e7",
+      "bytes": 552386
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot320_merged_dawn.csv",
+      "sha256": "23ce5e3c2ac8bd932c1452ebdf4d73ad8dbb6129e211972c884d6c406ad9dc83",
+      "bytes": 540856
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot322_dusk.csv",
+      "sha256": "784b5e5a4d1218df74bb31a5d995d728b2d9c14a2f6f3eef44edecb4b67ed6d3",
+      "bytes": 567815
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot330_dawn.csv",
+      "sha256": "d43c9d51d841637c2df6adf99895561824a3e7dba950247824cd02f4323ffdb1",
+      "bytes": 769238
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot334_dawn.csv",
+      "sha256": "4e58ea61256f5ef131e2c61a4001e6238eb513d9877fb0486d6fb52a38d3b3ca",
+      "bytes": 556535
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot347_dawn.csv",
+      "sha256": "3ef6638d83059b273a174e04cb4523557c9064e4a44bc741a05a50a4a8ae14ab",
+      "bytes": 492656
+    },
+    {
+      "path": "/Users/gajaka/Downloads/luces/paper3/Paper3_Final_Dataset/boot349_dawn.csv",
+      "sha256": "1db92f888096cb793ec9012ba75a6609f4b772f96b038e7229e18a860e4573c2",
+      "bytes": 546439
+    }
+  ],
+  "prior_knowledge": "Existing boot320 five-candidate example and generic symbolic proofs known. Not a held-out or novelty experiment.",
+  "workload": {
+    "contexts": "All8 canonical logs, no GEN-based filtering",
+    "candidates": "Same first2 populated elevationbins and5 independent/POToptimal mixtures0,1/4,1/2,3/4,1",
+    "adapter": "Reuse unchanged numericalhelpers directly; do not call wrapper requiring GENPASS/pathinside_repo; retain negative or unavailable GEN as such",
+    "audit": "All20nonidentity ordered before/after proposals percontext; these are coverage proposals, not20acceptedrepairs",
+    "trace": "Percontext, initialindex0, proposedindices1,2,3,4,3,2,1,0,4; commitonlyaccepted andrecordrollback. Constructed coverage trace, not naturalcontrollerhistory"
+  },
+  "arms": {
+    "B": "Strong content/dependency cache: matrixfingerprintforfeatures, exactper-primitive-predicate keys inclAST/contract/producer andexactreadvalues, duplicatepredicate/composite sharing; shortcircuit finalall8",
+    "PPG": "Same numericalproducer/cache; completefinitebank semanticScope perreplacement; initialfailedtargets plus endangeredpriortruecore; globallyFixedprotectedview GEN/dataset; re-establishsamecontextbankmembership eachstep",
+    "NO_HAZARD": "Same PPG preparation/cache butrecheckallpositions throughcache",
+    "NO_OBSERVABLE_REUSE": "Discard predicateoutcome cache acrossproposals, retain matrixfeaturecache; recheckall8. Diagnosticonly, notstrongbaseline",
+    "AGGRESSIVE_CONTROL": "Reuse allbeforePASS results withoutinvalidation; negativecontrolonly"
+  },
+  "formal": "Original Repair.SemanticHazards andObservableAlgebra; feature-snapshotmodel only, notverifiedPythonPOTproducer. Genericproof alreadyLeanchecked, notNanoda.",
+  "cost": "Record common input/POT/GEN preparation, per-arm featurecachemisses, primitiveevals, semanticpreparation, policyloop, samefresh full-source oracle checks,7alternating pairedcold/warm repeats. Include8.506s newLeancheck asPPGspecificsetup; inheritedframeworksetup unmeasured/historical notzero. No total-cost superiority ifunknown necessarycosts.",
+  "safety": "Exactall8positions/frame agreewithfresh full checks; no wrongreuseoracceptance. Frames/invalidinputs failclosed. Emptyhazard neverdischargesfailedtargets.",
+  "domain": "Exactscope only on5declaredsnapshots percontext; protectedprojectionFixedgloballyonlyfor4fieldoverwrite. Noautonomous6feature quotientforarbitrarymatrixmixes.",
+  "stop": "Finish these8contexts andcomparisononce. Preservefailures, do notaddlogs/thresholds/AI/MT orclaimpracticalsuperiority/novelty ifBties."
+}

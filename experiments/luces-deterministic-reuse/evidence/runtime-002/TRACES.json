@@ -1,0 +1,1456 @@
+{
+  "B": {
+    "contexts": [
+      {
+        "context": 0,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 1,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 2,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 3,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 4,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 5,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 0,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          }
+        ],
+        "final": 0
+      },
+      {
+        "context": 6,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 7,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": []
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": []
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": []
+          }
+        ],
+        "final": 4
+      }
+    ],
+    "stats": {
+      "feature_extractions": 40,
+      "primitive_requests": 302,
+      "primitive_evaluations": 59,
+      "feature_cache_hits": 104,
+      "primitive_cache_hits": 243
+    }
+  },
+  "PPG": {
+    "contexts": [
+      {
+        "context": 0,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 1,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 2,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 3,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 4,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 5,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 0,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              7
+            ]
+          }
+        ],
+        "final": 0
+      },
+      {
+        "context": 6,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "final": 4
+      },
+      {
+        "context": 7,
+        "steps": [
+          {
+            "before": 0,
+            "proposed": 1,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 2,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 3,
+            "accepted": false,
+            "after": 0,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 0,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 3,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              5,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 2,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 1,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 0,
+            "accepted": false,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              6,
+              7
+            ]
+          },
+          {
+            "before": 4,
+            "proposed": 4,
+            "accepted": true,
+            "after": 4,
+            "skipped_positions": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          }
+        ],
+        "final": 4
+      }
+    ],
+    "stats": {
+      "feature_extractions": 40,
+      "primitive_requests": 523,
+      "primitive_evaluations": 61,
+      "primitive_cache_hits": 462,
+      "feature_cache_hits": 144
+    }
+  }
+}

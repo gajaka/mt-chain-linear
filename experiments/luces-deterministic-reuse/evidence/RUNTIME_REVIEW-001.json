@@ -1,0 +1,86 @@
+{
+  "status": "PASS_WITH_SCOPE_LIMITS",
+  "reviewed_utc": "2026-11-05T19:17:19.459098+00:00",
+  "scope": "Independent finite runtime-001 audit; no root executor import or benchmark rerun",
+  "reviewed_executor": {
+    "path": "provenance/run-v1.py",
+    "sha256": "ca8c358b78aa8b9f7a4d0f6e607b4fa46b08f1bb12af549e643b8f3a9efd7ae5"
+  },
+  "checked": {
+    "contexts": 8,
+    "numerical_candidate_matrices": 40,
+    "exact_predicate_truth_values": 320,
+    "exact_scope_memberships": 320,
+    "ordered_proposals": 160,
+    "cold_warm_repetitions": 7,
+    "B_PPG_acceptance_decisions": 4480,
+    "accepted_per_pass": 28,
+    "genuine_invalidation_proposals": 56,
+    "unsafe_aggressive_acceptances": 28,
+    "oracle_derived_trace_steps": 72,
+    "primitive_guard_controls": 4,
+    "skipped_position_obligations_per_ppg_pass": 492,
+    "boot320_saved_bank_match": true,
+    "negative_GEN_retained": [
+      "boot334_dawn.csv"
+    ],
+    "max_numerical_marginal_error": 2.3592239273284576e-16
+  },
+  "limitations": [
+    "Numerical producers/POT are reused as source computations, not formally verified",
+    "Exact scopes cover only five declared snapshots in each context",
+    "TRACES.json is oracle-derived, not executed B/PPG controller traces",
+    "Controls exercise frame/rational primitives, not end-to-end proposal rejection",
+    "Common preparation includes GEN/coupling/oracle preparation; do not add nested subtotals again",
+    "Warm policy times exclude preparation; new Lean cost is PPG-specific and inherited setup is unknown",
+    "Primitive comparisons are shared across duplicate/composite positions; position skips are not expensive computations saved",
+    "No practical superiority, physical repair, universal Python refinement or novelty claim follows"
+  ],
+  "inputs": [
+    {
+      "path": "PLAN.json",
+      "sha256": "a3228670c01b9600dd979ce300884efd3ae2d5f0ff52f7d9de17e411edfdf16b"
+    },
+    {
+      "path": "provenance/run-v1.py",
+      "sha256": "ca8c358b78aa8b9f7a4d0f6e607b4fa46b08f1bb12af549e643b8f3a9efd7ae5"
+    },
+    {
+      "path": "evidence/runtime-001/ABLATIONS.json",
+      "sha256": "04f7452db74556d20f8b5176e62ae01100a5cd325a2ad95874958b2ccf85fc39"
+    },
+    {
+      "path": "evidence/runtime-001/AGGRESSIVE_ERRORS.json",
+      "sha256": "06bdf2dc412eca645052ee5672fd88e1a6004f560ff3f827587be2fa43e813df"
+    },
+    {
+      "path": "evidence/runtime-001/BANKS.json",
+      "sha256": "85fb60cba632d44ab8873b3cf7b46d680a5c79d3bc76e9c3251b0307ab44e189"
+    },
+    {
+      "path": "evidence/runtime-001/CONTROLS.json",
+      "sha256": "c5921617540922afab8bc5f7b94077a404826bfe730758ef7e8ea506d8b80260"
+    },
+    {
+      "path": "evidence/runtime-001/HAZARDS.json",
+      "sha256": "5c2d59558050985b7e7aeb33dc25cf683e141bfb2c08c0e6405027132cfb80fe"
+    },
+    {
+      "path": "evidence/runtime-001/INVALIDATIONS.json",
+      "sha256": "e2e9e4a5cce57eed12e41fbdf2ff668b9cea39a3cdcb4b46ea7243e8d45e3484"
+    },
+    {
+      "path": "evidence/runtime-001/PAIRS.json",
+      "sha256": "6d1eb2fc91ecea3eacf7babc8454721da31782b64106a3d33aa887b0f1973d08"
+    },
+    {
+      "path": "evidence/runtime-001/RESULT.json",
+      "sha256": "3af1f9f11f52fae85c1a05b058dd82b0ba2b4212f3a623737d5e038d6958bd61"
+    },
+    {
+      "path": "evidence/runtime-001/TRACES.json",
+      "sha256": "be41b3cdb34fc0ea618e27ea300434daf66258107a0c35ee9e9c9831e72429e3"
+    }
+  ],
+  "reviewer_code_sha256": "31d5863dc1ba74fe1bee403ffd538c62e5347f20e2f8a95994d6b3583d872cc7"
+}

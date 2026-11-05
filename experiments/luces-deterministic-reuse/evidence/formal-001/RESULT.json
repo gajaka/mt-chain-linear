@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-11-05T19:05:06.229519+00:00",
+  "finished_utc": "2026-11-05T19:05:14.735692+00:00",
+  "elapsed_seconds": 8.506029334,
+  "argv": [
+    "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "env",
+    "lean",
+    "/Users/gajaka/projects/mt-chain-linear/experiments/luces-deterministic-reuse/formal/DeterministicReuse.lean"
+  ],
+  "cwd": "/Users/gajaka/projects/mt-chain-linear/framework",
+  "exit_code": 0,
+  "source_sha256": "5c285ad4a9d1462bc2a14a10beeef025b0072af25142b062f9e7340ef05b7ec9",
+  "stdout_sha256": "5cf1d7135139f63980702334d22b840fde2112f7d26df079612020c36741e875",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "Lean elaboration and reported axioms, not independent Nanoda replay"
+}

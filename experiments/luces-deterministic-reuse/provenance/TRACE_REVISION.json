@@ -1,0 +1,4 @@
+{
+  "scope": "Runtime001 numerical/audit comparisons are retained; its TRACES were oracle-derived reference traces, not per-arm execution. Next executor factors policy decision and runs actual per-arm traces. PLAN/numerical cohort/thresholds unchanged. Guard controls remain low-level, not end-to-end malformed-proposal tests.",
+  "previous_executor_sha256": "ca8c358b78aa8b9f7a4d0f6e607b4fa46b08f1bb12af549e643b8f3a9efd7ae5"
+}

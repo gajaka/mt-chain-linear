@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETE_FINITE_STUDY; NO_MT",
+  "started_utc": "2026-11-05T19:15:18.664701+00:00",
+  "finished_utc": "2026-11-05T19:15:22.298662+00:00",
+  "plan_sha256": "a3228670c01b9600dd979ce300884efd3ae2d5f0ff52f7d9de17e411edfdf16b",
+  "executor_sha256": "602df7136067bb7fccd6bbb2412d705a869b8964f985d0b9b35e9466a0fbe832",
+  "versions": {
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.13.1",
+    "POT": "0.9.7.post1"
+  },
+  "contexts": 8,
+  "candidates": 40,
+  "proposals_per_pass": 160,
+  "accepted_per_pass": 28,
+  "contexts_without_full_family_candidate": [
+    "boot334_dawn.csv"
+  ],
+  "common_preparation_seconds": 0.646527459,
+  "gen_preparation_seconds": 0.0059173750000001135,
+  "coupling_preparation_seconds": 0.028280000999999944,
+  "oracle_preparation_seconds": 0.060585624999999976,
+  "measured_lean_setup_seconds": 8.506029334,
+  "inherited_framework_setup": "Historical/unmeasured, not zero",
+  "wrong_acceptances": 0,
+  "wrong_ppg_skips": 0,
+  "unsafe_aggressive_acceptances": 28,
+  "proposals_with_invalidation": 56,
+  "same_strong_baseline_decisions": true,
+  "cold_policy_medians": {
+    "B": 0.06398141800000001,
+    "PPG": 0.06996670900000002
+  },
+  "warm_policy_medians": {
+    "B": 0.004201334000000001,
+    "PPG": 0.008415375000000003
+  },
+  "independent_validation_median": 0.23826412500000016,
+  "ppg_new_setup_and_cold_faster_pairs": 0,
+  "scoped_preservation_demonstrated": true,
+  "practical_superiority_demonstrated": false,
+  "scope": "Constructed finite coupling-replacement workload on measured marginals; not physical controller repairs, raw-coupling quotient closure, Python refinement or novelty"
+}
