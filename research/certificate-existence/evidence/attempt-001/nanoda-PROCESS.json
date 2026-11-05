@@ -1,0 +1,25 @@
+{
+  "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/lib/lean:/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/batteries/.lake/build/lib/lean",
+  "LEAN_SRC_PATH": null,
+  "command": [
+    "/Users/gajaka/.local/state/ppg-lean-upgrade/2026-10-18-v4.35.0/nanoda-fixed-source/target/release/nanoda_bin",
+    "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.json"
+  ],
+  "cwd": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001",
+  "exit_code": 0,
+  "inherited_stack_no_preexec_change": true,
+  "log": {
+    "bytes": 3763,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.log",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.log",
+    "sha256": "80d35eb7751be598b4e2019694af2b9f5a6557ef096df6d19cb89e3671555c00"
+  },
+  "parent_stack_limits": [
+    8372224,
+    67092480
+  ],
+  "seconds": 5.191373499999997,
+  "stdout": null,
+  "timeout": false,
+  "timeout_seconds": 300
+}

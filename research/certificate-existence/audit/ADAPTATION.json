@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "scope": "Derived research-only audit and export inspector; parent sources are not edited.",
+  "upstream_files": [
+    {
+      "path": "formal/theta-audit/ThetaIndependentAudit.lean",
+      "sha256": "e2d238400a5a1148b87b9a2e90006d542b60b29d9c503a6b09177b228181886d"
+    },
+    {
+      "path": "scripts/independent.py",
+      "sha256": "1783f1b015aad8cdde0a1bae7d44284b07b4e3045162fe2ae34fd17b186668fe"
+    },
+    {
+      "path": "scripts/export_check.py",
+      "sha256": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c"
+    }
+  ],
+  "export_inspector_copied_byte_identical": true,
+  "runner_changes": [
+    "Study source validation and separate research/parent build roots.",
+    "Strict fresh audit compilation with warningAsError=true.",
+    "Nine research roots exported from the CertificateResults facade."
+  ],
+  "audit_changes": [
+    "Independent expected propositions for nine research roots.",
+    "CertificateResults facade replaces TightnessResults.",
+    "Root-specific binder counts, unchanged full-private kernel traversal and union import inventory.",
+    "Distinct research namespace and evidence marker."
+  ],
+  "root_names": [
+    "PotentialSeparation.Construction.certificate_exists",
+    "PotentialSeparation.Construction.pointwise_drift",
+    "NeighborSeparation.Embedding.certificate_exists",
+    "NeighborSeparation.Embedding.certificate_budget_eq",
+    "PotentialSeparation.Exponential.certificate_budget_exponential_lower",
+    "PotentialSeparation.Exponential.certificate_budget_floor_lower",
+    "PotentialSeparation.Construction.initial_budget_upper",
+    "CertificateStudy.nonvacuous_separable_separation",
+    "CertificateStudy.nonvacuous_neighbor_separation"
+  ]
+}

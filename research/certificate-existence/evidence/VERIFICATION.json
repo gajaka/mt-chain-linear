@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "Constructive inhabitedness of both potential classes; exponential restricted budget lower bound; selected nine research roots and their actual proof closures.",
+  "source_manifest": {
+    "path": "SOURCE_MANIFEST.json",
+    "sha256": "aa7a8028b61cbdc9c0b6207b532defc2c2bc6e89d4aab8be8784c675137af3a1",
+    "bytes": 12021
+  },
+  "source_verification": {
+    "path": "evidence/source-verification-001.json",
+    "sha256": "d35c818d12b1bd0a4720569d5e1606396253a988b49b0e1ea663954fa3d2e364",
+    "bytes": 2886
+  },
+  "fresh_build": {
+    "path": "evidence/clean-build-001/RESULT.json",
+    "sha256": "15691a55abcb3fc565a24be04291b87b5b17702d8ab559be8f68c8ad199c9c0a",
+    "bytes": 391
+  },
+  "fresh_independent_check": {
+    "path": "evidence/attempt-001/RESULT.json",
+    "sha256": "ab360046c821916f674d134e4f704a253eb9857968650661884c3f075751f270",
+    "bytes": 11105
+  },
+  "research_modules": 18,
+  "local_proof_import_closure": 49,
+  "selected_roots": [
+    "PotentialSeparation.Construction.certificate_exists",
+    "PotentialSeparation.Construction.pointwise_drift",
+    "NeighborSeparation.Embedding.certificate_exists",
+    "NeighborSeparation.Embedding.certificate_budget_eq",
+    "PotentialSeparation.Exponential.certificate_budget_exponential_lower",
+    "PotentialSeparation.Exponential.certificate_budget_floor_lower",
+    "PotentialSeparation.Construction.initial_budget_upper",
+    "CertificateStudy.nonvacuous_separable_separation",
+    "CertificateStudy.nonvacuous_neighbor_separation"
+  ],
+  "raw_proof_closure_declarations": 17732,
+  "nanoda_checked_declarations": 18183,
+  "imported_modules": 5552,
+  "bound_artifacts": 33312,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "saved_evidence_verification": "PASS; read-only scripts/independent.py --verify --attempt attempt-001",
+  "parent_verification_separate": "../../evidence/attempt-003/RESULT.json",
+  "boundaries": [
+    "No exact optimal exponential base.",
+    "No quadratic upper budget for the larger class.",
+    "No practical speedup or novelty claim.",
+    "HLS comparison is a separate paper argument, not a checked Lean root."
+  ]
+}

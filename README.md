@@ -182,6 +182,19 @@ new source receipt and refuses to overwrite an existing file; choose an unused
 These checks concern the formal definitions, not an
 external Python implementation or a random-number generator.
 
+## Research: which potentials can explain the linear cost?
+
+The separate [certificate-existence study](research/certificate-existence/README.md)
+constructs admissible potentials for every `n >= 2` and proves an exponential
+budget lower bound for the coordinate-separable class, despite the same process
+having expected cost Theta(n). The larger one-bridge-per-summand class is also
+proved inhabited; its existing quadratic lower bound remains, without a matching
+quadratic upper construction. Nine research roots have a fresh Lean/Nanoda audit.
+
+This is a restriction on certificate shape and raw pointwise drift, not a lower
+bound on all drift analyses or evidence of a faster algorithm. The child package
+has its own manifest and evidence, and leaves the original proof core unchanged.
+
 ## Relation to existing MT results
 
 Under the classical MT criterion, the known expected bound is
@@ -197,6 +210,9 @@ graph and probabilities, not the speed of this particular realization.
 
 HLS Theorem 1.6 uses actual event intersections and must be considered
 separately; the fact that a path is chordal does not itself exclude it.
+The [research comparison](research/certificate-existence/LITERATURE.md)
+gives a separate exact-rational exclusion of that criterion for this encoding
+when n >= 5; that argument has not been formalized in Lean here.
 Being outside the classical region also does not establish scientific novelty.
 
 - [Moser-Tardos: constructive LLL, Theorem 1.2](https://arxiv.org/abs/0903.0544)

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "lake",
+    "--wfail",
+    "build",
+    "CertificateStudy"
+  ],
+  "exit_code": 0,
+  "seconds": 19.976244334,
+  "warning_count": 0,
+  "error_count": 0,
+  "local_build_absent_at_start": true,
+  "parent_core_and_pinned_dependency_caches_reused": true,
+  "local_mathematical_modules": 18,
+  "log_sha256": "b25f1d1ba0d2010347f5219ada41865f43f092ead2e447f277b93f13f4ce1ed6"
+}

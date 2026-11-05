@@ -1,0 +1,82 @@
+theorem PotentialSeparation.Construction.certificate_exists :
+  forall {n : Nat}, LE.le (OfNat.ofNat 2) n → Nonempty (PotentialSeparation.DriftCertificate n) :=
+  _
+
+theorem PotentialSeparation.Construction.pointwise_drift :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 2) n → PotentialSeparation.PointwiseDrift (OfNat.ofNat 0)
+    (PotentialSeparation.Construction.thresholdCost n) (PotentialSeparation.Construction.tacticCost n)
+    (OfNat.ofNat 1) :=
+  _
+
+theorem NeighborSeparation.Embedding.certificate_exists :
+  forall {n : Nat}, LE.le (OfNat.ofNat 2) n → Nonempty (NeighborSeparation.DriftCertificate n) :=
+  _
+
+theorem NeighborSeparation.Embedding.certificate_budget_eq :
+  forall {n : Nat} (C : PotentialSeparation.DriftCertificate n),
+  Eq (NeighborSeparation.certificateBudget (NeighborSeparation.Embedding.certificate C))
+    (PotentialSeparation.certificateBudget C) :=
+  _
+
+theorem PotentialSeparation.Exponential.certificate_budget_exponential_lower :
+  forall {n k : Nat},
+  LE.le (HAdd.hAdd (HMul.hMul (OfNat.ofNat 2) k) (OfNat.ofNat 4)) n → (forall (C :
+      PotentialSeparation.DriftCertificate n),
+  LE.le
+    (HDiv.hDiv (HSub.hSub (HPow.hPow (OfNat.ofNat 5) (HAdd.hAdd k (OfNat.ofNat 1))) (OfNat.ofNat 3)) (OfNat.ofNat 36))
+    (PotentialSeparation.certificateBudget C)) :=
+  _
+
+theorem PotentialSeparation.Exponential.certificate_budget_floor_lower :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 4) n → (forall (C : PotentialSeparation.DriftCertificate n),
+  LE.le
+    (HDiv.hDiv
+      (HSub.hSub
+        (HPow.hPow (OfNat.ofNat 5)
+          (HAdd.hAdd (HDiv.hDiv (HSub.hSub n (OfNat.ofNat 4)) (OfNat.ofNat 2)) (OfNat.ofNat 1))) (OfNat.ofNat 3))
+      (OfNat.ofNat 36)) (PotentialSeparation.certificateBudget C)) :=
+  _
+
+theorem PotentialSeparation.Construction.initial_budget_upper :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 2) n → LE.le
+    (PotentialSeparation.initialBudget n (OfNat.ofNat 0) (PotentialSeparation.Construction.thresholdCost n)
+      (PotentialSeparation.Construction.tacticCost n))
+    (HAdd.hAdd (HMul.hMul (OfNat.ofNat 3) (HPow.hPow (OfNat.ofNat 9) (HSub.hSub n (OfNat.ofNat 2)))) (OfNat.ofNat 1)) :=
+  _
+
+theorem CertificateStudy.nonvacuous_separable_separation :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 4) n → And (Nonempty (PotentialSeparation.DriftCertificate n))
+    (And
+      (forall (C : PotentialSeparation.DriftCertificate n),
+      LE.le
+        (HDiv.hDiv
+          (HSub.hSub
+            (HPow.hPow (OfNat.ofNat 5)
+              (HAdd.hAdd (HDiv.hDiv (HSub.hSub n (OfNat.ofNat 4)) (OfNat.ofNat 2)) (OfNat.ofNat 1))) (OfNat.ofNat 3))
+          (OfNat.ofNat 36)) (PotentialSeparation.certificateBudget C))
+      (And (LE.le (ENNReal.ofReal (HDiv.hDiv (Nat.cast n) (OfNat.ofNat 18))) (MTChainFormal.expectedSteps n))
+        (LE.le (MTChainFormal.expectedSteps n) (ENNReal.ofReal (HMul.hMul (OfNat.ofNat 1054) (Nat.cast n)))))) :=
+  _
+
+theorem CertificateStudy.nonvacuous_neighbor_separation :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 10) n → And (Nonempty (NeighborSeparation.DriftCertificate n))
+    (And
+      (forall (C : NeighborSeparation.DriftCertificate n),
+      LE.le (HDiv.hDiv (HPow.hPow (Nat.cast n) (OfNat.ofNat 2)) (OfNat.ofNat 1248))
+        (NeighborSeparation.certificateBudget C))
+      (And (LE.le (ENNReal.ofReal (HDiv.hDiv (Nat.cast n) (OfNat.ofNat 18))) (MTChainFormal.expectedSteps n))
+        (LE.le (MTChainFormal.expectedSteps n) (ENNReal.ofReal (HMul.hMul (OfNat.ofNat 1054) (Nat.cast n)))))) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 18183 declarations with no errors

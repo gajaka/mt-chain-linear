@@ -1,0 +1,193 @@
+{
+  "PPGraph_imports": [],
+  "audit": {
+    "bytes": 4475676,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/audit.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/audit.json",
+    "sha256": "3a4e52b877e84815a17a76857aed6f8a4c6971262e579bf8af7c29027e7740f7"
+  },
+  "audit_object": {
+    "bytes": 486584,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/lib/lean/CertificateIndependentAudit.olean",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/lib/lean/CertificateIndependentAudit.olean",
+    "sha256": "122a034749966a04df5d610340d2f9ef67325417eb4ff16ba02434508713e5fa"
+  },
+  "audit_run": {
+    "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/lib/lean:/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/batteries/.lake/build/lib/lean",
+    "LEAN_SRC_PATH": null,
+    "command": [
+      "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "-j1",
+      "-M8192",
+      "-DwarningAsError=true",
+      "-o",
+      "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/lib/lean/CertificateIndependentAudit.olean",
+      "CertificateIndependentAudit.lean"
+    ],
+    "cwd": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/src",
+    "exit_code": 0,
+    "inherited_stack_no_preexec_change": true,
+    "log": {
+      "bytes": 4188464,
+      "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/audit.log",
+      "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/audit.log",
+      "sha256": "671849633942da8dde95b5c11920d9858a04184d1de43a22024502415154b3d4"
+    },
+    "parent_stack_limits": [
+      8372224,
+      67092480
+    ],
+    "seconds": 9.68505725,
+    "stdout": null,
+    "timeout": false,
+    "timeout_seconds": 300
+  },
+  "checked_declarations": 18183,
+  "export": {
+    "bytes": 100436240,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/exports/attempt-001/declarations.ndjson",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/exports/attempt-001/declarations.ndjson",
+    "sha256": "b53cc894579e33394a2ba0523a6bf4da66a96036a1f9a38bed8ab98061e1cc76"
+  },
+  "export_inspection": {
+    "bytes": 3150,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/export-inspection.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/export-inspection.json",
+    "sha256": "47a3542396ebb5e7b51024e0f0e6c47881b2ac1e66c2113e2a19b92a9e4b78b6"
+  },
+  "export_run": {
+    "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/lib/lean:/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/batteries/.lake/build/lib/lean",
+    "LEAN_SRC_PATH": null,
+    "command": [
+      "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/leanexport",
+      "CertificateResults",
+      "--",
+      "PotentialSeparation.Construction.certificate_exists",
+      "PotentialSeparation.Construction.pointwise_drift",
+      "NeighborSeparation.Embedding.certificate_exists",
+      "NeighborSeparation.Embedding.certificate_budget_eq",
+      "PotentialSeparation.Exponential.certificate_budget_exponential_lower",
+      "PotentialSeparation.Exponential.certificate_budget_floor_lower",
+      "PotentialSeparation.Construction.initial_budget_upper",
+      "CertificateStudy.nonvacuous_separable_separation",
+      "CertificateStudy.nonvacuous_neighbor_separation",
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "Nat.add",
+      "Nat.sub",
+      "Nat.mul",
+      "Nat.pow",
+      "Nat.gcd",
+      "Nat.div",
+      "Nat.mod",
+      "Nat.beq",
+      "Nat.ble",
+      "Nat.land",
+      "Nat.lor",
+      "Nat.xor",
+      "Nat.shiftLeft",
+      "Nat.shiftRight",
+      "String.ofList",
+      "Char.ofNat",
+      "List",
+      "eagerReduce",
+      "Nat",
+      "String",
+      "String.mk",
+      "Char",
+      "optParam",
+      "autoParam",
+      "semiOutParam",
+      "outParam",
+      "Quot",
+      "Quot.mk",
+      "Quot.lift",
+      "Quot.ind"
+    ],
+    "cwd": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence",
+    "exit_code": 0,
+    "inherited_stack_no_preexec_change": true,
+    "log": {
+      "bytes": 0,
+      "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/export.log",
+      "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/export.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "parent_stack_limits": [
+      8372224,
+      67092480
+    ],
+    "seconds": 4.399281084000002,
+    "stdout": {
+      "bytes": 100436240,
+      "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/exports/attempt-001/declarations.ndjson",
+      "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/exports/attempt-001/declarations.ndjson",
+      "sha256": "b53cc894579e33394a2ba0523a6bf4da66a96036a1f9a38bed8ab98061e1cc76"
+    },
+    "timeout": false,
+    "timeout_seconds": 300
+  },
+  "imported_modules": 5552,
+  "inherited_stack_unchanged": true,
+  "inputs": {
+    "bytes": 48132,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/INPUTS.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/INPUTS.json",
+    "sha256": "4b848e3b7e1793c4dd293e2bee001119e289647782fbd6107d5e0dc6bec7e943"
+  },
+  "inventory": {
+    "bytes": 16643772,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/import-inventory.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/import-inventory.json",
+    "sha256": "0fb0441a8f34d466cba9eaaf2226237e509bb4319a03d9443690ea0293280d78"
+  },
+  "local_proof_module_count": 49,
+  "nanoda": {
+    "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/lib/lean:/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/batteries/.lake/build/lib/lean",
+    "LEAN_SRC_PATH": null,
+    "command": [
+      "/Users/gajaka/.local/state/ppg-lean-upgrade/2026-10-18-v4.35.0/nanoda-fixed-source/target/release/nanoda_bin",
+      "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.json"
+    ],
+    "cwd": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001",
+    "exit_code": 0,
+    "inherited_stack_no_preexec_change": true,
+    "log": {
+      "bytes": 3763,
+      "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.log",
+      "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.log",
+      "sha256": "80d35eb7751be598b4e2019694af2b9f5a6557ef096df6d19cb89e3671555c00"
+    },
+    "parent_stack_limits": [
+      8372224,
+      67092480
+    ],
+    "seconds": 5.191373499999997,
+    "stdout": null,
+    "timeout": false,
+    "timeout_seconds": 300
+  },
+  "nanoda_config": {
+    "bytes": 1093,
+    "path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/attempt-001/nanoda.json",
+    "sha256": "0b586aa7b04bfb00319ab294fe84b3fa8db913b90a1850b32854d929c3be3370"
+  },
+  "research_module_count": 18,
+  "root_count": 9,
+  "roots": [
+    "PotentialSeparation.Construction.certificate_exists",
+    "PotentialSeparation.Construction.pointwise_drift",
+    "NeighborSeparation.Embedding.certificate_exists",
+    "NeighborSeparation.Embedding.certificate_budget_eq",
+    "PotentialSeparation.Exponential.certificate_budget_exponential_lower",
+    "PotentialSeparation.Exponential.certificate_budget_floor_lower",
+    "PotentialSeparation.Construction.initial_budget_upper",
+    "CertificateStudy.nonvacuous_separable_separation",
+    "CertificateStudy.nonvacuous_neighbor_separation"
+  ],
+  "scope": "Nine selected research theorem roots and their actual exported proof closure, not every assertion in the 49 imported local modules; no Python/PRNG/compiler-time or novelty claim.",
+  "seconds": 42.424130334000004,
+  "status": "PASS"
+}

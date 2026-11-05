@@ -1,0 +1,112 @@
+{
+  "actual_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "constant_references_closed": true,
+  "declaration_command_count": 17040,
+  "declarations_by_tag": {
+    "axiom": 3,
+    "constructor": 608,
+    "def": 4469,
+    "inductive": 533,
+    "opaque": 15,
+    "quot": 4,
+    "recursor": 535,
+    "thm": 12016
+  },
+  "expanded_declaration_count": 18183,
+  "export_bytes": 100436240,
+  "export_path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/exports/attempt-001/declarations.ndjson",
+  "export_sha256": "b53cc894579e33394a2ba0523a6bf4da66a96036a1f9a38bed8ab98061e1cc76",
+  "expression_count": 1791102,
+  "inductive_bundle_count": 533,
+  "level_count_including_zero": 317,
+  "line_count": 1909203,
+  "metadata": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+      "version": "4.35.0"
+    }
+  },
+  "name_count_including_anonymous": 100745,
+  "root_closure": {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declaration_count": 18176,
+    "declaration_names_sha256": "fce849450869a75fb45374d06c7c221bd851abc09209de09cbfa856a98316d1d",
+    "exported_declarations_outside_root_closure": 7,
+    "expression_count": 1791080,
+    "method": "Actual expression type/value references, recursor rule bodies, complete inductive bundles, and implicit literal dependencies"
+  },
+  "root_count": 9,
+  "roots": {
+    "CertificateStudy.nonvacuous_neighbor_separation": {
+      "name_id": 100732,
+      "tag": "thm",
+      "type_id": 1791036,
+      "value_id": 1791079
+    },
+    "CertificateStudy.nonvacuous_separable_separation": {
+      "name_id": 98440,
+      "tag": "thm",
+      "type_id": 1489364,
+      "value_id": 1489392
+    },
+    "NeighborSeparation.Embedding.certificate_budget_eq": {
+      "name_id": 64505,
+      "tag": "thm",
+      "type_id": 788812,
+      "value_id": 788926
+    },
+    "NeighborSeparation.Embedding.certificate_exists": {
+      "name_id": 63893,
+      "tag": "thm",
+      "type_id": 779122,
+      "value_id": 779129
+    },
+    "PotentialSeparation.Construction.certificate_exists": {
+      "name_id": 63715,
+      "tag": "thm",
+      "type_id": 777056,
+      "value_id": 777063
+    },
+    "PotentialSeparation.Construction.initial_budget_upper": {
+      "name_id": 68454,
+      "tag": "thm",
+      "type_id": 927066,
+      "value_id": 927228
+    },
+    "PotentialSeparation.Construction.pointwise_drift": {
+      "name_id": 63713,
+      "tag": "thm",
+      "type_id": 776512,
+      "value_id": 777034
+    },
+    "PotentialSeparation.Exponential.certificate_budget_exponential_lower": {
+      "name_id": 68412,
+      "tag": "thm",
+      "type_id": 919350,
+      "value_id": 919376
+    },
+    "PotentialSeparation.Exponential.certificate_budget_floor_lower": {
+      "name_id": 68419,
+      "tag": "thm",
+      "type_id": 919906,
+      "value_id": 919930
+    }
+  },
+  "scope": "Structural inspection only; proof type checking is performed by Nanoda",
+  "status": "PASS"
+}

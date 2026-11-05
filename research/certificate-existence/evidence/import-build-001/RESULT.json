@@ -1,0 +1,12 @@
+{
+  "command": [
+    "lake",
+    "--wfail",
+    "build",
+    "CertificateStudy"
+  ],
+  "exit_code": 1,
+  "seconds": 23.79893325,
+  "warnings": 12,
+  "log_sha256": "1fabe09c344b64d1018f6723f80054caeff437ed146836c5ffe740e66e8db6c4"
+}

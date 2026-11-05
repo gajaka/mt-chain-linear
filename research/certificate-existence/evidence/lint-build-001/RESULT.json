@@ -1,0 +1,10 @@
+{
+  "command": [
+    "lake",
+    "--wfail",
+    "build",
+    "CertificateStudy"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 4.878565375
+}

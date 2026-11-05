@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "copied_separation_modules": [
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/potential-separation/formal/SeparableBase.lean",
+      "original_sha256": "8f5f94c015ac72dae6e218be5a3f2bd50f663180b0d2e24f6b1574ac03f32155",
+      "archive": "provenance/original/SeparableBase.lean",
+      "active": "formal/SeparableBase.lean",
+      "active_sha256": "52a28304e076ab539a2f5d4dec8275e3b2c84144547336b84433f37f853fb31c",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "52a28304e076ab539a2f5d4dec8275e3b2c84144547336b84433f37f853fb31c",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/potential-separation/formal/SeparableProduct.lean",
+      "original_sha256": "b96e3c29bee36ae0d07ce0d53b64fd937e1054af8e1d96bcccb50d6acae7a7fc",
+      "archive": "provenance/original/SeparableProduct.lean",
+      "active": "formal/SeparableProduct.lean",
+      "active_sha256": "540a45d1461a7db755b378ae8eadd19bdd5b27d384617a0e51badf94a1d388ea",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "540a45d1461a7db755b378ae8eadd19bdd5b27d384617a0e51badf94a1d388ea",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/potential-separation/formal/SeparableSequence.lean",
+      "original_sha256": "e137c1f730dfd206867c3fcdfc3699358bfd6d2e9d85e9dba6b97c8be9b91633",
+      "archive": "provenance/original/SeparableSequence.lean",
+      "active": "formal/SeparableSequence.lean",
+      "active_sha256": "afaf8456ca0eca7250e425592c8fd66904e257829762b2be4779a49638af3408",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "afaf8456ca0eca7250e425592c8fd66904e257829762b2be4779a49638af3408",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/potential-separation/formal/SeparableWitness.lean",
+      "original_sha256": "75b5d48c6f9eee62ceed01b7d40dbc0aa6d58e8687ed39d35e365b8ef97c9198",
+      "archive": "provenance/original/SeparableWitness.lean",
+      "active": "formal/SeparableWitness.lean",
+      "active_sha256": "fb9b811a327c7975b0190e7bb8159a599cc63c392c6e3ac109970c6c5c93e4b6",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged; explicit linter cleanup recorded in COPY_ADAPTATIONS.json (premise types/order retained)",
+      "after_header_migration_sha256": "228576ca787948ef3210eb74817364a1041fea0994d37ad9ccfdf2c9b9ff3f7d",
+      "post_header_cleanup": true
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/potential-separation/formal/SeparationResults.lean",
+      "original_sha256": "c5a4c7c5ca1edc01d07c169d61119c5a85d33718abb368d847eef8c914de5fa2",
+      "archive": "provenance/original/SeparationResults.lean",
+      "active": "formal/SeparationResults.lean",
+      "active_sha256": "f7b0ae02529c4c0d756c61dced72b4c7a2546a69a1c97b65d7fe9a3323693333",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "f7b0ae02529c4c0d756c61dced72b4c7a2546a69a1c97b65d7fe9a3323693333",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborAsymptotics.lean",
+      "original_sha256": "bfe3b17aff19938687f5620d83b075abf44edf569028032fe8dc193022632294",
+      "archive": "provenance/original/NeighborAsymptotics.lean",
+      "active": "formal/NeighborAsymptotics.lean",
+      "active_sha256": "fc70eb28c8914c1a295a94157e7ac0b7b0f2bde921a2807abf906d99eaa5ac70",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "fc70eb28c8914c1a295a94157e7ac0b7b0f2bde921a2807abf906d99eaa5ac70",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborBase.lean",
+      "original_sha256": "35ab5f9760537d806848faaffb81339ccc3ffdd1ecc046fba0e07fab3def4279",
+      "archive": "provenance/original/NeighborBase.lean",
+      "active": "formal/NeighborBase.lean",
+      "active_sha256": "731f147c7aeece250401bcdfaa1fe4011fabd7712a3bd80b182377412cd44f87",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "731f147c7aeece250401bcdfaa1fe4011fabd7712a3bd80b182377412cd44f87",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborDual.lean",
+      "original_sha256": "40a4c2d4679dc0392bc09adc5189dc97e86c66169d52484466bf655c67b1fd59",
+      "archive": "provenance/original/NeighborDual.lean",
+      "active": "formal/NeighborDual.lean",
+      "active_sha256": "d0d20c2298cee2eb059aff6f675fc153bfa265974908c51ef3d930d14a2b84c1",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "d0d20c2298cee2eb059aff6f675fc153bfa265974908c51ef3d930d14a2b84c1",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborFlux.lean",
+      "original_sha256": "3fe3ce8503a6198e936a7710ad3cfa63e53511a12581c45602428071c38bc0b8",
+      "archive": "provenance/original/NeighborFlux.lean",
+      "active": "formal/NeighborFlux.lean",
+      "active_sha256": "d144c886f82be00af63513096f47eaa68b6638256482a989db0d044677e5838f",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "d144c886f82be00af63513096f47eaa68b6638256482a989db0d044677e5838f",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborGauge.lean",
+      "original_sha256": "0275041ce7c0d4f0dbe5a5fae2080e1976122d8724431a8f1f993bf78dae3ea4",
+      "archive": "provenance/original/NeighborGauge.lean",
+      "active": "formal/NeighborGauge.lean",
+      "active_sha256": "5e6a6e73a929fbd1f6b7325fa5674eb0a8c0e53c94b5edf2a6b149a517489ce1",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "5e6a6e73a929fbd1f6b7325fa5674eb0a8c0e53c94b5edf2a6b149a517489ce1",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborProduct.lean",
+      "original_sha256": "03d28c94343c812b96e2d52470da7c49bca09f6596b16fbfb6ae93d4ec40c658",
+      "archive": "provenance/original/NeighborProduct.lean",
+      "active": "formal/NeighborProduct.lean",
+      "active_sha256": "d75d7f25443abe033142b8f387fa938b96035bfd3e525f6c4c74c1bc395de6ac",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "d75d7f25443abe033142b8f387fa938b96035bfd3e525f6c4c74c1bc395de6ac",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborResults.lean",
+      "original_sha256": "4f681ef9efb1dc8680f7da42b95a5dcc52cd15b4f54471f86e14dc7e73481f0e",
+      "archive": "provenance/original/NeighborResults.lean",
+      "active": "formal/NeighborResults.lean",
+      "active_sha256": "051d439f64204ff5606eadaf77ffbd052c7f068fe70308aaca42d0636a640e38",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "051d439f64204ff5606eadaf77ffbd052c7f068fe70308aaca42d0636a640e38",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborTransfer.lean",
+      "original_sha256": "b88aa6a7ba8b0ae7009282997d65fffc5e0ccc50aea5160583da886e2c922d4e",
+      "archive": "provenance/original/NeighborTransfer.lean",
+      "active": "formal/NeighborTransfer.lean",
+      "active_sha256": "78cc3c428e22d4b8330848740a86b9c2eb9e3dacd9e082561b2ca25d00647a44",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "78cc3c428e22d4b8330848740a86b9c2eb9e3dacd9e082561b2ca25d00647a44",
+      "post_header_cleanup": false
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/research/neighbor-separation-formal/formal/NeighborWitness.lean",
+      "original_sha256": "632c6ee9e688be3259315f23086656d236a2a26fb5f3d34bccf37e010b6f45d6",
+      "archive": "provenance/original/NeighborWitness.lean",
+      "active": "formal/NeighborWitness.lean",
+      "active_sha256": "bcdc526ba6d6b91e892cef8e46acb730d6c637c51e44b486c650381d7fd74d1b",
+      "transformation": "module/public import/@[expose] public section; mathematical bodies unchanged",
+      "after_header_migration_sha256": "bcdc526ba6d6b91e892cef8e46acb730d6c637c51e44b486c650381d7fd74d1b",
+      "post_header_cleanup": false
+    }
+  ],
+  "core_dependency": "../..",
+  "excluded": "PPG corollaries and imports in the original TightnessResults; the standalone facade is used instead",
+  "new_mathematical_sources": [
+    {
+      "path": "formal/CertificateConstruction.lean",
+      "sha256": "c629fdc268c1eb8c62d0e13fa288fb62861cff58ce1d5e8133b816f5fc20f0ed"
+    },
+    {
+      "path": "formal/CertificateResults.lean",
+      "sha256": "6d91a06d4e134b3434f2c109f7887809eb0944b05f10ba96852a0c96cca43240"
+    },
+    {
+      "path": "formal/ExponentialObstruction.lean",
+      "sha256": "30a5ec29e43f2d6b8dc41ec7215dbf8492535b1956f25673244d683ac8221e3b"
+    },
+    {
+      "path": "formal/NeighborEmbedding.lean",
+      "sha256": "b4a211ce6a4787212a7a2c395364600808ee8efd50ff980357ef319a39f51282"
+    }
+  ],
+  "audit_tooling_and_support": [
+    {
+      "path": "scripts/export_check.py",
+      "sha256": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c"
+    },
+    {
+      "path": "scripts/independent.py",
+      "sha256": "a03ecbef7556d7ee21b2f0d373478721b8d4e82a7a79ef4bd5010950ec197f4e"
+    },
+    {
+      "path": "scripts/verify_sources.py",
+      "sha256": "72c9548d9f61ebcd4ccdabd72f3f93785f3ddbdafbb7b7aae68ca3cca116debd"
+    },
+    {
+      "path": "audit/ADAPTATION.json",
+      "sha256": "c4574c53d3cfdf67b4d68e8bacc0a742ff039c55a6f506083557a0ecd8bb08f8"
+    },
+    {
+      "path": "audit/CertificateIndependentAudit.lean",
+      "sha256": "22aa363deaf4f00bab23ffb812b8ad6939cc614d29b2b9e5716babc3728bad1f"
+    },
+    {
+      "path": "lakefile.lean",
+      "sha256": "be40ed109bdae63ce3acf29ca7a99f54d317f1341631e2530c5d1eedd6a91d42"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "b08290527934c840c13a6231a454136a279658a1cbf095db6e9a596252553577"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    {
+      "path": "COPY_ADAPTATIONS.json",
+      "sha256": "a7520b8dccaf64197ed27a62ae8149da5d66c1cbbea91c3ecf351cc12adf4544"
+    }
+  ],
+  "claims": {
+    "inhabited_classes": [
+      "PotentialSeparation.DriftCertificate",
+      "NeighborSeparation.DriftCertificate"
+    ],
+    "inhabited_for": "n >= 2",
+    "coordinate_separable_budget_lower": "(5^(floor((n-4)/2)+1)-3)/36 for n>=4",
+    "explicit_construction_budget_upper": "3*9^(n-2)+1 for n>=2",
+    "neighbor_budget_lower": "existing n^2/1248 for n>=10; no exponential lower claimed",
+    "novelty": "not established"
+  }
+}

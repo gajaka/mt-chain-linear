@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "scope": "Fourteen copied separation modules only; original archives and source project are unchanged.",
+  "header_recipe": [
+    "Prepend module followed by a blank line.",
+    "Replace each leading import with public import.",
+    "Insert @[expose] public section followed by a blank line before set_option autoImplicit false."
+  ],
+  "cleanup_summary": [
+    "Rename unused witness_value proof binders hj and hjn to _hj and _hjn; premise types and ordering are unchanged.",
+    "Remove the unused simp input proving j + 1 is not j.",
+    "Remove unused local fact hright and its unused simp input.",
+    "Replace each of three redundant norm_num <;> ring sequences by norm_num followed by ring."
+  ],
+  "linter_suppression_added": false,
+  "copy_inventory": [
+    {
+      "path": "formal/NeighborAsymptotics.lean",
+      "original_archive": "provenance/original/NeighborAsymptotics.lean",
+      "original_sha256": "bfe3b17aff19938687f5620d83b075abf44edf569028032fe8dc193022632294",
+      "after_module_header_sha256": "fc70eb28c8914c1a295a94157e7ac0b7b0f2bde921a2807abf906d99eaa5ac70",
+      "current_sha256": "fc70eb28c8914c1a295a94157e7ac0b7b0f2bde921a2807abf906d99eaa5ac70",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborBase.lean",
+      "original_archive": "provenance/original/NeighborBase.lean",
+      "original_sha256": "35ab5f9760537d806848faaffb81339ccc3ffdd1ecc046fba0e07fab3def4279",
+      "after_module_header_sha256": "731f147c7aeece250401bcdfaa1fe4011fabd7712a3bd80b182377412cd44f87",
+      "current_sha256": "731f147c7aeece250401bcdfaa1fe4011fabd7712a3bd80b182377412cd44f87",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborDual.lean",
+      "original_archive": "provenance/original/NeighborDual.lean",
+      "original_sha256": "40a4c2d4679dc0392bc09adc5189dc97e86c66169d52484466bf655c67b1fd59",
+      "after_module_header_sha256": "d0d20c2298cee2eb059aff6f675fc153bfa265974908c51ef3d930d14a2b84c1",
+      "current_sha256": "d0d20c2298cee2eb059aff6f675fc153bfa265974908c51ef3d930d14a2b84c1",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborFlux.lean",
+      "original_archive": "provenance/original/NeighborFlux.lean",
+      "original_sha256": "3fe3ce8503a6198e936a7710ad3cfa63e53511a12581c45602428071c38bc0b8",
+      "after_module_header_sha256": "d144c886f82be00af63513096f47eaa68b6638256482a989db0d044677e5838f",
+      "current_sha256": "d144c886f82be00af63513096f47eaa68b6638256482a989db0d044677e5838f",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborGauge.lean",
+      "original_archive": "provenance/original/NeighborGauge.lean",
+      "original_sha256": "0275041ce7c0d4f0dbe5a5fae2080e1976122d8724431a8f1f993bf78dae3ea4",
+      "after_module_header_sha256": "5e6a6e73a929fbd1f6b7325fa5674eb0a8c0e53c94b5edf2a6b149a517489ce1",
+      "current_sha256": "5e6a6e73a929fbd1f6b7325fa5674eb0a8c0e53c94b5edf2a6b149a517489ce1",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborProduct.lean",
+      "original_archive": "provenance/original/NeighborProduct.lean",
+      "original_sha256": "03d28c94343c812b96e2d52470da7c49bca09f6596b16fbfb6ae93d4ec40c658",
+      "after_module_header_sha256": "d75d7f25443abe033142b8f387fa938b96035bfd3e525f6c4c74c1bc395de6ac",
+      "current_sha256": "d75d7f25443abe033142b8f387fa938b96035bfd3e525f6c4c74c1bc395de6ac",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborResults.lean",
+      "original_archive": "provenance/original/NeighborResults.lean",
+      "original_sha256": "4f681ef9efb1dc8680f7da42b95a5dcc52cd15b4f54471f86e14dc7e73481f0e",
+      "after_module_header_sha256": "051d439f64204ff5606eadaf77ffbd052c7f068fe70308aaca42d0636a640e38",
+      "current_sha256": "051d439f64204ff5606eadaf77ffbd052c7f068fe70308aaca42d0636a640e38",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborTransfer.lean",
+      "original_archive": "provenance/original/NeighborTransfer.lean",
+      "original_sha256": "b88aa6a7ba8b0ae7009282997d65fffc5e0ccc50aea5160583da886e2c922d4e",
+      "after_module_header_sha256": "78cc3c428e22d4b8330848740a86b9c2eb9e3dacd9e082561b2ca25d00647a44",
+      "current_sha256": "78cc3c428e22d4b8330848740a86b9c2eb9e3dacd9e082561b2ca25d00647a44",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/NeighborWitness.lean",
+      "original_archive": "provenance/original/NeighborWitness.lean",
+      "original_sha256": "632c6ee9e688be3259315f23086656d236a2a26fb5f3d34bccf37e010b6f45d6",
+      "after_module_header_sha256": "bcdc526ba6d6b91e892cef8e46acb730d6c637c51e44b486c650381d7fd74d1b",
+      "current_sha256": "bcdc526ba6d6b91e892cef8e46acb730d6c637c51e44b486c650381d7fd74d1b",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/SeparableBase.lean",
+      "original_archive": "provenance/original/SeparableBase.lean",
+      "original_sha256": "8f5f94c015ac72dae6e218be5a3f2bd50f663180b0d2e24f6b1574ac03f32155",
+      "after_module_header_sha256": "52a28304e076ab539a2f5d4dec8275e3b2c84144547336b84433f37f853fb31c",
+      "current_sha256": "52a28304e076ab539a2f5d4dec8275e3b2c84144547336b84433f37f853fb31c",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/SeparableProduct.lean",
+      "original_archive": "provenance/original/SeparableProduct.lean",
+      "original_sha256": "b96e3c29bee36ae0d07ce0d53b64fd937e1054af8e1d96bcccb50d6acae7a7fc",
+      "after_module_header_sha256": "540a45d1461a7db755b378ae8eadd19bdd5b27d384617a0e51badf94a1d388ea",
+      "current_sha256": "540a45d1461a7db755b378ae8eadd19bdd5b27d384617a0e51badf94a1d388ea",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/SeparableSequence.lean",
+      "original_archive": "provenance/original/SeparableSequence.lean",
+      "original_sha256": "e137c1f730dfd206867c3fcdfc3699358bfd6d2e9d85e9dba6b97c8be9b91633",
+      "after_module_header_sha256": "afaf8456ca0eca7250e425592c8fd66904e257829762b2be4779a49638af3408",
+      "current_sha256": "afaf8456ca0eca7250e425592c8fd66904e257829762b2be4779a49638af3408",
+      "has_post_header_cleanup": false
+    },
+    {
+      "path": "formal/SeparableWitness.lean",
+      "original_archive": "provenance/original/SeparableWitness.lean",
+      "original_sha256": "75b5d48c6f9eee62ceed01b7d40dbc0aa6d58e8687ed39d35e365b8ef97c9198",
+      "after_module_header_sha256": "228576ca787948ef3210eb74817364a1041fea0994d37ad9ccfdf2c9b9ff3f7d",
+      "current_sha256": "fb9b811a327c7975b0190e7bb8159a599cc63c392c6e3ac109970c6c5c93e4b6",
+      "has_post_header_cleanup": true
+    },
+    {
+      "path": "formal/SeparationResults.lean",
+      "original_archive": "provenance/original/SeparationResults.lean",
+      "original_sha256": "c5a4c7c5ca1edc01d07c169d61119c5a85d33718abb368d847eef8c914de5fa2",
+      "after_module_header_sha256": "f7b0ae02529c4c0d756c61dced72b4c7a2546a69a1c97b65d7fe9a3323693333",
+      "current_sha256": "f7b0ae02529c4c0d756c61dced72b4c7a2546a69a1c97b65d7fe9a3323693333",
+      "has_post_header_cleanup": false
+    }
+  ],
+  "post_header_cleanup": [
+    {
+      "path": "formal/SeparableWitness.lean",
+      "unified_diff_after_header_migration": "--- after-header-migration/SeparableWitness.lean\n+++ formal/SeparableWitness.lean\n@@ -17,8 +17,8 @@\n     else if k.val + 1 = j + 1 then b else 1\n   tactic k := if k.val = n - 1 then 1 else if k.val = j then r else 0\n \n-theorem witness_value {n j : \u2115} (hn : 4 \u2264 n) (hj : 1 \u2264 j)\n-    (hjn : j + 1 \u2264 n - 2) (a b : Fin 3) (r : Fin 4) (k : \u2115) (hk : k < n) :\n+theorem witness_value {n j : \u2115} (hn : 4 \u2264 n) (_hj : 1 \u2264 j)\n+    (_hjn : j + 1 \u2264 n - 2) (a b : Fin 3) (r : Fin 4) (k : \u2115) (hk : k < n) :\n     value (witness n j a b r) k =\n       if k = 0 then 2 else if k < j then 2 else if k = j then a\n         else if k = j + 1 then b else 1 := by\n@@ -101,7 +101,7 @@\n     funext k\n     by_cases hr : k = right\n     \u00b7 subst k\n-      simp [replace, i, right, show j + 1 \u2260 j by omega]\n+      simp [replace, i, right]\n     \u00b7 by_cases hl : k = left\n       \u00b7 subst k\n         simp [replace, i, left, right, show j - 1 + 1 = j by omega,\n@@ -112,17 +112,11 @@\n           apply Fin.ext\n           simp only [left]\n           omega\n-        have hright : k.val + 1 \u2260 j + 1 := by\n-          intro h\n-          apply hr\n-          apply Fin.ext\n-          simp only [right]\n-          omega\n         have hvalright : k.val \u2260 j := by\n           intro h\n           apply hr\n           exact Fin.ext h\n-        simp [replace, i, costs, hr, hl, hleft, hright, hvalright]\n+        simp [replace, i, costs, hr, hl, hleft, hvalright]\n   have htacs : (fun k : Fin n => g k.val ((replace s i u).tactic k)) =\n       Function.update tactics i (g j u.2.2) := by\n     funext k\n@@ -145,17 +139,17 @@\n theorem drawAverage_fst (a : Fin 3 \u2192 \u211d) :\n     drawAverage (fun u => a u.1) = mean3 a := by\n   norm_num [drawAverage, Fintype.sum_prod_type, Fin.sum_univ_succ, mean3]\n-  <;> ring\n+  ring\n \n theorem drawAverage_snd (a : Fin 3 \u2192 \u211d) :\n     drawAverage (fun u => a u.2.1) = mean3 a := by\n   norm_num [drawAverage, Fintype.sum_prod_type, Fin.sum_univ_succ, mean3]\n-  <;> ring\n+  ring\n \n theorem drawAverage_third (a : Fin 4 \u2192 \u211d) :\n     drawAverage (fun u => a u.2.2) = mean4 a := by\n   norm_num [drawAverage, Fintype.sum_prod_type, Fin.sum_univ_succ, mean4]\n-  <;> ring\n+  ring\n \n theorem average_rawScore_replace {n j : \u2115} (hn : 4 \u2264 n) (hj : 1 \u2264 j)\n     (hjn : j + 1 \u2264 n - 2) (c : \u211d) (f : ThresholdCosts) (g : TacticCosts)\n"
+    }
+  ],
+  "verification": {
+    "command": [
+      "lake",
+      "--wfail",
+      "build",
+      "CertificateStudy"
+    ],
+    "result": "PASS",
+    "exit_code": 0,
+    "log": "evidence/lint-build-001/build.log",
+    "log_sha256": "a1573a1f80c2a5d8721e32c4ef7716caf8b8696c26a52002e798fa199c87ffab",
+    "result_path": "evidence/lint-build-001/RESULT.json",
+    "warning_count": 0,
+    "scope_boundary": "Aggregate target contains the fourteen copied modules; it does not build agents' new CertificateConstruction or ExponentialObstruction modules."
+  }
+}

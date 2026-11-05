@@ -1,0 +1,102 @@
+ℹ [3138/3185] Replayed FreshDraws
+info: formal/mt/core/FreshDraws.lean:142:0: 'MTChainProof.measured_profile_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:143:0: 'MTChainProof.interior_success_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:144:0: 'MTChainProof.first_success_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:145:0: 'MTChainProof.last_success_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:146:0: 'MTChainProof.uniform_success_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:147:0: 'MTChainProof.strong_left_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:148:0: 'MTChainProof.strong_right_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:149:0: 'MTChainProof.fixed_mode_pair_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:150:0: 'MTChainProof.interior_barrier_creation_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3171/3185] Built SeparableBase (5.0s)
+ℹ [3172/3185] Built SeparableProduct (2.6s)
+info: formal/SeparableProduct.lean:259:0: 'PotentialSeparation.initial_budget_oscillation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3173/3185] Built SeparableSequence (2.5s)
+info: formal/SeparableSequence.lean:143:0: 'PotentialSeparation.gradient_oscillation_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableSequence.lean:144:0: 'PotentialSeparation.floor_budget_quadratic_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableSequence.lean:145:0: 'PotentialSeparation.quadratic_lower_not_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [3174/3185] Building SeparableWitness (2.6s)
+trace: .> LEAN_PATH=/Users/gajaka/projects/mt-chain-linear/.lake/packages/Cli/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/batteries/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/lib/lean /Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /Users/gajaka/projects/mt-chain-linear/research/certificate-existence/formal/SeparableWitness.lean -o /Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/lib/lean/SeparableWitness.olean -i /Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/lib/lean/SeparableWitness.ilean -c /Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/ir/SeparableWitness.c --setup /Users/gajaka/projects/mt-chain-linear/research/certificate-existence/.lake/build/ir/SeparableWitness.setup.json --json
+warning: formal/SeparableWitness.lean:20:46: Variable name `hj` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hj
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: formal/SeparableWitness.lean:21:5: Variable name `hjn` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hjn
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: formal/SeparableWitness.lean:104:31: This simp argument is unused:
+  show j + 1 ≠ j by omega
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [replace, i, right]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/SeparableWitness.lean:125:48: This simp argument is unused:
+  hright
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [replace, i, costs, hr, hl, hleft, hvalright]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: formal/SeparableWitness.lean:148:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: formal/SeparableWitness.lean:148:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/SeparableWitness.lean:153:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: formal/SeparableWitness.lean:153:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: formal/SeparableWitness.lean:158:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: formal/SeparableWitness.lean:158:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: formal/SeparableWitness.lean:227:0: 'PotentialSeparation.witness_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableWitness.lean:228:0: 'PotentialSeparation.witness_replaced_remote' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableWitness.lean:229:0: 'PotentialSeparation.rawScore_replace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableWitness.lean:230:0: 'PotentialSeparation.contrast_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3175/3185] Built NeighborBase (1.7s)
+ℹ [3176/3185] Built SeparationResults (1.8s)
+info: formal/SeparationResults.lean:106:0: 'PotentialSeparation.initial_budget_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:107:0: 'PotentialSeparation.budget_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:108:0: 'PotentialSeparation.family_budget_not_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:109:0: 'PotentialSeparation.process_bounds_and_budget_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:110:0: 'PotentialSeparation.process_theta_and_certificate_omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3177/3185] Built NeighborTransfer (2.2s)
+info: formal/NeighborTransfer.lean:51:0: 'NeighborSeparation.bulkDrift_of_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3178/3185] Built NeighborGauge (2.3s)
+info: formal/NeighborGauge.lean:225:0: 'NeighborSeparation.gauge_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3179/3185] Built NeighborProduct (2.4s)
+info: formal/NeighborProduct.lean:160:0: 'NeighborSeparation.product_budget_bulk' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3180/3185] Built NeighborAsymptotics (2.5s)
+info: formal/NeighborAsymptotics.lean:59:0: 'NeighborSeparation.floor_budget_quadratic_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborAsymptotics.lean:60:0: 'NeighborSeparation.quadratic_lower_not_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3181/3185] Built NeighborDual (4.7s)
+info: formal/NeighborDual.lean:268:0: 'NeighborSeparation.dual_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborDual.lean:269:0: 'NeighborSeparation.dual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborDual.lean:270:0: 'NeighborSeparation.L_abs_le_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborDual.lean:271:0: 'NeighborSeparation.R_abs_le_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3182/3185] Built NeighborWitness (2.0s)
+info: formal/NeighborWitness.lean:256:0: 'NeighborSeparation.witness_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborWitness.lean:257:0: 'NeighborSeparation.rawScore_replace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborWitness.lean:258:0: 'NeighborSeparation.bulk_dual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborWitness.lean:259:0: 'NeighborSeparation.flux_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3183/3185] Built NeighborFlux (1.7s)
+info: formal/NeighborFlux.lean:57:0: 'NeighborSeparation.flux_budget_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3184/3185] Built NeighborResults (1.7s)
+info: formal/NeighborResults.lean:108:0: 'NeighborSeparation.initial_budget_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborResults.lean:109:0: 'NeighborSeparation.budget_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborResults.lean:110:0: 'NeighborSeparation.process_theta_and_certificate_omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+Some required targets logged failures:
+- SeparableWitness
+error: build failed

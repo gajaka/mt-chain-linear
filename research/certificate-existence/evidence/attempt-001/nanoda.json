@@ -1,0 +1,29 @@
+{
+  "export_file_path": "/Users/gajaka/projects/mt-chain-linear/research/certificate-existence/evidence/exports/attempt-001/declarations.ndjson",
+  "nat_extension": true,
+  "num_threads": 1,
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "pp_declars": [
+    "PotentialSeparation.Construction.certificate_exists",
+    "PotentialSeparation.Construction.pointwise_drift",
+    "NeighborSeparation.Embedding.certificate_exists",
+    "NeighborSeparation.Embedding.certificate_budget_eq",
+    "PotentialSeparation.Exponential.certificate_budget_exponential_lower",
+    "PotentialSeparation.Exponential.certificate_budget_floor_lower",
+    "PotentialSeparation.Construction.initial_budget_upper",
+    "CertificateStudy.nonvacuous_separable_separation",
+    "CertificateStudy.nonvacuous_neighbor_separation"
+  ],
+  "pp_to_stdout": true,
+  "print_axioms": true,
+  "print_success_message": true,
+  "string_extension": true,
+  "unknown_pp_declar_hard_error": true,
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "use_stdin": false
+}

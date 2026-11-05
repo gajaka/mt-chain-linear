@@ -1,0 +1,53 @@
+ℹ [3138/3185] Replayed FreshDraws
+info: formal/mt/core/FreshDraws.lean:142:0: 'MTChainProof.measured_profile_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:143:0: 'MTChainProof.interior_success_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:144:0: 'MTChainProof.first_success_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:145:0: 'MTChainProof.last_success_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:146:0: 'MTChainProof.uniform_success_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:147:0: 'MTChainProof.strong_left_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:148:0: 'MTChainProof.strong_right_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:149:0: 'MTChainProof.fixed_mode_pair_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/mt/core/FreshDraws.lean:150:0: 'MTChainProof.interior_barrier_creation_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3149/3185] Replayed SeparableProduct
+info: formal/SeparableProduct.lean:259:0: 'PotentialSeparation.initial_budget_oscillation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3151/3185] Replayed NeighborAsymptotics
+info: formal/NeighborAsymptotics.lean:59:0: 'NeighborSeparation.floor_budget_quadratic_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborAsymptotics.lean:60:0: 'NeighborSeparation.quadratic_lower_not_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3152/3185] Replayed NeighborDual
+info: formal/NeighborDual.lean:268:0: 'NeighborSeparation.dual_average' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborDual.lean:269:0: 'NeighborSeparation.dual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborDual.lean:270:0: 'NeighborSeparation.L_abs_le_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborDual.lean:271:0: 'NeighborSeparation.R_abs_le_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3153/3185] Replayed NeighborWitness
+info: formal/NeighborWitness.lean:256:0: 'NeighborSeparation.witness_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborWitness.lean:257:0: 'NeighborSeparation.rawScore_replace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborWitness.lean:258:0: 'NeighborSeparation.bulk_dual_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborWitness.lean:259:0: 'NeighborSeparation.flux_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3154/3185] Replayed SeparableSequence
+info: formal/SeparableSequence.lean:143:0: 'PotentialSeparation.gradient_oscillation_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableSequence.lean:144:0: 'PotentialSeparation.floor_budget_quadratic_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableSequence.lean:145:0: 'PotentialSeparation.quadratic_lower_not_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3155/3185] Replayed NeighborFlux
+info: formal/NeighborFlux.lean:57:0: 'NeighborSeparation.flux_budget_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3156/3185] Replayed NeighborGauge
+info: formal/NeighborGauge.lean:225:0: 'NeighborSeparation.gauge_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3157/3185] Replayed NeighborProduct
+info: formal/NeighborProduct.lean:160:0: 'NeighborSeparation.product_budget_bulk' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3158/3185] Replayed NeighborTransfer
+info: formal/NeighborTransfer.lean:51:0: 'NeighborSeparation.bulkDrift_of_gauge' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3182/3185] Replayed NeighborResults
+info: formal/NeighborResults.lean:108:0: 'NeighborSeparation.initial_budget_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborResults.lean:109:0: 'NeighborSeparation.budget_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/NeighborResults.lean:110:0: 'NeighborSeparation.process_theta_and_certificate_omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3183/3185] Built SeparableWitness (1.8s)
+info: formal/SeparableWitness.lean:221:0: 'PotentialSeparation.witness_selected' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableWitness.lean:222:0: 'PotentialSeparation.witness_replaced_remote' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableWitness.lean:223:0: 'PotentialSeparation.rawScore_replace' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparableWitness.lean:224:0: 'PotentialSeparation.contrast_gradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3184/3185] Built SeparationResults (1.5s)
+info: formal/SeparationResults.lean:106:0: 'PotentialSeparation.initial_budget_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:107:0: 'PotentialSeparation.budget_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:108:0: 'PotentialSeparation.family_budget_not_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:109:0: 'PotentialSeparation.process_bounds_and_budget_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: formal/SeparationResults.lean:110:0: 'PotentialSeparation.process_theta_and_certificate_omega' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3185 jobs).
