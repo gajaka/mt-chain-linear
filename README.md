@@ -17,6 +17,17 @@ import closure remains independent of PPGraph. The project also restores the
 original MT, probability, hazard and observable-subalgebra framework from
 `../ppg-lean` as a local library copy. No scientific novelty is claimed here.
 
+For an expert review of the mathematical claim, read the process and bounds
+below, [the core report](REPORT.md), and
+[the certificate-existence study](research/certificate-existence/README.md).
+`vendor/` and `framework/` are optional context, outside that claim's proof
+closure. They need not be built to review or build the standalone chain.
+
+The separate [Crew applicability protocol](experiments/crew-mt-applicability/PROTOCOL.md)
+is awaiting user review. Its first gate asks whether the pinned Crew code has
+an actual process satisfying the original MT hypotheses. No new Crew gate,
+integration or comparison has been executed under that protocol.
+
 ## Original framework in the active project
 
 `vendor/ppg-lean` contains the original library, copied rather than moved from

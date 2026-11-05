@@ -1,0 +1,31 @@
+{
+  "status": "REGISTERED_BEFORE_SOURCE_GATE",
+  "subject_revision": "909e0fc1938261df9c45fd74e86404abf22b5902",
+  "prior_protocol_sha256": "eca8c128acd98d6ec3b7bf29f15e7f7223f6f9670e7fba6a1f1622504a8689c3",
+  "root": "src/kiro_crew",
+  "subject": [
+    "src/kiro_crew/taskq",
+    "src/kiro_crew/cron.py",
+    "src/kiro_crew/cron_service"
+  ],
+  "scope": "Listed lifecycle plus direct production callers/callees; broader inventory locates calls but does not expand subject.",
+  "groups": {
+    "random_sources": "\\brandom\\s*\\.|\\bsecrets\\s*\\.|\\bos\\s*\\.\\s*urandom\\b|\\b(numpy|np)\\s*\\.\\s*random\\b|\\b(import|from)\\s+(random|secrets|numpy|tenacity|backoff)\\b",
+    "retry_mechanisms": "\\b(jitter|backoff|tenacity|retry|retries|retrying)\\b",
+    "lifecycle_decisions": "\\b(lease|claim|expire|expiry|reclaim|reschedule|resume|resubmit|cancel|dispatch)\\w*\\b"
+  },
+  "search_options": [
+    "rg",
+    "--line-number",
+    "--ignore-case",
+    "--glob",
+    "*.py"
+  ],
+  "alias_followup": "Trace imports/aliases and call sites of hits using literal-name rg; log every adaptive query and reason. Empty substring matches are not a proof of absence.",
+  "libraries": "Count stochastic sources in libraries actually called on an in-scope production path. Inspect locally installed or vendored source read-only, record version and hashes. No dependency installation or execution. Missing source or unresolved call path is UNKNOWN, not determinism. Inspect stdlib RNG where needed; it does not establish ideal IID.",
+  "production_vs_external": "Classify repeat decision separately: internal code; external human; external AI; hybrid/unknown. Only internally triggered reachable repeat is a candidate; external or unresolved controls do not pass.",
+  "excluded": "Tests/fixtures, generated examples, earlier random harness, identity/token generation without stochastic repair, unrelated subsystems, external restart decisions. Retain hit records and reason for exclusions.",
+  "candidate_order": "At most three reachable stochastic lifecycle candidates, sorted by random-draw source path and line, including reached library paths; one mechanism is one candidate, not each call-site occurrence.",
+  "timing": "Start before source identity validation/inspection; UTC and monotonic clock; hard source gate deadline start+1800s, final report separately recorded. No experiment or theorem run.",
+  "stop": "NO_MATCH or UNKNOWN ends study; no new subject/revision/external random repair fallback."
+}
