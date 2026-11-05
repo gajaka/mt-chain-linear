@@ -1,0 +1,326 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3040" height="3730" viewBox="0 0 3040 3730">
+<title>Proof-Preserving Graph Theory</title>
+<desc>Scientific map of certificates, proof-preserving graphs, BDD, Lovász Local Lemma, Moser–Tardos witness trees, the completed random-initialization expectation bound, and the MT repair bridge with a successful build confirmed by the user. Dotted links explicitly require model interpretation or core preservation.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,4 L0,8" fill="none" stroke="black" stroke-width="1.5"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="1520.0" y="87" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="61" font-weight="bold" font-style="normal" fill="black">Proof-Preserving Graph Theory</text>
+<text x="1520.0" y="141" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="30" font-weight="normal" font-style="normal" fill="black">Certificates, local dependence, expected work and reachable repair</text>
+<text x="1520.0" y="191" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" font-weight="normal" font-style="normal" fill="black">Solid: formal results under their hypotheses     ·     Dotted: model interpretation and preservation conditions</text>
+<text x="1520.0" y="230" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="italic" fill="black">The original certificates define both the failed constraints and the meaning of a repaired state.</text>
+<text x="85" y="270" text-anchor="start" font-family="Georgia, Times New Roman, serif" font-size="25" font-weight="bold" font-style="normal" fill="black">CERTIFICATES AND PROOF-PRESERVING STRUCTURE</text>
+<path d="M85,284 H2860" stroke="black" stroke-width="0.8"/>
+<text x="85" y="1148" text-anchor="start" font-family="Georgia, Times New Roman, serif" font-size="25" font-weight="bold" font-style="normal" fill="black">LOCALITY, EXISTENCE AND RESAMPLING</text>
+<path d="M85,1162 H2860" stroke="black" stroke-width="0.8"/>
+<text x="85" y="1800" text-anchor="start" font-family="Georgia, Times New Roman, serif" font-size="25" font-weight="bold" font-style="normal" fill="black">WITNESS-TREE COUNTING AND EXPECTATION</text>
+<path d="M85,1814 H2860" stroke="black" stroke-width="0.8"/>
+<text x="85" y="3138" text-anchor="start" font-family="Georgia, Times New Roman, serif" font-size="25" font-weight="bold" font-style="normal" fill="black">FROM FINITE EXPECTATION TO ABSTRACT REPAIR  ·  BUILD CONFIRMED</text>
+<path d="M85,3152 H2860" stroke="black" stroke-width="0.8"/>
+<path d="M 405,315 L 1092,315" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1125,315 L 1812,315" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1845,315 L 2532,315" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1845,845 L 2532,845" fill="none" stroke="black" stroke-width="1.65" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 390,477 L 390,564" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1110,477 L 1110,564" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1830,477 L 1830,564" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,509 L 2550,564" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 390,774 L 390,829" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1110,774 L 1110,829" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1830,774 L 1830,829" fill="none" stroke="black" stroke-width="1.65" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 2550,1039 L 2940,1039 L 2940,1053 L 2940,275 L 2550,275 L 2550,299" fill="none" stroke="black" stroke-width="1.65" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 1830,1039 L 1830,1090 L 1110,1090 L 1110,1189" fill="none" stroke="black" stroke-width="1.65" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 1095,1205 L 408,1205" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1125,1205 L 1812,1205" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1110,1399 L 1110,1440 L 2550,1440 L 2910,1440 L 2910,1180 L 2550,1180 L 2550,1189" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 390,1399 L 390,1474" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 390,1399 L 390,1460 L 1110,1460 L 1110,1474" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1830,1399 L 1830,1474" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,1399 L 2550,1474" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1830,1684 L 2190,1684 L 2190,1700 L 2980,1700 L 2980,845 L 2568,845" fill="none" stroke="black" stroke-width="1.65" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 390,1684 L 28,1684 L 28,1695 L 28,1108 L 2870,1108 L 2870,845 L 2568,845" fill="none" stroke="black" stroke-width="1.65" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<path d="M 2550,1684 L 2550,1740 L 390,1740 L 390,1844" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,1684 L 2550,1844" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 405,1860 L 1092,1860" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 390,2054 L 390,2110 L 1830,2110 L 2190,2110 L 2190,1815 L 1830,1815 L 1830,1844" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 390,2054 L 390,2154" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 405,2170 L 1092,2170" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1125,2170 L 1812,2170" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1830,2054 L 1830,2154" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1110,2054 L 1110,2100 L 1830,2100 L 1830,2154" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1110,2364 L 1110,2430 L 2550,2430 L 2880,2430 L 2880,2140 L 2550,2140 L 2550,2154" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,2054 L 2900,2054 L 2900,2070 L 2900,2445 L 1110,2445 L 1110,2464" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,2054 L 2900,2054 L 2900,2070 L 2900,2457 L 390,2457 L 390,2464" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1830,2364 L 1830,2464" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,2364 L 2550,2410 L 1830,2410 L 1830,2464" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,2364 L 2550,2464" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 405,2480 L 1092,2480" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 390,2674 L 390,2760 L 1520,2760 L 1520,2809" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1110,2674 L 1110,2775 L 1520,2775 L 1520,2809" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1830,2674 L 1830,2790 L 1520,2790 L 1520,2809" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,2674 L 2550,2805 L 1520,2805 L 1520,2809" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1520,3052 L 1520,3080 L 390,3080 L 390,3184" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 405,3200 L 1092,3200" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1125,3200 L 1812,3200" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 1845,3200 L 2532,3200" fill="none" stroke="black" stroke-width="1.65" marker-end="url(#arrow)"/>
+<path d="M 2550,3394 L 3000,3394 L 3000,3410 L 3000,845 L 2870,845 L 2568,845" fill="none" stroke="black" stroke-width="1.65" stroke-dasharray="2 7" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="51.0" y="332" width="678" height="143" fill="white"/>
+<circle cx="390" cy="315" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="363" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Certificate predicates</text>
+<text x="390" y="405" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">C : D → Θ → Prop</text>
+<text x="390" y="437" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">CertFamily F collects monotone certificates</text>
+<text x="390" y="469" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Certificate · CertFamily · Parametric</text>
+<rect x="771.0" y="332" width="678" height="143" fill="white"/>
+<circle cx="1110" cy="315" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="363" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Certification and refinement</text>
+<text x="1110" y="405" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Cert(F,d,θ) := ∀ C ∈ F, C(d,θ)</text>
+<text x="1110" y="437" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">θ₁ ≤ θ₂ ⇒ Cert(F,d,θ₁) → Cert(F,d,θ₂)</text>
+<text x="1110" y="469" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">fully_certified · master_refinement</text>
+<rect x="1491.0" y="332" width="678" height="143" fill="white"/>
+<circle cx="1830" cy="315" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="363" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Certificates define the system</text>
+<text x="1830" y="405" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">certSpec(F) := fully_certified(F)</text>
+<text x="1830" y="437" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">System failure is failure of these certificates</text>
+<text x="1830" y="469" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">certSpec · certSpec_broken_iff</text>
+<rect x="2211.0" y="332" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="315" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="363" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Certified repair cycle</text>
+<text x="2550" y="405" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Restore the target; preserve certified levels</text>
+<text x="2550" y="437" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Requires broken target + valid_cert_repair</text>
+<text x="2550" y="469" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">With a new canonical level: θc(new) ≤ θ*</text>
+<text x="2550" y="501" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">complete_repair_cycle · AssessmentBridge</text>
+<rect x="51.0" y="597" width="678" height="175" fill="white"/>
+<circle cx="390" cy="580" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="628" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Canonical specification</text>
+<text x="390" y="670" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Cert(F,d,θ) ⇔ θc ≤ θ</text>
+<text x="390" y="702" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Requires an existing canonical level</text>
+<text x="390" y="734" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Infimum: nonempty certified set + closure</text>
+<text x="390" y="766" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Parametric</text>
+<rect x="771.0" y="597" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="580" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="628" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Proof-preserving graphs</text>
+<text x="1110" y="670" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">The certified specification subgraph is pp_valid</text>
+<text x="1110" y="702" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Invariant endpoints and paths are preserved</text>
+<text x="1110" y="734" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Certification propagates along refinement edges</text>
+<text x="1110" y="766" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">PPGraph · certified_subgraph_pp_valid</text>
+<rect x="1491.0" y="597" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="580" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="628" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Blocking and assessment</text>
+<text x="1830" y="670" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">B(d,θ) = {C ∈ F : ¬C(d,θ)}</text>
+<text x="1830" y="702" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">B(d,θ) = ∅ ⇔ Cert(F,d,θ)</text>
+<text x="1830" y="734" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">The same predicates identify the failed target</text>
+<text x="1830" y="766" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Blocking · SelfAssessment · AssessmentBridge</text>
+<rect x="2211.0" y="597" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="580" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="628" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">The certified region grows</text>
+<text x="2550" y="670" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">CertLevels(d) ⊊ CertLevels(R(d,θ*))</text>
+<text x="2550" y="702" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Target restoration + core preservation</text>
+<text x="2550" y="734" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">The repaired target has no blocking certificates</text>
+<text x="2550" y="766" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">cert_repair_strict_growth · repair_removes_all_blockers</text>
+<rect x="51.0" y="862" width="678" height="175" fill="white"/>
+<circle cx="390" cy="845" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="893" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Parametric certificate models</text>
+<text x="390" y="935" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Ordered thresholds and observables</text>
+<text x="390" y="967" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Pointwise complementary slackness</text>
+<text x="390" y="999" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Model assumptions remain explicit</text>
+<text x="390" y="1031" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Parametric · ComplementarySlackness</text>
+<rect x="771.0" y="862" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="845" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="893" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Representation and quotient</text>
+<text x="1110" y="935" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Refinement morphisms; compatible configurations</text>
+<text x="1110" y="967" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Equal certificate behaviour → equivalence classes</text>
+<text x="1110" y="999" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Strict edge projection requires separation</text>
+<text x="1110" y="1031" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">RR · Meta · Categorical · Quotient · Selection</text>
+<rect x="1491.0" y="862" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="845" r="7.5" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="893" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="bold" font-style="normal" fill="black">Certificate failures as bad events</text>
+<text x="1830" y="935" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">A<tspan baseline-shift="sub" font-size="72%">c</tspan> = {σ : ¬C<tspan baseline-shift="sub" font-size="72%">c</tspan>(data(σ),θ*)}</text>
+<text x="1830" y="967" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Require coverage, locality and measurability</text>
+<text x="1830" y="999" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">footprint(c) = the variables used by C<tspan baseline-shift="sub" font-size="72%">c</tspan></text>
+<text x="1830" y="1031" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">MODEL · identify certificates with MT constraints</text>
+<rect x="2211.0" y="862" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="845" r="7.5" fill="white" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="893" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Return to the same certificates</text>
+<text x="2550" y="935" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Avoid all A<tspan baseline-shift="sub" font-size="72%">c</tspan> ⇒ Cert(F,data(σ),θ*)</text>
+<text x="2550" y="967" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Preserve every previously certified level</text>
+<text x="2550" y="999" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Together these give a valid certificate repair</text>
+<text x="2550" y="1031" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">MODEL · interpretation + coverage + core preservation</text>
+<rect x="51.0" y="1222" width="678" height="175" fill="white"/>
+<circle cx="390" cy="1205" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="1253" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="bold" font-style="normal" fill="black">Blocking dependency decomposition</text>
+<text x="390" y="1295" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Components within the selected certificate set B</text>
+<text x="390" y="1327" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Different components have disjoint footprints</text>
+<text x="390" y="1359" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Component feasibility uses the same global q</text>
+<text x="390" y="1391" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">BDD · Probabilistic</text>
+<rect x="771.0" y="1222" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="1205" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="1253" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Variables and local dependence</text>
+<text x="1110" y="1295" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">α ∼ β when their footprints overlap</text>
+<text x="1110" y="1327" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Γ(α): neighbours; Γ⁺(α): also includes α</text>
+<text x="1110" y="1359" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Local predicates on product variable spaces</text>
+<text x="1110" y="1391" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Probabilistic · MTProcess · Witness</text>
+<rect x="1491.0" y="1222" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="1205" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="1253" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Lovász Local Lemma</text>
+<text x="1830" y="1295" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">0 ≤ q(α) &lt; 1</text>
+<text x="1830" y="1327" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">p(α) ≤ q(α) ∏<tspan baseline-shift="sub" font-size="72%">β∈Γ(α)</tspan> (1 − q(β))</text>
+<text x="1830" y="1359" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Measurability + stated independence hypotheses</text>
+<text x="1830" y="1391" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">LLL · lopsided and variable-space variants</text>
+<rect x="2211.0" y="1222" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="1205" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="1253" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Moser–Tardos resampling</text>
+<text x="2550" y="1295" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Choose a violated event; resample its footprint</text>
+<text x="2550" y="1327" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Disjoint event values are preserved</text>
+<text x="2550" y="1359" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">New violations overlap the resampled event</text>
+<text x="2550" y="1391" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">MoserTardos · Process</text>
+<rect x="51.0" y="1507" width="678" height="175" fill="white"/>
+<circle cx="390" cy="1490" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="1538" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="bold" font-style="normal" fill="black">Local repair and noninterference</text>
+<text x="390" y="1580" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Component-supported updates preserve other parts</text>
+<text x="390" y="1612" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">MT locality requires StaysWithinComponent</text>
+<text x="390" y="1644" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Conclusion: other components of the selected B</text>
+<text x="390" y="1676" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">BDD · BDDMoserTardos</text>
+<rect x="771.0" y="1507" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="1490" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="1538" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">BDD cost and spectral structure</text>
+<text x="1110" y="1580" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Local optimum splits over disjoint components</text>
+<text x="1110" y="1612" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">(MMᵀ)ᵢⱼ = |Vars(i) ∩ Vars(j)|</text>
+<text x="1110" y="1644" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">#components = dim ker L</text>
+<text x="1110" y="1676" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">BDDCost · BDDMatrix · BDDLaplacian · BDDCount</text>
+<rect x="1491.0" y="1507" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="1490" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="1538" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="bold" font-style="normal" fill="black">Positive probability and existence</text>
+<text x="1830" y="1580" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Pr[all constraints pass] ≥ ∏α (1 − q(α)) &gt; 0</text>
+<text x="1830" y="1612" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">A good state exists</text>
+<text x="1830" y="1644" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Lopsided LLL; variable-space boundary-ray lemma</text>
+<text x="1830" y="1676" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">lll_good_state_exists · LopsidedLLL · VariableLLL</text>
+<rect x="2211.0" y="1507" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="1490" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="1538" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="bold" font-style="normal" fill="black">Product tables and initialization</text>
+<text x="2550" y="1580" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Independent table coordinates (n,v)</text>
+<text x="2550" y="1612" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Slot 0 supplies the random initial state</text>
+<text x="2550" y="1644" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Resampling reads counter + 1</text>
+<text x="2550" y="1676" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">LogSpace · RandomInitialization · RandomTrajectory</text>
+<rect x="51.0" y="1877" width="678" height="175" fill="white"/>
+<circle cx="390" cy="1860" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="1908" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Backward witness trees</text>
+<text x="390" y="1950" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">τC(P,C,t) = τBuild(P,C,t,t−1); scan down to 1</text>
+<text x="390" y="1982" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Properness and same-depth independence</text>
+<text x="390" y="2014" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">shiftedC(s+1) = realC(s) includes real step 0</text>
+<text x="390" y="2046" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Growing · CheckBirth · CheckOrder</text>
+<rect x="771.0" y="1877" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="1860" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="1908" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Trajectory → witness check</text>
+<text x="1110" y="1950" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">localCount = the corresponding trajectory counter</text>
+<text x="1110" y="1982" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">The reconstructed state agrees on each footprint</text>
+<text x="1110" y="2014" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">RunningUntil + slot-zero initialization</text>
+<text x="1110" y="2046" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Correspondence · τCheck_holds_of_real_trajectory</text>
+<rect x="1491.0" y="1877" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="1860" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="1908" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Fixed-tree product probability</text>
+<text x="1830" y="1950" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Pr[τCheck(T)] = ∏<tspan baseline-shift="sub" font-size="72%">w∈T</tspan> μ(A<tspan baseline-shift="sub" font-size="72%">label(w)</tspan>)</text>
+<text x="1830" y="1982" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Distinct vertices use disjoint coordinate blocks</text>
+<text x="1830" y="2014" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Fixed T with SameDepthIndependent</text>
+<text x="1830" y="2046" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Probability · ProbabilityGeneral</text>
+<rect x="2211.0" y="1877" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="1860" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="1908" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Distinct resampling witnesses</text>
+<text x="2550" y="1950" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Each active resampling has a canonical witness</text>
+<text x="2550" y="1982" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Same-label times give distinct witness shapes</text>
+<text x="2550" y="2014" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Stopped counts equal counts of distinct witnesses</text>
+<text x="2550" y="2046" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">InjectivityBridge · ResamplingCount</text>
+<rect x="51.0" y="2187" width="678" height="175" fill="white"/>
+<circle cx="390" cy="2170" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="2218" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Address ↔ recursive trees</text>
+<text x="390" y="2260" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">GrowingTree ↔ WTree; label and weight transport</text>
+<text x="390" y="2292" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Address and recursive checks agree</text>
+<text x="390" y="2324" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Direct embedding preserves the recursive check</text>
+<text x="390" y="2356" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">RealTree · CheckBridge · ToGrowingTreeCheckBridge</text>
+<rect x="771.0" y="2187" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="2170" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="2218" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Canonical shapes and counts</text>
+<text x="1110" y="2260" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Proper trees: weight and local counts preserved</text>
+<text x="1110" y="2292" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Their check depends only on the canonical shape</text>
+<text x="1110" y="2324" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">WTree is countable; representatives are enumerated</text>
+<text x="1110" y="2356" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Canonical · CheckShape · WTreeCountable</text>
+<rect x="1491.0" y="2187" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="2170" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="2218" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="bold" font-style="normal" fill="black">Probability of a shape occurring</text>
+<text x="1830" y="2260" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">occα(U) is measurable</text>
+<text x="1830" y="2292" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Transfer to one fixed realized tree representative</text>
+<text x="1830" y="2324" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Pr[occα(U)] ≤ p[U], where p[U] = ∏<tspan baseline-shift="sub" font-size="72%">w∈U</tspan> p(label(w))</text>
+<text x="1830" y="2356" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Occurrence · OccurrenceProbability</text>
+<rect x="2211.0" y="2187" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="2170" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="2218" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="29" font-weight="bold" font-style="normal" fill="black">Tree enumeration = recursive weight</text>
+<text x="2550" y="2260" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">𝒯(D,α) := wtreesUpTo(P,D,α)</text>
+<text x="2550" y="2292" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Σ<tspan baseline-shift="sub" font-size="72%">U∈𝒯(D,α)</tspan> p[U] = w(D,α)</text>
+<text x="2550" y="2324" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">w(D+1,α) = p(α) ∏<tspan baseline-shift="sub" font-size="72%">β∈Γ⁺(α)</tspan> (1+w(D,β))</text>
+<text x="2550" y="2356" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">WeightSum · sum_wtreesUpTo_weight</text>
+<rect x="51.0" y="2497" width="678" height="175" fill="white"/>
+<circle cx="390" cy="2480" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="2528" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Stopped time and event counts</text>
+<text x="390" y="2570" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">TLOG = Σ<tspan baseline-shift="sub" font-size="72%">t≥0</tspan> 1<tspan baseline-shift="sub" font-size="72%">RunningUntil(t+1)</tspan> = Σα Nα</text>
+<text x="390" y="2602" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">E[TLOG] = Σ<tspan baseline-shift="sub" font-size="72%">t≥0</tspan> Pr[RunningUntil(t+1)]</text>
+<text x="390" y="2634" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">All expectations use the slot-zero initial law</text>
+<text x="390" y="2666" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">ResamplingCount · RandomInitExpectation</text>
+<rect x="771.0" y="2497" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="2480" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="2528" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Time → shapes → expectation</text>
+<text x="1110" y="2570" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Nα(ω) = Σ<tspan baseline-shift="sub" font-size="72%">U</tspan> 1<tspan baseline-shift="sub" font-size="72%">occα(U)</tspan>(ω)</text>
+<text x="1110" y="2602" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">E[Nα] = Σ<tspan baseline-shift="sub" font-size="72%">U</tspan> Pr[occα(U)]</text>
+<text x="1110" y="2634" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Pointwise injectivity; then countable integration</text>
+<text x="1110" y="2666" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">OccurrenceCounting · Tonelli</text>
+<rect x="1491.0" y="2497" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="2480" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="2528" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Sum over the canonical family</text>
+<text x="1830" y="2570" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">𝒯(α) := ⋃<tspan baseline-shift="sub" font-size="72%">D</tspan> 𝒯(D,α)</text>
+<text x="1830" y="2602" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Occurrences outside 𝒯(α) are impossible</text>
+<text x="1830" y="2634" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Σ<tspan baseline-shift="sub" font-size="72%">U∈𝒯(α)</tspan> p[U] = sup<tspan baseline-shift="sub" font-size="72%">D</tspan> w(D,α)</text>
+<text x="1830" y="2666" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">WitnessFamily · OccurrenceExpectation</text>
+<rect x="2211.0" y="2497" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="2480" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="2528" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Algebraic MT budget</text>
+<text x="2550" y="2570" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">p(α) ≤ x(α)</text>
+<text x="2550" y="2602" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">p(α) ∏<tspan baseline-shift="sub" font-size="72%">β∈Γ⁺(α)</tspan> (1+x(β)) ≤ x(α)</text>
+<text x="2550" y="2634" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">w(D,α) ≤ x(α)</text>
+<text x="2550" y="2666" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Convergence · mtWeight_le · sum_mtWeight_le</text>
+<rect x="130.0" y="2842" width="2780" height="208" fill="white"/>
+<circle cx="1520" cy="2825" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1520" y="2873" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="40" font-weight="bold" font-style="normal" fill="black">Expected total resampling work</text>
+<text x="1520" y="2915" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="38" font-weight="normal" font-style="normal" fill="black">E[TLOG] = Σα E[Nα] = Σα Σ<tspan baseline-shift="sub" font-size="72%">U</tspan> Pr[occα(U)] ≤ Σα Σ<tspan baseline-shift="sub" font-size="72%">U∈𝒯(α)</tspan> p[U] ≤ Σα x(α) &lt; ∞</text>
+<text x="1520" y="2958" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">randomInitETLog_le_sum · randomInitETLog_lt_top</text>
+<text x="1520" y="3001" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Witness-tree counting, product probability and Tonelli</text>
+<text x="1520" y="3044" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" font-weight="normal" font-style="italic" fill="black">USER BUILD CONFIRMED · finite variables and events; measurable bad events; μ(Aα) ≤ p(α); MT budget conditions</text>
+<rect x="51.0" y="3217" width="678" height="175" fill="white"/>
+<circle cx="390" cy="3200" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="390" y="3248" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Almost-sure termination</text>
+<text x="390" y="3290" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">E[TLOG] &lt; ∞ ⇒ TLOG &lt; ∞ almost surely</text>
+<text x="390" y="3322" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">TLOG &lt; ∞ ⇔ the trajectory reaches a good state</text>
+<text x="390" y="3354" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">For the random initialization law</text>
+<text x="390" y="3386" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Termination · ae_randomInit_exists_good</text>
+<rect x="771.0" y="3217" width="678" height="175" fill="white"/>
+<circle cx="1110" cy="3200" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1110" y="3248" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">A good target exists</text>
+<text x="1110" y="3290" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">The termination event has probability 1</text>
+<text x="1110" y="3322" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">A probability-one event is nonempty</text>
+<text x="1110" y="3354" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">∃ z, MTGood(P,z)</text>
+<text x="1110" y="3386" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">Termination · exists_MTGood_of_mt_budget</text>
+<rect x="1491.0" y="3217" width="678" height="175" fill="white"/>
+<circle cx="1830" cy="3200" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="1830" y="3248" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">Reachability from every state</text>
+<text x="1830" y="3290" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Fix good z and the constant table ω(n,v) = z(v)</text>
+<text x="1830" y="3322" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">Every active step reduces coordinate mismatches</text>
+<text x="1830" y="3354" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">∀ s, ∃ T ≤ |V|, MTGood(P,randTraj(P,s,ω,T))</text>
+<text x="1830" y="3386" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">ConstantLog · existential reachability</text>
+<rect x="2211.0" y="3217" width="678" height="175" fill="white"/>
+<circle cx="2550" cy="3200" r="7.5" fill="black" stroke="black" stroke-width="1.6"/>
+<text x="2550" y="3248" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="32" font-weight="bold" font-style="normal" fill="black">MT instantiates abstract repair</text>
+<text x="2550" y="3290" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">reach(s,w) := ∃ ω,T, randTraj(P,s,ω,T) = w</text>
+<text x="2550" y="3322" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">invariant := MTGood; edges remain a parameter</text>
+<text x="2550" y="3354" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="26" font-weight="normal" font-style="normal" fill="black">isolated(s) ⇒ repair_possible(s)</text>
+<text x="2550" y="3386" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="21" font-weight="normal" font-style="italic" fill="black">RepairBridge · globally_repairable</text>
+<text x="1520.0" y="3488" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" font-weight="normal" font-style="normal" fill="black">q is the Local Lemma parameter; x is the MT resampling budget. The expected-work theorem uses finite V and finite nonempty event labels.</text>
+<text x="1520.0" y="3530" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" font-weight="normal" font-style="normal" fill="black">The constant table proves existential reachability from each state. It does not assert almost-sure termination from every fixed state.</text>
+<text x="1520.0" y="3572" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" font-weight="normal" font-style="normal" fill="black">A certified repair additionally needs certificate coverage and core preservation; route edges remain a separate condition.</text>
+<text x="1520.0" y="3614" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="24" font-weight="normal" font-style="normal" fill="black">The completed expectation argument is witness-tree counting. Entropy compression is a separate, unimplemented route.</text>
+<text x="1520.0" y="3670" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="22" font-weight="normal" font-style="normal" fill="black">2 October 2026 · Lean 2db91a5 + local bridge code · E[TLOG] and MT → RepairGraph: successful build confirmed by the user</text>
+</svg>

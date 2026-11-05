@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "scope": "Copied original framework: source identity, Lean build, whole-library reported axioms",
+  "nanoda_run": false,
+  "crew_instantiation": false,
+  "theta_transfer": false,
+  "audit_driver_sha256": "4097f487449d52c42a76f57c2acb885b902507ebc8b494f2af708779c9a0fe44",
+  "source_before": {
+    "status": "PASS",
+    "source_commit": "60151677e58704ce856c05a572904d681fd959f6",
+    "files": 228,
+    "proof_modules": 208,
+    "full_import_closure": 207,
+    "categories": {
+      "MT": 44,
+      "MT_probability": 6,
+      "repair_hazard_observable": 8,
+      "finite_probability_and_drift": 14,
+      "HLS_probability": 14
+    },
+    "embedded_inputs": [
+      "artifacts/luces/local_plan.json",
+      "artifacts/luces/local_plan_kernel_inputs.json"
+    ],
+    "compared_original": null,
+    "source_manifest_sha256": "1fd0b9bde1b1f4a8606eb572b631ffb337b527a305fae3dab8506142eb60ece8",
+    "scope": "Source identity/import/dependency checks; not a Lean or Nanoda run"
+  },
+  "representative_root_axioms": {
+    "randomInitETLog_le_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FiniteTable.nextDraw_fresh": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "FiniteResampling.randomInitETLog_eq_rational_sum_of_equations": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepairSemanticHazard.checkExactCommit_iff_fullContract": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepairSemanticHazard.checkedExactStep_preserves": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepairObservable.projection_stable_of_factor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepairObservable.obsEq_runWord": [
+      "Quot.sound",
+      "propext"
+    ],
+    "RepairObservableKernel.kernelClosed_iff_fiberLocal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "RepairObservableKernel.reduced_survival": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "canonical_modules": 206,
+  "facades": 2,
+  "project_declarations": 5835,
+  "explicit_theorems": 2054,
+  "generated_theorems": 1761,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "project_owned_axioms": 0,
+  "source_after": {
+    "status": "PASS",
+    "source_commit": "60151677e58704ce856c05a572904d681fd959f6",
+    "files": 228,
+    "proof_modules": 208,
+    "full_import_closure": 207,
+    "categories": {
+      "MT": 44,
+      "MT_probability": 6,
+      "repair_hazard_observable": 8,
+      "finite_probability_and_drift": 14,
+      "HLS_probability": 14
+    },
+    "embedded_inputs": [
+      "artifacts/luces/local_plan.json",
+      "artifacts/luces/local_plan_kernel_inputs.json"
+    ],
+    "compared_original": null,
+    "source_manifest_sha256": "1fd0b9bde1b1f4a8606eb572b631ffb337b527a305fae3dab8506142eb60ece8",
+    "scope": "Source identity/import/dependency checks; not a Lean or Nanoda run"
+  },
+  "original_audit_tool_sha256": "a5724e0d785228856590132c5d46a0f3f3c760d822ce9040ca5a31f3c3c7b459",
+  "bound_inputs_sha256": "b4ce932fec5d234a433d6836929c6dbbd5e42f6a6f2efb23de12c2d4441e4618",
+  "resolved_local_modules": 208,
+  "resolution_sha256": "20b4ea6697a25b57c1e64a98231602a9cc8ba78ec0e66a7d74d0f1ffe6212103",
+  "declarations_sha256": "869ade795f9ee50cb962b3027ee3286f1913590ee218aad879e318a12d24f50d",
+  "commands": [
+    {
+      "name": "build",
+      "argv": [
+        "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+        "build",
+        "PPGraph",
+        "FrameworkAudit"
+      ],
+      "exit_code": 0,
+      "seconds": 1.534775458,
+      "log_sha256": "d25df09af2442e67f4e892e3a651d44f338dbeb0a6819b62b4c8d02f9b654b4a"
+    },
+    {
+      "name": "representative-roots",
+      "argv": [
+        "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+        "env",
+        "lean",
+        "FrameworkAudit.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.547076167,
+      "log_sha256": "add5057fdcbbcf2b19c1abdd48b253045e799ef2852e24b0fcd59def42654991"
+    },
+    {
+      "name": "resolution",
+      "argv": [
+        "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear/evidence/framework/attempt-002/resolution.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 3.0645495,
+      "log_sha256": "7bd41e1c7e0d4ebbb5d9afb98a7633798668d95b1f884e131dcf8f1e12e1837c"
+    },
+    {
+      "name": "embedded-input-0",
+      "argv": [
+        "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear/vendor/ppg-lean/PPGraph/Integration/LucesCertificateRepair.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.6305570419999995,
+      "log_sha256": "35961ed949f69e22da6bdc3627d8150fda607e4260e1609112dfcdf7e9897838"
+    },
+    {
+      "name": "embedded-input-1",
+      "argv": [
+        "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear/vendor/ppg-lean/PPGraph/Integration/LucesObservedInputs.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 2.6137074169999988,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "inventory",
+      "argv": [
+        "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear/evidence/framework/attempt-002/inventory.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.049859750000001,
+      "log_sha256": "0ae77ee751fb5f110f4980a91f18a9544cfb45b1ca6a371496a0f39133d91765"
+    },
+    {
+      "name": "axioms",
+      "argv": [
+        "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear/evidence/framework/attempt-002/axioms.lean"
+      ],
+      "exit_code": 0,
+      "seconds": 4.516116916999998,
+      "log_sha256": "1d89d539d18254fcf161b9c076cec8ec54124415e53d24ec101c0982038e6eb4"
+    }
+  ],
+  "seconds": 23.996778209000002
+}

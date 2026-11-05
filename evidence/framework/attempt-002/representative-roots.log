@@ -1,0 +1,93 @@
+@MTProcess : {V : Type} → VarSpaces V → Type → Type
+@FiniteResampling.Problem : {V : Type} → (V → Type) → Type → Type
+@FiniteResampling.Policy : {V : Type} → (V → Type) → Type
+@FiniteResampling.firstPolicy : {V : Type} →
+  {D : V → Type} →
+    [inst : (v : V) → Fintype (D v)] →
+      [(v : V) → MeasurableSpace (D v)] →
+        {I : Type} →
+          [Fintype I] →
+            [Nonempty I] →
+              (Q : FiniteResampling.Marginals D) →
+                FiniteResampling.Valid Q → FiniteResampling.Problem D I → FiniteResampling.Policy D
+@randomInitETLog_le_sum : ∀ {V : Type} [inst : DecidableEq V] {S : VarSpaces V} {ι : Type} [inst_1 : Fintype ι]
+  [inst_2 : DecidableEq ι] [inst_3 : Nonempty ι] [inst_4 : Fintype V] (P : MTProcess S ι),
+  (∀ (i : ι), MeasurableSet (P.bad i)) →
+    ∀ (p x : ι → NNReal),
+      (∀ (i : ι), (MeasureTheory.Measure.pi fun v => S.measure v) (P.bad i) ≤ ↑(p i)) →
+        (∀ (α : ι), p α ≤ x α) →
+          (∀ (α : ι), p α * ∏ β ∈ plusNeighbors P α, (1 + x β) ≤ x α) → randomInitETLog P ≤ ↑(∑ α, x α)
+'randomInitETLog_le_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteTable.nextDraw_fresh : ∀ {V : Type} [inst : Fintype V] [inst_1 : DecidableEq V] {S : VarSpaces V}
+  [inst_2 : (v : V) → Fintype (S.space v)] [inst_3 : (v : V) → DecidableEq (S.space v)]
+  [inst_4 : ∀ (v : V), MeasurableSingletonClass (S.space v)] (F : MTState S → Finset V) (init : LogSpace S → MTState S)
+  (hi : Measurable init),
+  FiniteTable.InitialLocal init →
+    ∀ (n : ℕ) (a : MTState S),
+      (logMeasure S)[FiniteDrift.stateIndicator (FiniteTable.nextDraw F init n) a |
+          ↑(FiniteTable.history F init hi) n] =ᵐ[logMeasure S]
+        fun x => ((FiniteTable.productLaw S) {a}).toReal
+'FiniteTable.nextDraw_fresh' depends on axioms: [propext, Classical.choice, Quot.sound]
+@FiniteResampling.randomInitETLog_eq_rational_sum_of_equations : ∀ {V : Type} [inst : Fintype V]
+  [inst_1 : DecidableEq V] {D : V → Type} [inst_2 : (v : V) → Fintype (D v)] [inst_3 : (v : V) → DecidableEq (D v)]
+  [inst_4 : (v : V) → MeasurableSpace (D v)] [∀ (v : V), MeasurableSingletonClass (D v)] {I : Type} [inst_6 : Fintype I]
+  [inst_7 : DecidableEq I] [inst_8 : Nonempty I] (Q : FiniteResampling.Marginals D) (h : FiniteResampling.Valid Q)
+  (B : FiniteResampling.Problem D I) (f : FiniteResampling.State D → ℚ),
+  FinitePotential.Equations (FiniteUpdate.model (FiniteResampling.rule Q (FiniteResampling.firstPolicy Q h B))) f →
+    randomInitETLog (FiniteResampling.mtProcess Q h B) = ENNReal.ofReal ↑(∑ s, FiniteResampling.productMass Q s * f s)
+'FiniteResampling.randomInitETLog_eq_rational_sum_of_equations' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+@RepairSemanticHazard.Invalidates : {S C : Type} → (C → S → Prop) → (S → S) → C → S → Prop
+@RepairSemanticHazard.scope : {S C : Type} → (S → Prop) → (C → S → Prop) → Finset C → (S → S) → Finset C
+@RepairSemanticHazard.CompleteDomain : {S : Type} → (S → Prop) → Type
+@RepairSemanticHazard.checkExactCommit_iff_fullContract : ∀ {C : Type} [DecidableEq C] {V α : Type}
+  (allowed : RepairHazard.State V α → Prop) (sat : C → RepairHazard.State V α → Prop) [inst : DecidablePred allowed]
+  [inst_1 : (c : C) → DecidablePred (sat c)] (domain : RepairSemanticHazard.CompleteDomain allowed)
+  (target core : Finset C) (run : RepairHazard.State V α → RepairHazard.State V α) (before : RepairHazard.State V α),
+  allowed before →
+    (RepairSemanticHazard.checkExactCommit allowed sat domain target core run before = true ↔
+      RepairHazard.FullContract sat target core before (run before))
+'RepairSemanticHazard.checkExactCommit_iff_fullContract' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RepairSemanticHazard.checkedExactStep_preserves : ∀ {C : Type} [DecidableEq C] {V α : Type}
+  (allowed : RepairHazard.State V α → Prop) (sat : C → RepairHazard.State V α → Prop) [inst : DecidablePred allowed]
+  [inst_1 : (c : C) → DecidablePred (sat c)] (domain : RepairSemanticHazard.CompleteDomain allowed)
+  (target core : Finset C) (run : RepairHazard.State V α → RepairHazard.State V α) (before : RepairHazard.State V α),
+  allowed before →
+    ∀ c ∈ core, sat c before → sat c (RepairSemanticHazard.checkedExactStep allowed sat domain target core run before)
+'RepairSemanticHazard.checkedExactStep_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RepairObservable.Stable : {R : Type u_1} →
+  {S : Type u_2} → {I : Type u_3} → [inst : CommSemiring R] → (I → S → S) → Subalgebra R (S → R) → Prop
+@RepairObservable.Fixed : {R : Type u_1} →
+  {S : Type u_2} → [inst : CommSemiring R] → (S → S) → Subalgebra R (S → R) → Prop
+@RepairObservable.projectionAlgebra : {R : Type u_1} →
+  {S : Type u_2} → {T : Type u_3} → [inst : CommSemiring R] → (S → T) → Subalgebra R (S → R)
+@RepairObservable.projection_stable_of_factor : ∀ {R : Type u_1} {S : Type u_2} {T : Type u_3} {I : Type u_4}
+  [inst : CommSemiring R] (ops : I → S → S) (q : S → T) (reduced : I → T → T),
+  (∀ (i : I) (s : S), q (ops i s) = reduced i (q s)) →
+    RepairObservable.Stable ops (RepairObservable.projectionAlgebra q)
+'RepairObservable.projection_stable_of_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RepairObservable.obsEq_runWord : ∀ {R : Type u_1} {S : Type u_2} {I : Type u_3} [inst : CommSemiring R]
+  (ops : I → S → S) (B : Subalgebra R (S → R)),
+  RepairObservable.Stable ops B →
+    ∀ (word : List I) {s t : S},
+      RepairObservable.ObsEq B s t →
+        RepairObservable.ObsEq B (RepairObservable.runWord ops word s) (RepairObservable.runWord ops word t)
+'RepairObservable.obsEq_runWord' depends on axioms: [propext, Quot.sound]
+@RepairObservableKernel.KernelClosed : {S : Type u_1} → [Fintype S] → FiniteDrift.Model S → Subalgebra ℚ (S → ℚ) → Prop
+@RepairObservableKernel.FiberLocal : {S : Type u_1} →
+  {A : Type u_2} → [Fintype S] → [DecidableEq A] → FiniteDrift.Model S → (S → A) → Prop
+@RepairObservableKernel.GoodLocal : {S : Type u_1} → {A : Type u_2} → FiniteDrift.Model S → (S → A) → Prop
+@RepairObservableKernel.kernelClosed_iff_fiberLocal : ∀ {S : Type u_1} {A : Type u_2} [inst : Fintype S] [DecidableEq S]
+  [Fintype A] [inst_3 : DecidableEq A] (M : FiniteDrift.Model S) (q : S → A),
+  Function.Surjective q →
+    (RepairObservableKernel.KernelClosed M (RepairObservable.projectionAlgebra q) ↔
+      RepairObservableKernel.FiberLocal M q)
+'RepairObservableKernel.kernelClosed_iff_fiberLocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RepairObservableKernel.reduced_survival : ∀ {S : Type u_1} {A : Type u_2} [inst : Fintype S] [DecidableEq S]
+  [inst_2 : Fintype A] [inst_3 : DecidableEq A] (M : FiniteDrift.Model S) (q : S → A) (hq : Function.Surjective q),
+  RepairObservableKernel.KernelClosed M (RepairObservable.projectionAlgebra q) →
+    RepairObservableKernel.GoodLocal M q →
+      ∀ (n : ℕ) (s : S),
+        FinitePotential.survival M n s = FinitePotential.survival (RepairObservableKernel.reducedModel M q hq) n (q s)
+'RepairObservableKernel.reduced_survival' depends on axioms: [propext, Classical.choice, Quot.sound]

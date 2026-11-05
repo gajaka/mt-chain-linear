@@ -1,0 +1,1045 @@
+{
+  "schema_version": 1,
+  "canonical_modules": [
+    {
+      "old_path": "PPGraph.lean",
+      "path": "PPGraph/Core/Graph.lean",
+      "module": "PPGraph.Core.Graph"
+    },
+    {
+      "old_path": "PPGraphAdditiveDrift.lean",
+      "path": "PPGraph/Drift/Additive.lean",
+      "module": "PPGraph.Drift.Additive"
+    },
+    {
+      "old_path": "PPGraphAssessmentBridge.lean",
+      "path": "PPGraph/Certification/AssessmentBridge.lean",
+      "module": "PPGraph.Certification.AssessmentBridge"
+    },
+    {
+      "old_path": "PPGraphBDD.lean",
+      "path": "PPGraph/Dependency/Decomposition.lean",
+      "module": "PPGraph.Dependency.Decomposition"
+    },
+    {
+      "old_path": "PPGraphBDDCost.lean",
+      "path": "PPGraph/Dependency/Cost.lean",
+      "module": "PPGraph.Dependency.Cost"
+    },
+    {
+      "old_path": "PPGraphBDDCount.lean",
+      "path": "PPGraph/Dependency/Count.lean",
+      "module": "PPGraph.Dependency.Count"
+    },
+    {
+      "old_path": "PPGraphBDDInfeasibility.lean",
+      "path": "PPGraph/Integration/DependencyInfeasibility.lean",
+      "module": "PPGraph.Integration.DependencyInfeasibility"
+    },
+    {
+      "old_path": "PPGraphBDDLaplacian.lean",
+      "path": "PPGraph/Dependency/Laplacian.lean",
+      "module": "PPGraph.Dependency.Laplacian"
+    },
+    {
+      "old_path": "PPGraphBDDMatrix.lean",
+      "path": "PPGraph/Dependency/Matrix.lean",
+      "module": "PPGraph.Dependency.Matrix"
+    },
+    {
+      "old_path": "PPGraphBDDMoserTardos.lean",
+      "path": "PPGraph/Integration/DependencyMoserTardos.lean",
+      "module": "PPGraph.Integration.DependencyMoserTardos"
+    },
+    {
+      "old_path": "PPGraphBDDPartition.lean",
+      "path": "PPGraph/Dependency/Partition.lean",
+      "module": "PPGraph.Dependency.Partition"
+    },
+    {
+      "old_path": "PPGraphBlocking.lean",
+      "path": "PPGraph/Certification/Blocking.lean",
+      "module": "PPGraph.Certification.Blocking"
+    },
+    {
+      "old_path": "PPGraphCategorical.lean",
+      "path": "PPGraph/Core/Categorical.lean",
+      "module": "PPGraph.Core.Categorical"
+    },
+    {
+      "old_path": "PPGraphCertifiedDecision.lean",
+      "path": "PPGraph/Decision/CertifiedDecision.lean",
+      "module": "PPGraph.Decision.CertifiedDecision"
+    },
+    {
+      "old_path": "PPGraphComplementarySlackness.lean",
+      "path": "PPGraph/Optimization/ComplementarySlackness.lean",
+      "module": "PPGraph.Optimization.ComplementarySlackness"
+    },
+    {
+      "old_path": "PPGraphCorrectionDuality.lean",
+      "path": "PPGraph/Decision/CorrectionDuality.lean",
+      "module": "PPGraph.Decision.CorrectionDuality"
+    },
+    {
+      "old_path": "PPGraphEquivBridge.lean",
+      "path": "PPGraph/Certification/EquivBridge.lean",
+      "module": "PPGraph.Certification.EquivBridge"
+    },
+    {
+      "old_path": "PPGraphFarkasCertificate.lean",
+      "path": "PPGraph/Decision/FarkasCertificate.lean",
+      "module": "PPGraph.Decision.FarkasCertificate"
+    },
+    {
+      "old_path": "PPGraphFiniteAbstraction.lean",
+      "path": "PPGraph/Decision/Abstraction.lean",
+      "module": "PPGraph.Decision.Abstraction"
+    },
+    {
+      "old_path": "PPGraphFiniteAbstractionRepair.lean",
+      "path": "PPGraph/Integration/AbstractionRepair.lean",
+      "module": "PPGraph.Integration.AbstractionRepair"
+    },
+    {
+      "old_path": "PPGraphFiniteCore.lean",
+      "path": "PPGraph/Decision/FiniteCore.lean",
+      "module": "PPGraph.Decision.FiniteCore"
+    },
+    {
+      "old_path": "PPGraphFiniteDrift.lean",
+      "path": "PPGraph/Finite/Drift/Basic.lean",
+      "module": "PPGraph.Finite.Drift.Basic"
+    },
+    {
+      "old_path": "PPGraphFiniteDriftProcess.lean",
+      "path": "PPGraph/Finite/Drift/Process.lean",
+      "module": "PPGraph.Finite.Drift.Process"
+    },
+    {
+      "old_path": "PPGraphFiniteFeasibility.lean",
+      "path": "PPGraph/Decision/FiniteFeasibility.lean",
+      "module": "PPGraph.Decision.FiniteFeasibility"
+    },
+    {
+      "old_path": "PPGraphFiniteLumping.lean",
+      "path": "PPGraph/Finite/Lumping/Basic.lean",
+      "module": "PPGraph.Finite.Lumping.Basic"
+    },
+    {
+      "old_path": "PPGraphFiniteLumpingUpdate.lean",
+      "path": "PPGraph/Finite/Lumping/Update.lean",
+      "module": "PPGraph.Finite.Lumping.Update"
+    },
+    {
+      "old_path": "PPGraphFiniteMTDrift.lean",
+      "path": "PPGraph/Integration/FiniteMTDrift.lean",
+      "module": "PPGraph.Integration.FiniteMTDrift"
+    },
+    {
+      "old_path": "PPGraphFinitePotential.lean",
+      "path": "PPGraph/Finite/Potential/Basic.lean",
+      "module": "PPGraph.Finite.Potential.Basic"
+    },
+    {
+      "old_path": "PPGraphFinitePotentialExpectation.lean",
+      "path": "PPGraph/Finite/Potential/Expectation.lean",
+      "module": "PPGraph.Finite.Potential.Expectation"
+    },
+    {
+      "old_path": "PPGraphFinitePotentialExpectationMT.lean",
+      "path": "PPGraph/Integration/FinitePotentialExpectationMT.lean",
+      "module": "PPGraph.Integration.FinitePotentialExpectationMT"
+    },
+    {
+      "old_path": "PPGraphFinitePotentialMT.lean",
+      "path": "PPGraph/Integration/FinitePotentialMT.lean",
+      "module": "PPGraph.Integration.FinitePotentialMT"
+    },
+    {
+      "old_path": "PPGraphFinitePotentialRefutation.lean",
+      "path": "PPGraph/Finite/Potential/Refutation.lean",
+      "module": "PPGraph.Finite.Potential.Refutation"
+    },
+    {
+      "old_path": "PPGraphFinitePotentialTail.lean",
+      "path": "PPGraph/Finite/Potential/Tail.lean",
+      "module": "PPGraph.Finite.Potential.Tail"
+    },
+    {
+      "old_path": "PPGraphFinitePotentialTailCertificate.lean",
+      "path": "PPGraph/Finite/Potential/TailCertificate.lean",
+      "module": "PPGraph.Finite.Potential.TailCertificate"
+    },
+    {
+      "old_path": "PPGraphFinitePotentialTailMT.lean",
+      "path": "PPGraph/Integration/FinitePotentialTailMT.lean",
+      "module": "PPGraph.Integration.FinitePotentialTailMT"
+    },
+    {
+      "old_path": "PPGraphFiniteResampling.lean",
+      "path": "PPGraph/Finite/Resampling/Basic.lean",
+      "module": "PPGraph.Finite.Resampling.Basic"
+    },
+    {
+      "old_path": "PPGraphFiniteTable.lean",
+      "path": "PPGraph/Finite/Resampling/Table.lean",
+      "module": "PPGraph.Finite.Resampling.Table"
+    },
+    {
+      "old_path": "PPGraphFiniteTableLaw.lean",
+      "path": "PPGraph/Finite/Resampling/TableLaw.lean",
+      "module": "PPGraph.Finite.Resampling.TableLaw"
+    },
+    {
+      "old_path": "PPGraphFiniteUpdate.lean",
+      "path": "PPGraph/Finite/Update/Basic.lean",
+      "module": "PPGraph.Finite.Update.Basic"
+    },
+    {
+      "old_path": "PPGraphFiniteUpdateIID.lean",
+      "path": "PPGraph/Finite/Update/IID.lean",
+      "module": "PPGraph.Finite.Update.IID"
+    },
+    {
+      "old_path": "PPGraphHLSAugmentedCoordinates.lean",
+      "path": "PPGraph/HLS/Probability/AugmentedCoordinates.lean",
+      "module": "PPGraph.HLS.Probability.AugmentedCoordinates"
+    },
+    {
+      "old_path": "PPGraphHLSAugmentedDependence.lean",
+      "path": "PPGraph/HLS/Probability/AugmentedDependence.lean",
+      "module": "PPGraph.HLS.Probability.AugmentedDependence"
+    },
+    {
+      "old_path": "PPGraphHLSAugmentedExistence.lean",
+      "path": "PPGraph/HLS/Bounds/AugmentedExistence.lean",
+      "module": "PPGraph.HLS.Bounds.AugmentedExistence"
+    },
+    {
+      "old_path": "PPGraphHLSAugmentedPair.lean",
+      "path": "PPGraph/HLS/Probability/AugmentedPair.lean",
+      "module": "PPGraph.HLS.Probability.AugmentedPair"
+    },
+    {
+      "old_path": "PPGraphHLSAugmentedSpace.lean",
+      "path": "PPGraph/HLS/Probability/AugmentedSpace.lean",
+      "module": "PPGraph.HLS.Probability.AugmentedSpace"
+    },
+    {
+      "old_path": "PPGraphHLSBlockAssembly.lean",
+      "path": "PPGraph/HLS/Probability/BlockAssembly.lean",
+      "module": "PPGraph.HLS.Probability.BlockAssembly"
+    },
+    {
+      "old_path": "PPGraphHLSBlockIntersection.lean",
+      "path": "PPGraph/HLS/Probability/BlockIntersection.lean",
+      "module": "PPGraph.HLS.Probability.BlockIntersection"
+    },
+    {
+      "old_path": "PPGraphHLSBlockQueries.lean",
+      "path": "PPGraph/HLS/Probability/BlockQueries.lean",
+      "module": "PPGraph.HLS.Probability.BlockQueries"
+    },
+    {
+      "old_path": "PPGraphHLSCanonicalEncoding.lean",
+      "path": "PPGraph/HLS/Encoding/CanonicalEncoding.lean",
+      "module": "PPGraph.HLS.Encoding.CanonicalEncoding"
+    },
+    {
+      "old_path": "PPGraphHLSChoiceRecovery.lean",
+      "path": "PPGraph/HLS/Encoding/ChoiceRecovery.lean",
+      "module": "PPGraph.HLS.Encoding.ChoiceRecovery"
+    },
+    {
+      "old_path": "PPGraphHLSChoiceSum.lean",
+      "path": "PPGraph/HLS/Bounds/ChoiceSum.lean",
+      "module": "PPGraph.HLS.Bounds.ChoiceSum"
+    },
+    {
+      "old_path": "PPGraphHLSCliqueRanks.lean",
+      "path": "PPGraph/HLS/DAG/CliqueRanks.lean",
+      "module": "PPGraph.HLS.DAG.CliqueRanks"
+    },
+    {
+      "old_path": "PPGraphHLSCoinQueryLaw.lean",
+      "path": "PPGraph/HLS/Probability/CoinQueryLaw.lean",
+      "module": "PPGraph.HLS.Probability.CoinQueryLaw"
+    },
+    {
+      "old_path": "PPGraphHLSCoinSaving.lean",
+      "path": "PPGraph/HLS/Bounds/CoinSaving.lean",
+      "module": "PPGraph.HLS.Bounds.CoinSaving"
+    },
+    {
+      "old_path": "PPGraphHLSColoredExpansion.lean",
+      "path": "PPGraph/HLS/Encoding/ColoredExpansion.lean",
+      "module": "PPGraph.HLS.Encoding.ColoredExpansion"
+    },
+    {
+      "old_path": "PPGraphHLSDecisionBridge.lean",
+      "path": "PPGraph/Integration/HLSDecision.lean",
+      "module": "PPGraph.Integration.HLSDecision"
+    },
+    {
+      "old_path": "PPGraphHLSDecoratedBudget.lean",
+      "path": "PPGraph/HLS/Bounds/DecoratedBudget.lean",
+      "module": "PPGraph.HLS.Bounds.DecoratedBudget"
+    },
+    {
+      "old_path": "PPGraphHLSExpansionDecoder.lean",
+      "path": "PPGraph/HLS/Encoding/ExpansionDecoder.lean",
+      "module": "PPGraph.HLS.Encoding.ExpansionDecoder"
+    },
+    {
+      "old_path": "PPGraphHLSExpansionFamily.lean",
+      "path": "PPGraph/HLS/Encoding/ExpansionFamily.lean",
+      "module": "PPGraph.HLS.Encoding.ExpansionFamily"
+    },
+    {
+      "old_path": "PPGraphHLSExpansionGraph.lean",
+      "path": "PPGraph/HLS/DAG/ExpansionGraph.lean",
+      "module": "PPGraph.HLS.DAG.ExpansionGraph"
+    },
+    {
+      "old_path": "PPGraphHLSExpansionReversibility.lean",
+      "path": "PPGraph/HLS/Encoding/ExpansionReversibility.lean",
+      "module": "PPGraph.HLS.Encoding.ExpansionReversibility"
+    },
+    {
+      "old_path": "PPGraphHLSExpansionVertices.lean",
+      "path": "PPGraph/HLS/DAG/ExpansionVertices.lean",
+      "module": "PPGraph.HLS.DAG.ExpansionVertices"
+    },
+    {
+      "old_path": "PPGraphHLSExpansionWeight.lean",
+      "path": "PPGraph/HLS/Bounds/ExpansionWeight.lean",
+      "module": "PPGraph.HLS.Bounds.ExpansionWeight"
+    },
+    {
+      "old_path": "PPGraphHLSExpectation.lean",
+      "path": "PPGraph/HLS/Bounds/Expectation.lean",
+      "module": "PPGraph.HLS.Bounds.Expectation"
+    },
+    {
+      "old_path": "PPGraphHLSFiniteDAG.lean",
+      "path": "PPGraph/HLS/DAG/FiniteDAG.lean",
+      "module": "PPGraph.HLS.DAG.FiniteDAG"
+    },
+    {
+      "old_path": "PPGraphHLSFootprintBlocks.lean",
+      "path": "PPGraph/HLS/Probability/FootprintBlocks.lean",
+      "module": "PPGraph.HLS.Probability.FootprintBlocks"
+    },
+    {
+      "old_path": "PPGraphHLSLabelRanks.lean",
+      "path": "PPGraph/HLS/Encoding/LabelRanks.lean",
+      "module": "PPGraph.HLS.Encoding.LabelRanks"
+    },
+    {
+      "old_path": "PPGraphHLSMatching.lean",
+      "path": "PPGraph/HLS/DAG/Matching.lean",
+      "module": "PPGraph.HLS.DAG.Matching"
+    },
+    {
+      "old_path": "PPGraphHLSMatchingArcUniqueness.lean",
+      "path": "PPGraph/HLS/DAG/MatchingArcUniqueness.lean",
+      "module": "PPGraph.HLS.DAG.MatchingArcUniqueness"
+    },
+    {
+      "old_path": "PPGraphHLSMatchingSelection.lean",
+      "path": "PPGraph/HLS/DAG/MatchingSelection.lean",
+      "module": "PPGraph.HLS.DAG.MatchingSelection"
+    },
+    {
+      "old_path": "PPGraphHLSNodeIso.lean",
+      "path": "PPGraph/HLS/Encoding/NodeIso.lean",
+      "module": "PPGraph.HLS.Encoding.NodeIso"
+    },
+    {
+      "old_path": "PPGraphHLSNormalization.lean",
+      "path": "PPGraph/HLS/Encoding/Normalization.lean",
+      "module": "PPGraph.HLS.Encoding.Normalization"
+    },
+    {
+      "old_path": "PPGraphHLSNormalizationCheck.lean",
+      "path": "PPGraph/HLS/Encoding/NormalizationCheck.lean",
+      "module": "PPGraph.HLS.Encoding.NormalizationCheck"
+    },
+    {
+      "old_path": "PPGraphHLSNormalizationReversal.lean",
+      "path": "PPGraph/HLS/Encoding/NormalizationReversal.lean",
+      "module": "PPGraph.HLS.Encoding.NormalizationReversal"
+    },
+    {
+      "old_path": "PPGraphHLSOrderedDAG.lean",
+      "path": "PPGraph/HLS/DAG/OrderedDAG.lean",
+      "module": "PPGraph.HLS.DAG.OrderedDAG"
+    },
+    {
+      "old_path": "PPGraphHLSOrderedReversal.lean",
+      "path": "PPGraph/HLS/Encoding/OrderedReversal.lean",
+      "module": "PPGraph.HLS.Encoding.OrderedReversal"
+    },
+    {
+      "old_path": "PPGraphHLSOrdinalOccurrence.lean",
+      "path": "PPGraph/HLS/Bounds/OrdinalOccurrence.lean",
+      "module": "PPGraph.HLS.Bounds.OrdinalOccurrence"
+    },
+    {
+      "old_path": "PPGraphHLSOrientationScore.lean",
+      "path": "PPGraph/HLS/DAG/OrientationScore.lean",
+      "module": "PPGraph.HLS.DAG.OrientationScore"
+    },
+    {
+      "old_path": "PPGraphHLSOriginRecovery.lean",
+      "path": "PPGraph/HLS/Encoding/OriginRecovery.lean",
+      "module": "PPGraph.HLS.Encoding.OriginRecovery"
+    },
+    {
+      "old_path": "PPGraphHLSOriginalIso.lean",
+      "path": "PPGraph/HLS/Encoding/OriginalIso.lean",
+      "module": "PPGraph.HLS.Encoding.OriginalIso"
+    },
+    {
+      "old_path": "PPGraphHLSPairKeys.lean",
+      "path": "PPGraph/HLS/DAG/PairKeys.lean",
+      "module": "PPGraph.HLS.DAG.PairKeys"
+    },
+    {
+      "old_path": "PPGraphHLSPairProbability.lean",
+      "path": "PPGraph/HLS/Probability/PairProbability.lean",
+      "module": "PPGraph.HLS.Probability.PairProbability"
+    },
+    {
+      "old_path": "PPGraphHLSParameters.lean",
+      "path": "PPGraph/HLS/Parameters.lean",
+      "module": "PPGraph.HLS.Parameters"
+    },
+    {
+      "old_path": "PPGraphHLSParitySelection.lean",
+      "path": "PPGraph/HLS/DAG/ParitySelection.lean",
+      "module": "PPGraph.HLS.DAG.ParitySelection"
+    },
+    {
+      "old_path": "PPGraphHLSPolicyCounting.lean",
+      "path": "PPGraph/Integration/Policy/HLSCounting.lean",
+      "module": "PPGraph.Integration.Policy.HLSCounting"
+    },
+    {
+      "old_path": "PPGraphHLSPolicyDAG.lean",
+      "path": "PPGraph/Integration/Policy/HLSDAG.lean",
+      "module": "PPGraph.Integration.Policy.HLSDAG"
+    },
+    {
+      "old_path": "PPGraphHLSPolicyExpectation.lean",
+      "path": "PPGraph/Integration/Policy/HLSExpectation.lean",
+      "module": "PPGraph.Integration.Policy.HLSExpectation"
+    },
+    {
+      "old_path": "PPGraphHLSPrefixCheck.lean",
+      "path": "PPGraph/HLS/Encoding/PrefixCheck.lean",
+      "module": "PPGraph.HLS.Encoding.PrefixCheck"
+    },
+    {
+      "old_path": "PPGraphHLSProductDiscount.lean",
+      "path": "PPGraph/HLS/Bounds/ProductDiscount.lean",
+      "module": "PPGraph.HLS.Bounds.ProductDiscount"
+    },
+    {
+      "old_path": "PPGraphHLSQueryLaw.lean",
+      "path": "PPGraph/HLS/Probability/QueryLaw.lean",
+      "module": "PPGraph.HLS.Probability.QueryLaw"
+    },
+    {
+      "old_path": "PPGraphHLSRealDAG.lean",
+      "path": "PPGraph/HLS/DAG/RealDAG.lean",
+      "module": "PPGraph.HLS.DAG.RealDAG"
+    },
+    {
+      "old_path": "PPGraphHLSRealDAGCounts.lean",
+      "path": "PPGraph/HLS/DAG/RealDAGCounts.lean",
+      "module": "PPGraph.HLS.DAG.RealDAGCounts"
+    },
+    {
+      "old_path": "PPGraphHLSRefinedBudget.lean",
+      "path": "PPGraph/HLS/Bounds/RefinedBudget.lean",
+      "module": "PPGraph.HLS.Bounds.RefinedBudget"
+    },
+    {
+      "old_path": "PPGraphHLSRefinedProbability.lean",
+      "path": "PPGraph/HLS/Probability/RefinedProbability.lean",
+      "module": "PPGraph.HLS.Probability.RefinedProbability"
+    },
+    {
+      "old_path": "PPGraphHLSRelativeCoins.lean",
+      "path": "PPGraph/HLS/Encoding/RelativeCoins.lean",
+      "module": "PPGraph.HLS.Encoding.RelativeCoins"
+    },
+    {
+      "old_path": "PPGraphHLSRepairBridge.lean",
+      "path": "PPGraph/Integration/HLSRepair.lean",
+      "module": "PPGraph.Integration.HLSRepair"
+    },
+    {
+      "old_path": "PPGraphHLSReversal.lean",
+      "path": "PPGraph/HLS/Encoding/Reversal.lean",
+      "module": "PPGraph.HLS.Encoding.Reversal"
+    },
+    {
+      "old_path": "PPGraphHLSReversalSlots.lean",
+      "path": "PPGraph/HLS/Encoding/ReversalSlots.lean",
+      "module": "PPGraph.HLS.Encoding.ReversalSlots"
+    },
+    {
+      "old_path": "PPGraphHLSRootUnion.lean",
+      "path": "PPGraph/HLS/Probability/RootUnion.lean",
+      "module": "PPGraph.HLS.Probability.RootUnion"
+    },
+    {
+      "old_path": "PPGraphHLSStableEncoding.lean",
+      "path": "PPGraph/HLS/Encoding/StableEncoding.lean",
+      "module": "PPGraph.HLS.Encoding.StableEncoding"
+    },
+    {
+      "old_path": "PPGraphHLSSwappedTests.lean",
+      "path": "PPGraph/HLS/Encoding/SwappedTests.lean",
+      "module": "PPGraph.HLS.Encoding.SwappedTests"
+    },
+    {
+      "old_path": "PPGraphHLSTableCheck.lean",
+      "path": "PPGraph/HLS/Encoding/TableCheck.lean",
+      "module": "PPGraph.HLS.Encoding.TableCheck"
+    },
+    {
+      "old_path": "PPGraphHLSTimeDAG.lean",
+      "path": "PPGraph/HLS/DAG/TimeDAG.lean",
+      "module": "PPGraph.HLS.DAG.TimeDAG"
+    },
+    {
+      "old_path": "PPGraphHLSTopologicalOrder.lean",
+      "path": "PPGraph/HLS/DAG/TopologicalOrder.lean",
+      "module": "PPGraph.HLS.DAG.TopologicalOrder"
+    },
+    {
+      "old_path": "PPGraphHLSUnitChecks.lean",
+      "path": "PPGraph/HLS/Probability/UnitChecks.lean",
+      "module": "PPGraph.HLS.Probability.UnitChecks"
+    },
+    {
+      "old_path": "PPGraphHLSWitnessBudget.lean",
+      "path": "PPGraph/HLS/Bounds/WitnessBudget.lean",
+      "module": "PPGraph.HLS.Bounds.WitnessBudget"
+    },
+    {
+      "old_path": "PPGraphHLSWitnessDAG.lean",
+      "path": "PPGraph/HLS/DAG/WitnessDAG.lean",
+      "module": "PPGraph.HLS.DAG.WitnessDAG"
+    },
+    {
+      "old_path": "PPGraphHLSWitnessLayers.lean",
+      "path": "PPGraph/HLS/DAG/WitnessLayers.lean",
+      "module": "PPGraph.HLS.DAG.WitnessLayers"
+    },
+    {
+      "old_path": "PPGraphInfeasibility.lean",
+      "path": "PPGraph/Decision/Infeasibility.lean",
+      "module": "PPGraph.Decision.Infeasibility"
+    },
+    {
+      "old_path": "PPGraphInfeasibilityCounting.lean",
+      "path": "PPGraph/Decision/InfeasibilityCounting.lean",
+      "module": "PPGraph.Decision.InfeasibilityCounting"
+    },
+    {
+      "old_path": "PPGraphLLL.lean",
+      "path": "PPGraph/LLL/General.lean",
+      "module": "PPGraph.LLL.General"
+    },
+    {
+      "old_path": "PPGraphLopsidedLLL.lean",
+      "path": "PPGraph/LLL/Lopsided.lean",
+      "module": "PPGraph.LLL.Lopsided"
+    },
+    {
+      "old_path": "PPGraphMeta.lean",
+      "path": "PPGraph/Core/Meta.lean",
+      "module": "PPGraph.Core.Meta"
+    },
+    {
+      "old_path": "PPGraphMoserTardos.lean",
+      "path": "PPGraph/MoserTardos/Process/Basic.lean",
+      "module": "PPGraph.MoserTardos.Process.Basic"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCanonical.lean",
+      "path": "PPGraph/MoserTardos/Witness/Canonical.lean",
+      "module": "PPGraph.MoserTardos.Witness.Canonical"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCheck.lean",
+      "path": "PPGraph/MoserTardos/Witness/Check.lean",
+      "module": "PPGraph.MoserTardos.Witness.Check"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCheckBirth.lean",
+      "path": "PPGraph/MoserTardos/Witness/CheckBirth.lean",
+      "module": "PPGraph.MoserTardos.Witness.CheckBirth"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCheckBridge.lean",
+      "path": "PPGraph/MoserTardos/Witness/CheckBridge.lean",
+      "module": "PPGraph.MoserTardos.Witness.CheckBridge"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCheckInvariance.lean",
+      "path": "PPGraph/MoserTardos/Witness/CheckInvariance.lean",
+      "module": "PPGraph.MoserTardos.Witness.CheckInvariance"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCheckOrder.lean",
+      "path": "PPGraph/MoserTardos/Witness/CheckOrder.lean",
+      "module": "PPGraph.MoserTardos.Witness.CheckOrder"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCheckShape.lean",
+      "path": "PPGraph/MoserTardos/Witness/CheckShape.lean",
+      "module": "PPGraph.MoserTardos.Witness.CheckShape"
+    },
+    {
+      "old_path": "PPGraphMoserTardosConstantLog.lean",
+      "path": "PPGraph/MoserTardos/Bounds/ConstantLog.lean",
+      "module": "PPGraph.MoserTardos.Bounds.ConstantLog"
+    },
+    {
+      "old_path": "PPGraphMoserTardosConvergence.lean",
+      "path": "PPGraph/MoserTardos/Bounds/Convergence.lean",
+      "module": "PPGraph.MoserTardos.Bounds.Convergence"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCorrespondence.lean",
+      "path": "PPGraph/MoserTardos/Witness/Correspondence.lean",
+      "module": "PPGraph.MoserTardos.Witness.Correspondence"
+    },
+    {
+      "old_path": "PPGraphMoserTardosCounting.lean",
+      "path": "PPGraph/MoserTardos/Counting/Counting.lean",
+      "module": "PPGraph.MoserTardos.Counting.Counting"
+    },
+    {
+      "old_path": "PPGraphMoserTardosDrift.lean",
+      "path": "PPGraph/MoserTardos/Bounds/Drift.lean",
+      "module": "PPGraph.MoserTardos.Bounds.Drift"
+    },
+    {
+      "old_path": "PPGraphMoserTardosDriftCost.lean",
+      "path": "PPGraph/MoserTardos/Bounds/DriftCost.lean",
+      "module": "PPGraph.MoserTardos.Bounds.DriftCost"
+    },
+    {
+      "old_path": "PPGraphMoserTardosDriftRegion.lean",
+      "path": "PPGraph/Integration/MoserTardosDriftRegion.lean",
+      "module": "PPGraph.Integration.MoserTardosDriftRegion"
+    },
+    {
+      "old_path": "PPGraphMoserTardosExpectation.lean",
+      "path": "PPGraph/MoserTardos/Bounds/Expectation.lean",
+      "module": "PPGraph.MoserTardos.Bounds.Expectation"
+    },
+    {
+      "old_path": "PPGraphMoserTardosFullResampling.lean",
+      "path": "PPGraph/MoserTardos/Process/FullResampling.lean",
+      "module": "PPGraph.MoserTardos.Process.FullResampling"
+    },
+    {
+      "old_path": "PPGraphMoserTardosGrowing.lean",
+      "path": "PPGraph/MoserTardos/Witness/Growing.lean",
+      "module": "PPGraph.MoserTardos.Witness.Growing"
+    },
+    {
+      "old_path": "PPGraphMoserTardosHistoryPolicy.lean",
+      "path": "PPGraph/Integration/Policy/History.lean",
+      "module": "PPGraph.Integration.Policy.History"
+    },
+    {
+      "old_path": "PPGraphMoserTardosInfeasibility.lean",
+      "path": "PPGraph/Integration/MoserTardosInfeasibility.lean",
+      "module": "PPGraph.Integration.MoserTardosInfeasibility"
+    },
+    {
+      "old_path": "PPGraphMoserTardosInjectivity.lean",
+      "path": "PPGraph/MoserTardos/Witness/Injectivity.lean",
+      "module": "PPGraph.MoserTardos.Witness.Injectivity"
+    },
+    {
+      "old_path": "PPGraphMoserTardosInjectivityBridge.lean",
+      "path": "PPGraph/MoserTardos/Witness/InjectivityBridge.lean",
+      "module": "PPGraph.MoserTardos.Witness.InjectivityBridge"
+    },
+    {
+      "old_path": "PPGraphMoserTardosIntersection.lean",
+      "path": "PPGraph/MoserTardos/Probability/Intersection.lean",
+      "module": "PPGraph.MoserTardos.Probability.Intersection"
+    },
+    {
+      "old_path": "PPGraphMoserTardosLabelsAtDepthBridge.lean",
+      "path": "PPGraph/MoserTardos/Witness/LabelsAtDepthBridge.lean",
+      "module": "PPGraph.MoserTardos.Witness.LabelsAtDepthBridge"
+    },
+    {
+      "old_path": "PPGraphMoserTardosLogSpace.lean",
+      "path": "PPGraph/MoserTardos/Process/LogSpace.lean",
+      "module": "PPGraph.MoserTardos.Process.LogSpace"
+    },
+    {
+      "old_path": "PPGraphMoserTardosOccurrence.lean",
+      "path": "PPGraph/MoserTardos/Witness/Occurrence.lean",
+      "module": "PPGraph.MoserTardos.Witness.Occurrence"
+    },
+    {
+      "old_path": "PPGraphMoserTardosOccurrenceCounting.lean",
+      "path": "PPGraph/MoserTardos/Counting/OccurrenceCounting.lean",
+      "module": "PPGraph.MoserTardos.Counting.OccurrenceCounting"
+    },
+    {
+      "old_path": "PPGraphMoserTardosOccurrenceExpectation.lean",
+      "path": "PPGraph/MoserTardos/Bounds/OccurrenceExpectation.lean",
+      "module": "PPGraph.MoserTardos.Bounds.OccurrenceExpectation"
+    },
+    {
+      "old_path": "PPGraphMoserTardosOccurrenceProbability.lean",
+      "path": "PPGraph/MoserTardos/Probability/OccurrenceProbability.lean",
+      "module": "PPGraph.MoserTardos.Probability.OccurrenceProbability"
+    },
+    {
+      "old_path": "PPGraphMoserTardosPastIndependence.lean",
+      "path": "PPGraph/MoserTardos/Probability/PastIndependence.lean",
+      "module": "PPGraph.MoserTardos.Probability.PastIndependence"
+    },
+    {
+      "old_path": "PPGraphMoserTardosPegden.lean",
+      "path": "PPGraph/MoserTardos/Bounds/Pegden.lean",
+      "module": "PPGraph.MoserTardos.Bounds.Pegden"
+    },
+    {
+      "old_path": "PPGraphMoserTardosPolicy.lean",
+      "path": "PPGraph/Integration/Policy/MoserTardos.lean",
+      "module": "PPGraph.Integration.Policy.MoserTardos"
+    },
+    {
+      "old_path": "PPGraphMoserTardosProbability.lean",
+      "path": "PPGraph/MoserTardos/Probability/Probability.lean",
+      "module": "PPGraph.MoserTardos.Probability.Probability"
+    },
+    {
+      "old_path": "PPGraphMoserTardosProbabilityGeneral.lean",
+      "path": "PPGraph/MoserTardos/Probability/ProbabilityGeneral.lean",
+      "module": "PPGraph.MoserTardos.Probability.ProbabilityGeneral"
+    },
+    {
+      "old_path": "PPGraphMoserTardosProcess.lean",
+      "path": "PPGraph/MoserTardos/Process/Process.lean",
+      "module": "PPGraph.MoserTardos.Process.Process"
+    },
+    {
+      "old_path": "PPGraphMoserTardosRandomInitExpectation.lean",
+      "path": "PPGraph/MoserTardos/Probability/RandomInitExpectation.lean",
+      "module": "PPGraph.MoserTardos.Probability.RandomInitExpectation"
+    },
+    {
+      "old_path": "PPGraphMoserTardosRandomInitialization.lean",
+      "path": "PPGraph/MoserTardos/Process/RandomInitialization.lean",
+      "module": "PPGraph.MoserTardos.Process.RandomInitialization"
+    },
+    {
+      "old_path": "PPGraphMoserTardosRandomTrajectory.lean",
+      "path": "PPGraph/MoserTardos/Process/RandomTrajectory.lean",
+      "module": "PPGraph.MoserTardos.Process.RandomTrajectory"
+    },
+    {
+      "old_path": "PPGraphMoserTardosRealTree.lean",
+      "path": "PPGraph/MoserTardos/Witness/RealTree.lean",
+      "module": "PPGraph.MoserTardos.Witness.RealTree"
+    },
+    {
+      "old_path": "PPGraphMoserTardosRepairBridge.lean",
+      "path": "PPGraph/Integration/MoserTardosRepair.lean",
+      "module": "PPGraph.Integration.MoserTardosRepair"
+    },
+    {
+      "old_path": "PPGraphMoserTardosResamplingCount.lean",
+      "path": "PPGraph/MoserTardos/Counting/ResamplingCount.lean",
+      "module": "PPGraph.MoserTardos.Counting.ResamplingCount"
+    },
+    {
+      "old_path": "PPGraphMoserTardosTermination.lean",
+      "path": "PPGraph/MoserTardos/Bounds/Termination.lean",
+      "module": "PPGraph.MoserTardos.Bounds.Termination"
+    },
+    {
+      "old_path": "PPGraphMoserTardosToGrowingTreeCheckBridge.lean",
+      "path": "PPGraph/MoserTardos/Witness/ToGrowingTreeCheckBridge.lean",
+      "module": "PPGraph.MoserTardos.Witness.ToGrowingTreeCheckBridge"
+    },
+    {
+      "old_path": "PPGraphMoserTardosWTreeCountable.lean",
+      "path": "PPGraph/MoserTardos/Witness/WTreeCountable.lean",
+      "module": "PPGraph.MoserTardos.Witness.WTreeCountable"
+    },
+    {
+      "old_path": "PPGraphMoserTardosWTreeToGrowingTree.lean",
+      "path": "PPGraph/MoserTardos/Witness/WTreeToGrowingTree.lean",
+      "module": "PPGraph.MoserTardos.Witness.WTreeToGrowingTree"
+    },
+    {
+      "old_path": "PPGraphMoserTardosWeight.lean",
+      "path": "PPGraph/MoserTardos/Witness/Weight.lean",
+      "module": "PPGraph.MoserTardos.Witness.Weight"
+    },
+    {
+      "old_path": "PPGraphMoserTardosWeightSum.lean",
+      "path": "PPGraph/MoserTardos/Bounds/WeightSum.lean",
+      "module": "PPGraph.MoserTardos.Bounds.WeightSum"
+    },
+    {
+      "old_path": "PPGraphMoserTardosWitness.lean",
+      "path": "PPGraph/MoserTardos/Witness/Witness.lean",
+      "module": "PPGraph.MoserTardos.Witness.Witness"
+    },
+    {
+      "old_path": "PPGraphMoserTardosWitnessFamily.lean",
+      "path": "PPGraph/MoserTardos/Witness/WitnessFamily.lean",
+      "module": "PPGraph.MoserTardos.Witness.WitnessFamily"
+    },
+    {
+      "old_path": "PPGraphParametric.lean",
+      "path": "PPGraph/Certification/Parametric.lean",
+      "module": "PPGraph.Certification.Parametric"
+    },
+    {
+      "old_path": "PPGraphParametricQuotient.lean",
+      "path": "PPGraph/Certification/ParametricQuotient.lean",
+      "module": "PPGraph.Certification.ParametricQuotient"
+    },
+    {
+      "old_path": "PPGraphProbabilistic.lean",
+      "path": "PPGraph/Dependency/Probabilistic.lean",
+      "module": "PPGraph.Dependency.Probabilistic"
+    },
+    {
+      "old_path": "PPGraphQuotientBridge.lean",
+      "path": "PPGraph/Certification/QuotientBridge.lean",
+      "module": "PPGraph.Certification.QuotientBridge"
+    },
+    {
+      "old_path": "PPGraphRR.lean",
+      "path": "PPGraph/Core/RR.lean",
+      "module": "PPGraph.Core.RR"
+    },
+    {
+      "old_path": "PPGraphReachabilityRefutation.lean",
+      "path": "PPGraph/Decision/ReachabilityRefutation.lean",
+      "module": "PPGraph.Decision.ReachabilityRefutation"
+    },
+    {
+      "old_path": "PPGraphRepair.lean",
+      "path": "PPGraph/Core/Repair.lean",
+      "module": "PPGraph.Core.Repair"
+    },
+    {
+      "old_path": "PPGraphRepairDecision.lean",
+      "path": "PPGraph/Decision/RepairDecision.lean",
+      "module": "PPGraph.Decision.RepairDecision"
+    },
+    {
+      "old_path": "PPGraphRepairUndecidability.lean",
+      "path": "PPGraph/Decision/Undecidability.lean",
+      "module": "PPGraph.Decision.Undecidability"
+    },
+    {
+      "old_path": "PPGraphSelection.lean",
+      "path": "PPGraph/Certification/Selection.lean",
+      "module": "PPGraph.Certification.Selection"
+    },
+    {
+      "old_path": "PPGraphSelfAssessment.lean",
+      "path": "PPGraph/Certification/SelfAssessment.lean",
+      "module": "PPGraph.Certification.SelfAssessment"
+    },
+    {
+      "old_path": "PPGraphShearer.lean",
+      "path": "PPGraph/Shearer/Basic.lean",
+      "module": "PPGraph.Shearer.Basic"
+    },
+    {
+      "old_path": "PPGraphShearerBDD.lean",
+      "path": "PPGraph/Shearer/BDD.lean",
+      "module": "PPGraph.Shearer.BDD"
+    },
+    {
+      "old_path": "PPGraphShearerBDDBudget.lean",
+      "path": "PPGraph/Shearer/BDDBudget.lean",
+      "module": "PPGraph.Shearer.BDDBudget"
+    },
+    {
+      "old_path": "PPGraphShearerBDDExpectation.lean",
+      "path": "PPGraph/Shearer/BDDExpectation.lean",
+      "module": "PPGraph.Shearer.BDDExpectation"
+    },
+    {
+      "old_path": "PPGraphShearerComponentOccurrence.lean",
+      "path": "PPGraph/Shearer/ComponentOccurrence.lean",
+      "module": "PPGraph.Shearer.ComponentOccurrence"
+    },
+    {
+      "old_path": "PPGraphShearerExpectation.lean",
+      "path": "PPGraph/Shearer/Expectation.lean",
+      "module": "PPGraph.Shearer.Expectation"
+    },
+    {
+      "old_path": "PPGraphShearerInduction.lean",
+      "path": "PPGraph/Shearer/Induction.lean",
+      "module": "PPGraph.Shearer.Induction"
+    },
+    {
+      "old_path": "PPGraphShearerLayerProfile.lean",
+      "path": "PPGraph/Shearer/LayerProfile.lean",
+      "module": "PPGraph.Shearer.LayerProfile"
+    },
+    {
+      "old_path": "PPGraphShearerMT.lean",
+      "path": "PPGraph/Shearer/MT.lean",
+      "module": "PPGraph.Shearer.MT"
+    },
+    {
+      "old_path": "PPGraphShearerOccurrence.lean",
+      "path": "PPGraph/Shearer/Occurrence.lean",
+      "module": "PPGraph.Shearer.Occurrence"
+    },
+    {
+      "old_path": "PPGraphShearerPolynomial.lean",
+      "path": "PPGraph/Shearer/Polynomial.lean",
+      "module": "PPGraph.Shearer.Polynomial"
+    },
+    {
+      "old_path": "PPGraphShearerSequenceProbability.lean",
+      "path": "PPGraph/Shearer/SequenceProbability.lean",
+      "module": "PPGraph.Shearer.SequenceProbability"
+    },
+    {
+      "old_path": "PPGraphShearerSlack.lean",
+      "path": "PPGraph/Shearer/Slack.lean",
+      "module": "PPGraph.Shearer.Slack"
+    },
+    {
+      "old_path": "PPGraphShearerSlackExpectation.lean",
+      "path": "PPGraph/Shearer/SlackExpectation.lean",
+      "module": "PPGraph.Shearer.SlackExpectation"
+    },
+    {
+      "old_path": "PPGraphShearerStable.lean",
+      "path": "PPGraph/Shearer/Stable.lean",
+      "module": "PPGraph.Shearer.Stable"
+    },
+    {
+      "old_path": "PPGraphShearerWitness.lean",
+      "path": "PPGraph/Shearer/Witness.lean",
+      "module": "PPGraph.Shearer.Witness"
+    },
+    {
+      "old_path": "PPGraphUnsatisfiableCore.lean",
+      "path": "PPGraph/Decision/UnsatisfiableCore.lean",
+      "module": "PPGraph.Decision.UnsatisfiableCore"
+    },
+    {
+      "old_path": "PPGraphVariableLLL.lean",
+      "path": "PPGraph/LLL/Variable.lean",
+      "module": "PPGraph.LLL.Variable"
+    },
+    {
+      "old_path": "PPGraph/Integration/CertificationDependency.lean",
+      "path": "PPGraph/Integration/CertificationDependency.lean",
+      "module": "PPGraph.Integration.CertificationDependency"
+    },
+    {
+      "old_path": "PPGraph/Integration/CertifiedQuotientExample.lean",
+      "path": "PPGraph/Integration/CertifiedQuotientExample.lean",
+      "module": "PPGraph.Integration.CertifiedQuotientExample"
+    },
+    {
+      "old_path": "PPGraph/Integration/FiniteReadCertificates.lean",
+      "path": "PPGraph/Integration/FiniteReadCertificates.lean",
+      "module": "PPGraph.Integration.FiniteReadCertificates"
+    },
+    {
+      "old_path": "PPGraph/Integration/FiniteAsciiJson.lean",
+      "path": "PPGraph/Integration/FiniteAsciiJson.lean",
+      "module": "PPGraph.Integration.FiniteAsciiJson"
+    },
+    {
+      "old_path": "PPGraph/Integration/IncludeAsciiBytes.lean",
+      "path": "PPGraph/Integration/IncludeAsciiBytes.lean",
+      "module": "PPGraph.Integration.IncludeAsciiBytes"
+    },
+    {
+      "old_path": "PPGraph/Integration/LucesObservedInputs.lean",
+      "path": "PPGraph/Integration/LucesObservedInputs.lean",
+      "module": "PPGraph.Integration.LucesObservedInputs"
+    },
+    {
+      "old_path": "PPGraph/Integration/LucesCertificateRepair.lean",
+      "path": "PPGraph/Integration/LucesCertificateRepair.lean",
+      "module": "PPGraph.Integration.LucesCertificateRepair"
+    },
+    {
+      "old_path": "PPGraphRepairHazards.lean",
+      "path": "PPGraph/Repair/Hazards.lean",
+      "module": "PPGraph.Repair.Hazards"
+    },
+    {
+      "old_path": "PPGraphRepairHazardExamples.lean",
+      "path": "PPGraph/Repair/HazardExamples.lean",
+      "module": "PPGraph.Repair.HazardExamples"
+    },
+    {
+      "old_path": "PPGraphRepairSemanticHazards.lean",
+      "path": "PPGraph/Repair/SemanticHazards.lean",
+      "module": "PPGraph.Repair.SemanticHazards"
+    },
+    {
+      "old_path": "PPGraphRepairSemanticHazardExamples.lean",
+      "path": "PPGraph/Repair/SemanticHazardExamples.lean",
+      "module": "PPGraph.Repair.SemanticHazardExamples"
+    },
+    {
+      "old_path": "PPGraphRepairObservableAlgebra.lean",
+      "path": "PPGraph/Repair/ObservableAlgebra.lean",
+      "module": "PPGraph.Repair.ObservableAlgebra"
+    },
+    {
+      "old_path": "PPGraphRepairObservableKernel.lean",
+      "path": "PPGraph/Repair/ObservableKernel.lean",
+      "module": "PPGraph.Repair.ObservableKernel"
+    },
+    {
+      "old_path": "PPGraphRepairObservableExamples.lean",
+      "path": "PPGraph/Repair/ObservableExamples.lean",
+      "module": "PPGraph.Repair.ObservableExamples"
+    },
+    {
+      "old_path": "PPGraphRepairObservableSchemes.lean",
+      "path": "PPGraph/Repair/ObservableSchemes.lean",
+      "module": "PPGraph.Repair.ObservableSchemes"
+    }
+  ],
+  "facades": [
+    {
+      "path": "PPGraph.lean",
+      "module": "PPGraph"
+    },
+    {
+      "path": "PPGraph/All.lean",
+      "module": "PPGraph.All"
+    }
+  ]
+}

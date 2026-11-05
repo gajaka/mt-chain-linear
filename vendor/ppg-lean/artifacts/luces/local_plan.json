@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "source": "cert_runner.certs.pp_graph._local_invariant",
+  "certificates": [
+    {"id": "valid_rows", "op": "gt", "field": "valid_rows", "bound": [0, 1]},
+    {"id": "monge_fraction", "op": "gt", "field": "monge_fraction", "bound": [1553741871442821, 2251799813685248]},
+    {"id": "violations", "op": "eq", "field": "violations", "bound": [0, 1]},
+    {"id": "nnz", "op": "le", "field": "nnz", "bound": [19, 1]}
+  ]
+}

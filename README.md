@@ -1,6 +1,7 @@
 # Linear expected resampling cost for a finite MT chain
 
-This standalone Lean project studies one explicitly defined Moser-Tardos (MT)
+The active project is `mt-chain-linear`. Its concrete chain study concerns one
+explicitly defined Moser-Tardos (MT)
 resampling process. Under its independent product initialization, its expected
 number of resampling operations is Theta(n):
 
@@ -11,7 +12,46 @@ For every n >= 2:
 ```
 
 This is an ideal process bound, not compiler, AI-prover or seeded-PRNG timing.
-It is extracted from `../ppg-proof-repair`, without a PPGraph dependency or novelty claim.
+The chain proof was extracted from `../ppg-proof-repair`. Its mathematical
+import closure remains independent of PPGraph. The project also restores the
+original MT, probability, hazard and observable-subalgebra framework from
+`../ppg-lean` as a local library copy. No scientific novelty is claimed here.
+
+## Original framework in the active project
+
+`vendor/ppg-lean` contains the original library, copied rather than moved from
+`../ppg-lean`. The separate Lake workspace in `framework/` uses that local
+dependency, making its definitions and theorems available in this same project.
+The root chain workspace retains its existing dependency manifest.
+
+The restoration is verified: 228 original files match byte-for-byte, all 208
+library modules build, and the fresh reported-axiom audit covers 5,835 owned
+declarations using only the three standard axioms. See the
+[framework report](framework/REPORT.md) and its linked receipts. This new check
+is not a Nanoda replay or a Crew instantiation.
+
+| Local library area | Role |
+| --- | --- |
+| `PPGraph/MoserTardos/Process/` | MT states, local resampling, trajectories and random initialization |
+| `PPGraph/MoserTardos/Probability/` | Product-log probability laws and measurable events |
+| `PPGraph/MoserTardos/Bounds/` | Expected-step, termination, drift and additive-cost results under their stated hypotheses |
+| `PPGraph/Repair/Hazards.lean` and `SemanticHazards.lean` | Footprint locality and exact semantic invalidation scope |
+| `PPGraph/Repair/ObservableAlgebra.lean` | Stable observable subalgebras, retained information and deterministic quotients |
+| `PPGraph/Repair/ObservableKernel.lean` | Kernel closure, fiber transition laws and good-state locality |
+
+These paths are relative to `vendor/ppg-lean`. Original source identities and
+licenses are preserved with the copy. Availability of this library does not
+instantiate its hypotheses for a new program: an actual application still
+needs its state space, repair operations, probability law, certificate
+predicates, hazard correspondence and observable reduction justified.
+
+The Kiro Crew actual-code reproduction remains in
+`../ppg-proof-repair/experiments/kiro-crew-comparison`; it is not currently being
+extended. That reproduction does not execute an MT repair process or establish
+a PPG controller advantage. Restoring this framework does not transfer the
+chain's Theta(n) bound to Crew, Python tests, adaptive AI proposals or another
+repair process. New framework-import checks are separate from the recorded
+chain verification below.
 
 ## The process
 
@@ -121,6 +161,8 @@ Principal namespaces are `MTChainFormal` and `MTChainFormal.Tightness`.
 | `formal/mt/tightness/TightnessResults.lean` | Standalone result wrapper, adapted to remove PPG integration |
 | `formal/mt/paper/` | Separate accounting/barrier supplement; not a premise of Theta(n) |
 | `formal/theta-audit/` | Independent-checker quotation support |
+| `vendor/ppg-lean/` | Local copy of the original MT, probability, hazard and observable framework |
+| `framework/` | Separate Lake workspace and import audit for the restored original library |
 
 `SOURCE_MANIFEST.json` preserves the original extraction identities and adaptations.
 The extracted versions are archived under `provenance/module-migration/before/`.
@@ -131,7 +173,10 @@ Historical and current verification evidence are kept separately.
 ## Build and verification
 
 Use the toolchain pinned in `lean-toolchain` and the committed Lake manifest.
-The only direct library dependency is the pinned Mathlib revision.
+The root Lake workspace keeps pinned Mathlib as its only direct library
+dependency. The `framework/` workspace separately depends on the local original
+PPGraph library in `vendor/ppg-lean`. This preserves both the root manifest and
+the concrete chain's separate raw MT proof closure.
 
 ```sh
 lake exe cache get
@@ -139,13 +184,26 @@ lake --wfail build
 python3 scripts/verify.py --output evidence/source-check-local.json
 ```
 
+To check both workspaces, use the repository-level entry point:
+
+```sh
+make check
+```
+
+The framework check is also available as `python3 framework/check.py`. Its
+evidence concerns the copied original library and its import audit; it is
+separate from the existing chain/Nanoda evidence and from a Crew instantiation.
+
 When the source project is available, source identity can also be checked with:
 
 ```sh
 python3 scripts/verify.py --compare-source ../ppg-proof-repair --output evidence/source-comparison-local.json
 ```
 
-Fresh verification after the module-system migration:
+Recorded chain verification after the module-system migration:
+
+The following counts describe the chain audit before the framework restoration.
+They do not certify the new library-import target or an external implementation.
 
 - All 34 local Lean modules built from an absent project build directory;
   `lake --wfail build` reported zero warnings and zero errors. Pinned external
@@ -157,7 +215,8 @@ Fresh verification after the module-system migration:
 - Nine selected theorem statements, binders and actual proof closures passed
   the axiom audit, using only `propext`, `Classical.choice` and `Quot.sound`.
 - A fresh Nanoda replay checked those nine roots and their proof closure:
-  17,707 expanded declarations, with no errors and no PPG imports.
+  17,707 expanded declarations, with no errors and no PPG imports in that
+  chain proof closure.
 
 See [REPORT.md](REPORT.md) and [evidence/VERIFICATION.json](evidence/VERIFICATION.json).
 The original build produced 23 Lake module-migration warnings. The proof files

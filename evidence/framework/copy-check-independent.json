@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "original_repository_clean": true,
+  "copied_tracked_files": 228,
+  "all_bytes_equal": true,
+  "manifest_inventory_exact": true,
+  "source_commit": "60151677e58704ce856c05a572904d681fd959f6",
+  "local_proof_modules": 208,
+  "PPGraph_All_local_closure": 207,
+  "outside_All": [
+    "PPGraph"
+  ],
+  "root_migrated_sources_unchanged_from_HEAD": 34,
+  "root_lakefile_manifest_toolchain_unchanged_from_HEAD": true,
+  "original_root_sources_import_PPGraph": false,
+  "external_import_prefixes": {
+    "Mathlib": 62,
+    "Lean": 2
+  }
+}

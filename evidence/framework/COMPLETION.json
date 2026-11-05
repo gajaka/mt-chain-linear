@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "command": [
+    "lake",
+    "build"
+  ],
+  "scope": "Unchanged root chain workspace, warm build",
+  "log_sha256": "23a6074a24341fa10d66159d366576b12322ec09a8fe732493fd20d92e5d37f3",
+  "exit_code": 0,
+  "original_source_receipt": "source-check-independent.json",
+  "framework_receipt": "attempt-002/RESULT.json"
+}
