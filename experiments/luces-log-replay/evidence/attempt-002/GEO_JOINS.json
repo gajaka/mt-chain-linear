@@ -1,0 +1,250 @@
+[
+  {
+    "geo": {
+      "physical_line": 5569,
+      "column": 1,
+      "uptime_ms": 5637821,
+      "segment_id": 6,
+      "event_index": 5442,
+      "pwm": 24,
+      "text": "GEO_AB: GEO_PERTURB: \u0394=-1 accum=0.38 \u2192 PWM=24%"
+    },
+    "sent_command": {
+      "physical_line": 5572,
+      "column": 1,
+      "uptime_ms": 5637841,
+      "segment_id": 6,
+      "event_index": 5445,
+      "node": 0,
+      "pwm": 24,
+      "cct": 2200
+    },
+    "hue_record": {
+      "physical_line": 5573,
+      "column": 1,
+      "uptime_ms": 5637951,
+      "segment_id": 6,
+      "event_index": 5446,
+      "pwm": 24,
+      "cct": 2200
+    },
+    "payloads_agree": true,
+    "empirical_epoch_interval": [
+      "1783822043.390",
+      "1783822044.400"
+    ],
+    "last_before": {
+      "physical_line": 328,
+      "timestamp": "1783822028",
+      "pwm": 26.0,
+      "cct": 2200.0,
+      "elevation": -8.72
+    },
+    "first_after": {
+      "physical_line": 329,
+      "timestamp": "1783822046",
+      "pwm": 24.0,
+      "cct": 2200.0,
+      "elevation": -8.69
+    },
+    "time_ambiguous_csv_rows": [],
+    "matching_tuple_candidates_within_18_seconds": [
+      {
+        "physical_line": 329,
+        "timestamp": "1783822046",
+        "pwm": 24.0,
+        "cct": 2200.0,
+        "elevation": -8.69,
+        "temporal_relation": "AFTER"
+      }
+    ],
+    "first_after_tuple_matches": true,
+    "association_status": "EMPIRICAL_COMPATIBILITY_ONLY; CAUSAL_RESPONSE_UNKNOWN"
+  },
+  {
+    "geo": {
+      "physical_line": 6139,
+      "column": 1,
+      "uptime_ms": 8708411,
+      "segment_id": 10,
+      "event_index": 6016,
+      "pwm": 26,
+      "text": "GEO_AB: GEO_PERTURB: \u0394=+1 accum=-0.16 \u2192 PWM=26%"
+    },
+    "sent_command": {
+      "physical_line": 6142,
+      "column": 1,
+      "uptime_ms": 8708431,
+      "segment_id": 10,
+      "event_index": 6019,
+      "node": 0,
+      "pwm": 26,
+      "cct": 2200
+    },
+    "hue_record": {
+      "physical_line": 6143,
+      "column": 1,
+      "uptime_ms": 8708531,
+      "segment_id": 10,
+      "event_index": 6020,
+      "pwm": 26,
+      "cct": 2200
+    },
+    "payloads_agree": true,
+    "empirical_epoch_interval": [
+      "1783825113.980",
+      "1783825114.990"
+    ],
+    "last_before": {
+      "physical_line": 507,
+      "timestamp": "1783825108",
+      "pwm": 25.0,
+      "cct": 2800.0,
+      "elevation": -1.61
+    },
+    "first_after": {
+      "physical_line": 508,
+      "timestamp": "1783825126",
+      "pwm": 26.0,
+      "cct": 2200.0,
+      "elevation": -1.57
+    },
+    "time_ambiguous_csv_rows": [],
+    "matching_tuple_candidates_within_18_seconds": [
+      {
+        "physical_line": 508,
+        "timestamp": "1783825126",
+        "pwm": 26.0,
+        "cct": 2200.0,
+        "elevation": -1.57,
+        "temporal_relation": "AFTER"
+      }
+    ],
+    "first_after_tuple_matches": true,
+    "association_status": "EMPIRICAL_COMPATIBILITY_ONLY; CAUSAL_RESPONSE_UNKNOWN"
+  },
+  {
+    "geo": {
+      "physical_line": 6321,
+      "column": 1,
+      "uptime_ms": 11416511,
+      "segment_id": 13,
+      "event_index": 6201,
+      "pwm": 24,
+      "text": "GEO_AB: GEO_PERTURB: \u0394=-1 accum=0.36 \u2192 PWM=24%"
+    },
+    "sent_command": {
+      "physical_line": 6324,
+      "column": 1,
+      "uptime_ms": 11416521,
+      "segment_id": 13,
+      "event_index": 6204,
+      "node": 0,
+      "pwm": 24,
+      "cct": 2200
+    },
+    "hue_record": {
+      "physical_line": 6325,
+      "column": 1,
+      "uptime_ms": 11416621,
+      "segment_id": 13,
+      "event_index": 6205,
+      "pwm": 24,
+      "cct": 2200
+    },
+    "payloads_agree": true,
+    "empirical_epoch_interval": [
+      "1783827822.080",
+      "1783827823.090"
+    ],
+    "last_before": {
+      "physical_line": 664,
+      "timestamp": "1783827811",
+      "pwm": 26.0,
+      "cct": 2200.0,
+      "elevation": 5.3
+    },
+    "first_after": {
+      "physical_line": 665,
+      "timestamp": "1783827829",
+      "pwm": 24.0,
+      "cct": 2200.0,
+      "elevation": 5.37
+    },
+    "time_ambiguous_csv_rows": [],
+    "matching_tuple_candidates_within_18_seconds": [
+      {
+        "physical_line": 665,
+        "timestamp": "1783827829",
+        "pwm": 24.0,
+        "cct": 2200.0,
+        "elevation": 5.37,
+        "temporal_relation": "AFTER"
+      }
+    ],
+    "first_after_tuple_matches": true,
+    "association_status": "EMPIRICAL_COMPATIBILITY_ONLY; CAUSAL_RESPONSE_UNKNOWN"
+  },
+  {
+    "geo": {
+      "physical_line": 6386,
+      "column": 1,
+      "uptime_ms": 11424531,
+      "segment_id": 13,
+      "event_index": 6266,
+      "pwm": 24,
+      "text": "GEO_AB: GEO_PERTURB: \u0394=-1 \u2192 PWM=24%"
+    },
+    "sent_command": {
+      "physical_line": 6388,
+      "column": 1,
+      "uptime_ms": 11424541,
+      "segment_id": 13,
+      "event_index": 6268,
+      "node": 0,
+      "pwm": 24,
+      "cct": 2200
+    },
+    "hue_record": {
+      "physical_line": 6389,
+      "column": 1,
+      "uptime_ms": 11424581,
+      "segment_id": 13,
+      "event_index": 6269,
+      "pwm": 24,
+      "cct": 2200
+    },
+    "payloads_agree": true,
+    "empirical_epoch_interval": [
+      "1783827830.100",
+      "1783827831.110"
+    ],
+    "last_before": {
+      "physical_line": 665,
+      "timestamp": "1783827829",
+      "pwm": 24.0,
+      "cct": 2200.0,
+      "elevation": 5.37
+    },
+    "first_after": {
+      "physical_line": 666,
+      "timestamp": "1783827847",
+      "pwm": 18.0,
+      "cct": 2200.0,
+      "elevation": 5.41
+    },
+    "time_ambiguous_csv_rows": [],
+    "matching_tuple_candidates_within_18_seconds": [
+      {
+        "physical_line": 665,
+        "timestamp": "1783827829",
+        "pwm": 24.0,
+        "cct": 2200.0,
+        "elevation": 5.37,
+        "temporal_relation": "BEFORE"
+      }
+    ],
+    "first_after_tuple_matches": false,
+    "association_status": "EMPIRICAL_COMPATIBILITY_ONLY; CAUSAL_RESPONSE_UNKNOWN"
+  }
+]

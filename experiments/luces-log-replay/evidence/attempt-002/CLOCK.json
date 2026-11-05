@@ -1,0 +1,539 @@
+{
+  "anchors": [
+    {
+      "physical_line": 540,
+      "event_index": 407,
+      "uptime_ms": 17961,
+      "epoch": 1783816424,
+      "offset": "1783816406.039",
+      "original_time_field": 0,
+      "original_valid_field": 1783816424
+    },
+    {
+      "physical_line": 692,
+      "event_index": 559,
+      "uptime_ms": 35141,
+      "epoch": 1783816441,
+      "offset": "1783816405.859",
+      "original_time_field": 0,
+      "original_valid_field": 1783816441
+    },
+    {
+      "physical_line": 820,
+      "event_index": 687,
+      "uptime_ms": 52331,
+      "epoch": 1783816458,
+      "offset": "1783816405.669",
+      "original_time_field": 0,
+      "original_valid_field": 1783816458
+    },
+    {
+      "physical_line": 1046,
+      "event_index": 913,
+      "uptime_ms": 69531,
+      "epoch": 1783816476,
+      "offset": "1783816406.469",
+      "original_time_field": 0,
+      "original_valid_field": 1783816476
+    },
+    {
+      "physical_line": 1170,
+      "event_index": 1037,
+      "uptime_ms": 86721,
+      "epoch": 1783816493,
+      "offset": "1783816406.279",
+      "original_time_field": 0,
+      "original_valid_field": 1783816493
+    },
+    {
+      "physical_line": 1361,
+      "event_index": 1228,
+      "uptime_ms": 103921,
+      "epoch": 1783816510,
+      "offset": "1783816406.079",
+      "original_time_field": 0,
+      "original_valid_field": 1783816510
+    },
+    {
+      "physical_line": 1547,
+      "event_index": 1414,
+      "uptime_ms": 121101,
+      "epoch": 1783816527,
+      "offset": "1783816405.899",
+      "original_time_field": 0,
+      "original_valid_field": 1783816527
+    },
+    {
+      "physical_line": 1676,
+      "event_index": 1543,
+      "uptime_ms": 138301,
+      "epoch": 1783816544,
+      "offset": "1783816405.699",
+      "original_time_field": 0,
+      "original_valid_field": 1783816544
+    },
+    {
+      "physical_line": 1803,
+      "event_index": 1670,
+      "uptime_ms": 155481,
+      "epoch": 1783816562,
+      "offset": "1783816406.519",
+      "original_time_field": 0,
+      "original_valid_field": 1783816562
+    },
+    {
+      "physical_line": 1930,
+      "event_index": 1797,
+      "uptime_ms": 172671,
+      "epoch": 1783816579,
+      "offset": "1783816406.329",
+      "original_time_field": 0,
+      "original_valid_field": 1783816579
+    },
+    {
+      "physical_line": 2199,
+      "event_index": 2066,
+      "uptime_ms": 189871,
+      "epoch": 1783816596,
+      "offset": "1783816406.129",
+      "original_time_field": 0,
+      "original_valid_field": 1783816596
+    },
+    {
+      "physical_line": 2327,
+      "event_index": 2194,
+      "uptime_ms": 207061,
+      "epoch": 1783816613,
+      "offset": "1783816405.939",
+      "original_time_field": 0,
+      "original_valid_field": 1783816613
+    },
+    {
+      "physical_line": 2463,
+      "event_index": 2330,
+      "uptime_ms": 224311,
+      "epoch": 1783816630,
+      "offset": "1783816405.689",
+      "original_time_field": 0,
+      "original_valid_field": 1783816630
+    },
+    {
+      "physical_line": 2588,
+      "event_index": 2455,
+      "uptime_ms": 241501,
+      "epoch": 1783816648,
+      "offset": "1783816406.499",
+      "original_time_field": 0,
+      "original_valid_field": 1783816648
+    },
+    {
+      "physical_line": 2823,
+      "event_index": 2690,
+      "uptime_ms": 258691,
+      "epoch": 1783816665,
+      "offset": "1783816406.309",
+      "original_time_field": 0,
+      "original_valid_field": 1783816665
+    },
+    {
+      "physical_line": 2963,
+      "event_index": 2830,
+      "uptime_ms": 275881,
+      "epoch": 1783816682,
+      "offset": "1783816406.119",
+      "original_time_field": 0,
+      "original_valid_field": 1783816682
+    },
+    {
+      "physical_line": 3081,
+      "event_index": 2948,
+      "uptime_ms": 293071,
+      "epoch": 1783816699,
+      "offset": "1783816405.929",
+      "original_time_field": 0,
+      "original_valid_field": 1783816699
+    },
+    {
+      "physical_line": 3211,
+      "event_index": 3078,
+      "uptime_ms": 310261,
+      "epoch": 1783816716,
+      "offset": "1783816405.739",
+      "original_time_field": 0,
+      "original_valid_field": 1783816716
+    },
+    {
+      "physical_line": 3446,
+      "event_index": 3313,
+      "uptime_ms": 327481,
+      "epoch": 1783816734,
+      "offset": "1783816406.519",
+      "original_time_field": 0,
+      "original_valid_field": 1783816734
+    },
+    {
+      "physical_line": 3630,
+      "event_index": 3497,
+      "uptime_ms": 344671,
+      "epoch": 1783816751,
+      "offset": "1783816406.329",
+      "original_time_field": 0,
+      "original_valid_field": 1783816751
+    },
+    {
+      "physical_line": 3765,
+      "event_index": 3632,
+      "uptime_ms": 361851,
+      "epoch": 1783816768,
+      "offset": "1783816406.149",
+      "original_time_field": 0,
+      "original_valid_field": 1783816768
+    },
+    {
+      "physical_line": 3954,
+      "event_index": 3821,
+      "uptime_ms": 379041,
+      "epoch": 1783816785,
+      "offset": "1783816405.959",
+      "original_time_field": 0,
+      "original_valid_field": 1783816785
+    },
+    {
+      "physical_line": 4072,
+      "event_index": 3939,
+      "uptime_ms": 396231,
+      "epoch": 1783816802,
+      "offset": "1783816405.769",
+      "original_time_field": 0,
+      "original_valid_field": 1783816802
+    },
+    {
+      "physical_line": 4199,
+      "event_index": 4066,
+      "uptime_ms": 413421,
+      "epoch": 1783816820,
+      "offset": "1783816406.579",
+      "original_time_field": 0,
+      "original_valid_field": 1783816820
+    },
+    {
+      "physical_line": 4387,
+      "event_index": 4254,
+      "uptime_ms": 430611,
+      "epoch": 1783816837,
+      "offset": "1783816406.389",
+      "original_time_field": 0,
+      "original_valid_field": 1783816837
+    },
+    {
+      "physical_line": 4606,
+      "event_index": 4473,
+      "uptime_ms": 447801,
+      "epoch": 1783816854,
+      "offset": "1783816406.199",
+      "original_time_field": 0,
+      "original_valid_field": 1783816854
+    },
+    {
+      "physical_line": 4733,
+      "event_index": 4600,
+      "uptime_ms": 464991,
+      "epoch": 1783816871,
+      "offset": "1783816406.009",
+      "original_time_field": 0,
+      "original_valid_field": 1783816871
+    },
+    {
+      "physical_line": 4867,
+      "event_index": 4734,
+      "uptime_ms": 482181,
+      "epoch": 1783816888,
+      "offset": "1783816405.819",
+      "original_time_field": 0,
+      "original_valid_field": 1783816888
+    },
+    {
+      "physical_line": 5079,
+      "event_index": 4947,
+      "uptime_ms": 585331,
+      "epoch": 1783816991,
+      "offset": "1783816405.669",
+      "original_time_field": 0,
+      "original_valid_field": 1783816991
+    },
+    {
+      "physical_line": 5197,
+      "event_index": 5065,
+      "uptime_ms": 602521,
+      "epoch": 1783817009,
+      "offset": "1783816406.479",
+      "original_time_field": 0,
+      "original_valid_field": 1783817009
+    },
+    {
+      "physical_line": 5340,
+      "event_index": 5209,
+      "uptime_ms": 1617541,
+      "epoch": 1783818024,
+      "offset": "1783816406.459",
+      "original_time_field": 0,
+      "original_valid_field": 1783818024
+    },
+    {
+      "physical_line": 5584,
+      "event_index": 5458,
+      "uptime_ms": 6692771,
+      "epoch": 1783823099,
+      "offset": "1783816406.229",
+      "original_time_field": 0,
+      "original_valid_field": 1783823099
+    },
+    {
+      "physical_line": 5899,
+      "event_index": 5775,
+      "uptime_ms": 7759351,
+      "epoch": 1783824165,
+      "offset": "1783816405.649",
+      "original_time_field": 0,
+      "original_valid_field": 1783824165
+    },
+    {
+      "physical_line": 6023,
+      "event_index": 5899,
+      "uptime_ms": 7776551,
+      "epoch": 1783824183,
+      "offset": "1783816406.449",
+      "original_time_field": 0,
+      "original_valid_field": 1783824183
+    },
+    {
+      "physical_line": 6200,
+      "event_index": 6080,
+      "uptime_ms": 11407521,
+      "epoch": 1783827814,
+      "offset": "1783816406.479",
+      "original_time_field": 0,
+      "original_valid_field": 1783827814
+    },
+    {
+      "physical_line": 6401,
+      "event_index": 6281,
+      "uptime_ms": 11424721,
+      "epoch": 1783827831,
+      "offset": "1783816406.279",
+      "original_time_field": 0,
+      "original_valid_field": 1783827831
+    },
+    {
+      "physical_line": 6554,
+      "event_index": 6434,
+      "uptime_ms": 11441921,
+      "epoch": 1783827848,
+      "offset": "1783816406.079",
+      "original_time_field": 0,
+      "original_valid_field": 1783827848
+    },
+    {
+      "physical_line": 6773,
+      "event_index": 6655,
+      "uptime_ms": 12732571,
+      "epoch": 1783829139,
+      "offset": "1783816406.429",
+      "original_time_field": 0,
+      "original_valid_field": 1783829139
+    },
+    {
+      "physical_line": 6967,
+      "event_index": 6849,
+      "uptime_ms": 12749771,
+      "epoch": 1783829156,
+      "offset": "1783816406.229",
+      "original_time_field": 0,
+      "original_valid_field": 1783829156
+    },
+    {
+      "physical_line": 7190,
+      "event_index": 7072,
+      "uptime_ms": 12766971,
+      "epoch": 1783829173,
+      "offset": "1783816406.029",
+      "original_time_field": 0,
+      "original_valid_field": 1783829173
+    },
+    {
+      "physical_line": 7339,
+      "event_index": 7221,
+      "uptime_ms": 12784171,
+      "epoch": 1783829190,
+      "offset": "1783816405.829",
+      "original_time_field": 0,
+      "original_valid_field": 1783829190
+    },
+    {
+      "physical_line": 7482,
+      "event_index": 7364,
+      "uptime_ms": 12801371,
+      "epoch": 1783829207,
+      "offset": "1783816405.629",
+      "original_time_field": 0,
+      "original_valid_field": 1783829207
+    },
+    {
+      "physical_line": 7673,
+      "event_index": 7555,
+      "uptime_ms": 12818601,
+      "epoch": 1783829225,
+      "offset": "1783816406.399",
+      "original_time_field": 0,
+      "original_valid_field": 1783829225
+    },
+    {
+      "physical_line": 7943,
+      "event_index": 7825,
+      "uptime_ms": 12835801,
+      "epoch": 1783829242,
+      "offset": "1783816406.199",
+      "original_time_field": 0,
+      "original_valid_field": 1783829242
+    },
+    {
+      "physical_line": 8103,
+      "event_index": 7985,
+      "uptime_ms": 12853031,
+      "epoch": 1783829259,
+      "offset": "1783816405.969",
+      "original_time_field": 0,
+      "original_valid_field": 1783829259
+    },
+    {
+      "physical_line": 8253,
+      "event_index": 8135,
+      "uptime_ms": 12870231,
+      "epoch": 1783829276,
+      "offset": "1783816405.769",
+      "original_time_field": 0,
+      "original_valid_field": 1783829276
+    },
+    {
+      "physical_line": 8479,
+      "event_index": 8361,
+      "uptime_ms": 12887431,
+      "epoch": 1783829293,
+      "offset": "1783816405.569",
+      "original_time_field": 0,
+      "original_valid_field": 1783829293
+    },
+    {
+      "physical_line": 8620,
+      "event_index": 8502,
+      "uptime_ms": 12904631,
+      "epoch": 1783829311,
+      "offset": "1783816406.369",
+      "original_time_field": 0,
+      "original_valid_field": 1783829311
+    },
+    {
+      "physical_line": 8830,
+      "event_index": 8712,
+      "uptime_ms": 12921831,
+      "epoch": 1783829328,
+      "offset": "1783816406.169",
+      "original_time_field": 0,
+      "original_valid_field": 1783829328
+    },
+    {
+      "physical_line": 9024,
+      "event_index": 8906,
+      "uptime_ms": 12939071,
+      "epoch": 1783829345,
+      "offset": "1783816405.929",
+      "original_time_field": 0,
+      "original_valid_field": 1783829345
+    },
+    {
+      "physical_line": 9256,
+      "event_index": 9140,
+      "uptime_ms": 14539701,
+      "epoch": 1783830946,
+      "offset": "1783816406.299",
+      "original_time_field": 0,
+      "original_valid_field": 1783830946
+    },
+    {
+      "physical_line": 9419,
+      "event_index": 9303,
+      "uptime_ms": 14556901,
+      "epoch": 1783830963,
+      "offset": "1783816406.099",
+      "original_time_field": 0,
+      "original_valid_field": 1783830963
+    },
+    {
+      "physical_line": 9652,
+      "event_index": 9536,
+      "uptime_ms": 14574101,
+      "epoch": 1783830980,
+      "offset": "1783816405.899",
+      "original_time_field": 0,
+      "original_valid_field": 1783830980
+    },
+    {
+      "physical_line": 9881,
+      "event_index": 9766,
+      "uptime_ms": 14866771,
+      "epoch": 1783831273,
+      "offset": "1783816406.229",
+      "original_time_field": 0,
+      "original_valid_field": 1783831273
+    },
+    {
+      "physical_line": 10114,
+      "event_index": 9999,
+      "uptime_ms": 14883971,
+      "epoch": 1783831290,
+      "offset": "1783816406.029",
+      "original_time_field": 0,
+      "original_valid_field": 1783831290
+    },
+    {
+      "physical_line": 10289,
+      "event_index": 10174,
+      "uptime_ms": 14901171,
+      "epoch": 1783831307,
+      "offset": "1783816405.829",
+      "original_time_field": 0,
+      "original_valid_field": 1783831307
+    },
+    {
+      "physical_line": 10473,
+      "event_index": 10361,
+      "uptime_ms": 17930101,
+      "epoch": 1783834336,
+      "offset": "1783816405.899",
+      "original_time_field": 0,
+      "original_valid_field": 1783834336
+    },
+    {
+      "physical_line": 10787,
+      "event_index": 10677,
+      "uptime_ms": 19840271,
+      "epoch": 1783836246,
+      "offset": "1783816405.729",
+      "original_time_field": 0,
+      "original_valid_field": 1783836246
+    }
+  ],
+  "syncs": [
+    {
+      "event_index": 329,
+      "physical_line": 462,
+      "epoch_second": 1783816416,
+      "uptime_ms": 9691,
+      "offset": "1783816406.309"
+    }
+  ],
+  "min_offset": "1783816405.569",
+  "max_offset": "1783816406.579",
+  "median_offset": "1783816406.089",
+  "status": "EMPIRICAL; NOT_A_PROVED_CLOCK_OR_LATENCY_BOUND"
+}

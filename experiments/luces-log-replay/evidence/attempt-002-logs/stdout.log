@@ -1,0 +1,46 @@
+{
+  "status": "OFFLINE_REPLAY_COMPLETE; INTEGRATED_PPG_REPAIR_NOT_ESTABLISHED",
+  "csv_rows": 1157,
+  "serial_physical_lines": 10961,
+  "parsed_timestamped_records": 10852,
+  "multiprefix_lines": 23,
+  "spectrum_epoch_anchors": 58,
+  "observed_gaps_over_30_seconds": 23,
+  "segments": 24,
+  "empirical_interior_csv_rows": 59,
+  "observed_commands": 127,
+  "geo_events": 4,
+  "matched_next_samples": 3,
+  "segment_status_counts": {
+    "OBS": {
+      "PASS": 1,
+      "FAIL": 0,
+      "N/A": 23
+    },
+    "MRG": {
+      "PASS": 1,
+      "FAIL": 0,
+      "N/A": 23
+    },
+    "DATL": {
+      "PASS": 0,
+      "FAIL": 0,
+      "N/A": 24
+    },
+    "C14": {
+      "PASS": 0,
+      "FAIL": 0,
+      "N/A": 24
+    },
+    "C19": {
+      "PASS": 1,
+      "FAIL": 0,
+      "N/A": 23
+    },
+    "GEN": {
+      "PASS": 0,
+      "FAIL": 0,
+      "N/A": 24
+    }
+  }
+}

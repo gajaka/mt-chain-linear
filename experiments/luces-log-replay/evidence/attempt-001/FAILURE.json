@@ -1,0 +1,10 @@
+{
+  "status": "IMPLEMENTATION_ERROR",
+  "recorded_utc": "2026-11-05T18:27:11.597311+00:00",
+  "command": "python3 experiments/luces-log-replay/replay.py --output experiments/luces-log-replay/evidence/attempt-001",
+  "executor_sha256": "82ab429af707cb37b3f5d4a05c3b073e88e1c5814079b5550d894cf35c70e639",
+  "stage": "CSV input decoding before serial/clock/diagnostic analysis",
+  "error": "ValueError: could not convert string to float: 'NIGHT'",
+  "cause": "Initial decoder tried to parse string-valued state fields as floats. Fix will parse only explicitly needed numeric fields; original sources and plan unchanged.",
+  "scientific_result": false
+}

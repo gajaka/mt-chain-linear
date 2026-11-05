@@ -1,0 +1,1272 @@
+[
+  {
+    "physical_line": 605,
+    "column": 1,
+    "uptime_ms": 22071,
+    "segment_id": 0,
+    "event_index": 472,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 661,
+    "column": 1,
+    "uptime_ms": 29541,
+    "segment_id": 0,
+    "event_index": 528,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 738,
+    "column": 1,
+    "uptime_ms": 36871,
+    "segment_id": 0,
+    "event_index": 605,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 789,
+    "column": 1,
+    "uptime_ms": 44711,
+    "segment_id": 0,
+    "event_index": 656,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 869,
+    "column": 1,
+    "uptime_ms": 52761,
+    "segment_id": 0,
+    "event_index": 736,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 981,
+    "column": 1,
+    "uptime_ms": 61071,
+    "segment_id": 0,
+    "event_index": 848,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1034,
+    "column": 1,
+    "uptime_ms": 69101,
+    "segment_id": 0,
+    "event_index": 901,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 1106,
+    "column": 1,
+    "uptime_ms": 77131,
+    "segment_id": 0,
+    "event_index": 973,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1156,
+    "column": 1,
+    "uptime_ms": 85141,
+    "segment_id": 0,
+    "event_index": 1023,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1231,
+    "column": 1,
+    "uptime_ms": 93141,
+    "segment_id": 0,
+    "event_index": 1098,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 1339,
+    "column": 1,
+    "uptime_ms": 101301,
+    "segment_id": 0,
+    "event_index": 1206,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1415,
+    "column": 1,
+    "uptime_ms": 109141,
+    "segment_id": 0,
+    "event_index": 1282,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1465,
+    "column": 1,
+    "uptime_ms": 117161,
+    "segment_id": 0,
+    "event_index": 1332,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 1602,
+    "column": 1,
+    "uptime_ms": 125271,
+    "segment_id": 0,
+    "event_index": 1469,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1645,
+    "column": 1,
+    "uptime_ms": 133521,
+    "segment_id": 0,
+    "event_index": 1512,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1722,
+    "column": 1,
+    "uptime_ms": 141571,
+    "segment_id": 0,
+    "event_index": 1589,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 1772,
+    "column": 1,
+    "uptime_ms": 149551,
+    "segment_id": 0,
+    "event_index": 1639,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1849,
+    "column": 1,
+    "uptime_ms": 157561,
+    "segment_id": 0,
+    "event_index": 1716,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 1899,
+    "column": 1,
+    "uptime_ms": 165571,
+    "segment_id": 0,
+    "event_index": 1766,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 1976,
+    "column": 1,
+    "uptime_ms": 173611,
+    "segment_id": 0,
+    "event_index": 1843,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2084,
+    "column": 1,
+    "uptime_ms": 181781,
+    "segment_id": 0,
+    "event_index": 1951,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2187,
+    "column": 1,
+    "uptime_ms": 189591,
+    "segment_id": 0,
+    "event_index": 2054,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 2264,
+    "column": 1,
+    "uptime_ms": 198011,
+    "segment_id": 0,
+    "event_index": 2131,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2315,
+    "column": 1,
+    "uptime_ms": 206031,
+    "segment_id": 0,
+    "event_index": 2182,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2390,
+    "column": 1,
+    "uptime_ms": 214001,
+    "segment_id": 0,
+    "event_index": 2257,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 2441,
+    "column": 1,
+    "uptime_ms": 222041,
+    "segment_id": 0,
+    "event_index": 2308,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2516,
+    "column": 1,
+    "uptime_ms": 230001,
+    "segment_id": 0,
+    "event_index": 2383,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2566,
+    "column": 1,
+    "uptime_ms": 238021,
+    "segment_id": 0,
+    "event_index": 2433,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 2634,
+    "column": 1,
+    "uptime_ms": 246061,
+    "segment_id": 0,
+    "event_index": 2501,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2747,
+    "column": 1,
+    "uptime_ms": 254411,
+    "segment_id": 0,
+    "event_index": 2614,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 2881,
+    "column": 1,
+    "uptime_ms": 262581,
+    "segment_id": 0,
+    "event_index": 2748,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 2932,
+    "column": 1,
+    "uptime_ms": 270421,
+    "segment_id": 0,
+    "event_index": 2799,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3009,
+    "column": 1,
+    "uptime_ms": 278451,
+    "segment_id": 0,
+    "event_index": 2876,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3059,
+    "column": 1,
+    "uptime_ms": 286481,
+    "segment_id": 0,
+    "event_index": 2926,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 3136,
+    "column": 1,
+    "uptime_ms": 294511,
+    "segment_id": 0,
+    "event_index": 3003,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3175,
+    "column": 1,
+    "uptime_ms": 302451,
+    "segment_id": 0,
+    "event_index": 3042,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3257,
+    "column": 1,
+    "uptime_ms": 310601,
+    "segment_id": 0,
+    "event_index": 3124,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 3366,
+    "column": 1,
+    "uptime_ms": 318551,
+    "segment_id": 0,
+    "event_index": 3233,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3417,
+    "column": 1,
+    "uptime_ms": 326881,
+    "segment_id": 0,
+    "event_index": 3284,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3506,
+    "column": 1,
+    "uptime_ms": 334901,
+    "segment_id": 0,
+    "event_index": 3373,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 3615,
+    "column": 1,
+    "uptime_ms": 343071,
+    "segment_id": 0,
+    "event_index": 3482,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3693,
+    "column": 1,
+    "uptime_ms": 351051,
+    "segment_id": 0,
+    "event_index": 3560,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3734,
+    "column": 1,
+    "uptime_ms": 359061,
+    "segment_id": 0,
+    "event_index": 3601,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 3810,
+    "column": 1,
+    "uptime_ms": 367041,
+    "segment_id": 0,
+    "event_index": 3677,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3863,
+    "column": 1,
+    "uptime_ms": 375091,
+    "segment_id": 0,
+    "event_index": 3730,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 3999,
+    "column": 1,
+    "uptime_ms": 383141,
+    "segment_id": 0,
+    "event_index": 3866,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 4050,
+    "column": 1,
+    "uptime_ms": 391461,
+    "segment_id": 0,
+    "event_index": 3917,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4127,
+    "column": 1,
+    "uptime_ms": 399471,
+    "segment_id": 0,
+    "event_index": 3994,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4177,
+    "column": 1,
+    "uptime_ms": 407471,
+    "segment_id": 0,
+    "event_index": 4044,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 4245,
+    "column": 1,
+    "uptime_ms": 415481,
+    "segment_id": 0,
+    "event_index": 4112,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4353,
+    "column": 1,
+    "uptime_ms": 423661,
+    "segment_id": 0,
+    "event_index": 4220,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4432,
+    "column": 1,
+    "uptime_ms": 431481,
+    "segment_id": 0,
+    "event_index": 4299,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 4483,
+    "column": 1,
+    "uptime_ms": 439511,
+    "segment_id": 0,
+    "event_index": 4350,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4594,
+    "column": 1,
+    "uptime_ms": 447511,
+    "segment_id": 0,
+    "event_index": 4461,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4670,
+    "column": 1,
+    "uptime_ms": 455921,
+    "segment_id": 0,
+    "event_index": 4537,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 4721,
+    "column": 1,
+    "uptime_ms": 463941,
+    "segment_id": 0,
+    "event_index": 4588,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4786,
+    "column": 1,
+    "uptime_ms": 471931,
+    "segment_id": 0,
+    "event_index": 4653,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4836,
+    "column": 1,
+    "uptime_ms": 479931,
+    "segment_id": 0,
+    "event_index": 4703,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 4916,
+    "column": 1,
+    "uptime_ms": 487971,
+    "segment_id": 0,
+    "event_index": 4783,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 4958,
+    "column": 1,
+    "uptime_ms": 576511,
+    "segment_id": 1,
+    "event_index": 4826,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 5058,
+    "column": 1,
+    "uptime_ms": 585061,
+    "segment_id": 1,
+    "event_index": 4926,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5134,
+    "column": 1,
+    "uptime_ms": 592941,
+    "segment_id": 1,
+    "event_index": 5002,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5183,
+    "column": 1,
+    "uptime_ms": 600891,
+    "segment_id": 1,
+    "event_index": 5051,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 5263,
+    "column": 1,
+    "uptime_ms": 608961,
+    "segment_id": 1,
+    "event_index": 5131,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5313,
+    "column": 1,
+    "uptime_ms": 616911,
+    "segment_id": 1,
+    "event_index": 5181,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5406,
+    "column": 1,
+    "uptime_ms": 2606961,
+    "segment_id": 3,
+    "event_index": 5276,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 5453,
+    "column": 1,
+    "uptime_ms": 3606481,
+    "segment_id": 4,
+    "event_index": 5324,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5511,
+    "column": 1,
+    "uptime_ms": 4646751,
+    "segment_id": 5,
+    "event_index": 5383,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5572,
+    "column": 1,
+    "uptime_ms": 5637841,
+    "segment_id": 6,
+    "event_index": 5445,
+    "node": 0,
+    "pwm": 24,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5628,
+    "column": 1,
+    "uptime_ms": 6693321,
+    "segment_id": 7,
+    "event_index": 5502,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 5767,
+    "column": 1,
+    "uptime_ms": 7749531,
+    "segment_id": 9,
+    "event_index": 5643,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 5876,
+    "column": 1,
+    "uptime_ms": 7757751,
+    "segment_id": 9,
+    "event_index": 5752,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 5953,
+    "column": 1,
+    "uptime_ms": 7765741,
+    "segment_id": 9,
+    "event_index": 5829,
+    "node": 0,
+    "pwm": 28,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6001,
+    "column": 1,
+    "uptime_ms": 7773711,
+    "segment_id": 9,
+    "event_index": 5877,
+    "node": 0,
+    "pwm": 22,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6078,
+    "column": 1,
+    "uptime_ms": 7781731,
+    "segment_id": 9,
+    "event_index": 5954,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 6142,
+    "column": 1,
+    "uptime_ms": 8708431,
+    "segment_id": 10,
+    "event_index": 6019,
+    "node": 0,
+    "pwm": 26,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6256,
+    "column": 1,
+    "uptime_ms": 11408101,
+    "segment_id": 13,
+    "event_index": 6136,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 6324,
+    "column": 1,
+    "uptime_ms": 11416521,
+    "segment_id": 13,
+    "event_index": 6204,
+    "node": 0,
+    "pwm": 24,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6388,
+    "column": 1,
+    "uptime_ms": 11424541,
+    "segment_id": 13,
+    "event_index": 6268,
+    "node": 0,
+    "pwm": 24,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6476,
+    "column": 1,
+    "uptime_ms": 11432491,
+    "segment_id": 13,
+    "event_index": 6356,
+    "node": 0,
+    "pwm": 25,
+    "cct": 2800
+  },
+  {
+    "physical_line": 6539,
+    "column": 1,
+    "uptime_ms": 11440511,
+    "segment_id": 13,
+    "event_index": 6419,
+    "node": 0,
+    "pwm": 18,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6618,
+    "column": 1,
+    "uptime_ms": 11448521,
+    "segment_id": 13,
+    "event_index": 6498,
+    "node": 0,
+    "pwm": 12,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6750,
+    "column": 1,
+    "uptime_ms": 12729501,
+    "segment_id": 15,
+    "event_index": 6632,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6838,
+    "column": 1,
+    "uptime_ms": 12737561,
+    "segment_id": 15,
+    "event_index": 6720,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 6899,
+    "column": 1,
+    "uptime_ms": 12745571,
+    "segment_id": 15,
+    "event_index": 6781,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7036,
+    "column": 1,
+    "uptime_ms": 12753711,
+    "segment_id": 15,
+    "event_index": 6918,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7158,
+    "column": 1,
+    "uptime_ms": 12761621,
+    "segment_id": 15,
+    "event_index": 7040,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7246,
+    "column": 1,
+    "uptime_ms": 12769971,
+    "segment_id": 15,
+    "event_index": 7128,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7307,
+    "column": 1,
+    "uptime_ms": 12777941,
+    "segment_id": 15,
+    "event_index": 7189,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7394,
+    "column": 1,
+    "uptime_ms": 12785931,
+    "segment_id": 15,
+    "event_index": 7276,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7459,
+    "column": 1,
+    "uptime_ms": 12793981,
+    "segment_id": 15,
+    "event_index": 7341,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7547,
+    "column": 1,
+    "uptime_ms": 12802011,
+    "segment_id": 15,
+    "event_index": 7429,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7599,
+    "column": 1,
+    "uptime_ms": 12809971,
+    "segment_id": 15,
+    "event_index": 7481,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7660,
+    "column": 1,
+    "uptime_ms": 12817971,
+    "segment_id": 15,
+    "event_index": 7542,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7808,
+    "column": 1,
+    "uptime_ms": 12826061,
+    "segment_id": 15,
+    "event_index": 7690,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 7928,
+    "column": 1,
+    "uptime_ms": 12834581,
+    "segment_id": 15,
+    "event_index": 7810,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8016,
+    "column": 1,
+    "uptime_ms": 12842411,
+    "segment_id": 15,
+    "event_index": 7898,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8080,
+    "column": 1,
+    "uptime_ms": 12850371,
+    "segment_id": 15,
+    "event_index": 7962,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8168,
+    "column": 1,
+    "uptime_ms": 12858421,
+    "segment_id": 15,
+    "event_index": 8050,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8221,
+    "column": 1,
+    "uptime_ms": 12866391,
+    "segment_id": 15,
+    "event_index": 8103,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8309,
+    "column": 1,
+    "uptime_ms": 12874461,
+    "segment_id": 15,
+    "event_index": 8191,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8370,
+    "column": 1,
+    "uptime_ms": 12882421,
+    "segment_id": 15,
+    "event_index": 8252,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8535,
+    "column": 1,
+    "uptime_ms": 12890501,
+    "segment_id": 15,
+    "event_index": 8417,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8597,
+    "column": 1,
+    "uptime_ms": 12898851,
+    "segment_id": 15,
+    "event_index": 8479,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8684,
+    "column": 1,
+    "uptime_ms": 12906821,
+    "segment_id": 15,
+    "event_index": 8566,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8807,
+    "column": 1,
+    "uptime_ms": 12915021,
+    "segment_id": 15,
+    "event_index": 8689,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8886,
+    "column": 1,
+    "uptime_ms": 12922871,
+    "segment_id": 15,
+    "event_index": 8768,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 8948,
+    "column": 1,
+    "uptime_ms": 12930831,
+    "segment_id": 15,
+    "event_index": 8830,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9011,
+    "column": 1,
+    "uptime_ms": 12938911,
+    "segment_id": 15,
+    "event_index": 8893,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9098,
+    "column": 1,
+    "uptime_ms": 12946861,
+    "segment_id": 15,
+    "event_index": 8980,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9232,
+    "column": 1,
+    "uptime_ms": 13986751,
+    "segment_id": 16,
+    "event_index": 9115,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9323,
+    "column": 1,
+    "uptime_ms": 14542761,
+    "segment_id": 17,
+    "event_index": 9207,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9396,
+    "column": 1,
+    "uptime_ms": 14550781,
+    "segment_id": 17,
+    "event_index": 9280,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9496,
+    "column": 1,
+    "uptime_ms": 14558811,
+    "segment_id": 17,
+    "event_index": 9380,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9620,
+    "column": 1,
+    "uptime_ms": 14566871,
+    "segment_id": 17,
+    "event_index": 9504,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9720,
+    "column": 1,
+    "uptime_ms": 14575211,
+    "segment_id": 17,
+    "event_index": 9604,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9793,
+    "column": 1,
+    "uptime_ms": 14583171,
+    "segment_id": 17,
+    "event_index": 9677,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9858,
+    "column": 1,
+    "uptime_ms": 14864981,
+    "segment_id": 18,
+    "event_index": 9743,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 9957,
+    "column": 1,
+    "uptime_ms": 14873001,
+    "segment_id": 18,
+    "event_index": 9842,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 10031,
+    "column": 1,
+    "uptime_ms": 14881041,
+    "segment_id": 18,
+    "event_index": 9916,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 10192,
+    "column": 1,
+    "uptime_ms": 14888991,
+    "segment_id": 18,
+    "event_index": 10077,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 10266,
+    "column": 1,
+    "uptime_ms": 14897411,
+    "segment_id": 18,
+    "event_index": 10151,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 10365,
+    "column": 1,
+    "uptime_ms": 14905511,
+    "segment_id": 18,
+    "event_index": 10250,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2200
+  },
+  {
+    "physical_line": 10443,
+    "column": 1,
+    "uptime_ms": 15896321,
+    "segment_id": 19,
+    "event_index": 10329,
+    "node": 0,
+    "pwm": 0,
+    "cct": 2493
+  },
+  {
+    "physical_line": 10549,
+    "column": 1,
+    "uptime_ms": 19007131,
+    "segment_id": 22,
+    "event_index": 10438,
+    "node": 0,
+    "pwm": 42,
+    "cct": 2985
+  },
+  {
+    "physical_line": 10719,
+    "column": 1,
+    "uptime_ms": 19836951,
+    "segment_id": 23,
+    "event_index": 10609,
+    "node": 0,
+    "pwm": 48,
+    "cct": 2985
+  },
+  {
+    "physical_line": 10887,
+    "column": 1,
+    "uptime_ms": 19845181,
+    "segment_id": 23,
+    "event_index": 10777,
+    "node": 0,
+    "pwm": 48,
+    "cct": 2985
+  }
+]
