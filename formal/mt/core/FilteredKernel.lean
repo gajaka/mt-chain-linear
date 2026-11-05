@@ -1,7 +1,11 @@
-import Filtering
-import ChainKernel
-import Intertwining
-import RefreshDensity
+module
+
+public import Filtering
+public import ChainKernel
+public import Intertwining
+public import RefreshDensity
+
+@[expose] public section
 
 /-!
 The actual finite prefix process and its concrete completion matrix.

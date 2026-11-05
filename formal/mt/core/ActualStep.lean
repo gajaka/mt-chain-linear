@@ -1,5 +1,9 @@
-import ActualScan
-import ScanBounds
+module
+
+public import ActualScan
+public import ScanBounds
+
+@[expose] public section
 
 set_option autoImplicit false
 

@@ -48,7 +48,7 @@ patch, binary and historical-record identities.
 After the project has been built, run:
 
 ```sh
-python3 -B scripts/independent.py --nanoda /path/to/nanoda_bin --attempt attempt-003
+python3 -B scripts/independent.py --nanoda /path/to/nanoda_bin --attempt attempt-004
 ```
 
 Each fresh attempt gets a separate directory under `evidence/`. Raw exports
@@ -63,7 +63,9 @@ Nanoda with only `propext`, `Classical.choice` and `Quot.sound` permitted.
 This checks those roots and their proof closure; it does not check every
 assertion in every source file with the second kernel.
 
-Attempt 002 is the completed replay retained here. Attempt 001 failed during
+Attempt 003 checks the current module-system sources. Attempt 002 records the
+earlier successful extraction replay, before those source headers changed.
+Attempt 001 failed during
 preflight because the runner incorrectly required a library cache for the
 unused Cli tool dependency; no prover/exporter/checker was launched in that
 attempt. The original runner and failure are retained. Use an unused attempt
@@ -74,9 +76,28 @@ revision and its own fresh receipts.
 To verify the retained hashes and logs without executing Lean or Nanoda:
 
 ```sh
-python3 -B scripts/independent.py --verify --attempt attempt-002
+python3 -B scripts/independent.py --verify --attempt attempt-003
 ```
 
 This requires the recorded local artifacts, including the ignored export.
 Published source and compact receipts alone do not contain every binary or
 raw proof export required for that local saved-evidence check.
+
+The source validator checks both the unchanged extraction manifest and the
+separate module-migration manifest. It verifies the archived extraction bytes,
+replays the permitted header transformation on each mathematical source, and
+checks the current import boundary. The audit's explicitly recorded adaptation
+loads a second environment with full private proof data; ordinary module
+imports alone can omit transitive theorem bodies. The audit process uses an
+8 GiB memory cap for these two environments, while the checked roots, exact
+type checks and three-axiom allowlist stay unchanged.
+
+`scripts/verify.py` also refuses to overwrite a receipt. Its default output is
+`evidence/migration-source-verification.json`; use `--output` with an unused path
+for a subsequent source check. The independent runner invokes the same validation
+without writing or overwriting a source receipt.
+
+Old attempt 002 binds the old active source paths. Its receipt is preserved as
+history; it is not a passing saved-evidence check for the migrated working tree.
+The archived pre-migration sources and aggregate do not replace or rewrite
+those recorded absolute bindings.

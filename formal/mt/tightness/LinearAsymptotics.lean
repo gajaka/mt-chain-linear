@@ -1,6 +1,10 @@
-import LinearPotential
-import LowerBound
-import Mathlib.Analysis.Asymptotics.SpecificAsymptotics
+module
+
+public import LinearPotential
+public import LowerBound
+public import Mathlib.Analysis.Asymptotics.SpecificAsymptotics
+
+@[expose] public section
 
 set_option autoImplicit false
 

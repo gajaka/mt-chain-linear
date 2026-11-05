@@ -1,4 +1,8 @@
-import FilteredKernel
+module
+
+public import FilteredKernel
+
+@[expose] public section
 
 /-!
 Finite-history filtering without conditioning on zero-mass events.

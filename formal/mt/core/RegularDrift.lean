@@ -1,4 +1,8 @@
-import PayoffAverages
+module
+
+public import PayoffAverages
+
+@[expose] public section
 
 set_option autoImplicit false
 

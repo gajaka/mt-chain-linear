@@ -20,6 +20,7 @@ import time
 
 sys.dont_write_bytecode = True
 from export_check import inspect_export
+from provenance import validate_sources
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED = {"Classical.choice", "Quot.sound", "propext"}
@@ -75,15 +76,8 @@ def verify_bindings(bindings):
 
 
 def local_inputs():
-    manifest = read(ROOT / "SOURCE_MANIFEST.json")
-    closure = set()
-    for row in manifest["copied_files"]:
-        path = ROOT / row["destination"]
-        require(path.resolve().is_relative_to(ROOT), "Source resolves outside standalone project")
-        require(sha(path) == row["sha256_copy"] == row["sha256_source"],
-                "Copied source differs from extraction manifest: " + str(path))
-        if row["role"] == "theta-import-closure":
-            closure.add(path.stem)
+    provenance = validate_sources(ROOT)
+    closure = provenance["closure"]
     require(len(closure) == 30, "Expected exactly thirty raw MT closure modules")
     packages = read(ROOT / "lake-manifest.json")["packages"]
     require(len(packages) == 9, "Unexpected dependency package inventory")
@@ -107,10 +101,11 @@ def local_inputs():
         path = libs[0] / (module + ".olean")
         require(path.is_file() and path.resolve().is_relative_to(libs[0]),
                 "Fresh local module is absent or resolves outside new cache: " + module)
-    inputs = [ROOT / x for x in ("SOURCE_MANIFEST.json", "lake-manifest.json",
+    inputs = [ROOT / x for x in ("SOURCE_MANIFEST.json", "MODULE_MIGRATION.json", "lake-manifest.json",
               "lakefile.lean", "lean-toolchain", "scripts/independent.py",
-              "scripts/export_check.py", "formal/theta-audit/ADAPTATION.json")]
-    inputs += sorted((ROOT / "formal").rglob("*.lean"))
+              "scripts/export_check.py", "scripts/provenance.py", "scripts/verify.py",
+              "formal/theta-audit/ADAPTATION.json")]
+    inputs = sorted(set(inputs + provenance["all_paths"]))
     return closure, libs, [bind(path) for path in inputs]
 
 
@@ -247,7 +242,9 @@ def run(args):
             "required_raw_modules": sorted(closure), "LEAN_PATH": env["LEAN_PATH"],
             "LEAN_SRC_PATH": None, "roots": list(NAMES), "allowed_axioms": sorted(ALLOWED),
             "parent_stack_limits": list(stack), "old_projects_executed_or_written": False})
-        audit_run = launch([tools["lean"], "-j1", "-M4096", "-o",
+        # Module-mode quotation plus a full-private proof environment coexist.
+        # The resource cap changes, not the allowed axioms or checked roots.
+        audit_run = launch([tools["lean"], "-j1", "-M8192", "-o",
             lib / "ThetaIndependentAudit.olean", auditor.name], src, env, directory, "audit", args.timeout)
         logs = [line.split(MARKER, 1)[1] for line in Path(audit_run["log"]["path"]).read_text().splitlines() if MARKER in line]
         require(len(logs) == 1, "Expected exactly one raw theorem audit marker")

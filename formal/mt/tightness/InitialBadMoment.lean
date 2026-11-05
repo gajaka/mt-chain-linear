@@ -1,5 +1,9 @@
-import RefreshDensity
-import ChainLyapunov
+module
+
+public import RefreshDensity
+public import ChainLyapunov
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

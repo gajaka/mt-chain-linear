@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "purpose": "Module-system migration to remove Lake warnings without suppressing them; original extraction remains archived and unchanged.",
+  "extraction_manifest_sha256": "e1f4e5f4164ddbdfaa9922925983347767d244d7de0f80ebbbd54d289ed12f94",
+  "archived_root": "provenance/module-migration/before",
+  "source_files": [
+    {
+      "path": "formal/mt/core/ActualScan.lean",
+      "before_sha256": "046b3aa1ff32d225f636899d167647d5b72b95253e8f7942a3b930b38abc2db2",
+      "after_sha256": "6e323c2013fe0eb89b22d2efb98f83697de286e2fbeb2f4640da66b5ba0f2041",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/ActualStep.lean",
+      "before_sha256": "15f52baf7bb5d649504d596e569453c794e054e19b6d673cb9174730653a3ad2",
+      "after_sha256": "1f63e345670d1e15608a28c1ada5e2c3949bc3170d80a465b50f4d0d5b2bddee",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/Chain.lean",
+      "before_sha256": "1900df8c4bbb21dcbb56b30c9ec4614f03a4defd9997abc53c70f325caf93ab0",
+      "after_sha256": "551779df094e539792ed5256078615c73d1fe1733ae83dd6b1fff5a30ab24a1d",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/ChainKernel.lean",
+      "before_sha256": "374d6cd0b41c5338b72cb7c3e25e07e03787f951db4c42b74ea2e14d61d0012c",
+      "after_sha256": "ba155ace55634b928b4a1a19fbd4e1c9d9a6ab9102462d8cceb219901529f6d2",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/ChainLyapunov.lean",
+      "before_sha256": "31689e7e429ce6ad3ac5067401a700d1bfa332216a3de0ddd7cc466f5a6dcd49",
+      "after_sha256": "2cfb01544f7efab30258efc3e60124e753f7421e89488977d2ef95f994b66b42",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/CompletionExpect.lean",
+      "before_sha256": "fa0c950601aa5c941886636016255b63c9a11c9c830e01095c6312032c882854",
+      "after_sha256": "23c93ced5738f1a88a38600df882c610191a4bf82db880724dd67b227a8e1417",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/Features.lean",
+      "before_sha256": "a66637ddb406efe6c57bb063e0aac96e2795db8bbde5985fcebbd45020ee4330",
+      "after_sha256": "9a1b6f3cfda58e5ad470d74215352b1d8cf77a4d21d54f309f892ce7cad3d522",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/FilteredKernel.lean",
+      "before_sha256": "64d0deaaad2f724261d3ef75091cb3c4187adab504c46497d4ee445d67cd5b8c",
+      "after_sha256": "62b93d41e6e2781aea8501f6583140fb1f59c6451e1bca5f48d655f2cdcb51fb",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/Filtering.lean",
+      "before_sha256": "f038bc65e36a11d5b39846acd570006b60345a916c662984b89ffd3e1b0c24df",
+      "after_sha256": "603335c8ad6257dc51f83d7fd5b80648a685321d16c548ea4b72277e59b56e66",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/FinalQuadratic.lean",
+      "before_sha256": "f005501d7a1db6f0b169a4152c740c14721aa66d625ad5cf1d45df5e5da081df",
+      "after_sha256": "c11389f2d5adc98dfc6915939d3820f5f0a80f6cf7713a27bc17f2641a2c1b20",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/FreshDraws.lean",
+      "before_sha256": "9f908613fa893b86940c755d996a1419929c177c9912837cee1914d8add0eead",
+      "after_sha256": "c5b46028ba195cfd0d280b14933a999ebbb6b177feb4b4ce130788d06d2bdb9e",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/HistoryFiltering.lean",
+      "before_sha256": "68142e557298ee53fd6f995fd34ff5a0f4c164d32947f293a9781bb313cd3a93",
+      "after_sha256": "97590dbdfa97520472b3556e99fb918ebeab65375a4445efa78527bd8e3d8f19",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/Intertwining.lean",
+      "before_sha256": "3ccff276229b3ce74674499592faca77fb7c55faa3bb852f6f753e16477c4fc7",
+      "after_sha256": "2e1307d6e3769ff0cd560c9724bdf139107ac6e88df04f98b577d6a65cb2a4a2",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/KernelWork.lean",
+      "before_sha256": "ea7abde1dadb141b46e005319a0015103c8d45493b119af9fd270c987b56b629",
+      "after_sha256": "6497e2d4261632f5a9d8d651679a0e225f5382dfc4b7265aba18cd434da5690d",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/ObservedFeatures.lean",
+      "before_sha256": "d48076072d6107691ba9c4da71967db75e9e29c9a5b604eacee01c62d91436de",
+      "after_sha256": "9db3fb190c90e3319bb3d5b05abafd7667738dcbf571c3375bd8a30f52337d1d",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/PayoffAverages.lean",
+      "before_sha256": "be8e49a70c907497b672ac20020b679148276687b1e421ca22a037355d407219",
+      "after_sha256": "7d97b20bdbf87a757415bdf3bd590428c22d422fe749e4ef32adff8447896b66",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/PotentialAlgebra.lean",
+      "before_sha256": "180ae782c295b8bf9bb6eb582e45cd2ca2604a0aad4d43715e5fc965ccc0d204",
+      "after_sha256": "829fdd2ec4e76373d5546123f1ab8cfb327f157da447858575fe3bfee83a6ead",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/PotentialTransport.lean",
+      "before_sha256": "0f00bdeab2728fa6a5837ae0bc1720791aca91cf657c5c175a70bc96bfa6d7d1",
+      "after_sha256": "4996e6c80be54ca30d3d45e28e709cc49898a1bde88e9daf931556372f0669d5",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/RefreshDensity.lean",
+      "before_sha256": "96dbbe7d9537a2195df48925afc359bb6565420e9e700e463889d95cd8d63e49",
+      "after_sha256": "6625a588b3f32236adb41261f642a6bec319ef2ab820e6c48124fbd7b8486155",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/RegularDrift.lean",
+      "before_sha256": "f50df84ac69a0e3f085d77db0611db18610bf82bb1d247dd03672f0662c81b69",
+      "after_sha256": "74a1287a46e2ad8f740fca0d9df956ee0dbd09e779dbfb753c22da2cbe6afe5d",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/ScanBounds.lean",
+      "before_sha256": "ee93f04e53107fa973a5f87340ab8372f694f7affd64a39d416613314847244a",
+      "after_sha256": "8a75c01fad436205a6ae9cc84fd1c80ec18f8a94910ba761063e8fd6d74f08ee",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/StoppedKernel.lean",
+      "before_sha256": "31bc162e3a3a088c6076118c8d52a3362cee8239c69101bdab077966ddf548ad",
+      "after_sha256": "9e9d818ee08fecbbce0036519195789e1fb89bfcb71fe926a88c315898ca992b",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/TailLaw.lean",
+      "before_sha256": "a9209cf8fad3bec2cabf29f492e766faafea1d02e6adcb447479b9ea2ac73cd4",
+      "after_sha256": "3b15478a81f94a8daebc810c4d1c45b6e25f85057b9b33fcb07160fde3b7820d",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/core/TailScan.lean",
+      "before_sha256": "bade32186e87d1f1e5011f4b8f5432dc342a92867410e07a36628cd094de5340",
+      "after_sha256": "afd1ad78deded85e6c1da0df98d275a8d24b699252742ef2d9110cdec08f6ade",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/paper/Accounting.lean",
+      "before_sha256": "ce45864e88d0a811b1a4936d579c358a5b62f178e3cea5bb7aefd6e0462494ff",
+      "after_sha256": "c07fccee2e76a525a79b67479f1eddd7e00d9ea36c332275b69b11c113dac4f6",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/paper/Barrier.lean",
+      "before_sha256": "434306a7bf7610798b57941b8b0cf42893b82ff00b0f314657fac167c21f109a",
+      "after_sha256": "af67c3d1274b6dfe5d99e356d569f1bbf23a4bce1c9d53b78c0f89ed3ef7f402",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/tightness/ExceptionalBound.lean",
+      "before_sha256": "6df67206129f76e673cc5f75b37eac372be79b6332eef4ed555b5d4f42727126",
+      "after_sha256": "43c2301963a6d60539a8e9779b9a73278575824788b99e958bd9f83d649e42bd",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/tightness/InitialBadMoment.lean",
+      "before_sha256": "232d44cf6bb404f8f73e3170931fa29c3d10019f47054b0da10c8d92fed28e76",
+      "after_sha256": "8942c63279166c647239a682cd4a8800df6d63a39ce2546ce62861ff15d4b37f",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/tightness/LinearAsymptotics.lean",
+      "before_sha256": "53f36f82cc38013d4114720958a3786fba16071567ed2bc13787b7f8ca827335",
+      "after_sha256": "35b0e5ef98e08f07c60b30af65db73de2fa0abfa0bddb428e3eec0a185546e69",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/tightness/LinearPotential.lean",
+      "before_sha256": "a67d50d00c41f5c790b7d41dfc48703956c177a01050c9a7d00fde5c823d6349",
+      "after_sha256": "886a51b59b6273ba8cf1e6306238bb0679b69889e55dd400ea73517bc8efa99c",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/tightness/LowerBound.lean",
+      "before_sha256": "eb5f2039165e14cc63bf00749cd96ae7775de28a1b93a91a313d66e5c323196d",
+      "after_sha256": "b0473f6052385830f7482bdfd08d973ebe2a4619cb13a0a32a6ac85c40380181",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/tightness/TightnessResults.lean",
+      "before_sha256": "23b4392aec33b6772d154ed87696898bda610a000c2638721d748c5ae1ca5813",
+      "after_sha256": "956e51a61c8845414ee622172f4334074e256fa1a9294b139d34417a87fc6dba",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/mt/tightness/UniformScan.lean",
+      "before_sha256": "06ddddb93cc5e132fb03d35ccc8bfc6290426fe423b6a57c6d1cc03dd7c9a792",
+      "after_sha256": "6b29bb9eec6322429b3f7ebb1555f5b3341df7e43183fbe2a3fd6535f09e59b3",
+      "transform": "module-public-section-v1"
+    },
+    {
+      "path": "formal/theta-audit/ThetaIndependentAudit.lean",
+      "before_sha256": "7b7c7e7ff7ed20f20bb30339ef329fc09a559d08318d9ee98256ff60e5e9ef24",
+      "after_sha256": "e2d238400a5a1148b87b9a2e90006d542b60b29d9c503a6b09177b228181886d",
+      "transform": {
+        "kind": "exact-replacements-v1",
+        "replacements": [
+          {
+            "before": "import TightnessResults\nimport Lean\n",
+            "after": "module\nimport all TightnessResults\nmeta import Lean\n"
+          },
+          {
+            "before": "  let env := (<- getEnv).setExporting false\n",
+            "after": "  let auditEnv <- getEnv\n  let env <- liftIO <| Lean.importModules\n    #[{ module := Name.mkSimple \"TightnessResults\" }] {}\n    (loadExts := false) (level := .private)\n  let env := env.setExporting false\n"
+          },
+          {
+            "before": "  for index in [:env.allImportedModuleNames.size] do\n    let moduleName := env.allImportedModuleNames[index]!\n",
+            "after": "  let importedNames := sortedNames\n    (auditEnv.allImportedModuleNames ++ env.allImportedModuleNames)\n  for index in [:importedNames.size] do\n    let moduleName := importedNames[index]!\n"
+          },
+          {
+            "before": "(\"main_module\", toJson env.mainModule.toString)",
+            "after": "(\"main_module\", toJson auditEnv.mainModule.toString)"
+          },
+          {
+            "before": "    (\"imported_module_count\", toJson imports.size),\n",
+            "after": "    (\"audit_support_imported_module_count\", toJson auditEnv.allImportedModuleNames.size),\n    (\"proof_imported_module_count\", toJson env.allImportedModuleNames.size),\n    (\"import_inventory_method\", toJson \"Deduplicated union of auditor support imports and full-private proof imports\"),\n    (\"imported_module_count\", toJson imports.size),\n"
+          }
+        ]
+      }
+    }
+  ],
+  "tooling_files": [
+    {
+      "path": "scripts/export_check.py",
+      "sha256": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c"
+    },
+    {
+      "path": "scripts/independent.py",
+      "sha256": "1783f1b015aad8cdde0a1bae7d44284b07b4e3045162fe2ae34fd17b186668fe"
+    },
+    {
+      "path": "scripts/provenance.py",
+      "sha256": "d7bf1c22837e6a0c868538f346e73857769e64ed93f4c4267b6f03a087e3509e"
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "9c2db636c68d93cab092a1d2fced1aa388c625a8fe07a37affcd95d4770df094"
+    }
+  ],
+  "supporting_files": [
+    {
+      "path": "lakefile.lean",
+      "sha256": "5dfbd908d536c3c4c45d37250bc628f1783de4a09c28f6c32aae119b2c4a9d7e"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "51a4a3e8411e761c5a95c2fd2a0b05ac2cd35eb93a1d3eb3f483a167ba9f59a8"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    {
+      "path": "formal/theta-audit/ADAPTATION.json",
+      "sha256": "f1bedfa7f8daba723b226442d792b266b97b9f0a488b36582660693994249406"
+    },
+    {
+      "path": "provenance/module-migration/before/evidence/VERIFICATION.json",
+      "sha256": "75051d944d66ae56542da249458fb2d56963723ccc1160831f104d2a9928a15f"
+    },
+    {
+      "path": "provenance/module-migration/before/lakefile.lean",
+      "sha256": "7baec716de7f89afe0d57433b77fc51792ecb0e78ee86f1349aca06adc34bcf7"
+    },
+    {
+      "path": "provenance/module-migration/before/formal/theta-audit/ADAPTATION.json",
+      "sha256": "f1bedfa7f8daba723b226442d792b266b97b9f0a488b36582660693994249406"
+    }
+  ],
+  "scope": [
+    "33 mathematical sources: only module/public-import/public-expose headers change.",
+    "Auditor: explicit full-private proof inspection; import inventory is the union of support and proof environments.",
+    "Independent audit cap increased from 4096 to 8192 MiB; no change to nine roots, exact type checks or three permitted axioms.",
+    "SOURCE_MANIFEST.json and ADAPTATION.json remain extraction-stage records, not current source hashes."
+  ]
+}

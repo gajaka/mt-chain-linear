@@ -1,5 +1,9 @@
-import Mathlib.Data.Fintype.BigOperators
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Fintype.BigOperators
+public import Mathlib.Tactic
+
+@[expose] public section
 
 set_option autoImplicit false
 

@@ -122,8 +122,11 @@ Principal namespaces are `MTChainFormal` and `MTChainFormal.Tightness`.
 | `formal/mt/paper/` | Separate accounting/barrier supplement; not a premise of Theta(n) |
 | `formal/theta-audit/` | Independent-checker quotation support |
 
-`SOURCE_MANIFEST.json` identifies exact copies and adaptations. The source project
-is needed only for optional comparison. Historical and fresh evidence differ.
+`SOURCE_MANIFEST.json` preserves the original extraction identities and adaptations.
+The extracted versions are archived under `provenance/module-migration/before/`.
+`MODULE_MIGRATION.json` records the later module-system migration and current
+source identities. The source project is needed only for optional comparison.
+Historical and current verification evidence are kept separately.
 
 ## Build and verification
 
@@ -132,44 +135,51 @@ The only direct library dependency is the pinned Mathlib revision.
 
 ```sh
 lake exe cache get
-lake build
-python3 scripts/verify.py
+lake --wfail build
+python3 scripts/verify.py --output evidence/source-check-local.json
 ```
 
 When the source project is available, source identity can also be checked with:
 
 ```sh
-python3 scripts/verify.py --compare-source ../ppg-proof-repair
+python3 scripts/verify.py --compare-source ../ppg-proof-repair --output evidence/source-comparison-local.json
 ```
 
-Fresh verification of this extraction passed:
+Fresh verification after the module-system migration:
 
 - All 34 local Lean modules built from an absent project build directory;
-  pinned external dependency caches were reused.
-- All 32 unchanged copies match their source SHA-256 values. The optional
-  comparison also checked 81 source-project files/configurations unchanged.
+  `lake --wfail build` reported zero warnings and zero errors. Pinned external
+  dependency caches were reused.
+- The 32 archived extraction copies match their source SHA-256 values.
+  Current proof files have only the recorded module-header changes; their
+  mathematical bodies are unchanged. The optional comparison also checks
+  81 source-project files/configurations unchanged.
 - Nine selected theorem statements, binders and actual proof closures passed
   the axiom audit, using only `propext`, `Classical.choice` and `Quot.sound`.
 - A fresh Nanoda replay checked those nine roots and their proof closure:
-  17,688 expanded declarations, with no errors and no PPG imports.
+  17,707 expanded declarations, with no errors and no PPG imports.
 
 See [REPORT.md](REPORT.md) and [evidence/VERIFICATION.json](evidence/VERIFICATION.json).
-The retained sources produce 23 Lake module-migration warnings. An initial
-`--wfail` attempt rejected those warnings; normal `lake build` succeeds.
-The proof sources remain byte-identical to their origins.
+The original build produced 23 Lake module-migration warnings. The proof files
+now use `module`, `public import` and `@[expose] public section`, preserving
+public definitions and transitive imports. No warning category is suppressed.
+The audit separately loads full private proof data so module visibility cannot
+hide a proof body from its transitive axiom check. The initial failed strict
+build and the earlier successful verification remain historical evidence.
 
 [TOOLING.md](TOOLING.md) documents the external checker, its binary-specific
-pins and the exact replay commands. A saved-evidence check on the original
+pins and the exact replay commands. A saved-evidence check on the current
 local artifacts is:
 
 ```sh
-python3 -B scripts/independent.py --verify --attempt attempt-002
+python3 -B scripts/independent.py --verify --attempt attempt-003
 ```
 
 Raw exports and compiled dependencies are excluded from Git. A fresh checker
-run requires those tools and a new unused attempt name. `verify.py` refreshes
-the current derived source-verification receipt; independent proof attempts
-are never overwritten. These checks concern the formal definitions, not an
+run requires those tools and a new unused attempt name. `verify.py` writes a
+new source receipt and refuses to overwrite an existing file; choose an unused
+`--output` path on each run. Independent proof attempts are also never overwritten.
+These checks concern the formal definitions, not an
 external Python implementation or a random-number generator.
 
 ## Relation to existing MT results

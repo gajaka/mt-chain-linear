@@ -1,0 +1,68 @@
+theorem MTChainFormal.Tightness.expected_steps_ge_linear_refined :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 2) n → LE.le
+    (ENNReal.ofReal (HDiv.hDiv (HSub.hSub (HMul.hMul (OfNat.ofNat 5) (Nat.cast n)) (OfNat.ofNat 6)) (OfNat.ofNat 36)))
+    (MTChainFormal.expectedSteps n) :=
+  _
+
+theorem MTChainFormal.Tightness.expected_steps_ge_linear :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 2) n → LE.le (ENNReal.ofReal (HDiv.hDiv (Nat.cast n) (OfNat.ofNat 18)))
+    (MTChainFormal.expectedSteps n) :=
+  _
+
+theorem MTChainFormal.Tightness.expected_steps_le_linear :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 2) n → LE.le (MTChainFormal.expectedSteps n)
+    (ENNReal.ofReal (HMul.hMul (OfNat.ofNat 1054) (Nat.cast n))) :=
+  _
+
+theorem MTChainFormal.Tightness.linear_work_bounds :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 2) n → And
+    (LE.le (ENNReal.ofReal (HDiv.hDiv (Nat.cast n) (OfNat.ofNat 18))) (MTChainFormal.expectedSteps n))
+    (LE.le (MTChainFormal.expectedSteps n) (ENNReal.ofReal (HMul.hMul (OfNat.ofNat 1054) (Nat.cast n)))) :=
+  _
+
+theorem MTChainFormal.Tightness.expected_steps_isTheta_linear :
+  Asymptotics.IsTheta Filter.atTop (fun (n : Nat) => ENNReal.toReal (MTChainFormal.expectedSteps n))
+    (fun (n : Nat) => Nat.cast n) :=
+  _
+
+theorem MTChainFormal.Tightness.expected_steps_not_quadratic_lower :
+  Not
+    (Asymptotics.IsBigO Filter.atTop (fun (n : Nat) => HPow.hPow (Nat.cast n) (OfNat.ofNat 2))
+      (fun (n : Nat) => ENNReal.toReal (MTChainFormal.expectedSteps n))) :=
+  _
+
+theorem MTChainFormal.Tightness.expected_steps_not_isTheta_quadratic :
+  Not
+    (Asymptotics.IsTheta Filter.atTop (fun (n : Nat) => ENNReal.toReal (MTChainFormal.expectedSteps n))
+      (fun (n : Nat) => HPow.hPow (Nat.cast n) (OfNat.ofNat 2))) :=
+  _
+
+theorem MTChainFormal.Tightness.no_positive_quadratic_lower_bound :
+  Not
+    (Exists
+      (fun (c : Real) =>
+      Exists
+        (fun (N : Nat) =>
+        And (LT.lt (OfNat.ofNat 0) c)
+          (forall (n : Nat),
+          LE.le N n → LE.le (ENNReal.ofReal (HMul.hMul c (HPow.hPow (Nat.cast n) (OfNat.ofNat 2))))
+            (MTChainFormal.expectedSteps n))))) :=
+  _
+
+theorem MTChainFormal.Tightness.expected_invalidations_le_linear :
+  forall {n : Nat},
+  LE.le (OfNat.ofNat 2) n → LE.le (MTChainFormal.expectedInvalidations n)
+    (ENNReal.ofReal (HMul.hMul (OfNat.ofNat 2108) (Nat.cast n))) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 17707 declarations with no errors

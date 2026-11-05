@@ -1,7 +1,11 @@
-import Mathlib.Data.Fintype.BigOperators
-import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
-import Mathlib.Topology.Algebra.InfiniteSum.Real
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Fintype.BigOperators
+public import Mathlib.Topology.Algebra.InfiniteSum.ENNReal
+public import Mathlib.Topology.Algebra.InfiniteSum.Real
+public import Mathlib.Tactic
+
+@[expose] public section
 
 set_option autoImplicit false
 

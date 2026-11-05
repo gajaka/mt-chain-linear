@@ -1,0 +1,635 @@
+{
+  "schema_version": 1,
+  "source_project": "/Users/gajaka/projects/ppg-proof-repair",
+  "theta_root": "LinearAsymptotics",
+  "theta_module_count": 30,
+  "copy_count": 32,
+  "copied_files": [
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/ActualScan.lean",
+      "destination": "formal/mt/core/ActualScan.lean",
+      "sha256_source": "046b3aa1ff32d225f636899d167647d5b72b95253e8f7942a3b930b38abc2db2",
+      "sha256_copy": "046b3aa1ff32d225f636899d167647d5b72b95253e8f7942a3b930b38abc2db2",
+      "bytes": 12176,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/ActualStep.lean",
+      "destination": "formal/mt/core/ActualStep.lean",
+      "sha256_source": "15f52baf7bb5d649504d596e569453c794e054e19b6d673cb9174730653a3ad2",
+      "sha256_copy": "15f52baf7bb5d649504d596e569453c794e054e19b6d673cb9174730653a3ad2",
+      "bytes": 29106,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/Chain.lean",
+      "destination": "formal/mt/core/Chain.lean",
+      "sha256_source": "1900df8c4bbb21dcbb56b30c9ec4614f03a4defd9997abc53c70f325caf93ab0",
+      "sha256_copy": "1900df8c4bbb21dcbb56b30c9ec4614f03a4defd9997abc53c70f325caf93ab0",
+      "bytes": 10067,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/ChainKernel.lean",
+      "destination": "formal/mt/core/ChainKernel.lean",
+      "sha256_source": "374d6cd0b41c5338b72cb7c3e25e07e03787f951db4c42b74ea2e14d61d0012c",
+      "sha256_copy": "374d6cd0b41c5338b72cb7c3e25e07e03787f951db4c42b74ea2e14d61d0012c",
+      "bytes": 11238,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/ChainLyapunov.lean",
+      "destination": "formal/mt/core/ChainLyapunov.lean",
+      "sha256_source": "31689e7e429ce6ad3ac5067401a700d1bfa332216a3de0ddd7cc466f5a6dcd49",
+      "sha256_copy": "31689e7e429ce6ad3ac5067401a700d1bfa332216a3de0ddd7cc466f5a6dcd49",
+      "bytes": 3001,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/CompletionExpect.lean",
+      "destination": "formal/mt/core/CompletionExpect.lean",
+      "sha256_source": "fa0c950601aa5c941886636016255b63c9a11c9c830e01095c6312032c882854",
+      "sha256_copy": "fa0c950601aa5c941886636016255b63c9a11c9c830e01095c6312032c882854",
+      "bytes": 5833,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/tightness/ExceptionalBound.lean",
+      "destination": "formal/mt/tightness/ExceptionalBound.lean",
+      "sha256_source": "6df67206129f76e673cc5f75b37eac372be79b6332eef4ed555b5d4f42727126",
+      "sha256_copy": "6df67206129f76e673cc5f75b37eac372be79b6332eef4ed555b5d4f42727126",
+      "bytes": 8202,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/Features.lean",
+      "destination": "formal/mt/core/Features.lean",
+      "sha256_source": "a66637ddb406efe6c57bb063e0aac96e2795db8bbde5985fcebbd45020ee4330",
+      "sha256_copy": "a66637ddb406efe6c57bb063e0aac96e2795db8bbde5985fcebbd45020ee4330",
+      "bytes": 18984,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/FilteredKernel.lean",
+      "destination": "formal/mt/core/FilteredKernel.lean",
+      "sha256_source": "64d0deaaad2f724261d3ef75091cb3c4187adab504c46497d4ee445d67cd5b8c",
+      "sha256_copy": "64d0deaaad2f724261d3ef75091cb3c4187adab504c46497d4ee445d67cd5b8c",
+      "bytes": 15652,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/Filtering.lean",
+      "destination": "formal/mt/core/Filtering.lean",
+      "sha256_source": "f038bc65e36a11d5b39846acd570006b60345a916c662984b89ffd3e1b0c24df",
+      "sha256_copy": "f038bc65e36a11d5b39846acd570006b60345a916c662984b89ffd3e1b0c24df",
+      "bytes": 27205,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/FinalQuadratic.lean",
+      "destination": "formal/mt/core/FinalQuadratic.lean",
+      "sha256_source": "f005501d7a1db6f0b169a4152c740c14721aa66d625ad5cf1d45df5e5da081df",
+      "sha256_copy": "f005501d7a1db6f0b169a4152c740c14721aa66d625ad5cf1d45df5e5da081df",
+      "bytes": 6878,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/FreshDraws.lean",
+      "destination": "formal/mt/core/FreshDraws.lean",
+      "sha256_source": "9f908613fa893b86940c755d996a1419929c177c9912837cee1914d8add0eead",
+      "sha256_copy": "9f908613fa893b86940c755d996a1419929c177c9912837cee1914d8add0eead",
+      "bytes": 5153,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/HistoryFiltering.lean",
+      "destination": "formal/mt/core/HistoryFiltering.lean",
+      "sha256_source": "68142e557298ee53fd6f995fd34ff5a0f4c164d32947f293a9781bb313cd3a93",
+      "sha256_copy": "68142e557298ee53fd6f995fd34ff5a0f4c164d32947f293a9781bb313cd3a93",
+      "bytes": 9395,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/tightness/InitialBadMoment.lean",
+      "destination": "formal/mt/tightness/InitialBadMoment.lean",
+      "sha256_source": "232d44cf6bb404f8f73e3170931fa29c3d10019f47054b0da10c8d92fed28e76",
+      "sha256_copy": "232d44cf6bb404f8f73e3170931fa29c3d10019f47054b0da10c8d92fed28e76",
+      "bytes": 7419,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/Intertwining.lean",
+      "destination": "formal/mt/core/Intertwining.lean",
+      "sha256_source": "3ccff276229b3ce74674499592faca77fb7c55faa3bb852f6f753e16477c4fc7",
+      "sha256_copy": "3ccff276229b3ce74674499592faca77fb7c55faa3bb852f6f753e16477c4fc7",
+      "bytes": 7566,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/KernelWork.lean",
+      "destination": "formal/mt/core/KernelWork.lean",
+      "sha256_source": "ea7abde1dadb141b46e005319a0015103c8d45493b119af9fd270c987b56b629",
+      "sha256_copy": "ea7abde1dadb141b46e005319a0015103c8d45493b119af9fd270c987b56b629",
+      "bytes": 19247,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/tightness/LinearAsymptotics.lean",
+      "destination": "formal/mt/tightness/LinearAsymptotics.lean",
+      "sha256_source": "53f36f82cc38013d4114720958a3786fba16071567ed2bc13787b7f8ca827335",
+      "sha256_copy": "53f36f82cc38013d4114720958a3786fba16071567ed2bc13787b7f8ca827335",
+      "bytes": 3108,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/tightness/LinearPotential.lean",
+      "destination": "formal/mt/tightness/LinearPotential.lean",
+      "sha256_source": "a67d50d00c41f5c790b7d41dfc48703956c177a01050c9a7d00fde5c823d6349",
+      "sha256_copy": "a67d50d00c41f5c790b7d41dfc48703956c177a01050c9a7d00fde5c823d6349",
+      "bytes": 9780,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/tightness/LowerBound.lean",
+      "destination": "formal/mt/tightness/LowerBound.lean",
+      "sha256_source": "eb5f2039165e14cc63bf00749cd96ae7775de28a1b93a91a313d66e5c323196d",
+      "sha256_copy": "eb5f2039165e14cc63bf00749cd96ae7775de28a1b93a91a313d66e5c323196d",
+      "bytes": 9614,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/ObservedFeatures.lean",
+      "destination": "formal/mt/core/ObservedFeatures.lean",
+      "sha256_source": "d48076072d6107691ba9c4da71967db75e9e29c9a5b604eacee01c62d91436de",
+      "sha256_copy": "d48076072d6107691ba9c4da71967db75e9e29c9a5b604eacee01c62d91436de",
+      "bytes": 3640,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/PayoffAverages.lean",
+      "destination": "formal/mt/core/PayoffAverages.lean",
+      "sha256_source": "be8e49a70c907497b672ac20020b679148276687b1e421ca22a037355d407219",
+      "sha256_copy": "be8e49a70c907497b672ac20020b679148276687b1e421ca22a037355d407219",
+      "bytes": 3750,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/PotentialAlgebra.lean",
+      "destination": "formal/mt/core/PotentialAlgebra.lean",
+      "sha256_source": "180ae782c295b8bf9bb6eb582e45cd2ca2604a0aad4d43715e5fc965ccc0d204",
+      "sha256_copy": "180ae782c295b8bf9bb6eb582e45cd2ca2604a0aad4d43715e5fc965ccc0d204",
+      "bytes": 5808,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/PotentialTransport.lean",
+      "destination": "formal/mt/core/PotentialTransport.lean",
+      "sha256_source": "0f00bdeab2728fa6a5837ae0bc1720791aca91cf657c5c175a70bc96bfa6d7d1",
+      "sha256_copy": "0f00bdeab2728fa6a5837ae0bc1720791aca91cf657c5c175a70bc96bfa6d7d1",
+      "bytes": 3332,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/RefreshDensity.lean",
+      "destination": "formal/mt/core/RefreshDensity.lean",
+      "sha256_source": "96dbbe7d9537a2195df48925afc359bb6565420e9e700e463889d95cd8d63e49",
+      "sha256_copy": "96dbbe7d9537a2195df48925afc359bb6565420e9e700e463889d95cd8d63e49",
+      "bytes": 16823,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/RegularDrift.lean",
+      "destination": "formal/mt/core/RegularDrift.lean",
+      "sha256_source": "f50df84ac69a0e3f085d77db0611db18610bf82bb1d247dd03672f0662c81b69",
+      "sha256_copy": "f50df84ac69a0e3f085d77db0611db18610bf82bb1d247dd03672f0662c81b69",
+      "bytes": 9980,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/ScanBounds.lean",
+      "destination": "formal/mt/core/ScanBounds.lean",
+      "sha256_source": "ee93f04e53107fa973a5f87340ab8372f694f7affd64a39d416613314847244a",
+      "sha256_copy": "ee93f04e53107fa973a5f87340ab8372f694f7affd64a39d416613314847244a",
+      "bytes": 6680,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/StoppedKernel.lean",
+      "destination": "formal/mt/core/StoppedKernel.lean",
+      "sha256_source": "31bc162e3a3a088c6076118c8d52a3362cee8239c69101bdab077966ddf548ad",
+      "sha256_copy": "31bc162e3a3a088c6076118c8d52a3362cee8239c69101bdab077966ddf548ad",
+      "bytes": 2439,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/TailLaw.lean",
+      "destination": "formal/mt/core/TailLaw.lean",
+      "sha256_source": "a9209cf8fad3bec2cabf29f492e766faafea1d02e6adcb447479b9ea2ac73cd4",
+      "sha256_copy": "a9209cf8fad3bec2cabf29f492e766faafea1d02e6adcb447479b9ea2ac73cd4",
+      "bytes": 8580,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/core/TailScan.lean",
+      "destination": "formal/mt/core/TailScan.lean",
+      "sha256_source": "bade32186e87d1f1e5011f4b8f5432dc342a92867410e07a36628cd094de5340",
+      "sha256_copy": "bade32186e87d1f1e5011f4b8f5432dc342a92867410e07a36628cd094de5340",
+      "bytes": 3936,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/tightness/UniformScan.lean",
+      "destination": "formal/mt/tightness/UniformScan.lean",
+      "sha256_source": "06ddddb93cc5e132fb03d35ccc8bfc6290426fe423b6a57c6d1cc03dd7c9a792",
+      "sha256_copy": "06ddddb93cc5e132fb03d35ccc8bfc6290426fe423b6a57c6d1cc03dd7c9a792",
+      "bytes": 7413,
+      "role": "theta-import-closure"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/paper/Accounting.lean",
+      "destination": "formal/mt/paper/Accounting.lean",
+      "sha256_source": "ce45864e88d0a811b1a4936d579c358a5b62f178e3cea5bb7aefd6e0462494ff",
+      "sha256_copy": "ce45864e88d0a811b1a4936d579c358a5b62f178e3cea5bb7aefd6e0462494ff",
+      "bytes": 10673,
+      "role": "independent-paper-supplement"
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/paper/Barrier.lean",
+      "destination": "formal/mt/paper/Barrier.lean",
+      "sha256_source": "434306a7bf7610798b57941b8b0cf42893b82ff00b0f314657fac167c21f109a",
+      "sha256_copy": "434306a7bf7610798b57941b8b0cf42893b82ff00b0f314657fac167c21f109a",
+      "bytes": 4286,
+      "role": "independent-paper-supplement"
+    }
+  ],
+  "source_project_baseline": [
+    {
+      "path": "formal/ais/AISObstruction.lean",
+      "sha256": "2601c250016087d86bad527f7953816c86c661cffb2c0b0d9d6503c83e1f0bfe"
+    },
+    {
+      "path": "formal/ais/ActualNonprimary.lean",
+      "sha256": "cefaef64dfe03caf1ca95e85d2bb7f44a79d7068f419160f706107f592ec60aa"
+    },
+    {
+      "path": "formal/ais/CertificateAssembly.lean",
+      "sha256": "fe91e95f3c65ee1f72725f01a9712ffeb6785682869262a80364cc956131f39d"
+    },
+    {
+      "path": "formal/ais/CertificateAudit.lean",
+      "sha256": "a1adc18bc74d9ca38d8beabba7e8b68a25af046b4941d740f6006b5beb31fe07"
+    },
+    {
+      "path": "formal/ais/CertificateBalances.lean",
+      "sha256": "69329096165f91060d7a880eb628c2ffe6813f38087b927238fbdb78aa45d3d9"
+    },
+    {
+      "path": "formal/ais/CertificateData.lean",
+      "sha256": "25c59f799a3d6cca12f1b936e268b13f16438b8465dd4eff0319e2e14eefb8fc"
+    },
+    {
+      "path": "formal/ais/CertificateGrid.lean",
+      "sha256": "c76727fdc4f15a783d79e6ec4c797b502dd8ff8ff163ced1a809150c6ca2c3cf"
+    },
+    {
+      "path": "formal/ais/CertificateIncoming.lean",
+      "sha256": "c9e72b9a5ac475238f5c0ac4d427ff75b169772b143a4f4b66d97e9079571f88"
+    },
+    {
+      "path": "formal/ais/CertificateModel.lean",
+      "sha256": "e4bcca8c4ea630be361e19754fa6f0bc931faa9f306bbf96dfcfd13c2dc373c3"
+    },
+    {
+      "path": "formal/ais/CertificateStructure.lean",
+      "sha256": "7a38345414cf2acdb337403a79291d17d73c1c6b5f6e13f7dc2aed4b5e96228e"
+    },
+    {
+      "path": "formal/ais/CertificateSupport.lean",
+      "sha256": "3bce10b740b2acb2e27341bde5c53c03f1c42a9204618b4e966f0c61c75743cc"
+    },
+    {
+      "path": "formal/ais/CertificateValue.lean",
+      "sha256": "5935e134092bc7b94ce4f5e98d66def36308860f0ddb1026636189dd7fe6db2f"
+    },
+    {
+      "path": "formal/ais/ChainCertificate.lean",
+      "sha256": "705d35d3db8eef5ad60681956b16ff11153d632cfe828c9c857c9988c7c5a854"
+    },
+    {
+      "path": "formal/ais/Dual.lean",
+      "sha256": "1f7588130a9e53d49c3833fa7cd74bfbc0ef4d88df46983e6fe6b34c9257cd08"
+    },
+    {
+      "path": "formal/ais/LogBounds.lean",
+      "sha256": "9b647bd2b0f7d5f67474e61bb63ff34a578a75d3f88aaaaf0286b9a5fcd8364b"
+    },
+    {
+      "path": "formal/ais/ProfileTransfer.lean",
+      "sha256": "bea59748c711feb8dd660556f5390836e81f51ec9dc3d5217f97ab54dae02a05"
+    },
+    {
+      "path": "formal/discovery/Discovery/Audit.lean",
+      "sha256": "0b01b32e4b47bd167f374fccfda15076652b2de503ace9c47525e1c195f58e04"
+    },
+    {
+      "path": "formal/discovery/Discovery/Calibration.lean",
+      "sha256": "fa55ab5c70566ffc669b739058ae32f5892a818bc39cab26be6cfca8d584cf0a"
+    },
+    {
+      "path": "formal/discovery/Discovery/Model.lean",
+      "sha256": "f12259d0676134659d7e28e121826c9d903e829ea711e9cdd3781f3ec0d5b3bd"
+    },
+    {
+      "path": "formal/discovery/Discovery/ModelAudit.lean",
+      "sha256": "35932c2954c56beb3d6314d3dcd66e5e24c256c4a22865350094f30d9e324206"
+    },
+    {
+      "path": "formal/discovery/Discovery/NamedAudit.lean",
+      "sha256": "93091e1c6cdd0df0faebee6dda6b998e7c5b7382b6ab1cc3090e6b5e8e9cb1b1"
+    },
+    {
+      "path": "formal/discovery/Discovery/NamedRepairCost.lean",
+      "sha256": "b26e934bd8b0ee827cfb39ff92fd7e4c3687bcc6cc1db19fb1bb57fce24e5377"
+    },
+    {
+      "path": "formal/discovery/Discovery/NamedRepairData.lean",
+      "sha256": "9af7f17a97f3583a276ac10b4d7b8a369c221cd19141ee587e67fa8075cdc37b"
+    },
+    {
+      "path": "formal/discovery/Discovery/NamedRepairModel.lean",
+      "sha256": "de9f751b97c961edbff8a3adb00c9407f63b15def8f021dc95fcaa3cc259eea8"
+    },
+    {
+      "path": "formal/mt/core/ActualScan.lean",
+      "sha256": "046b3aa1ff32d225f636899d167647d5b72b95253e8f7942a3b930b38abc2db2"
+    },
+    {
+      "path": "formal/mt/core/ActualStep.lean",
+      "sha256": "15f52baf7bb5d649504d596e569453c794e054e19b6d673cb9174730653a3ad2"
+    },
+    {
+      "path": "formal/mt/core/Chain.lean",
+      "sha256": "1900df8c4bbb21dcbb56b30c9ec4614f03a4defd9997abc53c70f325caf93ab0"
+    },
+    {
+      "path": "formal/mt/core/ChainKernel.lean",
+      "sha256": "374d6cd0b41c5338b72cb7c3e25e07e03787f951db4c42b74ea2e14d61d0012c"
+    },
+    {
+      "path": "formal/mt/core/ChainLyapunov.lean",
+      "sha256": "31689e7e429ce6ad3ac5067401a700d1bfa332216a3de0ddd7cc466f5a6dcd49"
+    },
+    {
+      "path": "formal/mt/core/CompletionExpect.lean",
+      "sha256": "fa0c950601aa5c941886636016255b63c9a11c9c830e01095c6312032c882854"
+    },
+    {
+      "path": "formal/mt/core/Features.lean",
+      "sha256": "a66637ddb406efe6c57bb063e0aac96e2795db8bbde5985fcebbd45020ee4330"
+    },
+    {
+      "path": "formal/mt/core/FilteredKernel.lean",
+      "sha256": "64d0deaaad2f724261d3ef75091cb3c4187adab504c46497d4ee445d67cd5b8c"
+    },
+    {
+      "path": "formal/mt/core/Filtering.lean",
+      "sha256": "f038bc65e36a11d5b39846acd570006b60345a916c662984b89ffd3e1b0c24df"
+    },
+    {
+      "path": "formal/mt/core/FinalQuadratic.lean",
+      "sha256": "f005501d7a1db6f0b169a4152c740c14721aa66d625ad5cf1d45df5e5da081df"
+    },
+    {
+      "path": "formal/mt/core/FreshDraws.lean",
+      "sha256": "9f908613fa893b86940c755d996a1419929c177c9912837cee1914d8add0eead"
+    },
+    {
+      "path": "formal/mt/core/HistoryFiltering.lean",
+      "sha256": "68142e557298ee53fd6f995fd34ff5a0f4c164d32947f293a9781bb313cd3a93"
+    },
+    {
+      "path": "formal/mt/core/Intertwining.lean",
+      "sha256": "3ccff276229b3ce74674499592faca77fb7c55faa3bb852f6f753e16477c4fc7"
+    },
+    {
+      "path": "formal/mt/core/KernelWork.lean",
+      "sha256": "ea7abde1dadb141b46e005319a0015103c8d45493b119af9fd270c987b56b629"
+    },
+    {
+      "path": "formal/mt/core/ObservedFeatures.lean",
+      "sha256": "d48076072d6107691ba9c4da71967db75e9e29c9a5b604eacee01c62d91436de"
+    },
+    {
+      "path": "formal/mt/core/PayoffAverages.lean",
+      "sha256": "be8e49a70c907497b672ac20020b679148276687b1e421ca22a037355d407219"
+    },
+    {
+      "path": "formal/mt/core/PotentialAlgebra.lean",
+      "sha256": "180ae782c295b8bf9bb6eb582e45cd2ca2604a0aad4d43715e5fc965ccc0d204"
+    },
+    {
+      "path": "formal/mt/core/PotentialTransport.lean",
+      "sha256": "0f00bdeab2728fa6a5837ae0bc1720791aca91cf657c5c175a70bc96bfa6d7d1"
+    },
+    {
+      "path": "formal/mt/core/RefreshDensity.lean",
+      "sha256": "96dbbe7d9537a2195df48925afc359bb6565420e9e700e463889d95cd8d63e49"
+    },
+    {
+      "path": "formal/mt/core/RegularDrift.lean",
+      "sha256": "f50df84ac69a0e3f085d77db0611db18610bf82bb1d247dd03672f0662c81b69"
+    },
+    {
+      "path": "formal/mt/core/ScanBounds.lean",
+      "sha256": "ee93f04e53107fa973a5f87340ab8372f694f7affd64a39d416613314847244a"
+    },
+    {
+      "path": "formal/mt/core/StoppedKernel.lean",
+      "sha256": "31bc162e3a3a088c6076118c8d52a3362cee8239c69101bdab077966ddf548ad"
+    },
+    {
+      "path": "formal/mt/core/TailLaw.lean",
+      "sha256": "a9209cf8fad3bec2cabf29f492e766faafea1d02e6adcb447479b9ea2ac73cd4"
+    },
+    {
+      "path": "formal/mt/core/TailScan.lean",
+      "sha256": "bade32186e87d1f1e5011f4b8f5432dc342a92867410e07a36628cd094de5340"
+    },
+    {
+      "path": "formal/mt/paper/Accounting.lean",
+      "sha256": "ce45864e88d0a811b1a4936d579c358a5b62f178e3cea5bb7aefd6e0462494ff"
+    },
+    {
+      "path": "formal/mt/paper/Barrier.lean",
+      "sha256": "434306a7bf7610798b57941b8b0cf42893b82ff00b0f314657fac167c21f109a"
+    },
+    {
+      "path": "formal/mt/ppg/PPChainHazards.lean",
+      "sha256": "57a3101ae45f4b805f789251b41d1396f2e1b21e2f7c3cccbd30af5a8ec48db4"
+    },
+    {
+      "path": "formal/mt/ppg/PPGIntegration.lean",
+      "sha256": "1efce7ffd1831686c6eb720d152b99d14c4513fc351edfbfe5afafac2a7c0b69"
+    },
+    {
+      "path": "formal/mt/ppg/PPGRepairInstance.lean",
+      "sha256": "8b060d9e3ae7777c4737719dd3e276701c5ee656208f527313cb68c80c1e80b8"
+    },
+    {
+      "path": "formal/mt/ppg/PPGSessionGraph.lean",
+      "sha256": "876e82f046c06b602994d768c8165ef00649eef6e9717e40a93f94fdc7f4daa0"
+    },
+    {
+      "path": "formal/mt/ppg/ProfileAlgebra.lean",
+      "sha256": "17d2ac1821a6aa5633f666b4c65f1c90e789e6e2d788c3741194703061dd883e"
+    },
+    {
+      "path": "formal/mt/ppg/ProfileKernel.lean",
+      "sha256": "e00350688496ed6bf017dae0d9374b9882dfb6241bb5531f896f8254854cde50"
+    },
+    {
+      "path": "formal/mt/ppg/PublicKernelBridge.lean",
+      "sha256": "ae3c4fb54a00a0d826b5ead0719c540f6eca6c0c4e9cdb322dbb37b520b2a1e0"
+    },
+    {
+      "path": "formal/mt/tightness/ExceptionalBound.lean",
+      "sha256": "6df67206129f76e673cc5f75b37eac372be79b6332eef4ed555b5d4f42727126"
+    },
+    {
+      "path": "formal/mt/tightness/InitialBadMoment.lean",
+      "sha256": "232d44cf6bb404f8f73e3170931fa29c3d10019f47054b0da10c8d92fed28e76"
+    },
+    {
+      "path": "formal/mt/tightness/LinearAsymptotics.lean",
+      "sha256": "53f36f82cc38013d4114720958a3786fba16071567ed2bc13787b7f8ca827335"
+    },
+    {
+      "path": "formal/mt/tightness/LinearPotential.lean",
+      "sha256": "a67d50d00c41f5c790b7d41dfc48703956c177a01050c9a7d00fde5c823d6349"
+    },
+    {
+      "path": "formal/mt/tightness/LowerBound.lean",
+      "sha256": "eb5f2039165e14cc63bf00749cd96ae7775de28a1b93a91a313d66e5c323196d"
+    },
+    {
+      "path": "formal/mt/tightness/TightnessResults.lean",
+      "sha256": "19172a040c2d90c49e5cee7e53009234e6808cfc75225a8385d0ae078948ef70"
+    },
+    {
+      "path": "formal/mt/tightness/UniformScan.lean",
+      "sha256": "06ddddb93cc5e132fb03d35ccc8bfc6290426fe423b6a57c6d1cc03dd7c9a792"
+    },
+    {
+      "path": "formal/online/OnlineAlgebra/Auditor.lean",
+      "sha256": "04f95ac5c4674814a81b72f44218fdcbfaa88b2b7ba4282bdccbe0e994a01b91"
+    },
+    {
+      "path": "formal/online/OnlineAlgebra/Base.lean",
+      "sha256": "e119d12caabcf5d5830164a2d3d4304ea170c9956de87e15497e4a60a021ca7f"
+    },
+    {
+      "path": "formal/online/OnlineAlgebra/FormalAudit.lean",
+      "sha256": "fa9a5dc0a9a6261701b783b3a1d3597e5b7736c0e15d2764c7225d6f4c7f00fa"
+    },
+    {
+      "path": "formal/online/OnlineAlgebra/ListSortAdapter.lean",
+      "sha256": "259f15e7ef42ea9e619f7aa2c3a26041076c01b71cd1d58affb933007a2a02ba"
+    },
+    {
+      "path": "formal/online/OnlineAlgebra.lean",
+      "sha256": "5de3e7bfc98c91aeac3e57c0bf7179f3fe5e8aa37d155cb09704595b87396a6b"
+    },
+    {
+      "path": "formal/serious/SeriousRepair/Audit.lean",
+      "sha256": "94a7d6987ea5fc5731f295bc3b1cc6d00f3256fa834d1d4938617af45036c5ce"
+    },
+    {
+      "path": "formal/serious/SeriousRepair/Model.lean",
+      "sha256": "51cac1ab2568bb36f6d9017eeb82fb8b783753fe422c4ca9a50111542e70f9c0"
+    },
+    {
+      "path": "formal/serious/SeriousRepair/ModelAudit.lean",
+      "sha256": "0ca98ac88660a08a8049ebaf060d4d9fcf7001b4e1240b914523152300a6358c"
+    },
+    {
+      "path": "formal/serious/SeriousRepair/PolicyCli.lean",
+      "sha256": "334a9c7f88c6e95e3abd80dddfa85886a8b63ce41790cd4e90af0e74fe743926"
+    },
+    {
+      "path": "formal/synthesis/LemmaDiscoveryGenerator.lean",
+      "sha256": "1a20afb7661735ffec1f19e5c00bc353d4c3c55c7eaa9665959d15ac473b4bde"
+    },
+    {
+      "path": "formal/synthesis/PrefixCache.lean",
+      "sha256": "823b64e5e719f29cd2119db97b389fecc033e8d0fe8d923bb9fb822b5745cd1e"
+    },
+    {
+      "path": "formal/theta-audit/ThetaIndependentAudit.lean",
+      "sha256": "05efadc3f89a028b182339312fc1452e8d096f1363c9f9b03d0987fec69e343e"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "c2774743ef15de8366f3fb28dcf184a83f236413db91805d174db225cf85dfb5"
+    },
+    {
+      "path": "lakefile.lean",
+      "sha256": "9c7613434aab48991dacb72f3252a24396e67eefd6ace905fea65b2101935b59"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "bd5f37ff00ef97412aae21fd4266ec53da89c4e606b13497c955b9bf7bfabaf4"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "a313fcac5f1ec638f24eee2ac9642178a25b906a1dcb070289d7bb6b4f47c670"
+    }
+  ],
+  "adapted_files": [
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/mt/tightness/TightnessResults.lean",
+      "destination": "formal/mt/tightness/TightnessResults.lean",
+      "sha256_source": "19172a040c2d90c49e5cee7e53009234e6808cfc75225a8385d0ae078948ef70",
+      "sha256_adapted": "23b4392aec33b6772d154ed87696898bda610a000c2638721d748c5ae1ca5813",
+      "changes": [
+        "Remove import PPGIntegration",
+        "Remove three PPG/profile/recovery corollaries; retain two original raw theorem bodies"
+      ]
+    },
+    {
+      "source": "/Users/gajaka/projects/ppg-proof-repair/formal/theta-audit/ThetaIndependentAudit.lean",
+      "destination": "formal/theta-audit/ThetaIndependentAudit.lean",
+      "sha256_source": "05efadc3f89a028b182339312fc1452e8d096f1363c9f9b03d0987fec69e343e",
+      "sha256_adapted": "7b7c7e7ff7ed20f20bb30339ef329fc09a559d08318d9ee98256ff60e5e9ef24",
+      "changes": [
+        "Retain nine raw-process roots; remove profile, semantic-scope and recovery corollaries.",
+        "Remove the same three expected-type branches and the recovery-specific four-binder check.",
+        "Replace frozen root count twelve by nine.",
+        "Reject PPGraph, PPG, PPChain, Profile and PublicKernelBridge module prefixes.",
+        "Add adaptation scope documentation; keep original full raw closure, exact type and binder checking."
+      ]
+    }
+  ],
+  "tooling_files": [
+    {
+      "destination": "scripts/verify.py",
+      "sha256": "88cdb4a0de82eba7a6464dcdd51da513d6607b236124d2369fca49186bb4300d",
+      "role": "new-standalone-verification-tool"
+    },
+    {
+      "destination": "scripts/independent.py",
+      "sha256": "cd03a02d3836e3081f96070a8faabbefe0e7698e9db411ff5a1e997023664144",
+      "role": "new-standalone-verification-tool"
+    },
+    {
+      "destination": "scripts/export_check.py",
+      "sha256": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c",
+      "role": "unchanged-export-inspector",
+      "source": "/Users/gajaka/projects/ppg-lean-discovery/mt-chain-independent/export_check.py",
+      "sha256_source": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c"
+    }
+  ]
+}

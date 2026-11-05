@@ -1,7 +1,11 @@
-import RegularDrift
-import PotentialTransport
-import StoppedKernel
-import HistoryFiltering
+module
+
+public import RegularDrift
+public import PotentialTransport
+public import StoppedKernel
+public import HistoryFiltering
+
+@[expose] public section
 
 /-!
 An all-length theorem about the actual registered finite chain. The only

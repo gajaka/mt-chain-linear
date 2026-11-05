@@ -1,0 +1,17 @@
+{
+  "command": [
+    "lake",
+    "--wfail",
+    "build"
+  ],
+  "cwd": "/Users/gajaka/projects/mt-chain-linear",
+  "inherited_lean_path_cleared": true,
+  "project_build_directory_absent_at_start": true,
+  "project_objects_copied": false,
+  "dependency_cache_reused": true,
+  "exit_code": 0,
+  "seconds": 36.953599790999995,
+  "warning_count": 0,
+  "error_count": 0,
+  "log_sha256": "045f5a4159886a4da741bae8f734025bd5f1595c26fcc56343aec3ba6501cbfd"
+}

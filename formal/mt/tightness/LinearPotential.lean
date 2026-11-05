@@ -1,5 +1,9 @@
-import ExceptionalBound
-import FinalQuadratic
+module
+
+public import ExceptionalBound
+public import FinalQuadratic
+
+@[expose] public section
 
 /-!
 A linear potential for the same registered initialized chain.

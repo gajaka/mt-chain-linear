@@ -1,0 +1,1 @@
+/var/folders/pf/_bhx8j9d02b9k9s5wrchwsq80000gn/T/mt-module-audit-probe-5_64d2of/Probe.lean:268:0: error: Forbidden actual transitive axiom: MTChainFormal.Tightness.expected_invalidations_le_linear

@@ -1,5 +1,9 @@
-import ActualScan
-import TailLaw
+module
+
+public import ActualScan
+public import TailLaw
+
+@[expose] public section
 
 set_option autoImplicit false
 

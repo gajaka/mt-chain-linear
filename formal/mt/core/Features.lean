@@ -1,5 +1,9 @@
-import Chain
-import PotentialAlgebra
+module
+
+public import Chain
+public import PotentialAlgebra
+
+@[expose] public section
 
 set_option autoImplicit false
 

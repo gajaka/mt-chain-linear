@@ -1,6 +1,10 @@
-import FinalQuadratic
-import RefreshDensity
-import InitialBadMoment
+module
+
+public import FinalQuadratic
+public import RefreshDensity
+public import InitialBadMoment
+
+@[expose] public section
 
 /-!
 A linear lower bound for the same initialized least-failed chain.

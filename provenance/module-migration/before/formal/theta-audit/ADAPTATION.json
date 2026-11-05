@@ -1,0 +1,28 @@
+{
+  "audit_source": {
+    "destination": "formal/theta-audit/ThetaIndependentAudit.lean",
+    "destination_sha256": "7b7c7e7ff7ed20f20bb30339ef329fc09a559d08318d9ee98256ff60e5e9ef24",
+    "mutations": [
+      "Retain nine raw-process roots; remove profile, semantic-scope and recovery corollaries.",
+      "Remove the same three expected-type branches and the recovery-specific four-binder check.",
+      "Replace frozen root count twelve by nine.",
+      "Reject PPGraph, PPG, PPChain, Profile and PublicKernelBridge module prefixes.",
+      "Add adaptation scope documentation; keep original full raw closure, exact type and binder checking."
+    ],
+    "origin": "/Users/gajaka/projects/ppg-proof-repair/formal/theta-audit/ThetaIndependentAudit.lean",
+    "origin_sha256": "05efadc3f89a028b182339312fc1452e8d096f1363c9f9b03d0987fec69e343e"
+  },
+  "export_inspector": {
+    "destination": "scripts/export_check.py",
+    "destination_sha256": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c",
+    "mutations": [],
+    "origin": "/Users/gajaka/projects/ppg-lean-discovery/mt-chain-independent/export_check.py",
+    "origin_sha256": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c"
+  },
+  "runner_design_reference": {
+    "note": "New standalone runner; no imports of the old runner/config/workspaces; no old source or evidence writes.",
+    "origin": "/Users/gajaka/projects/ppg-lean-discovery/mt-chain-independent/run.py",
+    "origin_sha256": "92eb3e4e212afbac871790fe6085ee421e449009f989aecda8eb355d890bcb53"
+  },
+  "schema_version": 1
+}

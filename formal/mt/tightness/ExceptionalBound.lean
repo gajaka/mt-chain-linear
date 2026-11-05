@@ -1,5 +1,9 @@
-import UniformScan
-import RegularDrift
+module
+
+public import UniformScan
+public import RegularDrift
+
+@[expose] public section
 
 set_option autoImplicit false
 

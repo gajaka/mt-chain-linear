@@ -1,7 +1,11 @@
-import PotentialAlgebra
-import Mathlib.Data.Fin.Tuple.Basic
-import Mathlib.Data.Fintype.BigOperators
-import Mathlib.Tactic
+module
+
+public import PotentialAlgebra
+public import Mathlib.Data.Fin.Tuple.Basic
+public import Mathlib.Data.Fintype.BigOperators
+public import Mathlib.Tactic
+
+@[expose] public section
 
 set_option autoImplicit false
 

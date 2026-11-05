@@ -1,0 +1,20 @@
+{
+  "directory": "/var/folders/pf/_bhx8j9d02b9k9s5wrchwsq80000gn/T/mt-module-audit-union-probe-yvlyapr5",
+  "exit_code": 0,
+  "seconds": 15.177217084,
+  "log_bytes": 7719621,
+  "source_sha256": "e2d238400a5a1148b87b9a2e90006d542b60b29d9c503a6b09177b228181886d",
+  "root_count": 9,
+  "closure": 17247,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "imported_modules": 5534,
+  "audit_support_modules": 5513,
+  "proof_modules": 4813,
+  "unique_imports": true,
+  "main_module": "_stdin",
+  "log_sha256": "708d1a5062030f0269498ee0bf3411a44374240c570312a19cd9c23a3ba24f68"
+}

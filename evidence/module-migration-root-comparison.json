@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "scope": "Compare nine selected root type ASTs/axioms with historical extraction; no claim of identical compiled proof terms. Both versions have separate independent proof checks.",
+  "before": {
+    "path": "evidence/attempt-002/audit.json",
+    "sha256": "5fcb9abd78c8fb724383649e625bc731db1e81c5c6bd090415c7af833a3f130a"
+  },
+  "after": {
+    "path": "evidence/attempt-003/audit.json",
+    "sha256": "91b49eefe7f59e142c058f21f036238161660a3ec3071f6ff28142f2abe7d475"
+  },
+  "roots": [
+    {
+      "name": "MTChainFormal.Tightness.expected_steps_ge_linear_refined",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": true,
+      "new_direct_proof_dependencies": [],
+      "removed_direct_proof_dependencies": []
+    },
+    {
+      "name": "MTChainFormal.Tightness.expected_steps_ge_linear",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": true,
+      "new_direct_proof_dependencies": [],
+      "removed_direct_proof_dependencies": []
+    },
+    {
+      "name": "MTChainFormal.Tightness.expected_steps_le_linear",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": true,
+      "new_direct_proof_dependencies": [],
+      "removed_direct_proof_dependencies": []
+    },
+    {
+      "name": "MTChainFormal.Tightness.linear_work_bounds",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": true,
+      "new_direct_proof_dependencies": [],
+      "removed_direct_proof_dependencies": []
+    },
+    {
+      "name": "MTChainFormal.Tightness.expected_steps_isTheta_linear",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": true,
+      "new_direct_proof_dependencies": [],
+      "removed_direct_proof_dependencies": []
+    },
+    {
+      "name": "MTChainFormal.Tightness.expected_steps_not_quadratic_lower",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": false,
+      "new_direct_proof_dependencies": [
+        "_private.LinearAsymptotics.0.MTChainFormal.Tightness.expected_steps_not_quadratic_lower._proof_1_1"
+      ],
+      "removed_direct_proof_dependencies": [
+        "MTChainFormal.Tightness.expected_steps_not_quadratic_lower._proof_1_1"
+      ]
+    },
+    {
+      "name": "MTChainFormal.Tightness.expected_steps_not_isTheta_quadratic",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": true,
+      "new_direct_proof_dependencies": [],
+      "removed_direct_proof_dependencies": []
+    },
+    {
+      "name": "MTChainFormal.Tightness.no_positive_quadratic_lower_bound",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": false,
+      "new_direct_proof_dependencies": [
+        "_private.TightnessResults.0.MTChainFormal.Tightness.no_positive_quadratic_lower_bound._proof_1_1"
+      ],
+      "removed_direct_proof_dependencies": [
+        "MTChainFormal.Tightness.no_positive_quadratic_lower_bound._proof_1_1"
+      ]
+    },
+    {
+      "name": "MTChainFormal.Tightness.expected_invalidations_le_linear",
+      "type_ast_identical": true,
+      "axioms_identical": true,
+      "proof_ast_identical": true,
+      "new_direct_proof_dependencies": [],
+      "removed_direct_proof_dependencies": []
+    }
+  ],
+  "type_asts_identical": 9,
+  "compiled_proof_asts_changed": 2
+}

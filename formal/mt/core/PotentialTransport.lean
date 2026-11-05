@@ -1,5 +1,9 @@
-import FilteredKernel
-import CompletionExpect
+module
+
+public import FilteredKernel
+public import CompletionExpect
+
+@[expose] public section
 
 set_option autoImplicit false
 

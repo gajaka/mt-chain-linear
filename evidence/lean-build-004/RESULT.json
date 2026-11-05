@@ -1,0 +1,15 @@
+{
+  "command": [
+    "lake",
+    "--wfail",
+    "build",
+    "MTCore",
+    "MTTightness",
+    "MTPaper"
+  ],
+  "exit_code": 0,
+  "seconds": 24.668469958000003,
+  "warnings": 0,
+  "errors": 0,
+  "log_sha256": "4695a40fbdbec48dce438586fb6f273828606a515242b81b45cbb5dfd1679fce"
+}

@@ -1,4 +1,8 @@
-import KernelWork
+module
+
+public import KernelWork
+
+@[expose] public section
 
 set_option autoImplicit false
 

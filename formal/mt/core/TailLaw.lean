@@ -1,5 +1,9 @@
-import Filtering
-import ActualScan
+module
+
+public import Filtering
+public import ActualScan
+
+@[expose] public section
 
 set_option autoImplicit false
 

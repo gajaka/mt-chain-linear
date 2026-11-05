@@ -1,5 +1,9 @@
-import Filtering
-import ChainKernel
+module
+
+public import Filtering
+public import ChainKernel
+
+@[expose] public section
 
 set_option autoImplicit false
 set_option backward.isDefEq.respectTransparency false

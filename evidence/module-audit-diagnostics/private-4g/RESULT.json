@@ -1,0 +1,10 @@
+{
+  "directory": "/var/folders/pf/_bhx8j9d02b9k9s5wrchwsq80000gn/T/mt-module-audit-private-probe-34zsd6no",
+  "exit_code": 134,
+  "seconds": 7.208187667000001,
+  "source_sha256": "f87b63fb79e26a62f930914abe8c5d5526ea64483d3544a829b67c46a65f5bbc",
+  "log_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+  "log_bytes": 196,
+  "note": "Full private environment import; -M4096 interpreter memory cap reached.",
+  "metadata_recorded_after_execution_from_actual_tool_receipt": true
+}

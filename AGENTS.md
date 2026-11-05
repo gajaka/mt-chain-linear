@@ -1,8 +1,11 @@
 # Standalone MT chain analysis
 
 This project extracts the initialized finite MT chain analysis from
-../ppg-proof-repair. Preserve exact copied proof sources and their
-SOURCE_MANIFEST.json hashes. Identify wrapper/audit adaptations explicitly.
+../ppg-proof-repair. SOURCE_MANIFEST.json is the immutable extraction record.
+Original extracted sources are preserved under provenance/module-migration/before.
+MODULE_MIGRATION.json records the separately authorized module-system migration;
+validate its deterministic header changes and current hashes with scripts/verify.py.
+Preserve mathematical bodies and identify wrapper/audit adaptations explicitly.
 Do not modify the source project or historical receipts.
 
 Use English ASCII documentation. Do not add a PPGraph dependency. Count

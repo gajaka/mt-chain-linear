@@ -1,5 +1,6 @@
-import TightnessResults
-import Lean
+module
+import all TightnessResults
+meta import Lean
 
 set_option autoImplicit false
 set_option maxRecDepth 10000
@@ -197,7 +198,11 @@ private meta def axiomsFor (closure : Closure) (root : Name) : CommandElabM (Arr
   return axioms.toArray.qsort Name.lt
 
 private meta def audit : CommandElabM Unit := do
-  let env := (<- getEnv).setExporting false
+  let auditEnv <- getEnv
+  let env <- liftIO <| Lean.importModules
+    #[{ module := Name.mkSimple "TightnessResults" }] {}
+    (loadExts := false) (level := .private)
+  let env := env.setExporting false
   let kernel := env.checked.get
   unless roots.size == 9 && (sortedNames roots).size == 9 do
     throwError "The frozen theorem-root inventory must contain exactly 9 distinct names"
@@ -230,8 +235,10 @@ private meta def audit : CommandElabM Unit := do
       ("type_dependencies", namesJson (sortedNames info.type.getUsedConstants)),
       ("value_dependencies", namesJson (sortedNames value.getUsedConstants))]
   let mut imports : Array Json := #[]
-  for index in [:env.allImportedModuleNames.size] do
-    let moduleName := env.allImportedModuleNames[index]!
+  let importedNames := sortedNames
+    (auditEnv.allImportedModuleNames ++ env.allImportedModuleNames)
+  for index in [:importedNames.size] do
+    let moduleName := importedNames[index]!
     let moduleText := moduleName.toString
     if moduleText.startsWith "PPGraph" || moduleText.startsWith "PPG" ||
         moduleText.startsWith "PPChain" || moduleText.startsWith "Profile" ||
@@ -251,7 +258,7 @@ private meta def audit : CommandElabM Unit := do
     (name.toString, toJson count)
   let report := Json.mkObj [
     ("schema_version", toJson (1 : Nat)), ("status", toJson "PASS"),
-    ("main_module", toJson env.mainModule.toString),
+    ("main_module", toJson auditEnv.mainModule.toString),
     ("modules", namesJson #[Name.mkSimple "TightnessResults"]),
     ("root_count", toJson roots.size), ("root_names", namesJson roots),
     ("declarations", Json.arr declarations),
@@ -260,6 +267,9 @@ private meta def audit : CommandElabM Unit := do
     ("raw_kernel_closure_axioms", namesJson (closure.actualAxioms.toArray.qsort Name.lt)),
     ("allowed_axioms", namesJson allowedAxioms),
     ("axiom_method", toJson "Actual env.checked constants: types, values, inductive packages, recursor rules; one shared raw traversal and per-root graph reachability; no collectAxioms cache"),
+    ("audit_support_imported_module_count", toJson auditEnv.allImportedModuleNames.size),
+    ("proof_imported_module_count", toJson env.allImportedModuleNames.size),
+    ("import_inventory_method", toJson "Deduplicated union of auditor support imports and full-private proof imports"),
     ("imported_module_count", toJson imports.size),
     ("import_inventory", Json.arr imports)]
   logInfo m!"THETA_INDEPENDENT_AUDIT {report.compress}"

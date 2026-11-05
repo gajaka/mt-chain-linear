@@ -1,5 +1,9 @@
-import ChainKernel
-import Features
+module
+
+public import ChainKernel
+public import Features
+
+@[expose] public section
 
 set_option autoImplicit false
 

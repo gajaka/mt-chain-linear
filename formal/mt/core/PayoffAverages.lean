@@ -1,5 +1,9 @@
-import ActualStep
-import CompletionExpect
+module
+
+public import ActualStep
+public import CompletionExpect
+
+@[expose] public section
 
 set_option autoImplicit false
 

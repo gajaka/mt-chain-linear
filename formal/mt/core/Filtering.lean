@@ -1,11 +1,15 @@
-import Mathlib.Algebra.BigOperators.Ring.Finset
-import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset
-import Mathlib.Basic.Real.Basic
-import Mathlib.Data.Fintype.Prod
-import Mathlib.Logic.Function.Basic
-import Mathlib.Tactic.Push
-import Mathlib.Tactic.Ring
-import Chain
+module
+
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Data.Fintype.Prod
+public import Mathlib.Logic.Function.Basic
+public import Mathlib.Tactic.Push
+public import Mathlib.Tactic.Ring
+public import Chain
+
+@[expose] public section
 
 /-!
 Finite product filtering by an exactly observed cylinder.

@@ -1,5 +1,9 @@
-import Filtering
-import Features
+module
+
+public import Filtering
+public import Features
+
+@[expose] public section
 
 set_option autoImplicit false
 

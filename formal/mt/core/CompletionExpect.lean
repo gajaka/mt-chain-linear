@@ -1,6 +1,10 @@
-import TailLaw
-import ObservedFeatures
-import ChainLyapunov
+module
+
+public import TailLaw
+public import ObservedFeatures
+public import ChainLyapunov
+
+@[expose] public section
 
 set_option autoImplicit false
 

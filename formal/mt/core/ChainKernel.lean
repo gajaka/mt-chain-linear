@@ -1,5 +1,9 @@
-import Chain
-import KernelWork
+module
+
+public import Chain
+public import KernelWork
+
+@[expose] public section
 
 set_option autoImplicit false
 

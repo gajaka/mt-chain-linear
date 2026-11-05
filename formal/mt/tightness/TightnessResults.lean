@@ -1,6 +1,10 @@
-import LinearPotential
-import LinearAsymptotics
-import LowerBound
+module
+
+public import LinearPotential
+public import LinearAsymptotics
+public import LowerBound
+
+@[expose] public section
 
 set_option autoImplicit false
 

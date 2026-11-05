@@ -1,6 +1,10 @@
-import FreshDraws
-import Mathlib.Data.Finset.Max
-import Mathlib.Tactic
+module
+
+public import FreshDraws
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Tactic
+
+@[expose] public section
 
 set_option autoImplicit false
 

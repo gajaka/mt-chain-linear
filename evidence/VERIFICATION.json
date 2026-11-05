@@ -1,67 +1,100 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "status": "PASS",
-  "scope": "Standalone extraction of existing raw finite MT chain proofs; not a new mathematical result",
-  "sources": {
-    "exact_copies": 32,
-    "theta_import_closure_modules": 30,
-    "adapted_formal_files": 2,
-    "original_project_files_and_configurations_checked_unchanged": 81,
+  "scope": "Existing raw finite MT chain proofs after explicit Lean module-system migration; not a new mathematical result",
+  "historical_extraction": {
     "manifest": {
       "path": "SOURCE_MANIFEST.json",
       "sha256": "e1f4e5f4164ddbdfaa9922925983347767d244d7de0f80ebbbd54d289ed12f94",
       "bytes": 27297
     },
+    "aggregate": {
+      "path": "provenance/module-migration/before/evidence/VERIFICATION.json",
+      "sha256": "75051d944d66ae56542da249458fb2d56963723ccc1160831f104d2a9928a15f",
+      "bytes": 3271
+    },
+    "original_lean_and_tooling_archive": "provenance/module-migration/before",
+    "old_kernel_attempt": "evidence/attempt-002",
+    "old_receipts_unchanged": true
+  },
+  "sources": {
+    "active_lean_modules": 34,
+    "archived_exact_extraction_copies": 32,
+    "archived_extraction_adaptations": 2,
+    "header_only_mathematical_source_migrations": 33,
+    "explicit_meta_audit_migrations": 1,
+    "theta_import_closure_modules": 30,
+    "original_project_files_and_configurations_checked_unchanged": 81,
+    "migration": {
+      "path": "MODULE_MIGRATION.json",
+      "sha256": "36c3d4f2caca5013623b5584c853fd7fdc64a123d004401f43cfdaf69b97b26a",
+      "bytes": 13977
+    },
     "verification": {
-      "path": "evidence/extraction-source-verification.json",
-      "sha256": "c7b3178be93a0d0b635280db16fd42b082370fc78a667d889bb20fbad2fc5715",
-      "bytes": 925
+      "path": "evidence/migration-source-verification.json",
+      "sha256": "34edeeec101e15ac111d7817c06a29fff8988ec858601f8d98034eb8f3916a53",
+      "bytes": 1298
+    },
+    "root_comparison": {
+      "path": "evidence/module-migration-root-comparison.json",
+      "sha256": "cbb329b32ffe075a80104947cf4183a5a03d0dc3f0c45465dc1c8d1a89d92c8f",
+      "bytes": 3453
     }
   },
   "build": {
     "local_lean_modules": 34,
     "exit_code": 0,
+    "command": [
+      "lake",
+      "--wfail",
+      "build"
+    ],
     "project_build_directory_absent_at_start": true,
     "external_dependency_caches_reused": true,
-    "seconds": 44.150952042,
-    "module_migration_warnings": 23,
+    "seconds": 36.953599790999995,
+    "warning_count": 0,
+    "error_count": 0,
+    "warning_suppression_added": false,
     "receipt": {
-      "path": "evidence/lean-build-003/RESULT.json",
-      "sha256": "679ab38e9571a04aa30a07518b27fd8f04303e67a2addc65ea6718bd39b62bcb",
-      "bytes": 410
-    },
-    "earlier_strict_warning_failure_retained": "evidence/lean-build-001/RESULT.json"
+      "path": "evidence/lean-build-005/RESULT.json",
+      "sha256": "bf03c11165bb6650a3538f1e6947dc94ff194b7beeacbffc1e46caaa4c5371c9",
+      "bytes": 450
+    }
   },
   "selected_root_audit": {
     "root_count": 9,
-    "raw_kernel_closure_count": 17228,
+    "raw_kernel_closure_count": 17247,
     "axioms": [
       "propext",
       "Classical.choice",
       "Quot.sound"
     ],
     "exact_type_and_binder_checks": true,
+    "type_asts_identical_to_extraction": 9,
+    "compiled_proof_asts_changed": 2,
+    "private_proof_environment": true,
+    "audit_memory_cap_mib": 8192,
     "audit": {
-      "path": "evidence/attempt-002/audit.json",
-      "sha256": "5fcb9abd78c8fb724383649e625bc731db1e81c5c6bd090415c7af833a3f130a",
-      "bytes": 8003444
+      "path": "evidence/attempt-003/audit.json",
+      "sha256": "91b49eefe7f59e142c058f21f036238161660a3ec3071f6ff28142f2abe7d475",
+      "bytes": 8009172
     }
   },
   "nanoda": {
     "status": "PASS",
     "selected_roots": 9,
-    "checked_expanded_declarations": 17688,
+    "checked_expanded_declarations": 17707,
     "checker_exit_code": 0,
-    "checker_seconds": 3.2045432500000004,
-    "complete_independent_pipeline_seconds": 40.448518125,
+    "checker_seconds": 3.2888854589999994,
+    "complete_independent_pipeline_seconds": 35.1678115,
     "receipt": {
-      "path": "evidence/attempt-002/RESULT.json",
-      "sha256": "e32e44fb56560839795661d4f228311f547e05bd3ab10de12821b6cfeb065fc8",
-      "bytes": 9800
+      "path": "evidence/attempt-003/RESULT.json",
+      "sha256": "c321e8f48165e1941e840faf0e987bd1ca9c040304958a22164da1e0e51a8f08",
+      "bytes": 9790
     },
     "strict_configuration": {
-      "path": "evidence/attempt-002/nanoda.json",
-      "sha256": "7323719a07dadbd18019834e466125dd9e5ae66dd4a222ca85ee44a5ed6ddaa1",
+      "path": "evidence/attempt-003/nanoda.json",
+      "sha256": "245f920de21c18d4c38e7135bf571e2902f55c65fc89f4f0e09b02b731e888c9",
       "bytes": 1066
     },
     "raw_exports_tracked_by_git": false
@@ -71,18 +104,27 @@
     "ppgraph_package_present": false,
     "own_imports_resolve_under_new_build": true,
     "loaded_module_count": 5534,
+    "artifact_count": 33204,
+    "audit_support_imports": 5513,
+    "private_proof_imports": 4813,
+    "inventory_method": "Deduplicated union of auditor support imports and full-private proof imports",
     "inventory": {
-      "path": "evidence/attempt-002/import-inventory.json",
-      "sha256": "089925af5754c41be030d4d69314a6ed7204aa15ac6f1b38f9cd7276091d24d3",
-      "bytes": 16542005
+      "path": "evidence/attempt-003/import-inventory.json",
+      "sha256": "d5d2e956732786a7003eaa55d51d0eca0ac3a0fa08aa338f05c0705e5a201810",
+      "bytes": 16589600
     }
   },
-  "retained_failed_attempt": "evidence/attempt-001/FAILED.json",
+  "diagnostics": "evidence/module-audit-diagnostics/",
   "boundaries": [
     "Only nine selected theorem roots and their proof closure were checked with Nanoda, not every theorem in all copied modules.",
     "Paper accounting/barrier supplements are outside the Theta import closure.",
     "Current lower/Theta proof still uses quadratic finiteness.",
     "No current Lean tactic compiler, Python program, seeded PRNG, adaptive AI process, practical speedup or scientific novelty is certified.",
     "The standalone package has only Mathlib as a direct library dependency; independent proof replay additionally needs external pinned tools."
-  ]
+  ],
+  "source_validator_negative_controls": {
+    "path": "evidence/module-migration-validator-controls.json",
+    "sha256": "f06a8f2e6f012c6b6bc23c39b9b971bfbcc7a4f1c1a3da194508460735ec84c1",
+    "bytes": 14933
+  }
 }

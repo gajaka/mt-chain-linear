@@ -1,5 +1,9 @@
-import Features
-import TailScan
+module
+
+public import Features
+public import TailScan
+
+@[expose] public section
 
 set_option autoImplicit false
 
