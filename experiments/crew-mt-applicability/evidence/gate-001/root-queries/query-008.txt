@@ -1,0 +1,2 @@
+src/kiro_crew/taskq/adapters/runner.py:1369:    def decide_recovery(
+src/kiro_crew/task_executor.py:990:                decision = taskq.admission.decide_recovery(taskq, unit=session_key, reason=reason)

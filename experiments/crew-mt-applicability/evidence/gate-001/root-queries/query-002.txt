@@ -1,0 +1,136 @@
+src/kiro_crew/recovery/ladder.py:320:    logger.error("recovery ladder escalation to %s: %s", layer, message)
+src/kiro_crew/recovery/ladder.py:321:
+src/kiro_crew/recovery/ladder.py:322:
+src/kiro_crew/recovery/ladder.py:323:class RecoveryLadder:
+src/kiro_crew/recovery/ladder.py:324:    """Stateful driver over :data:`LADDER`: counts, decides, escalates, measures.
+src/kiro_crew/recovery/ladder.py:325:
+src/kiro_crew/recovery/ladder.py:326:    One instance per process is enough (:func:`default_ladder`); layers key
+src/kiro_crew/recovery/ladder.py:327:    their units so the counts never collide. ``event_sink`` receives one
+src/kiro_crew/recovery/ladder.py:328:    ``("recover", {...})`` per decision for the task store's ``task_events``
+src/kiro_crew/recovery/ladder.py:329:    when the caller can name a task; ``notifier`` receives the single L5
+src/kiro_crew/recovery/ladder.py:330:    message per escalation. Both default to logging. ``clock``/``rng`` are
+src/kiro_crew/recovery/ladder.py:331:    injectable for tests.
+src/kiro_crew/recovery/ladder.py:332:    """
+src/kiro_crew/recovery/ladder.py:333:
+src/kiro_crew/recovery/ladder.py:334:    def __init__(
+src/kiro_crew/recovery/ladder.py:335:        self,
+src/kiro_crew/recovery/ladder.py:336:        policy: RecoveryPolicy = LADDER,
+src/kiro_crew/recovery/ladder.py:337:        *,
+src/kiro_crew/recovery/ladder.py:338:        event_sink: EventSink | None = None,
+src/kiro_crew/recovery/ladder.py:339:        notifier: Notifier | None = None,
+src/kiro_crew/recovery/ladder.py:340:        clock: Callable[[], float] = time.monotonic,
+src/kiro_crew/recovery/ladder.py:341:        rng: random.Random | None = None,
+src/kiro_crew/recovery/ladder.py:342:    ) -> None:
+src/kiro_crew/recovery/ladder.py:343:        self._policy = policy
+src/kiro_crew/recovery/ladder.py:344:        self._event_sink = event_sink
+src/kiro_crew/recovery/ladder.py:345:        self._notifier = notifier or _log_notifier
+src/kiro_crew/recovery/ladder.py:346:        self._clock = clock
+src/kiro_crew/recovery/ladder.py:347:        self._rng = rng
+src/kiro_crew/recovery/ladder.py:348:        self._lock = threading.Lock()
+src/kiro_crew/recovery/ladder.py:349:        self._trackers: dict[str, RecoveryTracker] = {
+src/kiro_crew/recovery/ladder.py:350:            name: RecoveryTracker(cooldown_secs=lp.cooldown_secs)
+src/kiro_crew/recovery/ladder.py:351:            for name, lp in policy.layers.items()
+src/kiro_crew/recovery/ladder.py:352:        }
+src/kiro_crew/recovery/ladder.py:353:        # (layer, unit) pairs whose escalation notice was already sent in the
+src/kiro_crew/recovery/ladder.py:354:        # current run of failures; cleared by success so the next incident
+src/kiro_crew/recovery/ladder.py:355:        # notifies again.
+src/kiro_crew/recovery/ladder.py:356:        self._notified: set[tuple[str, str]] = set()
+src/kiro_crew/recovery/ladder.py:357:
+src/kiro_crew/recovery/ladder.py:358:    @property
+src/kiro_crew/recovery/ladder.py:359:    def policy(self) -> RecoveryPolicy:
+src/kiro_crew/recovery/ladder.py:360:        return self._policy
+src/kiro_crew/recovery/ladder.py:361:
+src/kiro_crew/recovery/ladder.py:362:    def layer_policy(self, layer: str) -> LayerPolicy:
+src/kiro_crew/recovery/ladder.py:363:        return self._policy.layer(layer)
+src/kiro_crew/recovery/ladder.py:364:
+src/kiro_crew/recovery/ladder.py:365:    def attempts(self, layer: str, unit: str, *, now: float | None = None) -> int:
+src/kiro_crew/recovery/ladder.py:366:        now = self._clock() if now is None else now
+src/kiro_crew/recovery/ladder.py:367:        with self._lock:
+src/kiro_crew/recovery/ladder.py:368:            return self._trackers[layer].attempts(unit, now)
+src/kiro_crew/recovery/ladder.py:369:
+src/kiro_crew/recovery/ladder.py:370:    def backoff_secs(
+src/kiro_crew/recovery/ladder.py:371:        self, layer: str, attempt: int, *, retry_after_secs: float | None = None
+src/kiro_crew/recovery/ladder.py:372:    ) -> float:
+src/kiro_crew/recovery/ladder.py:373:        """The jittered delay for ``attempt`` at ``layer`` -- no state change."""
+src/kiro_crew/recovery/ladder.py:374:        return self._policy.layer(layer).backoff_secs(
+src/kiro_crew/recovery/ladder.py:375:            attempt, retry_after_secs=retry_after_secs, rng=self._rng
+src/kiro_crew/recovery/ladder.py:376:        )
+src/kiro_crew/recovery/ladder.py:377:
+src/kiro_crew/recovery/ladder.py:378:    def observe_failure(
+src/kiro_crew/recovery/ladder.py:379:        self,
+src/kiro_crew/recovery/ladder.py:380:        layer: str,
+src/kiro_crew/recovery/ladder.py:381:        unit: str,
+src/kiro_crew/recovery/ladder.py:382:        *,
+src/kiro_crew/recovery/ladder.py:383:        now: float | None = None,
+src/kiro_crew/recovery/ladder.py:384:        retry_after_secs: float | None = None,
+src/kiro_crew/recovery/ladder.py:385:        reason: str = "",
+src/kiro_crew/recovery/ladder.py:386:        task_id: str | None = None,
+src/kiro_crew/recovery/ladder.py:387:    ) -> RecoveryDecision:
+src/kiro_crew/recovery/ladder.py:388:        """Record one failure of ``unit`` at ``layer`` and say what to do next.
+src/kiro_crew/recovery/ladder.py:389:
+src/kiro_crew/recovery/ladder.py:390:        ``retry`` with a jittered ``delay_secs`` (floored by ``retry_after_secs``)
+src/kiro_crew/recovery/ladder.py:391:        while the layer has attempts left; ``escalate`` naming ``next_layer``
+src/kiro_crew/recovery/ladder.py:392:        once they are spent; ``notify`` when the next layer is L5 (the notifier
+src/kiro_crew/recovery/ladder.py:393:        fires once per run of failures); ``give_up`` when the layer itself is
+src/kiro_crew/recovery/ladder.py:394:        the non-automatic top and nothing is above it.
+src/kiro_crew/recovery/ladder.py:395:        """
+src/kiro_crew/recovery/ladder.py:396:        lp = self._policy.layer(layer)
+src/kiro_crew/recovery/ladder.py:397:        now = self._clock() if now is None else now
+src/kiro_crew/recovery/ladder.py:398:        with self._lock:
+src/kiro_crew/recovery/ladder.py:399:            attempt = self._trackers[layer].record_failure(unit, now)
+src/kiro_crew/recovery/ladder.py:400:        if not lp.automatic:
+src/kiro_crew/recovery/ladder.py:401:            decision = RecoveryDecision(
+src/kiro_crew/recovery/ladder.py:402:                layer, unit, ACTION_GIVE_UP, attempt, reason=reason or lp.trigger
+src/kiro_crew/recovery/ladder.py:403:            )
+src/kiro_crew/recovery/ladder.py:404:            self._notify_once(layer, unit, reason or lp.trigger)
+src/kiro_crew/recovery/ladder.py:405:        elif not lp.should_escalate(attempt):
+src/kiro_crew/recovery/ladder.py:406:            delay = lp.backoff_secs(attempt, retry_after_secs=retry_after_secs, rng=self._rng)
+src/kiro_crew/recovery/ladder.py:407:            decision = RecoveryDecision(
+src/kiro_crew/recovery/ladder.py:408:                layer, unit, ACTION_RETRY, attempt, delay_secs=delay, reason=reason
+src/kiro_crew/recovery/ladder.py:409:            )
+src/kiro_crew/recovery/ladder.py:410:        else:
+src/kiro_crew/recovery/ladder.py:411:            nxt = lp.escalate_to
+src/kiro_crew/recovery/ladder.py:412:            if nxt is None:
+src/kiro_crew/recovery/ladder.py:413:                decision = RecoveryDecision(layer, unit, ACTION_GIVE_UP, attempt, reason=reason)
+src/kiro_crew/recovery/ladder.py:414:            elif not self._policy.layer(nxt).automatic:
+src/kiro_crew/recovery/ladder.py:415:                decision = RecoveryDecision(
+src/kiro_crew/recovery/ladder.py:416:                    layer, unit, ACTION_NOTIFY, attempt, next_layer=nxt, reason=reason
+src/kiro_crew/recovery/ladder.py:417:                )
+src/kiro_crew/recovery/ladder.py:418:                self._notify_once(
+src/kiro_crew/recovery/ladder.py:419:                    nxt,
+src/kiro_crew/recovery/ladder.py:420:                    unit,
+src/kiro_crew/recovery/ladder.py:421:                    f"{layer} exhausted {attempt} attempt(s) on {unit}; "
+src/kiro_crew/recovery/ladder.py:422:                    f"automatic recovery stops here ({reason or lp.trigger})",
+src/kiro_crew/recovery/ladder.py:423:                )
+src/kiro_crew/recovery/ladder.py:424:            else:
+src/kiro_crew/recovery/ladder.py:425:                decision = RecoveryDecision(
+src/kiro_crew/recovery/ladder.py:426:                    layer, unit, ACTION_ESCALATE, attempt, next_layer=nxt, reason=reason
+src/kiro_crew/recovery/ladder.py:427:                )
+src/kiro_crew/recovery/ladder.py:428:            if nxt is not None:
+src/kiro_crew/recovery/ladder.py:429:                emit_counter(RECOVERY_ESCALATIONS, {"from_layer": layer, "to_layer": nxt})
+src/kiro_crew/recovery/ladder.py:430:        emit_counter(RECOVERY_ATTEMPTS, {"layer": layer, "action": decision.action})
+src/kiro_crew/recovery/ladder.py:431:        self._sink(
+src/kiro_crew/recovery/ladder.py:432:            task_id,
+src/kiro_crew/recovery/ladder.py:433:            {
+src/kiro_crew/recovery/ladder.py:434:                "layer": layer,
+src/kiro_crew/recovery/ladder.py:435:                "attempt": attempt,
+src/kiro_crew/recovery/ladder.py:436:                "action": decision.action,
+src/kiro_crew/recovery/ladder.py:437:                "delay_secs": round(decision.delay_secs, 3),
+src/kiro_crew/recovery/ladder.py:438:                "next_layer": decision.next_layer,
+src/kiro_crew/recovery/ladder.py:439:                "reason": (reason or "")[:200],
+src/kiro_crew/recovery/ladder.py:440:            },
+src/kiro_crew/recovery/ladder.py:441:        )
+src/kiro_crew/recovery/ladder.py:442:        return decision
+src/kiro_crew/recovery/ladder.py:443:
+src/kiro_crew/recovery/ladder.py:444:    def observe_success(
+src/kiro_crew/recovery/ladder.py:445:        self, layer: str, unit: str, *, now: float | None = None, task_id: str | None = None
+src/kiro_crew/recovery/ladder.py:446:    ) -> float | None:
+src/kiro_crew/recovery/ladder.py:447:        """``unit`` recovered at ``layer``: reset its count, measure the outage.
+src/kiro_crew/recovery/ladder.py:448:
+src/kiro_crew/recovery/ladder.py:449:        Returns the recovery duration in seconds (first failure -> now) when a
+src/kiro_crew/recovery/ladder.py:450:        run of failures was open, else None. Emits ``recovery_duration_secs``.
+src/kiro_crew/recovery/ladder.py:451:        """
+src/kiro_crew/recovery/ladder.py:452:        now = self._clock() if now is None else now
+src/kiro_crew/recovery/ladder.py:453:        with self._lock:
+src/kiro_crew/recovery/ladder.py:454:            tracker = self._trackers[layer]
+src/kiro_crew/recovery/ladder.py:455:            since = tracker.failing_since(unit, now)

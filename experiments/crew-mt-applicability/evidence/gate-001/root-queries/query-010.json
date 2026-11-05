@@ -1,0 +1,26 @@
+{
+  "reason": "Confirm production wiring for task admission recovery, not only injectable test object",
+  "root": "/Users/gajaka/projects/ppg-proof-repair/experiments/kiro-crew-comparison/sources/crew-909e0fc",
+  "command": [
+    "rg",
+    "--with-filename",
+    "--line-number",
+    "--ignore-case",
+    "--glob",
+    "*.py",
+    "RunnerAdmission\\(|default_ladder\\(",
+    "src/kiro_crew/slack",
+    "src/kiro_crew/task_executor.py",
+    "src/kiro_crew/taskq"
+  ],
+  "started_utc": "2026-11-05T14:29:27.905030+00:00",
+  "ended_utc": "2026-11-05T14:29:27.913939+00:00",
+  "returncode": 0,
+  "sources": {
+    "src/kiro_crew/task_executor.py": "86066664a34c36b704e32a7b46a1cb710bf9668979fdf7b5daf708e3435a9604",
+    "src/kiro_crew/taskq/adapters/runner.py": "b461fdd8f20d9459d4b454752c0fa899e043bb2f733a6551029180908641aa38",
+    "src/kiro_crew/slack/gateway.py": "f1589497d28c631d932f4e1a6c0c35ab61a3bf03ed878595bc4e7d76932dcf5b"
+  },
+  "output_sha256": "ecd09400ba708c516c2e54bb4283d9339820ef5599b0d4a9385872062fcb392d",
+  "stderr": ""
+}

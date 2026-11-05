@@ -23,10 +23,10 @@ below, [the core report](REPORT.md), and
 `vendor/` and `framework/` are optional context, outside that claim's proof
 closure. They need not be built to review or build the standalone chain.
 
-The separate [Crew applicability protocol](experiments/crew-mt-applicability/PROTOCOL.md)
-is awaiting user review. Its first gate asks whether the pinned Crew code has
-an actual process satisfying the original MT hypotheses. No new Crew gate,
-integration or comparison has been executed under that protocol.
+The separate [Crew applicability gate](experiments/crew-mt-applicability/REPORT.md)
+ended with `STOP_UNKNOWN`: native stochastic retries exist, but the inspection
+did not establish a mapping to the original MT hypotheses. Its registered stop
+rule ends that experiment before a demonstrator or comparative run.
 
 ## Original framework in the active project
 

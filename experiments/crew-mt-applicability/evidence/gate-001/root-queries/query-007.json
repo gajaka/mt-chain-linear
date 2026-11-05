@@ -1,0 +1,27 @@
+{
+  "reason": "Alias-aware random API and retry-library audit within subject and direct recovery callee",
+  "root": "/Users/gajaka/projects/ppg-proof-repair/experiments/kiro-crew-comparison/sources/crew-909e0fc",
+  "command": [
+    "rg",
+    "--line-number",
+    "--ignore-case",
+    "--glob",
+    "*.py",
+    "\\b(import|from)\\s+(random|secrets|numpy|tenacity|backoff)|\\.(random|uniform|randint|randrange|choice|shuffle)\\s*\\(",
+    "src/kiro_crew/taskq",
+    "src/kiro_crew/cron_service",
+    "src/kiro_crew/cron.py",
+    "src/kiro_crew/recovery"
+  ],
+  "started_utc": "2026-11-05T14:28:35.990608+00:00",
+  "ended_utc": "2026-11-05T14:28:36.000307+00:00",
+  "returncode": 0,
+  "sources": {
+    "src/kiro_crew/cron.py": "7812738c3b74b9d4716b332a450811e2ae7480df6747c39dfede90d92b9369a9",
+    "src/kiro_crew/recovery/ladder.py": "31bcf7a6bb057ed97207431370393e5121820e8b229e151dc341491b9abd5fe0",
+    "src/kiro_crew/cron_service/schedule.py": "ffba7629b4cad672a3a47067f9ec3de48be505d82f486625ed1daf2ad491a083",
+    "src/kiro_crew/recovery/policy.py": "0e01e9013c0b62d8ab8118d0884739a4546a7d242aa6a59b8b2a7a56f1192244",
+    "src/kiro_crew/taskq/dependency.py": "9ac1b3219f0a6b3dfef56bdc0f199fdc2364332193b63d0c2022a842aa70fa7f"
+  },
+  "output_sha256": "387a7b16f97527af76005f5137e49614f61a463e4ae00c574be6f77896217c1d"
+}

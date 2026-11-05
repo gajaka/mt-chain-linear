@@ -1,0 +1,63 @@
+{
+  "status": "STOP_UNKNOWN",
+  "scope": "Native Crew task/job lifecycle MT applicability, pinned revision, static source gate only",
+  "source_revision": "909e0fc1938261df9c45fd74e86404abf22b5902",
+  "registration_commit": "ecd0d36573373986031630710d77debc0c8290e2",
+  "protocol_sha256": "1c1c1ce8c4e622cb8563b00f50983c5b8c13a9eec27280b7ae9814ad2d4750f0",
+  "search_plan_sha256": "b2d6c10fc46bdf93a366a39274c19d3579531a7c75a7b67c762f028fa866fd97",
+  "source_gate_start_utc": "2026-11-05T14:23:15.696130+00:00",
+  "source_gate_end_utc": "2026-11-05T14:33:45.378500+00:00",
+  "source_gate_elapsed_seconds": 629.68237,
+  "within_time_limit": true,
+  "native_stochastic_retry_found": true,
+  "original_mt_correspondence_established": false,
+  "mt_nonexistence_proved": false,
+  "candidate_results": [
+    {
+      "process": "Scheduled timing incl croniter expansion branch",
+      "native_randomness": "PRESENT",
+      "decision_owner": "code for due work; manual branch is external",
+      "direct_encoding": "NO_MATCH: due work need not be a failed obligation",
+      "complete_alternative_encoding": "NOT_ESTABLISHED"
+    },
+    {
+      "process": "Recovery-ladder stop-reason retry",
+      "native_randomness": "PRESENT via shared policy sampler",
+      "decision_owner": "code below human escalation boundary",
+      "mt_mapping": "UNKNOWN; random waiting time does not establish external outcome coordinate law or full transition correspondence"
+    },
+    {
+      "process": "Dependency-scope retry coordinator",
+      "native_randomness": "PRESENT via shared policy sampler",
+      "decision_owner": "code after classified exception and monitor tick",
+      "mt_mapping": "UNKNOWN; dependency law, initialization, selection and refinement premises missing"
+    }
+  ],
+  "success_routes": {
+    "A_additional_production_bug": "NOT_RUN",
+    "B_stronger_same_assumption_guarantee": "NOT_RUN",
+    "C_lower_total_cost_same_reliability": "NOT_RUN"
+  },
+  "attribution": "NOT_RUN",
+  "crew_proof_status": "NO_NEW_PROOF",
+  "execution_correspondence": "SOURCE_INSPECTION_ONLY",
+  "crew_executions": 0,
+  "tests": 0,
+  "lean_builds_or_new_proofs": 0,
+  "network_queries": 0,
+  "production_patches": 0,
+  "gate_closed": true,
+  "further_demonstrator_or_new_example_started": false,
+  "report": "REPORT.md",
+  "report_sha256": "e955e79764791b9218ca226cfcd3e8a5d546d0e460ea14dd3e8342f12417457e",
+  "preparation_cost": "Not fully instrumented; unknown, not zero",
+  "limits": [
+    "Bounded static review, not all Crew or all possible encodings",
+    "Three conceptual processes inspected in parallel rather than a literal serial candidate order",
+    "croniter branch grouped with scheduled timing during inspection; no runtime R/r input executed",
+    "Some guessed-path query failures retained, including one retrospectively recorded root helper error",
+    "Monotonic stamps from separate processes not used to compute duration",
+    "No comparison with original private Kiro pipeline, no advantage or scientific novelty conclusion"
+  ],
+  "report_prepared_utc": "2026-11-05T14:41:05.255668+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "STOP_UNKNOWN",
+  "start_utc": "2026-11-05T14:23:15.696130+00:00",
+  "ended_utc": "2026-11-05T14:33:45.378500+00:00",
+  "elapsed_seconds_utc": 629.68237,
+  "within_1800_second_cap": true,
+  "end_monotonic_ns": 1445214916,
+  "clock_info": "namespace(implementation='mach_absolute_time()', monotonic=True, adjustable=False, resolution=4.166666666666667e-08)",
+  "clock_note": "Monotonic stamps are retained as recorded. Duration uses UTC wall-clock start/end; stamps were captured in separate processes and are not used to infer elapsed time.",
+  "source_files_verified_before_and_after": 12748,
+  "inspected_input_files": 22,
+  "protocol_unchanged": true,
+  "search_plan_unchanged": true,
+  "sources_unchanged": true,
+  "next_stage_authorized": false,
+  "no_new_source_candidate_search_after_this_record": true
+}

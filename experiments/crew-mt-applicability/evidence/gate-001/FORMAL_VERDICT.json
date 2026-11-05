@@ -1,0 +1,18 @@
+{
+  "reviewer": "crew_gate_formal_review",
+  "time_utc": "2026-11-05T14:31:49.536740+00:00",
+  "input_reports": [
+    {
+      "path": "TASKQ_REVIEW.md",
+      "sha256": "13dd7bc1630650c02b3b4fa21ac7fc1460cf67c968c780e7d625966928deae56"
+    },
+    {
+      "path": "TASKQ_REVIEW.json",
+      "sha256": "a95929e042f8b43f39d30d7b5535d48943eaf243518f2f024cd0b35a1b576c50"
+    }
+  ],
+  "recommended_gate_status": "STOP_UNKNOWN",
+  "reason": "Native stochastic retry exists, but no source-supported complete mapping to original MT law/events/initialization and theorem hypotheses is established. Natural direct interpretations have explicit mismatches; arbitrary encodings have not been ruled out.",
+  "crew_source_read_by_this_reviewer": false,
+  "root_recovery_findings": "Parent reports task_executor -> decide_recovery -> recovery ladder and policy: internal bounded jittered retry may end failed; treated as parent evidence, not an independent source read."
+}

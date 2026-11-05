@@ -1,0 +1,146 @@
+src/kiro_crew/taskq/adapters/runner.py:1340:            safe_retry=bool(rec.params.get(PARAM_SAFE_RETRY, False)),
+src/kiro_crew/taskq/adapters/runner.py:1341:            _slot_held=False,
+src/kiro_crew/taskq/adapters/runner.py:1342:        )
+src/kiro_crew/taskq/adapters/runner.py:1343:        if not handle._write(STARTING):
+src/kiro_crew/taskq/adapters/runner.py:1344:            # The read-back names WHICH refusal this was, and both answer None,
+src/kiro_crew/taskq/adapters/runner.py:1345:            # so it is logged rather than dropped: a container row that came back
+src/kiro_crew/taskq/adapters/runner.py:1346:            # terminal was ended under the claim, while ``queued`` (or an unread
+src/kiro_crew/taskq/adapters/runner.py:1347:            # state) is one this gateway's own sweep will not touch and the next
+src/kiro_crew/taskq/adapters/runner.py:1348:            # boot's cancels as never started.
+src/kiro_crew/taskq/adapters/runner.py:1349:            state = self._requeue_unstarted(store, task_id, claimed.generation)
+src/kiro_crew/taskq/adapters/runner.py:1350:            logger.warning(
+src/kiro_crew/taskq/adapters/runner.py:1351:                "taskq runner: %s took no container handle; the row is %s",
+src/kiro_crew/taskq/adapters/runner.py:1352:                task_id,
+src/kiro_crew/taskq/adapters/runner.py:1353:                state or "in an unread state (queued if the requeue committed)",
+src/kiro_crew/taskq/adapters/runner.py:1354:            )
+src/kiro_crew/taskq/adapters/runner.py:1355:            return None
+src/kiro_crew/taskq/adapters/runner.py:1356:        return handle
+src/kiro_crew/taskq/adapters/runner.py:1357:
+src/kiro_crew/taskq/adapters/runner.py:1358:    @staticmethod
+src/kiro_crew/taskq/adapters/runner.py:1359:    def _raise_if_ended(store: TaskStore, task_id: str) -> None:
+src/kiro_crew/taskq/adapters/runner.py:1360:        try:
+src/kiro_crew/taskq/adapters/runner.py:1361:            state = store.state_of(task_id)
+src/kiro_crew/taskq/adapters/runner.py:1362:        except TaskStoreUnavailable:
+src/kiro_crew/taskq/adapters/runner.py:1363:            return
+src/kiro_crew/taskq/adapters/runner.py:1364:        if state is not None and state in TERMINAL:
+src/kiro_crew/taskq/adapters/runner.py:1365:            raise RunnerTaskCancelled(f"{task_id} is {state}; not started")
+src/kiro_crew/taskq/adapters/runner.py:1366:
+src/kiro_crew/taskq/adapters/runner.py:1367:    # -- stop-reason recovery ------------------------------------------------
+src/kiro_crew/taskq/adapters/runner.py:1368:
+src/kiro_crew/taskq/adapters/runner.py:1369:    def decide_recovery(
+src/kiro_crew/taskq/adapters/runner.py:1370:        self, handle: Admitted, *, unit: str, reason: str
+src/kiro_crew/taskq/adapters/runner.py:1371:    ) -> RecoveryDecision | None:
+src/kiro_crew/taskq/adapters/runner.py:1372:        """Consult the recovery ladder (L3: the ACP runtime) for one stalled turn.
+src/kiro_crew/taskq/adapters/runner.py:1373:
+src/kiro_crew/taskq/adapters/runner.py:1374:        ``None`` when no ladder is attached: the caller keeps its own bounded
+src/kiro_crew/taskq/adapters/runner.py:1375:        retry. A ``retry`` decision carries the jittered delay; anything else
+src/kiro_crew/taskq/adapters/runner.py:1376:        means the layer is exhausted and the step fails with its partial kept.
+src/kiro_crew/taskq/adapters/runner.py:1377:        """
+src/kiro_crew/taskq/adapters/runner.py:1378:        if self._ladder is None:
+src/kiro_crew/taskq/adapters/runner.py:1379:            return None
+src/kiro_crew/taskq/adapters/runner.py:1380:        return self._ladder.observe_failure(
+src/kiro_crew/taskq/adapters/runner.py:1381:            L3_ACP_RUNTIME, unit, reason=reason, task_id=handle.task_id
+src/kiro_crew/taskq/adapters/runner.py:1382:        )
+src/kiro_crew/taskq/adapters/runner.py:1383:
+src/kiro_crew/taskq/adapters/runner.py:1384:    def recovered(self, unit: str) -> None:
+src/kiro_crew/taskq/adapters/runner.py:1385:        if self._ladder is not None:
+src/kiro_crew/taskq/adapters/runner.py:1386:            self._ladder.observe_success(L3_ACP_RUNTIME, unit)
+src/kiro_crew/taskq/adapters/runner.py:1387:
+src/kiro_crew/taskq/adapters/runner.py:1388:    # -- waits ---------------------------------------------------------------
+src/kiro_crew/taskq/adapters/runner.py:1389:
+src/kiro_crew/taskq/adapters/runner.py:1390:    def _wake_event(self, task_id: str) -> asyncio.Event:
+src/kiro_crew/taskq/adapters/runner.py:1391:        """The event *task_id*'s parked coroutine awaits, and the loop it is on.
+src/kiro_crew/taskq/adapters/runner.py:1392:
+src/kiro_crew/taskq/adapters/runner.py:1393:        Called from the parking coroutine itself, which is the one place the
+src/kiro_crew/taskq/adapters/runner.py:1394:        owning loop is knowable: :meth:`on_wake` can arrive on any thread.
+src/kiro_crew/taskq/adapters/runner.py:1395:        """
+src/kiro_crew/taskq/adapters/runner.py:1396:        ev = self._wakes.get(task_id)
+src/kiro_crew/taskq/adapters/runner.py:1397:        if ev is None:
+src/kiro_crew/taskq/adapters/runner.py:1398:            ev = asyncio.Event()
+src/kiro_crew/taskq/adapters/runner.py:1399:            self._wakes[task_id] = ev
+src/kiro_crew/taskq/adapters/runner.py:1400:        try:
+src/kiro_crew/taskq/adapters/runner.py:1401:            self._wake_loops[task_id] = asyncio.get_running_loop()
+src/kiro_crew/taskq/adapters/runner.py:1402:        except RuntimeError:  # no loop here: the wake has to be made in place
+src/kiro_crew/taskq/adapters/runner.py:1403:            self._wake_loops.pop(task_id, None)
+src/kiro_crew/taskq/adapters/runner.py:1404:        return ev
+src/kiro_crew/taskq/adapters/runner.py:1405:
+src/kiro_crew/taskq/adapters/runner.py:1406:    def on_wake(self, task_id: str) -> None:
+src/kiro_crew/taskq/adapters/runner.py:1407:        """Coordinator / ledger hook: the row's wait ended; resume its coroutine.
+src/kiro_crew/taskq/adapters/runner.py:1408:
+src/kiro_crew/taskq/adapters/runner.py:1409:        Safe from any thread. ``asyncio.Event.set`` is a LOOP operation -- it
+src/kiro_crew/taskq/adapters/runner.py:1410:        resolves the waiter's future, which schedules that future's callbacks on
+src/kiro_crew/taskq/adapters/runner.py:1411:        the loop -- and an operator's ``answer_input`` / ``cancel_wait`` arrives
+src/kiro_crew/taskq/adapters/runner.py:1412:        on an ``asyncio.to_thread`` worker (``dashboard/handlers/tasks.py``), so
+src/kiro_crew/taskq/adapters/runner.py:1413:        the set is posted to the loop the waiter parked on. Setting it in place
+src/kiro_crew/taskq/adapters/runner.py:1414:        from a worker is the thread-unsafe operation asyncio names: it can land
+src/kiro_crew/taskq/adapters/runner.py:1415:        between a coroutine's ``_value`` test and its own registration, and the
+src/kiro_crew/taskq/adapters/runner.py:1416:        run then waits for a wake that was already spent. Same shape as
+src/kiro_crew/taskq/adapters/runner.py:1417:        ``config.live.LiveConfig.notify_written``.
+src/kiro_crew/taskq/adapters/runner.py:1418:        """
+src/kiro_crew/taskq/adapters/runner.py:1419:        ev = self._wakes.get(task_id)
+src/kiro_crew/taskq/adapters/runner.py:1420:        if ev is None:
+src/kiro_crew/taskq/adapters/runner.py:1421:            return
+src/kiro_crew/taskq/adapters/runner.py:1422:        loop = self._wake_loops.get(task_id)
+src/kiro_crew/taskq/adapters/runner.py:1423:        try:
+src/kiro_crew/taskq/adapters/runner.py:1424:            here = asyncio.get_running_loop()
+src/kiro_crew/taskq/adapters/runner.py:1425:        except RuntimeError:
+src/kiro_crew/taskq/adapters/runner.py:1426:            here = None
+src/kiro_crew/taskq/adapters/runner.py:1427:        if loop is None or loop is here:
+src/kiro_crew/taskq/adapters/runner.py:1428:            ev.set()
+src/kiro_crew/taskq/adapters/runner.py:1429:            return
+src/kiro_crew/taskq/adapters/runner.py:1430:        if loop.is_closed():
+src/kiro_crew/taskq/adapters/runner.py:1431:            return  # the loop that would have resumed the run is gone
+src/kiro_crew/taskq/adapters/runner.py:1432:        try:
+src/kiro_crew/taskq/adapters/runner.py:1433:            loop.call_soon_threadsafe(ev.set)
+src/kiro_crew/taskq/adapters/runner.py:1434:        except RuntimeError:
+src/kiro_crew/taskq/adapters/runner.py:1435:            # Loop shut down between the check and the call: nothing to wake.
+src/kiro_crew/taskq/adapters/runner.py:1436:            logger.debug("taskq runner: wake for %s not delivered", task_id, exc_info=True)
+src/kiro_crew/taskq/adapters/runner.py:1437:
+src/kiro_crew/taskq/adapters/runner.py:1438:    def signal(self, scope: str, *, reason: str = "") -> list[str]:
+src/kiro_crew/taskq/adapters/runner.py:1439:        """A dependency recovered: wake every row waiting on *scope*."""
+src/kiro_crew/taskq/adapters/runner.py:1440:        store = self.store
+src/kiro_crew/taskq/adapters/runner.py:1441:        woken: list[str] = []
+src/kiro_crew/taskq/adapters/runner.py:1442:        if self._coordinator is not None and self._coordinator.recovered(scope):
+src/kiro_crew/taskq/adapters/runner.py:1443:            woken.extend(self._coordinator.tick())
+src/kiro_crew/taskq/adapters/runner.py:1444:        elif store is not None:
+src/kiro_crew/taskq/adapters/runner.py:1445:            try:
+src/kiro_crew/taskq/adapters/runner.py:1446:                woken.extend(WaitLedger(store, clock=self._clock).signal(scope, reason=reason))
+src/kiro_crew/taskq/adapters/runner.py:1447:            except TaskStoreUnavailable:
+src/kiro_crew/taskq/adapters/runner.py:1448:                logger.debug("taskq runner: signal(%s) failed", scope, exc_info=True)
+src/kiro_crew/taskq/adapters/runner.py:1449:        for task_id in woken:
+src/kiro_crew/taskq/adapters/runner.py:1450:            self.on_wake(task_id)
+src/kiro_crew/taskq/adapters/runner.py:1451:        return woken
+src/kiro_crew/taskq/adapters/runner.py:1452:
+src/kiro_crew/taskq/adapters/runner.py:1453:    def tick(self) -> list[str]:
+src/kiro_crew/taskq/adapters/runner.py:1454:        """Wake due time-based waits (the coordinator's, or the ledger's) and
+src/kiro_crew/taskq/adapters/runner.py:1455:        replay terminal writes the store refused earlier."""
+src/kiro_crew/taskq/adapters/runner.py:1456:        self.retry_terminal_writes()
+src/kiro_crew/taskq/adapters/runner.py:1457:        woken: list[str] = []
+src/kiro_crew/taskq/adapters/runner.py:1458:        if self._coordinator is not None:
+src/kiro_crew/taskq/adapters/runner.py:1459:            woken.extend(self._coordinator.tick())
+src/kiro_crew/taskq/adapters/runner.py:1460:        store = self.store
+src/kiro_crew/taskq/adapters/runner.py:1461:        if store is not None and self._coordinator is None:
+src/kiro_crew/taskq/adapters/runner.py:1462:            ledger = WaitLedger(store, clock=self._clock)
+src/kiro_crew/taskq/adapters/runner.py:1463:            try:
+src/kiro_crew/taskq/adapters/runner.py:1464:                due = ledger.due_dependency_waits(self.now())
+src/kiro_crew/taskq/adapters/runner.py:1465:            except TaskStoreUnavailable:
+src/kiro_crew/taskq/adapters/runner.py:1466:                due = []
+src/kiro_crew/taskq/adapters/runner.py:1467:            for rec in due:
+src/kiro_crew/taskq/adapters/runner.py:1468:                try:
+src/kiro_crew/taskq/adapters/runner.py:1469:                    if ledger.wake(rec.id, reason="retry_at reached") is not None:
+src/kiro_crew/taskq/adapters/runner.py:1470:                        woken.append(rec.id)
+src/kiro_crew/taskq/adapters/runner.py:1471:                except TaskStoreUnavailable:
+src/kiro_crew/taskq/adapters/runner.py:1472:                    continue
+src/kiro_crew/taskq/adapters/runner.py:1473:        for task_id in woken:
+src/kiro_crew/taskq/adapters/runner.py:1474:            self.on_wake(task_id)
+src/kiro_crew/taskq/adapters/runner.py:1475:        return woken
+src/kiro_crew/taskq/adapters/runner.py:1476:
+src/kiro_crew/taskq/adapters/runner.py:1477:    async def yield_dependency(
+src/kiro_crew/taskq/adapters/runner.py:1478:        self,
+src/kiro_crew/taskq/adapters/runner.py:1479:        handle: Admitted,
+src/kiro_crew/taskq/adapters/runner.py:1480:        signal: DependencySignal,
+src/kiro_crew/taskq/adapters/runner.py:1481:        *,
+src/kiro_crew/taskq/adapters/runner.py:1482:        deadline_at: float | None = None,
+src/kiro_crew/taskq/adapters/runner.py:1483:    ) -> bool:
+src/kiro_crew/taskq/adapters/runner.py:1484:        """Park *handle* until its dependency scope is retried; True to retry.
+src/kiro_crew/taskq/adapters/runner.py:1485:

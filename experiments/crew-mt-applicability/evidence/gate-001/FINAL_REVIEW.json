@@ -1,0 +1,73 @@
+{
+  "reviewer": "crew_gate_formal_review",
+  "review_completed_utc": "2026-11-05T14:43:28.942761+00:00",
+  "report_path": "experiments/crew-mt-applicability/REPORT.md",
+  "report_sha256": "e955e79764791b9218ca226cfcd3e8a5d546d0e460ea14dd3e8342f12417457e",
+  "verdict": "PASS",
+  "blocking_corrections": [],
+  "scope": "Read-only review of report and saved evidence after closed source gate. No new Crew source read, candidate search, network, test or theorem execution.",
+  "checked": [
+    "STOP_UNKNOWN calibrated: native stochastic retries exist; exact original MT source/model and probability premises remain unresolved, not disproved for all encodings.",
+    "Native retry owner vs external user/AI resubmission distinguished.",
+    "Representative theorem and freshness claims consistent with previously inspected Lean definitions.",
+    "Root recovery references match saved query excerpts; cron/taskq claims consistent with saved specialized reviews and excerpts.",
+    "UTC difference recomputed as 629.682370 seconds, below 1800; separate-process monotonic stamps not used for elapsed duration.",
+    "Counted 18 Crew plus4 library/metadata inputs in22-record source inventory.",
+    "Initial text match and matching-file counts independently recomputed from saved outputs.",
+    "All10 root-query saved-output SHA256 values match receipts.",
+    "Registered protocol and search-plan hashes match START.json.",
+    "Parallel-order and grouped-library interpretation deviations explicitly disclosed; failed query and its retrospective receipt disclosed.",
+    "A/B/C NOT RUN and no demonstrator continuation accurately distinguished from a successful comparison."
+  ],
+  "limitations": [
+    "No fresh source identity recheck by this reviewer after gate closure; rely on before/after identity receipts.",
+    "Not a formal proof or exhaustive proof that Crew lacks an MT encoding."
+  ],
+  "aggregate_note": "Not present during initial review; no claim validating its future contents.",
+  "inputs": [
+    {
+      "path": "START.json",
+      "sha256": "546e7c427b535110c170dea64a194d3c7ca7d434b1def1eb8caad42d226d50f0"
+    },
+    {
+      "path": "END.json",
+      "sha256": "3a04a34ddf3511a37c9f7296dee22d55e263bc6853a5c08a84cb5ee7f349739d"
+    },
+    {
+      "path": "INSPECTED_SOURCES.json",
+      "sha256": "6e649609b66249e0f1bdc5b45be38de65bc7faec03b85d1c01b978893ec695b1"
+    },
+    {
+      "path": "INVENTORY.json",
+      "sha256": "c3fd3423b36a4087197d425f8fd22a3a29b195e12bf5690d786d667bbe987c62"
+    },
+    {
+      "path": "INVENTORY_COVERAGE.json",
+      "sha256": "f6940c2bb97d4a6813cd3084426475c899dc35c7eee8a0f39d785dc3473d4503"
+    },
+    {
+      "path": "CRON_REVIEW.json",
+      "sha256": "96c49657b8c40219194776e1697ba8eb18463904b3c7dbac7a1002754279565b"
+    },
+    {
+      "path": "TASKQ_REVIEW.md",
+      "sha256": "13dd7bc1630650c02b3b4fa21ac7fc1460cf67c968c780e7d625966928deae56"
+    },
+    {
+      "path": "TASKQ_REVIEW.json",
+      "sha256": "a95929e042f8b43f39d30d7b5535d48943eaf243518f2f024cd0b35a1b576c50"
+    },
+    {
+      "path": "QUERY_ERROR.json",
+      "sha256": "3e431b0a8b85275dd8237822a6591580168d1cee8556bdc07394b53c262440f9"
+    },
+    {
+      "path": "FORMAL_REVIEW.md",
+      "sha256": "ff319094aac8c802a62fa411c8ac4f9fe78d6d0f2dba67072e3762ac294b658d"
+    },
+    {
+      "path": "FORMAL_VERDICT.json",
+      "sha256": "512bb752cd847ea210c302e03058455634428e5025bfeb2452c42b282737ad7b"
+    }
+  ]
+}

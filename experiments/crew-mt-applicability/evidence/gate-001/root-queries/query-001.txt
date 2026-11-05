@@ -1,0 +1,280 @@
+src/kiro_crew/recovery/policy.py:1:"""The one retry schedule every recovery layer reads.
+src/kiro_crew/recovery/policy.py:2:
+src/kiro_crew/recovery/policy.py:3:Before this module each layer carried its own literals -- the gatewayd
+src/kiro_crew/recovery/policy.py:4:supervisor doubled from 1s to 60s, the ACP client slept a flat 2s, the task
+src/kiro_crew/recovery/policy.py:5:store computed ``2 * 2**attempts`` capped at 120s, the stub had a mirror of the
+src/kiro_crew/recovery/policy.py:6:supervisor's cap -- and none of them jittered. Under one incident every layer
+src/kiro_crew/recovery/policy.py:7:therefore retried in lock-step on its own clock, which is the retry storm the
+src/kiro_crew/recovery/policy.py:8:RFC's §7 exists to remove. A :class:`RecoveryPolicy` is that schedule; a
+src/kiro_crew/recovery/policy.py:9::class:`LayerPolicy` is the schedule specialised to one rung of the ladder
+src/kiro_crew/recovery/policy.py:10:(attempt cap, cleanup deadline, whether escalation is automatic at all).
+src/kiro_crew/recovery/policy.py:11:
+src/kiro_crew/recovery/policy.py:12:Design rules, each of which a test pins:
+src/kiro_crew/recovery/policy.py:13:
+src/kiro_crew/recovery/policy.py:14:* **Exponential with a cap.** ``base * 2**(attempt-1)``, never above ``max``.
+src/kiro_crew/recovery/policy.py:15:* **Equal jitter, not full jitter.** The delay is drawn from
+src/kiro_crew/recovery/policy.py:16:  ``[raw/2, raw]``. Full jitter (``[0, raw]``) can draw a near-zero delay and
+src/kiro_crew/recovery/policy.py:17:  hot-loop a layer whose failure is not transient yet; equal jitter keeps the
+src/kiro_crew/recovery/policy.py:18:  spread that de-correlates the layers while guaranteeing a floor.
+src/kiro_crew/recovery/policy.py:19:* **A server-stated ``retry_after`` is a floor, never ignored.** The stub's
+src/kiro_crew/recovery/policy.py:20:  ``-32001 capacity`` error names when the daemon expects capacity; retrying
+src/kiro_crew/recovery/policy.py:21:  before it is a wasted queue wait. The delay is ``max(retry_after, backoff)``
+src/kiro_crew/recovery/policy.py:22:  and it stays under the cap so a hostile value cannot park a task forever.
+src/kiro_crew/recovery/policy.py:23:* **Attempts are per unit and decay.** A :class:`RecoveryTracker` counts
+src/kiro_crew/recovery/policy.py:24:  consecutive failures per unit key (a slot, a backend key, a runtime, the
+src/kiro_crew/recovery/policy.py:25:  daemon) and forgets them once ``cooldown_secs`` pass without a failure, so a
+src/kiro_crew/recovery/policy.py:26:  unit that recovered and fails again a day later starts at attempt 1 instead
+src/kiro_crew/recovery/policy.py:27:  of being escalated on its first hiccup.
+src/kiro_crew/recovery/policy.py:28:* **Pure.** No clock read, no randomness, no config import at module level.
+src/kiro_crew/recovery/policy.py:29:  Callers pass ``now`` and may pass an ``rng``; the defaults are the module
+src/kiro_crew/recovery/policy.py:30:  constants the RFC names (``agent.recovery_backoff_base_secs=2``,
+src/kiro_crew/recovery/policy.py:31:  ``agent.recovery_backoff_max_secs=120``) and :meth:`RecoveryPolicy.from_config`
+src/kiro_crew/recovery/policy.py:32:  reads those keys, through ``getattr``, from a config object the CALLER holds.
+src/kiro_crew/recovery/policy.py:33:  Which is why the configured schedule is installed from outside this package:
+src/kiro_crew/recovery/policy.py:34:  ``ladder.configure_default_ladder(cfg)`` at gateway start for every
+src/kiro_crew/recovery/policy.py:35:  ``default_ladder()`` consumer, ``taskq.dependency.coordinator_from_config``
+src/kiro_crew/recovery/policy.py:36:  for a dependency wait. Both derive from the same two keys, so a doctor run
+src/kiro_crew/recovery/policy.py:37:  and a live retry cannot print different numbers for one knob.
+src/kiro_crew/recovery/policy.py:38:"""
+src/kiro_crew/recovery/policy.py:39:
+src/kiro_crew/recovery/policy.py:40:from __future__ import annotations
+src/kiro_crew/recovery/policy.py:41:
+src/kiro_crew/recovery/policy.py:42:import random
+src/kiro_crew/recovery/policy.py:43:from collections import OrderedDict
+src/kiro_crew/recovery/policy.py:44:from dataclasses import dataclass, field, replace
+src/kiro_crew/recovery/policy.py:45:from typing import Any
+src/kiro_crew/recovery/policy.py:46:
+src/kiro_crew/recovery/policy.py:47:#: Backoff base and cap (seconds) when no config overrides them. These are the
+src/kiro_crew/recovery/policy.py:48:#: RFC §12 defaults for ``agent.recovery_backoff_base_secs`` /
+src/kiro_crew/recovery/policy.py:49:#: ``agent.recovery_backoff_max_secs`` and the values every layer holds
+src/kiro_crew/recovery/policy.py:50:#: as its own literal.
+src/kiro_crew/recovery/policy.py:51:DEFAULT_BACKOFF_BASE_SECS = 2.0
+src/kiro_crew/recovery/policy.py:52:DEFAULT_BACKOFF_MAX_SECS = 120.0
+src/kiro_crew/recovery/policy.py:53:
+src/kiro_crew/recovery/policy.py:54:#: Bounds the config clamp applies to the two keys above.
+src/kiro_crew/recovery/policy.py:55:BACKOFF_BASE_MIN_SECS = 0.1
+src/kiro_crew/recovery/policy.py:56:BACKOFF_BASE_MAX_SECS = 60.0
+src/kiro_crew/recovery/policy.py:57:BACKOFF_MAX_MIN_SECS = 1.0
+src/kiro_crew/recovery/policy.py:58:BACKOFF_MAX_MAX_SECS = 3600.0
+src/kiro_crew/recovery/policy.py:59:
+src/kiro_crew/recovery/policy.py:60:#: How long without a failure before a unit's attempt count is forgotten.
+src/kiro_crew/recovery/policy.py:61:#: Wider than the widest backoff so a unit that is still inside its own retry
+src/kiro_crew/recovery/policy.py:62:#: window can never be reset by the passage of that window alone.
+src/kiro_crew/recovery/policy.py:63:DEFAULT_COOLDOWN_SECS = 600.0
+src/kiro_crew/recovery/policy.py:64:
+src/kiro_crew/recovery/policy.py:65:#: Exponent cap: ``2**16`` seconds is already far above any allowed ``max``,
+src/kiro_crew/recovery/policy.py:66:#: so a larger exponent changes nothing except risk an overflow on a corrupted
+src/kiro_crew/recovery/policy.py:67:#: attempt count.
+src/kiro_crew/recovery/policy.py:68:_MAX_EXPONENT = 16
+src/kiro_crew/recovery/policy.py:69:
+src/kiro_crew/recovery/policy.py:70:#: Units the tracker remembers at once. A unit key is a slot key, a backend
+src/kiro_crew/recovery/policy.py:71:#: key or a runtime id -- bounded populations -- but a runaway caller must not
+src/kiro_crew/recovery/policy.py:72:#: be able to grow this without limit, so the oldest entry is evicted past this.
+src/kiro_crew/recovery/policy.py:73:TRACKER_MAX_UNITS = 1024
+src/kiro_crew/recovery/policy.py:74:
+src/kiro_crew/recovery/policy.py:75:
+src/kiro_crew/recovery/policy.py:76:@dataclass(frozen=True)
+src/kiro_crew/recovery/policy.py:77:class LayerPolicy:
+src/kiro_crew/recovery/policy.py:78:    """The schedule for one rung of the ladder.
+src/kiro_crew/recovery/policy.py:79:
+src/kiro_crew/recovery/policy.py:80:    ``max_attempts`` is how many failures a unit may accumulate at this layer
+src/kiro_crew/recovery/policy.py:81:    before the ladder escalates to ``escalate_to``; ``0`` means the layer is
+src/kiro_crew/recovery/policy.py:82:    never retried automatically (L5). ``cleanup_deadline_secs`` is the budget
+src/kiro_crew/recovery/policy.py:83:    the layer's cleanup step (drain, shutdown, process-tree kill) is given
+src/kiro_crew/recovery/policy.py:84:    before the rebuild proceeds anyway; ``None`` means the layer has no
+src/kiro_crew/recovery/policy.py:85:    cleanup step of its own (L1 re-issues a call, nothing to tear down).
+src/kiro_crew/recovery/policy.py:86:    """
+src/kiro_crew/recovery/policy.py:87:
+src/kiro_crew/recovery/policy.py:88:    layer: str
+src/kiro_crew/recovery/policy.py:89:    trigger: str
+src/kiro_crew/recovery/policy.py:90:    max_attempts: int
+src/kiro_crew/recovery/policy.py:91:    base_secs: float = DEFAULT_BACKOFF_BASE_SECS
+src/kiro_crew/recovery/policy.py:92:    max_secs: float = DEFAULT_BACKOFF_MAX_SECS
+src/kiro_crew/recovery/policy.py:93:    jitter: bool = True
+src/kiro_crew/recovery/policy.py:94:    cooldown_secs: float = DEFAULT_COOLDOWN_SECS
+src/kiro_crew/recovery/policy.py:95:    cleanup_deadline_secs: float | None = None
+src/kiro_crew/recovery/policy.py:96:    escalate_to: str | None = None
+src/kiro_crew/recovery/policy.py:97:    #: False for the one layer whose action is only to tell a human.
+src/kiro_crew/recovery/policy.py:98:    automatic: bool = True
+src/kiro_crew/recovery/policy.py:99:    #: True when this layer's schedule is derived from a budget elsewhere (the
+src/kiro_crew/recovery/policy.py:100:    #: gatewayd supervisor's cap is what the stub's reconnect budget is sized
+src/kiro_crew/recovery/policy.py:101:    #: from) and so must not follow the shared ``agent.recovery_*`` knobs.
+src/kiro_crew/recovery/policy.py:102:    pinned: bool = False
+src/kiro_crew/recovery/policy.py:103:
+src/kiro_crew/recovery/policy.py:104:    def raw_backoff_secs(self, attempt: int) -> float:
+src/kiro_crew/recovery/policy.py:105:        """Undithered ``base * 2**(attempt-1)`` capped at ``max_secs``.
+src/kiro_crew/recovery/policy.py:106:
+src/kiro_crew/recovery/policy.py:107:        ``attempt`` is 1-based (the first retry follows the first failure); a
+src/kiro_crew/recovery/policy.py:108:        value below 1 is treated as 1 so a caller that has not counted yet still
+src/kiro_crew/recovery/policy.py:109:        gets the base delay.
+src/kiro_crew/recovery/policy.py:110:        """
+src/kiro_crew/recovery/policy.py:111:        exponent = max(0, min(int(attempt) - 1, _MAX_EXPONENT))
+src/kiro_crew/recovery/policy.py:112:        return float(min(self.max_secs, self.base_secs * (2**exponent)))
+src/kiro_crew/recovery/policy.py:113:
+src/kiro_crew/recovery/policy.py:114:    def backoff_secs(
+src/kiro_crew/recovery/policy.py:115:        self,
+src/kiro_crew/recovery/policy.py:116:        attempt: int,
+src/kiro_crew/recovery/policy.py:117:        *,
+src/kiro_crew/recovery/policy.py:118:        retry_after_secs: float | None = None,
+src/kiro_crew/recovery/policy.py:119:        rng: random.Random | None = None,
+src/kiro_crew/recovery/policy.py:120:    ) -> float:
+src/kiro_crew/recovery/policy.py:121:        """The delay before retry number ``attempt`` at this layer.
+src/kiro_crew/recovery/policy.py:122:
+src/kiro_crew/recovery/policy.py:123:        Equal jitter over the raw backoff, then floored by a server-stated
+src/kiro_crew/recovery/policy.py:124:        ``retry_after_secs`` and finally capped at ``max_secs`` -- in that
+src/kiro_crew/recovery/policy.py:125:        order, so the floor cannot lift the delay above the cap.
+src/kiro_crew/recovery/policy.py:126:        """
+src/kiro_crew/recovery/policy.py:127:        raw = self.raw_backoff_secs(attempt)
+src/kiro_crew/recovery/policy.py:128:        delay = raw
+src/kiro_crew/recovery/policy.py:129:        if self.jitter and raw > 0:
+src/kiro_crew/recovery/policy.py:130:            draw = (rng or random).random()
+src/kiro_crew/recovery/policy.py:131:            delay = raw / 2.0 + draw * (raw / 2.0)
+src/kiro_crew/recovery/policy.py:132:        if retry_after_secs is not None and retry_after_secs > 0:
+src/kiro_crew/recovery/policy.py:133:            delay = max(delay, float(retry_after_secs))
+src/kiro_crew/recovery/policy.py:134:        return float(min(self.max_secs, delay))
+src/kiro_crew/recovery/policy.py:135:
+src/kiro_crew/recovery/policy.py:136:    def should_escalate(self, attempts: int) -> bool:
+src/kiro_crew/recovery/policy.py:137:        """True once ``attempts`` failures have been spent at this layer."""
+src/kiro_crew/recovery/policy.py:138:        if self.max_attempts <= 0:
+src/kiro_crew/recovery/policy.py:139:            return True
+src/kiro_crew/recovery/policy.py:140:        return int(attempts) >= self.max_attempts
+src/kiro_crew/recovery/policy.py:141:
+src/kiro_crew/recovery/policy.py:142:
+src/kiro_crew/recovery/policy.py:143:@dataclass(frozen=True)
+src/kiro_crew/recovery/policy.py:144:class RecoveryPolicy:
+src/kiro_crew/recovery/policy.py:145:    """The shared schedule plus its per-layer specialisations.
+src/kiro_crew/recovery/policy.py:146:
+src/kiro_crew/recovery/policy.py:147:    ``base_secs`` / ``max_secs`` / ``jitter`` / ``cooldown_secs`` are the
+src/kiro_crew/recovery/policy.py:148:    schedule every layer inherits; ``layers`` maps a layer name to the
+src/kiro_crew/recovery/policy.py:149:    :class:`LayerPolicy` that already carries them. Build one with
+src/kiro_crew/recovery/policy.py:150:    :func:`build_policy` (or :meth:`from_config`) rather than by hand so the
+src/kiro_crew/recovery/policy.py:151:    layers and the shared schedule cannot disagree.
+src/kiro_crew/recovery/policy.py:152:    """
+src/kiro_crew/recovery/policy.py:153:
+src/kiro_crew/recovery/policy.py:154:    base_secs: float = DEFAULT_BACKOFF_BASE_SECS
+src/kiro_crew/recovery/policy.py:155:    max_secs: float = DEFAULT_BACKOFF_MAX_SECS
+src/kiro_crew/recovery/policy.py:156:    jitter: bool = True
+src/kiro_crew/recovery/policy.py:157:    cooldown_secs: float = DEFAULT_COOLDOWN_SECS
+src/kiro_crew/recovery/policy.py:158:    layers: dict[str, LayerPolicy] = field(default_factory=dict)
+src/kiro_crew/recovery/policy.py:159:
+src/kiro_crew/recovery/policy.py:160:    def layer(self, name: str) -> LayerPolicy:
+src/kiro_crew/recovery/policy.py:161:        try:
+src/kiro_crew/recovery/policy.py:162:            return self.layers[name]
+src/kiro_crew/recovery/policy.py:163:        except KeyError:
+src/kiro_crew/recovery/policy.py:164:            raise KeyError(f"unknown recovery layer {name!r}") from None
+src/kiro_crew/recovery/policy.py:165:
+src/kiro_crew/recovery/policy.py:166:    def backoff_secs(
+src/kiro_crew/recovery/policy.py:167:        self,
+src/kiro_crew/recovery/policy.py:168:        attempt: int,
+src/kiro_crew/recovery/policy.py:169:        *,
+src/kiro_crew/recovery/policy.py:170:        layer: str | None = None,
+src/kiro_crew/recovery/policy.py:171:        retry_after_secs: float | None = None,
+src/kiro_crew/recovery/policy.py:172:        rng: random.Random | None = None,
+src/kiro_crew/recovery/policy.py:173:    ) -> float:
+src/kiro_crew/recovery/policy.py:174:        """Delay for ``attempt`` at ``layer`` (or on the bare shared schedule)."""
+src/kiro_crew/recovery/policy.py:175:        if layer is not None:
+src/kiro_crew/recovery/policy.py:176:            return self.layer(layer).backoff_secs(
+src/kiro_crew/recovery/policy.py:177:                attempt, retry_after_secs=retry_after_secs, rng=rng
+src/kiro_crew/recovery/policy.py:178:            )
+src/kiro_crew/recovery/policy.py:179:        bare = LayerPolicy(
+src/kiro_crew/recovery/policy.py:180:            layer="",
+src/kiro_crew/recovery/policy.py:181:            trigger="",
+src/kiro_crew/recovery/policy.py:182:            max_attempts=1,
+src/kiro_crew/recovery/policy.py:183:            base_secs=self.base_secs,
+src/kiro_crew/recovery/policy.py:184:            max_secs=self.max_secs,
+src/kiro_crew/recovery/policy.py:185:            jitter=self.jitter,
+src/kiro_crew/recovery/policy.py:186:            cooldown_secs=self.cooldown_secs,
+src/kiro_crew/recovery/policy.py:187:        )
+src/kiro_crew/recovery/policy.py:188:        return bare.backoff_secs(attempt, retry_after_secs=retry_after_secs, rng=rng)
+src/kiro_crew/recovery/policy.py:189:
+src/kiro_crew/recovery/policy.py:190:    def with_schedule(
+src/kiro_crew/recovery/policy.py:191:        self,
+src/kiro_crew/recovery/policy.py:192:        *,
+src/kiro_crew/recovery/policy.py:193:        base_secs: float | None = None,
+src/kiro_crew/recovery/policy.py:194:        max_secs: float | None = None,
+src/kiro_crew/recovery/policy.py:195:        jitter: bool | None = None,
+src/kiro_crew/recovery/policy.py:196:        cooldown_secs: float | None = None,
+src/kiro_crew/recovery/policy.py:197:    ) -> "RecoveryPolicy":
+src/kiro_crew/recovery/policy.py:198:        """A copy whose shared schedule (and every layer's) is overridden."""
+src/kiro_crew/recovery/policy.py:199:        new_base = self.base_secs if base_secs is None else float(base_secs)
+src/kiro_crew/recovery/policy.py:200:        new_max = self.max_secs if max_secs is None else float(max_secs)
+src/kiro_crew/recovery/policy.py:201:        new_jitter = self.jitter if jitter is None else bool(jitter)
+src/kiro_crew/recovery/policy.py:202:        new_cool = self.cooldown_secs if cooldown_secs is None else float(cooldown_secs)
+src/kiro_crew/recovery/policy.py:203:        new_base = min(max(new_base, BACKOFF_BASE_MIN_SECS), BACKOFF_BASE_MAX_SECS)
+src/kiro_crew/recovery/policy.py:204:        new_max = min(max(new_max, BACKOFF_MAX_MIN_SECS), BACKOFF_MAX_MAX_SECS)
+src/kiro_crew/recovery/policy.py:205:        if new_max < new_base:
+src/kiro_crew/recovery/policy.py:206:            new_max = new_base
+src/kiro_crew/recovery/policy.py:207:        layers = {
+src/kiro_crew/recovery/policy.py:208:            name: (
+src/kiro_crew/recovery/policy.py:209:                lp
+src/kiro_crew/recovery/policy.py:210:                if lp.pinned
+src/kiro_crew/recovery/policy.py:211:                else replace(
+src/kiro_crew/recovery/policy.py:212:                    lp,
+src/kiro_crew/recovery/policy.py:213:                    base_secs=new_base,
+src/kiro_crew/recovery/policy.py:214:                    max_secs=new_max,
+src/kiro_crew/recovery/policy.py:215:                    jitter=new_jitter,
+src/kiro_crew/recovery/policy.py:216:                    cooldown_secs=new_cool,
+src/kiro_crew/recovery/policy.py:217:                )
+src/kiro_crew/recovery/policy.py:218:            )
+src/kiro_crew/recovery/policy.py:219:            for name, lp in self.layers.items()
+src/kiro_crew/recovery/policy.py:220:        }
+src/kiro_crew/recovery/policy.py:221:        return RecoveryPolicy(
+src/kiro_crew/recovery/policy.py:222:            base_secs=new_base,
+src/kiro_crew/recovery/policy.py:223:            max_secs=new_max,
+src/kiro_crew/recovery/policy.py:224:            jitter=new_jitter,
+src/kiro_crew/recovery/policy.py:225:            cooldown_secs=new_cool,
+src/kiro_crew/recovery/policy.py:226:            layers=layers,
+src/kiro_crew/recovery/policy.py:227:        )
+src/kiro_crew/recovery/policy.py:228:
+src/kiro_crew/recovery/policy.py:229:    @classmethod
+src/kiro_crew/recovery/policy.py:230:    def from_config(cls, cfg: Any, *, base: "RecoveryPolicy | None" = None) -> "RecoveryPolicy":
+src/kiro_crew/recovery/policy.py:231:        """``base`` (or the default ladder policy) with the ``agent.recovery_*`` keys applied.
+src/kiro_crew/recovery/policy.py:232:
+src/kiro_crew/recovery/policy.py:233:        Reads ``cfg.agent.recovery_backoff_base_secs`` and
+src/kiro_crew/recovery/policy.py:234:        ``cfg.agent.recovery_backoff_max_secs`` through ``getattr`` so a config
+src/kiro_crew/recovery/policy.py:235:        object that predates the keys -- or any duck-typed stand-in -- yields the
+src/kiro_crew/recovery/policy.py:236:        defaults rather than an error. Recovery must never depend on config
+src/kiro_crew/recovery/policy.py:237:        parsing succeeding.
+src/kiro_crew/recovery/policy.py:238:        """
+src/kiro_crew/recovery/policy.py:239:        from kiro_crew.recovery.ladder import LADDER  # leaf module; no cycle at import
+src/kiro_crew/recovery/policy.py:240:
+src/kiro_crew/recovery/policy.py:241:        policy = base if base is not None else LADDER
+src/kiro_crew/recovery/policy.py:242:        agent = getattr(cfg, "agent", None)
+src/kiro_crew/recovery/policy.py:243:        base_secs = getattr(agent, "recovery_backoff_base_secs", None)
+src/kiro_crew/recovery/policy.py:244:        max_secs = getattr(agent, "recovery_backoff_max_secs", None)
+src/kiro_crew/recovery/policy.py:245:        if not isinstance(base_secs, (int, float)) or isinstance(base_secs, bool):
+src/kiro_crew/recovery/policy.py:246:            base_secs = None
+src/kiro_crew/recovery/policy.py:247:        if not isinstance(max_secs, (int, float)) or isinstance(max_secs, bool):
+src/kiro_crew/recovery/policy.py:248:            max_secs = None
+src/kiro_crew/recovery/policy.py:249:        if base_secs is None and max_secs is None:
+src/kiro_crew/recovery/policy.py:250:            return policy
+src/kiro_crew/recovery/policy.py:251:        return policy.with_schedule(base_secs=base_secs, max_secs=max_secs)
+src/kiro_crew/recovery/policy.py:252:
+src/kiro_crew/recovery/policy.py:253:
+src/kiro_crew/recovery/policy.py:254:@dataclass
+src/kiro_crew/recovery/policy.py:255:class _UnitState:
+src/kiro_crew/recovery/policy.py:256:    attempts: int = 0
+src/kiro_crew/recovery/policy.py:257:    last_failure_at: float = 0.0
+src/kiro_crew/recovery/policy.py:258:    first_failure_at: float = 0.0
+src/kiro_crew/recovery/policy.py:259:
+src/kiro_crew/recovery/policy.py:260:
+src/kiro_crew/recovery/policy.py:261:class RecoveryTracker:
+src/kiro_crew/recovery/policy.py:262:    """Per-unit consecutive-failure counts with cooldown decay.
+src/kiro_crew/recovery/policy.py:263:
+src/kiro_crew/recovery/policy.py:264:    The unit key is whatever the layer recovers: a slot key at L1, a backend
+src/kiro_crew/recovery/policy.py:265:    key at L2, a runtime id at L3, the daemon at L4. Bounded to
+src/kiro_crew/recovery/policy.py:266:    :data:`TRACKER_MAX_UNITS` entries (LRU eviction). Every method takes ``now``
+src/kiro_crew/recovery/policy.py:267:    so tests drive it with an injected clock and production passes
+src/kiro_crew/recovery/policy.py:268:    ``time.monotonic()``.
+src/kiro_crew/recovery/policy.py:269:    """
+src/kiro_crew/recovery/policy.py:270:
+src/kiro_crew/recovery/policy.py:271:    def __init__(self, *, cooldown_secs: float = DEFAULT_COOLDOWN_SECS) -> None:
+src/kiro_crew/recovery/policy.py:272:        self._cooldown = float(cooldown_secs)
+src/kiro_crew/recovery/policy.py:273:        self._units: OrderedDict[str, _UnitState] = OrderedDict()
+src/kiro_crew/recovery/policy.py:274:
+src/kiro_crew/recovery/policy.py:275:    @property
+src/kiro_crew/recovery/policy.py:276:    def cooldown_secs(self) -> float:
+src/kiro_crew/recovery/policy.py:277:        return self._cooldown
+src/kiro_crew/recovery/policy.py:278:
+src/kiro_crew/recovery/policy.py:279:    def _fresh(self, unit: str, now: float) -> _UnitState:
+src/kiro_crew/recovery/policy.py:280:        state = self._units.get(unit)

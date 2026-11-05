@@ -1,0 +1,53 @@
+src/kiro_crew/recovery/policy.py:275:    @property
+src/kiro_crew/recovery/policy.py:276:    def cooldown_secs(self) -> float:
+src/kiro_crew/recovery/policy.py:277:        return self._cooldown
+src/kiro_crew/recovery/policy.py:278:
+src/kiro_crew/recovery/policy.py:279:    def _fresh(self, unit: str, now: float) -> _UnitState:
+src/kiro_crew/recovery/policy.py:280:        state = self._units.get(unit)
+src/kiro_crew/recovery/policy.py:281:        if state is None:
+src/kiro_crew/recovery/policy.py:282:            return _UnitState()
+src/kiro_crew/recovery/policy.py:283:        if state.attempts and now - state.last_failure_at >= self._cooldown:
+src/kiro_crew/recovery/policy.py:284:            # The unit went a full cooldown without failing again: forget it.
+src/kiro_crew/recovery/policy.py:285:            del self._units[unit]
+src/kiro_crew/recovery/policy.py:286:            return _UnitState()
+src/kiro_crew/recovery/policy.py:287:        return state
+src/kiro_crew/recovery/policy.py:288:
+src/kiro_crew/recovery/policy.py:289:    def attempts(self, unit: str, now: float) -> int:
+src/kiro_crew/recovery/policy.py:290:        """Consecutive failures recorded for ``unit`` that have not cooled down."""
+src/kiro_crew/recovery/policy.py:291:        return self._fresh(unit, now).attempts
+src/kiro_crew/recovery/policy.py:292:
+src/kiro_crew/recovery/policy.py:293:    def failing_since(self, unit: str, now: float) -> float | None:
+src/kiro_crew/recovery/policy.py:294:        """``now`` of the first failure in the current run, or None when clean."""
+src/kiro_crew/recovery/policy.py:295:        state = self._fresh(unit, now)
+src/kiro_crew/recovery/policy.py:296:        return state.first_failure_at if state.attempts else None
+src/kiro_crew/recovery/policy.py:297:
+src/kiro_crew/recovery/policy.py:298:    def record_failure(self, unit: str, now: float) -> int:
+src/kiro_crew/recovery/policy.py:299:        """Count one more failure for ``unit``; returns the new attempt count."""
+src/kiro_crew/recovery/policy.py:300:        state = self._fresh(unit, now)
+src/kiro_crew/recovery/policy.py:301:        if state.attempts == 0:
+src/kiro_crew/recovery/policy.py:302:            state.first_failure_at = now
+src/kiro_crew/recovery/policy.py:303:        state.attempts += 1
+src/kiro_crew/recovery/policy.py:304:        state.last_failure_at = now
+src/kiro_crew/recovery/policy.py:305:        self._units[unit] = state
+src/kiro_crew/recovery/policy.py:306:        self._units.move_to_end(unit)
+src/kiro_crew/recovery/policy.py:307:        while len(self._units) > TRACKER_MAX_UNITS:
+src/kiro_crew/recovery/policy.py:308:            self._units.popitem(last=False)
+src/kiro_crew/recovery/policy.py:309:        return state.attempts
+src/kiro_crew/recovery/policy.py:310:
+src/kiro_crew/recovery/policy.py:311:    def record_success(self, unit: str) -> None:
+src/kiro_crew/recovery/policy.py:312:        """A unit recovered: its run of failures is over."""
+src/kiro_crew/recovery/policy.py:313:        self._units.pop(unit, None)
+src/kiro_crew/recovery/policy.py:314:
+src/kiro_crew/recovery/policy.py:315:    def forget(self, unit: str) -> None:
+src/kiro_crew/recovery/policy.py:316:        self._units.pop(unit, None)
+src/kiro_crew/recovery/policy.py:317:
+src/kiro_crew/recovery/policy.py:318:    def __len__(self) -> int:
+src/kiro_crew/recovery/policy.py:319:        return len(self._units)
+src/kiro_crew/recovery/policy.py:320:
+src/kiro_crew/recovery/policy.py:321:
+src/kiro_crew/recovery/policy.py:322:__all__ = [
+src/kiro_crew/recovery/policy.py:323:    "BACKOFF_BASE_MAX_SECS",
+src/kiro_crew/recovery/policy.py:324:    "BACKOFF_BASE_MIN_SECS",
+src/kiro_crew/recovery/policy.py:325:    "BACKOFF_MAX_MAX_SECS",
+src/kiro_crew/recovery/policy.py:326:    "BACKOFF_MAX_MIN_SECS",
+src/kiro_crew/recovery/policy.py:327:    "DEFAULT_BACKOFF_BASE_SECS",

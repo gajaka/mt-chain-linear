@@ -1,0 +1,25 @@
+{
+  "reason": "Find direct lifecycle callees using registered alias follow-up rule",
+  "root": "/Users/gajaka/projects/ppg-proof-repair/experiments/kiro-crew-comparison/sources/crew-909e0fc",
+  "command": [
+    "rg",
+    "--line-number",
+    "--ignore-case",
+    "--glob",
+    "*.py",
+    "backoff_secs|default_ladder|\\.decide\\(|llm_helpers|tenacity|backoff",
+    "src/kiro_crew/taskq",
+    "src/kiro_crew/cron_service",
+    "src/kiro_crew/cron.py"
+  ],
+  "started_utc": "2026-11-05T14:26:41.733610+00:00",
+  "ended_utc": "2026-11-05T14:26:41.744188+00:00",
+  "returncode": 0,
+  "sources": {
+    "src/kiro_crew/taskq/reconcile.py": "51bc75379d11bc4c05c36b5a18563a3be3993e0b741a743f64b711e0e3dfa0a2",
+    "src/kiro_crew/taskq/dependency.py": "9ac1b3219f0a6b3dfef56bdc0f199fdc2364332193b63d0c2022a842aa70fa7f",
+    "src/kiro_crew/taskq/model.py": "4bffb02d8d3e85b1253f0a444b0a29ae0b56f69a6bcf16adf308b145191500eb",
+    "src/kiro_crew/taskq/adapters/runner.py": "b461fdd8f20d9459d4b454752c0fa899e043bb2f733a6551029180908641aa38"
+  },
+  "output_sha256": "3629c592ad73ba3bb817ce6243c66547c77ccc35fee64e93b2284a95b65fba6e"
+}

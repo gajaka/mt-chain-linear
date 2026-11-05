@@ -1,0 +1,12 @@
+{
+  "start_utc": "2026-11-05T14:23:15.696130+00:00",
+  "start_monotonic_ns": 25731666,
+  "deadline_utc": "2026-11-05T14:53:15.696130+00:00",
+  "limit_seconds": 1800,
+  "protocol_commit": "ecd0d36573373986031630710d77debc0c8290e2",
+  "source_root": "/Users/gajaka/projects/ppg-proof-repair/experiments/kiro-crew-comparison/sources/crew-909e0fc",
+  "documents": {
+    "experiments/crew-mt-applicability/PROTOCOL.md": "1c1c1ce8c4e622cb8563b00f50983c5b8c13a9eec27280b7ae9814ad2d4750f0",
+    "experiments/crew-mt-applicability/SEARCH_PLAN.json": "b2d6c10fc46bdf93a366a39274c19d3579531a7c75a7b67c762f028fa866fd97"
+  }
+}

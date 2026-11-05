@@ -1,0 +1,17 @@
+{
+  "reason": "Read automatic-layer attempt policies and human notification boundary",
+  "root": "/Users/gajaka/projects/ppg-proof-repair/experiments/kiro-crew-comparison/sources/crew-909e0fc",
+  "command": [
+    "read_lines",
+    "src/kiro_crew/recovery/ladder.py",
+    "60",
+    "195"
+  ],
+  "started_utc": "2026-11-05T14:28:35.858372+00:00",
+  "ended_utc": "2026-11-05T14:28:35.859014+00:00",
+  "returncode": 0,
+  "sources": {
+    "src/kiro_crew/recovery/ladder.py": "31bcf7a6bb057ed97207431370393e5121820e8b229e151dc341491b9abd5fe0"
+  },
+  "output_sha256": "ac9ea06e494a7595ca4ccb2dd84382bfe6a4be63db4184f9dd167cc6ee5873e8"
+}

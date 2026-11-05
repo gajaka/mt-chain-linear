@@ -1,0 +1,17 @@
+{
+  "reason": "Determine failure count mutation and cooldown dependence",
+  "root": "/Users/gajaka/projects/ppg-proof-repair/experiments/kiro-crew-comparison/sources/crew-909e0fc",
+  "command": [
+    "read_lines",
+    "src/kiro_crew/recovery/policy.py",
+    "275",
+    "327"
+  ],
+  "started_utc": "2026-11-05T14:28:35.925156+00:00",
+  "ended_utc": "2026-11-05T14:28:35.925736+00:00",
+  "returncode": 0,
+  "sources": {
+    "src/kiro_crew/recovery/policy.py": "0e01e9013c0b62d8ab8118d0884739a4546a7d242aa6a59b8b2a7a56f1192244"
+  },
+  "output_sha256": "48179d5ff68d00630704ecf1c57b188402b945b7c5163d0b91595ac6a27d464f"
+}

@@ -1,0 +1,406 @@
+{
+  "started_utc": "2026-11-05T14:25:18.937430+00:00",
+  "queries": [
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "get_dependency_coordinator|DependencyCoordinator\\(|\\.park\\(|\\.tick\\(|\\.probe\\(|\\.wake_scope\\(",
+        "src/kiro_crew/taskq",
+        "src/kiro_crew/gateway"
+      ],
+      "reason": "Trace the dependency coordinator construction, park/probe/tick production entry points.",
+      "time_utc": "2026-11-05T14:25:18.946538+00:00",
+      "exit_code": 2,
+      "stdout": "src/kiro_crew/taskq/dependency.py:1399:    return DependencyCoordinator(\nsrc/kiro_crew/taskq/adapters/runner.py:1443:            woken.extend(self._coordinator.tick())\nsrc/kiro_crew/taskq/adapters/runner.py:1459:            woken.extend(self._coordinator.tick())\n",
+      "stderr": "rg: src/kiro_crew/gateway: No such file or directory (os error 2)\n"
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "--glob",
+        "*.py",
+        "coordinator_from_config|set_current_coordinator|current_coordinator\\(|\\.report\\(|\\.tick\\(",
+        "src/kiro_crew/gateway.py",
+        "src/kiro_crew/taskq/adapters/runner.py"
+      ],
+      "reason": "Find actual production installation and call sites for internal coordinator.",
+      "time_utc": "2026-11-05T14:26:08.793769+00:00",
+      "exit_code": 2,
+      "stdout": "src/kiro_crew/taskq/adapters/runner.py:1443:            woken.extend(self._coordinator.tick())\nsrc/kiro_crew/taskq/adapters/runner.py:1459:            woken.extend(self._coordinator.tick())\n",
+      "stderr": "rg: src/kiro_crew/gateway.py: No such file or directory (os error 2)\n"
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "--glob",
+        "*.py",
+        "coordinator_from_config|set_current_coordinator|dependency_coordinator",
+        "src/kiro_crew"
+      ],
+      "reason": "Locate callers after initial gateway directory query found no directory.",
+      "time_utc": "2026-11-05T14:26:08.874167+00:00",
+      "exit_code": 0,
+      "stdout": "src/kiro_crew/recovery/policy.py:35:  ``default_ladder()`` consumer, ``taskq.dependency.coordinator_from_config``\nsrc/kiro_crew/subagent.py:5533:    def _dependency_coordinator(self) -> Any:\nsrc/kiro_crew/subagent.py:5534:        return self._monitor._dependency_coordinator_impl()\nsrc/kiro_crew/subagent.py:5536:    def dependency_coordinator(self) -> Any:\nsrc/kiro_crew/subagent.py:5543:        return self._dependency_coordinator()\nsrc/kiro_crew/subagent.py:5545:    async def dependency_coordinator_async(self) -> Any:\nsrc/kiro_crew/subagent.py:5546:        \"\"\":meth:`dependency_coordinator` for an event-loop caller.\nsrc/kiro_crew/subagent.py:5552:        return self._dependency_coordinator()\nsrc/kiro_crew/subagent_manager/admission/fairness.py:274:            or getattr(self._manager, \"_taskq_dependency_coordinator\", None) is not None\nsrc/kiro_crew/subagent_manager/admission/fairness.py:277:        await store.run(self._manager.dependency_coordinator)\nsrc/kiro_crew/subagent_manager/monitoring.py:155:    def _dependency_coordinator_impl(self) -> Any:\nsrc/kiro_crew/subagent_manager/monitoring.py:171:        ``SubagentManager.dependency_coordinator_async`` instead of this entry.\nsrc/kiro_crew/subagent_manager/monitoring.py:173:        existing = getattr(self._manager, \"_taskq_dependency_coordinator\", None)\nsrc/kiro_crew/subagent_manager/monitoring.py:188:        coordinator = _dependency.coordinator_from_config(\nsrc/kiro_crew/subagent_manager/monitoring.py:208:        setattr(self._manager, \"_taskq_dependency_coordinator\", coordinator)\nsrc/kiro_crew/subagent_manager/run.py:756:                _coordinator = getattr(self._manager, \"_taskq_dependency_coordinator\", None)\nsrc/kiro_crew/subagent_manager/run.py:1147:        _dep_coordinator = await self._manager.dependency_coordinator_async()\nsrc/kiro_crew/subagent_manager/run.py:2924:        coordinator = await self._manager.dependency_coordinator_async()\nsrc/kiro_crew/slack/gateway.py:11527:        coordinator = self._subagent_dependency_coordinator()\nsrc/kiro_crew/slack/gateway.py:11531:    def _subagent_dependency_coordinator(self) -> Any:\nsrc/kiro_crew/slack/gateway.py:11541:        coordinator = getattr(self.subagent_mgr, \"dependency_coordinator\", None)\nsrc/kiro_crew/slack/gateway.py:11557:        entry = getattr(mgr, \"dependency_coordinator_async\", None)\nsrc/kiro_crew/slack/gateway.py:11597:            coordinator = self._subagent_dependency_coordinator()\nsrc/kiro_crew/slack/gateway.py:11667:            coordinator = await mgr.dependency_coordinator_async()\nsrc/kiro_crew/taskq/dependency.py:1382:def coordinator_from_config(\nsrc/kiro_crew/taskq/dependency.py:1451:    \"coordinator_from_config\",\nsrc/kiro_crew/taskq/__init__.py:35:    coordinator_from_config,\nsrc/kiro_crew/taskq/__init__.py:148:    \"coordinator_from_config\",\nsrc/kiro_crew/config/loader.py:2868:        # Dependency coordinator (taskq/dependency.py coordinator_from_config).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "--glob",
+        "*.py",
+        "def fetch_dispatchable|ORDER BY|def _next_retry_at|def _persist_wait",
+        "src/kiro_crew/taskq/store.py",
+        "src/kiro_crew/taskq/dependency.py"
+      ],
+      "reason": "Find deterministic candidate order and exact wait/update implementation.",
+      "time_utc": "2026-11-05T14:26:08.878702+00:00",
+      "exit_code": 0,
+      "stdout": "src/kiro_crew/taskq/dependency.py:806:    def _next_retry_at(self, sched: ScopeSchedule, signal: DependencySignal, now: float) -> float:\nsrc/kiro_crew/taskq/dependency.py:868:    def _persist_wait(\nsrc/kiro_crew/taskq/store.py:775:                    \"WHERE task_id=? ORDER BY seq DESC LIMIT ?\",\nsrc/kiro_crew/taskq/store.py:1398:                    \"SELECT * FROM tasks WHERE parent_id=? ORDER BY created_at, rowid\",\nsrc/kiro_crew/taskq/store.py:1411:            sql, args = \"SELECT * FROM tasks WHERE state=? ORDER BY created_at, rowid\", [state]\nsrc/kiro_crew/taskq/store.py:1414:                f\"SELECT * FROM tasks WHERE state IN {_SQL_WAITING} ORDER BY created_at, rowid\",\nsrc/kiro_crew/taskq/store.py:1430:                    \"ORDER BY c.created_at, c.rowid\"\nsrc/kiro_crew/taskq/store.py:1547:    def fetch_dispatchable_fair(\nsrc/kiro_crew/taskq/store.py:1585:                    \"SELECT *, ROW_NUMBER() OVER (PARTITION BY lane ORDER BY created_at, rowid) \"\nsrc/kiro_crew/taskq/store.py:1589:                    f\"{child_sql}{lane_sql}{excl_sql}) WHERE lane_rank<=? ORDER BY lane, lane_rank\",\nsrc/kiro_crew/taskq/store.py:1601:    def fetch_dispatchable(\nsrc/kiro_crew/taskq/store.py:1622:                    f\"{excl_sql}{sess_sql} ORDER BY created_at, rowid LIMIT ?\",\nsrc/kiro_crew/taskq/store.py:1660:                    f\"{sess_sql}{excl_sql} ORDER BY created_at, rowid{lim_sql}\",\nsrc/kiro_crew/taskq/store.py:1679:                    \"ORDER BY created_at, rowid\",\nsrc/kiro_crew/taskq/store.py:1798:        sql += \" ORDER BY created_at, rowid LIMIT ? OFFSET ?\"\nsrc/kiro_crew/taskq/store.py:1811:        sql += \" ORDER BY created_at, rowid\"\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "coordinator\\.tick|coordinator\\.report|waiting_dependency\\(",
+        "src/kiro_crew/subagent_manager",
+        "src/kiro_crew/slack/gateway.py",
+        "src/kiro_crew/workflow",
+        "src/kiro_crew/recovery/policy.py"
+      ],
+      "reason": "Trace automatic poll and dependency exception report to existing coordinator; inspect shared policy source only for delegated draw.",
+      "time_utc": "2026-11-05T14:26:52.923517+00:00",
+      "exit_code": 2,
+      "stdout": "src/kiro_crew/subagent_manager/monitoring.py:298:            woken = coordinator.tick()\nsrc/kiro_crew/subagent_manager/monitoring.py:340:                coordinator.tick, callbacks=callbacks, live_waiters=live_waiters\nsrc/kiro_crew/subagent_manager/run.py:2907:        ``coordinator.report`` writes the wait (``running -> waiting_dependency``\nsrc/kiro_crew/subagent_manager/run.py:3162:        return coordinator.report(task_id, signal, generation=generation, from_state=_taskq.RUNNING)\n",
+      "stderr": "rg: src/kiro_crew/workflow: No such file or directory (os error 2)\n"
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "yield_for_dependency|classify_exception\\(",
+        "src/kiro_crew/subagent_manager/run.py"
+      ],
+      "reason": "Locate internal classified-error branch that invokes the dependency wait.",
+      "time_utc": "2026-11-05T14:27:15.502152+00:00",
+      "exit_code": 0,
+      "stdout": "1922:                    _signal = classify_exception(exc) if _dep_coordinator is not None else None\n1926:                        if not await self._manager._yield_for_dependency(info, _signal):\n2904:    async def _yield_for_dependency_impl(self, info: SubagentInfo, signal: Any) -> bool:\n3090:        if not await self._manager._yield_for_dependency(info, signal):\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "taskq_tick|tick_dependencies|_dependency_tick",
+        "src/kiro_crew/subagent_manager/monitoring.py"
+      ],
+      "reason": "Locate timed coordinator polling from lifecycle monitor.",
+      "time_utc": "2026-11-05T14:27:15.505309+00:00",
+      "exit_code": 0,
+      "stdout": "269:            pending = getattr(self._manager, \"_taskq_tick_task\", None)\n271:                setattr(self._manager, \"_taskq_tick_again\", True)\n273:            setattr(self._manager, \"_taskq_tick_again\", False)\n276:                \"_taskq_tick_task\",\n317:            setattr(self._manager, \"_taskq_tick_again\", False)\n319:            if not getattr(self._manager, \"_taskq_tick_again\", False):\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "rg",
+        "-n",
+        "answer_input|retry_task|resubmit|manual",
+        "src/kiro_crew/taskq/adapters/runner.py"
+      ],
+      "reason": "Separate operator-driven wakes/restarts from native retry.",
+      "time_utc": "2026-11-05T14:27:15.508204+00:00",
+      "exit_code": 0,
+      "stdout": "101:#: The only wait an operator's answer may end (``answer_input``). An answer\n1411:        the loop -- and an operator's ``answer_input`` / ``cancel_wait`` arrives\n1597:        \"\"\"Park *handle* in ``waiting_input`` until :meth:`answer_input`.\n1604:        :meth:`yield_dependency`: ``answer_input`` wakes through\n1659:        ``answer_input`` writes the answer INTO the wake event before waking\n1718:    def answer_input(self, task_id: str, answer: str, *, generation: int | None = None) -> bool:\n",
+      "stderr": ""
+    }
+  ],
+  "reads": [
+    {
+      "path": "src/kiro_crew/taskq/dependency.py",
+      "sha256": "9ac1b3219f0a6b3dfef56bdc0f199fdc2364332193b63d0c2022a842aa70fa7f",
+      "ranges": [
+        [
+          1,
+          58
+        ],
+        [
+          125,
+          170
+        ],
+        [
+          315,
+          375
+        ],
+        [
+          398,
+          475
+        ],
+        [
+          654,
+          680
+        ],
+        [
+          700,
+          840
+        ],
+        [
+          970,
+          1085
+        ],
+        [
+          1360,
+          1415
+        ]
+      ],
+      "time_utc": "2026-11-05T14:25:18.937895+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/store.py",
+      "sha256": "3da4f38b02e81a0b53937134bf8354a8928bb973e11f5dcd4448d2ef78488fc5",
+      "ranges": [
+        [
+          850,
+          975
+        ]
+      ],
+      "time_utc": "2026-11-05T14:25:18.938393+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/reconcile.py",
+      "sha256": "51bc75379d11bc4c05c36b5a18563a3be3993e0b741a743f64b711e0e3dfa0a2",
+      "ranges": [
+        [
+          100,
+          190
+        ]
+      ],
+      "time_utc": "2026-11-05T14:25:18.938540+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/dependency.py",
+      "sha256": "9ac1b3219f0a6b3dfef56bdc0f199fdc2364332193b63d0c2022a842aa70fa7f",
+      "ranges": [
+        [
+          806,
+          850
+        ],
+        [
+          850,
+          935
+        ],
+        [
+          1110,
+          1165
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:08.879003+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/adapters/runner.py",
+      "sha256": "b461fdd8f20d9459d4b454752c0fa899e043bb2f733a6551029180908641aa38",
+      "ranges": [
+        [
+          1350,
+          1475
+        ],
+        [
+          1480,
+          1570
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:08.879310+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/model.py",
+      "sha256": "4bffb02d8d3e85b1253f0a444b0a29ae0b56f69a6bcf16adf308b145191500eb",
+      "ranges": [
+        [
+          168,
+          201
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:08.879489+00:00"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/monitoring.py",
+      "sha256": "0468dffe0e834d731f67a5e7a08bb8557cef17901fb9786a166c56eaebe70f39",
+      "ranges": [
+        [
+          155,
+          215
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:52.910012+00:00"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/run.py",
+      "sha256": "b7cf3a681714b1a0bd0fb7e94de4c8304dcbd4079c53c0fb7e702178d6a15047",
+      "ranges": [
+        [
+          1125,
+          1170
+        ],
+        [
+          2890,
+          2970
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:52.910804+00:00"
+    },
+    {
+      "path": "src/kiro_crew/slack/gateway.py",
+      "sha256": "f1589497d28c631d932f4e1a6c0c35ab61a3bf03ed878595bc4e7d76932dcf5b",
+      "ranges": [
+        [
+          11580,
+          11630
+        ],
+        [
+          11645,
+          11695
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:52.912940+00:00"
+    },
+    {
+      "path": "src/kiro_crew/recovery/policy.py",
+      "sha256": "0e01e9013c0b62d8ab8118d0884739a4546a7d242aa6a59b8b2a7a56f1192244",
+      "ranges": [
+        [
+          1,
+          60
+        ],
+        [
+          90,
+          180
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:52.913170+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/store.py",
+      "sha256": "3da4f38b02e81a0b53937134bf8354a8928bb973e11f5dcd4448d2ef78488fc5",
+      "ranges": [
+        [
+          1601,
+          1635
+        ]
+      ],
+      "time_utc": "2026-11-05T14:26:52.913430+00:00"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/monitoring.py",
+      "sha256": "0468dffe0e834d731f67a5e7a08bb8557cef17901fb9786a166c56eaebe70f39",
+      "ranges": [
+        [
+          270,
+          350
+        ]
+      ],
+      "time_utc": "2026-11-05T14:27:15.497649+00:00"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/run.py",
+      "sha256": "b7cf3a681714b1a0bd0fb7e94de4c8304dcbd4079c53c0fb7e702178d6a15047",
+      "ranges": [
+        [
+          3115,
+          3170
+        ]
+      ],
+      "time_utc": "2026-11-05T14:27:15.498407+00:00"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/run.py",
+      "sha256": "b7cf3a681714b1a0bd0fb7e94de4c8304dcbd4079c53c0fb7e702178d6a15047",
+      "ranges": [
+        [
+          1906,
+          1942
+        ]
+      ],
+      "time_utc": "2026-11-05T14:27:49.087200+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/dependency.py",
+      "sha256": "9ac1b3219f0a6b3dfef56bdc0f199fdc2364332193b63d0c2022a842aa70fa7f",
+      "ranges": [
+        [
+          1220,
+          1260
+        ]
+      ],
+      "time_utc": "2026-11-05T14:27:49.087860+00:00"
+    },
+    {
+      "path": "src/kiro_crew/taskq/adapters/runner.py",
+      "sha256": "b461fdd8f20d9459d4b454752c0fa899e043bb2f733a6551029180908641aa38",
+      "ranges": [
+        [
+          1718,
+          1755
+        ]
+      ],
+      "time_utc": "2026-11-05T14:27:49.088157+00:00"
+    }
+  ],
+  "finished_source_read_utc": "2026-11-05T14:27:49.088172+00:00",
+  "inspected_source_hashes": [
+    {
+      "path": "src/kiro_crew/config/loader.py",
+      "sha256": "e9d8621e54e835db54095351e26db06246c935847980c24ef62ba299205bf519"
+    },
+    {
+      "path": "src/kiro_crew/recovery/policy.py",
+      "sha256": "0e01e9013c0b62d8ab8118d0884739a4546a7d242aa6a59b8b2a7a56f1192244"
+    },
+    {
+      "path": "src/kiro_crew/slack/gateway.py",
+      "sha256": "f1589497d28c631d932f4e1a6c0c35ab61a3bf03ed878595bc4e7d76932dcf5b"
+    },
+    {
+      "path": "src/kiro_crew/subagent.py",
+      "sha256": "eb212984cd3b5091f78ff7127ffec686f15e9a4052a05a93139d55ff020fc1cb"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/admission/fairness.py",
+      "sha256": "3030f5a5693e083a6f9af2247cf7280d2bc7322d1195c7deb2b87effaf3d7b06"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/monitoring.py",
+      "sha256": "0468dffe0e834d731f67a5e7a08bb8557cef17901fb9786a166c56eaebe70f39"
+    },
+    {
+      "path": "src/kiro_crew/subagent_manager/run.py",
+      "sha256": "b7cf3a681714b1a0bd0fb7e94de4c8304dcbd4079c53c0fb7e702178d6a15047"
+    },
+    {
+      "path": "src/kiro_crew/taskq/__init__.py",
+      "sha256": "25cb5fa7b4c12d8875a7b169f58d7349faaffba7e1baf8ff9ba3ebcf0d4ff322"
+    },
+    {
+      "path": "src/kiro_crew/taskq/adapters/runner.py",
+      "sha256": "b461fdd8f20d9459d4b454752c0fa899e043bb2f733a6551029180908641aa38"
+    },
+    {
+      "path": "src/kiro_crew/taskq/dependency.py",
+      "sha256": "9ac1b3219f0a6b3dfef56bdc0f199fdc2364332193b63d0c2022a842aa70fa7f"
+    },
+    {
+      "path": "src/kiro_crew/taskq/model.py",
+      "sha256": "4bffb02d8d3e85b1253f0a444b0a29ae0b56f69a6bcf16adf308b145191500eb"
+    },
+    {
+      "path": "src/kiro_crew/taskq/reconcile.py",
+      "sha256": "51bc75379d11bc4c05c36b5a18563a3be3993e0b741a743f64b711e0e3dfa0a2"
+    },
+    {
+      "path": "src/kiro_crew/taskq/store.py",
+      "sha256": "3da4f38b02e81a0b53937134bf8354a8928bb973e11f5dcd4448d2ef78488fc5"
+    }
+  ]
+}
