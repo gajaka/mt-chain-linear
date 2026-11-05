@@ -1,0 +1,18 @@
+{
+  "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear/evidence/attempt-002/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear/.lake/packages/batteries/.lake/build/lib/lean",
+  "LEAN_SRC_PATH": null,
+  "command": [
+    "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "-j1",
+    "-M4096",
+    "-o",
+    "/Users/gajaka/projects/mt-chain-linear/evidence/attempt-002/lib/lean/ThetaIndependentAudit.olean",
+    "ThetaIndependentAudit.lean"
+  ],
+  "cwd": "/Users/gajaka/projects/mt-chain-linear/evidence/attempt-002/src",
+  "parent_stack_limits": [
+    8372224,
+    67092480
+  ],
+  "timeout_seconds": 300
+}

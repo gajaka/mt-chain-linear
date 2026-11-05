@@ -10,16 +10,13 @@ For every n >= 2:
     n/18 <= E[T_n] <= 1054*n.
 ```
 
-The result concerns an ideal finite stochastic process, not the running time of
-a Lean compiler, an AI prover, or an implementation using a seeded PRNG.
-It is extracted from the chain analysis in `../ppg-proof-repair`; PPGraph is
-not a dependency of this package. Scientific novelty is not claimed.
+This is an ideal process bound, not compiler, AI-prover or seeded-PRNG timing.
+It is extracted from `../ppg-proof-repair`, without a PPGraph dependency or novelty claim.
 
 ## The process
 
-There are n local obligations, called bridges. Bridge i connects thresholds
-X_(i-1) and X_i and carries a label R_i. Indices here are one-based; Lean's
-`Fin n` bridge indices are zero-based.
+Bridge i joins X_(i-1) to X_i with label R_i. There are n bridges.
+Here indices are one-based; Lean's `Fin n` bridge indices are zero-based.
 
 ```text
     2 = X_0 -- R_1 --> X_1 -- R_2 --> ... -- R_n --> X_n = 0
@@ -36,9 +33,8 @@ according to `MTChainProof.bridgePass` in `FreshDraws.lean`:
     R_i in {0,2,3}: passes exactly when X_i <= X_(i-1)
 ```
 
-The table originated in a finite Lean-tactic experiment. Here it is a
-mathematical definition. These proofs do not establish a universal description
-of Lean tactics, and a process step does not invoke a live tactic or compiler.
+The definition models a finite measured Lean-tactic table. It is not a universal
+description of Lean tactics; a process step invokes no tactic or compiler.
 
 ```text
     Initialize all mutable coordinates from the product law.
@@ -96,8 +92,8 @@ failed bridge; bridges strictly before it are passing.
 The crucial drift is averaged using the proved conditional completion law of
 the unretained coordinates. It is not a raw pointwise drift claim for every
 arbitrary fixed suffix. The `actual_history_fresh_tail` theorem in
-`HistoryFiltering.lean` proves that law after every positive-probability observation
-history under the registered initialization, including histories with rollback.
+`HistoryFiltering.lean` proves that law for every positive-probability history
+ending actively under the registered initialization, including rollback histories.
 
 Regular steps pay at least one unit of potential. For exceptional steps, an
 expected barrier advance of at least 1/4 pays for local growth bounded by 243:
@@ -105,15 +101,13 @@ expected barrier advance of at least 1/4 pays for local growth bounded by 243:
 and zero at termination. Kernel transport and the infinite-horizon supremum
 then yield the upper bound.
 
-The extraction retains the earlier quadratic proof machinery. In particular,
-the present lower-bound proof uses the established finiteness/survival lemmas
-from `FinalQuadratic.lean`. This is not presented as a new independent proof
-architecture that removes every dependency on that earlier argument.
+The extraction retains the earlier quadratic proof machinery: the present
+lower-bound proof uses finiteness/survival lemmas from `FinalQuadratic.lean`.
+It does not remove every dependency on that earlier argument.
 
 ## Main declarations and source layout
 
-All principal declarations use namespace `MTChainFormal`, with linear results
-in `MTChainFormal.Tightness`.
+Principal namespaces are `MTChainFormal` and `MTChainFormal.Tightness`.
 
 | File | Role |
 | --- | --- |
@@ -148,11 +142,34 @@ When the source project is available, source identity can also be checked with:
 python3 scripts/verify.py --compare-source ../ppg-proof-repair
 ```
 
-Independent verification uses `scripts/independent.py`; consult its `--help`
-for the required external checker configuration. Fresh build and checker
-receipts belong under `evidence/`. At extraction time fresh verification is
-pending: old Lean/Nanoda results are not silently promoted to new-package passes.
-The build verifies proofs about these definitions; it does not validate an
+Fresh verification of this extraction passed:
+
+- All 34 local Lean modules built from an absent project build directory;
+  pinned external dependency caches were reused.
+- All 32 unchanged copies match their source SHA-256 values. The optional
+  comparison also checked 81 source-project files/configurations unchanged.
+- Nine selected theorem statements, binders and actual proof closures passed
+  the axiom audit, using only `propext`, `Classical.choice` and `Quot.sound`.
+- A fresh Nanoda replay checked those nine roots and their proof closure:
+  17,688 expanded declarations, with no errors and no PPG imports.
+
+See [REPORT.md](REPORT.md) and [evidence/VERIFICATION.json](evidence/VERIFICATION.json).
+The retained sources produce 23 Lake module-migration warnings. An initial
+`--wfail` attempt rejected those warnings; normal `lake build` succeeds.
+The proof sources remain byte-identical to their origins.
+
+[TOOLING.md](TOOLING.md) documents the external checker, its binary-specific
+pins and the exact replay commands. A saved-evidence check on the original
+local artifacts is:
+
+```sh
+python3 -B scripts/independent.py --verify --attempt attempt-002
+```
+
+Raw exports and compiled dependencies are excluded from Git. A fresh checker
+run requires those tools and a new unused attempt name. `verify.py` refreshes
+the current derived source-verification receipt; independent proof attempts
+are never overwritten. These checks concern the formal definitions, not an
 external Python implementation or a random-number generator.
 
 ## Relation to existing MT results
@@ -176,6 +193,13 @@ Being outside the classical region also does not establish scientific novelty.
 - [Kolipaka-Szegedy: STOC 2011 official abstract](https://acm-stoc.org/stoc2011/AcceptedPapersWithAbstracts.htm)
 - [He-Li-Sun: graph-uniform versus intersection-sensitive criteria](https://arxiv.org/abs/2111.06527)
 
-No arbitrary warm-start, alternative scheduler, adaptive AI generator, practical
-proof-repair speedup, or uniqueness of this proof method is established here.
+Prior formalizations also preclude a first-LLL/first-MT-formalization claim:
+
+- [Chelsea Edmonds: AFP Lovasz Local Lemma](https://isa-afp.org/entries/Lovasz_Local.html), covering classical existence statements.
+- [Edouard Bonnet: Lean MT proof source](https://github.com/EdouardBonnet/moser-tardos/blob/b3856214a13da34e584db6c404622651c1581835/proofs/Lax965890Proofs/MoserTardos.lean#L2086), not independently replayed by this extraction.
+
+No arbitrary warm-start, alternative scheduler, adaptive AI guarantee, practical
+proof-repair speedup or uniqueness of this proof method is established here.
+The open comparison is whether a known theorem already implies Theta(n) for
+this exact event system, product law, least-failed rule and full local redraw.
 See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for provenance and licenses.

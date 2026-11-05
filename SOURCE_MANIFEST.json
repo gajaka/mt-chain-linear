@@ -612,5 +612,24 @@
         "Add adaptation scope documentation; keep original full raw closure, exact type and binder checking."
       ]
     }
+  ],
+  "tooling_files": [
+    {
+      "destination": "scripts/verify.py",
+      "sha256": "88cdb4a0de82eba7a6464dcdd51da513d6607b236124d2369fca49186bb4300d",
+      "role": "new-standalone-verification-tool"
+    },
+    {
+      "destination": "scripts/independent.py",
+      "sha256": "cd03a02d3836e3081f96070a8faabbefe0e7698e9db411ff5a1e997023664144",
+      "role": "new-standalone-verification-tool"
+    },
+    {
+      "destination": "scripts/export_check.py",
+      "sha256": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c",
+      "role": "unchanged-export-inspector",
+      "source": "/Users/gajaka/projects/ppg-lean-discovery/mt-chain-independent/export_check.py",
+      "sha256_source": "551a04bcc576b4a199892bccf2212ee581f66706f057257571f67ae0fa00097c"
+    }
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "Lean": {
+    "binary_sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+    "export_format_version": "3.1.0",
+    "leanexport_binary_sha256": "01327b83d6a69dbc84fa04fd671c61068b2f074e51d1bf607bf6a6b9aed5339e",
+    "toolchain": "leanprover/lean4:v4.35.0"
+  },
+  "Nanoda": {
+    "Cargo_lock_sha256": "b007b2dd1d04fc1cffbd494e0f409ed589d926b3e455a0ad2e605414da028248",
+    "Cargo_toml_sha256": "54d3f41310370aba5057e4c7ee7983772f642e80cd82fdf8421320434ebad3f0",
+    "historical_build": {
+      "build_exit_code": 0,
+      "not_a_fresh_Rust_rebuild_during_extraction": true,
+      "recorded": "2026-10-18T12:29:07.721268+02:00",
+      "rustc_version": "rustc 1.99.1 (58cf8f9c3 2026-10-13)",
+      "sdk": "MacOSX26.5.sdk",
+      "tests_exit_code": 0
+    },
+    "historical_records": [
+      {
+        "path": "/Users/gajaka/.local/state/ppg-lean-upgrade/2026-10-18-v4.35.0/nanoda-fixed-provenance.json",
+        "sha256": "435282b0f37362d0f6e8d79eea81ae6e48b8b08825d1c38bd81018efcf5c5126"
+      },
+      {
+        "path": "/Users/gajaka/.local/state/ppg-lean-upgrade/2026-10-18-v4.35.0/nanoda-fixed-build-results.json",
+        "sha256": "71765d98d9150aa05d388a002eb379b3112d69459cfc9c282d4e16d35eb3c549"
+      }
+    ],
+    "license": "Apache-2.0",
+    "local_patch": "tooling/nanoda-stack-size.patch",
+    "only_tracked_source_mutation": "src/lib.rs STACK_SIZE 16777216 -> 268435456",
+    "package_version": "0.4.24",
+    "patch_sha256": "6cc6bad98fbe9a997a6f11ed02647ed510777bbfb5e5b0458701f4d64b47a1d7",
+    "patched_lib_rs_sha256": "d0e37d4c669fee5f8638cf9d7953cfcb13d180ca4c2421b2e42a83baa8f97d27",
+    "selected_binary": "/Users/gajaka/.local/state/ppg-lean-upgrade/2026-10-18-v4.35.0/nanoda-fixed-source/target/release/nanoda_bin",
+    "selected_binary_sha256": "4f2264a0c987e94c4a654768a90ddb92369014578ecafba3287020bec0f4d439",
+    "source_git_status_reviewed": "Only tracked modification is src/lib.rs, equal to the preserved stack-size patch.",
+    "source_repository": "https://github.com/ammkrn/nanoda_lib",
+    "upstream_revision": "f67473ba5f9397266f89c7852082c9c914b5d219"
+  },
+  "schema_version": 1,
+  "scope": "Selected tool source/binary provenance; fresh theorem-export/checker receipts are separate. No complete OS/compiler/toolchain bootstrap proof is claimed."
+}

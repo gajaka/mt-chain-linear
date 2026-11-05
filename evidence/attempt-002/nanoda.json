@@ -1,0 +1,29 @@
+{
+  "export_file_path": "/Users/gajaka/projects/mt-chain-linear/evidence/exports/attempt-002/declarations.ndjson",
+  "nat_extension": true,
+  "num_threads": 1,
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "pp_declars": [
+    "MTChainFormal.Tightness.expected_steps_ge_linear_refined",
+    "MTChainFormal.Tightness.expected_steps_ge_linear",
+    "MTChainFormal.Tightness.expected_steps_le_linear",
+    "MTChainFormal.Tightness.linear_work_bounds",
+    "MTChainFormal.Tightness.expected_steps_isTheta_linear",
+    "MTChainFormal.Tightness.expected_steps_not_quadratic_lower",
+    "MTChainFormal.Tightness.expected_steps_not_isTheta_quadratic",
+    "MTChainFormal.Tightness.no_positive_quadratic_lower_bound",
+    "MTChainFormal.Tightness.expected_invalidations_le_linear"
+  ],
+  "pp_to_stdout": true,
+  "print_axioms": true,
+  "print_success_message": true,
+  "string_extension": true,
+  "unknown_pp_declar_hard_error": true,
+  "unpermitted_axiom_hard_error": true,
+  "unsafe_permit_all_axioms": false,
+  "use_stdin": false
+}

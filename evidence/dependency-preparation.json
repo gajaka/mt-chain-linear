@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "mathlib_and_transitives_copied": [
+    {
+      "package": "mathlib",
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "seconds": 19.10944925,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "plausible",
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "seconds": 0.04411999999999949,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "LeanSearchClient",
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "seconds": 0.01796608300000102,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "importGraph",
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "seconds": 0.09589970799999747,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "proofwidgets",
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "seconds": 0.09338341700000186,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "aesop",
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07",
+      "seconds": 0.31631270900000175,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "Qq",
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "seconds": 0.04565516699999961,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "batteries",
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "seconds": 0.572291958000001,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    },
+    {
+      "package": "Cli",
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "seconds": 0.021986041000001677,
+      "method": "independent APFS copy-on-write copy; no project objects copied"
+    }
+  ],
+  "compiled_project_objects_copied": false
+}

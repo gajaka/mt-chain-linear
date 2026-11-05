@@ -1,0 +1,7 @@
+diff --git a/src/lib.rs b/src/lib.rs
+index f7ca1d9..afcf16e 100644
+--- a/src/lib.rs
++++ b/src/lib.rs
+@@ -23 +23 @@ pub mod util;
+-pub(crate) const STACK_SIZE: usize = 16_777_216;
++pub(crate) const STACK_SIZE: usize = 268_435_456;

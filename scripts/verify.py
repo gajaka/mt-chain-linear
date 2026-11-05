@@ -47,6 +47,9 @@ def main():
         need(digest(path) == row["sha256_adapted"], "Adaptation changed: " + str(path))
         if path.suffix == ".lean":
             destinations.add(row["destination"])
+    for row in manifest.get("tooling_files", []):
+        need(digest(ROOT / row["destination"]) == row["sha256"],
+             "Tooling source changed: " + row["destination"])
 
     modules = {p.stem: p for p in (ROOT / "formal").rglob("*.lean")}
     need(len(modules) == len(list((ROOT / "formal").rglob("*.lean"))),

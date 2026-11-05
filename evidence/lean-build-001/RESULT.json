@@ -1,0 +1,17 @@
+{
+  "command": [
+    "lake",
+    "--wfail",
+    "build",
+    "MTCore",
+    "MTTightness",
+    "MTPaper"
+  ],
+  "cwd": "/Users/gajaka/projects/mt-chain-linear",
+  "exit_code": 1,
+  "seconds": 36.564640250000004,
+  "inherited_lean_path_cleared": true,
+  "project_objects_present_before_build": false,
+  "dependency_cache_reused": true,
+  "log_sha256": "c5decd6e8d6207190af13c74dc7c3997682964d0ef3ac88cb3226bd34dd9297a"
+}

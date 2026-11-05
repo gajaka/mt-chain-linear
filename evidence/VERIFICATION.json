@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "Standalone extraction of existing raw finite MT chain proofs; not a new mathematical result",
+  "sources": {
+    "exact_copies": 32,
+    "theta_import_closure_modules": 30,
+    "adapted_formal_files": 2,
+    "original_project_files_and_configurations_checked_unchanged": 81,
+    "manifest": {
+      "path": "SOURCE_MANIFEST.json",
+      "sha256": "e1f4e5f4164ddbdfaa9922925983347767d244d7de0f80ebbbd54d289ed12f94",
+      "bytes": 27297
+    },
+    "verification": {
+      "path": "evidence/extraction-source-verification.json",
+      "sha256": "c7b3178be93a0d0b635280db16fd42b082370fc78a667d889bb20fbad2fc5715",
+      "bytes": 925
+    }
+  },
+  "build": {
+    "local_lean_modules": 34,
+    "exit_code": 0,
+    "project_build_directory_absent_at_start": true,
+    "external_dependency_caches_reused": true,
+    "seconds": 44.150952042,
+    "module_migration_warnings": 23,
+    "receipt": {
+      "path": "evidence/lean-build-003/RESULT.json",
+      "sha256": "679ab38e9571a04aa30a07518b27fd8f04303e67a2addc65ea6718bd39b62bcb",
+      "bytes": 410
+    },
+    "earlier_strict_warning_failure_retained": "evidence/lean-build-001/RESULT.json"
+  },
+  "selected_root_audit": {
+    "root_count": 9,
+    "raw_kernel_closure_count": 17228,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "exact_type_and_binder_checks": true,
+    "audit": {
+      "path": "evidence/attempt-002/audit.json",
+      "sha256": "5fcb9abd78c8fb724383649e625bc731db1e81c5c6bd090415c7af833a3f130a",
+      "bytes": 8003444
+    }
+  },
+  "nanoda": {
+    "status": "PASS",
+    "selected_roots": 9,
+    "checked_expanded_declarations": 17688,
+    "checker_exit_code": 0,
+    "checker_seconds": 3.2045432500000004,
+    "complete_independent_pipeline_seconds": 40.448518125,
+    "receipt": {
+      "path": "evidence/attempt-002/RESULT.json",
+      "sha256": "e32e44fb56560839795661d4f228311f547e05bd3ab10de12821b6cfeb065fc8",
+      "bytes": 9800
+    },
+    "strict_configuration": {
+      "path": "evidence/attempt-002/nanoda.json",
+      "sha256": "7323719a07dadbd18019834e466125dd9e5ae66dd4a222ca85ee44a5ed6ddaa1",
+      "bytes": 1066
+    },
+    "raw_exports_tracked_by_git": false
+  },
+  "dependency_boundary": {
+    "ppgraph_imports": [],
+    "ppgraph_package_present": false,
+    "own_imports_resolve_under_new_build": true,
+    "loaded_module_count": 5534,
+    "inventory": {
+      "path": "evidence/attempt-002/import-inventory.json",
+      "sha256": "089925af5754c41be030d4d69314a6ed7204aa15ac6f1b38f9cd7276091d24d3",
+      "bytes": 16542005
+    }
+  },
+  "retained_failed_attempt": "evidence/attempt-001/FAILED.json",
+  "boundaries": [
+    "Only nine selected theorem roots and their proof closure were checked with Nanoda, not every theorem in all copied modules.",
+    "Paper accounting/barrier supplements are outside the Theta import closure.",
+    "Current lower/Theta proof still uses quadratic finiteness.",
+    "No current Lean tactic compiler, Python program, seeded PRNG, adaptive AI process, practical speedup or scientific novelty is certified.",
+    "The standalone package has only Mathlib as a direct library dependency; independent proof replay additionally needs external pinned tools."
+  ]
+}
