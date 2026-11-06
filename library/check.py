@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only source identity and exact MT-theory dependency-closure check."""
+"""Read-only MT source, import-only adaptation and dependency-closure check."""
 
 import argparse
 import hashlib
@@ -14,30 +14,38 @@ ROOT = Path(__file__).resolve().parent
 SOURCE_COMMIT = "60151677e58704ce856c05a572904d681fd959f6"
 MATHLIB_REVISION = "56a005855ea17e0b0958f73ec801ae140b0a1679"
 FAMILIES = {
-    "PPGraph.MoserTardos.": ("moser_tardos_modules", 44),
-    "PPGraph.HLS.": ("hls_modules", 63),
-    "PPGraph.Shearer.": ("shearer_modules", 16),
-    "PPGraph.LLL.": ("lll_modules", 3),
+    "MT.MoserTardos.": ("moser_tardos_modules", 44),
+    "MT.HLS.": ("hls_modules", 63),
+    "MT.Shearer.": ("shearer_modules", 16),
+    "MT.LLL.": ("lll_modules", 3),
 }
 REPAIR_ROOTS = {
-    "PPGraph.Repair.Hazards", "PPGraph.Repair.SemanticHazards",
-    "PPGraph.Repair.ObservableAlgebra", "PPGraph.Repair.ObservableKernel",
+    "MT.Repair.Hazards", "MT.Repair.SemanticHazards",
+    "MT.Repair.ObservableAlgebra", "MT.Repair.ObservableKernel",
 }
 POLICY_ROOTS = {
-    "PPGraph.Integration.Policy.History",
-    "PPGraph.Integration.Policy.MoserTardos",
-    "PPGraph.Integration.Policy.HLSCounting",
-    "PPGraph.Integration.Policy.HLSDAG",
-    "PPGraph.Integration.Policy.HLSExpectation",
+    "MT.Integration.Policy.History",
+    "MT.Integration.Policy.MoserTardos",
+    "MT.Integration.Policy.HLSCounting",
+    "MT.Integration.Policy.HLSDAG",
+    "MT.Integration.Policy.HLSExpectation",
 }
 FORBIDDEN = (
-    "PPGraph.Decision.", "PPGraph.Certification.",
-    "PPGraph.Optimization.",
+    "MT.Decision.", "MT.Certification.",
+    "MT.Optimization.",
 )
 IMPORT = re.compile(
     r"^\s*(?:public\s+)?(?:meta\s+)?import(?:\s+all)?\s+"
     r"([A-Za-z_][A-Za-z0-9_.]*)", re.MULTILINE
 )
+LOCAL_IMPORT = re.compile(
+    rb"^(\s*(?:public\s+)?(?:meta\s+)?import(?:\s+all)?\s+)MT\.",
+    re.MULTILINE,
+)
+
+
+def original_bytes(adapted):
+    return LOCAL_IMPORT.sub(rb"\1PPGraph.", adapted)
 
 
 def need(condition, message):
@@ -59,9 +67,13 @@ def selected_roots(modules):
 
 def check(source=None):
     manifest = json.loads((ROOT / "SOURCES.json").read_text())
-    need(manifest["schema_version"] == 3, "Unknown source manifest schema")
+    need(manifest["schema_version"] == 4, "Unknown source manifest schema")
     need(manifest["source_project"] == "ppg-lean", "Wrong source project")
     need(manifest["source_commit"] == SOURCE_COMMIT, "Wrong source revision")
+    need(manifest["module_layout"] == {
+        "source_prefix": "PPGraph.", "local_prefix": "MT.",
+        "adaptation": "import_prefix_only",
+    }, "Unexpected module adaptation")
     rows = manifest["files"]
     need(len(rows) == manifest["source_modules"] == 150, "Wrong source count")
     modules = {}
@@ -69,21 +81,27 @@ def check(source=None):
     for row in rows:
         module = row["module"]
         path = module_path(module)
-        need(module.startswith("PPGraph.") and row["path"] == path,
+        need(module.startswith("MT.") and row["path"] == path,
              "Unexpected source module path")
-        need(module != "PPGraph.All" and not module.startswith(FORBIDDEN),
+        need(module != "MT.All" and not module.startswith(FORBIDDEN),
              "Unrelated module: " + module)
         need(module not in modules and path not in paths, "Duplicate source")
         file = ROOT / path
         need(not file.is_symlink() and file.is_file(), "Missing source module")
         need(file.stat().st_size == row["bytes"] and digest(file) == row["sha256"],
              "Source changed: " + path)
+        need(row["source_path"] == "PPGraph/" + path.removeprefix("MT/"),
+             "Unexpected original source path")
+        original = original_bytes(file.read_bytes())
+        need(len(original) == row["source_bytes"] and
+             hashlib.sha256(original).hexdigest() == row["source_sha256"],
+             "Change beyond import paths: " + path)
         modules[module] = file
         paths.add(path)
     actual = {p.relative_to(ROOT).as_posix()
-              for p in (ROOT / "PPGraph").rglob("*.lean")}
-    if (ROOT / "PPGraph.lean").exists():
-        actual.add("PPGraph.lean")
+              for p in (ROOT / "MT").rglob("*.lean")}
+    need(not (ROOT / "PPGraph").exists() and not (ROOT / "PPGraph.lean").exists(),
+         "Old module directory or facade is present")
     need(actual == paths, "Missing or extra mathematical source")
     for prefix, (field, count) in FAMILIES.items():
         need(sum(m.startswith(prefix) for m in modules) == manifest[field] == count,
@@ -103,7 +121,7 @@ def check(source=None):
         need(module in modules, "Missing dependency: " + module)
         visited.add(module)
         for imported in IMPORT.findall(modules[module].read_text()):
-            if imported.startswith("PPGraph"):
+            if imported.startswith("MT."):
                 visit(imported)
             else:
                 need(imported.split(".")[0] in {"Mathlib", "Lean", "Std", "Init"},
@@ -122,7 +140,7 @@ def check(source=None):
     need(IMPORT.findall((ROOT / "GenericMT.lean").read_text()) == roots,
          "Entry point differs from the requested root set")
     config = (ROOT / "lakefile.lean").read_text()
-    root_block = re.search(r'lean_lib PPGraph where.*?roots := #\[(.*?)\]',
+    root_block = re.search(r'lean_lib MT where.*?roots := #\[(.*?)\]',
                            config, re.DOTALL)
     need(root_block is not None and
          re.findall(r'`([A-Za-z_][A-Za-z0-9_.]*)', root_block.group(1)) == sorted(modules),
@@ -145,13 +163,13 @@ def check(source=None):
         tracked = subprocess.check_output(
             ["git", "ls-files", "-z"], cwd=source, text=True
         ).split("\0")
-        source_modules = {p[:-5].replace("/", ".") for p in tracked
+        source_modules = {"MT." + p[len("PPGraph/"):-5].replace("/", ".") for p in tracked
                           if p.endswith(".lean") and p.startswith("PPGraph/")}
         need(selected_roots(source_modules) == expected_roots,
              "Incomplete requested source families")
         for row in rows:
-            need((source / row["path"]).read_bytes() ==
-                 (ROOT / row["path"]).read_bytes(),
+            need((source / row["source_path"]).read_bytes() ==
+                 original_bytes((ROOT / row["path"]).read_bytes()),
                  "Source identity mismatch: " + row["path"])
     return {
         "status": "PASS", "source_commit": SOURCE_COMMIT,
@@ -159,6 +177,7 @@ def check(source=None):
         "MT_modules": 44, "HLS_modules": 63, "Shearer_modules": 16,
         "LLL_modules": 3, "repair_roots": 4, "policy_roots": 5,
         "elaboration_inputs": 0, "source_checkout_compared": source is not None,
+        "module_prefix": "MT", "adaptation": "import_prefix_only",
         "scope": "Requested theories, exact import closure and source identities; not a kernel replay",
     }
 

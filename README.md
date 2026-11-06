@@ -85,13 +85,13 @@ conditional theorems used to study resampling systems:
 
 | Area | Source |
 |---|---|
-| Product spaces, resampling, trajectories and initialization | [MT Process](library/PPGraph/MoserTardos/Process/) |
-| Probability, independence, witnesses and counting | [MoserTardos](library/PPGraph/MoserTardos/) |
-| Expected cost, convergence, termination and drift | [MT Bounds](library/PPGraph/MoserTardos/Bounds/) |
-| Local-lemma and Shearer criteria | [LLL](library/PPGraph/LLL/), [Shearer](library/PPGraph/Shearer/) |
-| HLS probability, witness-DAG and budget arguments | [HLS](library/PPGraph/HLS/) |
-| Repair hazards and stable observable algebras | [Repair](library/PPGraph/Repair/) |
-| History-dependent MT and HLS selection | [Policy](library/PPGraph/Integration/Policy/) |
+| Product spaces, resampling, trajectories and initialization | [MT Process](library/MT/MoserTardos/Process/) |
+| Probability, independence, witnesses and counting | [MoserTardos](library/MT/MoserTardos/) |
+| Expected cost, convergence, termination and drift | [MT Bounds](library/MT/MoserTardos/Bounds/) |
+| Local-lemma and Shearer criteria | [LLL](library/MT/LLL/), [Shearer](library/MT/Shearer/) |
+| HLS probability, witness-DAG and budget arguments | [HLS](library/MT/HLS/) |
+| Repair hazards and stable observable algebras | [Repair](library/MT/Repair/) |
+| History-dependent MT and HLS selection | [Policy](library/MT/Integration/Policy/) |
 
 [GenericMT.lean](library/GenericMT.lean) is the entry point for these theories
 and their required definitions. Theorems retain their stated hypotheses.

@@ -9,8 +9,10 @@ The separate accounting/barrier supplement retains its original provenance.
 observable-algebra theories at source revision
 `60151677e58704ce856c05a572904d681fd959f6`, with their required definitions.
 [library/SOURCES.json](library/SOURCES.json) records source identities and
-hashes. Original author headers and source bytes are preserved; this package
-does not introduce a new blanket license for that material.
+hashes for both original and current modules. Author headers, mathematical
+declarations and proof bodies are preserved. The import prefix is `MT` in this
+workspace; only import paths differ from the recorded source bytes. This
+package does not introduce a new blanket license for that material.
 
 The extraction does not introduce a blanket license for copied project material
 whose license has not been specified. A public release should state the license
@@ -26,7 +28,7 @@ are not relicensed by this project.
 Nanoda, when used for independent checking, is an external tool, not a library
 dependency or a bundled part of these proof sources. Its license and the exact
 executable/revision used must be retained in the corresponding verification
-record. No PPGraph library is required by this standalone extraction.
+record. Nanoda is not required by the MT library build.
 
 The research references identify prior mathematical work, not incorporated
 third-party implementation code. Formal verification, provenance, permission to

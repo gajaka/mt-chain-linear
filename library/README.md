@@ -9,15 +9,15 @@ instantiate them for a particular process.
 
 | Location | Contents |
 |---|---|
-| [MoserTardos/Process/](PPGraph/MoserTardos/Process/) | Product spaces, resampling, initialization and trajectories |
-| [MoserTardos/Probability/](PPGraph/MoserTardos/Probability/) | Witness-event laws and independence |
-| [MoserTardos/Witness/](PPGraph/MoserTardos/Witness/) and [Counting/](PPGraph/MoserTardos/Counting/) | Witness constructions and resampling counts |
-| [MoserTardos/Bounds/](PPGraph/MoserTardos/Bounds/) | Expected work, convergence, termination and drift |
-| [HLS/](PPGraph/HLS/) | Witness DAGs, encodings, probabilities and refined budgets |
-| [Shearer/](PPGraph/Shearer/) and [LLL/](PPGraph/LLL/) | Local-lemma and dependency-polynomial criteria |
-| [Integration/Policy/](PPGraph/Integration/Policy/) | Admissible history-dependent MT and HLS selection policies |
-| [Hazards.lean](PPGraph/Repair/Hazards.lean) and [SemanticHazards.lean](PPGraph/Repair/SemanticHazards.lean) | Footprint and semantic invalidation scopes |
-| [ObservableAlgebra.lean](PPGraph/Repair/ObservableAlgebra.lean) and [ObservableKernel.lean](PPGraph/Repair/ObservableKernel.lean) | Stable observable subalgebras and probabilistic kernel closure |
+| [MoserTardos/Process/](MT/MoserTardos/Process/) | Product spaces, resampling, initialization and trajectories |
+| [MoserTardos/Probability/](MT/MoserTardos/Probability/) | Witness-event laws and independence |
+| [MoserTardos/Witness/](MT/MoserTardos/Witness/) and [Counting/](MT/MoserTardos/Counting/) | Witness constructions and resampling counts |
+| [MoserTardos/Bounds/](MT/MoserTardos/Bounds/) | Expected work, convergence, termination and drift |
+| [HLS/](MT/HLS/) | Witness DAGs, encodings, probabilities and refined budgets |
+| [Shearer/](MT/Shearer/) and [LLL/](MT/LLL/) | Local-lemma and dependency-polynomial criteria |
+| [Integration/Policy/](MT/Integration/Policy/) | Admissible history-dependent MT and HLS selection policies |
+| [Hazards.lean](MT/Repair/Hazards.lean) and [SemanticHazards.lean](MT/Repair/SemanticHazards.lean) | Footprint and semantic invalidation scopes |
+| [ObservableAlgebra.lean](MT/Repair/ObservableAlgebra.lean) and [ObservableKernel.lean](MT/Repair/ObservableKernel.lean) | Stable observable subalgebras and probabilistic kernel closure |
 
 [GenericMT.lean](GenericMT.lean) is the entry point. It imports all 44 MT,
 63 HLS, 16 Shearer and 3 LLL modules, the four hazard/observable theory
@@ -40,7 +40,8 @@ The workspace pins Lean 4.35.0 and Mathlib
 `56a005855ea17e0b0958f73ec801ae140b0a1679`, sharing the parent's external
 package cache. The standard-library source checker verifies the requested
 families, every module identity, the exact dependency closure and the import
-entry point. [SOURCES.json](SOURCES.json) records the input identities.
+entry point. [SOURCES.json](SOURCES.json) records both original and current
+module hashes; the checker permits only the specified import-path changes.
 It writes no receipt. An optional source-checkout comparison is available:
 
 ```sh
