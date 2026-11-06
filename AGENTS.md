@@ -1,39 +1,54 @@
-# MT chain analysis and original repair framework
+# Focused MT chain review branch
 
-The active project is /Users/gajaka/projects/mt-chain-linear. Read
-/Users/gajaka/.local/state/project-memory/lean-pvs-session.txt and
-/Users/gajaka/projects/ppg-parametric/PPGRAPH_MEMORY.txt before continuing.
+The active project is /Users/gajaka/projects/mt-chain-linear. Before continuing,
+read /Users/gajaka/.local/state/project-memory/lean-pvs-session.txt and
+/Users/gajaka/projects/ppg-parametric/PPGRAPH_MEMORY.txt. Verify dated state
+against current files.
 
-The user's latest explicit instruction restores the full original MT,
-probability, hazard and observable-subalgebra library from ../ppg-lean into
-vendor/ppg-lean. The authorized framework/ Lake workspace uses that local
-dependency; the root lakefile and manifest remain unchanged. This supersedes
-the earlier blanket instruction prohibiting a PPGraph dependency. Preserve
-the copied library's source identities and licenses; do not silently replace
-its theories with a new finite model or alter the source repository.
+The user's latest instruction is to clean the whole branch before preparing
+or sending external review. The active scope is now:
 
-This project extracts the initialized finite MT chain analysis from
-../ppg-proof-repair. SOURCE_MANIFEST.json is the immutable extraction record.
-Original extracted sources are preserved under provenance/module-migration/before.
-MODULE_MIGRATION.json records the separately authorized module-system migration;
-validate its deterministic header changes and current hashes with scripts/verify.py.
-Preserve mathematical bodies and identify wrapper/audit adaptations explicitly.
-Do not modify the source project or historical receipts.
+- The original uniform initialized MT chain and its Theta(n) proof.
+- research/certificate-existence: inhabited restricted certificate classes,
+  the exponential separable obstruction, and the one-bridge quadratic bound.
+- research/window-locality: the retained mathematical continuation, with seven
+  exact finite optima and a paper-only width-two all-length obstruction.
+- research/biased-resampling: the static biased law and restricted
+  history-dependent upper bounds.
+- experiments/crew-mt-applicability and experiments/barrier-guided-bias:
+  bounded negative findings, with their original evidence.
 
-The original concrete Theta(n) proof closure remains mathematically independent
-of PPGraph. Library availability and successful imports do not instantiate its
-MT law, hazard or stable-observable hypotheses for Crew or another program.
-Keep the original chain audit separate from new framework-import verification;
-do not rewrite historical manifests or receipts to suggest they checked new
-dependencies. Record new integration evidence separately.
+This supersedes the earlier instruction to keep the full original PPGraph
+framework available in this branch. vendor/, framework/, their evidence,
+LUCES studies and unfinished review drafts are preserved
+outside the repository. See provenance/cleanup-2026-11-06 for the archive
+index and hashes. Do not restore or develop those studies without a new user
+instruction, and do not edit the original source repositories.
 
-The Kiro Crew reproduction remains in
-../ppg-proof-repair/experiments/kiro-crew-comparison and is not currently being
-extended. It has no executed MT repair or demonstrated PPG controller advantage.
-Do not switch development back there without a new user instruction.
+Preserve all mathematical source bodies, root lakefile/manifest/toolchain,
+SOURCE_MANIFEST.json, MODULE_MIGRATION.json, all four scripts/ validators,
+and provenance/module-migration/before. Their exact inventories and hashes
+are required by the validators. Do not add another Python script under
+scripts/ without an explicit provenance change. New cleanup tooling belongs
+outside that hash-bound directory.
 
-Use English ASCII documentation. Count
-resampling operations, excluding initialization; do not claim running-time
-bounds, adaptive AI guarantees, scientific novelty or first MT formalization.
-Keep fresh verification evidence separate from historical evidence. Kernel
-proof checks and source-model correspondence are different obligations.
+Do not rewrite sealed source manifests, proof receipts, or the source-bound
+README/REPORT in research/biased-resampling. Current evidence refers to
+historical audit attempts, so their tracked records are intentional. The
+historical Crew inputs additionally bind the former root AGENTS.md and
+framework sources; use the cleanup archive map to resolve those original
+bytes rather than changing the Crew record.
+
+Use English ASCII documentation. Count resampling operations, excluding
+initialization. Distinguish original uniform and matching biased starts,
+static Theta(n) from history-policy upper bounds, raw pointwise from
+completion-averaged drift, and Lean/Nanoda/paper/computational evidence.
+The original Theta(n) and certificate class results have selected-root
+Nanoda replays. The biased study has no new Nanoda replay. Crew remains
+STOP_UNKNOWN; the fixed barrier policy result does not exclude all policies.
+Do not claim scientific priority, runtime or practical PPG superiority,
+or automatic transfer to AI repair or another stochastic process.
+
+Run make check for the focused mathematical checks. New checks must preserve
+historical evidence and use unused output paths. Contact selection and
+external sending are separate from this cleanup task.

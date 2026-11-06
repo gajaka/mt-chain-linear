@@ -1,7 +1,0 @@
-'LucesDeterministicReuse.protected_projection_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
-'LucesDeterministicReuse.protected_projection_stable' depends on axioms: [propext, Classical.choice, Quot.sound]
-'LucesDeterministicReuse.exact_scope_is_semantic' depends on axioms: [propext, Classical.choice, Quot.sound]
-'LucesDeterministicReuse.protected_outside_semantic_scope' depends on axioms: [propext, Classical.choice, Quot.sound]
-'LucesDeterministicReuse.fullContract_iff_all_pass' depends on axioms: [propext, Classical.choice, Quot.sound]
-'LucesDeterministicReuse.checked_acceptance_iff_all_pass' depends on axioms: [propext, Classical.choice, Quot.sound]
-'LucesDeterministicReuse.checked_step_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]

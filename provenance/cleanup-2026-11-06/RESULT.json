@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-11-06T12:23:11.272567+00:00",
+  "base_commit": "953383258b3036f1772d2e480c49f02c619625a6",
+  "scope": "Focused mathematical branch cleanup; no theorem/body/manifest changes, no new Nanoda replay.",
+  "archive_root": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z",
+  "archived_directories": [
+    "vendor",
+    "framework",
+    "evidence/framework",
+    "experiments/luces-log-replay",
+    "experiments/luces-deterministic-reuse",
+    "research/window-locality",
+    "review"
+  ],
+  "archived_tracked_files": 403,
+  "external_archive_records": 6814,
+  "external_archive_bytes": 670699620,
+  "retained_tracked_files_byte_identical": 301,
+  "modified_existing_files": [
+    "AGENTS.md",
+    "Makefile",
+    "README.md"
+  ],
+  "all_retained_mathematical_sources_and_sealed_receipts_unchanged": true,
+  "crew_formal_input_archive_resolutions": [
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/Basic.lean",
+      "sha256": "2bbe5b89a538dba8948f8be0e3939a498501b4703d5b96b54ebff8b048bcfb53",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/Process.lean",
+      "sha256": "02a2c1288b33bedfd99cb03860fe3d15fdb7cc50bae2f67b76fc859ba792c3e3",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/Process.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Resampling/Table.lean",
+      "sha256": "cdc1cb61b694d323d15d68a92992e30abd1f9f12a06dfa168e4ce005a86bb35f",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Resampling/Table.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Resampling/TableLaw.lean",
+      "sha256": "751cd426bf0ab60a24b7fddf890ba09ae9c431f907814ee21988ffed625facb0",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Resampling/TableLaw.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/OccurrenceExpectation.lean",
+      "sha256": "7ff526ae7dbc167291fa721b32eaa465169f16ca9cac188eb0d9216dd73294af",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/OccurrenceExpectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomTrajectory.lean",
+      "sha256": "6b6021b2f093e5c91123191f7e29aa06a34e873afc50057a24e7357c8dbfd742",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomTrajectory.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomInitialization.lean",
+      "sha256": "bfcd394a0efd84f74fe4b1a7981cf1e645805f80474117ce30b6b41af544e802",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomInitialization.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/FullResampling.lean",
+      "sha256": "a6158e4c029b2802db593ad5e3c86b953df4dfa8423314426762c1fb2af94239",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/FullResampling.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Resampling/Basic.lean",
+      "sha256": "ed9eb61837dc193c3ac3f0944fe073c002e3764cf818f267c2cfe456d2422950",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Resampling/Basic.lean"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "424c63fc361a86324c0c4bcc09b4785654a9c61ec10172ebfe7dbcc79eee4efd",
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/original-documents/AGENTS.md"
+    }
+  ],
+  "checks": [
+    {
+      "command": "make check",
+      "exit_code": 0,
+      "scope": "Lean builds of core and both studies with warnings as errors, both source validators, independent rational Bellman verification; existing caches reused.",
+      "log": "make-check.log",
+      "sha256": "6114d4cef53ecac362378ef0da5053ea4748e426c03f3803c69c43e823146e23"
+    }
+  ],
+  "archive_before_sha256": "b3fac09cc1d1e853d30e0cade255b63dfde8465727cd4370894aede2ad131026",
+  "archive_full_resolution_sha256": "d096bf5e1e6070cb8044ab31bba1eff1922c18438fe2e81f16470828e5b1c661",
+  "archived_path_index_sha256": "63cfd70bfcb35c88280fec762e8b9708beb5c641667391bdb1c8ce748e1ad9e3",
+  "proof_imports_PPGraph": 0,
+  "committed": false,
+  "pushed": false
+}

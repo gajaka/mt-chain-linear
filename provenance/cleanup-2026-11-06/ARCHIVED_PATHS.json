@@ -1,0 +1,2472 @@
+{
+  "scope": "Original input bytes archived during focused-branch cleanup; historical receipts unchanged. Full ignored-build inventory remains in the external archive.",
+  "archive_root": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z",
+  "paths": [
+    {
+      "path": "vendor/ppg-lean/.gitignore",
+      "sha256": "c5788cd89144ec9fcbda97253ec7a3c774e066a3f832cf370b4a42a42fe392f0",
+      "bytes": 66,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/.gitignore"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/All.lean",
+      "sha256": "2a9196bbb61ac1d22570cbe5467fac5adb912f75428e216991096bc071027656",
+      "bytes": 10166,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/All.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/AssessmentBridge.lean",
+      "sha256": "f6e7dcc6b3e0f77eaa0341722b8ac0fd61fe9ad7e532197284cc20a053404d81",
+      "bytes": 9168,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/AssessmentBridge.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/Blocking.lean",
+      "sha256": "e9c28d8fe54a98b92bfc936e8d3c600caf139913dd9b0ccd7e8d964c9fd83bd4",
+      "bytes": 4674,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/Blocking.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/EquivBridge.lean",
+      "sha256": "27289fc50118a754b9dceb16c6995fa9a33f3f188fbd4aca347fdd55b4383e94",
+      "bytes": 5150,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/EquivBridge.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/Parametric.lean",
+      "sha256": "24b4e7053eeb6d84ce027cfc6b51f352a2d9ee6355d6dc0289414964640cbaea",
+      "bytes": 17355,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/Parametric.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/ParametricQuotient.lean",
+      "sha256": "36ce8a8498deef6db620c7377d765939058eee7004f439d017f3ab690c212dca",
+      "bytes": 18567,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/ParametricQuotient.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/QuotientBridge.lean",
+      "sha256": "5624ecb230cf7ba52dedae3252a009f3f199b5f9d2483a6f813dc2c8c00f675c",
+      "bytes": 7776,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/QuotientBridge.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/Selection.lean",
+      "sha256": "79dbd06d394d452ff5abdba22fbaa6ff21f6b8b746471be04225fa3bac1ce487",
+      "bytes": 20561,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/Selection.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Certification/SelfAssessment.lean",
+      "sha256": "b1a65ec27b9175e85fc87c4e3c4a31d3985e016117b944c4f548e551951b2a1f",
+      "bytes": 12061,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Certification/SelfAssessment.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Core/Categorical.lean",
+      "sha256": "08bd6c7f17ee3c7804403e1b3dea5e8f1c9031efe34323b662e6e036ca356090",
+      "bytes": 9691,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Core/Categorical.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Core/Graph.lean",
+      "sha256": "6e4d3ec172faa60aedb75a2c47451494e83284d38f37e560f86e319a0c295718",
+      "bytes": 19277,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Core/Graph.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Core/Meta.lean",
+      "sha256": "eed194f4725f98e32f7bd808a21645946b425e9ad63273d566c39c6d63f46462",
+      "bytes": 11567,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Core/Meta.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Core/RR.lean",
+      "sha256": "35ee5b8a953048f5b06594930241d3b506c92304ffe58ee006b2f33ce112fc2d",
+      "bytes": 9205,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Core/RR.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Core/Repair.lean",
+      "sha256": "caba0ef56cce78cad3c77173e986cfdfc802629cd10020336fc11bbb2dde78d5",
+      "bytes": 7234,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Core/Repair.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/Abstraction.lean",
+      "sha256": "8733e8df58b18a1bb43e25e9664d757c2145ab12bdd00545d75346d4a9b7576e",
+      "bytes": 15328,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/Abstraction.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/CertifiedDecision.lean",
+      "sha256": "d5e266d0d0f951cbca185be18f77180891f8a95a3bb78ad995a0dca60e218c42",
+      "bytes": 4997,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/CertifiedDecision.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/CorrectionDuality.lean",
+      "sha256": "9c95f903ebe4a95bbe5b40e54f043407ab11b0123b1a8be52090f685ef984af1",
+      "bytes": 4001,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/CorrectionDuality.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/FarkasCertificate.lean",
+      "sha256": "2786260ae4f187671ade4379d06f25dce17841e024d3f8dbdd7a31dda3b76133",
+      "bytes": 4279,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/FarkasCertificate.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/FiniteCore.lean",
+      "sha256": "37e694b05591db27678f915005a801559666b5a2338451537d2b3cca436eca46",
+      "bytes": 1790,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/FiniteCore.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/FiniteFeasibility.lean",
+      "sha256": "e583eb1a7ee795c1c762669c943d9c7cdea7d85331e479dd33885c273671a2e4",
+      "bytes": 4745,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/FiniteFeasibility.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/Infeasibility.lean",
+      "sha256": "5e4d79bbb4408e35e5ab8eadfe00000b52d3bfbf0a7f944eacbb4d292e365c9f",
+      "bytes": 5936,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/Infeasibility.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/InfeasibilityCounting.lean",
+      "sha256": "1db8beecca5cbc463889c1f1a17e31991d02c8cbeed9e8cc76b7d25fc523fa35",
+      "bytes": 4895,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/InfeasibilityCounting.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/ReachabilityRefutation.lean",
+      "sha256": "768cdf05dce0e20a16129ea39dfc56a3d1ac92deb9f79fd973e7e478a36e5e85",
+      "bytes": 7747,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/ReachabilityRefutation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/RepairDecision.lean",
+      "sha256": "4f81c6f2cd63d5e04074fc1322a793f41babf663bc0c324980f971f69df1a8d1",
+      "bytes": 5214,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/RepairDecision.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/Undecidability.lean",
+      "sha256": "72d4663f3c6be5123c91caf7dc26d8accb8b9e81d233dfe8e5fecdbd39238dcf",
+      "bytes": 6894,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/Undecidability.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Decision/UnsatisfiableCore.lean",
+      "sha256": "7abebec429626aa0143bf5a41bdf80c1f9fe64062248478119e86b6e9963780a",
+      "bytes": 5214,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Decision/UnsatisfiableCore.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Dependency/Cost.lean",
+      "sha256": "9e130926674b2676773f4eadf072cada28e575eb399946935c34530ee645ab32",
+      "bytes": 10266,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Dependency/Cost.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Dependency/Count.lean",
+      "sha256": "14f98526bb03c7c143388655b332eecd1711fa50d004d8cdaa0fe6a037cf710a",
+      "bytes": 6121,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Dependency/Count.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Dependency/Decomposition.lean",
+      "sha256": "209d90ab9fa7e4e00b5e4fc2e30d27a8c296e8eb6eb02365d30b0843da26eb48",
+      "bytes": 16768,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Dependency/Decomposition.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Dependency/Laplacian.lean",
+      "sha256": "aa4c14d385984ff94a08622646e603b13e78bfaf3f26c7afde39627ec99cc8ea",
+      "bytes": 8446,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Dependency/Laplacian.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Dependency/Matrix.lean",
+      "sha256": "57c98604121670bd7990891a3e9c2ae877bce2644c2eead6d7980f1b350fba21",
+      "bytes": 3750,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Dependency/Matrix.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Dependency/Partition.lean",
+      "sha256": "60db8e06852276779b98898f12d104246e43904003469da7df1568a9ed0b71e7",
+      "bytes": 2515,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Dependency/Partition.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Dependency/Probabilistic.lean",
+      "sha256": "30a2a2f39929123f5de75d5208ac0a3168ad1699091ce0087a5c30ee18b0cf74",
+      "bytes": 10020,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Dependency/Probabilistic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Drift/Additive.lean",
+      "sha256": "d9e04c87dc3f806aea0e5a368ddc25dd18e768192a9c5e1d7a71f242e9957396",
+      "bytes": 7603,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Drift/Additive.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Drift/Basic.lean",
+      "sha256": "9842cbcd5f14f119bf67f18329ce818c9fa6ef1480a5754914e4b0c7266d102e",
+      "bytes": 7369,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Drift/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Drift/Process.lean",
+      "sha256": "06b6d46f2f82e9f325b59f45ee09ce43ab4173bda6ae4f1ae68fcfca4d46b262",
+      "bytes": 14635,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Drift/Process.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Lumping/Basic.lean",
+      "sha256": "0ec27c12f426f089b235b5b83f3f82e7a09e2e16f1eb67058fd9eac6a9ecc23f",
+      "bytes": 10768,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Lumping/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Lumping/Update.lean",
+      "sha256": "72a338f0f2b6c52ff89a69a602d539b80d7b6884ca13e72a92956547f300acaa",
+      "bytes": 18145,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Lumping/Update.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Potential/Basic.lean",
+      "sha256": "5c3777831b86ededeba8832e464e70e5abbf960da8aa7ca557a876298b41948c",
+      "bytes": 15720,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Potential/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Potential/Expectation.lean",
+      "sha256": "3b1eae0e0bbd8261a89e9ba1e1c0780073748d8f505cb5f9aed6d9fc08414a66",
+      "bytes": 16007,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Potential/Expectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Potential/Refutation.lean",
+      "sha256": "00bd917159ae86b3bbc3d1eaf568827ed3c7267992f764e7c4d99dfd61a18bfa",
+      "bytes": 5063,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Potential/Refutation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Potential/Tail.lean",
+      "sha256": "9e279445989e7797d3a226ff1a2fb94c0c942f2a2dfce1df5ae5350d0d8432d7",
+      "bytes": 19048,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Potential/Tail.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Potential/TailCertificate.lean",
+      "sha256": "3ff0418b0d28d95692382feb48397bb408820402aa98d6343e848f5f6f91af96",
+      "bytes": 2534,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Potential/TailCertificate.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Resampling/Basic.lean",
+      "sha256": "ed9eb61837dc193c3ac3f0944fe073c002e3764cf818f267c2cfe456d2422950",
+      "bytes": 17453,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Resampling/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Resampling/Table.lean",
+      "sha256": "cdc1cb61b694d323d15d68a92992e30abd1f9f12a06dfa168e4ce005a86bb35f",
+      "bytes": 12367,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Resampling/Table.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Resampling/TableLaw.lean",
+      "sha256": "751cd426bf0ab60a24b7fddf890ba09ae9c431f907814ee21988ffed625facb0",
+      "bytes": 8918,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Resampling/TableLaw.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Update/Basic.lean",
+      "sha256": "c01f382ac4cef5952fb499b13acca7cd3a53c1c844c31049e7c698bb896c033c",
+      "bytes": 10297,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Update/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Finite/Update/IID.lean",
+      "sha256": "8d742547cbdbecb9d2b129c6bf3e45f6cd50e28ddb7f1b3670cdb6b5f11cf0e5",
+      "bytes": 8724,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Finite/Update/IID.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/AugmentedExistence.lean",
+      "sha256": "a09e31e465366f44df9358faeb34bcf545feccf0c92d3be1e02508d4707fc916",
+      "bytes": 4624,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/AugmentedExistence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/ChoiceSum.lean",
+      "sha256": "2178945220d0e687e2642c3f4ea812dcc94507d7a531274c465f79f43d8ed1b9",
+      "bytes": 4906,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/ChoiceSum.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/CoinSaving.lean",
+      "sha256": "1141d51e99c9a728d73632dd23a1b98a2abe1cff8dcfc898af2531b08c8592f2",
+      "bytes": 6239,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/CoinSaving.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/DecoratedBudget.lean",
+      "sha256": "7985bdb3aedae05eb7836e9767058cadac107b10479e3fda91f46f6150bc8d92",
+      "bytes": 4014,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/DecoratedBudget.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/ExpansionWeight.lean",
+      "sha256": "50baf05c7ab45f682c6d7169897bbb9268cb77bf32dee782fdf88b2334856b7d",
+      "bytes": 4435,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/ExpansionWeight.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/Expectation.lean",
+      "sha256": "e6b4a233ffa4ff88f8dd097c8ac9114d18b7db6ba71d53b392e0e22074c554da",
+      "bytes": 8815,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/Expectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/OrdinalOccurrence.lean",
+      "sha256": "31c077bf132cd941b707629c162bcdfcf97c384bc76360fd3e1e056ea987dc06",
+      "bytes": 5613,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/OrdinalOccurrence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/ProductDiscount.lean",
+      "sha256": "dd972920a27cf87d70c0e8b70cf22ae7e0ba758fde1389e120ebb067d66340ca",
+      "bytes": 5904,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/ProductDiscount.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/RefinedBudget.lean",
+      "sha256": "38f5e260754be86de11e80a9c60738ead53e10343478b3061a8e8ec839edee5f",
+      "bytes": 4934,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/RefinedBudget.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Bounds/WitnessBudget.lean",
+      "sha256": "0032d6fc6bb04cbcb23cb3fad3e1e2b1c6e84f1fa1f749f49b93893d695bf588",
+      "bytes": 4527,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Bounds/WitnessBudget.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/CliqueRanks.lean",
+      "sha256": "4b8126759fd79c3091e8b2d4d83efcdaf7cd84ae963455f5df56b9dabd62b750",
+      "bytes": 8289,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/CliqueRanks.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/ExpansionGraph.lean",
+      "sha256": "39b2c1aa7c81292c33f80ecf2ffaae04898c62753fe704a82b42ff93e0d5e103",
+      "bytes": 5964,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/ExpansionGraph.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/ExpansionVertices.lean",
+      "sha256": "da855c3259b2e1f9d6e71d7af3ad18d5be8bb9c809dc7190ca31dcb3dd35a022",
+      "bytes": 5196,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/ExpansionVertices.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/FiniteDAG.lean",
+      "sha256": "3dd90d858b5c517658f9452f7cd281477fd64bcb7545586afd1de62ac556905d",
+      "bytes": 3763,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/FiniteDAG.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/Matching.lean",
+      "sha256": "c1bd70f6d00c28fa29541f983cd3ee4e437e0c98f22d51bbca8eda44821c0660",
+      "bytes": 4501,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/Matching.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/MatchingArcUniqueness.lean",
+      "sha256": "7e114a1d50434cb27630609f8a6b67cbf7a81a9444179f03b176bfa3b13bdac6",
+      "bytes": 1216,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/MatchingArcUniqueness.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/MatchingSelection.lean",
+      "sha256": "eecb59c22965554f3c903ccb7fe10337b3b2d58c272ca3c5f6ff79dde20a5ed4",
+      "bytes": 10947,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/MatchingSelection.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/OrderedDAG.lean",
+      "sha256": "30aa373f328add16f396546531b8def2e004aa1dc2dee75bbba0731ebb800da1",
+      "bytes": 5413,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/OrderedDAG.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/OrientationScore.lean",
+      "sha256": "6055f4232046e0fc35bc8237f0f1e837d3578745f27c0c17ad2e5107b9ab44fe",
+      "bytes": 4681,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/OrientationScore.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/PairKeys.lean",
+      "sha256": "36a25aeccc5bffd3cd0db075bd291910cf08972f18069ef8b6f49aa50b50b8ee",
+      "bytes": 2126,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/PairKeys.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/ParitySelection.lean",
+      "sha256": "ec325b036257a44abec8c721300188b35c52c56a4bb4f5d44536624c48e64893",
+      "bytes": 4707,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/ParitySelection.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/RealDAG.lean",
+      "sha256": "1d4b42d11b942ece4f405bf0eae183ed8b6d24470fc5b3db95394864b12d8546",
+      "bytes": 5395,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/RealDAG.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/RealDAGCounts.lean",
+      "sha256": "270b8b19aeed5cae0ac36a280af283ce35138320fbb5f8abb3d747f3808c5105",
+      "bytes": 5648,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/RealDAGCounts.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/TimeDAG.lean",
+      "sha256": "dfafd8f9a6efddc195178daa7503a387ea9eea4f3a9c023853abbcfee9c085f6",
+      "bytes": 5149,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/TimeDAG.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/TopologicalOrder.lean",
+      "sha256": "b722cffdd4e1d309bc12b80dd66046be91b65e8c05f4363719a1fd0aca659d35",
+      "bytes": 3327,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/TopologicalOrder.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/WitnessDAG.lean",
+      "sha256": "879be69b5e0cc86388d77595fd7957706bd82f7a0b72dc4769a5a648cd41fff3",
+      "bytes": 8331,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/WitnessDAG.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/DAG/WitnessLayers.lean",
+      "sha256": "70cfe2379e15513b5e42b1e125b2f53ffa7ae224809d5d2df336c3640121e07d",
+      "bytes": 9039,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/DAG/WitnessLayers.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/CanonicalEncoding.lean",
+      "sha256": "42455a0e506ba96e32ee9b30206311ac028cda33aa9a687743677b02f91a0fb5",
+      "bytes": 8638,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/CanonicalEncoding.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/ChoiceRecovery.lean",
+      "sha256": "850bf070aa031c1c4b313ff0b64b2b228dde165e301905cd912cdc16b39dfca8",
+      "bytes": 6579,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/ChoiceRecovery.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/ColoredExpansion.lean",
+      "sha256": "8314681c1b06daf0d5edb3e3640541cfef0b05285e7c083ab36bbab0833bebaf",
+      "bytes": 7564,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/ColoredExpansion.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/ExpansionDecoder.lean",
+      "sha256": "a823ab893954542b1e4f462dcfe84173c6f53cf2e44235cbce73b0da34bde7b4",
+      "bytes": 3436,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/ExpansionDecoder.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/ExpansionFamily.lean",
+      "sha256": "4e32763b1fde4969f1fd09849f5f94ee5cafbb0faab85a3ed18bcb6df2b6a6fe",
+      "bytes": 4027,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/ExpansionFamily.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/ExpansionReversibility.lean",
+      "sha256": "cfbfc6075ed5686e656b67ae7a32bd1379c8ea79a4b15a4710eef0033a46443c",
+      "bytes": 4311,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/ExpansionReversibility.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/LabelRanks.lean",
+      "sha256": "f56d3fa15af48f53e403412cda60e1e9d34c8f5d2aea1e6083f6e7454817349c",
+      "bytes": 6905,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/LabelRanks.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/NodeIso.lean",
+      "sha256": "72d02cf1db33f43c36422409a7f84c25a04dcc35d48f6e22002e9e52c413a291",
+      "bytes": 3941,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/NodeIso.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/Normalization.lean",
+      "sha256": "284160756eb687d1fc6ea1c03e5e512b9c59ca9cae0145be948f225534635f8f",
+      "bytes": 8103,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/Normalization.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/NormalizationCheck.lean",
+      "sha256": "6754569cf14711579c9e0051000a4b31445d4d65eb8e9144120d6dbe5159c3f1",
+      "bytes": 3608,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/NormalizationCheck.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/NormalizationReversal.lean",
+      "sha256": "a9d858977f964a3cbd11d64947d8dbe1dfb27128a091867a0cba180d2f67a29c",
+      "bytes": 2831,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/NormalizationReversal.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/OrderedReversal.lean",
+      "sha256": "b8b9471c7421c77f84119f02fccdb57d115b64bf4fee529c24a95a53c4f138e3",
+      "bytes": 2583,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/OrderedReversal.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/OriginRecovery.lean",
+      "sha256": "48c28bcaf158f68181c983f9031ad012e5096c05ad6247394e2708ce0e20b54f",
+      "bytes": 5633,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/OriginRecovery.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/OriginalIso.lean",
+      "sha256": "f3e2cb827cd9d663d0b90b502fa51ea3ef376fd2133f327eb34afd6604bd1f6e",
+      "bytes": 5976,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/OriginalIso.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/PrefixCheck.lean",
+      "sha256": "0051c602d55eef6c7ac8a798cb48320df60c040a7335bcc266396d8fdf6ed183",
+      "bytes": 4514,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/PrefixCheck.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/RelativeCoins.lean",
+      "sha256": "10e2f7759076dbd07a1d72a2bd6c478a4644c38539c9a530e72cc42b3c04290e",
+      "bytes": 2680,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/RelativeCoins.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/Reversal.lean",
+      "sha256": "0a60353dd962d975567e25032d10c37612fefc2780c6eaa6ea6bd9c0c367ae14",
+      "bytes": 4750,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/Reversal.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/ReversalSlots.lean",
+      "sha256": "3ecbea8ed4b45c26d72744ee8d0d633885b57878055d5b7d8320f60d839daa46",
+      "bytes": 7868,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/ReversalSlots.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/StableEncoding.lean",
+      "sha256": "499625e0fcf145de37428dbb5813749540c52bd006be4f22f6dca6f8faf7a8a5",
+      "bytes": 8824,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/StableEncoding.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/SwappedTests.lean",
+      "sha256": "1b682dd9acecde56c9920f94940a1e50cba92c207578e992b988905fb52025f1",
+      "bytes": 3198,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/SwappedTests.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Encoding/TableCheck.lean",
+      "sha256": "3a101fa9840a2132080c78898edf6e8f9044c43e5f80478e5cc57fa51aa0634c",
+      "bytes": 7786,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Encoding/TableCheck.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Parameters.lean",
+      "sha256": "ca74367f01c4c2ff1aad8ff791f17224a91ca87a9ea3ff35a435b535e6aba56d",
+      "bytes": 4761,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Parameters.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedCoordinates.lean",
+      "sha256": "cfc2feba3c226249e32a83835e6b11aa6944cbcbec5c285802a9d9922dc2e5da",
+      "bytes": 7512,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedCoordinates.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedDependence.lean",
+      "sha256": "cf442dfc11dadb1689c523f9465a538b35d769b6b48d04ef8326acc72d1de6a5",
+      "bytes": 3741,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedDependence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedPair.lean",
+      "sha256": "abe877d50ca2145d5bca80fe4dc227e56d194fb7f725df5a37ed34eb0f7ec868",
+      "bytes": 7816,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedPair.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedSpace.lean",
+      "sha256": "27161d1aae0460a712be596907ce70036e5517c2d135c5b5d3fa75841a31442e",
+      "bytes": 3990,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/AugmentedSpace.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/BlockAssembly.lean",
+      "sha256": "491a667815471a775c615bd597b7a63963b4c7cbf87386406b8a4ec804186c33",
+      "bytes": 7029,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/BlockAssembly.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/BlockIntersection.lean",
+      "sha256": "e720e6cfb4e31848eb4aa240ec509297666afdf56b3eb5c398aa7485ff8a2e47",
+      "bytes": 5092,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/BlockIntersection.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/BlockQueries.lean",
+      "sha256": "83468750f6f9aabfed6785818729b92ac41995dc239392dddf0cfe51aaa140df",
+      "bytes": 5046,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/BlockQueries.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/CoinQueryLaw.lean",
+      "sha256": "d543ebfdad9c3aea48f34aaa3ce3968902b1eeab9520f3be8e05c7e6c44bd634",
+      "bytes": 3283,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/CoinQueryLaw.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/FootprintBlocks.lean",
+      "sha256": "9bd917e14d424c05fd8b8ef4e49c70adffd031c25c16f57805ecc3c1ae5823fb",
+      "bytes": 4710,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/FootprintBlocks.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/PairProbability.lean",
+      "sha256": "527840e664bce4d6e5102e4ee3ab63dbfeca00f709c09f22a3ffbf04cfdb7506",
+      "bytes": 7286,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/PairProbability.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/QueryLaw.lean",
+      "sha256": "1fdac9dc9d4176e75e17a8119b2ecb628d47bfd1973c16447c0e6569db5658ea",
+      "bytes": 5361,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/QueryLaw.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/RefinedProbability.lean",
+      "sha256": "87e2ce8eb68e61e96fc4ccd89c23243825700713cc3e59d11b99f901c5e6b889",
+      "bytes": 5878,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/RefinedProbability.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/RootUnion.lean",
+      "sha256": "7941f44b1006317d8e3efc9e43b21e096ed98c204506951dfeaae2c41dca6806",
+      "bytes": 4652,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/RootUnion.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/HLS/Probability/UnitChecks.lean",
+      "sha256": "4a7bdb5bb1d88e3da9ebbf4079e7bcbc16de8a6e446daf8c9f170c9e7590c200",
+      "bytes": 7804,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/HLS/Probability/UnitChecks.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/AbstractionRepair.lean",
+      "sha256": "0c0356a2e552b57aa9c4ee21480078e4acbc95e62e72b674c4813f1cd8c35dac",
+      "bytes": 11125,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/AbstractionRepair.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/CertificationDependency.lean",
+      "sha256": "0de8f7564477c63c449650ad310d0f2315b2738809f83099b4efdf4002e39a11",
+      "bytes": 11005,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/CertificationDependency.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/CertifiedQuotientExample.lean",
+      "sha256": "37efe22b93375b86a6a99cc085de3977917d3bfcc2ef65e624aa4b8f20f2a688",
+      "bytes": 4051,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/CertifiedQuotientExample.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/DependencyInfeasibility.lean",
+      "sha256": "6a4e14d01af144e567c52da9eb209d97c6d5209d9afc14a1feac842ebede91d8",
+      "bytes": 7055,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/DependencyInfeasibility.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/DependencyMoserTardos.lean",
+      "sha256": "6199422cfe7ee57e4bcdd85fa3f395b51ce8a2c815eff68e6859b4b49babca65",
+      "bytes": 4664,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/DependencyMoserTardos.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/FiniteAsciiJson.lean",
+      "sha256": "c2ec8c4cfc2c3a560cff9a82729c63fdef9bad1b0fac62a89bf3073f2f136866",
+      "bytes": 3920,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/FiniteAsciiJson.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/FiniteMTDrift.lean",
+      "sha256": "5cf346c551639d1c1ec604b95b1b21b9031b78758a6a0822956c064f4114538b",
+      "bytes": 15209,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/FiniteMTDrift.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/FinitePotentialExpectationMT.lean",
+      "sha256": "a77672d3f2ae038f4d6febb58179b323ae22918c0f4090f299f319d646643ee1",
+      "bytes": 6848,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/FinitePotentialExpectationMT.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/FinitePotentialMT.lean",
+      "sha256": "5914019d93f336ed8b935332b3e8929e97bced586949cc8d57f72b71689b62c6",
+      "bytes": 8277,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/FinitePotentialMT.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/FinitePotentialTailMT.lean",
+      "sha256": "bbbf4554694a72e461202246345a94769adbc50f3aa2a7700fbb8ef11b150ca1",
+      "bytes": 8169,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/FinitePotentialTailMT.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/FiniteReadCertificates.lean",
+      "sha256": "8dfd8575aec21c073b52d14f5df6a6d02252c1bd68127d6f65dd8576e031adaf",
+      "bytes": 8228,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/FiniteReadCertificates.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/HLSDecision.lean",
+      "sha256": "9b193db23bf361b5340fd380042196f55e734df13c0ca1dcd21872c78d5a3d13",
+      "bytes": 4560,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/HLSDecision.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/HLSRepair.lean",
+      "sha256": "ca972473fa3be2254f957b99c463969e015f353b8c8bc1fb6a2ada25482dd466",
+      "bytes": 2690,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/HLSRepair.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/IncludeAsciiBytes.lean",
+      "sha256": "2794677295b0f3e78d8f8f527f3c7cf45c814be4690910c40317e32ce1bb98ae",
+      "bytes": 1177,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/IncludeAsciiBytes.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/LucesCertificateRepair.lean",
+      "sha256": "9029aba304cd0042298ab6a635cf92dadf23e01125b56a11f907f7450f7b9f7b",
+      "bytes": 7437,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/LucesCertificateRepair.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/LucesObservedInputs.lean",
+      "sha256": "e75d4481516ea41ddbe7ae6c7b52637b0129862cb56f2e6546ef8aa49fab2bda",
+      "bytes": 10002,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/LucesObservedInputs.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/MoserTardosDriftRegion.lean",
+      "sha256": "82a7a29c241098882737f8bbba2e64b2ff4bf85c69f5c3bb366dd859b50414e7",
+      "bytes": 6198,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/MoserTardosDriftRegion.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/MoserTardosInfeasibility.lean",
+      "sha256": "433572f98761c9599c40bd058ff64ed379bc7b29d848d0c00ccdb9dc37c2200f",
+      "bytes": 4550,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/MoserTardosInfeasibility.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/MoserTardosRepair.lean",
+      "sha256": "a99b802cc34934b9050f8529b98f38949b3352bfed208995d97fe05f640b7559",
+      "bytes": 11317,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/MoserTardosRepair.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/Policy/HLSCounting.lean",
+      "sha256": "85e0b00eb72a96a5ca6b1ba52ffe943b46446c8037a8bb1a21a74c7792c401f0",
+      "bytes": 11187,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/Policy/HLSCounting.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/Policy/HLSDAG.lean",
+      "sha256": "0d6a6e737b2cafa0fd0ab11d729f1e6de47f2bd73f2ad3fdaade5545e68497a2",
+      "bytes": 8386,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/Policy/HLSDAG.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/Policy/HLSExpectation.lean",
+      "sha256": "12919ec43dd5421f2d4c32fc0407b48f5681824b8c9645ca9292403f1b587674",
+      "bytes": 14959,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/Policy/HLSExpectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/Policy/History.lean",
+      "sha256": "997e67e413517283cefd171cee8967aa3e0c1c41022ba266a624eb07c1916aac",
+      "bytes": 9173,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/Policy/History.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Integration/Policy/MoserTardos.lean",
+      "sha256": "47d6c6a1e469321b602eda0c13eff7f5487758740aeb1e154a8f69307c61b1d4",
+      "bytes": 8991,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Integration/Policy/MoserTardos.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/LLL/General.lean",
+      "sha256": "dcb84033d68ab0b86bf0e6c566ed262b4e22ecea06a09b1cf8f980d9b5a3e628",
+      "bytes": 34173,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/LLL/General.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/LLL/Lopsided.lean",
+      "sha256": "dfbaa467fe2b26542df2bcba5341e9dd31208b9b61e751de59099e2db54d6e7d",
+      "bytes": 12344,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/LLL/Lopsided.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/LLL/Variable.lean",
+      "sha256": "c8772e34215fae9eff66898ca8533b0f554f1c8eceec97bbe36e834d5edf81d4",
+      "bytes": 26954,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/LLL/Variable.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/ConstantLog.lean",
+      "sha256": "d3519e87c77ff119ca47e2d0acd98552fc962c654fdc1da82d15252e39ecbc0d",
+      "bytes": 6209,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/ConstantLog.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Convergence.lean",
+      "sha256": "d561917140fb9c001391cd080e67d68ce9d04de4ee95a03da625c3e59157b0fb",
+      "bytes": 6671,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Convergence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Drift.lean",
+      "sha256": "81b6e4cf05173f316d6867613c616cc8b149bffff95de80f8fc30332e4e606b4",
+      "bytes": 15106,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Drift.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/DriftCost.lean",
+      "sha256": "35908e098696787c84376c50413a1d0be95da016cc00ca90fd099a9d36a843df",
+      "bytes": 5412,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/DriftCost.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Expectation.lean",
+      "sha256": "f63466f231dbe400f07bd716ca5ee225a4e97542d13e8dec11dc4bfbfe76e385",
+      "bytes": 7388,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Expectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/OccurrenceExpectation.lean",
+      "sha256": "7ff526ae7dbc167291fa721b32eaa465169f16ca9cac188eb0d9216dd73294af",
+      "bytes": 6084,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/OccurrenceExpectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Pegden.lean",
+      "sha256": "0e571e574dd67f46ee62b4e7a901ee84164c7dd8c2913501efae4c6813e7243f",
+      "bytes": 29848,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Pegden.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Termination.lean",
+      "sha256": "ab0b7802ef525d8663f4d96bebd385ba5c323c74bf59831e77109c8281ac0f91",
+      "bytes": 6763,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/Termination.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Bounds/WeightSum.lean",
+      "sha256": "dda418168c3831f379b9265e4f757bb195a24529840f5261e7ac61d49781a5cf",
+      "bytes": 15037,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Bounds/WeightSum.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Counting/Counting.lean",
+      "sha256": "bbd1f7e4addb8d6898a536172c092559ef8839a4f8b4f261ead1c2c229c050a2",
+      "bytes": 7555,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Counting/Counting.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Counting/OccurrenceCounting.lean",
+      "sha256": "a9da1be9f414c1089a6bb04128b7ba9dc426cc2fe3599dd31a8f0ab2c914d3ba",
+      "bytes": 4800,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Counting/OccurrenceCounting.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Counting/ResamplingCount.lean",
+      "sha256": "de65d1cdbd8c05ab5df4f2cbbfd3a4eb6cf47617b272da2569b773f0835a1d4d",
+      "bytes": 11583,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Counting/ResamplingCount.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Probability/Intersection.lean",
+      "sha256": "3525a797e7559d4e364dadfcf51d4748036ec355084af8e185534d1ba38737ff",
+      "bytes": 10418,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Probability/Intersection.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Probability/OccurrenceProbability.lean",
+      "sha256": "835c03a55728050daa10da321581dc5235d7906e8fd8a72c81e7dec2471739c6",
+      "bytes": 6633,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Probability/OccurrenceProbability.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Probability/PastIndependence.lean",
+      "sha256": "40a4a92bc2468957531a5003764efcaaf9680817b93cd79e12b7660d26a8e9cf",
+      "bytes": 5001,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Probability/PastIndependence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Probability/Probability.lean",
+      "sha256": "265ff1f58f7884c4d3fad105c102cbd5ada7395840e7878950912e95adfd2193",
+      "bytes": 22619,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Probability/Probability.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Probability/ProbabilityGeneral.lean",
+      "sha256": "6574f9f64e995468a2fcca16503c10e9678db7688d3571d54d815499a22b033a",
+      "bytes": 7781,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Probability/ProbabilityGeneral.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Probability/RandomInitExpectation.lean",
+      "sha256": "0fd18e47d58621c197e0981fc15739288afed7da63860c5b190bc2d0f384dc03",
+      "bytes": 11336,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Probability/RandomInitExpectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/Basic.lean",
+      "sha256": "2bbe5b89a538dba8948f8be0e3939a498501b4703d5b96b54ebff8b048bcfb53",
+      "bytes": 4048,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/FullResampling.lean",
+      "sha256": "a6158e4c029b2802db593ad5e3c86b953df4dfa8423314426762c1fb2af94239",
+      "bytes": 12059,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/FullResampling.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/LogSpace.lean",
+      "sha256": "262a22873de3dd120d11ec4bc3d06f10ee7f2c57912c4d51620300ae21f2ee69",
+      "bytes": 6668,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/LogSpace.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/Process.lean",
+      "sha256": "02a2c1288b33bedfd99cb03860fe3d15fdb7cc50bae2f67b76fc859ba792c3e3",
+      "bytes": 4393,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/Process.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomInitialization.lean",
+      "sha256": "bfcd394a0efd84f74fe4b1a7981cf1e645805f80474117ce30b6b41af544e802",
+      "bytes": 5757,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomInitialization.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomTrajectory.lean",
+      "sha256": "6b6021b2f093e5c91123191f7e29aa06a34e873afc50057a24e7357c8dbfd742",
+      "bytes": 20212,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Process/RandomTrajectory.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Canonical.lean",
+      "sha256": "e44113aad479231985df4ac7896519b16a333d6266496471c570006d683e5ca5",
+      "bytes": 18849,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Canonical.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Check.lean",
+      "sha256": "f98006bf97ba09d8200be3f5b9d8029b148975e5f08f66e1d9207a01666cfd45",
+      "bytes": 5243,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Check.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckBirth.lean",
+      "sha256": "e795db3d9dd052d7fe83f7be936e146138244a4ac86f0c3f4fad683aa5e9e73a",
+      "bytes": 33000,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckBirth.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckBridge.lean",
+      "sha256": "d960c7d8530ee08ac969a903dc98080e078efbc744ea8be15ef27f79a05b9545",
+      "bytes": 7656,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckBridge.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckInvariance.lean",
+      "sha256": "8bac2958bf332728d37363dd24c06ae1e609ce9f83714e9a33a299c0f663c4b2",
+      "bytes": 17149,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckInvariance.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckOrder.lean",
+      "sha256": "d60db9ae27cf03948b02e9f1ddf9c3ffafcea88febd3a7484e5a750a1fe7fd30",
+      "bytes": 15189,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckOrder.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckShape.lean",
+      "sha256": "b53740b1e8b2037f382a7b315367dc662f16e47a8a9e575f7fe92665a93cd91f",
+      "bytes": 13212,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/CheckShape.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Correspondence.lean",
+      "sha256": "7ab5bd43219d517fb7a53deeb9e7cc6d2b95f8d6548e3d16d44e1bb59c40acf4",
+      "bytes": 20973,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Correspondence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Growing.lean",
+      "sha256": "f01138e41ab4a9385e714caf5d182dfed8855e3ded6afcc4c731561b0d857383",
+      "bytes": 9189,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Growing.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Injectivity.lean",
+      "sha256": "dfcde098b7db3e5f84c5dd6baadd6edeb82fb0e088d52f286e98387cf862cb90",
+      "bytes": 14038,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Injectivity.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/InjectivityBridge.lean",
+      "sha256": "435c1f09fe53d7e4a7b0ab8eca9fc17e0659498357703597f9783ad041ba5010",
+      "bytes": 18344,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/InjectivityBridge.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/LabelsAtDepthBridge.lean",
+      "sha256": "2ffeb37f53f694ad30f8888bfcfb1a3325e2fcc35213e5e0092950b8aeee1ce8",
+      "bytes": 12363,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/LabelsAtDepthBridge.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Occurrence.lean",
+      "sha256": "fb801fed5bc45ca95bebec9b71c49d1b75bc825612334534ce5f63d5ad1ac0c3",
+      "bytes": 5431,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Occurrence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/RealTree.lean",
+      "sha256": "82451a298a077e5c5b09db98b7d67adab227206ef50fff9b84e955fadce2840f",
+      "bytes": 16502,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/RealTree.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/ToGrowingTreeCheckBridge.lean",
+      "sha256": "831b10ead70754983c3dd3269af1df41116d697ab3ec3dd747979fb3087def92",
+      "bytes": 17943,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/ToGrowingTreeCheckBridge.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/WTreeCountable.lean",
+      "sha256": "dd7f2629be417bb16a8e24357e49b98ffeaba1af1d1909944e9b759db33e97b5",
+      "bytes": 5037,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/WTreeCountable.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/WTreeToGrowingTree.lean",
+      "sha256": "53f4ae9155717b11ba941e813bf4d5bd6579de9842933242d7159d2a245ba64a",
+      "bytes": 16542,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/WTreeToGrowingTree.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Weight.lean",
+      "sha256": "c86afaeaaa96f24c8e4881c286c113c347a9826852895eb350ae2cbffd127477",
+      "bytes": 2754,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Weight.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/Witness.lean",
+      "sha256": "5d6200abf4444ebbb2388d4b9992d0dc82e4e3983c4c081c22ea6f71d651379f",
+      "bytes": 6022,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/Witness.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/MoserTardos/Witness/WitnessFamily.lean",
+      "sha256": "e8ec0abe57be524e584316f654f999870cf0dc7e7fe41a2c22fe4f8c43b13ffe",
+      "bytes": 6034,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/MoserTardos/Witness/WitnessFamily.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Optimization/ComplementarySlackness.lean",
+      "sha256": "9bb40d6117202186a4ffb34c217a70c863a618dfa803f9a503e59c006ef9bfb1",
+      "bytes": 8292,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Optimization/ComplementarySlackness.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/HazardExamples.lean",
+      "sha256": "4d40c9691624644caaf2a3ac6c047e666705cbf2614f7920b6c2d79f0bacd42e",
+      "bytes": 5179,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/HazardExamples.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/Hazards.lean",
+      "sha256": "172f5b373ae1b717ab82f6562e2dd5c1fd0c3fbd74f10fc96f07e6edebbc2fc1",
+      "bytes": 15763,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/Hazards.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/ObservableAlgebra.lean",
+      "sha256": "77f2ebc744aae40795d70d1bcba1fa1c5115bce05beece79a7bd74e77e94bc4d",
+      "bytes": 14433,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/ObservableAlgebra.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/ObservableExamples.lean",
+      "sha256": "5366dbdbd3e4ba8c5b99e150ddfef72e4ecc8e7912e67c7201e2b86f0e9e9829",
+      "bytes": 6464,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/ObservableExamples.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/ObservableKernel.lean",
+      "sha256": "55fa40c6ff924f5b798b61105faadcaedd9472fd21beceeb87a4e97d1206d3e8",
+      "bytes": 6912,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/ObservableKernel.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/ObservableSchemes.lean",
+      "sha256": "6f20e981f8bdd8fcb65ada38d44d7c6b3e9908cb8f72dd1453c31f4333c87a6e",
+      "bytes": 15883,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/ObservableSchemes.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/SemanticHazardExamples.lean",
+      "sha256": "e4502a882036f5dd3813643c255b270444b853b7421e5e6fa281db024e0420d8",
+      "bytes": 10745,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/SemanticHazardExamples.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Repair/SemanticHazards.lean",
+      "sha256": "fa733dc0bfab7297e55fa01d962592af2b46b2a3ec0fbdf3a5db78641adc7c00",
+      "bytes": 18396,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Repair/SemanticHazards.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/BDD.lean",
+      "sha256": "7fec8bdd838d30e5e763efc8da54dca470e8aae49a8905ac8f09008634ac0747",
+      "bytes": 4486,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/BDD.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/BDDBudget.lean",
+      "sha256": "2cd260cc026aad5fd842919e42fc653035ec947a9172cdc8669c4e37b22affb5",
+      "bytes": 5991,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/BDDBudget.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/BDDExpectation.lean",
+      "sha256": "4dc5c6a70168874dbf76373ad5e037d6e04c674d6f573522351587eae2a55601",
+      "bytes": 8719,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/BDDExpectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Basic.lean",
+      "sha256": "677f5753c2e83d76dc1a6215b059a5a6dc0502d74f80ab4bd22023a2d3161d1b",
+      "bytes": 8790,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Basic.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/ComponentOccurrence.lean",
+      "sha256": "c6d7873fb10b34f60a8d51705d3cdef6275615b48703e78071c08085d5b6a043",
+      "bytes": 5897,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/ComponentOccurrence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Expectation.lean",
+      "sha256": "695faa61c3f0c303301f656e64bc0b3a96bc5b5b1f9ee135f95fc12c9ef910c7",
+      "bytes": 9333,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Expectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Induction.lean",
+      "sha256": "d3244a307270808cc0d0caf46caf60d8030d00d33a2331555f06f601c26dbaad",
+      "bytes": 6083,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Induction.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/LayerProfile.lean",
+      "sha256": "7492ab3f01b55e8709dbcc03b684dd048ddd259a2fd16d18f1d1b0df90e79fab",
+      "bytes": 5962,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/LayerProfile.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/MT.lean",
+      "sha256": "54037e29cded6d6b74b061a9783a16e227b9e8b747f5ab942ccc6df16d6c1e3e",
+      "bytes": 6460,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/MT.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Occurrence.lean",
+      "sha256": "15c7259fda2d76b19f40769b39d3720a609c6831a357ea6bb002a73c92398b88",
+      "bytes": 9238,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Occurrence.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Polynomial.lean",
+      "sha256": "e219f9d60a421f35e39845ca233f5567a52603013093d3df591ecd775138079c",
+      "bytes": 9485,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Polynomial.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/SequenceProbability.lean",
+      "sha256": "d436a776cca281499ba14f3e45bb9daf2ec3b410f081a9d5fbb8356040188db2",
+      "bytes": 10533,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/SequenceProbability.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Slack.lean",
+      "sha256": "baac3ee8285fa7e45e6475f9eb300f31eb0eb35940cd16619694c043d8e3bab8",
+      "bytes": 6761,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Slack.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/SlackExpectation.lean",
+      "sha256": "363c84bc25a6b6e634c119607fc501990bb4ab1d6dd859d2d007ddd349ad9952",
+      "bytes": 2567,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/SlackExpectation.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Stable.lean",
+      "sha256": "4c489b8cdffc0a714e793b589070382c98addc7c17fea156dbf785a453231034",
+      "bytes": 24436,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Stable.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph/Shearer/Witness.lean",
+      "sha256": "1236400cfe9425aeeeccc695a6703402b7270bf4010d416dd6772b2188acefbf",
+      "bytes": 7630,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph/Shearer/Witness.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/PPGraph.lean",
+      "sha256": "41760bb8a3187d98b8fdaaf2329d5296d753d161c6dbbdf979e98606908d3e96",
+      "bytes": 118,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/PPGraph.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/README.md",
+      "sha256": "75216d15ce4a152eaced498a85d49929ffa72050342eb76599c9e08c6ed34f5c",
+      "bytes": 61039,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/README.md"
+    },
+    {
+      "path": "vendor/ppg-lean/artifacts/luces/README.md",
+      "sha256": "5d655d6f827e63aadf500fca5c6e585b79e8bf0bd4299c2c1f20ac55737c9c1e",
+      "bytes": 1575,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/artifacts/luces/README.md"
+    },
+    {
+      "path": "vendor/ppg-lean/artifacts/luces/local_plan.json",
+      "sha256": "86f65e4d4c779825b809380a204ecb7746cdb50a995baebd0bec2f37b2dc9192",
+      "bytes": 438,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/artifacts/luces/local_plan.json"
+    },
+    {
+      "path": "vendor/ppg-lean/artifacts/luces/local_plan_kernel_inputs.json",
+      "sha256": "c4837b129b640eb5f246659bc2f85f03d0ebb18e5c314bc9c03c5801e228c4e9",
+      "bytes": 1215,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/artifacts/luces/local_plan_kernel_inputs.json"
+    },
+    {
+      "path": "vendor/ppg-lean/artifacts/luces/local_plan_kernel_inputs.txt",
+      "sha256": "9161cd492d2333de8c452502d4cd660ddb6bc2ae00b7e1498432bcd4323b3d7f",
+      "bytes": 891,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/artifacts/luces/local_plan_kernel_inputs.txt"
+    },
+    {
+      "path": "vendor/ppg-lean/assets/ppg-theory.png",
+      "sha256": "4ece339c2944e7681b2eaa8d31c3dde272bde82257b9d9f27ed713e57277d3fd",
+      "bytes": 9126540,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/assets/ppg-theory.png"
+    },
+    {
+      "path": "vendor/ppg-lean/assets/ppg-theory.svg",
+      "sha256": "3556d81076870185d3a9536c0b4e00dabca93d0d8fde34908f452ae8c7d6ddfe",
+      "bytes": 54353,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/assets/ppg-theory.svg"
+    },
+    {
+      "path": "vendor/ppg-lean/docs/MODULE_MIGRATION.md",
+      "sha256": "d6d1c62ab196a549b66affc19a930e565939d921e35671acaa200ae436793827",
+      "bytes": 35129,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/docs/MODULE_MIGRATION.md"
+    },
+    {
+      "path": "vendor/ppg-lean/docs/THEOREM_SCOPE.md",
+      "sha256": "800bc64df5fc670d61c83ef89d671a345846211d384f0dc4f4831e8b0ba84747",
+      "bytes": 14243,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/docs/THEOREM_SCOPE.md"
+    },
+    {
+      "path": "vendor/ppg-lean/docs/THEORY_INDEX.md",
+      "sha256": "22ef308dc2db22cccd36efe1fe57531b74ebd7d5d8733f29541c36d8666a2509",
+      "bytes": 46693,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/docs/THEORY_INDEX.md"
+    },
+    {
+      "path": "vendor/ppg-lean/lake-manifest.json",
+      "sha256": "69bd64ee24bd0360be6279ab7737e7b384b13db846fb9bfe5d0026f8debd4e72",
+      "bytes": 3121,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/lake-manifest.json"
+    },
+    {
+      "path": "vendor/ppg-lean/lakefile.lean",
+      "sha256": "38fc21914e2365b1948c01db24f709abe5dc0d3347b928fbf7f10f94bb026d5a",
+      "bytes": 314,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/lakefile.lean"
+    },
+    {
+      "path": "vendor/ppg-lean/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/lean-toolchain"
+    },
+    {
+      "path": "vendor/ppg-lean/reports/PPGRAPH_AXIOM_AUDIT.json",
+      "sha256": "8fb5fcb2ac169c55b4ca5abecbffff665f5bc3a83f050e0683b17093593cca25",
+      "bytes": 1548640,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/reports/PPGRAPH_AXIOM_AUDIT.json"
+    },
+    {
+      "path": "vendor/ppg-lean/reports/PPGRAPH_AXIOM_AUDIT.txt",
+      "sha256": "0d4b9666ec6a4c671649e5104499481eb435c8534390a2630166a46c5298a905",
+      "bytes": 539535,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/reports/PPGRAPH_AXIOM_AUDIT.txt"
+    },
+    {
+      "path": "vendor/ppg-lean/tests/test_audit_ppgraph.py",
+      "sha256": "ea409e8a1ac750e0403b9c14c4b082596823670bcb6bc136599cb51d8787a1ac",
+      "bytes": 10835,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/tests/test_audit_ppgraph.py"
+    },
+    {
+      "path": "vendor/ppg-lean/tools/audit_ppgraph.py",
+      "sha256": "a5724e0d785228856590132c5d46a0f3f3c760d822ce9040ca5a31f3c3c7b459",
+      "bytes": 22581,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/tools/audit_ppgraph.py"
+    },
+    {
+      "path": "vendor/ppg-lean/tools/export_luces_instance.py",
+      "sha256": "ed1ddee2ca74dd2a54faeba2d3722d4a164f247b4159ec2a71c51f52186433c7",
+      "bytes": 5609,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/tools/export_luces_instance.py"
+    },
+    {
+      "path": "vendor/ppg-lean/tools/module-map.json",
+      "sha256": "1f8efe65c085e9ca32723fe1bc9a65a3a218c3714684b03cb73308a69ad4a8b4",
+      "bytes": 36258,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/vendor/ppg-lean/tools/module-map.json"
+    },
+    {
+      "path": "framework/FrameworkAudit.lean",
+      "sha256": "b2c46656beaadf7eb459cabf5b7028335fdb9060b0fc0e3d62dd5b6c0eb3e0d2",
+      "bytes": 2565,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/FrameworkAudit.lean"
+    },
+    {
+      "path": "framework/REPORT.md",
+      "sha256": "cfbb39a4746d3ff18cda044b778e72d28d252f798afdcd45a3430e42b32f4ef6",
+      "bytes": 4985,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/REPORT.md"
+    },
+    {
+      "path": "framework/SOURCE_MANIFEST.json",
+      "sha256": "1fd0b9bde1b1f4a8606eb572b631ffb337b527a305fae3dab8506142eb60ece8",
+      "bytes": 39862,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/SOURCE_MANIFEST.json"
+    },
+    {
+      "path": "framework/check.py",
+      "sha256": "4097f487449d52c42a76f57c2acb885b902507ebc8b494f2af708779c9a0fe44",
+      "bytes": 9520,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/check.py"
+    },
+    {
+      "path": "framework/lake-manifest.json",
+      "sha256": "179bf555089c8599da38f74952d7458ecd5340865b1a81dc744ee1ff9ab647d9",
+      "bytes": 3766,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/lake-manifest.json"
+    },
+    {
+      "path": "framework/lakefile.lean",
+      "sha256": "13b56554748fd5401f58ac7944a8bd3403d9da0ed3c87167be803e361fa65e9b",
+      "bytes": 382,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/lakefile.lean"
+    },
+    {
+      "path": "framework/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/lean-toolchain"
+    },
+    {
+      "path": "framework/verify_copy.py",
+      "sha256": "8d4abd5bb6f10fa1cb1dba6d27f05bc3c1a22bdb3ee4574a883b77c83ed0319a",
+      "bytes": 5221,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/framework/verify_copy.py"
+    },
+    {
+      "path": "evidence/framework/COMPLETION.json",
+      "sha256": "cda3c9726688e6ba80a39c3916db160044c8f216b131674e14e9c473d881f511",
+      "bytes": 338,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/COMPLETION.json"
+    },
+    {
+      "path": "evidence/framework/attempt-001/DECLARATIONS.json",
+      "sha256": "869ade795f9ee50cb962b3027ee3286f1913590ee218aad879e318a12d24f50d",
+      "bytes": 1534863,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/DECLARATIONS.json"
+    },
+    {
+      "path": "evidence/framework/attempt-001/RESULT.json",
+      "sha256": "02721da201fad0487146c4954483220eb0a10139f34b93e84a083a2481273a56",
+      "bytes": 4598,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/RESULT.json"
+    },
+    {
+      "path": "evidence/framework/attempt-001/axioms.lean",
+      "sha256": "6e6e857c4c887eef9ec05d0da5b248208477551a6f94092f470d616a83fcfa5c",
+      "bytes": 9320,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/axioms.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-001/axioms.log",
+      "sha256": "1d89d539d18254fcf161b9c076cec8ec54124415e53d24ec101c0982038e6eb4",
+      "bytes": 538310,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/axioms.log"
+    },
+    {
+      "path": "evidence/framework/attempt-001/build.log",
+      "sha256": "2cedc055fe12af653a4cf2439f007a97f87d77b69563d4734bdafd60f42b6052",
+      "bytes": 892391,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/build.log"
+    },
+    {
+      "path": "evidence/framework/attempt-001/driver-snapshot/FrameworkAudit.lean",
+      "sha256": "b2c46656beaadf7eb459cabf5b7028335fdb9060b0fc0e3d62dd5b6c0eb3e0d2",
+      "bytes": 2565,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/driver-snapshot/FrameworkAudit.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-001/driver-snapshot/check.py",
+      "sha256": "019559f34adb4750a6804b07977cebd5f531e5de385e72f432576806fb7608fa",
+      "bytes": 6238,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/driver-snapshot/check.py"
+    },
+    {
+      "path": "evidence/framework/attempt-001/driver-snapshot/lake-manifest.json",
+      "sha256": "179bf555089c8599da38f74952d7458ecd5340865b1a81dc744ee1ff9ab647d9",
+      "bytes": 3766,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/driver-snapshot/lake-manifest.json"
+    },
+    {
+      "path": "evidence/framework/attempt-001/driver-snapshot/lakefile.lean",
+      "sha256": "13b56554748fd5401f58ac7944a8bd3403d9da0ed3c87167be803e361fa65e9b",
+      "bytes": 382,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/driver-snapshot/lakefile.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-001/driver-snapshot/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/driver-snapshot/lean-toolchain"
+    },
+    {
+      "path": "evidence/framework/attempt-001/driver-snapshot/verify_copy.py",
+      "sha256": "afbf11c689a582ea41af99efde3ef6acfd7a10b91fbc2bd814edfda58583d758",
+      "bytes": 4954,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/driver-snapshot/verify_copy.py"
+    },
+    {
+      "path": "evidence/framework/attempt-001/embedded-input-0.log",
+      "sha256": "35961ed949f69e22da6bdc3627d8150fda607e4260e1609112dfcdf7e9897838",
+      "bytes": 3059,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/embedded-input-0.log"
+    },
+    {
+      "path": "evidence/framework/attempt-001/embedded-input-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/embedded-input-1.log"
+    },
+    {
+      "path": "evidence/framework/attempt-001/inventory.lean",
+      "sha256": "5e97c0484a75d56c0cc902680a2f054ba3109a98d4fd78596988b794b566996c",
+      "bytes": 9590,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/inventory.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-001/inventory.log",
+      "sha256": "0ae77ee751fb5f110f4980a91f18a9544cfb45b1ca6a371496a0f39133d91765",
+      "bytes": 586449,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/inventory.log"
+    },
+    {
+      "path": "evidence/framework/attempt-001/representative-roots.log",
+      "sha256": "add5057fdcbbcf2b19c1abdd48b253045e799ef2852e24b0fcd59def42654991",
+      "bytes": 7461,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-001/representative-roots.log"
+    },
+    {
+      "path": "evidence/framework/attempt-002/DECLARATIONS.json",
+      "sha256": "869ade795f9ee50cb962b3027ee3286f1913590ee218aad879e318a12d24f50d",
+      "bytes": 1534863,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/DECLARATIONS.json"
+    },
+    {
+      "path": "evidence/framework/attempt-002/INPUTS.json",
+      "sha256": "b4ce932fec5d234a433d6836929c6dbbd5e42f6a6f2efb23de12c2d4441e4618",
+      "bytes": 1084,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/INPUTS.json"
+    },
+    {
+      "path": "evidence/framework/attempt-002/RESOLUTION.json",
+      "sha256": "20b4ea6697a25b57c1e64a98231602a9cc8ba78ec0e66a7d74d0f1ffe6212103",
+      "bytes": 53939,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/RESOLUTION.json"
+    },
+    {
+      "path": "evidence/framework/attempt-002/RESULT.json",
+      "sha256": "529b7934919aedd0c45ab8ec71f598930edd3ebce11b2181eb687812218d118a",
+      "bytes": 6317,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/RESULT.json"
+    },
+    {
+      "path": "evidence/framework/attempt-002/axioms.lean",
+      "sha256": "6e6e857c4c887eef9ec05d0da5b248208477551a6f94092f470d616a83fcfa5c",
+      "bytes": 9320,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/axioms.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-002/axioms.log",
+      "sha256": "1d89d539d18254fcf161b9c076cec8ec54124415e53d24ec101c0982038e6eb4",
+      "bytes": 538310,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/axioms.log"
+    },
+    {
+      "path": "evidence/framework/attempt-002/build.log",
+      "sha256": "d25df09af2442e67f4e892e3a651d44f338dbeb0a6819b62b4c8d02f9b654b4a",
+      "bytes": 891294,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/build.log"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/framework/FrameworkAudit.lean",
+      "sha256": "b2c46656beaadf7eb459cabf5b7028335fdb9060b0fc0e3d62dd5b6c0eb3e0d2",
+      "bytes": 2565,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/framework/FrameworkAudit.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/framework/SOURCE_MANIFEST.json",
+      "sha256": "1fd0b9bde1b1f4a8606eb572b631ffb337b527a305fae3dab8506142eb60ece8",
+      "bytes": 39862,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/framework/SOURCE_MANIFEST.json"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/framework/check.py",
+      "sha256": "4097f487449d52c42a76f57c2acb885b902507ebc8b494f2af708779c9a0fe44",
+      "bytes": 9520,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/framework/check.py"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/framework/lake-manifest.json",
+      "sha256": "179bf555089c8599da38f74952d7458ecd5340865b1a81dc744ee1ff9ab647d9",
+      "bytes": 3766,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/framework/lake-manifest.json"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/framework/lakefile.lean",
+      "sha256": "13b56554748fd5401f58ac7944a8bd3403d9da0ed3c87167be803e361fa65e9b",
+      "bytes": 382,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/framework/lakefile.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/framework/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/framework/lean-toolchain"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/framework/verify_copy.py",
+      "sha256": "8d4abd5bb6f10fa1cb1dba6d27f05bc3c1a22bdb3ee4574a883b77c83ed0319a",
+      "bytes": 5221,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/framework/verify_copy.py"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/lake-manifest.json",
+      "sha256": "51a4a3e8411e761c5a95c2fd2a0b05ac2cd35eb93a1d3eb3f483a167ba9f59a8",
+      "bytes": 3543,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/lake-manifest.json"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/lean-toolchain"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/scripts/provenance.py",
+      "sha256": "d7bf1c22837e6a0c868538f346e73857769e64ed93f4c4267b6f03a087e3509e",
+      "bytes": 13803,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/scripts/provenance.py"
+    },
+    {
+      "path": "evidence/framework/attempt-002/driver-snapshot/vendor/ppg-lean/tools/audit_ppgraph.py",
+      "sha256": "a5724e0d785228856590132c5d46a0f3f3c760d822ce9040ca5a31f3c3c7b459",
+      "bytes": 22581,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/driver-snapshot/vendor/ppg-lean/tools/audit_ppgraph.py"
+    },
+    {
+      "path": "evidence/framework/attempt-002/embedded-input-0.log",
+      "sha256": "35961ed949f69e22da6bdc3627d8150fda607e4260e1609112dfcdf7e9897838",
+      "bytes": 3059,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/embedded-input-0.log"
+    },
+    {
+      "path": "evidence/framework/attempt-002/embedded-input-1.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/embedded-input-1.log"
+    },
+    {
+      "path": "evidence/framework/attempt-002/inventory.lean",
+      "sha256": "5e97c0484a75d56c0cc902680a2f054ba3109a98d4fd78596988b794b566996c",
+      "bytes": 9590,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/inventory.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-002/inventory.log",
+      "sha256": "0ae77ee751fb5f110f4980a91f18a9544cfb45b1ca6a371496a0f39133d91765",
+      "bytes": 586449,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/inventory.log"
+    },
+    {
+      "path": "evidence/framework/attempt-002/representative-roots.log",
+      "sha256": "add5057fdcbbcf2b19c1abdd48b253045e799ef2852e24b0fcd59def42654991",
+      "bytes": 7461,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/representative-roots.log"
+    },
+    {
+      "path": "evidence/framework/attempt-002/resolution.lean",
+      "sha256": "2844b3b799e431e8d5bdb288facb8c91c9e7990fd188ad3093c682eb69b11486",
+      "bytes": 8975,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/resolution.lean"
+    },
+    {
+      "path": "evidence/framework/attempt-002/resolution.log",
+      "sha256": "7bd41e1c7e0d4ebbb5d9afb98a7633798668d95b1f884e131dcf8f1e12e1837c",
+      "bytes": 34592,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/attempt-002/resolution.log"
+    },
+    {
+      "path": "evidence/framework/copy-check-independent.json",
+      "sha256": "657fe317162bd3d8a45023ef45bcab7d0d8d3403e01193d2062c2db20bfd046d",
+      "bytes": 555,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/copy-check-independent.json"
+    },
+    {
+      "path": "evidence/framework/core-build.log",
+      "sha256": "23a6074a24341fa10d66159d366576b12322ec09a8fe732493fd20d92e5d37f3",
+      "bytes": 7722476,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/core-build.log"
+    },
+    {
+      "path": "evidence/framework/source-check-independent.json",
+      "sha256": "34edeeec101e15ac111d7817c06a29fff8988ec858601f8d98034eb8f3916a53",
+      "bytes": 1298,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/evidence/framework/source-check-independent.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/MANIFEST.json",
+      "sha256": "9e00bf44f413a8b1072d5f3e9d25675a184ddf1551e88d13a727fe17612ff4f4",
+      "bytes": 2589,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/MANIFEST.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/PLAN.json",
+      "sha256": "089a39726e531a6d7f686a9dd80cec4d88ba8f28ffefc13df4d022867bcb449c",
+      "bytes": 4691,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/PLAN.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/REPORT.md",
+      "sha256": "2ad08e8a9a993379146654e6723b8d0a59700f149439c9d5c683ca983ea5efa5",
+      "bytes": 10815,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/REPORT.md"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/DOC_REVIEW.json",
+      "sha256": "8b09c6df04b81be30a636bdf8769e981f437979dc1c7949c01a27413459fe42b",
+      "bytes": 1620,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/DOC_REVIEW.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/REVIEW.json",
+      "sha256": "e0ddbc1d7ac94534de47b53d5347a75fea67586043856f1aa3581be217605e87",
+      "bytes": 2013,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/REVIEW.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-001/FAILURE.json",
+      "sha256": "0820e6773c0a176855bb906db2b10a0d9616a62abe8b3dbad8743980e155c344",
+      "bytes": 650,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-001/FAILURE.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002/CLOCK.json",
+      "sha256": "f309f44d4c3dd12622d1b68736422fb2777b8abc88131979d2d5ae4b6c62d56c",
+      "bytes": 13752,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002/CLOCK.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002/COMMANDS.json",
+      "sha256": "1cf942225885600c74ac7a0fe27dcb5ea4b11c734854017dda393cd7d9180f05",
+      "bytes": 21707,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002/COMMANDS.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002/GAPS.json",
+      "sha256": "26d7c3c72b259c4a0d734ecb3659da0479f4831b32f6841c80826124dc3a7b10",
+      "bytes": 6460,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002/GAPS.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002/GEO_JOINS.json",
+      "sha256": "fedca85acf36c2cad9dd9a6b3a1f67957e1bbd9d2438a91784a8d2566c055660",
+      "bytes": 5883,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002/GEO_JOINS.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002/RESULT.json",
+      "sha256": "af9595bc94679b2cce19b7048121e391d8f69bca9e073ed2d2d063026ebf216a",
+      "bytes": 5413,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002/RESULT.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002/SEGMENTS.json",
+      "sha256": "ed53808e85b0f95b6754d42471949076a5c1d65b0551731382354d56c2c0724b",
+      "bytes": 28338,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002/SEGMENTS.json"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002-logs/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002-logs/stderr.log"
+    },
+    {
+      "path": "experiments/luces-log-replay/evidence/attempt-002-logs/stdout.log",
+      "sha256": "ec96b6ed6fb2ed320b9620646aacd9d098d4f94e81e16f9a15295438e31b78a3",
+      "bytes": 857,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/evidence/attempt-002-logs/stdout.log"
+    },
+    {
+      "path": "experiments/luces-log-replay/provenance/replay-v1.py",
+      "sha256": "82ab429af707cb37b3f5d4a05c3b073e88e1c5814079b5550d894cf35c70e639",
+      "bytes": 15061,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/provenance/replay-v1.py"
+    },
+    {
+      "path": "experiments/luces-log-replay/replay.py",
+      "sha256": "ebcd48271eb9f4e1499e0dd28548e6adc9d2e6e514543232135196358731ef91",
+      "bytes": 15823,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-log-replay/replay.py"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/MANIFEST.json",
+      "sha256": "7afa294535129d9ca83c233f98b139f2dcad8ef5700d8e4dc0ce838a640a629c",
+      "bytes": 7723,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/MANIFEST.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/PLAN.json",
+      "sha256": "a3228670c01b9600dd979ce300884efd3ae2d5f0ff52f7d9de17e411edfdf16b",
+      "bytes": 10592,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/PLAN.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/PROTECTED_REUSE_PLAN.json",
+      "sha256": "b02bed2eb9901dde04c91ac0394910d789b96e9c3b5edb347ddb75a67ed6a059",
+      "bytes": 1035,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/PROTECTED_REUSE_PLAN.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/REPORT.md",
+      "sha256": "5fae96e6b8c5d8579f379c5fdee89b951f95546f72a8a7b9bc46f7426239e467",
+      "bytes": 13444,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/REPORT.md"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/DOC_REVIEW.json",
+      "sha256": "632ff73a70e8b8030823413007bfc0efef00ea713fb3ef9342bfd566aebef5de",
+      "bytes": 4472,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/DOC_REVIEW.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/FORMAL_REVIEW.json",
+      "sha256": "3f8a03ed8479b17f2f21ef2cb5e85f69a8caa65e1f2c46338ce4a01b161ab8e7",
+      "bytes": 5278,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/FORMAL_REVIEW.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/METHOD_REVIEW-002.json",
+      "sha256": "263ca22074a25f96280463aa95bf3d8ce3f00112de3a6113b9657769fd544b57",
+      "bytes": 7942,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/METHOD_REVIEW-002.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/METHOD_REVIEW.json",
+      "sha256": "d8971ba861a626ac1dadcc40f9a1cda6c5aff991669754f2944626e1fc4daee8",
+      "bytes": 6099,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/METHOD_REVIEW.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/PROTECTED_REUSE.json",
+      "sha256": "36332ae473c994630aa5f68446a858a6d7f8eb1abf2133e24cc78aecc987490b",
+      "bytes": 5636,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/PROTECTED_REUSE.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/RUNTIME_REVIEW-001.json",
+      "sha256": "87de2f3349aaf30d3a69fe583d473921a43b0ed66e3a1b2e119ed9709651e1af",
+      "bytes": 3484,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/RUNTIME_REVIEW-001.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/RUNTIME_REVIEW-002.json",
+      "sha256": "d1243ae9253b30f28c5e2fc404ad7e78f058fa0cc787eed0c01b87498911eefd",
+      "bytes": 6195,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/RUNTIME_REVIEW-002.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/formal-001/DeterministicReuse.lean",
+      "sha256": "5c285ad4a9d1462bc2a14a10beeef025b0072af25142b062f9e7340ef05b7ec9",
+      "bytes": 7315,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/formal-001/DeterministicReuse.lean"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/formal-001/RESULT.json",
+      "sha256": "7329228cda39048168be6d507c2b0372cb3ae0c831b62cec7bc5d679e912a6ec",
+      "bytes": 795,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/formal-001/RESULT.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/formal-001/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/formal-001/stderr.log"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/formal-001/stdout.log",
+      "sha256": "5cf1d7135139f63980702334d22b840fde2112f7d26df079612020c36741e875",
+      "bytes": 788,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/formal-001/stdout.log"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/ABLATIONS.json",
+      "sha256": "04f7452db74556d20f8b5176e62ae01100a5cd325a2ad95874958b2ccf85fc39",
+      "bytes": 34546,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/ABLATIONS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/AGGRESSIVE_ERRORS.json",
+      "sha256": "06bdf2dc412eca645052ee5672fd88e1a6004f560ff3f827587be2fa43e813df",
+      "bytes": 1655,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/AGGRESSIVE_ERRORS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/BANKS.json",
+      "sha256": "85fb60cba632d44ab8873b3cf7b46d680a5c79d3bc76e9c3251b0307ab44e189",
+      "bytes": 170892,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/BANKS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/CONTROLS.json",
+      "sha256": "c5921617540922afab8bc5f7b94077a404826bfe730758ef7e8ea506d8b80260",
+      "bytes": 284,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/CONTROLS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/HAZARDS.json",
+      "sha256": "5c2d59558050985b7e7aeb33dc25cf683e141bfb2c08c0e6405027132cfb80fe",
+      "bytes": 5659,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/HAZARDS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/INVALIDATIONS.json",
+      "sha256": "e2e9e4a5cce57eed12e41fbdf2ff668b9cea39a3cdcb4b46ea7243e8d45e3484",
+      "bytes": 6547,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/INVALIDATIONS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/PAIRS.json",
+      "sha256": "6d1eb2fc91ecea3eacf7babc8454721da31782b64106a3d33aa887b0f1973d08",
+      "bytes": 538263,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/PAIRS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/RESULT.json",
+      "sha256": "3af1f9f11f52fae85c1a05b058dd82b0ba2b4212f3a623737d5e038d6958bd61",
+      "bytes": 1651,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/RESULT.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001/TRACES.json",
+      "sha256": "be41b3cdb34fc0ea618e27ea300434daf66258107a0c35ee9e9c9831e72429e3",
+      "bytes": 8197,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001/TRACES.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001-logs/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001-logs/stderr.log"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-001-logs/stdout.log",
+      "sha256": "3af1f9f11f52fae85c1a05b058dd82b0ba2b4212f3a623737d5e038d6958bd61",
+      "bytes": 1651,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-001-logs/stdout.log"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/ABLATIONS.json",
+      "sha256": "770ee0a861509f8c477096dd621241c791025c1801393f12e758b0ef61963c3b",
+      "bytes": 34546,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/ABLATIONS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/AGGRESSIVE_ERRORS.json",
+      "sha256": "06bdf2dc412eca645052ee5672fd88e1a6004f560ff3f827587be2fa43e813df",
+      "bytes": 1655,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/AGGRESSIVE_ERRORS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/BANKS.json",
+      "sha256": "85fb60cba632d44ab8873b3cf7b46d680a5c79d3bc76e9c3251b0307ab44e189",
+      "bytes": 170892,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/BANKS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/CONTROLS.json",
+      "sha256": "c5921617540922afab8bc5f7b94077a404826bfe730758ef7e8ea506d8b80260",
+      "bytes": 284,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/CONTROLS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/HAZARDS.json",
+      "sha256": "5c2d59558050985b7e7aeb33dc25cf683e141bfb2c08c0e6405027132cfb80fe",
+      "bytes": 5659,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/HAZARDS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/INVALIDATIONS.json",
+      "sha256": "e2e9e4a5cce57eed12e41fbdf2ff668b9cea39a3cdcb4b46ea7243e8d45e3484",
+      "bytes": 6547,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/INVALIDATIONS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/PAIRS.json",
+      "sha256": "1e72afffe5b694b19d0076ab54a0e18b2b2dc9f97e555140bbc6715feb6d9733",
+      "bytes": 538228,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/PAIRS.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/RESULT.json",
+      "sha256": "48cf7308b252302eca2b74434fb41c1d6d956bd9266c28098f3ffc2ea3ea0675",
+      "bytes": 1654,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/RESULT.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002/TRACES.json",
+      "sha256": "c6aff6a56a0d7c4cf33ccafd2d38f373041a309624e4a7e6c86008a0dc54a5b6",
+      "bytes": 31231,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002/TRACES.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002-logs/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002-logs/stderr.log"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime-002-logs/stdout.log",
+      "sha256": "48cf7308b252302eca2b74434fb41c1d6d956bd9266c28098f3ffc2ea3ea0675",
+      "bytes": 1654,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime-002-logs/stdout.log"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime_review_check_001.py",
+      "sha256": "31d5863dc1ba74fe1bee403ffd538c62e5347f20e2f8a95994d6b3583d872cc7",
+      "bytes": 10339,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime_review_check_001.py"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/evidence/runtime_review_check_002.py",
+      "sha256": "2c845057111c27be8b9fbef509c1820d383c0596eb0706359d558e33a8c0360b",
+      "bytes": 13932,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/evidence/runtime_review_check_002.py"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/formal/DeterministicReuse.lean",
+      "sha256": "5c285ad4a9d1462bc2a14a10beeef025b0072af25142b062f9e7340ef05b7ec9",
+      "bytes": 7315,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/formal/DeterministicReuse.lean"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/protected_reuse.py",
+      "sha256": "66f8dcee5197b0ba62da8686e014de21e4ef54b8cc160121d67e747c69b3846d",
+      "bytes": 3487,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/protected_reuse.py"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/provenance/TRACE_REVISION.json",
+      "sha256": "a4328a7e4fd5e9d9360dcf17865ccb22721b8fd459dac521dab5a4e9063378de",
+      "bytes": 428,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/provenance/TRACE_REVISION.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/provenance/run-v1.py",
+      "sha256": "ca8c358b78aa8b9f7a4d0f6e607b4fa46b08f1bb12af549e643b8f3a9efd7ae5",
+      "bytes": 16873,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/provenance/run-v1.py"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/run.py",
+      "sha256": "602df7136067bb7fccd6bbb2412d705a869b8964f985d0b9b35e9466a0fbe832",
+      "bytes": 17382,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/run.py"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/theory/FEATURE_PROJECTION_COUNTEREXAMPLE.json",
+      "sha256": "e7a83cc3136d1e25e0e5271dd83b5ba4024d17dc3a190a75bc0e8ee43cbb3976",
+      "bytes": 43403,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/theory/FEATURE_PROJECTION_COUNTEREXAMPLE.json"
+    },
+    {
+      "path": "experiments/luces-deterministic-reuse/theory/feature_projection_counterexample.py",
+      "sha256": "8b0afc1a635e34ca617e3cd9e28c4cb5d3f8b93a3fbabac1679344ec7f262efd",
+      "bytes": 6555,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/experiments/luces-deterministic-reuse/theory/feature_projection_counterexample.py"
+    },
+    {
+      "path": "research/window-locality/.gitignore",
+      "sha256": "cd035d44058d6e55c47982f4a4182f9cde26e7b856b307860d3eedb1960658f8",
+      "bytes": 80,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/.gitignore"
+    },
+    {
+      "path": "research/window-locality/MANIFEST.json",
+      "sha256": "febfc709ebe32ae3560355eff501f096874c7b388db5480923effe111bacebd2",
+      "bytes": 11401,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/MANIFEST.json"
+    },
+    {
+      "path": "research/window-locality/README.md",
+      "sha256": "05fb09e5a3f56ee35e6983f74b4738c2ea297ec48445ebb5f7852dde5cda67f8",
+      "bytes": 7593,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/README.md"
+    },
+    {
+      "path": "research/window-locality/REPORT.md",
+      "sha256": "dfc512b501100d104d1acd6e61aa3b17102aa904a8f540ddbb36725c4f16e208",
+      "bytes": 7226,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/REPORT.md"
+    },
+    {
+      "path": "research/window-locality/SPEC.md",
+      "sha256": "ac09cd7cce91c05579f1bbb76f0d935148ee6087f8bd055013351a08007ec02d",
+      "bytes": 3637,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/SPEC.md"
+    },
+    {
+      "path": "research/window-locality/evidence/SUMMARY.json",
+      "sha256": "fb0b380f8015c1435897e7b1af7b93e5ed8bb1a6a4971678a8743a57e588e148",
+      "bytes": 10329,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/SUMMARY.json"
+    },
+    {
+      "path": "research/window-locality/evidence/bulk-dual-independent-001.json",
+      "sha256": "e5554ca7f5b6d42ae9313663af681c6ba555468f3c976d897718b17b3c0ac07c",
+      "bytes": 944,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/bulk-dual-independent-001.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r1-attempt-001/CERTIFICATE.json",
+      "sha256": "260ffb82141251fc87ec76635864285472f68843df1310276861848ee5cdad30",
+      "bytes": 8777,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r1-attempt-001/CERTIFICATE.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r1-attempt-001/INPUTS.json",
+      "sha256": "0876d34e3be062861b5447ea9130264b450196400f40ad93d38ae01384b3252a",
+      "bytes": 553,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r1-attempt-001/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r1-attempt-001/NUMERICAL.json",
+      "sha256": "be155764793a44c6bc3c6c004675b8ea94aee346c8034a1e1d99d86a81362160",
+      "bytes": 6445,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r1-attempt-001/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r1-attempt-001/RESULT.json",
+      "sha256": "c785a33505439a37b56a9ef2403e694afcd78d5d56c973b787a595cd68aa3613",
+      "bytes": 727,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r1-attempt-001/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r1-attempt-001/independent-verification-001.json",
+      "sha256": "297176a645318731beb647012f12ba6f78ef9ae08688e0fe9e3ac08e991c4642",
+      "bytes": 1575,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r1-attempt-001/independent-verification-001.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r2-attempt-001/CERTIFICATE.json",
+      "sha256": "ad1e92791b9536c895af83d0bf23767fc534acdac4207beb83c6942dbb2c6892",
+      "bytes": 20494,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r2-attempt-001/CERTIFICATE.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r2-attempt-001/INPUTS.json",
+      "sha256": "82ecb01c917dfa64b36c3ddeb613eb9247d743f7a6378cdbce5e23d4bab8e889",
+      "bytes": 553,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r2-attempt-001/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r2-attempt-001/NUMERICAL.json",
+      "sha256": "71d2a9557d5354982a7419630ac86d8e94d6d4ae3846ebb72bb8c87858dd4f1b",
+      "bytes": 8761,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r2-attempt-001/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r2-attempt-001/RESULT.json",
+      "sha256": "50cc91100da700e432b710674ea4f5923ebc2a243f1105668cd4d8d145c40ac5",
+      "bytes": 737,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r2-attempt-001/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r2-attempt-001/independent-verification-001.json",
+      "sha256": "e05255adeeb06f7e2dd944dcaeb3cf56117fbeaed128b2d7c855989f9ad5b45e",
+      "bytes": 2038,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r2-attempt-001/independent-verification-001.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r3-attempt-001/CERTIFICATE.json",
+      "sha256": "050262c19f01730a3d787a1ca81677529c5e49b06f908ff4ffb68a7fe5b938dd",
+      "bytes": 23476,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r3-attempt-001/CERTIFICATE.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r3-attempt-001/INPUTS.json",
+      "sha256": "656b8829f64dafdfdf5b1be9e9c8181758ab37e57eaa088246008a34e1d8e79f",
+      "bytes": 553,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r3-attempt-001/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r3-attempt-001/NUMERICAL.json",
+      "sha256": "f264701dcf3e4222250c02109f13aca08bfab5729dc0c06746584e6988f8f1b0",
+      "bytes": 9091,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r3-attempt-001/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r3-attempt-001/RESULT.json",
+      "sha256": "61ddafef636595115580cc9993ce9f2445b363a4c3fa1909be727cedb0ec63d3",
+      "bytes": 722,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r3-attempt-001/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n3-r3-attempt-001/independent-verification-001.json",
+      "sha256": "d3ac95041072beff4d145cbf5937a4c0e2b34bca758a238fc779121e2655dcf7",
+      "bytes": 1571,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n3-r3-attempt-001/independent-verification-001.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r1-attempt-001/CERTIFICATE.json",
+      "sha256": "ff4a149bf8628da838e3b354a6e3dbe00a666cba95d540c3824149fbe7735e24",
+      "bytes": 16202,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r1-attempt-001/CERTIFICATE.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r1-attempt-001/INPUTS.json",
+      "sha256": "034d93f83c063ab90a8fbda90c2a550ccbc9e19ca3653785f3eb225097427304",
+      "bytes": 553,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r1-attempt-001/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r1-attempt-001/NUMERICAL.json",
+      "sha256": "878c538b7f6aee065dcbadb2582159ee208141ae5e6fcee73bf56b613cbf2e0b",
+      "bytes": 34075,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r1-attempt-001/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r1-attempt-001/RESULT.json",
+      "sha256": "3e8c49d5b00689a14aa60d4314b810de5237922ef04c7b9dd2720fb93b7e992a",
+      "bytes": 753,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r1-attempt-001/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r1-attempt-001/independent-verification-001.json",
+      "sha256": "dea18bcd75fcb5acd75e6fc71ae3b793569930d370ab7995b61f1a24d8c668cf",
+      "bytes": 1599,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r1-attempt-001/independent-verification-001.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r2-attempt-001/CERTIFICATE.json",
+      "sha256": "80cfaea3c6c9dca1dc4b7c28522d6834be70c368b59525bf4de66ae4d1805875",
+      "bytes": 74388,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r2-attempt-001/CERTIFICATE.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r2-attempt-001/INPUTS.json",
+      "sha256": "5d8c5fa3ffe5a38a543df77e80462335833ac36193ce3fafc7ccbc83cb84f529",
+      "bytes": 553,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r2-attempt-001/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r2-attempt-001/NUMERICAL.json",
+      "sha256": "82a434bc219636cc0b7d1656f171aa506ded14e97ce6913c08ded0d5c8177aaa",
+      "bytes": 42473,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r2-attempt-001/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r2-attempt-001/RESULT.json",
+      "sha256": "d323f4fa348f972174db1cff209b39e0cffb1d35823ef448265cb0b90437aed5",
+      "bytes": 854,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r2-attempt-001/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n4-r2-attempt-001/independent-verification-001.json",
+      "sha256": "7aae56247299fb72f9a5cd0af914ebfbebbbb7aa7a1ccab0523803567ed526e4",
+      "bytes": 1702,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n4-r2-attempt-001/independent-verification-001.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n5-r2-attempt-001/CERTIFICATE.json",
+      "sha256": "3c91320963e9f1a814de7e31d64df8ee0d45541d686c09a0bf25072b5d4d85ed",
+      "bytes": 145461,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n5-r2-attempt-001/CERTIFICATE.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n5-r2-attempt-001/INPUTS.json",
+      "sha256": "2715c9c6649664b4516128ecac19c84bc6d31d549ae086b34a0b5d6dac566301",
+      "bytes": 553,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n5-r2-attempt-001/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n5-r2-attempt-001/NUMERICAL.json",
+      "sha256": "900143ff003f93c435f6116118cfc01c66ac682325c75d23c0d7e9237ce25615",
+      "bytes": 218729,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n5-r2-attempt-001/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n5-r2-attempt-001/RESULT.json",
+      "sha256": "fbf93909ae17fae0f516fff678c18e653a8cdeccc9af7b70d169095f7a0dc089",
+      "bytes": 920,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n5-r2-attempt-001/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n5-r2-attempt-001/independent-verification-001.json",
+      "sha256": "ac3c9f614cb72e5976609e470bc3fb3e7ce0e098e1a862535785373e17c565a9",
+      "bytes": 1782,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n5-r2-attempt-001/independent-verification-001.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-001/INPUTS.json",
+      "sha256": "836df5183e15af88945ecf42f2147948511a7d80bd90a9037a08f40eacc20666",
+      "bytes": 553,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-001/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-001/NUMERICAL.json",
+      "sha256": "4d84c9f8917e1a3017eaeb4a42e3aceba160c808a042dfff2b8db50f46fb1083",
+      "bytes": 1256869,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-001/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-001/RESULT.json",
+      "sha256": "1a8577a7c6ab2cea1d323992895481be1c21fdf73c7b2a4bbab7c32ce5f2f5fd",
+      "bytes": 571,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-001/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-002/CERTIFICATE.json",
+      "sha256": "3c1ccdd2d67ac27ebec71f9f45e263b0878534d8eabaf48a67f741f5857dad0b",
+      "bytes": 211738,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-002/CERTIFICATE.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-002/INPUTS.json",
+      "sha256": "c20f819001ef67fcf32cf75b9c7b88f16e8fcf504cc80a5fceda0404d1f79ee1",
+      "bytes": 611,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-002/INPUTS.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-002/NUMERICAL.json",
+      "sha256": "524caaa90ee3168143b750491868abe194f6fa144f6571e4787fda9507b63a59",
+      "bytes": 1266184,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-002/NUMERICAL.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-002/RESULT.json",
+      "sha256": "a06115aaabdd44bdae36e68bcd01c6402f5adca1c0e453925c7cd021e9d80964",
+      "bytes": 929,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-002/RESULT.json"
+    },
+    {
+      "path": "research/window-locality/evidence/n6-r2-attempt-002/independent-verification-001.json",
+      "sha256": "7130bcb41afee2fbe01c098148e8f330cdbab910ab5c480ba72a209aee00f7cc",
+      "bytes": 1801,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/evidence/n6-r2-attempt-002/independent-verification-001.json"
+    },
+    {
+      "path": "research/window-locality/provenance/window_lp-v1.py",
+      "sha256": "1381acae310526d9023a4270774adeecd945c6129b638ed86b1cff858f207902",
+      "bytes": 9823,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/provenance/window_lp-v1.py"
+    },
+    {
+      "path": "research/window-locality/requirements.txt",
+      "sha256": "98645c6893df4addc3db1fc26d728da911b666e0666e175e191520d8e03107f1",
+      "bytes": 89,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/requirements.txt"
+    },
+    {
+      "path": "research/window-locality/scripts/verify_certificate.py",
+      "sha256": "2f19e689f70e6e116ba43fb4d5bc6a40ad40a5f75831c68f9caf2d93e766f782",
+      "bytes": 13714,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/scripts/verify_certificate.py"
+    },
+    {
+      "path": "research/window-locality/scripts/window_lp.py",
+      "sha256": "b0f4bc40868f48053544c89d6fb578cf740c67247eaf5dc2109c940d4409b6a4",
+      "bytes": 9905,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/scripts/window_lp.py"
+    },
+    {
+      "path": "research/window-locality/theory/CONSTRUCTION_NOTES.md",
+      "sha256": "407ea37f01fdc4592873849d5fc7183f5e01cdeab3b388f4fbd6d74f5cf44625",
+      "bytes": 5331,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/CONSTRUCTION_NOTES.md"
+    },
+    {
+      "path": "research/window-locality/theory/GAUGE_AND_FLUX.md",
+      "sha256": "14cdee45bc93d981648dd0107e2a2e56e1dbd93727a9935e557eec5d45d21c46",
+      "bytes": 7833,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/GAUGE_AND_FLUX.md"
+    },
+    {
+      "path": "research/window-locality/theory/PROFILE_SYMMETRY.md",
+      "sha256": "6e54b356b0432cb23b01e554cd8d54028d6750048ffdce768a57b8969b170e4a",
+      "bytes": 4714,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/PROFILE_SYMMETRY.md"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/DUAL_EXACT.json",
+      "sha256": "48e04688dd89a800a035a382344665c1525e03b9db9598a9bfdc3b2301da7ae2",
+      "bytes": 205732,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/DUAL_EXACT.json"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/DUAL_FLOAT.json",
+      "sha256": "1e05c777dc96ea29dbfcddf1ac83de5997401cf5e045fe94a37020da8a5885f5",
+      "bytes": 154825,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/DUAL_FLOAT.json"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/PROVENANCE.json",
+      "sha256": "08d1fecb0712a44e635273a45e233aaa675afcad7deb74e46188eac03be56dc3",
+      "bytes": 2016,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/PROVENANCE.json"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/RAW_VERIFICATION.json",
+      "sha256": "23a1cd2a8ebe1c2ab54aae512e4da17ea01a6cab5660c97b7aa78e5a6e398716",
+      "bytes": 570,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/RAW_VERIFICATION.json"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/SOLVER_SUMMARY.json",
+      "sha256": "296abd6605bca0f79810a83243b9947bf17c03e29affeaed4dd8ecc050881ca8",
+      "bytes": 415,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/SOLVER_SUMMARY.json"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/generate_gate.py",
+      "sha256": "b6457fe85882bf0362771e7095a37f9a608d27c0ab73296f970d8d89e240f860",
+      "bytes": 2647,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/generate_gate.py"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/reconstruct_dual.py",
+      "sha256": "1a6dfc11416c81fe039c8b8bb1c28d8b8da8f87e0193ad68b788a2672c2ade74",
+      "bytes": 1585,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/reconstruct_dual.py"
+    },
+    {
+      "path": "research/window-locality/theory/homogeneous-width2/verify_raw_dual.py",
+      "sha256": "dae68c3cd0c7a888b517bce47072cd46e4e6aa5a66b103e7082c9e9a3742311d",
+      "bytes": 4732,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/research/window-locality/theory/homogeneous-width2/verify_raw_dual.py"
+    },
+    {
+      "path": "review/CONTACTS.md",
+      "sha256": "0600f7a56a83a29921812525423bd3e3dc6678781e8c9445af727b3e0821756b",
+      "bytes": 4222,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/review/CONTACTS.md"
+    },
+    {
+      "path": "review/OUTREACH_DRAFTS.md",
+      "sha256": "4584b7d56b47baa87ea150b6a1822beae2b8b453b0f710045734c6f9b85e5fdb",
+      "bytes": 4653,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/review/OUTREACH_DRAFTS.md"
+    },
+    {
+      "path": "review/README.md",
+      "sha256": "138ea144e11472fdb982507ec0a2d28ba04931759fdba5012c47b283df5d367a",
+      "bytes": 5029,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/review/README.md"
+    },
+    {
+      "path": "review/REVIEW_PACKET.md",
+      "sha256": "bbb851cd9ddfbceb48ee83ae14220e81b1022c22fb6ee185c8e2fd67ce915969",
+      "bytes": 15217,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/review/REVIEW_PACKET.md"
+    },
+    {
+      "path": "review/bundle.py",
+      "sha256": "e4525e2159a1139eb3450987a6af0b4eb4b2c43c7b582d05140c30a09baaa7dd",
+      "bytes": 12335,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/removed/review/bundle.py"
+    },
+    {
+      "path": "README.md",
+      "sha256": "62cce1e68828bc95f68b2215228ccc1043fcaad8c1b1131b669fa824c9e501e7",
+      "bytes": 16656,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/original-documents/README.md"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "424c63fc361a86324c0c4bcc09b4785654a9c61ec10172ebfe7dbcc79eee4efd",
+      "bytes": 2371,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/original-documents/AGENTS.md"
+    },
+    {
+      "path": "Makefile",
+      "sha256": "0240a3122a308162761eba99d8553da11669942b04ef6f28437fb1305f115faf",
+      "bytes": 264,
+      "archive_path": "/Users/gajaka/projects/mt-chain-linear-archive/cleanup-20261106T121933Z/original-documents/Makefile"
+    }
+  ]
+}

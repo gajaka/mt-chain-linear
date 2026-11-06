@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "n": 2,
+  "policy": "static",
+  "p": "11/12",
+  "state_order": "thresholds_lex_then_labels_lex;0=strong;1=weak",
+  "h": [
+    "0",
+    "0",
+    "48/47",
+    "23924/10293",
+    "0",
+    "96/73",
+    "48/47",
+    "23924/10293",
+    "0",
+    "96/73",
+    "0",
+    "316/219"
+  ],
+  "expected": "367/876",
+  "protocol_sha256": "317b4f51af8ffe8399bcc12433ef8a916d7e884f981509353ac42ae23cc9603b"
+}
