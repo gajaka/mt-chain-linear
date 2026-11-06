@@ -1,6 +1,6 @@
 .PHONY: check core generic certificates windows biased provenance barrier
 
-# Original generic theory and the concrete chain have separate build scopes.
+# Generic MT theory and the concrete chain have separate build scopes.
 check: generic certificates windows biased provenance barrier
 
 core:

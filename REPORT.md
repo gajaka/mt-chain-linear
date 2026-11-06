@@ -1,113 +1,128 @@
-# Standalone extraction and module migration verification report
+# Finite MT chain: process and linear expected cost
 
-The existing initialized MT-chain analysis builds and passes a fresh independent
-proof replay in this separate project. No PPGraph library or old project build
-path is needed. This extraction adds packaging and verification evidence; it
-adds no new mathematical runtime theorem or claim of novelty.
-
-## Source preservation and module migration
-
-- 30 modules form the exact local import closure of `LinearAsymptotics`.
-- `Accounting` and `Barrier` are two additional paper supplements.
-- All 32 original extraction copies are preserved with their original SHA-256 values.
-- The adapted `TightnessResults` removes the PPG import and three PPG corollaries.
-- The adapted audit checks nine raw-process roots instead of twelve mixed roots.
-- The source comparison checked 81 original Lean sources/configurations unchanged.
-
-[SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) remains the unchanged extraction
-record. The pre-migration sources, tooling and aggregate are preserved under
-`provenance/module-migration/before/`; the earlier evidence directories are
-untouched. [MODULE_MIGRATION.json](MODULE_MIGRATION.json) records current hashes
-and the exact permitted transformations. The source validator checks both stages.
-
-All 33 mathematical modules now use `module`, `public import` and
-`@[expose] public section`. Their mathematical source bodies are unchanged.
-The separate audit module also uses the module system, with an explicit
-full-private inspection environment. This keeps every transitive theorem body
-available for the original strict axiom traversal. Its module inventory includes
-both the quotation environment and that inspection environment.
-
-`scripts/verify.py` writes `evidence/migration-source-verification.json` by default.
-It does not overwrite either original source receipt. The package explicitly
-requires the module system; no warning category or linter is disabled.
-
-Five [negative controls](evidence/module-migration-validator-controls.json)
-were rejected in temporary copies, including a changed mathematical body with
-an updated hash, an injected import and substituted or incomplete inventories.
-The controls left all 85 bound current/archive/tooling inputs unchanged.
-
-## Fresh checks
-
-| Check | Result |
-| --- | --- |
-| Clean `lake --wfail build` | PASS, 34 local modules, zero warnings/errors, 36.954 seconds |
-| Actual theorem types, binders and proof bodies | PASS, nine roots |
-| Raw transitive kernel closure | 17,247 declarations; only three standard axioms |
-| Fresh Nanoda replay | PASS, 17,707 expanded declarations |
-| Loaded module boundary | 5,534 modules; no PPG imports or old local object paths |
-
-The allowed axioms are `propext`, `Classical.choice` and `Quot.sound`.
-Nanoda checked the nine selected roots and their exported proof dependencies,
-not every assertion in all 34 local modules. The raw-kernel and expanded-export
-inventories use different counting conventions and are recorded separately.
-The checker itself took about 3.29 seconds; the complete independent pipeline,
-including audit, export and file-identity checks, took about 35.17 seconds.
-External dependency caches were reused. No old project `.olean` was copied.
-
-The [root comparison](evidence/module-migration-root-comparison.json) confirms
-identical type ASTs and axiom lists for all nine selected theorems. Two compiled
-proof terms now reference compiler-generated helpers with private names. Their
-source proof bodies are unchanged; the new compiled terms and dependencies
-were checked afresh. The declaration counts above describe this new export,
-not the smaller historical one.
-
-## Earlier failures and their fixes
-
-The original clean build emitted 23 warnings because legacy proof sources
-imported module-system Mathlib modules. The initial `--wfail` build rejected
-them. The original failed and successful builds remain in attempts 001-003.
-Build 004 verifies the 33 migrated mathematical modules with `--wfail`, zero
-warnings and zero errors.
-
-The first audit migration probe changed only its header. It correctly failed:
-transitive theorem bodies hidden by module visibility appeared as axioms.
-Loading full private proof data resolves that visibility problem without
-enlarging the axiom allowlist. A second probe reached the old 4 GiB memory cap;
-the same audit passed with an 8 GiB cap. These diagnostic sources, commands
-and logs are retained in `evidence/module-audit-diagnostics/`.
-
-Independent attempt 001 stopped before any prover/exporter/checker: the runner
-incorrectly demanded a library cache for the tool-only Cli dependency. Its
-failure and original runner are retained. The correction validates package
-locations and requires every actually imported artifact. Fresh attempt 002
-then passed; it did not overwrite attempt 001. Attempt 002 is historical after
-the module migration: its original active-source bindings intentionally no
-longer match the changed working tree. Current verification uses attempt 003,
-whose saved-evidence check also passes.
-
-[VERIFICATION.json](evidence/VERIFICATION.json) binds the build, source, audit,
-module inventory and checker receipts. [TOOLING.md](TOOLING.md) explains the
-external tools and the recorded resource-only Nanoda stack-size patch.
-Raw proof exports and compiled caches remain local and are excluded from Git.
-Saved-evidence verification requires those artifacts and their recorded paths;
-a new checkout should build and create its own unused verification attempt.
-
-## Meaning of the result
-
-For every `n >= 2`, the registered product-initialized, least-failed,
-full-local-redraw process satisfies:
+This report specifies the concrete process and its expected-cost theorem.
+For every n>=2, under independent uniform product initialization,
 
 ```text
-n/18 <= E[T_n] <= 1054*n
-E[T_n] = Theta(n)
-E[I_n] <= 2108*n
+(5*n-6)/36 <= E[T_n],
+n/18 <= E[T_n] <= 1054*n,
+E[T_n] = Theta(n).
 ```
 
-Initialization is excluded, and these are ideal resampling-operation counts.
-The lower/Theta proof retains its current use of quadratic finiteness. The
-public profile-subalgebra, semantic-scope and certified-graph modules stay in
-the original project; this package does not claim their theorems were extracted.
-The Shearer classification in the README is an exact arithmetic comparison,
-not a new Lean/Nanoda theorem from this extraction. Scientific novelty, a
-first-MT-formalization claim and automatic transfer to practical repair remain
-unestablished. The old project and its historical receipts were not edited.
+T_n counts redraw operations, excluding initialization. The bound does not
+charge for scanning to find a failure, individual random bits, or compiler
+execution. An operation returning the previous coordinate values still costs
+one. No wall-clock speedup or scientific priority is claimed.
+
+## Process
+
+There are n bridges with mutable thresholds X_1,...,X_(n-1) in {0,1,2},
+fixed endpoints X_0=2 and X_n=0, and labels R_0,...,R_(n-1) in {0,1,2,3}.
+Bridge i passes exactly when
+
+```text
+X_i = X_(i+1)       if R_i = 1 (weak),
+X_(i+1) <= X_i      otherwise (three strong labels).
+```
+
+All mutable thresholds and labels start independently and uniformly. At an
+active state, choose the least failed index i and independently redraw the
+mutable coordinates among X_i, X_(i+1), R_i. Other coordinates remain fixed.
+The formal operation averages 36 uniform raw triples; a fixed-endpoint draw
+is ignored. Good configurations stop at cost zero.
+
+The expected total work is an extended nonnegative expectation, defined as
+the supremum of finite-horizon accumulated active-state costs. Its finiteness
+is a proved conclusion, not a premise.
+
+## Why the cost is linear
+
+The lower bound uses the exact initial first moment
+
+```text
+E[initial failed bridges] = (5*n-6)/12.
+```
+
+One operation can remove at most three current failures: the selected bridge
+and its two neighbors. Therefore `E[T_n] >= (5*n-6)/36 >= n/18` for n>=2.
+The current lower-bound proof uses the established quadratic finiteness result
+before taking a vanishing-tail limit.
+
+The upper bound uses a retained-prefix observation and the potential
+
+```text
+V = 1000*(n-F) + B,
+B = 35*d + 2*r + 33*[r>0].
+```
+
+F is a permanent barrier height, d a retained distance, and r a trailing
+zero-run length. A barrier combines a passing prefix, incoming threshold 2,
+and a strong label. Their exact definitions are in
+[Features.lean](formal/mt/core/Features.lean).
+
+The proof establishes the conditional completion law of unretained coordinates
+for every relevant positive-probability observation history, including rollback.
+Under this law, regular steps pay at least one unit of potential. Exceptional
+steps have expected barrier advance at least 1/4 and local growth at most 243;
+the barrier term pays `1000/4-243=7`. The observed potential is nonnegative,
+zero at termination, and at most 1054*n. Kernel transport and the infinite-
+horizon supremum give the linear upper bound.
+
+This is completion-averaged drift under a proved conditional law, not raw
+pointwise unit drift for every arbitrarily fixed full suffix.
+
+An invalidation is a passing bridge becoming failing in one operation.
+Only two neighbors can be newly invalidated, hence `E[I_n] <= 2108*n`.
+Repeated episodes count separately; no matching lower bound is asserted.
+
+## Main declarations
+
+The theorem namespace is `MTChainFormal.Tightness`.
+
+| Source | Principal content |
+|---|---|
+| [Chain.lean](formal/mt/core/Chain.lean), [ChainKernel.lean](formal/mt/core/ChainKernel.lean) | States, local update, least-failed kernel, initialization and counted work |
+| [HistoryFiltering.lean](formal/mt/core/HistoryFiltering.lean) | Conditional completion law through observation histories |
+| [LowerBound.lean](formal/mt/tightness/LowerBound.lean) | `expected_steps_ge_linear_refined`, `expected_steps_ge_linear` |
+| [LinearPotential.lean](formal/mt/tightness/LinearPotential.lean) | `expected_steps_le_linear`, `expected_invalidations_le_linear` |
+| [LinearAsymptotics.lean](formal/mt/tightness/LinearAsymptotics.lean) | `expected_steps_isTheta_linear` |
+| [TightnessResults.lean](formal/mt/tightness/TightnessResults.lean) | `linear_work_bounds` and exclusion of an eventual positive quadratic lower bound |
+
+The general MT framework in [library/](library/README.md) has its own stated
+hypotheses. The chain theorem is proved through its explicit finite kernel;
+it is not asserted as a new automatic instantiation of every framework result.
+
+## Recorded verification
+
+The [aggregate receipt](evidence/VERIFICATION.json) records:
+
+| Check | Result |
+|---|---|
+| [Strict build](evidence/lean-build-005/RESULT.json) | PASS, 34 local modules, zero warnings and errors |
+| Selected theorem types, binders and actual proof dependencies | PASS, nine roots |
+| Raw transitive kernel closure | 17,247 declarations |
+| [Independent Nanoda replay](evidence/attempt-003/RESULT.json) | PASS, 17,707 expanded declarations |
+| Permitted transitive axioms | `propext`, `Classical.choice`, `Quot.sound` |
+
+The raw-kernel and expanded-export inventories use different counting
+conventions. Nanoda covers the nine selected roots and their proof closure,
+not every assertion in every source module. These recorded checks are not a
+claim that a fresh second-kernel run occurs on every build. Source checks
+and [rejected validation controls](evidence/module-migration-validator-controls.json)
+support the identity of the audited inputs.
+
+Pinned tools are Lean 4.35.0 and Mathlib
+`56a005855ea17e0b0958f73ec801ae140b0a1679`. Run `make core` for the strict chain
+build, or `make check` for the project's mathematical checks. [TOOLING.md](TOOLING.md)
+describes independent replay, exact tool identities and resource settings.
+
+## Interpretation and literature boundary
+
+For the canonical dependency path, endpoint failure marginals are 1/6 and
+interior marginals are 5/12. Exact Shearer-polynomial calculations classify
+n=2,3 inside the region, n=4 on the boundary, and n>=5 outside. The separate
+[HLS Theorem 1.6 comparison](research/certificate-existence/LITERATURE.md) is
+also a written exact-arithmetic argument. Neither comparison is a separately
+Lean/Nanoda-checked theorem here, and neither excludes all existing MT criteria.
+Whether the linear bound or the restricted-certificate separation follows
+from prior work remains a question for independent mathematical review.

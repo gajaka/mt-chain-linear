@@ -1,65 +1,99 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source_project": "ppg-lean",
   "source_commit": "60151677e58704ce856c05a572904d681fd959f6",
-  "source_modules": 63,
+  "source_modules": 208,
   "moser_tardos_modules": 44,
+  "hls_modules": 63,
+  "shearer_modules": 16,
   "roots": [
-    "PPGraph.MoserTardos.Bounds.ConstantLog",
-    "PPGraph.MoserTardos.Bounds.Convergence",
-    "PPGraph.MoserTardos.Bounds.Drift",
-    "PPGraph.MoserTardos.Bounds.DriftCost",
-    "PPGraph.MoserTardos.Bounds.Expectation",
-    "PPGraph.MoserTardos.Bounds.OccurrenceExpectation",
-    "PPGraph.MoserTardos.Bounds.Pegden",
-    "PPGraph.MoserTardos.Bounds.Termination",
-    "PPGraph.MoserTardos.Bounds.WeightSum",
-    "PPGraph.MoserTardos.Counting.Counting",
-    "PPGraph.MoserTardos.Counting.OccurrenceCounting",
-    "PPGraph.MoserTardos.Counting.ResamplingCount",
-    "PPGraph.MoserTardos.Probability.Intersection",
-    "PPGraph.MoserTardos.Probability.OccurrenceProbability",
-    "PPGraph.MoserTardos.Probability.PastIndependence",
-    "PPGraph.MoserTardos.Probability.Probability",
-    "PPGraph.MoserTardos.Probability.ProbabilityGeneral",
-    "PPGraph.MoserTardos.Probability.RandomInitExpectation",
-    "PPGraph.MoserTardos.Process.Basic",
-    "PPGraph.MoserTardos.Process.FullResampling",
-    "PPGraph.MoserTardos.Process.LogSpace",
-    "PPGraph.MoserTardos.Process.Process",
-    "PPGraph.MoserTardos.Process.RandomInitialization",
-    "PPGraph.MoserTardos.Process.RandomTrajectory",
-    "PPGraph.MoserTardos.Witness.Canonical",
-    "PPGraph.MoserTardos.Witness.Check",
-    "PPGraph.MoserTardos.Witness.CheckBirth",
-    "PPGraph.MoserTardos.Witness.CheckBridge",
-    "PPGraph.MoserTardos.Witness.CheckInvariance",
-    "PPGraph.MoserTardos.Witness.CheckOrder",
-    "PPGraph.MoserTardos.Witness.CheckShape",
-    "PPGraph.MoserTardos.Witness.Correspondence",
-    "PPGraph.MoserTardos.Witness.Growing",
-    "PPGraph.MoserTardos.Witness.Injectivity",
-    "PPGraph.MoserTardos.Witness.InjectivityBridge",
-    "PPGraph.MoserTardos.Witness.LabelsAtDepthBridge",
-    "PPGraph.MoserTardos.Witness.Occurrence",
-    "PPGraph.MoserTardos.Witness.RealTree",
-    "PPGraph.MoserTardos.Witness.ToGrowingTreeCheckBridge",
-    "PPGraph.MoserTardos.Witness.WTreeCountable",
-    "PPGraph.MoserTardos.Witness.WTreeToGrowingTree",
-    "PPGraph.MoserTardos.Witness.Weight",
-    "PPGraph.MoserTardos.Witness.Witness",
-    "PPGraph.MoserTardos.Witness.WitnessFamily",
-    "PPGraph.Repair.Hazards",
-    "PPGraph.Repair.SemanticHazards",
-    "PPGraph.Repair.ObservableAlgebra",
-    "PPGraph.Repair.ObservableKernel"
+    "PPGraph",
+    "PPGraph.All"
   ],
   "files": [
+    {
+      "module": "PPGraph",
+      "path": "PPGraph.lean",
+      "sha256": "41760bb8a3187d98b8fdaaf2329d5296d753d161c6dbbdf979e98606908d3e96",
+      "bytes": 118
+    },
+    {
+      "module": "PPGraph.All",
+      "path": "PPGraph/All.lean",
+      "sha256": "2a9196bbb61ac1d22570cbe5467fac5adb912f75428e216991096bc071027656",
+      "bytes": 10166
+    },
+    {
+      "module": "PPGraph.Certification.AssessmentBridge",
+      "path": "PPGraph/Certification/AssessmentBridge.lean",
+      "sha256": "f6e7dcc6b3e0f77eaa0341722b8ac0fd61fe9ad7e532197284cc20a053404d81",
+      "bytes": 9168
+    },
+    {
+      "module": "PPGraph.Certification.Blocking",
+      "path": "PPGraph/Certification/Blocking.lean",
+      "sha256": "e9c28d8fe54a98b92bfc936e8d3c600caf139913dd9b0ccd7e8d964c9fd83bd4",
+      "bytes": 4674
+    },
+    {
+      "module": "PPGraph.Certification.EquivBridge",
+      "path": "PPGraph/Certification/EquivBridge.lean",
+      "sha256": "27289fc50118a754b9dceb16c6995fa9a33f3f188fbd4aca347fdd55b4383e94",
+      "bytes": 5150
+    },
+    {
+      "module": "PPGraph.Certification.Parametric",
+      "path": "PPGraph/Certification/Parametric.lean",
+      "sha256": "24b4e7053eeb6d84ce027cfc6b51f352a2d9ee6355d6dc0289414964640cbaea",
+      "bytes": 17355
+    },
+    {
+      "module": "PPGraph.Certification.ParametricQuotient",
+      "path": "PPGraph/Certification/ParametricQuotient.lean",
+      "sha256": "36ce8a8498deef6db620c7377d765939058eee7004f439d017f3ab690c212dca",
+      "bytes": 18567
+    },
+    {
+      "module": "PPGraph.Certification.QuotientBridge",
+      "path": "PPGraph/Certification/QuotientBridge.lean",
+      "sha256": "5624ecb230cf7ba52dedae3252a009f3f199b5f9d2483a6f813dc2c8c00f675c",
+      "bytes": 7776
+    },
+    {
+      "module": "PPGraph.Certification.Selection",
+      "path": "PPGraph/Certification/Selection.lean",
+      "sha256": "79dbd06d394d452ff5abdba22fbaa6ff21f6b8b746471be04225fa3bac1ce487",
+      "bytes": 20561
+    },
+    {
+      "module": "PPGraph.Certification.SelfAssessment",
+      "path": "PPGraph/Certification/SelfAssessment.lean",
+      "sha256": "b1a65ec27b9175e85fc87c4e3c4a31d3985e016117b944c4f548e551951b2a1f",
+      "bytes": 12061
+    },
+    {
+      "module": "PPGraph.Core.Categorical",
+      "path": "PPGraph/Core/Categorical.lean",
+      "sha256": "08bd6c7f17ee3c7804403e1b3dea5e8f1c9031efe34323b662e6e036ca356090",
+      "bytes": 9691
+    },
     {
       "module": "PPGraph.Core.Graph",
       "path": "PPGraph/Core/Graph.lean",
       "sha256": "6e4d3ec172faa60aedb75a2c47451494e83284d38f37e560f86e319a0c295718",
       "bytes": 19277
+    },
+    {
+      "module": "PPGraph.Core.Meta",
+      "path": "PPGraph/Core/Meta.lean",
+      "sha256": "eed194f4725f98e32f7bd808a21645946b425e9ad63273d566c39c6d63f46462",
+      "bytes": 11567
+    },
+    {
+      "module": "PPGraph.Core.RR",
+      "path": "PPGraph/Core/RR.lean",
+      "sha256": "35ee5b8a953048f5b06594930241d3b506c92304ffe58ee006b2f33ce112fc2d",
+      "bytes": 9205
     },
     {
       "module": "PPGraph.Core.Repair",
@@ -68,10 +102,112 @@
       "bytes": 7234
     },
     {
+      "module": "PPGraph.Decision.Abstraction",
+      "path": "PPGraph/Decision/Abstraction.lean",
+      "sha256": "8733e8df58b18a1bb43e25e9664d757c2145ab12bdd00545d75346d4a9b7576e",
+      "bytes": 15328
+    },
+    {
+      "module": "PPGraph.Decision.CertifiedDecision",
+      "path": "PPGraph/Decision/CertifiedDecision.lean",
+      "sha256": "d5e266d0d0f951cbca185be18f77180891f8a95a3bb78ad995a0dca60e218c42",
+      "bytes": 4997
+    },
+    {
+      "module": "PPGraph.Decision.CorrectionDuality",
+      "path": "PPGraph/Decision/CorrectionDuality.lean",
+      "sha256": "9c95f903ebe4a95bbe5b40e54f043407ab11b0123b1a8be52090f685ef984af1",
+      "bytes": 4001
+    },
+    {
+      "module": "PPGraph.Decision.FarkasCertificate",
+      "path": "PPGraph/Decision/FarkasCertificate.lean",
+      "sha256": "2786260ae4f187671ade4379d06f25dce17841e024d3f8dbdd7a31dda3b76133",
+      "bytes": 4279
+    },
+    {
+      "module": "PPGraph.Decision.FiniteCore",
+      "path": "PPGraph/Decision/FiniteCore.lean",
+      "sha256": "37e694b05591db27678f915005a801559666b5a2338451537d2b3cca436eca46",
+      "bytes": 1790
+    },
+    {
+      "module": "PPGraph.Decision.FiniteFeasibility",
+      "path": "PPGraph/Decision/FiniteFeasibility.lean",
+      "sha256": "e583eb1a7ee795c1c762669c943d9c7cdea7d85331e479dd33885c273671a2e4",
+      "bytes": 4745
+    },
+    {
+      "module": "PPGraph.Decision.Infeasibility",
+      "path": "PPGraph/Decision/Infeasibility.lean",
+      "sha256": "5e4d79bbb4408e35e5ab8eadfe00000b52d3bfbf0a7f944eacbb4d292e365c9f",
+      "bytes": 5936
+    },
+    {
+      "module": "PPGraph.Decision.InfeasibilityCounting",
+      "path": "PPGraph/Decision/InfeasibilityCounting.lean",
+      "sha256": "1db8beecca5cbc463889c1f1a17e31991d02c8cbeed9e8cc76b7d25fc523fa35",
+      "bytes": 4895
+    },
+    {
+      "module": "PPGraph.Decision.ReachabilityRefutation",
+      "path": "PPGraph/Decision/ReachabilityRefutation.lean",
+      "sha256": "768cdf05dce0e20a16129ea39dfc56a3d1ac92deb9f79fd973e7e478a36e5e85",
+      "bytes": 7747
+    },
+    {
+      "module": "PPGraph.Decision.RepairDecision",
+      "path": "PPGraph/Decision/RepairDecision.lean",
+      "sha256": "4f81c6f2cd63d5e04074fc1322a793f41babf663bc0c324980f971f69df1a8d1",
+      "bytes": 5214
+    },
+    {
+      "module": "PPGraph.Decision.Undecidability",
+      "path": "PPGraph/Decision/Undecidability.lean",
+      "sha256": "72d4663f3c6be5123c91caf7dc26d8accb8b9e81d233dfe8e5fecdbd39238dcf",
+      "bytes": 6894
+    },
+    {
+      "module": "PPGraph.Decision.UnsatisfiableCore",
+      "path": "PPGraph/Decision/UnsatisfiableCore.lean",
+      "sha256": "7abebec429626aa0143bf5a41bdf80c1f9fe64062248478119e86b6e9963780a",
+      "bytes": 5214
+    },
+    {
+      "module": "PPGraph.Dependency.Cost",
+      "path": "PPGraph/Dependency/Cost.lean",
+      "sha256": "9e130926674b2676773f4eadf072cada28e575eb399946935c34530ee645ab32",
+      "bytes": 10266
+    },
+    {
+      "module": "PPGraph.Dependency.Count",
+      "path": "PPGraph/Dependency/Count.lean",
+      "sha256": "14f98526bb03c7c143388655b332eecd1711fa50d004d8cdaa0fe6a037cf710a",
+      "bytes": 6121
+    },
+    {
       "module": "PPGraph.Dependency.Decomposition",
       "path": "PPGraph/Dependency/Decomposition.lean",
       "sha256": "209d90ab9fa7e4e00b5e4fc2e30d27a8c296e8eb6eb02365d30b0843da26eb48",
       "bytes": 16768
+    },
+    {
+      "module": "PPGraph.Dependency.Laplacian",
+      "path": "PPGraph/Dependency/Laplacian.lean",
+      "sha256": "aa4c14d385984ff94a08622646e603b13e78bfaf3f26c7afde39627ec99cc8ea",
+      "bytes": 8446
+    },
+    {
+      "module": "PPGraph.Dependency.Matrix",
+      "path": "PPGraph/Dependency/Matrix.lean",
+      "sha256": "57c98604121670bd7990891a3e9c2ae877bce2644c2eead6d7980f1b350fba21",
+      "bytes": 3750
+    },
+    {
+      "module": "PPGraph.Dependency.Partition",
+      "path": "PPGraph/Dependency/Partition.lean",
+      "sha256": "60db8e06852276779b98898f12d104246e43904003469da7df1568a9ed0b71e7",
+      "bytes": 2515
     },
     {
       "module": "PPGraph.Dependency.Probabilistic",
@@ -104,6 +240,12 @@
       "bytes": 10768
     },
     {
+      "module": "PPGraph.Finite.Lumping.Update",
+      "path": "PPGraph/Finite/Lumping/Update.lean",
+      "sha256": "72a338f0f2b6c52ff89a69a602d539b80d7b6884ca13e72a92956547f300acaa",
+      "bytes": 18145
+    },
+    {
       "module": "PPGraph.Finite.Potential.Basic",
       "path": "PPGraph/Finite/Potential/Basic.lean",
       "sha256": "5c3777831b86ededeba8832e464e70e5abbf960da8aa7ca557a876298b41948c",
@@ -134,16 +276,574 @@
       "bytes": 2534
     },
     {
+      "module": "PPGraph.Finite.Resampling.Basic",
+      "path": "PPGraph/Finite/Resampling/Basic.lean",
+      "sha256": "ed9eb61837dc193c3ac3f0944fe073c002e3764cf818f267c2cfe456d2422950",
+      "bytes": 17453
+    },
+    {
+      "module": "PPGraph.Finite.Resampling.Table",
+      "path": "PPGraph/Finite/Resampling/Table.lean",
+      "sha256": "cdc1cb61b694d323d15d68a92992e30abd1f9f12a06dfa168e4ce005a86bb35f",
+      "bytes": 12367
+    },
+    {
+      "module": "PPGraph.Finite.Resampling.TableLaw",
+      "path": "PPGraph/Finite/Resampling/TableLaw.lean",
+      "sha256": "751cd426bf0ab60a24b7fddf890ba09ae9c431f907814ee21988ffed625facb0",
+      "bytes": 8918
+    },
+    {
+      "module": "PPGraph.Finite.Update.Basic",
+      "path": "PPGraph/Finite/Update/Basic.lean",
+      "sha256": "c01f382ac4cef5952fb499b13acca7cd3a53c1c844c31049e7c698bb896c033c",
+      "bytes": 10297
+    },
+    {
+      "module": "PPGraph.Finite.Update.IID",
+      "path": "PPGraph/Finite/Update/IID.lean",
+      "sha256": "8d742547cbdbecb9d2b129c6bf3e45f6cd50e28ddb7f1b3670cdb6b5f11cf0e5",
+      "bytes": 8724
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.AugmentedExistence",
+      "path": "PPGraph/HLS/Bounds/AugmentedExistence.lean",
+      "sha256": "a09e31e465366f44df9358faeb34bcf545feccf0c92d3be1e02508d4707fc916",
+      "bytes": 4624
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.ChoiceSum",
+      "path": "PPGraph/HLS/Bounds/ChoiceSum.lean",
+      "sha256": "2178945220d0e687e2642c3f4ea812dcc94507d7a531274c465f79f43d8ed1b9",
+      "bytes": 4906
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.CoinSaving",
+      "path": "PPGraph/HLS/Bounds/CoinSaving.lean",
+      "sha256": "1141d51e99c9a728d73632dd23a1b98a2abe1cff8dcfc898af2531b08c8592f2",
+      "bytes": 6239
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.DecoratedBudget",
+      "path": "PPGraph/HLS/Bounds/DecoratedBudget.lean",
+      "sha256": "7985bdb3aedae05eb7836e9767058cadac107b10479e3fda91f46f6150bc8d92",
+      "bytes": 4014
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.ExpansionWeight",
+      "path": "PPGraph/HLS/Bounds/ExpansionWeight.lean",
+      "sha256": "50baf05c7ab45f682c6d7169897bbb9268cb77bf32dee782fdf88b2334856b7d",
+      "bytes": 4435
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.Expectation",
+      "path": "PPGraph/HLS/Bounds/Expectation.lean",
+      "sha256": "e6b4a233ffa4ff88f8dd097c8ac9114d18b7db6ba71d53b392e0e22074c554da",
+      "bytes": 8815
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.OrdinalOccurrence",
+      "path": "PPGraph/HLS/Bounds/OrdinalOccurrence.lean",
+      "sha256": "31c077bf132cd941b707629c162bcdfcf97c384bc76360fd3e1e056ea987dc06",
+      "bytes": 5613
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.ProductDiscount",
+      "path": "PPGraph/HLS/Bounds/ProductDiscount.lean",
+      "sha256": "dd972920a27cf87d70c0e8b70cf22ae7e0ba758fde1389e120ebb067d66340ca",
+      "bytes": 5904
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.RefinedBudget",
+      "path": "PPGraph/HLS/Bounds/RefinedBudget.lean",
+      "sha256": "38f5e260754be86de11e80a9c60738ead53e10343478b3061a8e8ec839edee5f",
+      "bytes": 4934
+    },
+    {
+      "module": "PPGraph.HLS.Bounds.WitnessBudget",
+      "path": "PPGraph/HLS/Bounds/WitnessBudget.lean",
+      "sha256": "0032d6fc6bb04cbcb23cb3fad3e1e2b1c6e84f1fa1f749f49b93893d695bf588",
+      "bytes": 4527
+    },
+    {
+      "module": "PPGraph.HLS.DAG.CliqueRanks",
+      "path": "PPGraph/HLS/DAG/CliqueRanks.lean",
+      "sha256": "4b8126759fd79c3091e8b2d4d83efcdaf7cd84ae963455f5df56b9dabd62b750",
+      "bytes": 8289
+    },
+    {
+      "module": "PPGraph.HLS.DAG.ExpansionGraph",
+      "path": "PPGraph/HLS/DAG/ExpansionGraph.lean",
+      "sha256": "39b2c1aa7c81292c33f80ecf2ffaae04898c62753fe704a82b42ff93e0d5e103",
+      "bytes": 5964
+    },
+    {
+      "module": "PPGraph.HLS.DAG.ExpansionVertices",
+      "path": "PPGraph/HLS/DAG/ExpansionVertices.lean",
+      "sha256": "da855c3259b2e1f9d6e71d7af3ad18d5be8bb9c809dc7190ca31dcb3dd35a022",
+      "bytes": 5196
+    },
+    {
+      "module": "PPGraph.HLS.DAG.FiniteDAG",
+      "path": "PPGraph/HLS/DAG/FiniteDAG.lean",
+      "sha256": "3dd90d858b5c517658f9452f7cd281477fd64bcb7545586afd1de62ac556905d",
+      "bytes": 3763
+    },
+    {
+      "module": "PPGraph.HLS.DAG.Matching",
+      "path": "PPGraph/HLS/DAG/Matching.lean",
+      "sha256": "c1bd70f6d00c28fa29541f983cd3ee4e437e0c98f22d51bbca8eda44821c0660",
+      "bytes": 4501
+    },
+    {
+      "module": "PPGraph.HLS.DAG.MatchingArcUniqueness",
+      "path": "PPGraph/HLS/DAG/MatchingArcUniqueness.lean",
+      "sha256": "7e114a1d50434cb27630609f8a6b67cbf7a81a9444179f03b176bfa3b13bdac6",
+      "bytes": 1216
+    },
+    {
+      "module": "PPGraph.HLS.DAG.MatchingSelection",
+      "path": "PPGraph/HLS/DAG/MatchingSelection.lean",
+      "sha256": "eecb59c22965554f3c903ccb7fe10337b3b2d58c272ca3c5f6ff79dde20a5ed4",
+      "bytes": 10947
+    },
+    {
+      "module": "PPGraph.HLS.DAG.OrderedDAG",
+      "path": "PPGraph/HLS/DAG/OrderedDAG.lean",
+      "sha256": "30aa373f328add16f396546531b8def2e004aa1dc2dee75bbba0731ebb800da1",
+      "bytes": 5413
+    },
+    {
+      "module": "PPGraph.HLS.DAG.OrientationScore",
+      "path": "PPGraph/HLS/DAG/OrientationScore.lean",
+      "sha256": "6055f4232046e0fc35bc8237f0f1e837d3578745f27c0c17ad2e5107b9ab44fe",
+      "bytes": 4681
+    },
+    {
+      "module": "PPGraph.HLS.DAG.PairKeys",
+      "path": "PPGraph/HLS/DAG/PairKeys.lean",
+      "sha256": "36a25aeccc5bffd3cd0db075bd291910cf08972f18069ef8b6f49aa50b50b8ee",
+      "bytes": 2126
+    },
+    {
+      "module": "PPGraph.HLS.DAG.ParitySelection",
+      "path": "PPGraph/HLS/DAG/ParitySelection.lean",
+      "sha256": "ec325b036257a44abec8c721300188b35c52c56a4bb4f5d44536624c48e64893",
+      "bytes": 4707
+    },
+    {
+      "module": "PPGraph.HLS.DAG.RealDAG",
+      "path": "PPGraph/HLS/DAG/RealDAG.lean",
+      "sha256": "1d4b42d11b942ece4f405bf0eae183ed8b6d24470fc5b3db95394864b12d8546",
+      "bytes": 5395
+    },
+    {
+      "module": "PPGraph.HLS.DAG.RealDAGCounts",
+      "path": "PPGraph/HLS/DAG/RealDAGCounts.lean",
+      "sha256": "270b8b19aeed5cae0ac36a280af283ce35138320fbb5f8abb3d747f3808c5105",
+      "bytes": 5648
+    },
+    {
+      "module": "PPGraph.HLS.DAG.TimeDAG",
+      "path": "PPGraph/HLS/DAG/TimeDAG.lean",
+      "sha256": "dfafd8f9a6efddc195178daa7503a387ea9eea4f3a9c023853abbcfee9c085f6",
+      "bytes": 5149
+    },
+    {
+      "module": "PPGraph.HLS.DAG.TopologicalOrder",
+      "path": "PPGraph/HLS/DAG/TopologicalOrder.lean",
+      "sha256": "b722cffdd4e1d309bc12b80dd66046be91b65e8c05f4363719a1fd0aca659d35",
+      "bytes": 3327
+    },
+    {
+      "module": "PPGraph.HLS.DAG.WitnessDAG",
+      "path": "PPGraph/HLS/DAG/WitnessDAG.lean",
+      "sha256": "879be69b5e0cc86388d77595fd7957706bd82f7a0b72dc4769a5a648cd41fff3",
+      "bytes": 8331
+    },
+    {
+      "module": "PPGraph.HLS.DAG.WitnessLayers",
+      "path": "PPGraph/HLS/DAG/WitnessLayers.lean",
+      "sha256": "70cfe2379e15513b5e42b1e125b2f53ffa7ae224809d5d2df336c3640121e07d",
+      "bytes": 9039
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.CanonicalEncoding",
+      "path": "PPGraph/HLS/Encoding/CanonicalEncoding.lean",
+      "sha256": "42455a0e506ba96e32ee9b30206311ac028cda33aa9a687743677b02f91a0fb5",
+      "bytes": 8638
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.ChoiceRecovery",
+      "path": "PPGraph/HLS/Encoding/ChoiceRecovery.lean",
+      "sha256": "850bf070aa031c1c4b313ff0b64b2b228dde165e301905cd912cdc16b39dfca8",
+      "bytes": 6579
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.ColoredExpansion",
+      "path": "PPGraph/HLS/Encoding/ColoredExpansion.lean",
+      "sha256": "8314681c1b06daf0d5edb3e3640541cfef0b05285e7c083ab36bbab0833bebaf",
+      "bytes": 7564
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.ExpansionDecoder",
+      "path": "PPGraph/HLS/Encoding/ExpansionDecoder.lean",
+      "sha256": "a823ab893954542b1e4f462dcfe84173c6f53cf2e44235cbce73b0da34bde7b4",
+      "bytes": 3436
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.ExpansionFamily",
+      "path": "PPGraph/HLS/Encoding/ExpansionFamily.lean",
+      "sha256": "4e32763b1fde4969f1fd09849f5f94ee5cafbb0faab85a3ed18bcb6df2b6a6fe",
+      "bytes": 4027
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.ExpansionReversibility",
+      "path": "PPGraph/HLS/Encoding/ExpansionReversibility.lean",
+      "sha256": "cfbfc6075ed5686e656b67ae7a32bd1379c8ea79a4b15a4710eef0033a46443c",
+      "bytes": 4311
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.LabelRanks",
+      "path": "PPGraph/HLS/Encoding/LabelRanks.lean",
+      "sha256": "f56d3fa15af48f53e403412cda60e1e9d34c8f5d2aea1e6083f6e7454817349c",
+      "bytes": 6905
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.NodeIso",
+      "path": "PPGraph/HLS/Encoding/NodeIso.lean",
+      "sha256": "72d02cf1db33f43c36422409a7f84c25a04dcc35d48f6e22002e9e52c413a291",
+      "bytes": 3941
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.Normalization",
+      "path": "PPGraph/HLS/Encoding/Normalization.lean",
+      "sha256": "284160756eb687d1fc6ea1c03e5e512b9c59ca9cae0145be948f225534635f8f",
+      "bytes": 8103
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.NormalizationCheck",
+      "path": "PPGraph/HLS/Encoding/NormalizationCheck.lean",
+      "sha256": "6754569cf14711579c9e0051000a4b31445d4d65eb8e9144120d6dbe5159c3f1",
+      "bytes": 3608
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.NormalizationReversal",
+      "path": "PPGraph/HLS/Encoding/NormalizationReversal.lean",
+      "sha256": "a9d858977f964a3cbd11d64947d8dbe1dfb27128a091867a0cba180d2f67a29c",
+      "bytes": 2831
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.OrderedReversal",
+      "path": "PPGraph/HLS/Encoding/OrderedReversal.lean",
+      "sha256": "b8b9471c7421c77f84119f02fccdb57d115b64bf4fee529c24a95a53c4f138e3",
+      "bytes": 2583
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.OriginRecovery",
+      "path": "PPGraph/HLS/Encoding/OriginRecovery.lean",
+      "sha256": "48c28bcaf158f68181c983f9031ad012e5096c05ad6247394e2708ce0e20b54f",
+      "bytes": 5633
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.OriginalIso",
+      "path": "PPGraph/HLS/Encoding/OriginalIso.lean",
+      "sha256": "f3e2cb827cd9d663d0b90b502fa51ea3ef376fd2133f327eb34afd6604bd1f6e",
+      "bytes": 5976
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.PrefixCheck",
+      "path": "PPGraph/HLS/Encoding/PrefixCheck.lean",
+      "sha256": "0051c602d55eef6c7ac8a798cb48320df60c040a7335bcc266396d8fdf6ed183",
+      "bytes": 4514
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.RelativeCoins",
+      "path": "PPGraph/HLS/Encoding/RelativeCoins.lean",
+      "sha256": "10e2f7759076dbd07a1d72a2bd6c478a4644c38539c9a530e72cc42b3c04290e",
+      "bytes": 2680
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.Reversal",
+      "path": "PPGraph/HLS/Encoding/Reversal.lean",
+      "sha256": "0a60353dd962d975567e25032d10c37612fefc2780c6eaa6ea6bd9c0c367ae14",
+      "bytes": 4750
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.ReversalSlots",
+      "path": "PPGraph/HLS/Encoding/ReversalSlots.lean",
+      "sha256": "3ecbea8ed4b45c26d72744ee8d0d633885b57878055d5b7d8320f60d839daa46",
+      "bytes": 7868
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.StableEncoding",
+      "path": "PPGraph/HLS/Encoding/StableEncoding.lean",
+      "sha256": "499625e0fcf145de37428dbb5813749540c52bd006be4f22f6dca6f8faf7a8a5",
+      "bytes": 8824
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.SwappedTests",
+      "path": "PPGraph/HLS/Encoding/SwappedTests.lean",
+      "sha256": "1b682dd9acecde56c9920f94940a1e50cba92c207578e992b988905fb52025f1",
+      "bytes": 3198
+    },
+    {
+      "module": "PPGraph.HLS.Encoding.TableCheck",
+      "path": "PPGraph/HLS/Encoding/TableCheck.lean",
+      "sha256": "3a101fa9840a2132080c78898edf6e8f9044c43e5f80478e5cc57fa51aa0634c",
+      "bytes": 7786
+    },
+    {
+      "module": "PPGraph.HLS.Parameters",
+      "path": "PPGraph/HLS/Parameters.lean",
+      "sha256": "ca74367f01c4c2ff1aad8ff791f17224a91ca87a9ea3ff35a435b535e6aba56d",
+      "bytes": 4761
+    },
+    {
+      "module": "PPGraph.HLS.Probability.AugmentedCoordinates",
+      "path": "PPGraph/HLS/Probability/AugmentedCoordinates.lean",
+      "sha256": "cfc2feba3c226249e32a83835e6b11aa6944cbcbec5c285802a9d9922dc2e5da",
+      "bytes": 7512
+    },
+    {
+      "module": "PPGraph.HLS.Probability.AugmentedDependence",
+      "path": "PPGraph/HLS/Probability/AugmentedDependence.lean",
+      "sha256": "cf442dfc11dadb1689c523f9465a538b35d769b6b48d04ef8326acc72d1de6a5",
+      "bytes": 3741
+    },
+    {
+      "module": "PPGraph.HLS.Probability.AugmentedPair",
+      "path": "PPGraph/HLS/Probability/AugmentedPair.lean",
+      "sha256": "abe877d50ca2145d5bca80fe4dc227e56d194fb7f725df5a37ed34eb0f7ec868",
+      "bytes": 7816
+    },
+    {
+      "module": "PPGraph.HLS.Probability.AugmentedSpace",
+      "path": "PPGraph/HLS/Probability/AugmentedSpace.lean",
+      "sha256": "27161d1aae0460a712be596907ce70036e5517c2d135c5b5d3fa75841a31442e",
+      "bytes": 3990
+    },
+    {
+      "module": "PPGraph.HLS.Probability.BlockAssembly",
+      "path": "PPGraph/HLS/Probability/BlockAssembly.lean",
+      "sha256": "491a667815471a775c615bd597b7a63963b4c7cbf87386406b8a4ec804186c33",
+      "bytes": 7029
+    },
+    {
+      "module": "PPGraph.HLS.Probability.BlockIntersection",
+      "path": "PPGraph/HLS/Probability/BlockIntersection.lean",
+      "sha256": "e720e6cfb4e31848eb4aa240ec509297666afdf56b3eb5c398aa7485ff8a2e47",
+      "bytes": 5092
+    },
+    {
+      "module": "PPGraph.HLS.Probability.BlockQueries",
+      "path": "PPGraph/HLS/Probability/BlockQueries.lean",
+      "sha256": "83468750f6f9aabfed6785818729b92ac41995dc239392dddf0cfe51aaa140df",
+      "bytes": 5046
+    },
+    {
+      "module": "PPGraph.HLS.Probability.CoinQueryLaw",
+      "path": "PPGraph/HLS/Probability/CoinQueryLaw.lean",
+      "sha256": "d543ebfdad9c3aea48f34aaa3ce3968902b1eeab9520f3be8e05c7e6c44bd634",
+      "bytes": 3283
+    },
+    {
+      "module": "PPGraph.HLS.Probability.FootprintBlocks",
+      "path": "PPGraph/HLS/Probability/FootprintBlocks.lean",
+      "sha256": "9bd917e14d424c05fd8b8ef4e49c70adffd031c25c16f57805ecc3c1ae5823fb",
+      "bytes": 4710
+    },
+    {
+      "module": "PPGraph.HLS.Probability.PairProbability",
+      "path": "PPGraph/HLS/Probability/PairProbability.lean",
+      "sha256": "527840e664bce4d6e5102e4ee3ab63dbfeca00f709c09f22a3ffbf04cfdb7506",
+      "bytes": 7286
+    },
+    {
+      "module": "PPGraph.HLS.Probability.QueryLaw",
+      "path": "PPGraph/HLS/Probability/QueryLaw.lean",
+      "sha256": "1fdac9dc9d4176e75e17a8119b2ecb628d47bfd1973c16447c0e6569db5658ea",
+      "bytes": 5361
+    },
+    {
+      "module": "PPGraph.HLS.Probability.RefinedProbability",
+      "path": "PPGraph/HLS/Probability/RefinedProbability.lean",
+      "sha256": "87e2ce8eb68e61e96fc4ccd89c23243825700713cc3e59d11b99f901c5e6b889",
+      "bytes": 5878
+    },
+    {
+      "module": "PPGraph.HLS.Probability.RootUnion",
+      "path": "PPGraph/HLS/Probability/RootUnion.lean",
+      "sha256": "7941f44b1006317d8e3efc9e43b21e096ed98c204506951dfeaae2c41dca6806",
+      "bytes": 4652
+    },
+    {
+      "module": "PPGraph.HLS.Probability.UnitChecks",
+      "path": "PPGraph/HLS/Probability/UnitChecks.lean",
+      "sha256": "4a7bdb5bb1d88e3da9ebbf4079e7bcbc16de8a6e446daf8c9f170c9e7590c200",
+      "bytes": 7804
+    },
+    {
+      "module": "PPGraph.Integration.AbstractionRepair",
+      "path": "PPGraph/Integration/AbstractionRepair.lean",
+      "sha256": "0c0356a2e552b57aa9c4ee21480078e4acbc95e62e72b674c4813f1cd8c35dac",
+      "bytes": 11125
+    },
+    {
+      "module": "PPGraph.Integration.CertificationDependency",
+      "path": "PPGraph/Integration/CertificationDependency.lean",
+      "sha256": "0de8f7564477c63c449650ad310d0f2315b2738809f83099b4efdf4002e39a11",
+      "bytes": 11005
+    },
+    {
+      "module": "PPGraph.Integration.CertifiedQuotientExample",
+      "path": "PPGraph/Integration/CertifiedQuotientExample.lean",
+      "sha256": "37efe22b93375b86a6a99cc085de3977917d3bfcc2ef65e624aa4b8f20f2a688",
+      "bytes": 4051
+    },
+    {
+      "module": "PPGraph.Integration.DependencyInfeasibility",
+      "path": "PPGraph/Integration/DependencyInfeasibility.lean",
+      "sha256": "6a4e14d01af144e567c52da9eb209d97c6d5209d9afc14a1feac842ebede91d8",
+      "bytes": 7055
+    },
+    {
+      "module": "PPGraph.Integration.DependencyMoserTardos",
+      "path": "PPGraph/Integration/DependencyMoserTardos.lean",
+      "sha256": "6199422cfe7ee57e4bcdd85fa3f395b51ce8a2c815eff68e6859b4b49babca65",
+      "bytes": 4664
+    },
+    {
+      "module": "PPGraph.Integration.FiniteAsciiJson",
+      "path": "PPGraph/Integration/FiniteAsciiJson.lean",
+      "sha256": "c2ec8c4cfc2c3a560cff9a82729c63fdef9bad1b0fac62a89bf3073f2f136866",
+      "bytes": 3920
+    },
+    {
+      "module": "PPGraph.Integration.FiniteMTDrift",
+      "path": "PPGraph/Integration/FiniteMTDrift.lean",
+      "sha256": "5cf346c551639d1c1ec604b95b1b21b9031b78758a6a0822956c064f4114538b",
+      "bytes": 15209
+    },
+    {
+      "module": "PPGraph.Integration.FinitePotentialExpectationMT",
+      "path": "PPGraph/Integration/FinitePotentialExpectationMT.lean",
+      "sha256": "a77672d3f2ae038f4d6febb58179b323ae22918c0f4090f299f319d646643ee1",
+      "bytes": 6848
+    },
+    {
+      "module": "PPGraph.Integration.FinitePotentialMT",
+      "path": "PPGraph/Integration/FinitePotentialMT.lean",
+      "sha256": "5914019d93f336ed8b935332b3e8929e97bced586949cc8d57f72b71689b62c6",
+      "bytes": 8277
+    },
+    {
+      "module": "PPGraph.Integration.FinitePotentialTailMT",
+      "path": "PPGraph/Integration/FinitePotentialTailMT.lean",
+      "sha256": "bbbf4554694a72e461202246345a94769adbc50f3aa2a7700fbb8ef11b150ca1",
+      "bytes": 8169
+    },
+    {
+      "module": "PPGraph.Integration.FiniteReadCertificates",
+      "path": "PPGraph/Integration/FiniteReadCertificates.lean",
+      "sha256": "8dfd8575aec21c073b52d14f5df6a6d02252c1bd68127d6f65dd8576e031adaf",
+      "bytes": 8228
+    },
+    {
+      "module": "PPGraph.Integration.HLSDecision",
+      "path": "PPGraph/Integration/HLSDecision.lean",
+      "sha256": "9b193db23bf361b5340fd380042196f55e734df13c0ca1dcd21872c78d5a3d13",
+      "bytes": 4560
+    },
+    {
+      "module": "PPGraph.Integration.HLSRepair",
+      "path": "PPGraph/Integration/HLSRepair.lean",
+      "sha256": "ca972473fa3be2254f957b99c463969e015f353b8c8bc1fb6a2ada25482dd466",
+      "bytes": 2690
+    },
+    {
+      "module": "PPGraph.Integration.IncludeAsciiBytes",
+      "path": "PPGraph/Integration/IncludeAsciiBytes.lean",
+      "sha256": "2794677295b0f3e78d8f8f527f3c7cf45c814be4690910c40317e32ce1bb98ae",
+      "bytes": 1177
+    },
+    {
+      "module": "PPGraph.Integration.LucesCertificateRepair",
+      "path": "PPGraph/Integration/LucesCertificateRepair.lean",
+      "sha256": "9029aba304cd0042298ab6a635cf92dadf23e01125b56a11f907f7450f7b9f7b",
+      "bytes": 7437
+    },
+    {
+      "module": "PPGraph.Integration.LucesObservedInputs",
+      "path": "PPGraph/Integration/LucesObservedInputs.lean",
+      "sha256": "e75d4481516ea41ddbe7ae6c7b52637b0129862cb56f2e6546ef8aa49fab2bda",
+      "bytes": 10002
+    },
+    {
+      "module": "PPGraph.Integration.MoserTardosDriftRegion",
+      "path": "PPGraph/Integration/MoserTardosDriftRegion.lean",
+      "sha256": "82a7a29c241098882737f8bbba2e64b2ff4bf85c69f5c3bb366dd859b50414e7",
+      "bytes": 6198
+    },
+    {
+      "module": "PPGraph.Integration.MoserTardosInfeasibility",
+      "path": "PPGraph/Integration/MoserTardosInfeasibility.lean",
+      "sha256": "433572f98761c9599c40bd058ff64ed379bc7b29d848d0c00ccdb9dc37c2200f",
+      "bytes": 4550
+    },
+    {
       "module": "PPGraph.Integration.MoserTardosRepair",
       "path": "PPGraph/Integration/MoserTardosRepair.lean",
       "sha256": "a99b802cc34934b9050f8529b98f38949b3352bfed208995d97fe05f640b7559",
       "bytes": 11317
     },
     {
+      "module": "PPGraph.Integration.Policy.HLSCounting",
+      "path": "PPGraph/Integration/Policy/HLSCounting.lean",
+      "sha256": "85e0b00eb72a96a5ca6b1ba52ffe943b46446c8037a8bb1a21a74c7792c401f0",
+      "bytes": 11187
+    },
+    {
+      "module": "PPGraph.Integration.Policy.HLSDAG",
+      "path": "PPGraph/Integration/Policy/HLSDAG.lean",
+      "sha256": "0d6a6e737b2cafa0fd0ab11d729f1e6de47f2bd73f2ad3fdaade5545e68497a2",
+      "bytes": 8386
+    },
+    {
+      "module": "PPGraph.Integration.Policy.HLSExpectation",
+      "path": "PPGraph/Integration/Policy/HLSExpectation.lean",
+      "sha256": "12919ec43dd5421f2d4c32fc0407b48f5681824b8c9645ca9292403f1b587674",
+      "bytes": 14959
+    },
+    {
+      "module": "PPGraph.Integration.Policy.History",
+      "path": "PPGraph/Integration/Policy/History.lean",
+      "sha256": "997e67e413517283cefd171cee8967aa3e0c1c41022ba266a624eb07c1916aac",
+      "bytes": 9173
+    },
+    {
+      "module": "PPGraph.Integration.Policy.MoserTardos",
+      "path": "PPGraph/Integration/Policy/MoserTardos.lean",
+      "sha256": "47d6c6a1e469321b602eda0c13eff7f5487758740aeb1e154a8f69307c61b1d4",
+      "bytes": 8991
+    },
+    {
       "module": "PPGraph.LLL.General",
       "path": "PPGraph/LLL/General.lean",
       "sha256": "dcb84033d68ab0b86bf0e6c566ed262b4e22ecea06a09b1cf8f980d9b5a3e628",
       "bytes": 34173
+    },
+    {
+      "module": "PPGraph.LLL.Lopsided",
+      "path": "PPGraph/LLL/Lopsided.lean",
+      "sha256": "dfbaa467fe2b26542df2bcba5341e9dd31208b9b61e751de59099e2db54d6e7d",
+      "bytes": 12344
+    },
+    {
+      "module": "PPGraph.LLL.Variable",
+      "path": "PPGraph/LLL/Variable.lean",
+      "sha256": "c8772e34215fae9eff66898ca8533b0f554f1c8eceec97bbe36e834d5edf81d4",
+      "bytes": 26954
     },
     {
       "module": "PPGraph.MoserTardos.Bounds.ConstantLog",
@@ -410,6 +1110,18 @@
       "bytes": 6034
     },
     {
+      "module": "PPGraph.Optimization.ComplementarySlackness",
+      "path": "PPGraph/Optimization/ComplementarySlackness.lean",
+      "sha256": "9bb40d6117202186a4ffb34c217a70c863a618dfa803f9a503e59c006ef9bfb1",
+      "bytes": 8292
+    },
+    {
+      "module": "PPGraph.Repair.HazardExamples",
+      "path": "PPGraph/Repair/HazardExamples.lean",
+      "sha256": "4d40c9691624644caaf2a3ac6c047e666705cbf2614f7920b6c2d79f0bacd42e",
+      "bytes": 5179
+    },
+    {
       "module": "PPGraph.Repair.Hazards",
       "path": "PPGraph/Repair/Hazards.lean",
       "sha256": "172f5b373ae1b717ab82f6562e2dd5c1fd0c3fbd74f10fc96f07e6edebbc2fc1",
@@ -422,16 +1134,144 @@
       "bytes": 14433
     },
     {
+      "module": "PPGraph.Repair.ObservableExamples",
+      "path": "PPGraph/Repair/ObservableExamples.lean",
+      "sha256": "5366dbdbd3e4ba8c5b99e150ddfef72e4ecc8e7912e67c7201e2b86f0e9e9829",
+      "bytes": 6464
+    },
+    {
       "module": "PPGraph.Repair.ObservableKernel",
       "path": "PPGraph/Repair/ObservableKernel.lean",
       "sha256": "55fa40c6ff924f5b798b61105faadcaedd9472fd21beceeb87a4e97d1206d3e8",
       "bytes": 6912
     },
     {
+      "module": "PPGraph.Repair.ObservableSchemes",
+      "path": "PPGraph/Repair/ObservableSchemes.lean",
+      "sha256": "6f20e981f8bdd8fcb65ada38d44d7c6b3e9908cb8f72dd1453c31f4333c87a6e",
+      "bytes": 15883
+    },
+    {
+      "module": "PPGraph.Repair.SemanticHazardExamples",
+      "path": "PPGraph/Repair/SemanticHazardExamples.lean",
+      "sha256": "e4502a882036f5dd3813643c255b270444b853b7421e5e6fa281db024e0420d8",
+      "bytes": 10745
+    },
+    {
       "module": "PPGraph.Repair.SemanticHazards",
       "path": "PPGraph/Repair/SemanticHazards.lean",
       "sha256": "fa733dc0bfab7297e55fa01d962592af2b46b2a3ec0fbdf3a5db78641adc7c00",
       "bytes": 18396
+    },
+    {
+      "module": "PPGraph.Shearer.BDD",
+      "path": "PPGraph/Shearer/BDD.lean",
+      "sha256": "7fec8bdd838d30e5e763efc8da54dca470e8aae49a8905ac8f09008634ac0747",
+      "bytes": 4486
+    },
+    {
+      "module": "PPGraph.Shearer.BDDBudget",
+      "path": "PPGraph/Shearer/BDDBudget.lean",
+      "sha256": "2cd260cc026aad5fd842919e42fc653035ec947a9172cdc8669c4e37b22affb5",
+      "bytes": 5991
+    },
+    {
+      "module": "PPGraph.Shearer.BDDExpectation",
+      "path": "PPGraph/Shearer/BDDExpectation.lean",
+      "sha256": "4dc5c6a70168874dbf76373ad5e037d6e04c674d6f573522351587eae2a55601",
+      "bytes": 8719
+    },
+    {
+      "module": "PPGraph.Shearer.Basic",
+      "path": "PPGraph/Shearer/Basic.lean",
+      "sha256": "677f5753c2e83d76dc1a6215b059a5a6dc0502d74f80ab4bd22023a2d3161d1b",
+      "bytes": 8790
+    },
+    {
+      "module": "PPGraph.Shearer.ComponentOccurrence",
+      "path": "PPGraph/Shearer/ComponentOccurrence.lean",
+      "sha256": "c6d7873fb10b34f60a8d51705d3cdef6275615b48703e78071c08085d5b6a043",
+      "bytes": 5897
+    },
+    {
+      "module": "PPGraph.Shearer.Expectation",
+      "path": "PPGraph/Shearer/Expectation.lean",
+      "sha256": "695faa61c3f0c303301f656e64bc0b3a96bc5b5b1f9ee135f95fc12c9ef910c7",
+      "bytes": 9333
+    },
+    {
+      "module": "PPGraph.Shearer.Induction",
+      "path": "PPGraph/Shearer/Induction.lean",
+      "sha256": "d3244a307270808cc0d0caf46caf60d8030d00d33a2331555f06f601c26dbaad",
+      "bytes": 6083
+    },
+    {
+      "module": "PPGraph.Shearer.LayerProfile",
+      "path": "PPGraph/Shearer/LayerProfile.lean",
+      "sha256": "7492ab3f01b55e8709dbcc03b684dd048ddd259a2fd16d18f1d1b0df90e79fab",
+      "bytes": 5962
+    },
+    {
+      "module": "PPGraph.Shearer.MT",
+      "path": "PPGraph/Shearer/MT.lean",
+      "sha256": "54037e29cded6d6b74b061a9783a16e227b9e8b747f5ab942ccc6df16d6c1e3e",
+      "bytes": 6460
+    },
+    {
+      "module": "PPGraph.Shearer.Occurrence",
+      "path": "PPGraph/Shearer/Occurrence.lean",
+      "sha256": "15c7259fda2d76b19f40769b39d3720a609c6831a357ea6bb002a73c92398b88",
+      "bytes": 9238
+    },
+    {
+      "module": "PPGraph.Shearer.Polynomial",
+      "path": "PPGraph/Shearer/Polynomial.lean",
+      "sha256": "e219f9d60a421f35e39845ca233f5567a52603013093d3df591ecd775138079c",
+      "bytes": 9485
+    },
+    {
+      "module": "PPGraph.Shearer.SequenceProbability",
+      "path": "PPGraph/Shearer/SequenceProbability.lean",
+      "sha256": "d436a776cca281499ba14f3e45bb9daf2ec3b410f081a9d5fbb8356040188db2",
+      "bytes": 10533
+    },
+    {
+      "module": "PPGraph.Shearer.Slack",
+      "path": "PPGraph/Shearer/Slack.lean",
+      "sha256": "baac3ee8285fa7e45e6475f9eb300f31eb0eb35940cd16619694c043d8e3bab8",
+      "bytes": 6761
+    },
+    {
+      "module": "PPGraph.Shearer.SlackExpectation",
+      "path": "PPGraph/Shearer/SlackExpectation.lean",
+      "sha256": "363c84bc25a6b6e634c119607fc501990bb4ab1d6dd859d2d007ddd349ad9952",
+      "bytes": 2567
+    },
+    {
+      "module": "PPGraph.Shearer.Stable",
+      "path": "PPGraph/Shearer/Stable.lean",
+      "sha256": "4c489b8cdffc0a714e793b589070382c98addc7c17fea156dbf785a453231034",
+      "bytes": 24436
+    },
+    {
+      "module": "PPGraph.Shearer.Witness",
+      "path": "PPGraph/Shearer/Witness.lean",
+      "sha256": "1236400cfe9425aeeeccc695a6703402b7270bf4010d416dd6772b2188acefbf",
+      "bytes": 7630
+    }
+  ],
+  "elaboration_inputs": [
+    {
+      "path": "artifacts/luces/local_plan.json",
+      "sha256": "86f65e4d4c779825b809380a204ecb7746cdb50a995baebd0bec2f37b2dc9192",
+      "bytes": 438,
+      "role": "Literal input required during elaboration of the corresponding integration examples"
+    },
+    {
+      "path": "artifacts/luces/local_plan_kernel_inputs.json",
+      "sha256": "c4837b129b640eb5f246659bc2f85f03d0ebb18e5c314bc9c03c5801e228c4e9",
+      "bytes": 1215,
+      "role": "Literal input required during elaboration of the corresponding integration examples"
     }
   ]
 }
