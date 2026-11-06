@@ -1,0 +1,35 @@
+{
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "boundaries": [
+    "Static p=2/3 Theta(n); adaptive upper bounds only.",
+    "Policies are deterministic functions of full-state histories, followed by prescribed fresh product draws.",
+    "No new Nanoda replay, executable-controller refinement, benchmark or priority claim.",
+    "Root README navigation edit lies outside the 25 bound inputs."
+  ],
+  "checks": {
+    "audited_theorems_including_generated": 140,
+    "compiled_artifact_digests": 24,
+    "final_low_bias_rejection_is_mathematical_only": true,
+    "frozen_lean_sources": 9,
+    "limitation_matches_formal_adaptive_class": true,
+    "live_input_bindings": 25,
+    "log_digests": 5,
+    "negative_controls": 4,
+    "old_runtime_imports_excluded": true,
+    "only_changed_bound_input_from_attempt_003": "research/biased-resampling/README.md",
+    "raw_closure_constants": 16037,
+    "required_roots": 13,
+    "sources_unchanged_from_attempt_003": true
+  },
+  "method": "Independent agent read-only artifact and mathematical-scope review; no additional build",
+  "raw_audit_sha256": "de83cd505408bd04c9495af496d7910befe83cc774614510277c5d16f4ac4964",
+  "receipt": ".build/attempt-004/RESULT.json",
+  "receipt_sha256": "9ecbfb9b183266dfbd10ec5f46722426dd3a942b23fd78b8bf500cbc43eff001",
+  "reviewed_utc": "2026-11-06T10:17:11.070710+00:00",
+  "reviewer": "/root/walksat_equal_break_prior",
+  "status": "PASS"
+}

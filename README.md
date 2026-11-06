@@ -271,6 +271,17 @@ local witness also supports an all-n quadratic obstruction for that wider
 class. Its all-n gauge/flux argument is currently paper-only, awaiting Lean;
 the finite optima have independent rational primal/dual checks.
 
+The separate [biased-resampling study](research/biased-resampling/README.md)
+changes the threshold redraw law to `(1/6,1/6,2/3)` while keeping the same
+certificate table and full-footprint operation. A new Lean proof gives
+`n/24 <= E[T] <= 3n-2` under its own product initialization. A common raw
+pointwise potential also bounds history-dependent failed-target selection
+and biases in `[2/3,1]` from any initial state. Its fresh Lean/audit evidence
+is separate; no new Nanoda check or practical speedup is claimed.
+
+The potential-class lower bounds above fix the original uniform redraw law.
+They do not assert that changing the law must preserve the same obstruction.
+
 ## Relation to existing MT results
 
 Under the classical MT criterion, the known expected bound is
