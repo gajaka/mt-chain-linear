@@ -142,4 +142,5 @@ checks source identities, and verifies the saved rational certificates.
 It does not perform a fresh Nanoda replay. [TOOLING.md](TOOLING.md) describes
 independent replay, the allowed axioms and the exact scope of each audit.
 The whole project is not covered by a blanket second-kernel claim.
-See [source and dependency notices](THIRD_PARTY_NOTICES.md).
+Project code and documentation are licensed under [MIT](LICENSE). See
+[source and dependency notices](THIRD_PARTY_NOTICES.md) for external materials.

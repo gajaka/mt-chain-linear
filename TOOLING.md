@@ -74,6 +74,12 @@ This requires the recorded local artifacts, including the ignored export.
 Published source and compact receipts alone do not contain every binary or
 raw proof export required for that local saved-evidence check.
 
+Absolute paths in saved receipts and logs identify locations on the machine
+used for the recorded check. They are not installation requirements. Fresh
+replays use the current checkout and a new attempt directory; verifying a
+historical receipt can require its recorded artifacts and path bindings.
+The original receipts and logs are retained without rewriting those paths.
+
 The source validator checks [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) and
 [MODULE_MIGRATION.json](MODULE_MIGRATION.json). It verifies the reference
 source bytes, replays the permitted module-header transformation, and checks

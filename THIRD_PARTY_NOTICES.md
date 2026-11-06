@@ -1,5 +1,9 @@
 # Provenance and dependency notices
 
+The project's code and documentation are licensed under the
+[MIT License](LICENSE), copyright 2026 Dragan Stosic. External dependencies
+and any third-party source excerpts retain their own licenses and notices.
+
 `SOURCE_MANIFEST.json` and `MODULE_MIGRATION.json` identify the finite-chain
 sources and the permitted source-header adaptations. Author headers and the
 source notices of the accounting and barrier supplement are preserved.
@@ -10,11 +14,7 @@ observable-algebra theories at source revision
 [library/SOURCES.json](library/SOURCES.json) records source identities and
 hashes for both original and current modules. Author headers, mathematical
 declarations and proof bodies are preserved. The import prefix is `MT` in this
-workspace; only import paths differ from the recorded source bytes. This
-package does not introduce a new blanket license for that material.
-
-Files without an explicit license are not assigned a blanket license by this
-package. Existing author and license notices remain applicable.
+workspace; only import paths differ from the recorded source bytes.
 
 Mathlib is an external dependency, pinned in `lakefile.lean` and
 `lake-manifest.json`, and is distributed under the Apache License 2.0. Its
