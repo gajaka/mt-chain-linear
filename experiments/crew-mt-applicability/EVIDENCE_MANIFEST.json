@@ -1,16 +1,16 @@
 {
-  "scope": "Frozen gate protocol, notes, raw query outputs and final report; hashes certify identity, not semantic correctness",
+  "scope": "Current gate documentation and unchanged recorded source queries, inputs and results; hashes certify identity, not semantic correctness.",
   "created_utc": "2026-11-05T14:44:47.894194+00:00",
   "files": [
     {
       "path": "PROTOCOL.md",
-      "bytes": 21895,
-      "sha256": "1c1c1ce8c4e622cb8563b00f50983c5b8c13a9eec27280b7ae9814ad2d4750f0"
+      "bytes": 4010,
+      "sha256": "e78fb133a5f083c147c90b0419b2868bb9f978c9b7d0e7fb0c81c392b2a561ff"
     },
     {
       "path": "REPORT.md",
-      "bytes": 15146,
-      "sha256": "e955e79764791b9218ca226cfcd3e8a5d546d0e460ea14dd3e8342f12417457e"
+      "bytes": 8809,
+      "sha256": "7e5919e58282925645cb169164e3d6ff4128efa7d956512be712c0d02691c6f9"
     },
     {
       "path": "RESULT.json",
@@ -44,8 +44,8 @@
     },
     {
       "path": "evidence/gate-001/FORMAL_REVIEW.md",
-      "bytes": 7433,
-      "sha256": "ff319094aac8c802a62fa411c8ac4f9fe78d6d0f2dba67072e3762ac294b658d"
+      "bytes": 4003,
+      "sha256": "300a7dbbc48a2eaacde3be4b9dc4d51ae3585e4006ebab82673531f3f000eb75"
     },
     {
       "path": "evidence/gate-001/FORMAL_VERDICT.json",
@@ -239,13 +239,39 @@
     },
     {
       "path": "provenance/PROTOCOL-review-draft.md",
-      "bytes": 21150,
-      "sha256": "eca8c128acd98d6ec3b7bf29f15e7f7223f6f9670e7fba6a1f1622504a8689c3"
+      "bytes": 1493,
+      "sha256": "3c5604c4dd386a25f24b6273d8956bcf3225166225e40a988459b4e5c09fe0a2"
     },
     {
       "path": "source_inspect.py",
       "bytes": 2430,
       "sha256": "db5e61e96a0c5ba41d8879090ea74591522fd37621bbaa5553fe98d1eea7cfd6"
     }
-  ]
+  ],
+  "documentation_revision": {
+    "base_commit": "f9db8d3ec831f2b4d50c62016119aa84508479c1",
+    "scope": "The listed Markdown files are edited post-experiment descriptions. Preregistration and review hashes in historical receipts refer to the exact documents at base_commit, not the current wording. No gate input, query, verdict or result was rerun or rewritten.",
+    "files": [
+      {
+        "path": "PROTOCOL.md",
+        "registered_sha256": "1c1c1ce8c4e622cb8563b00f50983c5b8c13a9eec27280b7ae9814ad2d4750f0",
+        "current_sha256": "e78fb133a5f083c147c90b0419b2868bb9f978c9b7d0e7fb0c81c392b2a561ff"
+      },
+      {
+        "path": "REPORT.md",
+        "registered_sha256": "e955e79764791b9218ca226cfcd3e8a5d546d0e460ea14dd3e8342f12417457e",
+        "current_sha256": "7e5919e58282925645cb169164e3d6ff4128efa7d956512be712c0d02691c6f9"
+      },
+      {
+        "path": "evidence/gate-001/FORMAL_REVIEW.md",
+        "registered_sha256": "ff319094aac8c802a62fa411c8ac4f9fe78d6d0f2dba67072e3762ac294b658d",
+        "current_sha256": "300a7dbbc48a2eaacde3be4b9dc4d51ae3585e4006ebab82673531f3f000eb75"
+      },
+      {
+        "path": "provenance/PROTOCOL-review-draft.md",
+        "registered_sha256": "eca8c128acd98d6ec3b7bf29f15e7f7223f6f9670e7fba6a1f1622504a8689c3",
+        "current_sha256": "3c5604c4dd386a25f24b6273d8956bcf3225166225e40a988459b4e5c09fe0a2"
+      }
+    ]
+  }
 }

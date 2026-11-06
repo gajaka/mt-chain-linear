@@ -1,8 +1,7 @@
 # Window-local potential budget study
 
-This specification precedes the first optimization run. The target is the
-smallest initial budget, not feasibility: an explicit separable certificate
-already embeds into every window width r >= 1.
+The target is the smallest initial budget, not feasibility: an explicit
+separable certificate embeds into every allowed window width r >= 1.
 
 ## Object and class
 
@@ -71,5 +70,6 @@ and the unresolved mathematical step. No extrapolation is an all-n theorem.
 
 The broader fixed-width question quantifies one r, one C, and one threshold N
 before all n>=max(N,r). Negating it alone does not determine how quickly a
-necessary varying width r(n) grows. Existing Lean/Nanoda results and sealed
-research evidence are unchanged. This study makes no novelty or speedup claim.
+necessary varying width r(n) grows. Finite exact certificates and an all-length
+proof have separate verification obligations. This study makes no novelty or
+speedup claim.

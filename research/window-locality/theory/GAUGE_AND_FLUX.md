@@ -34,8 +34,8 @@ Let `B = E_initial[V] / delta`. The argument below gives, for `n >= 8`,
 
 This excludes a uniform linear initial budget for this width-two additive
 class. It does not exclude arbitrary functions of a small observable, general
-nonadditive global potentials, or the completion-averaged certificate already
-used for the actual linear expected runtime.
+nonadditive global potentials, or the completion-averaged certificate used
+for the chain's linear expected resampling count.
 
 ## 1. Preserve an active remote failure
 

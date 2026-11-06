@@ -1,9 +1,8 @@
 # Provenance and dependency notices
 
-This project extracts finite-chain proof sources from `../ppg-proof-repair`.
-`SOURCE_MANIFEST.json` records the original paths, copied-file hashes and any
-explicit wrapper or audit adaptations. Copied source headers are preserved.
-The separate accounting/barrier supplement retains its original provenance.
+`SOURCE_MANIFEST.json` and `MODULE_MIGRATION.json` identify the finite-chain
+sources and the permitted source-header adaptations. Author headers and the
+source notices of the accounting and barrier supplement are preserved.
 
 `library/` contains the MT, HLS, Shearer, LLL, probability, hazard and
 observable-algebra theories at source revision
@@ -14,9 +13,8 @@ declarations and proof bodies are preserved. The import prefix is `MT` in this
 workspace; only import paths differ from the recorded source bytes. This
 package does not introduce a new blanket license for that material.
 
-The extraction does not introduce a blanket license for copied project material
-whose license has not been specified. A public release should state the license
-chosen by the relevant rights holders for that material separately.
+Files without an explicit license are not assigned a blanket license by this
+package. Existing author and license notices remain applicable.
 
 Mathlib is an external dependency, pinned in `lakefile.lean` and
 `lake-manifest.json`, and is distributed under the Apache License 2.0. Its

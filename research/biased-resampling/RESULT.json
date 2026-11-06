@@ -1,31 +1,31 @@
 {
   "artifacts_sha256": {
-    ".build/attempt-004/workspace/.lake/build/lib/lean/AdaptiveWork.olean": "1a968fd1cb7c82a8e70e149d74696b5926d8e2ec023df67b05724988840440ef",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/AdaptiveWork.olean.private": "b82a99026ffdb3e3cdd34cfbc34837e77a73a70d2f271993cabaf36c7791aaa0",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/AdaptiveWork.olean.server": "8ca63f672910e48457f09c3d22e002f8cd772b3503515a825dee9b0aeb3d3709",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedControls.olean": "fd6f2e9f48bbd61ab5e0de14e8e06f856e3950670197360313ba4ae44bc01223",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedControls.olean.private": "3ec1dce581f329c2ab3c40e17c934eb60c017bb817b5642dbecbf4e118ace60a",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedControls.olean.server": "726eee20980c7f6a7d573553414a7b7305a93e7b1ff4564a928b5dd63a8cac85",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedDefinitions.olean": "72d5c9552553ab4f57ca741bf31917a35d2b94c2638d1ae67087ac7bd9125d32",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedDefinitions.olean.private": "bb6062a7ed175a05d3db72d25b2b6b222b13c1bca94806848b1ac397cfd6cdbc",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedDefinitions.olean.server": "09537c545e3d0a1e763a9227179df6e206704e826193c72ab2c3f0b31f19a829",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedDrift.olean": "dc32c5e12c400c533abfda62a49c9acf1dcd28a376f2a1f4fd09506099778a13",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedDrift.olean.private": "03bf40859557a31a9bf6032e8f2baaef2434b941c123dfcd6fd568572943c71d",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedDrift.olean.server": "d1726cb12e16e9334bf427fbb111f994478c7265d6a418325def799239caee0d",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedLaw.olean": "e959932baac13780367339f8bfa23c4a4b0ba3a617dbc516a4bcb8ffe6022dd9",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedLaw.olean.private": "66346267ccc213c57ca86477cafd52a7a1699ccaead51a5c78935d429eb4ed94",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedLaw.olean.server": "11a5bdd023760240260982eaf6a79ec617d86cce52eb5b442bd3bd58389f01dc",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedLower.olean": "79cef54a4afb28a203711d243211ae112960aee9612bf6bce4bf9a755ef4bfdd",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedLower.olean.private": "cad4e937fc867061982e2fe1d73ef0d83bbb4dae424a12ce9e40f4d582de9d84",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedLower.olean.server": "2004edaa93b8b23bd3faec3828d261d403cf216a97cbd10b42cef21d73a668c4",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedResults.olean": "c39675a0dc5a04046932e570d4222e2af87057ca2b595b9691e9f6a98dad7abd",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedResults.olean.private": "43e42014115aad4f1f5e0b242dc5e7aac5e90bc0e1abaa07857d4cbd7e99a059",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/BiasedResults.olean.server": "c8ee40e69e38454d9e1d7ea9bbd9a64a9fcb9c41eaf3238c17aa4e6576d614a1",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/GenericLower.olean": "2638c6a5243c68896aad9f26ab559bb927beb5ef12891998dc280b615900e599",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/GenericLower.olean.private": "0179ad149dc43309c4ddf66e4327e481a2bb75909ed93d949929bea73613c013",
-    ".build/attempt-004/workspace/.lake/build/lib/lean/GenericLower.olean.server": "87d61ea91de2aefef683f1bebbf62a84c7cc492a7ee8ab99fd304645dba332d4"
+    ".build/attempt-005/workspace/.lake/build/lib/lean/AdaptiveWork.olean": "1a968fd1cb7c82a8e70e149d74696b5926d8e2ec023df67b05724988840440ef",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/AdaptiveWork.olean.private": "b82a99026ffdb3e3cdd34cfbc34837e77a73a70d2f271993cabaf36c7791aaa0",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/AdaptiveWork.olean.server": "8ca63f672910e48457f09c3d22e002f8cd772b3503515a825dee9b0aeb3d3709",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedControls.olean": "fd6f2e9f48bbd61ab5e0de14e8e06f856e3950670197360313ba4ae44bc01223",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedControls.olean.private": "3ec1dce581f329c2ab3c40e17c934eb60c017bb817b5642dbecbf4e118ace60a",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedControls.olean.server": "726eee20980c7f6a7d573553414a7b7305a93e7b1ff4564a928b5dd63a8cac85",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedDefinitions.olean": "72d5c9552553ab4f57ca741bf31917a35d2b94c2638d1ae67087ac7bd9125d32",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedDefinitions.olean.private": "bb6062a7ed175a05d3db72d25b2b6b222b13c1bca94806848b1ac397cfd6cdbc",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedDefinitions.olean.server": "09537c545e3d0a1e763a9227179df6e206704e826193c72ab2c3f0b31f19a829",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedDrift.olean": "dc32c5e12c400c533abfda62a49c9acf1dcd28a376f2a1f4fd09506099778a13",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedDrift.olean.private": "03bf40859557a31a9bf6032e8f2baaef2434b941c123dfcd6fd568572943c71d",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedDrift.olean.server": "d1726cb12e16e9334bf427fbb111f994478c7265d6a418325def799239caee0d",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedLaw.olean": "e959932baac13780367339f8bfa23c4a4b0ba3a617dbc516a4bcb8ffe6022dd9",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedLaw.olean.private": "66346267ccc213c57ca86477cafd52a7a1699ccaead51a5c78935d429eb4ed94",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedLaw.olean.server": "11a5bdd023760240260982eaf6a79ec617d86cce52eb5b442bd3bd58389f01dc",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedLower.olean": "79cef54a4afb28a203711d243211ae112960aee9612bf6bce4bf9a755ef4bfdd",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedLower.olean.private": "cad4e937fc867061982e2fe1d73ef0d83bbb4dae424a12ce9e40f4d582de9d84",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedLower.olean.server": "2004edaa93b8b23bd3faec3828d261d403cf216a97cbd10b42cef21d73a668c4",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedResults.olean": "c39675a0dc5a04046932e570d4222e2af87057ca2b595b9691e9f6a98dad7abd",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedResults.olean.private": "43e42014115aad4f1f5e0b242dc5e7aac5e90bc0e1abaa07857d4cbd7e99a059",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/BiasedResults.olean.server": "c8ee40e69e38454d9e1d7ea9bbd9a64a9fcb9c41eaf3238c17aa4e6576d614a1",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/GenericLower.olean": "2638c6a5243c68896aad9f26ab559bb927beb5ef12891998dc280b615900e599",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/GenericLower.olean.private": "0179ad149dc43309c4ddf66e4327e481a2bb75909ed93d949929bea73613c013",
+    ".build/attempt-005/workspace/.lake/build/lib/lean/GenericLower.olean.server": "87d61ea91de2aefef683f1bebbf62a84c7cc492a7ee8ab99fd304645dba332d4"
   },
-  "attempt": ".build/attempt-004",
+  "attempt": ".build/attempt-005",
   "axiom_audit": {
     "axioms": [
       "propext",
@@ -33,7 +33,7 @@
       "Quot.sound"
     ],
     "raw_closure_count": 16037,
-    "sha256": "de83cd505408bd04c9495af496d7910befe83cc774614510277c5d16f4ac4964",
+    "sha256": "7fb285e94ce788ec94d6926e513e27c43446d6db775c535e329678c838b59489",
     "theorem_count_including_generated": 140
   },
   "build": {
@@ -42,12 +42,12 @@
       "build",
       "--wfail"
     ],
-    "elapsed_seconds": 25.288,
+    "elapsed_seconds": 27.408,
     "exit_code": 0,
-    "log": ".build/attempt-004/build.log",
-    "log_sha256": "a94483ac80fe921bf1ba762f4565d184fb3950ff912845ad225b85e30637b081"
+    "log": ".build/attempt-005/build.log",
+    "log_sha256": "e8d1d3a190aa5eeb93a078960dbe04a2cf39be44890159bd0e46e36f7f3313f7"
   },
-  "finished_utc": "2026-11-06T10:15:53.176346+00:00",
+  "finished_utc": "2026-11-06T14:28:07.094970+00:00",
   "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
   "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
   "negative_controls": {
@@ -57,10 +57,10 @@
         "build",
         "BiasedAudit"
       ],
-      "elapsed_seconds": 16.382,
+      "elapsed_seconds": 16.379,
       "exit_code": 1,
-      "log": ".build/attempt-004/InjectedAxiom.log",
-      "log_sha256": "fbf48cfb9f664c9b58d45443efcd236d866ce41cc7045731ed0895494de67504",
+      "log": ".build/attempt-005/InjectedAxiom.log",
+      "log_sha256": "df5d76a54aa86e88abc4a70090e819828600c6be65ba228aaeed9d72a991176f",
       "source_sha256": "ce577c597e235b32318456360279f094a7be70877c5f2ca8dd18dac160628771"
     },
     "LowBias": {
@@ -68,12 +68,12 @@
         "lake",
         "env",
         "lean",
-        "/Users/gajaka/projects/mt-chain-linear/research/biased-resampling/.build/attempt-004/workspace/LowBias.lean"
+        "/Users/gajaka/projects/mt-chain-linear/research/biased-resampling/.build/attempt-005/workspace/LowBias.lean"
       ],
-      "elapsed_seconds": 2.038,
+      "elapsed_seconds": 2.096,
       "exit_code": 1,
-      "log": ".build/attempt-004/LowBias.log",
-      "log_sha256": "bcd10cbd02062d42802230c4575cf5a0062cf323bc244f88aaf9257cbae1f8b3",
+      "log": ".build/attempt-005/LowBias.log",
+      "log_sha256": "98da2188d3788e742fc5913eb94e050da1a3fed1495f4f59171043dd28fda2ab",
       "source_sha256": "79f38ebcb2ac3aba7dd47215d2f1e0e02e80e865792c24124b8d46b0cd82886a"
     },
     "OmittedTactic": {
@@ -81,12 +81,12 @@
         "lake",
         "env",
         "lean",
-        "/Users/gajaka/projects/mt-chain-linear/research/biased-resampling/.build/attempt-004/workspace/OmittedTactic.lean"
+        "/Users/gajaka/projects/mt-chain-linear/research/biased-resampling/.build/attempt-005/workspace/OmittedTactic.lean"
       ],
-      "elapsed_seconds": 1.977,
+      "elapsed_seconds": 1.979,
       "exit_code": 1,
-      "log": ".build/attempt-004/OmittedTactic.log",
-      "log_sha256": "630cae2cd67b1753b42a07d15fb35a6b37ea2ecb279a3aa35ce3d44535f72973",
+      "log": ".build/attempt-005/OmittedTactic.log",
+      "log_sha256": "8b5fff799a291b8cddcfb7cc966ce2a138dcca2e6473d9068b116c80f01ff215",
       "source_sha256": "cf9816e184da8742b87e5e83b20f8619d9745331d85fe908042f279362052d87"
     },
     "UniformDrift": {
@@ -94,12 +94,12 @@
         "lake",
         "env",
         "lean",
-        "/Users/gajaka/projects/mt-chain-linear/research/biased-resampling/.build/attempt-004/workspace/UniformDrift.lean"
+        "/Users/gajaka/projects/mt-chain-linear/research/biased-resampling/.build/attempt-005/workspace/UniformDrift.lean"
       ],
-      "elapsed_seconds": 1.984,
+      "elapsed_seconds": 2.015,
       "exit_code": 1,
-      "log": ".build/attempt-004/UniformDrift.log",
-      "log_sha256": "7cd06180770806dd4c6930031f9e64e6a098e64119ca51817af8f3aa3b86673c",
+      "log": ".build/attempt-005/UniformDrift.log",
+      "log_sha256": "d5fa5939c535865cda5b62358625dc6f22c97d831dda94e5adbe40b1e9d462ba",
       "source_sha256": "cb71c05c6daba402ffe55d2ef918c0140a797d705c814f7ffe97c3a6559c0d9a"
     }
   },
@@ -119,8 +119,8 @@
     "lake-manifest.json": "51a4a3e8411e761c5a95c2fd2a0b05ac2cd35eb93a1d3eb3f483a167ba9f59a8",
     "lakefile.lean": "5dfbd908d536c3c4c45d37250bc628f1783de4a09c28f6c32aae119b2c4a9d7e",
     "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
-    "research/biased-resampling/README.md": "3f3381528aec5bed53364a6c99f7acf7388a517a5aaa7f7ff198fcef8a14e663",
-    "research/biased-resampling/REPORT.md": "a04b157b86e1a9cf4c9f24286de2707608cdc2e5bc3ac3792f0d861abf61b85d",
+    "research/biased-resampling/README.md": "86d2b8934fe3b40fc321045439cd07df133673e66fe1b8f6af3bfb4cc8677c94",
+    "research/biased-resampling/REPORT.md": "8da8bd478b52c75204839eff0a36fe25eca8c2b1c1251f1687b98f13e7c69936",
     "research/biased-resampling/formal/AdaptiveWork.lean": "51e62e44116dab0aadf352d2d04abc35888a85354846057098df288203d5d38a",
     "research/biased-resampling/formal/BiasedAudit.lean": "e7e664ec21ef976e88b89d907e8b0d38876d3341fb7138044fdcb932464e3d85",
     "research/biased-resampling/formal/BiasedControls.lean": "f7c55a09201e514b2abd37e47d3f102380cb705de40411cc81300dc32071f032",
@@ -136,6 +136,6 @@
     "research/biased-resampling/verify.py": "5b5dab5ac0780379aa54296e96f8ddfa025f03794c3cd4303257bad0daa18f33"
   },
   "source_inputs_unchanged": true,
-  "started_utc": "2026-11-06T10:15:04.699350+00:00",
+  "started_utc": "2026-11-06T14:27:16.513327+00:00",
   "status": "PASS"
 }

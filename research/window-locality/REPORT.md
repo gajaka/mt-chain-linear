@@ -127,11 +127,10 @@ matrix generation, exact reconstruction and generator-side verification
 together took about 3.362 s. The independent exact verifier took about 2.033 s.
 These are tool measurements, not the resampling process complexity.
 
-The v1 runner was archived byte-for-byte before adding `--solver`. Both
-attempts record hashes and version information. Existing output directories
-are never reused by the primary optimizer. The supplementary bulk-gate
-generation was exploratory; its original discovery wall time was not recorded,
-and the provenance document states that limitation explicitly.
+Both attempts record hashes and version information, and the primary
+optimizer uses a separate output directory for each attempt. The supplementary
+bulk-gate generation has no recorded discovery wall time; it supplies an exact
+algebraic witness, not a search-time comparison.
 
 ## Boundaries and next obligation
 
@@ -144,10 +143,10 @@ separable construction, so this is not an empty-class argument.
 The first open width after accepting the paper argument is three bridges.
 Whether any fixed width suffices remains open. The next formal verification
 obligation is to translate the width-2 gauge/flux argument and exact witness
-into Lean before assigning it the same status as the older separations.
+into Lean before assigning it the same verification status as the
+coordinate-separable and one-bridge results.
 
-No old formal source, prior receipt or source-project file was modified.
-No new Lean/Nanoda run was performed for this study, and no scientific-priority
-or practical speedup claim is made. The immutable source-and-evidence manifest
-and aggregate result are [MANIFEST.json](MANIFEST.json) and
-[evidence/SUMMARY.json](evidence/SUMMARY.json).
+No Lean/Nanoda check of this width-two argument is available. No
+scientific-priority or practical speedup claim is made. Source-and-evidence
+identities and the aggregate result are recorded in
+[MANIFEST.json](MANIFEST.json) and [evidence/SUMMARY.json](evidence/SUMMARY.json).

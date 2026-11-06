@@ -14,10 +14,10 @@ completed replay, not from this report's prose.
 | Finite horizon to infinite expected cost | Finite weighted sums | Supremum bound without presupposing termination | `adaptiveTotalWork_le_potential` and finiteness theorem |
 | Counting lower bound | At most three affected certificates per `replace` | New initialization first moment; vanishing remainder justified by new upper bound | Static refined lower bound and `IsTheta` |
 
-The adaptive theorem does not apply the old fixed-product MT convergence
+The adaptive theorem does not apply a fixed-product MT convergence
 theorem. It proves a common conditional drift directly. The static law is a
-new full-footprint product-resampling instance. The original uniform kernel,
-its potential separations and all historical audit inputs remain separate.
+full-footprint product-resampling instance. The uniform kernel and its
+potential-class separations concern a different redraw law.
 
 ## Verification interpretation
 
@@ -36,5 +36,5 @@ new transitive axiom injected into a copied study theorem. Original/live
 sources are not mutated by these controls.
 
 This is Lean kernel verification plus a raw proof-dependency audit. It is
-not a new second-kernel check, executable-controller refinement, speed
-benchmark, or scientific-priority review.
+not a new second-kernel check or a timing benchmark. Scientific novelty
+remains subject to independent review.

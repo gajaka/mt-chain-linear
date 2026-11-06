@@ -2,11 +2,11 @@
 
 ## Outcome
 
-The missing inhabitedness obligation is closed constructively for every
-`n >= 2`, for both the coordinate-separable and larger one-bridge classes.
-Moreover, the coordinate-separable class has an exponential lower budget,
-stronger asymptotically than the previously proved quadratic obstruction.
-It cannot have the suggested O(n^2) budget family.
+Both the coordinate-separable and larger one-bridge classes have explicit
+certificates for every `n >= 2`. Every coordinate-separable certificate has an
+exponential normalized initial budget. In particular, this class admits no
+O(n^2)-budget family. The larger one-bridge class has a quadratic lower bound;
+quadratic attainment is open.
 
 The same initialized process still satisfies `n/18 <= E[T_n] <= 1054*n`.
 This is a separation between analysis certificates and actual expected
@@ -15,7 +15,7 @@ resampling count. No algorithm was changed or accelerated.
 ## Exact proof obligations
 
 The [README](README.md) defines both classes, including the global reset at
-Good states. Neither class is assumed inhabited in the new combined results.
+Good states. Neither class is assumed inhabited in the combined results.
 
 | Declaration | Statement |
 | --- | --- |
@@ -31,7 +31,7 @@ Good states. Neither class is assumed inhabited in the new combined results.
 
 The exact finite-n inequalities are formalized. Their exponential-versus-linear
 growth interpretation is elementary; no new Lean declaration for an optimized
-class minimum or optimal exponential base is claimed. The older quadratic
+class minimum or optimal exponential base is claimed. The quadratic
 inequalities remain valid and sometimes have better small-n constants.
 
 ## Why this is not a vacuous lower bound
@@ -46,30 +46,29 @@ existence. Its mean is computed under the original product distribution.
 budgets before constructing the larger-class certificate. Thus both lower-bound
 theorems have actual objects to which they apply for all claimed lengths.
 
-The old comments saying that the *definition alone* does not assert all-length
-existence were deliberately retained in the extracted files. That statement
-remains true; the new construction now discharges the separate obligation.
-Original documents and proof sources were not retrospectively rewritten.
+The certificate structures specify the required properties without asserting
+that an inhabitant exists. The explicit construction discharges that separate
+existence obligation for every claimed length.
 
 ## Independent verification
 
-The final strict child build and the fresh two-checker replay passed:
+The recorded strict study build and independent replay passed:
 
 | Check | Recorded result |
 | --- | --- |
-| Fresh child mathematical build | 18 modules, 0 warnings, 0 errors, 19.976 s |
-| Source closure | 49 local modules: 18 research + 31 parent |
-| Optional original-source comparison | All 14 copied mathematical sources match their archived originals |
+| Study mathematical build from an empty local build directory | 18 modules, 0 warnings, 0 errors, 19.976 s |
+| Source closure | 49 local modules: 18 research + 31 root-package modules |
+| Source identity check | Mathematical sources and reference snapshots match their recorded hashes |
 | Independent statement/binder/axiom audit | 9 selected roots, actual proof closure 17,732 declarations |
-| Fresh Nanoda replay | 18,183 expanded declarations, 5.191 s, PASS |
+| Nanoda replay | 18,183 expanded declarations, 5.191 s, PASS |
 | Imported artifacts bound by hash | 5,552 modules, 33,312 artifacts |
 | Allowed transitive axioms | `propext`, `Classical.choice`, `Quot.sound` only |
 | Saved-evidence read-only check | PASS |
 
-The private proof environment is loaded explicitly, so the Lean module system
-cannot hide proof bodies from the axiom audit. Expected theorem types are
-independently stated by the auditor. The checker uses the original stack limits;
-no stack-limit workaround was applied. There are no PPG imports.
+The private proof environment is loaded explicitly, so theorem bodies remain
+available to the axiom audit. Expected theorem types are independently stated
+by the auditor. The proof closure does not depend on the general theory
+library.
 
 The selected roots are listed in
 [attempt-001/RESULT.json](evidence/attempt-001/RESULT.json). The root set covers
@@ -78,30 +77,23 @@ both combined separations. This is not a claim of an independent replay of
 every declaration in the imported source modules. A source-level proof check
 also does not verify an external implementation of the chain.
 
-[VERIFICATION.json](evidence/VERIFICATION.json) binds the source receipt, clean
-build and fresh replay. The larger parent Theta(n) audit is still its separate
-`evidence/attempt-003`; this work does not replace that historical receipt.
+[VERIFICATION.json](evidence/VERIFICATION.json) binds the source receipt,
+strict build and replay. The root package's Theta(n) result has a separate
+[audit receipt](../../evidence/attempt-003/RESULT.json).
 
-## Extraction and failed checks
+## Build and verification inputs
 
-Fourteen old modules were copied, never moved. Byte-identical originals remain
-in `provenance/original/`. Active copies received the recorded module headers.
-`SeparableWitness.lean` additionally required removal of inherited unused
-binders/simp arguments and redundant tactic combinators. Mathematical statement
-types and binder order were preserved; the exact cleanup diff is recorded in
-[COPY_ADAPTATIONS.json](COPY_ADAPTATIONS.json). No linter was disabled.
+The study has its own Lake manifest and local build directory. It imports the
+root package's concrete-chain core and shares the pinned external dependency
+cache. Its 18 mathematical modules and verification tools are identified by
+[SOURCE_MANIFEST.json](SOURCE_MANIFEST.json); the read-only source checker also
+validates the recorded reference snapshots.
 
-The initial strict import build failed on those inherited warnings and is
-preserved in `evidence/import-build-001`. The corrected 14-module lint build is
-in `evidence/lint-build-001`. The final 18-module fresh build is in
-`evidence/clean-build-001`. All new proof sources and audit tooling were sealed
-in the manifest before fresh independent verification; they were not modified
-after that attempt began.
-
-The child has its own Lake manifest and build directory. It shares the parent's
-pinned external package cache and imports the parent's standalone proof core.
-It needs neither the old project nor its compiled artifacts to build. Comparing
-against old absolute source paths is optional provenance checking only.
+The successful 18-module build is recorded in
+[clean-build-001/RESULT.json](evidence/clean-build-001/RESULT.json). Earlier
+build logs are retained as historical evidence and are not additional proof
+results. A reproducible build requires only this checkout and its pinned
+dependencies.
 
 ## What remains open
 
@@ -113,6 +105,6 @@ against old absolute source paths is optional provenance checking only.
   other drift conditions, alternative initializations and repair rules are not
   excluded by the new obstruction.
 - The linear process theorem and the certificate obstruction do not establish
-  practical superiority, compiler-time complexity or adaptive-AI guarantees.
+  wall-clock speedup or compiler-time complexity.
 - Scientific priority remains unestablished. The primary-source comparison and
   proposed questions for a reviewer are in [LITERATURE.md](LITERATURE.md).

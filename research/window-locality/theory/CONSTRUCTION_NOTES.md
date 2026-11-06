@@ -112,8 +112,8 @@ are separate from the finite exact dual check; see GAUGE_AND_FLUX.md.
 
 ## Reproduction and boundaries
 
-The generation and rational reconstruction scripts are preserved alongside
-their copied original output and hash manifest in homogeneous-width2/.
+The generation and rational reconstruction scripts, saved output and hash
+manifest are in homogeneous-width2/.
 The saved exact weights have denominators up to 26 decimal digits. This is an
 exact rational certificate, not a claim of a minimal support or elegant dual.
 The original solver timings were not separately recorded. The independent
@@ -121,5 +121,6 @@ raw validator records its own elapsed time.
 
 This gate is not the full finite minimum-budget LP. In particular, failure of
 a homogeneous table alone does not exclude a bounded-budget family of indexed
-width-2 tables. No kernel formalization, novelty, or practical speedup is
-claimed for the supplementary gate.
+width-2 tables. The supplementary gate supplies an exact local identity,
+without a Lean/Nanoda proof or a practical speedup claim. Scientific novelty
+remains open for independent review.

@@ -76,12 +76,8 @@ Two corrupted-certificate controls must be rejected.
 These are executable rational certificates, **not new Lean or Nanoda proofs**.
 The correspondence between this implementation and the Lean definitions was
 reviewed; a SHA-256 binding identifies those definitions, but is not itself a
-formal refinement proof. The sealed biased-resampling theorem only covers
-p >= 2/3, so it is not used to justify the policy's p = 0 branch.
-
-The older `/tmp/mtcheck/exact.py` uses floating-point iteration and ties its
-initial distribution to its repair distribution. It is not the certificate
-generator for this comparison.
+formal refinement proof. The biased-resampling theorem covers only p >= 2/3, so it is not used to
+justify the policy's p = 0 branch.
 
 ## Reproduce
 
@@ -108,8 +104,8 @@ algorithmic speedup. Exact vectors and expectations are in
 
 ## Consequence
 
-This policy supplies no reason to start a new formalization. The experiment
-stops here, without a replacement policy, larger n, or new benchmark. It does
-not show that no useful barrier-dependent policy exists, nor does it change
-the sealed uniform or biased chain theorems. In particular it establishes
-neither an all-n comparison, a practical PPG advantage, nor scientific novelty.
+For n = 2,...,5 under the common uniform initialization, this fixed policy
+has a larger expected redraw count than static p = 1. This excludes the
+policy as an improvement over the best static law at these sizes. It does
+not exclude other barrier-dependent policies, establish an all-n comparison,
+or change the uniform and biased chain theorems.

@@ -1,6 +1,6 @@
 # Scope of the comparison with drift and MT literature
 
-This note separates previously known transfer theorems from the new results
+This note separates known drift transfer theorems from the results
 proved in this repository. It is not an exhaustive priority search. A failed
 criterion or the absence of a matching statement in these references does not
 establish scientific novelty.
@@ -28,8 +28,8 @@ Historical reference:
 [He and Yao, Drift analysis and average time complexity of evolutionary
 algorithms, Artificial Intelligence 127 (2001), 57-85](https://doi.org/10.1016/S0004-3702(01)00058-3).
 The modern theorem displayed by Lengler is attributed there to He-Yao 2004,
-with earlier foundations also discussed. We do not attribute its exact modern
-quantifiers to an independently inspected copy of the final 2001 publisher PDF.
+with earlier foundations also discussed. The formulation used for comparison
+here is Lengler's explicitly stated theorem.
 
 The question for comparison is a class-wide obstruction for this specific MT
 process, not whether positive-drift arguments or bad choices of potential were

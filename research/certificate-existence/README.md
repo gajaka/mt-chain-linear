@@ -1,11 +1,12 @@
 # Inhabited potential classes and an exponential obstruction
 
-This research package closes the missing existence obligation for both potential
-classes extracted from `ppg-proof-repair`. It also strengthens the lower bound
-for the coordinate-separable class: its budget must grow exponentially, even
-though the expected number of resamplings of the same process is Theta(n).
+This study constructs drift certificates for two restricted potential classes
+of the finite MT chain. Every coordinate-separable certificate requires an
+exponential initial budget, although the expected resampling count of the same
+initialized process is Theta(n). A larger class, with one bridge per summand,
+has a quadratic budget lower bound.
 
-The results below have Lean proofs and a fresh Nanoda check of nine selected
+The results below have Lean proofs and a recorded Nanoda check of nine selected
 roots and their actual proof closure. They are results about the specified MT
 chain, not a faster algorithm or a claim of scientific priority.
 
@@ -37,16 +38,16 @@ Actual expected resampling count, for the same initialized process:
   n >= 2: n/18 <= E[T_n] <= 1054*n.
 ```
 
-Consequently, the proposed quadratic upper bound for the coordinate-separable
-class is impossible. Its all-length existence is now constructive, and its
-class-wide lower bound is exponential. The displayed upper and lower bounds
+Consequently, no quadratic-budget family exists in the coordinate-separable
+class. Its all-length existence is constructive, and its class-wide lower
+bound is exponential. The displayed upper and lower bounds
 do not identify the optimal exponential base or leading constant. For the
 larger class, quadratic attainment remains open; the exponential lower bound
 for the narrower class does not transfer to it.
 
 ## Exactly which potentials are restricted
 
-The parent [README](../../README.md) specifies the process. This section uses
+The project [README](../../README.md) specifies the process. This section uses
 Lean's zero-based bridge index `i = 0,...,n-1` and threshold positions
 `j = 0,...,n`, with fixed endpoints `X_0 = 2`, `X_n = 0`.
 
@@ -59,7 +60,7 @@ V(s) = 0         if every bridge passes (Good)
        score(s)  otherwise.
 ```
 
-The terminal reset is part of the existing definition. Thus this is a
+The terminal reset is part of the definition. Thus this is a
 separable score on active states, with a global Good gate; it is not a claim
 that V is coordinate-separable on the whole state space. The general class
 does not require the ungated score to be nonnegative at Good states.
@@ -83,9 +84,9 @@ V(s) - (1/36)*sum_u V(replace(s,i,u)) >= delta
 ```
 
 Only the fresh redraw is averaged in this condition. There is no averaging
-over states, histories or completion fibers. The original observed-prefix
+over states, histories or completion fibers. The chain's observed-prefix
 linear potential has a different drift obligation: it uses the proved
-conditional completion law. The new lower bound does not apply to that proof.
+conditional completion law. These lower bounds do not apply to that proof.
 
 ## The explicit certificate
 
@@ -141,7 +142,7 @@ c_j + a_(j+1)    <= -8*delta/3.
 At a middle position, the last inequality forces a negative component on
 one side. The first two propagate it toward an endpoint with factor five
 per step. For `2*k+4 <= n`, some threshold table therefore has oscillation
-at least `delta*(5^(k+1)-3)`. The extracted product-budget lemma converts
+at least `delta*(5^(k+1)-3)`. The product-budget lemma converts
 that oscillation into the budget lower bound with divisor 36.
 
 This argument uses exact inequalities in Lean. Numerical searches are not
@@ -156,27 +157,24 @@ premises of the proof. Full statement and evidence details are in
 | [ExponentialObstruction.lean](formal/ExponentialObstruction.lean) | Class-wide exponential lower bound |
 | [NeighborEmbedding.lean](formal/NeighborEmbedding.lean) | Larger-class inhabitant and budget equality |
 | [CertificateResults.lean](formal/CertificateResults.lean) | Nonvacuous separations and actual process bounds together |
-| [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) | Hashes of copies, new proofs and audit support |
-| [COPY_ADAPTATIONS.json](COPY_ADAPTATIONS.json) | Recorded header migration and limited inherited-lint cleanup |
-| [provenance/original/](provenance/original/) | Fourteen unmodified old proof sources |
+| [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json) | Identities of mathematical sources, reference snapshots and audit support |
 
-Build the parent package first, then run from this directory:
+Build the root package first, then run from this directory:
 
 ```sh
 lake --wfail build CertificateStudy
 python3 -B scripts/verify_sources.py
-# Optional comparison against the original source project:
-python3 -B scripts/verify_sources.py --compare-original
 ```
 
-This is a separate Lake package using the parent's pinned Lean 4.35.0 and
+This is a separate Lake package using the project's pinned Lean 4.35.0 and
 Mathlib revision. Its full local proof import closure is 49 modules:
-18 research modules plus 31 parent modules, with no PPG imports.
-The old project and the parent's existing mathematical sources are unchanged.
+18 research modules plus 31 modules from the root package. This proof closure
+uses the concrete chain directly and is independent of the general theory
+library.
 
-The final build compiled all 18 research modules from an absent child build
-directory, reusing parent and external dependency caches: zero warnings and
-zero errors. Fresh Nanoda verification checked 18,183 expanded declarations
+The recorded strict build compiled all 18 research modules from an empty study
+build directory, reusing root and external dependency caches: zero warnings
+and zero errors. Nanoda verification checked 18,183 expanded declarations
 from nine selected roots, with only `propext`, `Classical.choice`, `Quot.sound`.
 This does not mean every theorem in all 49 modules was independently replayed.
 
@@ -189,8 +187,8 @@ python3 -B scripts/independent.py --verify --attempt attempt-001
 ```
 
 For a fresh replay, use a new unused attempt name and the pinned tools described
-in the parent's [TOOLING.md](../../TOOLING.md). Raw exports and binaries are
-excluded from Git. Audit attempts and original sources are never overwritten.
+in [TOOLING.md](../../TOOLING.md). Raw exports and binaries are excluded from
+Git. Recorded audit attempts and source reference snapshots are preserved.
 
 ## Research interpretation
 

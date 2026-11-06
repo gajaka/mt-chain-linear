@@ -95,9 +95,9 @@ conditional theorems used to study resampling systems:
 
 [GenericMT.lean](library/GenericMT.lean) is the entry point for these theories
 and their required definitions. Theorems retain their stated hypotheses.
-The concrete chain has
-its own finite-kernel proof; the presence of the general library does not
-assert a new instantiation or extend the chain's bound to other processes.
+The concrete chain has its own finite-kernel proof; the presence of the
+general library does not assert a new instantiation or extend the chain's
+bound to other processes.
 
 ## Questions for independent review
 

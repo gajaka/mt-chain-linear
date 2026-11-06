@@ -12,19 +12,19 @@
       "sha256": "cd035d44058d6e55c47982f4a4182f9cde26e7b856b307860d3eedb1960658f8"
     },
     {
-      "bytes": 7593,
+      "bytes": 7584,
       "path": "README.md",
-      "sha256": "05fb09e5a3f56ee35e6983f74b4738c2ea297ec48445ebb5f7852dde5cda67f8"
+      "sha256": "fa7b52239552cd46aceed2da0c7cd90a8b47bfd1008873600e37ab7242aaab9c"
     },
     {
-      "bytes": 7226,
+      "bytes": 7116,
       "path": "REPORT.md",
-      "sha256": "dfc512b501100d104d1acd6e61aa3b17102aa904a8f540ddbb36725c4f16e208"
+      "sha256": "ea65879b9f8a0a92843b381b8152a5ccfc3a658e4b80f443f0b58fe10d707b33"
     },
     {
-      "bytes": 3637,
+      "bytes": 3598,
       "path": "SPEC.md",
-      "sha256": "ac09cd7cce91c05579f1bbb76f0d935148ee6087f8bd055013351a08007ec02d"
+      "sha256": "36ad34c5fbec1fdf6e07f4f95a9253283f08ca85fbd57037ec1c9e9fc1460e7f"
     },
     {
       "bytes": 10329,
@@ -247,14 +247,14 @@
       "sha256": "b0f4bc40868f48053544c89d6fb578cf740c67247eaf5dc2109c940d4409b6a4"
     },
     {
-      "bytes": 5331,
+      "bytes": 5373,
       "path": "theory/CONSTRUCTION_NOTES.md",
-      "sha256": "407ea37f01fdc4592873849d5fc7183f5e01cdeab3b388f4fbd6d74f5cf44625"
+      "sha256": "489b2a5a6a53a4c351a46891745165c3b8391674324e2743f4eec0a61c51265f"
     },
     {
-      "bytes": 7833,
+      "bytes": 7835,
       "path": "theory/GAUGE_AND_FLUX.md",
-      "sha256": "14cdee45bc93d981648dd0107e2a2e56e1dbd93727a9935e557eec5d45d21c46"
+      "sha256": "9a2219440909c58d124fa5111ffb06cc2670ee1017257a40c2707f9b5321a3e5"
     },
     {
       "bytes": 4714,
@@ -322,5 +322,36 @@
   ],
   "profile_law": "3^#strong / (3^(n-1)*4^n); 36 original redraws",
   "schema": 1,
-  "scope": "Window-locality finite certificates, tooling, paper argument and evidence; not a Lean all-n certificate"
+  "scope": "Window-locality finite certificates, tooling, paper argument and evidence; not a Lean all-n certificate",
+  "documentation_revision": {
+    "base_commit": "f9db8d3ec831f2b4d50c62016119aa84508479c1",
+    "scope": "Editorial changes only; mathematical sources, exact certificates and recorded verification results unchanged. Historical specification hashes refer to the base commit.",
+    "files": [
+      {
+        "path": "README.md",
+        "prior_sha256": "05fb09e5a3f56ee35e6983f74b4738c2ea297ec48445ebb5f7852dde5cda67f8",
+        "current_sha256": "fa7b52239552cd46aceed2da0c7cd90a8b47bfd1008873600e37ab7242aaab9c"
+      },
+      {
+        "path": "REPORT.md",
+        "prior_sha256": "dfc512b501100d104d1acd6e61aa3b17102aa904a8f540ddbb36725c4f16e208",
+        "current_sha256": "ea65879b9f8a0a92843b381b8152a5ccfc3a658e4b80f443f0b58fe10d707b33"
+      },
+      {
+        "path": "SPEC.md",
+        "prior_sha256": "ac09cd7cce91c05579f1bbb76f0d935148ee6087f8bd055013351a08007ec02d",
+        "current_sha256": "36ad34c5fbec1fdf6e07f4f95a9253283f08ca85fbd57037ec1c9e9fc1460e7f"
+      },
+      {
+        "path": "theory/CONSTRUCTION_NOTES.md",
+        "prior_sha256": "407ea37f01fdc4592873849d5fc7183f5e01cdeab3b388f4fbd6d74f5cf44625",
+        "current_sha256": "489b2a5a6a53a4c351a46891745165c3b8391674324e2743f4eec0a61c51265f"
+      },
+      {
+        "path": "theory/GAUGE_AND_FLUX.md",
+        "prior_sha256": "14cdee45bc93d981648dd0107e2a2e56e1dbd93727a9935e557eec5d45d21c46",
+        "current_sha256": "9a2219440909c58d124fa5111ffb06cc2670ee1017257a40c2707f9b5321a3e5"
+      }
+    ]
+  }
 }

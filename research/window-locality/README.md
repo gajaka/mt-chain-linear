@@ -1,14 +1,14 @@
 # How much local interaction can certify linear resampling cost?
 
-The first open width in the previous study was two adjacent bridges per
-summand. This study obtains exact finite minimum budgets and an all-length
-paper obstruction for that width. Two-bridge interaction improves the small
-examples but still cannot give a uniform O(n) budget under the paper argument.
+This study asks whether allowing two adjacent bridges per potential summand
+can certify the linear expected cost of the MT chain. It obtains exact finite
+minimum budgets and an all-length paper obstruction for that width. Two-bridge
+interaction improves the small examples but still cannot give a uniform O(n)
+budget under the paper argument.
 
 **Verification status:** finite LP optima and the local algebraic witness have
 independent exact rational checks. The all-n extension is a written argument
-with independent internal review, not yet a Lean/Nanoda theorem. Existing
-formal results in the parent and sibling packages are unchanged.
+with independent internal review, not yet a Lean/Nanoda theorem.
 
 ## The exact question
 
@@ -32,9 +32,9 @@ is one constant C with `B_r(n) <= C*n` for all sufficiently large n and fixed
 r. This is a constraint on interactions inside each summand, not on total
 evaluation memory. The global Good reset is explicitly retained.
 
-[SPEC.md](SPEC.md) was written before the first optimization. Feasibility was
-already known: the existing explicit coordinate-separable certificate embeds
-into width 2. This study optimizes the budget instead of retesting existence.
+[SPEC.md](SPEC.md) defines the finite optimization and all-length question.
+The explicit coordinate-separable certificate embeds into width 2, establishing
+feasibility. The objective here is its best possible initial budget.
 
 ## Finite results: exact primal and dual certificates
 
@@ -150,9 +150,10 @@ output proposes a basis; rational reconstruction and exact inequalities must
 succeed before it reports an optimum, followed by the independent checker.
 The first n=6 simplex run timed out and remains `UNKNOWN`. Its unfinished
 objective is not a bound. A separate interior-point run completed and supplied
-the independently checked certificate. The original runner is archived under
-[provenance/window_lp-v1.py](provenance/window_lp-v1.py); only a solver-selection
-option was added for the successful retry, not a different mathematical model.
+the independently checked certificate. Both runs used the same mathematical
+model. [provenance/window_lp-v1.py](provenance/window_lp-v1.py) records the
+runner version used for the first attempt.
 
-No practical speedup, compiler-time bound, adaptive AI guarantee, scientific
-novelty, or universal lower bound on all drift methods is asserted.
+The results concern certificate budgets for the specified resampling law.
+They do not establish algorithmic speedup or a lower bound on unrestricted
+drift methods. Scientific novelty remains open for independent review.

@@ -1,12 +1,12 @@
 # Biased full-footprint resampling
 
-This study formalizes a new redraw law for the existing bridge chain. It
-keeps the original states, certificate table and `replace` operation. It does
-not modify the registered uniform process or its historical proof receipts.
+This study analyzes biased full-footprint redraws on the bridge chain. The
+states, certificate table and `replace` operation are the same as for the
+uniform law; the threshold distribution changes.
 
 The fixed-law result and the history-dependent extension are separate.
 The proofs count resampling operations, excluding initialization. They do
-not bound wall-clock time or establish an advantage over a SAT solver.
+not bound wall-clock time.
 
 ## The process and its terminology
 
@@ -60,9 +60,9 @@ statement. The sharper lower bound is `(15n - 16)/144`. Its first moment is
 certificates. The lower bound obtains finiteness from the new upper bound
 before taking the vanishing-tail limit.
 
-The original uniform initialization is identified with the old `initialFull`
-by the theorem `initialWeight_uniform`. Initialization has not been silently
-changed in the `5n - 4` bound.
+The theorem `initialWeight_uniform` identifies uniform initialization with
+`initialFull`. The `5n - 4` bound therefore uses the same start as the
+uniform-law process.
 
 ## History-dependent extension
 
@@ -90,8 +90,8 @@ as a formal all-policy lower-bound theorem.
 
 At `p = 1` the threshold law is degenerate; this endpoint is allowed in the
 upper theorem. No uniform Theta(n) claim is made for every matching
-initialization in `[2/3,1]`. Additional randomized controller decisions and
-arbitrary AI proposal distributions are not directly modeled.
+initialization in `[2/3,1]`. Additional randomized policy decisions are not
+modeled.
 
 This theorem does not establish that a barrier-position-dependent distribution
 outperforms the best static bias, and does not cover policies that use `p < 2/3`
@@ -114,7 +114,8 @@ is at least 1. The exact worst-case drift bounds are:
 These are raw pointwise bounds: they hold in each full state, without
 averaging states through a completion law. The raw score need not be zero
 on Good; stopping with zero further cost suffices. This proof uses the
-ordinary additive-drift argument. It does not reuse the old runtime result.
+ordinary additive-drift argument, independently of the uniform-law
+expected-cost theorem.
 
 ## Proof map and checks
 
@@ -132,7 +133,7 @@ All names below are in `MTChainFormal.BiasedResampling`.
 | `formal/BiasedControls.lean` | Exact counterexamples to invalid proof variants |
 | `formal/BiasedAudit.lean` | Independently spelled statements and raw proof-closure axiom audit |
 
-The controls prove that this score fails unit drift under the old uniform
+The controls prove that this score fails unit drift under the uniform
 repair law: a genuine active state has score 6 and next expected score 9.
 Under the new law its next expected score is 5. Another genuine active
 endpoint state proves that omitting the tactic term invalidates the argument.
@@ -141,7 +142,7 @@ The verifier rebuilds every study module in a new snapshot, checks the raw
 transitive proof closure against only `propext`, `Classical.choice` and
 `Quot.sound`, and rejects four negative controls. The injected-axiom control
 tests the auditor itself: an extra assumption accepted by Lean as an axiom
-must still be rejected by the study's audit. Old runtime modules are excluded
+must still be rejected by the study's audit. Uniform-law cost modules are excluded
 from the mathematical import closure. No new Nanoda replay is claimed.
 
 ## Reproduction
@@ -160,21 +161,23 @@ updates `RESULT.json` as an explicitly mutable latest-result summary. Within
 the copied workspace only dependency paths in the Lake configuration and
 manifest are adapted; mathematical sources are copied verbatim. Pinned
 dependency builds are reused, while every local study module is rebuilt.
-The replay checks source hashes before and after. No proof receipts in the
-original process are rewritten.
+The replay checks source hashes before and after. Logs and the raw audit are
+local replay outputs; the published summary does not include those build
+directories. [REVIEW.json](REVIEW.json) records an earlier review, with its own
+attempt and input hashes, rather than a review of every subsequent replay.
 
 ## Boundaries
 
-This is a controlled chain with a known easy satisfying configuration. Bias
-toward 2 is not a demonstrated general barrier-discovery method. A direct
-known-solution overwrite is an important baseline. Smaller upper bounds do
-not establish actual speedup, and the user-supplied small-n measurements
-have not been reproduced by this formalization.
+This is a controlled chain with a known easy satisfying configuration. The
+proof does not construct useful biases for arbitrary constraint systems.
+The admissible interval
+includes `p = 1`, which sets redrawn thresholds to that known value.
+Smaller upper bounds alone do not establish an actual speedup.
 
 The original uniform-law potential-class obstruction remains about that
 original law. A new small potential does not prove that `(M,W)` is a stable
-view supporting autonomous execution. No new application, novelty, practical
-PPG superiority, or automatic transfer of the old Theta(n) theorem is claimed.
+view supporting autonomous execution. The biased-law bounds are separate
+theorems, not an automatic transfer of the uniform-law Theta(n) theorem.
 The discussed Shearer-region obstruction is not mechanized by this package;
 its concrete failure probabilities are checked in `BiasedLaw.lean`.
 
