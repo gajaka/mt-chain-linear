@@ -1,10 +1,14 @@
-.PHONY: check core certificates windows biased provenance barrier
+.PHONY: check core generic certificates windows biased provenance barrier
 
-# Focused mathematical package. No generic PPGraph or external case studies.
-check: certificates windows biased provenance barrier
+# Original generic theory and the concrete chain have separate build scopes.
+check: generic certificates windows biased provenance barrier
 
 core:
 	lake --wfail build
+
+generic:
+	cd library && lake --wfail build GenericMT
+	python3 -B library/check.py
 
 certificates: core
 	cd research/certificate-existence && lake --wfail build CertificateStudy

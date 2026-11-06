@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "source_project": "ppg-lean",
+  "source_commit": "60151677e58704ce856c05a572904d681fd959f6",
+  "source_modules": 63,
+  "moser_tardos_modules": 44,
+  "roots": [
+    "PPGraph.MoserTardos.Bounds.ConstantLog",
+    "PPGraph.MoserTardos.Bounds.Convergence",
+    "PPGraph.MoserTardos.Bounds.Drift",
+    "PPGraph.MoserTardos.Bounds.DriftCost",
+    "PPGraph.MoserTardos.Bounds.Expectation",
+    "PPGraph.MoserTardos.Bounds.OccurrenceExpectation",
+    "PPGraph.MoserTardos.Bounds.Pegden",
+    "PPGraph.MoserTardos.Bounds.Termination",
+    "PPGraph.MoserTardos.Bounds.WeightSum",
+    "PPGraph.MoserTardos.Counting.Counting",
+    "PPGraph.MoserTardos.Counting.OccurrenceCounting",
+    "PPGraph.MoserTardos.Counting.ResamplingCount",
+    "PPGraph.MoserTardos.Probability.Intersection",
+    "PPGraph.MoserTardos.Probability.OccurrenceProbability",
+    "PPGraph.MoserTardos.Probability.PastIndependence",
+    "PPGraph.MoserTardos.Probability.Probability",
+    "PPGraph.MoserTardos.Probability.ProbabilityGeneral",
+    "PPGraph.MoserTardos.Probability.RandomInitExpectation",
+    "PPGraph.MoserTardos.Process.Basic",
+    "PPGraph.MoserTardos.Process.FullResampling",
+    "PPGraph.MoserTardos.Process.LogSpace",
+    "PPGraph.MoserTardos.Process.Process",
+    "PPGraph.MoserTardos.Process.RandomInitialization",
+    "PPGraph.MoserTardos.Process.RandomTrajectory",
+    "PPGraph.MoserTardos.Witness.Canonical",
+    "PPGraph.MoserTardos.Witness.Check",
+    "PPGraph.MoserTardos.Witness.CheckBirth",
+    "PPGraph.MoserTardos.Witness.CheckBridge",
+    "PPGraph.MoserTardos.Witness.CheckInvariance",
+    "PPGraph.MoserTardos.Witness.CheckOrder",
+    "PPGraph.MoserTardos.Witness.CheckShape",
+    "PPGraph.MoserTardos.Witness.Correspondence",
+    "PPGraph.MoserTardos.Witness.Growing",
+    "PPGraph.MoserTardos.Witness.Injectivity",
+    "PPGraph.MoserTardos.Witness.InjectivityBridge",
+    "PPGraph.MoserTardos.Witness.LabelsAtDepthBridge",
+    "PPGraph.MoserTardos.Witness.Occurrence",
+    "PPGraph.MoserTardos.Witness.RealTree",
+    "PPGraph.MoserTardos.Witness.ToGrowingTreeCheckBridge",
+    "PPGraph.MoserTardos.Witness.WTreeCountable",
+    "PPGraph.MoserTardos.Witness.WTreeToGrowingTree",
+    "PPGraph.MoserTardos.Witness.Weight",
+    "PPGraph.MoserTardos.Witness.Witness",
+    "PPGraph.MoserTardos.Witness.WitnessFamily",
+    "PPGraph.Repair.Hazards",
+    "PPGraph.Repair.SemanticHazards",
+    "PPGraph.Repair.ObservableAlgebra",
+    "PPGraph.Repair.ObservableKernel"
+  ],
+  "files": [
+    {
+      "module": "PPGraph.Core.Graph",
+      "path": "PPGraph/Core/Graph.lean",
+      "sha256": "6e4d3ec172faa60aedb75a2c47451494e83284d38f37e560f86e319a0c295718",
+      "bytes": 19277
+    },
+    {
+      "module": "PPGraph.Core.Repair",
+      "path": "PPGraph/Core/Repair.lean",
+      "sha256": "caba0ef56cce78cad3c77173e986cfdfc802629cd10020336fc11bbb2dde78d5",
+      "bytes": 7234
+    },
+    {
+      "module": "PPGraph.Dependency.Decomposition",
+      "path": "PPGraph/Dependency/Decomposition.lean",
+      "sha256": "209d90ab9fa7e4e00b5e4fc2e30d27a8c296e8eb6eb02365d30b0843da26eb48",
+      "bytes": 16768
+    },
+    {
+      "module": "PPGraph.Dependency.Probabilistic",
+      "path": "PPGraph/Dependency/Probabilistic.lean",
+      "sha256": "30a2a2f39929123f5de75d5208ac0a3168ad1699091ce0087a5c30ee18b0cf74",
+      "bytes": 10020
+    },
+    {
+      "module": "PPGraph.Drift.Additive",
+      "path": "PPGraph/Drift/Additive.lean",
+      "sha256": "d9e04c87dc3f806aea0e5a368ddc25dd18e768192a9c5e1d7a71f242e9957396",
+      "bytes": 7603
+    },
+    {
+      "module": "PPGraph.Finite.Drift.Basic",
+      "path": "PPGraph/Finite/Drift/Basic.lean",
+      "sha256": "9842cbcd5f14f119bf67f18329ce818c9fa6ef1480a5754914e4b0c7266d102e",
+      "bytes": 7369
+    },
+    {
+      "module": "PPGraph.Finite.Drift.Process",
+      "path": "PPGraph/Finite/Drift/Process.lean",
+      "sha256": "06b6d46f2f82e9f325b59f45ee09ce43ab4173bda6ae4f1ae68fcfca4d46b262",
+      "bytes": 14635
+    },
+    {
+      "module": "PPGraph.Finite.Lumping.Basic",
+      "path": "PPGraph/Finite/Lumping/Basic.lean",
+      "sha256": "0ec27c12f426f089b235b5b83f3f82e7a09e2e16f1eb67058fd9eac6a9ecc23f",
+      "bytes": 10768
+    },
+    {
+      "module": "PPGraph.Finite.Potential.Basic",
+      "path": "PPGraph/Finite/Potential/Basic.lean",
+      "sha256": "5c3777831b86ededeba8832e464e70e5abbf960da8aa7ca557a876298b41948c",
+      "bytes": 15720
+    },
+    {
+      "module": "PPGraph.Finite.Potential.Expectation",
+      "path": "PPGraph/Finite/Potential/Expectation.lean",
+      "sha256": "3b1eae0e0bbd8261a89e9ba1e1c0780073748d8f505cb5f9aed6d9fc08414a66",
+      "bytes": 16007
+    },
+    {
+      "module": "PPGraph.Finite.Potential.Refutation",
+      "path": "PPGraph/Finite/Potential/Refutation.lean",
+      "sha256": "00bd917159ae86b3bbc3d1eaf568827ed3c7267992f764e7c4d99dfd61a18bfa",
+      "bytes": 5063
+    },
+    {
+      "module": "PPGraph.Finite.Potential.Tail",
+      "path": "PPGraph/Finite/Potential/Tail.lean",
+      "sha256": "9e279445989e7797d3a226ff1a2fb94c0c942f2a2dfce1df5ae5350d0d8432d7",
+      "bytes": 19048
+    },
+    {
+      "module": "PPGraph.Finite.Potential.TailCertificate",
+      "path": "PPGraph/Finite/Potential/TailCertificate.lean",
+      "sha256": "3ff0418b0d28d95692382feb48397bb408820402aa98d6343e848f5f6f91af96",
+      "bytes": 2534
+    },
+    {
+      "module": "PPGraph.Integration.MoserTardosRepair",
+      "path": "PPGraph/Integration/MoserTardosRepair.lean",
+      "sha256": "a99b802cc34934b9050f8529b98f38949b3352bfed208995d97fe05f640b7559",
+      "bytes": 11317
+    },
+    {
+      "module": "PPGraph.LLL.General",
+      "path": "PPGraph/LLL/General.lean",
+      "sha256": "dcb84033d68ab0b86bf0e6c566ed262b4e22ecea06a09b1cf8f980d9b5a3e628",
+      "bytes": 34173
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.ConstantLog",
+      "path": "PPGraph/MoserTardos/Bounds/ConstantLog.lean",
+      "sha256": "d3519e87c77ff119ca47e2d0acd98552fc962c654fdc1da82d15252e39ecbc0d",
+      "bytes": 6209
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.Convergence",
+      "path": "PPGraph/MoserTardos/Bounds/Convergence.lean",
+      "sha256": "d561917140fb9c001391cd080e67d68ce9d04de4ee95a03da625c3e59157b0fb",
+      "bytes": 6671
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.Drift",
+      "path": "PPGraph/MoserTardos/Bounds/Drift.lean",
+      "sha256": "81b6e4cf05173f316d6867613c616cc8b149bffff95de80f8fc30332e4e606b4",
+      "bytes": 15106
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.DriftCost",
+      "path": "PPGraph/MoserTardos/Bounds/DriftCost.lean",
+      "sha256": "35908e098696787c84376c50413a1d0be95da016cc00ca90fd099a9d36a843df",
+      "bytes": 5412
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.Expectation",
+      "path": "PPGraph/MoserTardos/Bounds/Expectation.lean",
+      "sha256": "f63466f231dbe400f07bd716ca5ee225a4e97542d13e8dec11dc4bfbfe76e385",
+      "bytes": 7388
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.OccurrenceExpectation",
+      "path": "PPGraph/MoserTardos/Bounds/OccurrenceExpectation.lean",
+      "sha256": "7ff526ae7dbc167291fa721b32eaa465169f16ca9cac188eb0d9216dd73294af",
+      "bytes": 6084
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.Pegden",
+      "path": "PPGraph/MoserTardos/Bounds/Pegden.lean",
+      "sha256": "0e571e574dd67f46ee62b4e7a901ee84164c7dd8c2913501efae4c6813e7243f",
+      "bytes": 29848
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.Termination",
+      "path": "PPGraph/MoserTardos/Bounds/Termination.lean",
+      "sha256": "ab0b7802ef525d8663f4d96bebd385ba5c323c74bf59831e77109c8281ac0f91",
+      "bytes": 6763
+    },
+    {
+      "module": "PPGraph.MoserTardos.Bounds.WeightSum",
+      "path": "PPGraph/MoserTardos/Bounds/WeightSum.lean",
+      "sha256": "dda418168c3831f379b9265e4f757bb195a24529840f5261e7ac61d49781a5cf",
+      "bytes": 15037
+    },
+    {
+      "module": "PPGraph.MoserTardos.Counting.Counting",
+      "path": "PPGraph/MoserTardos/Counting/Counting.lean",
+      "sha256": "bbd1f7e4addb8d6898a536172c092559ef8839a4f8b4f261ead1c2c229c050a2",
+      "bytes": 7555
+    },
+    {
+      "module": "PPGraph.MoserTardos.Counting.OccurrenceCounting",
+      "path": "PPGraph/MoserTardos/Counting/OccurrenceCounting.lean",
+      "sha256": "a9da1be9f414c1089a6bb04128b7ba9dc426cc2fe3599dd31a8f0ab2c914d3ba",
+      "bytes": 4800
+    },
+    {
+      "module": "PPGraph.MoserTardos.Counting.ResamplingCount",
+      "path": "PPGraph/MoserTardos/Counting/ResamplingCount.lean",
+      "sha256": "de65d1cdbd8c05ab5df4f2cbbfd3a4eb6cf47617b272da2569b773f0835a1d4d",
+      "bytes": 11583
+    },
+    {
+      "module": "PPGraph.MoserTardos.Probability.Intersection",
+      "path": "PPGraph/MoserTardos/Probability/Intersection.lean",
+      "sha256": "3525a797e7559d4e364dadfcf51d4748036ec355084af8e185534d1ba38737ff",
+      "bytes": 10418
+    },
+    {
+      "module": "PPGraph.MoserTardos.Probability.OccurrenceProbability",
+      "path": "PPGraph/MoserTardos/Probability/OccurrenceProbability.lean",
+      "sha256": "835c03a55728050daa10da321581dc5235d7906e8fd8a72c81e7dec2471739c6",
+      "bytes": 6633
+    },
+    {
+      "module": "PPGraph.MoserTardos.Probability.PastIndependence",
+      "path": "PPGraph/MoserTardos/Probability/PastIndependence.lean",
+      "sha256": "40a4a92bc2468957531a5003764efcaaf9680817b93cd79e12b7660d26a8e9cf",
+      "bytes": 5001
+    },
+    {
+      "module": "PPGraph.MoserTardos.Probability.Probability",
+      "path": "PPGraph/MoserTardos/Probability/Probability.lean",
+      "sha256": "265ff1f58f7884c4d3fad105c102cbd5ada7395840e7878950912e95adfd2193",
+      "bytes": 22619
+    },
+    {
+      "module": "PPGraph.MoserTardos.Probability.ProbabilityGeneral",
+      "path": "PPGraph/MoserTardos/Probability/ProbabilityGeneral.lean",
+      "sha256": "6574f9f64e995468a2fcca16503c10e9678db7688d3571d54d815499a22b033a",
+      "bytes": 7781
+    },
+    {
+      "module": "PPGraph.MoserTardos.Probability.RandomInitExpectation",
+      "path": "PPGraph/MoserTardos/Probability/RandomInitExpectation.lean",
+      "sha256": "0fd18e47d58621c197e0981fc15739288afed7da63860c5b190bc2d0f384dc03",
+      "bytes": 11336
+    },
+    {
+      "module": "PPGraph.MoserTardos.Process.Basic",
+      "path": "PPGraph/MoserTardos/Process/Basic.lean",
+      "sha256": "2bbe5b89a538dba8948f8be0e3939a498501b4703d5b96b54ebff8b048bcfb53",
+      "bytes": 4048
+    },
+    {
+      "module": "PPGraph.MoserTardos.Process.FullResampling",
+      "path": "PPGraph/MoserTardos/Process/FullResampling.lean",
+      "sha256": "a6158e4c029b2802db593ad5e3c86b953df4dfa8423314426762c1fb2af94239",
+      "bytes": 12059
+    },
+    {
+      "module": "PPGraph.MoserTardos.Process.LogSpace",
+      "path": "PPGraph/MoserTardos/Process/LogSpace.lean",
+      "sha256": "262a22873de3dd120d11ec4bc3d06f10ee7f2c57912c4d51620300ae21f2ee69",
+      "bytes": 6668
+    },
+    {
+      "module": "PPGraph.MoserTardos.Process.Process",
+      "path": "PPGraph/MoserTardos/Process/Process.lean",
+      "sha256": "02a2c1288b33bedfd99cb03860fe3d15fdb7cc50bae2f67b76fc859ba792c3e3",
+      "bytes": 4393
+    },
+    {
+      "module": "PPGraph.MoserTardos.Process.RandomInitialization",
+      "path": "PPGraph/MoserTardos/Process/RandomInitialization.lean",
+      "sha256": "bfcd394a0efd84f74fe4b1a7981cf1e645805f80474117ce30b6b41af544e802",
+      "bytes": 5757
+    },
+    {
+      "module": "PPGraph.MoserTardos.Process.RandomTrajectory",
+      "path": "PPGraph/MoserTardos/Process/RandomTrajectory.lean",
+      "sha256": "6b6021b2f093e5c91123191f7e29aa06a34e873afc50057a24e7357c8dbfd742",
+      "bytes": 20212
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Canonical",
+      "path": "PPGraph/MoserTardos/Witness/Canonical.lean",
+      "sha256": "e44113aad479231985df4ac7896519b16a333d6266496471c570006d683e5ca5",
+      "bytes": 18849
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Check",
+      "path": "PPGraph/MoserTardos/Witness/Check.lean",
+      "sha256": "f98006bf97ba09d8200be3f5b9d8029b148975e5f08f66e1d9207a01666cfd45",
+      "bytes": 5243
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.CheckBirth",
+      "path": "PPGraph/MoserTardos/Witness/CheckBirth.lean",
+      "sha256": "e795db3d9dd052d7fe83f7be936e146138244a4ac86f0c3f4fad683aa5e9e73a",
+      "bytes": 33000
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.CheckBridge",
+      "path": "PPGraph/MoserTardos/Witness/CheckBridge.lean",
+      "sha256": "d960c7d8530ee08ac969a903dc98080e078efbc744ea8be15ef27f79a05b9545",
+      "bytes": 7656
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.CheckInvariance",
+      "path": "PPGraph/MoserTardos/Witness/CheckInvariance.lean",
+      "sha256": "8bac2958bf332728d37363dd24c06ae1e609ce9f83714e9a33a299c0f663c4b2",
+      "bytes": 17149
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.CheckOrder",
+      "path": "PPGraph/MoserTardos/Witness/CheckOrder.lean",
+      "sha256": "d60db9ae27cf03948b02e9f1ddf9c3ffafcea88febd3a7484e5a750a1fe7fd30",
+      "bytes": 15189
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.CheckShape",
+      "path": "PPGraph/MoserTardos/Witness/CheckShape.lean",
+      "sha256": "b53740b1e8b2037f382a7b315367dc662f16e47a8a9e575f7fe92665a93cd91f",
+      "bytes": 13212
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Correspondence",
+      "path": "PPGraph/MoserTardos/Witness/Correspondence.lean",
+      "sha256": "7ab5bd43219d517fb7a53deeb9e7cc6d2b95f8d6548e3d16d44e1bb59c40acf4",
+      "bytes": 20973
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Growing",
+      "path": "PPGraph/MoserTardos/Witness/Growing.lean",
+      "sha256": "f01138e41ab4a9385e714caf5d182dfed8855e3ded6afcc4c731561b0d857383",
+      "bytes": 9189
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Injectivity",
+      "path": "PPGraph/MoserTardos/Witness/Injectivity.lean",
+      "sha256": "dfcde098b7db3e5f84c5dd6baadd6edeb82fb0e088d52f286e98387cf862cb90",
+      "bytes": 14038
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.InjectivityBridge",
+      "path": "PPGraph/MoserTardos/Witness/InjectivityBridge.lean",
+      "sha256": "435c1f09fe53d7e4a7b0ab8eca9fc17e0659498357703597f9783ad041ba5010",
+      "bytes": 18344
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.LabelsAtDepthBridge",
+      "path": "PPGraph/MoserTardos/Witness/LabelsAtDepthBridge.lean",
+      "sha256": "2ffeb37f53f694ad30f8888bfcfb1a3325e2fcc35213e5e0092950b8aeee1ce8",
+      "bytes": 12363
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Occurrence",
+      "path": "PPGraph/MoserTardos/Witness/Occurrence.lean",
+      "sha256": "fb801fed5bc45ca95bebec9b71c49d1b75bc825612334534ce5f63d5ad1ac0c3",
+      "bytes": 5431
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.RealTree",
+      "path": "PPGraph/MoserTardos/Witness/RealTree.lean",
+      "sha256": "82451a298a077e5c5b09db98b7d67adab227206ef50fff9b84e955fadce2840f",
+      "bytes": 16502
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.ToGrowingTreeCheckBridge",
+      "path": "PPGraph/MoserTardos/Witness/ToGrowingTreeCheckBridge.lean",
+      "sha256": "831b10ead70754983c3dd3269af1df41116d697ab3ec3dd747979fb3087def92",
+      "bytes": 17943
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.WTreeCountable",
+      "path": "PPGraph/MoserTardos/Witness/WTreeCountable.lean",
+      "sha256": "dd7f2629be417bb16a8e24357e49b98ffeaba1af1d1909944e9b759db33e97b5",
+      "bytes": 5037
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.WTreeToGrowingTree",
+      "path": "PPGraph/MoserTardos/Witness/WTreeToGrowingTree.lean",
+      "sha256": "53f4ae9155717b11ba941e813bf4d5bd6579de9842933242d7159d2a245ba64a",
+      "bytes": 16542
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Weight",
+      "path": "PPGraph/MoserTardos/Witness/Weight.lean",
+      "sha256": "c86afaeaaa96f24c8e4881c286c113c347a9826852895eb350ae2cbffd127477",
+      "bytes": 2754
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.Witness",
+      "path": "PPGraph/MoserTardos/Witness/Witness.lean",
+      "sha256": "5d6200abf4444ebbb2388d4b9992d0dc82e4e3983c4c081c22ea6f71d651379f",
+      "bytes": 6022
+    },
+    {
+      "module": "PPGraph.MoserTardos.Witness.WitnessFamily",
+      "path": "PPGraph/MoserTardos/Witness/WitnessFamily.lean",
+      "sha256": "e8ec0abe57be524e584316f654f999870cf0dc7e7fe41a2c22fe4f8c43b13ffe",
+      "bytes": 6034
+    },
+    {
+      "module": "PPGraph.Repair.Hazards",
+      "path": "PPGraph/Repair/Hazards.lean",
+      "sha256": "172f5b373ae1b717ab82f6562e2dd5c1fd0c3fbd74f10fc96f07e6edebbc2fc1",
+      "bytes": 15763
+    },
+    {
+      "module": "PPGraph.Repair.ObservableAlgebra",
+      "path": "PPGraph/Repair/ObservableAlgebra.lean",
+      "sha256": "77f2ebc744aae40795d70d1bcba1fa1c5115bce05beece79a7bd74e77e94bc4d",
+      "bytes": 14433
+    },
+    {
+      "module": "PPGraph.Repair.ObservableKernel",
+      "path": "PPGraph/Repair/ObservableKernel.lean",
+      "sha256": "55fa40c6ff924f5b798b61105faadcaedd9472fd21beceeb87a4e97d1206d3e8",
+      "bytes": 6912
+    },
+    {
+      "module": "PPGraph.Repair.SemanticHazards",
+      "path": "PPGraph/Repair/SemanticHazards.lean",
+      "sha256": "fa733dc0bfab7297e55fa01d962592af2b46b2a3ec0fbdf3a5db78641adc7c00",
+      "bytes": 18396
+    }
+  ]
+}

@@ -5,6 +5,13 @@ This project extracts finite-chain proof sources from `../ppg-proof-repair`.
 explicit wrapper or audit adaptations. Copied source headers are preserved.
 The separate accounting/barrier supplement retains its original provenance.
 
+`library/` additionally contains selected original sources from `ppg-lean`
+revision `60151677e58704ce856c05a572904d681fd959f6`: all original MT modules
+and the dependency closure for the included hazard and observable-algebra
+theories. [library/SOURCES.json](library/SOURCES.json) records the exact copied
+files and hashes. Original author headers and source bytes are preserved;
+the copy does not introduce a new blanket license for that material.
+
 The extraction does not introduce a blanket license for copied project material
 whose license has not been specified. A public release should state the license
 chosen by the relevant rights holders for that material separately.
