@@ -78,7 +78,7 @@ labels uniform. At static p=2/3 with matching biased product initialization,
 linear upper bounds, not an all-policy Theta(n) theorem. The certificate
 obstruction is specific to the uniform law under which it is proved.
 
-## MT framework
+## MT, HLS and probability theory
 
 The [theory library](library/README.md) provides the general definitions and
 conditional theorems used to study resampling systems:
@@ -91,9 +91,11 @@ conditional theorems used to study resampling systems:
 | Local-lemma and Shearer criteria | [LLL](library/PPGraph/LLL/), [Shearer](library/PPGraph/Shearer/) |
 | HLS probability, witness-DAG and budget arguments | [HLS](library/PPGraph/HLS/) |
 | Repair hazards and stable observable algebras | [Repair](library/PPGraph/Repair/) |
+| History-dependent MT and HLS selection | [Policy](library/PPGraph/Integration/Policy/) |
 
-[GenericMT.lean](library/GenericMT.lean) is the library entry point. General
-framework theorems retain their stated hypotheses. The concrete chain has
+[GenericMT.lean](library/GenericMT.lean) is the entry point for these theories
+and their required definitions. Theorems retain their stated hypotheses.
+The concrete chain has
 its own finite-kernel proof; the presence of the general library does not
 assert a new instantiation or extend the chain's bound to other processes.
 
@@ -115,7 +117,7 @@ claim is made.
 
 | Part | Evidence |
 |---|---|
-| General framework | Lean build and source-inventory checks |
+| MT, HLS, Shearer, LLL, hazards and observable algebras | Lean build and source-inventory checks |
 | Uniform chain and restricted-certificate results | Lean proofs; independent Nanoda replays of selected roots and their proof closures |
 | Biased and history-dependent results | Lean proofs and raw proof-dependency audit; no new Nanoda replay |
 | Finite window optima and local algebraic identity | Independent exact rational checks |

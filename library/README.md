@@ -1,31 +1,31 @@
-# MT and probability theory
+# MT, probability and repair observables
 
-This workspace contains the complete mathematical library: 208 Lean modules,
-including both entry points and 206 implementation modules. Its theories cover
-Moser-Tardos resampling, probability, HLS bounds, Shearer criteria, dependency
-structures, repair hazards, certification and stable observable algebras.
+This theory covers Moser-Tardos resampling, HLS bounds, Shearer criteria,
+LLL, probability, repair hazards and stable observable subalgebras. General
+results retain their stated hypotheses; their availability alone does not
+instantiate them for a particular process.
 
-## Mathematical modules
+## Theories
 
 | Location | Contents |
 |---|---|
-| [MoserTardos/Process/](PPGraph/MoserTardos/Process/) | Product variable spaces, state, resampling, initialization and trajectories |
-| [MoserTardos/Probability/](PPGraph/MoserTardos/Probability/) | Witness-event probabilities and independence |
+| [MoserTardos/Process/](PPGraph/MoserTardos/Process/) | Product spaces, resampling, initialization and trajectories |
+| [MoserTardos/Probability/](PPGraph/MoserTardos/Probability/) | Witness-event laws and independence |
 | [MoserTardos/Witness/](PPGraph/MoserTardos/Witness/) and [Counting/](PPGraph/MoserTardos/Counting/) | Witness constructions and resampling counts |
-| [MoserTardos/Bounds/](PPGraph/MoserTardos/Bounds/) | Expected work, convergence, termination and drift under stated hypotheses |
-| [HLS/](PPGraph/HLS/) | Witness DAGs, encoding, probability and refined budget results |
-| [Shearer/](PPGraph/Shearer/) and [LLL/](PPGraph/LLL/) | Dependency-polynomial criteria, slack, probability and expected-work results |
-| [Finite/](PPGraph/Finite/) | Finite resampling laws, potentials, drift and lumping |
-| [Repair/](PPGraph/Repair/) | Footprint and semantic hazards, stable observable algebras and kernel closure |
-| [Integration/](PPGraph/Integration/) | Connections between process, repair, policy and certification theories |
-| [Core/](PPGraph/Core/), [Dependency/](PPGraph/Dependency/), [Certification/](PPGraph/Certification/) and [Decision/](PPGraph/Decision/) | Supporting graph, dependency, certificate and decision definitions |
+| [MoserTardos/Bounds/](PPGraph/MoserTardos/Bounds/) | Expected work, convergence, termination and drift |
+| [HLS/](PPGraph/HLS/) | Witness DAGs, encodings, probabilities and refined budgets |
+| [Shearer/](PPGraph/Shearer/) and [LLL/](PPGraph/LLL/) | Local-lemma and dependency-polynomial criteria |
+| [Integration/Policy/](PPGraph/Integration/Policy/) | Admissible history-dependent MT and HLS selection policies |
+| [Hazards.lean](PPGraph/Repair/Hazards.lean) and [SemanticHazards.lean](PPGraph/Repair/SemanticHazards.lean) | Footprint and semantic invalidation scopes |
+| [ObservableAlgebra.lean](PPGraph/Repair/ObservableAlgebra.lean) and [ObservableKernel.lean](PPGraph/Repair/ObservableKernel.lean) | Stable observable subalgebras and probabilistic kernel closure |
 
-All 44 Moser-Tardos, 63 HLS and 16 Shearer modules are present.
-[PPGraph/All.lean](PPGraph/All.lean) exposes every implementation module;
-[GenericMT.lean](GenericMT.lean) imports both library entry points.
-Individual modules can also be imported separately.
+[GenericMT.lean](GenericMT.lean) is the entry point. It imports all 44 MT,
+63 HLS, 16 Shearer and 3 LLL modules, the four hazard/observable theory
+modules, and five policy modules. These 135 roots require 15 further modules
+for graph, dependency, drift and finite-kernel definitions: 150 in total.
+Every supporting module belongs to their import closure.
 
-## Build and check
+## Build and source check
 
 From the project root:
 
@@ -37,28 +37,23 @@ python3 -B check.py
 ```
 
 The workspace pins Lean 4.35.0 and Mathlib
-`56a005855ea17e0b0958f73ec801ae140b0a1679` and shares the parent's external
-package cache. `check.py` uses only Python's standard library and writes no
-receipt. It verifies all 208 module identities, complete import coverage and
-the two small JSON inputs required while elaborating the integration examples.
-Those inputs are mathematical fixtures, not a log collection or dataset.
-[SOURCES.json](SOURCES.json) records source identities and SHA-256 values;
-[dependency notices](../THIRD_PARTY_NOTICES.md) state the applicable provenance
-and licensing boundaries.
-
-An optional comparison against the identified source checkout is available:
+`56a005855ea17e0b0958f73ec801ae140b0a1679`, sharing the parent's external
+package cache. The standard-library source checker verifies the requested
+families, every module identity, the exact dependency closure and the import
+entry point. [SOURCES.json](SOURCES.json) records the input identities.
+It writes no receipt. An optional source-checkout comparison is available:
 
 ```sh
 python3 -B check.py --source /path/to/source-checkout
 ```
 
-## Relation to the concrete chain
+See the [dependency notices](../THIRD_PARTY_NOTICES.md) for provenance and
+licensing information.
 
-The concrete chain in [formal/mt/](../formal/mt/) has its own finite-kernel
-definitions and independently checked Theta(n) proof. That proof does not
-import this workspace. Availability of the generic theories does not by itself
-instantiate their convergence hypotheses for that chain or another program.
+## Relation to the chain
 
-A successful build checks these modules with Lean. The source-identity checker
-is not a mathematical proof. No fresh Nanoda replay or blanket transfer of
-historical second-kernel results is claimed for this workspace.
+The [concrete chain](../formal/mt/) has its own finite-kernel definitions
+and independently checked Theta(n) proof. Its bounds do not automatically
+extend to other processes. A library build checks these theory modules with
+Lean; source checks are not mathematical proofs. No fresh Nanoda replay or
+blanket second-kernel guarantee is claimed for this workspace.

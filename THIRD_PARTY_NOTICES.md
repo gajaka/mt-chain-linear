@@ -5,10 +5,9 @@ This project extracts finite-chain proof sources from `../ppg-proof-repair`.
 explicit wrapper or audit adaptations. Copied source headers are preserved.
 The separate accounting/barrier supplement retains its original provenance.
 
-`library/` contains the mathematical library at source revision
-`60151677e58704ce856c05a572904d681fd959f6`, including MT, HLS, Shearer,
-LLL, finite resampling and the repair theories. Its two elaboration inputs
-are retained with their original bytes.
+`library/` contains the MT, HLS, Shearer, LLL, probability, hazard and
+observable-algebra theories at source revision
+`60151677e58704ce856c05a572904d681fd959f6`, with their required definitions.
 [library/SOURCES.json](library/SOURCES.json) records source identities and
 hashes. Original author headers and source bytes are preserved; this package
 does not introduce a new blanket license for that material.
