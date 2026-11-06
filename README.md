@@ -5,6 +5,42 @@ process. Its central result compares the actual expected redraw count,
 Theta(n), with the larger budgets required by restricted drift certificates.
 Scientific novelty remains a question for independent expert review.
 
+## Short report and questions for reviewers
+
+For the original uniform product law and least-failed local redraw rule, we
+prove `n/18 <= E[T_n] <= 1054*n` for every n>=2. For the SAME process and
+initialization, every nonnegative stopped potential with a coordinate-separable
+active score and uniform positive raw pointwise drift has an exponential
+normalized initial budget. The class is constructively inhabited for every
+n>=2. The larger one-bridge-per-summand class is also inhabited and has an
+Omega(n^2) lower budget. The main claims have Lean proofs and independent
+Nanoda replays of selected roots and their actual proof closures.
+
+Separate results cover a biased redraw law and restricted history-dependent
+policies (Lean/audit), finite wider-window optima (exact rational checks),
+and a width-two all-length obstruction (paper-only). The Crew applicability
+gate remained inconclusive, and one preselected barrier policy lost to a
+static bias. These findings do not establish a faster practical algorithm.
+
+We would appreciate references or a correction on two questions:
+
+1. **Does HLS Theorem 1.6, or another existing MT theorem, imply O(n) for this
+   exact event system, initialization, scheduler and redraw law?** Our scoped
+   [comparison](research/certificate-existence/LITERATURE.md) excludes that
+   particular HLS criterion for the canonical encoding when n>=5. The Shearer
+   classification and criterion exclusion are written calculations, not
+   separately Lean-checked theorems.
+2. **Is this nonvacuous separation between actual linear cost and exponential
+   restricted-certificate budget already known?** The precise class includes
+   the global Good reset and full-state pointwise drift. The claim concerns
+   potential shape, not additive drift analysis in general.
+
+No priority claim is made. Reproduction commands, exact definitions and
+evidence boundaries follow below; further context is in the
+[certificate-study report](research/certificate-existence/REPORT.md).
+
+## Package overview
+
 The active branch contains five parts:
 
 | Part | Result | Evidence |
