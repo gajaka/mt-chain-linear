@@ -5,6 +5,10 @@ cost, with a concrete chain whose expected redraw count is Theta(n). The main
 case study separates actual process cost from the budgets available to
 restricted drift certificates. Scientific novelty remains open for review.
 
+For a first reading, start with the [process and linear-cost proof](REPORT.md),
+then the [certificate separation](research/certificate-existence/README.md)
+and the [literature questions](research/certificate-existence/LITERATURE.md).
+
 ## Main results
 
 All costs count redraw operations, excluding initialization. Certificate
@@ -15,8 +19,8 @@ budgets mean `E_initial[V]/delta`, with positive drift scale delta.
 | Uniform chain | For n>=2, `n/18 <= E[T_n] <= 1054*n`, and `IsTheta` | [Process and proof](REPORT.md) |
 | Coordinate-separable certificates | Explicit certificates for every n>=2; every certificate has exponential normalized initial budget | [Certificate study](research/certificate-existence/README.md) |
 | One bridge per summand | Class inhabited for every n>=2; budget at least `n^2/1248` for n>=10 | [Certificate study](research/certificate-existence/README.md) |
-| Window hierarchy | Seven exact finite optima across widths; a width-two all-length Omega(n^2) paper obstruction | [Window locality](research/window-locality/README.md) |
-| Biased redraws | Static p=2/3 has Theta(n) cost under matching initialization; restricted history-dependent policies have linear upper bounds | [Biased study](research/biased-resampling/README.md) |
+| Window hierarchy (optional followup) | Seven exact finite optima across widths; a width-two all-length Omega(n^2) paper obstruction | [Window locality](research/window-locality/README.md) |
+| Biased redraws (optional followup) | Static p=2/3 has Theta(n) cost under matching initialization; restricted history-dependent policies have linear upper bounds | [Biased study](research/biased-resampling/README.md) |
 
 For the coordinate-separable class, the explicit upper budget is
 `3*9^(n-2)+1`. Every certificate, for n>=4, has budget at least
@@ -78,6 +82,20 @@ labels uniform. At static p=2/3 with matching biased product initialization,
 linear upper bounds, not an all-policy Theta(n) theorem. The certificate
 obstruction is specific to the uniform law under which it is proved.
 
+## Questions for independent review
+
+1. **Does HLS Theorem 1.6, or another known MT theorem, imply O(n) for this
+   exact event system, initialization, scheduler and redraw law?** Our scoped
+   [literature comparison](research/certificate-existence/LITERATURE.md)
+   excludes that particular HLS criterion for the canonical encoding when
+   n>=5. The criterion exclusion is a written argument, not a Lean theorem.
+2. **Is the nonvacuous exponential separation for restricted certificates
+   already known?** The question includes the global Good reset and the
+   full-state pointwise-drift requirement, not additive drift in general.
+
+References and corrections are welcome. No priority or practical-superiority
+claim is made.
+
 ## MT, HLS and probability theory
 
 The [theory library](library/README.md) provides the general definitions and
@@ -99,20 +117,6 @@ The concrete chain has its own finite-kernel proof; the presence of the
 general library does not assert a new instantiation or extend the chain's
 bound to other processes.
 
-## Questions for independent review
-
-1. **Does HLS Theorem 1.6, or another known MT theorem, imply O(n) for this
-   exact event system, initialization, scheduler and redraw law?** Our scoped
-   [literature comparison](research/certificate-existence/LITERATURE.md)
-   excludes that particular HLS criterion for the canonical encoding when
-   n>=5. The criterion exclusion is a written argument, not a Lean theorem.
-2. **Is the nonvacuous exponential separation for restricted certificates
-   already known?** The question includes the global Good reset and the
-   full-state pointwise-drift requirement, not additive drift in general.
-
-References and corrections are welcome. No priority or practical-superiority
-claim is made.
-
 ## Verification and reproduction
 
 | Part | Evidence |
@@ -123,11 +127,9 @@ claim is made.
 | Finite window optima and local algebraic identity | Independent exact rational checks |
 | Width-two all-length obstruction | Paper argument with internal review; not Lean/Nanoda |
 
-Two bounded explorations are also documented: the
-[Crew applicability gate](experiments/crew-mt-applicability/REPORT.md) remained
-`STOP_UNKNOWN`; one [fixed barrier policy](experiments/barrier-guided-bias/README.md)
-lost to static p=1 for n=2,...,5 under common uniform initialization. Neither
-finding excludes every possible encoding or every adaptive policy.
+One [fixed barrier policy](experiments/barrier-guided-bias/README.md) lost to
+static p=1 for n=2,...,5 under common uniform initialization. This bounded
+comparison does not exclude every possible barrier-dependent policy.
 
 Pinned tools: Lean `leanprover/lean4:v4.35.0` and Mathlib
 `56a005855ea17e0b0958f73ec801ae140b0a1679`.

@@ -12,9 +12,9 @@
       "sha256": "cd035d44058d6e55c47982f4a4182f9cde26e7b856b307860d3eedb1960658f8"
     },
     {
-      "bytes": 7584,
+      "bytes": 7765,
       "path": "README.md",
-      "sha256": "fa7b52239552cd46aceed2da0c7cd90a8b47bfd1008873600e37ab7242aaab9c"
+      "sha256": "cb9382ac945f22ab4345ffeba6f0aa572da32cc3af1195c0ac27915f9c694d0c"
     },
     {
       "bytes": 7116,
@@ -47,11 +47,6 @@
       "sha256": "0876d34e3be062861b5447ea9130264b450196400f40ad93d38ae01384b3252a"
     },
     {
-      "bytes": 6445,
-      "path": "evidence/n3-r1-attempt-001/NUMERICAL.json",
-      "sha256": "be155764793a44c6bc3c6c004675b8ea94aee346c8034a1e1d99d86a81362160"
-    },
-    {
       "bytes": 727,
       "path": "evidence/n3-r1-attempt-001/RESULT.json",
       "sha256": "c785a33505439a37b56a9ef2403e694afcd78d5d56c973b787a595cd68aa3613"
@@ -70,11 +65,6 @@
       "bytes": 553,
       "path": "evidence/n3-r2-attempt-001/INPUTS.json",
       "sha256": "82ecb01c917dfa64b36c3ddeb613eb9247d743f7a6378cdbce5e23d4bab8e889"
-    },
-    {
-      "bytes": 8761,
-      "path": "evidence/n3-r2-attempt-001/NUMERICAL.json",
-      "sha256": "71d2a9557d5354982a7419630ac86d8e94d6d4ae3846ebb72bb8c87858dd4f1b"
     },
     {
       "bytes": 737,
@@ -97,11 +87,6 @@
       "sha256": "656b8829f64dafdfdf5b1be9e9c8181758ab37e57eaa088246008a34e1d8e79f"
     },
     {
-      "bytes": 9091,
-      "path": "evidence/n3-r3-attempt-001/NUMERICAL.json",
-      "sha256": "f264701dcf3e4222250c02109f13aca08bfab5729dc0c06746584e6988f8f1b0"
-    },
-    {
       "bytes": 722,
       "path": "evidence/n3-r3-attempt-001/RESULT.json",
       "sha256": "61ddafef636595115580cc9993ce9f2445b363a4c3fa1909be727cedb0ec63d3"
@@ -120,11 +105,6 @@
       "bytes": 553,
       "path": "evidence/n4-r1-attempt-001/INPUTS.json",
       "sha256": "034d93f83c063ab90a8fbda90c2a550ccbc9e19ca3653785f3eb225097427304"
-    },
-    {
-      "bytes": 34075,
-      "path": "evidence/n4-r1-attempt-001/NUMERICAL.json",
-      "sha256": "878c538b7f6aee065dcbadb2582159ee208141ae5e6fcee73bf56b613cbf2e0b"
     },
     {
       "bytes": 753,
@@ -147,11 +127,6 @@
       "sha256": "5d8c5fa3ffe5a38a543df77e80462335833ac36193ce3fafc7ccbc83cb84f529"
     },
     {
-      "bytes": 42473,
-      "path": "evidence/n4-r2-attempt-001/NUMERICAL.json",
-      "sha256": "82a434bc219636cc0b7d1656f171aa506ded14e97ce6913c08ded0d5c8177aaa"
-    },
-    {
       "bytes": 854,
       "path": "evidence/n4-r2-attempt-001/RESULT.json",
       "sha256": "d323f4fa348f972174db1cff209b39e0cffb1d35823ef448265cb0b90437aed5"
@@ -172,11 +147,6 @@
       "sha256": "2715c9c6649664b4516128ecac19c84bc6d31d549ae086b34a0b5d6dac566301"
     },
     {
-      "bytes": 218729,
-      "path": "evidence/n5-r2-attempt-001/NUMERICAL.json",
-      "sha256": "900143ff003f93c435f6116118cfc01c66ac682325c75d23c0d7e9237ce25615"
-    },
-    {
       "bytes": 920,
       "path": "evidence/n5-r2-attempt-001/RESULT.json",
       "sha256": "fbf93909ae17fae0f516fff678c18e653a8cdeccc9af7b70d169095f7a0dc089"
@@ -192,11 +162,6 @@
       "sha256": "836df5183e15af88945ecf42f2147948511a7d80bd90a9037a08f40eacc20666"
     },
     {
-      "bytes": 1256869,
-      "path": "evidence/n6-r2-attempt-001/NUMERICAL.json",
-      "sha256": "4d84c9f8917e1a3017eaeb4a42e3aceba160c808a042dfff2b8db50f46fb1083"
-    },
-    {
       "bytes": 571,
       "path": "evidence/n6-r2-attempt-001/RESULT.json",
       "sha256": "1a8577a7c6ab2cea1d323992895481be1c21fdf73c7b2a4bbab7c32ce5f2f5fd"
@@ -210,11 +175,6 @@
       "bytes": 611,
       "path": "evidence/n6-r2-attempt-002/INPUTS.json",
       "sha256": "c20f819001ef67fcf32cf75b9c7b88f16e8fcf504cc80a5fceda0404d1f79ee1"
-    },
-    {
-      "bytes": 1266184,
-      "path": "evidence/n6-r2-attempt-002/NUMERICAL.json",
-      "sha256": "524caaa90ee3168143b750491868abe194f6fa144f6571e4787fda9507b63a59"
     },
     {
       "bytes": 929,
@@ -330,7 +290,7 @@
       {
         "path": "README.md",
         "prior_sha256": "05fb09e5a3f56ee35e6983f74b4738c2ea297ec48445ebb5f7852dde5cda67f8",
-        "current_sha256": "fa7b52239552cd46aceed2da0c7cd90a8b47bfd1008873600e37ab7242aaab9c"
+        "current_sha256": "cb9382ac945f22ab4345ffeba6f0aa572da32cc3af1195c0ac27915f9c694d0c"
       },
       {
         "path": "REPORT.md",
@@ -351,6 +311,54 @@
         "path": "theory/GAUGE_AND_FLUX.md",
         "prior_sha256": "14cdee45bc93d981648dd0107e2a2e56e1dbd93727a9935e557eec5d45d21c46",
         "current_sha256": "9a2219440909c58d124fa5111ffb06cc2670ee1017257a40c2707f9b5321a3e5"
+      }
+    ]
+  },
+  "archived_files": {
+    "source_commit": "14e8b2ccba6dfaf78b692855b2629a02bf258cd6",
+    "repository_path": "research/window-locality/",
+    "url": "https://github.com/gajaka/mt-chain-linear/tree/14e8b2ccba6dfaf78b692855b2629a02bf258cd6/research/window-locality/evidence",
+    "scope": "Numerical optimizer diagnostics only; exact checking uses the retained rational certificates.",
+    "files": [
+      {
+        "bytes": 6445,
+        "path": "evidence/n3-r1-attempt-001/NUMERICAL.json",
+        "sha256": "be155764793a44c6bc3c6c004675b8ea94aee346c8034a1e1d99d86a81362160"
+      },
+      {
+        "bytes": 8761,
+        "path": "evidence/n3-r2-attempt-001/NUMERICAL.json",
+        "sha256": "71d2a9557d5354982a7419630ac86d8e94d6d4ae3846ebb72bb8c87858dd4f1b"
+      },
+      {
+        "bytes": 9091,
+        "path": "evidence/n3-r3-attempt-001/NUMERICAL.json",
+        "sha256": "f264701dcf3e4222250c02109f13aca08bfab5729dc0c06746584e6988f8f1b0"
+      },
+      {
+        "bytes": 34075,
+        "path": "evidence/n4-r1-attempt-001/NUMERICAL.json",
+        "sha256": "878c538b7f6aee065dcbadb2582159ee208141ae5e6fcee73bf56b613cbf2e0b"
+      },
+      {
+        "bytes": 42473,
+        "path": "evidence/n4-r2-attempt-001/NUMERICAL.json",
+        "sha256": "82a434bc219636cc0b7d1656f171aa506ded14e97ce6913c08ded0d5c8177aaa"
+      },
+      {
+        "bytes": 218729,
+        "path": "evidence/n5-r2-attempt-001/NUMERICAL.json",
+        "sha256": "900143ff003f93c435f6116118cfc01c66ac682325c75d23c0d7e9237ce25615"
+      },
+      {
+        "bytes": 1256869,
+        "path": "evidence/n6-r2-attempt-001/NUMERICAL.json",
+        "sha256": "4d84c9f8917e1a3017eaeb4a42e3aceba160c808a042dfff2b8db50f46fb1083"
+      },
+      {
+        "bytes": 1266184,
+        "path": "evidence/n6-r2-attempt-002/NUMERICAL.json",
+        "sha256": "524caaa90ee3168143b750491868abe194f6fa144f6571e4787fda9507b63a59"
       }
     ]
   }

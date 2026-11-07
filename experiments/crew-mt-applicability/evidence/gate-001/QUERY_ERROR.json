@@ -1,9 +1,0 @@
-{
-  "recorded_utc": "2026-11-05T14:29:07.617186+00:00",
-  "query_pattern": "decide_recovery\\(|ACTION_RETRY|delay_secs",
-  "path": "src/kiro_crew/runner",
-  "returncode": 2,
-  "stderr": "rg: src/kiro_crew/runner: IO error for operation on src/kiro_crew/runner: No such file or directory (os error 2)",
-  "effect": "No matching code inspected; helper raised before receipt. Failed query recorded retrospectively; correction searches actual callers from src/kiro_crew.",
-  "helper_sha256": "cd246056f407a996c7274821d51ced51862e221330ba80f1ed535b6c7ce77f5f"
-}

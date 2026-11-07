@@ -1,5 +1,0 @@
-src/kiro_crew/task_executor.py:1004:                        default_ladder().backoff_secs(L3_ACP_RUNTIME, stop_recoveries)
-src/kiro_crew/taskq/adapters/runner.py:800:        return RunnerAdmission(
-src/kiro_crew/taskq/adapters/runner.py:2057:    return RunnerAdmission(
-src/kiro_crew/slack/gateway.py:9580:        configure_default_ladder(self._cfg)
-src/kiro_crew/slack/gateway.py:11599:                mgr, cfg=self._cfg, ladder=default_ladder(), coordinator=coordinator

@@ -96,3 +96,14 @@ without writing or overwriting a source receipt.
 
 Earlier receipts apply only to the source versions and paths recorded in
 their own inputs. They do not replace the current-source check in attempt 003.
+
+## Historical verification records
+
+Earlier attempts, build logs and diagnostic probes are available in
+[the recorded evidence revision](https://github.com/gajaka/mt-chain-linear/tree/14e8b2ccba6dfaf78b692855b2629a02bf258cd6/evidence),
+including [attempt 002](https://github.com/gajaka/mt-chain-linear/tree/14e8b2ccba6dfaf78b692855b2629a02bf258cd6/evidence/attempt-002)
+and the [module-audit diagnostics](https://github.com/gajaka/mt-chain-linear/tree/14e8b2ccba6dfaf78b692855b2629a02bf258cd6/evidence/module-audit-diagnostics).
+The early build paths `evidence/lean-build-001/` through `004/` also resolve
+at that revision. Historical paths in the unchanged aggregate receipt identify
+those records. The current chain verification uses `evidence/attempt-003/`
+and `evidence/lean-build-005/`, which remain in this checkout.

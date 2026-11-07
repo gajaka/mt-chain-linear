@@ -63,6 +63,10 @@ unjustified restriction to label-invariant candidates.
 Full fractions and certificate paths are in [REPORT.md](REPORT.md) and
 [evidence/SUMMARY.json](evidence/SUMMARY.json).
 
+Exact verification uses the rational certificates. Numerical optimizer
+diagnostics are available at the revision recorded under `archived_files`
+in [MANIFEST.json](MANIFEST.json).
+
 ## All-n paper result: width 2 still cannot give a linear budget
 
 For every arbitrary position-dependent width-2 certificate with drift
