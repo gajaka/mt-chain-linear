@@ -1,0 +1,141 @@
+{
+  "artifacts_sha256": {
+    ".build/attempt-001/workspace/.lake/build/lib/lean/AdaptiveWork.olean": "b9196efa2d95956280e9d20d2bd2a646770b3fa0510869e383da8181269aa4af",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/AdaptiveWork.olean.private": "bca1dce981f05affd7dc8a1019c6c96bedd4e3c2e658672be16a85820281a224",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/AdaptiveWork.olean.server": "557d55bb91d13009f1983cc01c065ac576fc3da55bd50e21a494dc9e8e1482d3",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedControls.olean": "f7778cdd6915c4755d353f38f34308120600df498d9a95c1b9feeaa809d1a06a",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedControls.olean.private": "9971c3c3e5b4d5bcb803b61c777c699de6f4037181390f9a95e169b1896e8192",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedControls.olean.server": "96cdd02411cca3c0b255e459cdbd48f0e1a86d8fd9acee85958be129fe492ae5",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedDefinitions.olean": "c16727dbc244bdde1b7ab8ef59141364820abf9b831983444468b738a43f28dc",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedDefinitions.olean.private": "b1db961f2c9bafcfd8fc3fb0c2defc79577362797ef18e6cbf5616528483e56d",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedDefinitions.olean.server": "cfcf6735c72ee78d270a44f7aa66acb3a1a0749efd85c5b46500f55b3e85bbfd",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedDrift.olean": "b49353bbb9043b3065a81f00bbe61178d0509d2bff2e9c18594b5169241365a4",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedDrift.olean.private": "7239a27693d29e310d6fd23460bb1b60487afddd50b61c80b162869330f1c7fd",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedDrift.olean.server": "4c0142d8f772ba032cfce4d57b59bf5783be1034db487ee047aa378279c7945b",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedLaw.olean": "2ee15d46dfa17fb8e30409f55a233b257e93b35d2e3de3c4cb006b7015b61e3a",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedLaw.olean.private": "8ab7c6811810f7a98d3d6b17a0611ac85a773ef20c61e248f5c602ca73f0e226",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedLaw.olean.server": "5618aa16b3c652ec96e2bd35cf30e67250fe096009cc24079cf79c063c96e374",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedLower.olean": "09c56a4ae4d862183a5652651fcf24643b8779df7f5cc5a2ab4d758bfdc400f4",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedLower.olean.private": "0ee426368173fe96fd29dd767bd240143575da4200cd641ca40e825626ec5cd7",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedLower.olean.server": "d324ac24c08429dc721b7c5986c16bd6d79a01efb6e17fc9049f6d82ce1fab8f",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedResults.olean": "dca4001608b6ba51a7db4f4cb6f80ddf707c91975b78e555bfbdf10d3d3fefe2",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedResults.olean.private": "be003805d88ba5abcf0ff90c849ded22aa473c4f84d5a6f46d704adb69aae576",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/BiasedResults.olean.server": "354b82d7878774e072b227104cada1ce980b3eb7c13c9893443e102f6d420505",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/GenericLower.olean": "f391986cdb938b93b38b332debef3c3695c7378e1c1859142b38430c06d3368c",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/GenericLower.olean.private": "ed71fcdcdb649e8408ebfd4186dfddc2c5fd47d4234185b580137a11dd5f2907",
+    ".build/attempt-001/workspace/.lake/build/lib/lean/GenericLower.olean.server": "35a308c5e24204704d56bb1a02b7f426c2ca04bb70298fd9bb78378d1d776761"
+  },
+  "attempt": ".build/attempt-001",
+  "axiom_audit": {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "raw_closure_count": 16526,
+    "sha256": "da1f2af040b71f813e33b3b2b2a91cd69a48331ed424b00fa8a94dddc6e1383f",
+    "theorem_count_including_generated": 146
+  },
+  "build": {
+    "command": [
+      "lake",
+      "build",
+      "--wfail"
+    ],
+    "elapsed_seconds": 30.411,
+    "exit_code": 0,
+    "log": ".build/attempt-001/build.log",
+    "log_sha256": "3badc052543decd818ce9205edd0228fbec99ab3bce0a2aa1b30e186d5689884"
+  },
+  "finished_utc": "2026-11-19T23:55:35.576738+00:00",
+  "lean_version": "Lean (version 4.37.0-rc1, arm64-apple-darwin24.6.0, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)",
+  "mathlib_revision": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+  "negative_controls": {
+    "InjectedAxiom": {
+      "command": [
+        "lake",
+        "build",
+        "BiasedAudit"
+      ],
+      "elapsed_seconds": 19.635,
+      "exit_code": 1,
+      "log": ".build/attempt-001/InjectedAxiom.log",
+      "log_sha256": "9e611a0888b29fb3dc92442e6daca2da0130da37e173a39f6303ed2d78ef2d58",
+      "source_sha256": "ce577c597e235b32318456360279f094a7be70877c5f2ca8dd18dac160628771"
+    },
+    "LowBias": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/LowBias.lean"
+      ],
+      "elapsed_seconds": 1.703,
+      "exit_code": 1,
+      "log": ".build/attempt-001/LowBias.log",
+      "log_sha256": "9f7dee7d07e7525e042f99b97110b742fcedc23ca3492a99fe7b71667d66e2d6",
+      "source_sha256": "79f38ebcb2ac3aba7dd47215d2f1e0e02e80e865792c24124b8d46b0cd82886a"
+    },
+    "OmittedTactic": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/OmittedTactic.lean"
+      ],
+      "elapsed_seconds": 1.525,
+      "exit_code": 1,
+      "log": ".build/attempt-001/OmittedTactic.log",
+      "log_sha256": "0249b93af89684f57ae519b5c3e7dd447ca2525dab2d10fe497bb85dad6f3b1a",
+      "source_sha256": "cf9816e184da8742b87e5e83b20f8619d9745331d85fe908042f279362052d87"
+    },
+    "UniformDrift": {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/UniformDrift.lean"
+      ],
+      "elapsed_seconds": 1.548,
+      "exit_code": 1,
+      "log": ".build/attempt-001/UniformDrift.log",
+      "log_sha256": "e99fba83ccf8e4db1a222926717f0e2b2cc770d3bb2b2edca2dc76273ae921d5",
+      "source_sha256": "cb71c05c6daba402ffe55d2ef918c0140a797d705c814f7ffe97c3a6559c0d9a"
+    }
+  },
+  "path_adaptations": {
+    "lake-manifest.json": "e27a0720b054f67beb382d854148f629a405b3df7b2ae10be9ffbd7a7e1bd8bb",
+    "lakefile.lean": "f38f21436a615fee8b484f3fb4176290fc9abb164bea66c7f9c37cda332396eb"
+  },
+  "second_kernel": "NOT_RUN",
+  "source_inputs_sha256": {
+    "SOURCE_MANIFEST.json": "e1f4e5f4164ddbdfaa9922925983347767d244d7de0f80ebbbd54d289ed12f94",
+    "formal/mt/core/Chain.lean": "551779df094e539792ed5256078615c73d1fe1733ae83dd6b1fff5a30ab24a1d",
+    "formal/mt/core/ChainKernel.lean": "ba155ace55634b928b4a1a19fbd4e1c9d9a6ab9102462d8cceb219901529f6d2",
+    "formal/mt/core/Filtering.lean": "603335c8ad6257dc51f83d7fd5b80648a685321d16c548ea4b72277e59b56e66",
+    "formal/mt/core/FreshDraws.lean": "c5b46028ba195cfd0d280b14933a999ebbb6b177feb4b4ce130788d06d2bdb9e",
+    "formal/mt/core/KernelWork.lean": "6497e2d4261632f5a9d8d651679a0e225f5382dfc4b7265aba18cd434da5690d",
+    "formal/mt/core/RefreshDensity.lean": "6625a588b3f32236adb41261f642a6bec319ef2ab820e6c48124fbd7b8486155",
+    "lake-manifest.json": "6cb5d436985d510343e8836047d9fbd9c73317e947f962f27880bf7bde93ff5f",
+    "lakefile.lean": "c00aa3b5a7e3cabebff97414ab03adb5157d92484c048d08995d4e6d0f7d7867",
+    "lean-toolchain": "f11739c25d1640e2b3fda8a98af6d64e97d7b2b1c99840535587a9079b3afee7",
+    "research/biased-resampling/README.md": "86d2b8934fe3b40fc321045439cd07df133673e66fe1b8f6af3bfb4cc8677c94",
+    "research/biased-resampling/REPORT.md": "8da8bd478b52c75204839eff0a36fe25eca8c2b1c1251f1687b98f13e7c69936",
+    "research/biased-resampling/formal/AdaptiveWork.lean": "51e62e44116dab0aadf352d2d04abc35888a85354846057098df288203d5d38a",
+    "research/biased-resampling/formal/BiasedAudit.lean": "e7e664ec21ef976e88b89d907e8b0d38876d3341fb7138044fdcb932464e3d85",
+    "research/biased-resampling/formal/BiasedControls.lean": "f7c55a09201e514b2abd37e47d3f102380cb705de40411cc81300dc32071f032",
+    "research/biased-resampling/formal/BiasedDefinitions.lean": "59948d89c6500527bdc145686d4c99065b4884ef16c327f4bb51a5359437f311",
+    "research/biased-resampling/formal/BiasedDrift.lean": "1096e0e9a011b03e599959264e3b68f798326ae4a00b542d8d551243a0da55f8",
+    "research/biased-resampling/formal/BiasedLaw.lean": "6ed5a70e4800206c434ad3423c2c56df1bc8d31c930f6ff16d1c19c1eff7ba29",
+    "research/biased-resampling/formal/BiasedLower.lean": "f5d09ef8291faa10042c3fe7d2f7c4128a03b09d176ea1390c200490247ca864",
+    "research/biased-resampling/formal/BiasedResults.lean": "533168c2e5e1c4a8e4bef549d243837fa8176bbf003c86121281cc81589204cb",
+    "research/biased-resampling/formal/GenericLower.lean": "3ff492ba338b4f99bd0f92f6a36fe16d0a78e8054f6d4a856491a54428a0008d",
+    "research/biased-resampling/lake-manifest.json": "c8e143ee319041ae8c7242ec92e7ff9593eb2528884fc4d13ea4602d4d1dfdc4",
+    "research/biased-resampling/lakefile.lean": "06ce6eb472dd2be2458b410a6c7f3fdc35910583e8c050054a91e1643280c111",
+    "research/biased-resampling/lean-toolchain": "f11739c25d1640e2b3fda8a98af6d64e97d7b2b1c99840535587a9079b3afee7",
+    "research/biased-resampling/verify.py": "5b5dab5ac0780379aa54296e96f8ddfa025f03794c3cd4303257bad0daa18f33"
+  },
+  "source_inputs_unchanged": true,
+  "started_utc": "2026-11-19T23:54:37.822812+00:00",
+  "status": "PASS"
+}

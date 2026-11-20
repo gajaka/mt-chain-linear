@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "date": "2026-11-20",
+  "baseline_commit": "44a681fc3cbbbcaad3551aa90c007fd5c5e2b943",
+  "toolchain": "leanprover/lean4:v4.37.0-rc1",
+  "mathlib_revision": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+  "updated_readme_sha256": {
+    "library/README.md": "75e93a0ae42b61bbcae21d4e6e80d6d0301f2d84ae50518d6538101b3ebeb80b",
+    "research/certificate-existence/README.md": "7c9cef8867444467f6f1b4ff3206239e315755a4672f7974ae24b7b0c22d5923",
+    "research/biased-resampling/README.md": "8b75dccbaf49db5705d7a3f131059eb5237de28ac7f3b52b8f79d1392a1b988f"
+  },
+  "mathematical_source_changes": 0,
+  "verification_tool_changes": 0,
+  "frozen_proof_receipts_changed": false,
+  "prior_migration_record": {
+    "path": "provenance/readme-versions-2026-11-20/before/provenance/lean-4.37.0-rc1/MIGRATION.json",
+    "sha256": "ee51d2bf75e6600fe67936a3c89038ee625b89b49e9001406a96416bd642a117"
+  },
+  "current_compatibility_record_sha256": "c237442d3c8023dddbdde11aa437cbbb3896cb4c7fd78c1e6db9d1fe2e2760e2",
+  "strict_make_check": {
+    "command": [
+      "make",
+      "check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 86.77,
+    "log_sha256": "10630396b217701ff2fae771f81ac2f6793106bcbd27faa4db7d8b6c900af053"
+  },
+  "fresh_biased_verifier": {
+    "status": "PASS",
+    "result": "research/biased-resampling/RESULT.json",
+    "result_sha256": "264631a1d91dc678e7ee854300579522b80f5eb9b94a86246da45c28816ada75",
+    "workspace": "/Users/gajaka/projects/mt-chain-linear-readme-v4.37.0-rc1",
+    "attempt": ".build/attempt-001",
+    "second_kernel": "NOT_RUN",
+    "invalid_controls_rejected": 4
+  },
+  "saved_chain_receipt_verification": {
+    "status": "PASS",
+    "attempt": "attempt-005",
+    "checked_declarations": 18213
+  },
+  "saved_certificate_receipt_verification": {
+    "status": "PASS",
+    "attempt": "attempt-002",
+    "checked_declarations": 18690
+  },
+  "scope": "README version/pin and reproduction-command corrections. Exact documentation edits and the normal mutable latest-result update are registered without changing the fixed baseline inventory, proofs, validators or frozen proof receipts. Saved kernel evidence was reverified; no new Nanoda run is claimed."
+}

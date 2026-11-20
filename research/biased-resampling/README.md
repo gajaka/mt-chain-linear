@@ -147,12 +147,14 @@ from the mathematical import closure. No new Nanoda replay is claimed.
 
 ## Reproduction
 
-Use the root project's pinned Lean 4.35.0 / Mathlib dependencies. If these
-are not installed, prepare the root dependency environment first. Then:
+Use the root project's pinned Lean 4.37.0-rc1 / Mathlib v4.37.0-rc1 dependencies
+(Mathlib revision `31ce06eaadf4a200c0e1407c5f10953cf606b8f8`). This is a
+release-candidate toolchain. If these dependencies are not installed, prepare
+the root dependency environment first. Then:
 
 ```sh
 cd research/biased-resampling
-lake update
+lake --wfail build BiasedResampling
 python3 -B verify.py
 ```
 

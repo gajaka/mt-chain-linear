@@ -166,24 +166,28 @@ lake --wfail build CertificateStudy
 python3 -B scripts/verify_sources.py
 ```
 
-This is a separate Lake package using the project's pinned Lean 4.35.0 and
-Mathlib revision. Its full local proof import closure is 49 modules:
+This is a separate Lake package using the project's pinned Lean 4.37.0-rc1
+and Mathlib v4.37.0-rc1 at `31ce06eaadf4a200c0e1407c5f10953cf606b8f8`.
+This is a release-candidate toolchain. Its full local proof import closure is 49 modules:
 18 research modules plus 31 modules from the root package. This proof closure
 uses the concrete chain directly and is independent of the general theory
 library.
 
 The recorded strict build compiled all 18 research modules from an empty study
 build directory, reusing root and external dependency caches: zero warnings
-and zero errors. Nanoda verification checked 18,183 expanded declarations
+and zero errors. The Lean 4.37.0-rc1 Nanoda replay checked 18,690 expanded declarations
 from nine selected roots, with only `propext`, `Classical.choice`, `Quot.sound`.
 This does not mean every theorem in all 49 modules was independently replayed.
 
-See [evidence/VERIFICATION.json](evidence/VERIFICATION.json). With the recorded
+See [evidence/attempt-002/RESULT.json](evidence/attempt-002/RESULT.json).
+The earlier [evidence/VERIFICATION.json](evidence/VERIFICATION.json) describes
+the historical Lean 4.35.0 replay of 18,183 declarations in `attempt-001`.
+With the recorded
 external tools, raw export and local build artifacts present, saved verification
 is read-only:
 
 ```sh
-python3 -B scripts/independent.py --verify --attempt attempt-001
+python3 -B scripts/independent.py --verify --attempt attempt-002
 ```
 
 For a fresh replay, use a new unused attempt name and the pinned tools described

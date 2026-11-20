@@ -33,7 +33,7 @@
       "Quot.sound"
     ],
     "raw_closure_count": 16526,
-    "sha256": "da1f2af040b71f813e33b3b2b2a91cd69a48331ed424b00fa8a94dddc6e1383f",
+    "sha256": "24742f9fbff9cb90cb84d5bc86998e8509d48e63ef43dff2179853be3d06712a",
     "theorem_count_including_generated": 146
   },
   "build": {
@@ -42,12 +42,12 @@
       "build",
       "--wfail"
     ],
-    "elapsed_seconds": 30.411,
+    "elapsed_seconds": 28.687,
     "exit_code": 0,
     "log": ".build/attempt-001/build.log",
-    "log_sha256": "3badc052543decd818ce9205edd0228fbec99ab3bce0a2aa1b30e186d5689884"
+    "log_sha256": "41b23e2385a0b11de8f7a44d01e7624269c941d70a4ced926c6d45cf19b750c5"
   },
-  "finished_utc": "2026-11-19T23:55:35.576738+00:00",
+  "finished_utc": "2026-11-20T07:35:42.051688+00:00",
   "lean_version": "Lean (version 4.37.0-rc1, arm64-apple-darwin24.6.0, commit 0b77e12952ad39077d80d8bd6b66d601f225c321, Release)",
   "mathlib_revision": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
   "negative_controls": {
@@ -57,10 +57,10 @@
         "build",
         "BiasedAudit"
       ],
-      "elapsed_seconds": 19.635,
+      "elapsed_seconds": 17.256,
       "exit_code": 1,
       "log": ".build/attempt-001/InjectedAxiom.log",
-      "log_sha256": "9e611a0888b29fb3dc92442e6daca2da0130da37e173a39f6303ed2d78ef2d58",
+      "log_sha256": "a2f6fac3721040d3102e97e3aa918d47346c561b04421f07fffa88b0d4277305",
       "source_sha256": "ce577c597e235b32318456360279f094a7be70877c5f2ca8dd18dac160628771"
     },
     "LowBias": {
@@ -68,12 +68,12 @@
         "lake",
         "env",
         "lean",
-        "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/LowBias.lean"
+        "/Users/gajaka/projects/mt-chain-linear-readme-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/LowBias.lean"
       ],
-      "elapsed_seconds": 1.703,
+      "elapsed_seconds": 1.524,
       "exit_code": 1,
       "log": ".build/attempt-001/LowBias.log",
-      "log_sha256": "9f7dee7d07e7525e042f99b97110b742fcedc23ca3492a99fe7b71667d66e2d6",
+      "log_sha256": "b09ba51a57ef9056ceb9673160bd69c432b617ea21747d444082d2ba673e09e4",
       "source_sha256": "79f38ebcb2ac3aba7dd47215d2f1e0e02e80e865792c24124b8d46b0cd82886a"
     },
     "OmittedTactic": {
@@ -81,12 +81,12 @@
         "lake",
         "env",
         "lean",
-        "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/OmittedTactic.lean"
+        "/Users/gajaka/projects/mt-chain-linear-readme-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/OmittedTactic.lean"
       ],
-      "elapsed_seconds": 1.525,
+      "elapsed_seconds": 1.418,
       "exit_code": 1,
       "log": ".build/attempt-001/OmittedTactic.log",
-      "log_sha256": "0249b93af89684f57ae519b5c3e7dd447ca2525dab2d10fe497bb85dad6f3b1a",
+      "log_sha256": "eb8765d91299572f71af55e51084efc125a913377e64ef65897b5a072871c47a",
       "source_sha256": "cf9816e184da8742b87e5e83b20f8619d9745331d85fe908042f279362052d87"
     },
     "UniformDrift": {
@@ -94,18 +94,18 @@
         "lake",
         "env",
         "lean",
-        "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/UniformDrift.lean"
+        "/Users/gajaka/projects/mt-chain-linear-readme-v4.37.0-rc1/research/biased-resampling/.build/attempt-001/workspace/UniformDrift.lean"
       ],
-      "elapsed_seconds": 1.548,
+      "elapsed_seconds": 1.54,
       "exit_code": 1,
       "log": ".build/attempt-001/UniformDrift.log",
-      "log_sha256": "e99fba83ccf8e4db1a222926717f0e2b2cc770d3bb2b2edca2dc76273ae921d5",
+      "log_sha256": "3503f5160268bb49bf463595f94925f2ba48eb1bc56a3329c9dce4fddcfc124d",
       "source_sha256": "cb71c05c6daba402ffe55d2ef918c0140a797d705c814f7ffe97c3a6559c0d9a"
     }
   },
   "path_adaptations": {
-    "lake-manifest.json": "e27a0720b054f67beb382d854148f629a405b3df7b2ae10be9ffbd7a7e1bd8bb",
-    "lakefile.lean": "f38f21436a615fee8b484f3fb4176290fc9abb164bea66c7f9c37cda332396eb"
+    "lake-manifest.json": "3345e6d5f89eac29a83f8cafe8d81c86e7b78286578718cf3b48e3760286974c",
+    "lakefile.lean": "8610f129c8781c3bbe91ba45f9f8bcc10e469023b536f020115592df1d9698bf"
   },
   "second_kernel": "NOT_RUN",
   "source_inputs_sha256": {
@@ -119,7 +119,7 @@
     "lake-manifest.json": "6cb5d436985d510343e8836047d9fbd9c73317e947f962f27880bf7bde93ff5f",
     "lakefile.lean": "c00aa3b5a7e3cabebff97414ab03adb5157d92484c048d08995d4e6d0f7d7867",
     "lean-toolchain": "f11739c25d1640e2b3fda8a98af6d64e97d7b2b1c99840535587a9079b3afee7",
-    "research/biased-resampling/README.md": "86d2b8934fe3b40fc321045439cd07df133673e66fe1b8f6af3bfb4cc8677c94",
+    "research/biased-resampling/README.md": "8b75dccbaf49db5705d7a3f131059eb5237de28ac7f3b52b8f79d1392a1b988f",
     "research/biased-resampling/REPORT.md": "8da8bd478b52c75204839eff0a36fe25eca8c2b1c1251f1687b98f13e7c69936",
     "research/biased-resampling/formal/AdaptiveWork.lean": "51e62e44116dab0aadf352d2d04abc35888a85354846057098df288203d5d38a",
     "research/biased-resampling/formal/BiasedAudit.lean": "e7e664ec21ef976e88b89d907e8b0d38876d3341fb7138044fdcb932464e3d85",
@@ -136,6 +136,6 @@
     "research/biased-resampling/verify.py": "5b5dab5ac0780379aa54296e96f8ddfa025f03794c3cd4303257bad0daa18f33"
   },
   "source_inputs_unchanged": true,
-  "started_utc": "2026-11-19T23:54:37.822812+00:00",
+  "started_utc": "2026-11-20T07:34:45.429813+00:00",
   "status": "PASS"
 }

@@ -36,12 +36,15 @@ lake --wfail build GenericMT
 python3 -B check.py
 ```
 
-The workspace pins Lean 4.35.0 and Mathlib
-`56a005855ea17e0b0958f73ec801ae140b0a1679`, sharing the parent's external
+The workspace pins Lean 4.37.0-rc1 and Mathlib v4.37.0-rc1 at
+`31ce06eaadf4a200c0e1407c5f10953cf606b8f8`, sharing the parent's external
 package cache. The standard-library source checker verifies the requested
 families, every module identity, the exact dependency closure and the import
-entry point. [SOURCES.json](SOURCES.json) records both original and current
-module hashes; the checker permits only the specified import-path changes.
+entry point. [SOURCES.json](SOURCES.json) preserves the original extraction
+and import-path adaptation hashes. The checker validates those identities
+and the exact registered compatibility edits for the current toolchain.
+See the [migration record](../tooling/LEAN_4_37_MIGRATION.md). This toolchain
+is a release candidate.
 It writes no receipt. An optional source-checkout comparison is available:
 
 ```sh

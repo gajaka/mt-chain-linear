@@ -4,7 +4,7 @@
   "from_toolchain": "leanprover/lean4:v4.35.0",
   "to_toolchain": "leanprover/lean4:v4.37.0-rc1",
   "mathlib_revision": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
-  "generated_at_utc": "2026-11-19T23:59:55.309778+00:00",
+  "generated_at_utc": "2026-11-20T07:36:08.990257+00:00",
   "changes": [
     {
       "path": "Makefile",
@@ -4303,6 +4303,110 @@
       ]
     },
     {
+      "path": "library/README.md",
+      "kind": "documentation",
+      "before_sha256": "c4e4f855512871c1ca15b56bcce8fff7c74853179d768aadd25597bf24d222cc",
+      "after_sha256": "75e93a0ae42b61bbcae21d4e6e80d6d0301f2d84ae50518d6538101b3ebeb80b",
+      "edits": [
+        {
+          "start": 1961,
+          "end": 1962,
+          "before": "5",
+          "after": "7"
+        },
+        {
+          "start": 1964,
+          "end": 1964,
+          "before": "",
+          "after": "-rc1"
+        },
+        {
+          "start": 1976,
+          "end": 1976,
+          "before": "",
+          "after": " v4.37.0-rc1 at"
+        },
+        {
+          "start": 1978,
+          "end": 1979,
+          "before": "5",
+          "after": "31ce0"
+        },
+        {
+          "start": 1980,
+          "end": 1981,
+          "before": "a",
+          "after": "eaadf4a2"
+        },
+        {
+          "start": 1983,
+          "end": 1983,
+          "before": "",
+          "after": "c0e1407c"
+        },
+        {
+          "start": 1984,
+          "end": 1989,
+          "before": "855ea",
+          "after": "f"
+        },
+        {
+          "start": 1990,
+          "end": 1994,
+          "before": "7e0b",
+          "after": ""
+        },
+        {
+          "start": 1997,
+          "end": 1997,
+          "before": "",
+          "after": "3cf606b"
+        },
+        {
+          "start": 1999,
+          "end": 2003,
+          "before": "73ec",
+          "after": ""
+        },
+        {
+          "start": 2004,
+          "end": 2018,
+          "before": "01ae140b0a1679",
+          "after": ""
+        },
+        {
+          "start": 2244,
+          "end": 2256,
+          "before": "records both",
+          "after": "preserves the"
+        },
+        {
+          "start": 2266,
+          "end": 2294,
+          "before": "and current\nmodule hashes; t",
+          "after": "extraction\nand import-path adaptation hashes. T"
+        },
+        {
+          "start": 2305,
+          "end": 2327,
+          "before": "permits only the speci",
+          "after": "validates those identities\nand the exact registered compatibility edits "
+        },
+        {
+          "start": 2328,
+          "end": 2348,
+          "before": "ied import-path chan",
+          "after": "or the current toolchain.\nSee the [mi"
+        },
+        {
+          "start": 2349,
+          "end": 2351,
+          "before": "es",
+          "after": "ration record](../tooling/LEAN_4_37_MIGRATION.md). This toolchain\nis a release candidate"
+        }
+      ]
+    },
+    {
       "path": "library/check.py",
       "kind": "verification-tool",
       "before_sha256": "6cf73964330e97c5016e0d20f4235172a039c6e473c49759980ea95fe3a902ad",
@@ -4725,10 +4829,48 @@
       ]
     },
     {
+      "path": "research/biased-resampling/README.md",
+      "kind": "documentation",
+      "before_sha256": "86d2b8934fe3b40fc321045439cd07df133673e66fe1b8f6af3bfb4cc8677c94",
+      "after_sha256": "8b75dccbaf49db5705d7a3f131059eb5237de28ac7f3b52b8f79d1392a1b988f",
+      "edits": [
+        {
+          "start": 6669,
+          "end": 6669,
+          "before": "",
+          "after": "7.0-rc1 / Mathlib v4.37.0-rc1 dependencies\n(Mathlib revision `31ce06eaadf4a200c0e1407c"
+        },
+        {
+          "start": 6670,
+          "end": 6671,
+          "before": ".",
+          "after": "f1"
+        },
+        {
+          "start": 6672,
+          "end": 6673,
+          "before": " ",
+          "after": "953cf606b8f8`). This is a\nrelease-candidate toolchain. If these dependencies are not installed, prepare\nthe root dependency environment first. Then:\n\n```sh\ncd research"
+        },
+        {
+          "start": 6674,
+          "end": 6797,
+          "before": " Mathlib dependencies. If these\nare not installed, prepare the root dependency environment first. Then:\n\n```sh\ncd research/",
+          "after": ""
+        },
+        {
+          "start": 6820,
+          "end": 6826,
+          "before": "update",
+          "after": "--wfail build BiasedResampling"
+        }
+      ]
+    },
+    {
       "path": "research/biased-resampling/RESULT.json",
       "kind": "verification-output",
       "before_sha256": "6342e30efc929212ae3c524a8640ca851c962cf1df7251f252ed21cf74c04ba7",
-      "after_sha256": "7333674a3add99f82c7f29b11f4dea0f3c86d9b381e88811b4c067082fcd9002",
+      "after_sha256": "264631a1d91dc678e7ee854300579522b80f5eb9b94a86246da45c28816ada75",
       "edits": [
         {
           "start": 48,
@@ -5034,7 +5176,7 @@
           "start": 3801,
           "end": 3865,
           "before": "7fb285e94ce788ec94d6926e513e27c43446d6db775c535e329678c838b59489",
-          "after": "da1f2af040b71f813e33b3b2b2a91cd69a48331ed424b00fa8a94dddc6e1383f"
+          "after": "24742f9fbff9cb90cb84d5bc86998e8509d48e63ef43dff2179853be3d06712a"
         },
         {
           "start": 3911,
@@ -5043,10 +5185,10 @@
           "after": "6"
         },
         {
-          "start": 4023,
+          "start": 4024,
           "end": 4029,
-          "before": "27.408",
-          "after": "30.411"
+          "before": "7.408",
+          "after": "8.687"
         },
         {
           "start": 4080,
@@ -5058,19 +5200,19 @@
           "start": 4113,
           "end": 4177,
           "before": "e8d1d3a190aa5eeb93a078960dbe04a2cf39be44890159bd0e46e36f7f3313f7",
-          "after": "3badc052543decd818ce9205edd0228fbec99ab3bce0a2aa1b30e186d5689884"
+          "after": "41b23e2385a0b11de8f7a44d01e7624269c941d70a4ced926c6d45cf19b750c5"
         },
         {
           "start": 4211,
           "end": 4213,
           "before": "06",
-          "after": "19"
+          "after": "20"
         },
         {
           "start": 4214,
           "end": 4229,
           "before": "14:28:07.094970",
-          "after": "23:55:35.576738"
+          "after": "07:35:42.051688"
         },
         {
           "start": 4274,
@@ -5106,7 +5248,7 @@
           "start": 4588,
           "end": 4593,
           "before": "6.379",
-          "after": "9.635"
+          "after": "7.256"
         },
         {
           "start": 4648,
@@ -5118,13 +5260,13 @@
           "start": 4691,
           "end": 4755,
           "before": "df5d76a54aa86e88abc4a70090e819828600c6be65ba228aaeed9d72a991176f",
-          "after": "9e611a0888b29fb3dc92442e6daca2da0130da37e173a39f6303ed2d78ef2d58"
+          "after": "a2f6fac3721040d3102e97e3aa918d47346c561b04421f07fffa88b0d4277305"
         },
         {
           "start": 4985,
           "end": 4985,
           "before": "",
-          "after": "-v4.37.0-rc1"
+          "after": "-readme-v4.37.0-rc1"
         },
         {
           "start": 5030,
@@ -5136,7 +5278,7 @@
           "start": 5090,
           "end": 5095,
           "before": "2.096",
-          "after": "1.703"
+          "after": "1.524"
         },
         {
           "start": 5150,
@@ -5145,16 +5287,16 @@
           "after": "1"
         },
         {
-          "start": 5188,
+          "start": 5187,
           "end": 5251,
-          "before": "8da2188d3788e742fc5913eb94e050da1a3fed1495f4f59171043dd28fda2ab",
-          "after": "f7dee7d07e7525e042f99b97110b742fcedc23ca3492a99fe7b71667d66e2d6"
+          "before": "98da2188d3788e742fc5913eb94e050da1a3fed1495f4f59171043dd28fda2ab",
+          "after": "b09ba51a57ef9056ceb9673160bd69c432b617ea21747d444082d2ba673e09e4"
         },
         {
           "start": 5487,
           "end": 5487,
           "before": "",
-          "after": "-v4.37.0-rc1"
+          "after": "-readme-v4.37.0-rc1"
         },
         {
           "start": 5532,
@@ -5166,7 +5308,7 @@
           "start": 5600,
           "end": 5603,
           "before": "979",
-          "after": "525"
+          "after": "418"
         },
         {
           "start": 5658,
@@ -5178,13 +5320,13 @@
           "start": 5701,
           "end": 5765,
           "before": "8b5fff799a291b8cddcfb7cc966ce2a138dcca2e6473d9068b116c80f01ff215",
-          "after": "0249b93af89684f57ae519b5c3e7dd447ca2525dab2d10fe497bb85dad6f3b1a"
+          "after": "eb8765d91299572f71af55e51084efc125a913377e64ef65897b5a072871c47a"
         },
         {
           "start": 6000,
           "end": 6000,
           "before": "",
-          "after": "-v4.37.0-rc1"
+          "after": "-readme-v4.37.0-rc1"
         },
         {
           "start": 6045,
@@ -5196,7 +5338,7 @@
           "start": 6110,
           "end": 6115,
           "before": "2.015",
-          "after": "1.548"
+          "after": "1.54"
         },
         {
           "start": 6170,
@@ -5208,19 +5350,19 @@
           "start": 6212,
           "end": 6276,
           "before": "d5fa5939c535865cda5b62358625dc6f22c97d831dda94e5adbe40b1e9d462ba",
-          "after": "e99fba83ccf8e4db1a222926717f0e2b2cc770d3bb2b2edca2dc76273ae921d5"
+          "after": "3503f5160268bb49bf463595f94925f2ba48eb1bc56a3329c9dce4fddcfc124d"
         },
         {
           "start": 6431,
           "end": 6495,
           "before": "dd57e337d6e04e2bcd1b9a7a9d3729852e8827162f88ca03b6fea159776f5b2d",
-          "after": "e27a0720b054f67beb382d854148f629a405b3df7b2ae10be9ffbd7a7e1bd8bb"
+          "after": "3345e6d5f89eac29a83f8cafe8d81c86e7b78286578718cf3b48e3760286974c"
         },
         {
           "start": 6520,
-          "end": 6583,
-          "before": "1a71d682eeb0437e057c644182d461ece57899c45cd6c7826b33a49155e1597",
-          "after": "f38f21436a615fee8b484f3fb4176290fc9abb164bea66c7f9c37cda332396e"
+          "end": 6584,
+          "before": "1a71d682eeb0437e057c644182d461ece57899c45cd6c7826b33a49155e1597b",
+          "after": "8610f129c8781c3bbe91ba45f9f8bcc10e469023b536f020115592df1d9698bf"
         },
         {
           "start": 7407,
@@ -5241,6 +5383,12 @@
           "after": "f11739c25d1640e2b3fda8a98af6d64e97d7b2b1c99840535587a9079b3afee7"
         },
         {
+          "start": 7699,
+          "end": 7762,
+          "before": "6d2b8934fe3b40fc321045439cd07df133673e66fe1b8f6af3bfb4cc8677c94",
+          "after": "b75dccbaf49db5705d7a3f131059eb5237de28ac7f3b52b8f79d1392a1b988f"
+        },
+        {
           "start": 9076,
           "end": 9140,
           "before": "56f0a26875ceef5b935b332d0bee20ca06c95e0bff29db7ee03885423c051162",
@@ -5256,13 +5404,13 @@
           "start": 9553,
           "end": 9555,
           "before": "06",
-          "after": "19"
+          "after": "20"
         },
         {
           "start": 9556,
           "end": 9571,
           "before": "14:27:16.513327",
-          "after": "23:54:37.822812"
+          "after": "07:34:45.429813"
         }
       ]
     },
@@ -5741,6 +5889,80 @@
           "end": 24,
           "before": "",
           "after": "-rc1"
+        }
+      ]
+    },
+    {
+      "path": "research/certificate-existence/README.md",
+      "kind": "documentation",
+      "before_sha256": "219f21f561f3cd3b9c7730514645ec1dca00ead960b41165fcbf22ebc5960e79",
+      "after_sha256": "7c9cef8867444467f6f1b4ff3206239e315755a4672f7974ae24b7b0c22d5923",
+      "edits": [
+        {
+          "start": 6695,
+          "end": 6695,
+          "before": "",
+          "after": "7.0-rc1\nand Mathlib v4.37.0-rc1 at `31ce06eaadf4a200c0e1407c"
+        },
+        {
+          "start": 6696,
+          "end": 6697,
+          "before": ".",
+          "after": "f1"
+        },
+        {
+          "start": 6698,
+          "end": 6718,
+          "before": " and\nMathlib revisio",
+          "after": "953cf606b8f8`.\nThis is a release-candidate toolchai"
+        },
+        {
+          "start": 7106,
+          "end": 7106,
+          "before": "",
+          "after": "The Lean 4.37.0-rc1 "
+        },
+        {
+          "start": 7113,
+          "end": 7125,
+          "before": "verification",
+          "after": "replay"
+        },
+        {
+          "start": 7137,
+          "end": 7140,
+          "before": "183",
+          "after": "690"
+        },
+        {
+          "start": 7327,
+          "end": 7327,
+          "before": "",
+          "after": " [evidence/attempt-002/RESULT.json](evidence/attempt-002/RESULT.json).\nThe earlier"
+        },
+        {
+          "start": 7384,
+          "end": 7418,
+          "before": ". With the recorded\nexternal tools",
+          "after": " describes\nthe historical Lean 4.35.0 replay of 18"
+        },
+        {
+          "start": 7419,
+          "end": 7512,
+          "before": " raw export and local build artifacts present, saved verification\nis read-only:\n\n```sh\npython",
+          "after": "18"
+        },
+        {
+          "start": 7514,
+          "end": 7559,
+          "before": "-B scripts/independent.py --verify --attempt ",
+          "after": "declarations in `"
+        },
+        {
+          "start": 7570,
+          "end": 7570,
+          "before": "",
+          "after": "`.\nWith the recorded\nexternal tools, raw export and local build artifacts present, saved verification\nis read-only:\n\n```sh\npython3 -B scripts/independent.py --verify --attempt attempt-002"
         }
       ]
     },
@@ -7783,10 +8005,6 @@
       "sha256": "dc2140cb2361f83f6614c94ddbcbca721a54ba2fcab713896c92cca5ed76c33d"
     },
     {
-      "path": "library/README.md",
-      "sha256": "c4e4f855512871c1ca15b56bcce8fff7c74853179d768aadd25597bf24d222cc"
-    },
-    {
       "path": "library/SOURCES.json",
       "sha256": "dfd0b93484506c717003b6fea2d608db3e2a9f1205a7ad8425aacf4c5d763fc2"
     },
@@ -7963,10 +8181,6 @@
       "sha256": "e0d06ec4eb43a82002a3a8298af821200bf399b8253c59330c2a1b175b7b2b2c"
     },
     {
-      "path": "research/biased-resampling/README.md",
-      "sha256": "86d2b8934fe3b40fc321045439cd07df133673e66fe1b8f6af3bfb4cc8677c94"
-    },
-    {
       "path": "research/biased-resampling/REPORT.md",
       "sha256": "8da8bd478b52c75204839eff0a36fe25eca8c2b1c1251f1687b98f13e7c69936"
     },
@@ -8029,10 +8243,6 @@
     {
       "path": "research/certificate-existence/LITERATURE.md",
       "sha256": "136d95b8f25f5d69cfa2e33e28c8a7801b563698f729ea152c1c0859541e1a76"
-    },
-    {
-      "path": "research/certificate-existence/README.md",
-      "sha256": "219f21f561f3cd3b9c7730514645ec1dca00ead960b41165fcbf22ebc5960e79"
     },
     {
       "path": "research/certificate-existence/REPORT.md",

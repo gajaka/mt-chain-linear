@@ -62,3 +62,8 @@ in the repository. New receipts use unused directories. The biased study's
 Lean audit is a separate check and does not inherit a Nanoda replay.
 
 Actual migration outcomes are recorded in `tooling/LEAN_4_37_RESULT.json`.
+Later README version and command corrections are recorded separately in
+[`README_VERSION_UPDATE.json`](README_VERSION_UPDATE.json). The earlier
+compatibility record and latest-result summary are retained under
+`provenance/readme-versions-2026-11-20/before/`; historical kernel receipts
+and mathematical sources are unchanged.
