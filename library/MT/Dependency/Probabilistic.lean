@@ -58,13 +58,8 @@ def independent (vars : CertVars C V) (c1 c2 : C) : Prop :=
 /-- Dependent iff not independent. -/
 theorem dep_iff_not_indep (vars : CertVars C V) (c1 c2 : C) :
     dependent vars c1 c2 ↔ ¬ independent vars c1 c2 := by
-  constructor
-  · intro h
-    simp [independent]
-    exact Finset.Nonempty.ne_empty h
-  · intro h
-    simp [independent] at h
-    exact Finset.nonempty_iff_ne_empty.mpr h
+  change (vars c1 ∩ vars c2).Nonempty ↔ vars c1 ∩ vars c2 ≠ ∅
+  exact Finset.ne_empty_iff_nonempty.symm
 
 /-- Dependency is symmetric: c1 ~ c2 exactly when c2 ~ c1, since it only asks
     whether the two variable sets overlap. -/

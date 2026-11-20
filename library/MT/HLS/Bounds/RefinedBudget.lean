@@ -71,14 +71,14 @@ theorem tsum_refinedWeight_le_decorated (O : OverlapBounds G p)
     _ ≤ ∑' D : ProperFamily G Finset.univ α, ∑' c : LegalChoices O.matching D.val,
         ∏ u : ↥D.val.nodes, choiceWeight O.matching (fun i => ENNReal.ofReal (O.splitUp i))
           (fun i => ENNReal.ofReal (O.splitDown i)) u.val.1 (c.val u) :=
-      ENNReal.tsum_le_tsum (fun D => refinedWeight_le_choiceSum O hp hp1 D.val D.property.1)
+      tsum_le_tsum (fun D => refinedWeight_le_choiceSum O hp hp1 D.val D.property.1)
     _ = ∑' F : ExpansionFamily O.matching α,
         decorationWeight (fun i => ENNReal.ofReal (O.splitUp i))
           (fun i => ENNReal.ofReal (O.splitDown i)) (expansionFamilyMap O.matching α F).1.val
             (expansionFamilyMap O.matching α F).2.val := by
-      rw [← ENNReal.tsum_sigma]
+      rw [← tsum_sigma]
       exact tsum_congr (fun F => (expansionFamilyMap_weight O.matching α _ _ F).symm)
-    _ ≤ _ := ENNReal.tsum_comp_le_tsum_of_injective (expansionFamilyMap_injective O.matching α)
+    _ ≤ _ := tsum_comp_le_tsum_of_injective (expansionFamilyMap_injective O.matching α)
       (fun C => decorationWeight (fun i => ENNReal.ofReal (O.splitUp i))
         (fun i => ENNReal.ofReal (O.splitDown i)) C.1.val C.2.val)
 

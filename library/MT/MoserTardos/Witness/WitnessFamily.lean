@@ -95,7 +95,7 @@ theorem tsum_witnessFamilyWeight_eq_iSup_mtWeight (P : MTProcess S ι)
       ⨆ D : ℕ, (mtWeight P p D α : ℝ≥0∞) := by
   classical
   apply le_antisymm
-  · rw [ENNReal.tsum_eq_iSup_sum]
+  · rw [tsum_eq_iSup_sum]
     apply iSup_le
     intro F
     let G : Finset (WTree ι) := F.filter (fun U => U ∈ witnessFamily P α)
@@ -120,7 +120,7 @@ theorem tsum_witnessFamilyWeight_eq_iSup_mtWeight (P : MTProcess S ι)
           ∑ U ∈ wtreesUpTo P D α, witnessFamilyWeight P p α U :=
         (sum_wtreesUpTo_witnessFamilyWeight P p α D).symm
       _ ≤ ∑' U : WTree ι, witnessFamilyWeight P p α U :=
-        ENNReal.sum_le_tsum (wtreesUpTo P D α)
+        sum_le_tsum (wtreesUpTo P D α)
 
 /-- The algebraic MT budget bounds the entire canonical-family sum. -/
 theorem tsum_witnessFamilyWeight_le (P : MTProcess S ι) (p x : ι → ℝ≥0)

@@ -1,7 +1,7 @@
 # Verification tools and reproduction
 
-The project pins Lean `leanprover/lean4:v4.35.0` and Mathlib revision
-`56a005855ea17e0b0958f73ec801ae140b0a1679`. The nine dependency packages are
+The project pins Lean `leanprover/lean4:v4.37.0-rc1` and Mathlib revision
+`31ce06eaadf4a200c0e1407c5f10953cf606b8f8`. The nine dependency packages are
 listed in `lake-manifest.json`. A dependency
 used only by Lake tooling, such as Cli, need not have a Lean library cache.
 
@@ -11,9 +11,12 @@ identical binaries on every operating system.
 
 | Tool | Version or source | SHA-256 of selected binary |
 |---|---|---|
-| Lean | Lean 4.35.0 | `d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf` |
-| leanexport | Lean 4.35.0 toolchain; NDJSON format 3.1.0 | `01327b83d6a69dbc84fa04fd671c61068b2f074e51d1bf607bf6a6b9aed5339e` |
+| Lean | Lean 4.37.0-rc1 | `c7da4c1b7adf0834e19aff92bf06da80172405a93f54964b4abbe820366a96de` |
+| leanexport | Lean 4.37.0-rc1 toolchain; format checked in each fresh export | `748692e11022c0d73fc0d206631b47520efae6de8cd883c4f4f3ce86b592cd17` |
 | Nanoda | nanoda_lib 0.4.24, revision below, with stack-size patch | `4f2264a0c987e94c4a654768a90ddb92369014578ecafba3287020bec0f4d439` |
+
+The current tool profile is [LEAN_4_37_TOOLS.json](tooling/LEAN_4_37_TOOLS.json).
+The original Lean 4.35 profile and historical receipts remain unchanged.
 
 ## Nanoda source and the local resource patch
 
@@ -59,8 +62,10 @@ Nanoda with only `propext`, `Classical.choice` and `Quot.sound` permitted.
 This checks those roots and their proof closure; it does not check every
 assertion in every source file with the second kernel.
 
-Attempt 003 checks the current chain sources. Use an unused attempt name for
-a fresh replay. The checked binary hashes are specific to the recorded
+Attempt 003 retains the historical Lean 4.35 chain-source check. New migration
+replays and their toolchain-specific outcomes are indexed in
+[LEAN_4_37_RESULT.json](tooling/LEAN_4_37_RESULT.json). Use an unused attempt name
+for a fresh replay. The checked binary hashes are specific to the recorded
 macOS tool builds; another platform requires reviewed tool pins and fresh
 verification records.
 
@@ -88,6 +93,13 @@ private proof data; ordinary module
 imports alone can omit transitive theorem bodies. The audit process uses an
 8 GiB memory cap for these two environments, while the checked roots, exact
 type checks and three-axiom allowlist stay unchanged.
+
+For Lean 4.37, the validator additionally checks the exact compatibility edits
+in [MIGRATION.json](provenance/lean-4.37.0-rc1/MIGRATION.json), including retained
+before bytes and all unchanged baseline files. The old extraction/module
+manifests are not rewritten to describe new sources. The additional admission
+controls reject proof escapes, altered historical inputs, unrecorded edits,
+inventory omissions, path traversal, symlinks and an unexpected toolchain.
 
 `scripts/verify.py` also refuses to overwrite a receipt. Its default output is
 `evidence/migration-source-verification.json`; use `--output` with an unused path

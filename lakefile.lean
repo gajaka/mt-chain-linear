@@ -6,7 +6,7 @@ package mtChainLinear where
   requiresModuleSystem := true
 
 require mathlib from git
-  "https://github.com/leanprover-community/mathlib4" @ "56a005855ea17e0b0958f73ec801ae140b0a1679"
+  "https://github.com/leanprover-community/mathlib4" @ "31ce06eaadf4a200c0e1407c5f10953cf606b8f8"
 
 @[default_target]
 lean_lib MTCore where

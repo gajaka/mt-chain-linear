@@ -152,7 +152,7 @@ theorem tLog_eq_sum_count (P : MTProcess S ι) (σ : Schedule P) (ω : LogSpace 
       rw [tsum_fintype]
       exact hstep t
     _ = ∑' α : ι, ∑' t : ℕ,
-        (resamplingEvent P σ α t).indicator (fun _ => (1 : ℝ≥0∞)) ω := ENNReal.tsum_comm
+        (resamplingEvent P σ α t).indicator (fun _ => (1 : ℝ≥0∞)) ω := tsum_comm
     _ = _ := by simp only [count, tsum_fintype]
 
 theorem expectedWork_eq_sum_expectedCount (P : MTProcess S ι) (σ : Schedule P)

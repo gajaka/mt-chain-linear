@@ -85,8 +85,8 @@ theorem rootedFamilyMap_injective (G : SimpleGraph ι) (α : ι) :
 theorem tsum_rootFamily_weight_le (G : SimpleGraph ι) (α : ι) (w : HLS.WitnessDAG ι → ℝ≥0∞) :
     (∑' r : ℕ, ∑' D : RootFamily G α r, w D.val) ≤
       ∑' D : ProperFamily G Finset.univ α, w D.val := by
-  rw [← ENNReal.tsum_sigma]
-  exact ENNReal.tsum_comp_le_tsum_of_injective (rootedFamilyMap_injective G α) (fun D => w D.val)
+  rw [← tsum_sigma]
+  exact tsum_comp_le_tsum_of_injective (rootedFamilyMap_injective G α) (fun D => w D.val)
 
 end HLS.WitnessDAG
 

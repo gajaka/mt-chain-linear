@@ -1,7 +1,11 @@
-.PHONY: check core generic certificates windows biased provenance barrier
+.PHONY: check migration core generic certificates windows biased provenance barrier
 
 # Generic MT theory and the concrete chain have separate build scopes.
-check: generic certificates windows biased provenance barrier
+check: migration generic certificates windows biased provenance barrier
+
+migration:
+	python3 -B tooling/lean_migration.py
+	python3 -B tooling/test_lean_migration.py
 
 core:
 	lake --wfail build

@@ -83,7 +83,7 @@ theorem pickFromList_spec {S : VarSpaces V} {ι : Type} (P : MTProcess S ι)
 theorem pickFirstViolated_mem_violated {S : VarSpaces V} {ι : Type} [Fintype ι] [Nonempty ι]
     (P : MTProcess S ι) (ω' : MTState S) (h : violated P ω' ≠ ∅) :
     ω' ∈ P.bad (pickFirstViolated P ω') := by
-  obtain ⟨j, hj⟩ := Set.nonempty_iff_ne_empty.mpr h
+  obtain ⟨j, hj⟩ := Set.ne_empty_iff_nonempty.mp h
   exact pickFromList_spec P (Classical.arbitrary ι) ω' Finset.univ.toList
     ⟨j, Finset.mem_toList.mpr (Finset.mem_univ j), hj⟩
 

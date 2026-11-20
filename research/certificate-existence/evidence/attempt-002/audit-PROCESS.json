@@ -1,0 +1,30 @@
+{
+  "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/certificate-existence/evidence/attempt-002/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/certificate-existence/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/batteries/.lake/build/lib/lean",
+  "LEAN_SRC_PATH": null,
+  "command": [
+    "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.37.0-rc1/bin/lean",
+    "-j1",
+    "-M8192",
+    "-DwarningAsError=true",
+    "-o",
+    "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/certificate-existence/evidence/attempt-002/lib/lean/CertificateIndependentAudit.olean",
+    "CertificateIndependentAudit.lean"
+  ],
+  "cwd": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/certificate-existence/evidence/attempt-002/src",
+  "exit_code": 0,
+  "inherited_stack_no_preexec_change": true,
+  "log": {
+    "bytes": 4472559,
+    "path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/certificate-existence/evidence/attempt-002/audit.log",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/research/certificate-existence/evidence/attempt-002/audit.log",
+    "sha256": "2d0ce4994ee056517d33c4face59dd65731adca3c92f2b71144110404f1cc1af"
+  },
+  "parent_stack_limits": [
+    8372224,
+    67092480
+  ],
+  "seconds": 6.44930925,
+  "stdout": null,
+  "timeout": false,
+  "timeout_seconds": 600
+}

@@ -89,9 +89,13 @@ theorem stoppedValue_shift (M : FiniteDrift.Model S) (f : S → ℚ)
     · have ha : ω ∉ FiniteDrift.activeEvent M X (n + 1) := by
         change ¬ M.good (X (n + 1) ω) = false
         simp [hg]
-      rw [Set.indicator_of_notMem (fun h => ha h.2), Set.indicator_of_mem hr, he.1 _ hg]
+      rw [Set.indicator_of_notMem
+        (fun h : ω ∈ FiniteDrift.runningEvent M X n ∩ FiniteDrift.activeEvent M X (n + 1) =>
+          ha h.2), Set.indicator_of_mem hr, he.1 _ hg]
       simp
-  · rw [Set.indicator_of_notMem (fun h => hr h.1), Set.indicator_of_notMem hr]
+  · rw [Set.indicator_of_notMem
+      (fun h : ω ∈ FiniteDrift.runningEvent M X n ∩ FiniteDrift.activeEvent M X (n + 1) =>
+        hr h.1), Set.indicator_of_notMem hr]
 
 theorem stoppedValue_nonnegative (M : FiniteDrift.Model S) (f : S → ℚ)
     (hf : ∀ s, 0 ≤ f s) (X : ℕ → Ω → S) (n : ℕ) (ω : Ω) :

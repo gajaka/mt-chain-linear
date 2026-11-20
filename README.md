@@ -131,16 +131,19 @@ One [fixed barrier policy](experiments/barrier-guided-bias/README.md) lost to
 static p=1 for n=2,...,5 under common uniform initialization. This bounded
 comparison does not exclude every possible barrier-dependent policy.
 
-Pinned tools: Lean `leanprover/lean4:v4.35.0` and Mathlib
-`56a005855ea17e0b0958f73ec801ae140b0a1679`.
+Pinned tools: Lean `leanprover/lean4:v4.37.0-rc1` and Mathlib
+`31ce06eaadf4a200c0e1407c5f10953cf606b8f8`. This is a release-candidate
+toolchain. The [migration record](tooling/LEAN_4_37_MIGRATION.md) describes the
+compatibility edits, preserved statements and fresh verification scope.
 
 ```sh
 lake exe cache get
 make check
 ```
 
-This builds the mathematical workspaces with warnings treated as errors,
-checks source identities, and verifies the saved rational certificates.
+This builds all four mathematical workspaces with warnings treated as errors,
+checks the historical source identities and registered compatibility edits,
+and verifies the saved rational certificates.
 It does not perform a fresh Nanoda replay. [TOOLING.md](TOOLING.md) describes
 independent replay, the allowed axioms and the exact scope of each audit.
 The whole project is not covered by a blanket second-kernel claim.

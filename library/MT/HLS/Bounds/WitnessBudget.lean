@@ -59,7 +59,7 @@ theorem tsum_weight_le_tsum_properFamilyWeight (G : SimpleGraph ι) (p : ι → 
     (∑' D : ProperFamily G B α, weight p D.1) ≤
       ∑' L : List (Finset ι), Shearer.properFamilyWeight G p B {α} L := by
   simp_rw [weight_eq_properFamilyWeight G p B α]
-  exact ENNReal.tsum_comp_le_tsum_of_injective (familyEncoding_injective G B α) _
+  exact tsum_comp_le_tsum_of_injective (familyEncoding_injective G B α) _
 
 /-- Weighted proper DAG enumeration is bounded by the singleton q-ratio. -/
 theorem tsum_weight_le_stableBudget (G : SimpleGraph ι) (p : ι → ℝ)

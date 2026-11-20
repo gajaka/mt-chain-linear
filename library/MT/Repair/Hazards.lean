@@ -59,8 +59,7 @@ def canSwap (a b : Action V α) : Bool :=
 
 theorem rawHazard_eq_false_iff (a b : Action V α) :
     rawHazard a b = false ↔ Disjoint a.writes b.reads := by
-  simp [rawHazard, Finset.disjoint_iff_inter_eq_empty,
-    Finset.nonempty_iff_ne_empty]
+  simp [rawHazard, Finset.disjoint_iff_inter_eq_empty]
 
 theorem warHazard_eq_false_iff (a b : Action V α) :
     warHazard a b = false ↔ Disjoint b.writes a.reads :=
@@ -68,8 +67,7 @@ theorem warHazard_eq_false_iff (a b : Action V α) :
 
 theorem wawHazard_eq_false_iff (a b : Action V α) :
     wawHazard a b = false ↔ Disjoint a.writes b.writes := by
-  simp [wawHazard, Finset.disjoint_iff_inter_eq_empty,
-    Finset.nonempty_iff_ne_empty]
+  simp [wawHazard, Finset.disjoint_iff_inter_eq_empty]
 
 theorem canSwap_eq_true_iff (a b : Action V α) :
     canSwap a b = true ↔ Disjoint a.writes b.reads ∧

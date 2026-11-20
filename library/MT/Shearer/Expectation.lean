@@ -60,7 +60,7 @@ theorem randomInitExpectedResamplingCount_le_tsum_properFamilyWeight [Fintype V]
     randomInitExpectedResamplingCount P α ≤ ∑' L : List (Finset ι),
       properFamilyWeight (dependencyGraph P.footprint) p Finset.univ {α} L := by
   rw [randomInitExpectedResamplingCount_eq_tsum_sequenceOccurrence P hbad α]
-  exact ENNReal.tsum_le_tsum (fun L =>
+  exact tsum_le_tsum (fun L =>
     logMeasure_sequenceOccurrence_le_properFamilyWeight P hbad p hp_nonneg hp α L)
 
 /-- The Shearer coefficient ratio bounds the expected number of resamplings

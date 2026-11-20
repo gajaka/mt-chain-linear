@@ -62,7 +62,7 @@ theorem randomInitExpectedResamplingCount_le_tsum_familyWeight [Fintype V]
     randomInitExpectedResamplingCount P α ≤ ∑' U : WTree ι,
       witnessFamilyWeight P p α U := by
   rw [randomInitExpectedResamplingCount_eq_tsum_witnessOccurrence P hbad α]
-  exact ENNReal.tsum_le_tsum (fun U =>
+  exact tsum_le_tsum (fun U =>
     logMeasure_witnessOccurrence_le_familyWeight P hbad p hp α U)
 
 theorem randomInitExpectedResamplingCount_le_iSup_mtWeight [Fintype V]

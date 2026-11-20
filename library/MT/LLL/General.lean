@@ -300,7 +300,7 @@ theorem S2_indep_side (vars : CertVars C V) (B S : Finset C) (i : C)
   apply hs_not_nbr
   unfold neighbors
   rw [Finset.mem_filter]
-  exact ⟨hs_B, hs_ne, Finset.nonempty_iff_ne_empty.mpr h_ne_empty⟩
+  exact ⟨hs_B, hs_ne, Finset.ne_empty_iff_nonempty.mp h_ne_empty⟩
 
 /-- Second inequality of (5.4) [p.71]: "(1-xj1)⋯(1-xjr) ≥ ∏_{(i,j)∈E}(1-xj)".
     S1 ⊆ Γ(i) but may be missing some real neighbors (in the running example,

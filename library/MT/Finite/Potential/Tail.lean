@@ -149,9 +149,13 @@ theorem stoppedValue_shift_of_good_zero (M : FiniteDrift.Model S) (f : S → ℚ
     · have ha : ω ∉ FiniteDrift.activeEvent M X (n + 1) := by
         change ¬ M.good (X (n + 1) ω) = false
         simp [hg]
-      rw [Set.indicator_of_notMem (fun h => ha h.2), Set.indicator_of_mem hr, hf _ hg]
+      rw [Set.indicator_of_notMem
+        (fun h : ω ∈ FiniteDrift.runningEvent M X n ∩ FiniteDrift.activeEvent M X (n + 1) =>
+          ha h.2), Set.indicator_of_mem hr, hf _ hg]
       simp
-  · rw [Set.indicator_of_notMem (fun h => hr h.1), Set.indicator_of_notMem hr]
+  · rw [Set.indicator_of_notMem
+      (fun h : ω ∈ FiniteDrift.runningEvent M X n ∩ FiniteDrift.activeEvent M X (n + 1) =>
+        hr h.1), Set.indicator_of_notMem hr]
 
 theorem stopped_survival_zero (M : FiniteDrift.Model S) (X : ℕ → Ω → S) (n : ℕ) :
     stoppedValue M (survival M 0) X n =
@@ -250,7 +254,7 @@ theorem runningEvent_eq_hitCount_gt (M : FiniteDrift.Model S) (X : ℕ → Ω �
             exact Set.indicator_of_mem hmem _
           _ = _ := by simp
       rw [← he]
-      exact ENNReal.sum_le_tsum (Finset.range (N + 1))
+      exact sum_le_tsum (Finset.range (N + 1))
     exact lt_of_lt_of_le (by exact_mod_cast Nat.lt_succ_self N) hsum
   · intro hh k hk
     cases hg : M.good (X k ω)
@@ -268,13 +272,14 @@ theorem running_measure_le_mean_div (M : FiniteDrift.Model S)
     calc
       _ = ∑ _n ∈ Finset.range (N + 1), μ (FiniteDrift.runningEvent M X N) := by simp
       _ ≤ _ := Finset.sum_le_sum (fun n hn => measure_mono
-        (fun _ hr k hk => hr k (le_trans hk (Nat.le_of_lt_succ (Finset.mem_range.mp hn)))))
+        (show FiniteDrift.runningEvent M X N ⊆ FiniteDrift.runningEvent M X n from
+          fun _ hr k hk => hr k (le_trans hk (Nat.le_of_lt_succ (Finset.mem_range.mp hn)))))
   have ht : (∑ n ∈ Finset.range (N + 1), μ (FiniteDrift.runningEvent M X n)) ≤
       FiniteDrift.expectedHitCount M μ X := by
     change (∑ n ∈ Finset.range (N + 1), μ (FiniteDrift.runningEvent M X n)) ≤
       RepairDrift.expectedActiveCount μ (FiniteDrift.runningEvent M X)
     rw [RepairDrift.expectedActiveCount_eq_tsum μ _ (FiniteDrift.runningEvent_measurable M X hX)]
-    exact ENNReal.sum_le_tsum _
+    exact sum_le_tsum _
   apply (ENNReal.le_div_iff_mul_le (Or.inl (by positivity)) (Or.inl (by finiteness))).mpr
   simpa only [mul_comm] using hsum.trans ht
 

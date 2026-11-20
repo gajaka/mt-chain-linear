@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "date": "2026-11-20",
+  "toolchain": "leanprover/lean4:v4.37.0-rc1",
+  "mathlib_revision": "31ce06eaadf4a200c0e1407c5f10953cf606b8f8",
+  "baseline_commit": "bb903c9b301a01e136842d7b72719d97d0625745",
+  "branch": "upgrade/lean-4.37.0-rc1",
+  "strict_make_check": {
+    "command": [
+      "make",
+      "check"
+    ],
+    "elapsed_seconds": 17.888,
+    "exit_code": 0
+  },
+  "mathematical_modules_compared": 209,
+  "authored_theorem_headers_preserved": 2267,
+  "source_preservation": "provenance/lean-4.37.0-rc1/SOURCE_PRESERVATION.json",
+  "migration_controls_passed": 11,
+  "chain_nanoda": {
+    "status": "PASS",
+    "roots": 9,
+    "checked_declarations": 18213,
+    "result": "evidence/attempt-005/RESULT.json"
+  },
+  "certificate_nanoda": {
+    "status": "PASS",
+    "roots": 9,
+    "checked_declarations": 18690,
+    "result": "research/certificate-existence/evidence/attempt-002/RESULT.json"
+  },
+  "biased_study": {
+    "status": "PASS",
+    "result": "research/biased-resampling/RESULT.json",
+    "invalid_controls_rejected": 4,
+    "second_kernel": "NOT_RUN"
+  },
+  "historical_manifests_rewritten": false,
+  "registered_file_changes": 46,
+  "unchanged_baseline_files": 436,
+  "scope": "All four active workspaces build with warnings as errors. Nanoda checks the nine selected roots in each of two studies and their proof closures, not every theorem. Source comparison is textual; imported Mathlib definitions are version-specific. Historical evidence retains its own scope.",
+  "saved_evidence_checks": {
+    "current_chain": {
+      "status": "PASS",
+      "attempt": "attempt-005",
+      "checked_declarations": 18213
+    },
+    "current_certificates": {
+      "status": "PASS",
+      "attempt": "attempt-002",
+      "checked_declarations": 18690
+    },
+    "historical_chain": {
+      "status": "PASS",
+      "attempt": "attempt-003",
+      "checked_declarations": 17707
+    },
+    "historical_certificates": {
+      "status": "PASS",
+      "attempt": "attempt-001",
+      "checked_declarations": 18183
+    }
+  }
+}

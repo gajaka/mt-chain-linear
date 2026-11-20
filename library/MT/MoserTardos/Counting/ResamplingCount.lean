@@ -94,7 +94,7 @@ theorem TLog_eq_sum_resamplingCount (P : MTProcess S ι)
       exact runningUntil_indicator_eq_sum_resamplingEvent P ω0 ω s
     _ = ∑' α : ι, ∑' s : ℕ,
         (resamplingEvent P ω0 α s).indicator (fun _ => (1 : ℝ≥0∞)) ω :=
-      ENNReal.tsum_comm
+      tsum_comm
     _ = ∑ α : ι, resamplingCount P ω0 ω α := by
       simp only [resamplingCount, tsum_fintype]
 

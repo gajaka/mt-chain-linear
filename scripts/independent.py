@@ -19,8 +19,9 @@ import sys
 import time
 
 sys.dont_write_bytecode = True
-from export_check import inspect_export
+from export_check import inspect_export, recorded_lean_version
 from provenance import validate_sources
+from lean_migration import primitive_targets
 
 ROOT = Path(__file__).resolve().parents[1]
 ALLOWED = {"Classical.choice", "Quot.sound", "propext"}
@@ -35,8 +36,8 @@ SIDECARS = (".olean", ".olean.private", ".olean.server", ".ir", ".ir.sig", ".ile
 FORBIDDEN = ("PPGraph", "PPG", "PPChain", "Profile", "PublicKernelBridge")
 MARKER = "THETA_INDEPENDENT_AUDIT "
 PINNED_TOOLS = {
-    "lean": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
-    "leanexport": "01327b83d6a69dbc84fa04fd671c61068b2f074e51d1bf607bf6a6b9aed5339e",
+    "lean": "c7da4c1b7adf0834e19aff92bf06da80172405a93f54964b4abbe820366a96de",
+    "leanexport": "748692e11022c0d73fc0d206631b47520efae6de8cd883c4f4f3ce86b592cd17",
     "nanoda": "4f2264a0c987e94c4a654768a90ddb92369014578ecafba3287020bec0f4d439",
 }
 
@@ -111,7 +112,7 @@ def local_inputs():
 
 def tool_paths(args):
     toolchain = (ROOT / "lean-toolchain").read_text().strip()
-    require(toolchain == "leanprover/lean4:v4.35.0", "Unexpected Lean toolchain")
+    require(toolchain == "leanprover/lean4:v4.37.0-rc1", "Unexpected Lean toolchain")
     default = Path.home() / ".elan/toolchains" / toolchain.replace("/", "--").replace(":", "---") / "bin/lean"
     lean = Path(args.lean or default).resolve()
     exporter = Path(args.leanexport or lean.with_name("leanexport")).resolve()
@@ -126,10 +127,7 @@ def tool_paths(args):
 
 def primitive_names(lean):
     source = lean.parent.parent / "src/lean/lake/Lake/CLI/Check.lean"
-    text = source.read_text()
-    body = text.split("def primitiveTargets", 1)[1].split("def builtinTargets", 1)[0]
-    names = re.findall(r"(?m)^\s*``([A-Za-z0-9_.]+),?\s*$", body)
-    require(len(names) == 26, "Pinned comparator primitive inventory changed")
+    names = primitive_targets(source)
     return names + ["Quot", "Quot.mk", "Quot.lift", "Quot.ind"], source
 
 
@@ -237,10 +235,13 @@ def run(args):
         env = os.environ.copy()
         for key in ("LEAN_PATH", "LEAN_SRC_PATH", "LEAN_SYSROOT"):
             env.pop(key, None)
+        env["LEAN_SYSROOT"] = str(tools["lean"].parent.parent)
+        env["PATH"] = str(tools["lean"].parent) + os.pathsep + env.get("PATH", "")
         env["LEAN_PATH"] = os.pathsep.join(map(str, [lib, *libs]))
         write(directory / "INPUTS.json", {"local_inputs": inputs, "tools": tool_bindings,
             "required_raw_modules": sorted(closure), "LEAN_PATH": env["LEAN_PATH"],
-            "LEAN_SRC_PATH": None, "roots": list(NAMES), "allowed_axioms": sorted(ALLOWED),
+            "LEAN_SRC_PATH": None, "LEAN_SYSROOT": env["LEAN_SYSROOT"],
+            "roots": list(NAMES), "allowed_axioms": sorted(ALLOWED),
             "parent_stack_limits": list(stack), "old_projects_executed_or_written": False})
         # Module-mode quotation plus a full-private proof environment coexist.
         # The resource cap changes, not the allowed axioms or checked roots.
@@ -318,7 +319,8 @@ def verify(args):
             not config["unsafe_permit_all_axioms"] and config["unpermitted_axiom_hard_error"] and
             config["unknown_pp_declar_hard_error"] and tuple(config["pp_declars"]) == NAMES,
             "Strict Nanoda configuration changed")
-    inspected = inspect_export(Path(result["export"]["path"]), NAMES)
+    inspected = inspect_export(Path(result["export"]["path"]), NAMES,
+                               lean_version=recorded_lean_version(inputs["tools"]))
     require(inspected == read(result["export_inspection"]["path"]), "Export inspection changed")
     check_kernel_log(Path(result["nanoda"]["log"]["path"]), inspected["expanded_declaration_count"])
     return {"status": "PASS", "mode": "saved-evidence-read-only", "root_count": 9,

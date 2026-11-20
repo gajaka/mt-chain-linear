@@ -175,8 +175,9 @@ theorem measurable_hitCount (M : Model S) (X : ℕ → Ω → S)
 
 theorem hitCount_le_activeCount (M : Model S) (X : ℕ → Ω → S) (ω : Ω) :
     hitCount M X ω ≤ RepairDrift.activeCount (activeEvent M X) ω := by
-  apply ENNReal.tsum_le_tsum
+  apply tsum_le_tsum
   intro n
+  dsimp only
   by_cases hr : ω ∈ runningEvent M X n
   · have ha : ω ∈ activeEvent M X n := hr n le_rfl
     rw [Set.indicator_of_mem hr, Set.indicator_of_mem ha]
@@ -272,7 +273,7 @@ theorem hitCount_eq_first_good (M : Model S) (X : ℕ → Ω → S)
         exact Set.indicator_of_mem hmem _
       _ = T := by simp
   rw [← hsum]
-  exact ENNReal.sum_le_tsum (Finset.range T)
+  exact sum_le_tsum (Finset.range T)
 
 theorem ae_exists_good (M : Model S) (W : Witness S)
     (h : check M W = true) (μ : Measure Ω) [IsFiniteMeasure μ]

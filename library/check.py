@@ -11,8 +11,10 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT.parent / "tooling"))
+from lean_migration import Migration, TOOLCHAIN, MATHLIB
 SOURCE_COMMIT = "60151677e58704ce856c05a572904d681fd959f6"
-MATHLIB_REVISION = "56a005855ea17e0b0958f73ec801ae140b0a1679"
+MATHLIB_REVISION = MATHLIB
 FAMILIES = {
     "MT.MoserTardos.": ("moser_tardos_modules", 44),
     "MT.HLS.": ("hls_modules", 63),
@@ -66,6 +68,7 @@ def selected_roots(modules):
 
 
 def check(source=None):
+    compatibility = Migration(ROOT.parent)
     manifest = json.loads((ROOT / "SOURCES.json").read_text())
     need(manifest["schema_version"] == 4, "Unknown source manifest schema")
     need(manifest["source_project"] == "ppg-lean", "Wrong source project")
@@ -88,11 +91,12 @@ def check(source=None):
         need(module not in modules and path not in paths, "Duplicate source")
         file = ROOT / path
         need(not file.is_symlink() and file.is_file(), "Missing source module")
-        need(file.stat().st_size == row["bytes"] and digest(file) == row["sha256"],
+        baseline = compatibility.baseline_bytes("library/" + path)
+        need(len(baseline) == row["bytes"] and hashlib.sha256(baseline).hexdigest() == row["sha256"],
              "Source changed: " + path)
         need(row["source_path"] == "PPGraph/" + path.removeprefix("MT/"),
              "Unexpected original source path")
-        original = original_bytes(file.read_bytes())
+        original = original_bytes(baseline)
         need(len(original) == row["source_bytes"] and
              hashlib.sha256(original).hexdigest() == row["source_sha256"],
              "Change beyond import paths: " + path)
@@ -148,7 +152,7 @@ def check(source=None):
     need(not re.search(r"\bglobs\s*:=", config), "Broad library globs are not permitted")
     need(manifest["elaboration_inputs"] == [] and not (ROOT / "artifacts").exists(),
          "Unrelated application fixtures are present")
-    need((ROOT / "lean-toolchain").read_text().strip() == "leanprover/lean4:v4.35.0",
+    need((ROOT / "lean-toolchain").read_text().strip() == TOOLCHAIN,
          "Wrong Lean toolchain")
     packages = json.loads((ROOT / "lake-manifest.json").read_text())["packages"]
     mathlib = [p for p in packages if p["name"] == "mathlib"]
@@ -169,7 +173,7 @@ def check(source=None):
              "Incomplete requested source families")
         for row in rows:
             need((source / row["source_path"]).read_bytes() ==
-                 original_bytes((ROOT / row["path"]).read_bytes()),
+                 original_bytes(compatibility.baseline_bytes("library/" + row["path"])),
                  "Source identity mismatch: " + row["path"])
     return {
         "status": "PASS", "source_commit": SOURCE_COMMIT,
@@ -178,7 +182,8 @@ def check(source=None):
         "LLL_modules": 3, "repair_roots": 4, "policy_roots": 5,
         "elaboration_inputs": 0, "source_checkout_compared": source is not None,
         "module_prefix": "MT", "adaptation": "import_prefix_only",
-        "scope": "Requested theories, exact import closure and source identities; not a kernel replay",
+        "lean_compatibility_migration": compatibility.receipt(),
+        "scope": "Original import-only identities, exact compatibility edits and current import closure; not a kernel replay",
     }
 
 

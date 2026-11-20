@@ -1,0 +1,112 @@
+{
+  "actual_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "constant_references_closed": true,
+  "declaration_command_count": 17029,
+  "declarations_by_tag": {
+    "axiom": 3,
+    "constructor": 628,
+    "def": 4506,
+    "inductive": 554,
+    "opaque": 2,
+    "quot": 4,
+    "recursor": 556,
+    "thm": 11960
+  },
+  "expanded_declaration_count": 18213,
+  "export_bytes": 83565089,
+  "export_path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/exports/attempt-005/declarations.ndjson",
+  "export_sha256": "15b618cdc24a3b8d50d154996eee12609d095dd8da679ccfb8a67377400cc49e",
+  "expression_count": 1457118,
+  "inductive_bundle_count": 554,
+  "level_count_including_zero": 303,
+  "line_count": 1573367,
+  "metadata": {
+    "exporter": {
+      "name": "lean4export",
+      "version": "3.1.0"
+    },
+    "format": {
+      "version": "3.1.0"
+    },
+    "lean": {
+      "githash": "0b77e12952ad39077d80d8bd6b66d601f225c321",
+      "version": "4.37.0-rc1"
+    }
+  },
+  "name_count_including_anonymous": 98918,
+  "root_closure": {
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declaration_count": 18208,
+    "declaration_names_sha256": "87a5128fd9a6fd82c41036ffa707514af464395a1c4285bc56339a84bcc10e3a",
+    "exported_declarations_outside_root_closure": 5,
+    "expression_count": 1457110,
+    "method": "Actual expression type/value references, recursor rule bodies, complete inductive bundles, and implicit literal dependencies"
+  },
+  "root_count": 9,
+  "roots": {
+    "MTChainFormal.Tightness.expected_invalidations_le_linear": {
+      "name_id": 98912,
+      "tag": "thm",
+      "type_id": 1456838,
+      "value_id": 1457109
+    },
+    "MTChainFormal.Tightness.expected_steps_ge_linear": {
+      "name_id": 96587,
+      "tag": "thm",
+      "type_id": 1399316,
+      "value_id": 1399851
+    },
+    "MTChainFormal.Tightness.expected_steps_ge_linear_refined": {
+      "name_id": 96570,
+      "tag": "thm",
+      "type_id": 1398831,
+      "value_id": 1399303
+    },
+    "MTChainFormal.Tightness.expected_steps_isTheta_linear": {
+      "name_id": 97054,
+      "tag": "thm",
+      "type_id": 1430020,
+      "value_id": 1430026
+    },
+    "MTChainFormal.Tightness.expected_steps_le_linear": {
+      "name_id": 97004,
+      "tag": "thm",
+      "type_id": 1429058,
+      "value_id": 1429073
+    },
+    "MTChainFormal.Tightness.expected_steps_not_isTheta_quadratic": {
+      "name_id": 98619,
+      "tag": "thm",
+      "type_id": 1450474,
+      "value_id": 1450481
+    },
+    "MTChainFormal.Tightness.expected_steps_not_quadratic_lower": {
+      "name_id": 98617,
+      "tag": "thm",
+      "type_id": 1450356,
+      "value_id": 1450472
+    },
+    "MTChainFormal.Tightness.linear_work_bounds": {
+      "name_id": 97005,
+      "tag": "thm",
+      "type_id": 1429077,
+      "value_id": 1429089
+    },
+    "MTChainFormal.Tightness.no_positive_quadratic_lower_bound": {
+      "name_id": 98637,
+      "tag": "thm",
+      "type_id": 1450599,
+      "value_id": 1451559
+    }
+  },
+  "scope": "Structural inspection only; proof type checking is performed by Nanoda",
+  "status": "PASS"
+}

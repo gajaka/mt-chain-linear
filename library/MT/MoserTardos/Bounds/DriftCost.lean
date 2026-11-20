@@ -54,8 +54,9 @@ theorem mtTotalCost_le_cap_mul_TLog (P : MTProcess S ι)
   rw [← activeCount_mt_eq_TLog P init ω]
   unfold mtTotalCost activeCount
   rw [← ENNReal.tsum_mul_left]
-  apply ENNReal.tsum_le_tsum
+  apply tsum_le_tsum
   intro n
+  dsimp only
   by_cases h : ω ∈ mtRunningEvent P init (n + 1)
   · rw [Set.indicator_of_mem h, Set.indicator_of_mem h, mul_one]
     exact_mod_cast hcap _

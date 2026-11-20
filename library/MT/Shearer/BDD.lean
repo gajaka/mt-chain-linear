@@ -73,7 +73,7 @@ theorem strictCriterion_iff_components (vars : CertVars C V) (p : C → ℝ)
       intro hTB
       by_cases hT : T = ∅
       · simp [hT]
-      obtain ⟨c, hc⟩ := Finset.nonempty_iff_ne_empty.mpr hT
+      obtain ⟨c, hc⟩ := Finset.ne_empty_iff_nonempty.mp hT
       have hcK := mem_compOf_self vars B c (hTB hc)
       have hsmall : T \ compOf vars B c ⊂ T := by
         apply Finset.ssubset_iff_subset_ne.mpr

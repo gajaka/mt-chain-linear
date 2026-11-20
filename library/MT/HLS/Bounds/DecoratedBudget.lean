@@ -46,7 +46,7 @@ theorem tsum_decoratedFamily_eq (G : SimpleGraph ι) (B : Finset ι) (α : ι)
       ∑' D : ProperFamily G B α, ∏ u ∈ D.val.nodes, (up u.1 + down u.1) := by
   calc
     _ = ∑' D : ProperFamily G B α, ∑' R : ↥(D.val.nodes.powerset),
-        decorationWeight up down D.val R.val := ENNReal.tsum_sigma _
+        decorationWeight up down D.val R.val := tsum_sigma _
     _ = _ := tsum_congr (fun D => tsum_decorationWeight up down D.val)
 
 theorem split_weights_add (G : SimpleGraph ι) (p : ι → ℝ) (O : OverlapBounds G p)

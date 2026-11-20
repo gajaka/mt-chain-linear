@@ -42,7 +42,7 @@ theorem sequence_absolute_budget (m : ℕ) :
       (∀ j, j + 1 < m → K ≤ a j - a (j + 1)) →
       K * ((m ^ 2 / 4 : ℕ) : ℝ) ≤ ∑ j ∈ Finset.range m, b j := by
   induction m using Nat.strong_induction_on with
-  | h m ih =>
+  | ind m ih =>
       intro a b K hb hg
       by_cases hm : m < 2
       · interval_cases m

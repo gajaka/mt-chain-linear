@@ -160,7 +160,7 @@ theorem polynomial_union (G : SimpleGraph ι) (p : ι → ℝ)
   | _ S ih =>
     by_cases hS : S = ∅
     · simp [hS]
-    obtain ⟨a, ha⟩ := Finset.nonempty_iff_ne_empty.mpr hS
+    obtain ⟨a, ha⟩ := Finset.ne_empty_iff_nonempty.mp hS
     have haT : a ∉ T := fun hat => Finset.disjoint_left.mp hdis ha hat
     have herase : (S ∪ T).erase a = S.erase a ∪ T := by
       ext b

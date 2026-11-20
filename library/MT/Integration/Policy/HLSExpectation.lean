@@ -50,13 +50,13 @@ theorem expectedCount_le_tsum_refinedWeight
     _ = ∑' r : ℕ, logMeasure S (ordinalOccurrence P σ α r) :=
       expectedCount_eq_tsum_ordinalOccurrence P σ hbad α
     _ ≤ ∑' r : ℕ, logMeasure S (rootUnion P α r) :=
-      ENNReal.tsum_le_tsum (fun r => measure_mono (MTPolicy.ordinalOccurrence_subset_rootUnion P σ α r))
+      tsum_le_tsum (fun r => measure_mono (MTPolicy.ordinalOccurrence_subset_rootUnion P σ α r))
     _ ≤ ∑' r : ℕ, ∑' D : RootFamily (Shearer.dependencyGraph P.footprint) α r,
         logMeasure (augmentedSpaces S) (unitCheck P O.matching D.val) :=
-      ENNReal.tsum_le_tsum (fun r => measure_rootUnion_le_tsum_unitCheck P hbad O.matching α r)
+      tsum_le_tsum (fun r => measure_rootUnion_le_tsum_unitCheck P hbad O.matching α r)
     _ ≤ ∑' r : ℕ, ∑' D : RootFamily (Shearer.dependencyGraph P.footprint) α r,
         refinedWeight O D.val :=
-      ENNReal.tsum_le_tsum (fun r => ENNReal.tsum_le_tsum (fun D =>
+      tsum_le_tsum (fun r => tsum_le_tsum (fun D =>
         logMeasure_unitCheck_le_refinedWeight P hbad p hprob hp O hInt D.val D.property.1))
     _ ≤ _ := tsum_rootFamily_weight_le _ α (refinedWeight O)
 

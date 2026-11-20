@@ -434,7 +434,7 @@ theorem tsum_familyWeight_le (P : MTProcess S ι) (p x : ι → ℝ≥0)
     (h_self : ∀ α, p α * polynomial P x α ≤ x α) (α : ι) :
     (∑' U : WTree ι, familyWeight P p α U) ≤ (x α : ℝ≥0∞) := by
   classical
-  rw [ENNReal.tsum_eq_iSup_sum]
+  rw [tsum_eq_iSup_sum]
   apply iSup_le
   intro F
   let G : Finset (WTree ι) := F.filter (fun U => U ∈ family P α)
@@ -486,7 +486,7 @@ theorem randomInitExpectedResamplingCount_le [Fintype V]
     (h_self : ∀ α, p α * polynomial P x α ≤ x α)
     (α : ι) : randomInitExpectedResamplingCount P α ≤ (x α : ℝ≥0∞) := by
   rw [randomInitExpectedResamplingCount_eq_tsum_witnessOccurrence P hbad α]
-  exact (ENNReal.tsum_le_tsum (fun U =>
+  exact (tsum_le_tsum (fun U =>
     logMeasure_witnessOccurrence_le_familyWeight P hbad p hp α U)).trans
       (tsum_familyWeight_le P p x h_self α)
 
@@ -566,7 +566,7 @@ noncomputable def spaces : VarSpaces Unit where
   measSpace _ := inferInstance
   measure _ := Measure.uniformOfFinset (Finset.univ : Finset (Fin 3))
   isProb _ := ⟨by
-    norm_num [Measure.uniformOfFinset, Measure.finsetSum_apply]
+    norm_num [Measure.uniformOfFinset, Measure.sum_apply]
     exact ENNReal.mul_inv_cancel (by norm_num) (by simp)⟩
 
 instance spaceMeasurableSingleton (v : Unit) : MeasurableSingletonClass (spaces.space v) := by

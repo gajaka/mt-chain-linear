@@ -31,6 +31,13 @@ def sha(path):
 
 def validate_sources(compare_original=False):
     core = validate_core(CORE)
+    compatibility = core["compatibility"]
+
+    def baseline_sha(path):
+        return compatibility.baseline_sha(path.relative_to(CORE).as_posix())
+
+    def baseline_bytes(path):
+        return compatibility.baseline_bytes(path.relative_to(CORE).as_posix())
     paths = set(core["all_paths"])
 
     def local(relative):
@@ -66,10 +73,10 @@ def validate_sources(compare_original=False):
                           b"\n@[expose] public section\n" + b"".join(lines[k:]))
         need(hashlib.sha256(header_version).hexdigest() == cleanup[name]["after_module_header_sha256"],
              "Wrong header migration: " + name)
-        need(sha(after) == row["active_sha256"] == cleanup[name]["current_sha256"],
+        need(baseline_sha(after) == row["active_sha256"] == cleanup[name]["current_sha256"],
              "Changed migrated source: " + name)
         if not cleanup[name]["has_post_header_cleanup"]:
-            need(after.read_bytes() == header_version, "Unrecorded copied-source edit")
+            need(baseline_bytes(after) == header_version, "Unrecorded copied-source edit")
         need(set(lean_imports(before.read_text())) == set(lean_imports(after.read_text())),
              "Changed copied-module import set")
         if compare_original:
@@ -82,7 +89,7 @@ def validate_sources(compare_original=False):
     for row in new:
         need(row["path"] not in recorded, "Overlapping source inventories")
         recorded.add(row["path"])
-        need(sha(local(row["path"])) == row["sha256"], "Changed new proof source")
+        need(baseline_sha(local(row["path"])) == row["sha256"], "Changed new proof source")
     actual = {str(p.relative_to(ROOT)) for p in (ROOT / "formal").glob("*.lean")}
     need(actual == recorded and len(actual) == 18, "Missing/unmanifested mathematical source")
     modules = {Path(name).stem: local(name) for name in recorded}
@@ -112,7 +119,7 @@ def validate_sources(compare_original=False):
     for row in support:
         need(row["path"] not in seen, "Duplicate support binding")
         seen.add(row["path"])
-        need(sha(local(row["path"])) == row["sha256"], "Changed audit/tooling/support input")
+        need(baseline_sha(local(row["path"])) == row["sha256"], "Changed audit/tooling/support input")
     required = {str(p.relative_to(ROOT)) for d in ["audit", "scripts"]
                 for p in (ROOT / d).rglob("*") if p.is_file() and p.suffix in {".lean", ".py"}}
     required |= {"lakefile.lean", "lake-manifest.json", "lean-toolchain", "COPY_ADAPTATIONS.json"}

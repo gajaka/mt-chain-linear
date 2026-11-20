@@ -1,0 +1,134 @@
+{
+  "audit": {
+    "bytes": 8306569,
+    "path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/audit.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/audit.json",
+    "sha256": "69e37ca8ff15e875a803b3be79d519f0a75516601149f1ebd44bbb89445e053c"
+  },
+  "audit_run": {
+    "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/batteries/.lake/build/lib/lean",
+    "LEAN_SRC_PATH": null,
+    "command": [
+      "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.37.0-rc1/bin/lean",
+      "-j1",
+      "-M8192",
+      "-o",
+      "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/lib/lean/ThetaIndependentAudit.olean",
+      "ThetaIndependentAudit.lean"
+    ],
+    "cwd": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/src",
+    "exit_code": 0,
+    "inherited_stack_no_preexec_change": true,
+    "log": {
+      "bytes": 8003293,
+      "path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/audit.log",
+      "resolved": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/audit.log",
+      "sha256": "53b480b64a265c075ce8c63d9a117f39e27c5308081c8a1f0c36c6d353ae2bda"
+    },
+    "parent_stack_limits": [
+      8372224,
+      67092480
+    ],
+    "seconds": 15.916288708000002,
+    "stdout": null,
+    "timeout": false,
+    "timeout_seconds": 600
+  },
+  "export_inspection": {
+    "bytes": 3149,
+    "path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/export-inspection.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/export-inspection.json",
+    "sha256": "8b1ba7282f501f7659a7a16835747c74fc19209aba9c3cb34a21c78930f08d96"
+  },
+  "export_run": {
+    "LEAN_PATH": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/mathlib/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/plausible/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/importGraph/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/aesop/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/Qq/.lake/build/lib/lean:/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/.lake/packages/batteries/.lake/build/lib/lean",
+    "LEAN_SRC_PATH": null,
+    "command": [
+      "/Users/gajaka/.elan/toolchains/leanprover--lean4---v4.37.0-rc1/bin/leanexport",
+      "TightnessResults",
+      "--",
+      "MTChainFormal.Tightness.expected_steps_ge_linear_refined",
+      "MTChainFormal.Tightness.expected_steps_ge_linear",
+      "MTChainFormal.Tightness.expected_steps_le_linear",
+      "MTChainFormal.Tightness.linear_work_bounds",
+      "MTChainFormal.Tightness.expected_steps_isTheta_linear",
+      "MTChainFormal.Tightness.expected_steps_not_quadratic_lower",
+      "MTChainFormal.Tightness.expected_steps_not_isTheta_quadratic",
+      "MTChainFormal.Tightness.no_positive_quadratic_lower_bound",
+      "MTChainFormal.Tightness.expected_invalidations_le_linear",
+      "Classical.choice",
+      "Quot.sound",
+      "propext",
+      "Nat.add",
+      "Nat.sub",
+      "Nat.mul",
+      "Nat.pow",
+      "Nat.gcd",
+      "Nat.div",
+      "Nat.mod",
+      "Nat.beq",
+      "Nat.ble",
+      "Nat.land",
+      "Nat.lor",
+      "Nat.xor",
+      "Nat.shiftLeft",
+      "Nat.shiftRight",
+      "String.ofList",
+      "Char.ofNat",
+      "List",
+      "eagerReduce",
+      "Nat",
+      "String",
+      "String.mk",
+      "Char",
+      "optParam",
+      "autoParam",
+      "semiOutParam",
+      "outParam",
+      "Quot",
+      "Quot.mk",
+      "Quot.lift",
+      "Quot.ind"
+    ],
+    "cwd": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1",
+    "exit_code": 0,
+    "inherited_stack_no_preexec_change": true,
+    "log": {
+      "bytes": 0,
+      "path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/export.log",
+      "resolved": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/export.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "parent_stack_limits": [
+      8372224,
+      67092480
+    ],
+    "seconds": 3.7494334579999986,
+    "stdout": {
+      "bytes": 83565089,
+      "path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/exports/attempt-005/declarations.ndjson",
+      "resolved": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/exports/attempt-005/declarations.ndjson",
+      "sha256": "15b618cdc24a3b8d50d154996eee12609d095dd8da679ccfb8a67377400cc49e"
+    },
+    "timeout": false,
+    "timeout_seconds": 600
+  },
+  "inventory": {
+    "bytes": 18193591,
+    "path": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/import-inventory.json",
+    "resolved": "/Users/gajaka/projects/mt-chain-linear-v4.37.0-rc1/evidence/attempt-005/import-inventory.json",
+    "sha256": "22af3cd31e133edb6a8acf21d9d10c479491211ae56b06067d025b5ac76bc9ee"
+  },
+  "roots": [
+    "MTChainFormal.Tightness.expected_steps_ge_linear_refined",
+    "MTChainFormal.Tightness.expected_steps_ge_linear",
+    "MTChainFormal.Tightness.expected_steps_le_linear",
+    "MTChainFormal.Tightness.linear_work_bounds",
+    "MTChainFormal.Tightness.expected_steps_isTheta_linear",
+    "MTChainFormal.Tightness.expected_steps_not_quadratic_lower",
+    "MTChainFormal.Tightness.expected_steps_not_isTheta_quadratic",
+    "MTChainFormal.Tightness.no_positive_quadratic_lower_bound",
+    "MTChainFormal.Tightness.expected_invalidations_le_linear"
+  ],
+  "status": "RUNNING"
+}

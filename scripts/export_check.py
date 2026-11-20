@@ -1,4 +1,4 @@
-"""Inspect pinned Lean 4.35 NDJSON exports without executing Lean or a checker.
+"""Inspect pinned NDJSON exports without executing Lean or a checker.
 
 This is a structural inspection of the export, not a replacement type checker.
 Nanoda counts each member of an inductive bundle as a separate declaration.
@@ -16,6 +16,19 @@ from pathlib import Path
 
 PERMITTED_AXIOMS = frozenset({"Classical.choice", "Quot.sound", "propext"})
 _BINDERS = {"default", "implicit", "strictImplicit", "instImplicit"}
+_LEAN_PROFILES = {
+    ("d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+     "01327b83d6a69dbc84fa04fd671c61068b2f074e51d1bf607bf6a6b9aed5339e"): "4.35.0",
+    ("c7da4c1b7adf0834e19aff92bf06da80172405a93f54964b4abbe820366a96de",
+     "748692e11022c0d73fc0d206631b47520efae6de8cd883c4f4f3ce86b592cd17"): "4.37.0-rc1",
+}
+
+
+def recorded_lean_version(tools):
+    pair = (tools["lean"]["sha256"], tools["leanexport"]["sha256"])
+    if pair not in _LEAN_PROFILES:
+        raise ValueError("Unrecognized recorded Lean/exporter pair")
+    return _LEAN_PROFILES[pair]
 
 
 def _object(pairs):
@@ -264,7 +277,7 @@ class _Inspector:
         }
 
 
-def inspect_export(path, expected_names):
+def inspect_export(path, expected_names, *, lean_version="4.37.0-rc1"):
     """Validate actual roots, axioms, references and Nanoda's declaration count.
 
     ``roots`` maps each requested original name to its actual interned name,
@@ -295,7 +308,7 @@ def inspect_export(path, expected_names):
                         raise ValueError("Unexpected pinned Lean exporter")
                     if inspector.metadata["format"]["version"] != "3.1.0":
                         raise ValueError("Unexpected pinned export format")
-                    if inspector.metadata["lean"]["version"] != "4.35.0":
+                    if inspector.metadata["lean"]["version"] != lean_version:
                         raise ValueError("Unexpected pinned Lean version")
                 elif inspector.metadata is None:
                     raise ValueError("Missing export metadata")

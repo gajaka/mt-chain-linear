@@ -1,0 +1,19 @@
+{
+  "error": {
+    "message": "Pinned comparator primitive inventory changed",
+    "type": "RuntimeError"
+  },
+  "roots": [
+    "MTChainFormal.Tightness.expected_steps_ge_linear_refined",
+    "MTChainFormal.Tightness.expected_steps_ge_linear",
+    "MTChainFormal.Tightness.expected_steps_le_linear",
+    "MTChainFormal.Tightness.linear_work_bounds",
+    "MTChainFormal.Tightness.expected_steps_isTheta_linear",
+    "MTChainFormal.Tightness.expected_steps_not_quadratic_lower",
+    "MTChainFormal.Tightness.expected_steps_not_isTheta_quadratic",
+    "MTChainFormal.Tightness.no_positive_quadratic_lower_bound",
+    "MTChainFormal.Tightness.expected_invalidations_le_linear"
+  ],
+  "seconds": 0.384613833,
+  "status": "FAIL"
+}

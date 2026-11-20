@@ -10,8 +10,11 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "tooling"))
+from lean_migration import Migration, TOOLCHAIN, MATHLIB
 ARCHIVE = "provenance/module-migration/before"
 AUDIT = "formal/theta-audit/ThetaIndependentAudit.lean"
 STANDARD = {"Mathlib", "Lean", "Std", "Init"}
@@ -154,7 +157,8 @@ def validate_sources(root=ROOT, compare_source=None):
     Nanoda or write any receipt. Optional source comparison is read-only.
     """
     root = Path(root).absolute()
-    paths = set()
+    compatibility = Migration(root)
+    paths = set(compatibility.paths)
 
     def local(relative):
         path = _file(root, relative)
@@ -204,8 +208,8 @@ def validate_sources(root=ROOT, compare_source=None):
         before = local(ARCHIVE + "/" + name)
         after = local(name)
         need(row["before_sha256"] == expected[name] == digest(before), "Wrong migration origin: " + name)
-        need(digest(after) == _sha(row["after_sha256"]), "Active migrated source changed: " + name)
-        need(replay_transform(before.read_bytes(), row.get("transform"), name) == after.read_bytes(),
+        need(compatibility.baseline_sha(name) == _sha(row["after_sha256"]), "Active migrated source changed: " + name)
+        need(replay_transform(before.read_bytes(), row.get("transform"), name) == compatibility.baseline_bytes(name),
              "Migration changes unrecorded bytes: " + name)
         need(_masked(after.read_text()).lstrip().startswith("module\n"), "Missing module declaration: " + name)
         old_imports, new_imports = lean_imports(before.read_text()), lean_imports(after.read_text())
@@ -241,7 +245,8 @@ def validate_sources(root=ROOT, compare_source=None):
     need(scripts == set(tooling), "Unmanifested or missing active Python tooling")
     for name, row in {**tooling, **supporting}.items():
         need(name != "MODULE_MIGRATION.json", "Self-referential migration hash")
-        need(digest(local(name)) == _sha(row["sha256"]), "Active tooling/support changed: " + name)
+        local(name)
+        need(compatibility.baseline_sha(name) == _sha(row["sha256"]), "Active tooling/support changed: " + name)
 
     lock = json.loads(local("lake-manifest.json").read_text())
     packages = lock["packages"]
@@ -250,8 +255,8 @@ def validate_sources(root=ROOT, compare_source=None):
         "mathlib", "plausible", "LeanSearchClient", "importGraph", "proofwidgets",
         "aesop", "Qq", "batteries", "Cli"}, "Unexpected package dependencies")
     need(next(p for p in packages if p["name"] == "mathlib")["rev"] ==
-         "56a005855ea17e0b0958f73ec801ae140b0a1679", "Wrong Mathlib revision")
-    need(local("lean-toolchain").read_text().strip() == "leanprover/lean4:v4.35.0", "Wrong Lean toolchain")
+         MATHLIB, "Wrong Mathlib revision")
+    need(local("lean-toolchain").read_text().strip() == TOOLCHAIN, "Wrong Lean toolchain")
 
     compared = 0
     if compare_source is not None:
@@ -273,7 +278,9 @@ def validate_sources(root=ROOT, compare_source=None):
         "public_ppgraph_imports": 0, "ppgraph_package_present": False,
         "extraction_manifest_sha256": digest(original_path), "migration_manifest_sha256": digest(migration_path),
         "source_project_baseline_files_checked": compared,
-        "scope": "Archived extraction identities and exact active module migration; not a kernel proof replay",
+        "lean_compatibility_migration": compatibility.receipt(),
+        "scope": "Archived extraction, module migration and exact Lean compatibility edits; not a kernel proof replay",
     }
     return {"manifest": manifest, "migration": migration, "closure": closure,
-            "modules": modules, "all_paths": sorted(paths), "receipt": receipt}
+            "modules": modules, "all_paths": sorted(paths | compatibility.paths), "receipt": receipt,
+            "compatibility": compatibility}

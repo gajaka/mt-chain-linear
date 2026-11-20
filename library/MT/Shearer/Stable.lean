@@ -484,7 +484,7 @@ theorem tsum_properFamilyWeight_le (G : SimpleGraph ι) (p : ι → ℝ) (B J : 
     (hp : ∀ i ∈ B, 0 ≤ p i) (hcriterion : StrictCriterion G p B) :
     (∑' L : List (Finset ι), properFamilyWeight G p B J L) ≤
       ENNReal.ofReal (stableBudget G p B J) := by
-  rw [ENNReal.tsum_eq_iSup_sum]
+  rw [tsum_eq_iSup_sum]
   apply iSup_le
   intro F
   let F' := F.filter (fun L => L ∈ properFamily G B J)

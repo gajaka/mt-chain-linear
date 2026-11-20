@@ -89,7 +89,7 @@ def SameComponent (vars : CertVars C V) (B : Finset C) : C → C → Prop :=
 
 theorem sameComponent_equivalence (vars : CertVars C V) (B : Finset C) :
     Equivalence (SameComponent vars B) :=
-  EqvGen.is_equivalence (CoupledIn vars B)
+  EqvGen.equivalence (CoupledIn vars B)
 
 theorem sameComponent_of_coupled (vars : CertVars C V) (B : Finset C) (c1 c2 : C)
     (h : CoupledIn vars B c1 c2) : SameComponent vars B c1 c2 :=

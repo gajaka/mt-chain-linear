@@ -1,0 +1,1892 @@
+{
+  "status": "PASS",
+  "baseline_revision": "bb903c9b301a01e136842d7b72719d97d0625745",
+  "modules": 209,
+  "theorem_headers": 2267,
+  "changed_modules": 25,
+  "failures": [],
+  "scope": "Textual theorem-header and source preservation outside theorem proofs and VarSpaces.isProb constructor proofs; kernel checks are separate. Imported Mathlib definitions are version-specific.",
+  "rows": [
+    {
+      "path": "formal/mt/core/ActualScan.lean",
+      "source_changed": false,
+      "theorem_headers": 18,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6e323c2013fe0eb89b22d2efb98f83697de286e2fbeb2f4640da66b5ba0f2041",
+      "after_sha256": "6e323c2013fe0eb89b22d2efb98f83697de286e2fbeb2f4640da66b5ba0f2041"
+    },
+    {
+      "path": "formal/mt/core/ActualStep.lean",
+      "source_changed": false,
+      "theorem_headers": 33,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1f63e345670d1e15608a28c1ada5e2c3949bc3170d80a465b50f4d0d5b2bddee",
+      "after_sha256": "1f63e345670d1e15608a28c1ada5e2c3949bc3170d80a465b50f4d0d5b2bddee"
+    },
+    {
+      "path": "formal/mt/core/Chain.lean",
+      "source_changed": false,
+      "theorem_headers": 22,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "551779df094e539792ed5256078615c73d1fe1733ae83dd6b1fff5a30ab24a1d",
+      "after_sha256": "551779df094e539792ed5256078615c73d1fe1733ae83dd6b1fff5a30ab24a1d"
+    },
+    {
+      "path": "formal/mt/core/ChainKernel.lean",
+      "source_changed": false,
+      "theorem_headers": 36,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "ba155ace55634b928b4a1a19fbd4e1c9d9a6ab9102462d8cceb219901529f6d2",
+      "after_sha256": "ba155ace55634b928b4a1a19fbd4e1c9d9a6ab9102462d8cceb219901529f6d2"
+    },
+    {
+      "path": "formal/mt/core/ChainLyapunov.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "2cfb01544f7efab30258efc3e60124e753f7421e89488977d2ef95f994b66b42",
+      "after_sha256": "2cfb01544f7efab30258efc3e60124e753f7421e89488977d2ef95f994b66b42"
+    },
+    {
+      "path": "formal/mt/core/CompletionExpect.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "23c93ced5738f1a88a38600df882c610191a4bf82db880724dd67b227a8e1417",
+      "after_sha256": "23c93ced5738f1a88a38600df882c610191a4bf82db880724dd67b227a8e1417"
+    },
+    {
+      "path": "formal/mt/core/Features.lean",
+      "source_changed": false,
+      "theorem_headers": 38,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "9a1b6f3cfda58e5ad470d74215352b1d8cf77a4d21d54f309f892ce7cad3d522",
+      "after_sha256": "9a1b6f3cfda58e5ad470d74215352b1d8cf77a4d21d54f309f892ce7cad3d522"
+    },
+    {
+      "path": "formal/mt/core/FilteredKernel.lean",
+      "source_changed": false,
+      "theorem_headers": 36,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "62b93d41e6e2781aea8501f6583140fb1f59c6451e1bca5f48d655f2cdcb51fb",
+      "after_sha256": "62b93d41e6e2781aea8501f6583140fb1f59c6451e1bca5f48d655f2cdcb51fb"
+    },
+    {
+      "path": "formal/mt/core/Filtering.lean",
+      "source_changed": false,
+      "theorem_headers": 47,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "603335c8ad6257dc51f83d7fd5b80648a685321d16c548ea4b72277e59b56e66",
+      "after_sha256": "603335c8ad6257dc51f83d7fd5b80648a685321d16c548ea4b72277e59b56e66"
+    },
+    {
+      "path": "formal/mt/core/FinalQuadratic.lean",
+      "source_changed": false,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c11389f2d5adc98dfc6915939d3820f5f0a80f6cf7713a27bc17f2641a2c1b20",
+      "after_sha256": "c11389f2d5adc98dfc6915939d3820f5f0a80f6cf7713a27bc17f2641a2c1b20"
+    },
+    {
+      "path": "formal/mt/core/FreshDraws.lean",
+      "source_changed": false,
+      "theorem_headers": 17,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c5b46028ba195cfd0d280b14933a999ebbb6b177feb4b4ce130788d06d2bdb9e",
+      "after_sha256": "c5b46028ba195cfd0d280b14933a999ebbb6b177feb4b4ce130788d06d2bdb9e"
+    },
+    {
+      "path": "formal/mt/core/HistoryFiltering.lean",
+      "source_changed": false,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "97590dbdfa97520472b3556e99fb918ebeab65375a4445efa78527bd8e3d8f19",
+      "after_sha256": "97590dbdfa97520472b3556e99fb918ebeab65375a4445efa78527bd8e3d8f19"
+    },
+    {
+      "path": "formal/mt/core/Intertwining.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "2e1307d6e3769ff0cd560c9724bdf139107ac6e88df04f98b577d6a65cb2a4a2",
+      "after_sha256": "2e1307d6e3769ff0cd560c9724bdf139107ac6e88df04f98b577d6a65cb2a4a2"
+    },
+    {
+      "path": "formal/mt/core/KernelWork.lean",
+      "source_changed": false,
+      "theorem_headers": 51,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6497e2d4261632f5a9d8d651679a0e225f5382dfc4b7265aba18cd434da5690d",
+      "after_sha256": "6497e2d4261632f5a9d8d651679a0e225f5382dfc4b7265aba18cd434da5690d"
+    },
+    {
+      "path": "formal/mt/core/ObservedFeatures.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "9db3fb190c90e3319bb3d5b05abafd7667738dcbf571c3375bd8a30f52337d1d",
+      "after_sha256": "9db3fb190c90e3319bb3d5b05abafd7667738dcbf571c3375bd8a30f52337d1d"
+    },
+    {
+      "path": "formal/mt/core/PayoffAverages.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "7d97b20bdbf87a757415bdf3bd590428c22d422fe749e4ef32adff8447896b66",
+      "after_sha256": "7d97b20bdbf87a757415bdf3bd590428c22d422fe749e4ef32adff8447896b66"
+    },
+    {
+      "path": "formal/mt/core/PotentialAlgebra.lean",
+      "source_changed": false,
+      "theorem_headers": 21,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "829fdd2ec4e76373d5546123f1ab8cfb327f157da447858575fe3bfee83a6ead",
+      "after_sha256": "829fdd2ec4e76373d5546123f1ab8cfb327f157da447858575fe3bfee83a6ead"
+    },
+    {
+      "path": "formal/mt/core/PotentialTransport.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "4996e6c80be54ca30d3d45e28e709cc49898a1bde88e9daf931556372f0669d5",
+      "after_sha256": "4996e6c80be54ca30d3d45e28e709cc49898a1bde88e9daf931556372f0669d5"
+    },
+    {
+      "path": "formal/mt/core/RefreshDensity.lean",
+      "source_changed": false,
+      "theorem_headers": 25,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6625a588b3f32236adb41261f642a6bec319ef2ab820e6c48124fbd7b8486155",
+      "after_sha256": "6625a588b3f32236adb41261f642a6bec319ef2ab820e6c48124fbd7b8486155"
+    },
+    {
+      "path": "formal/mt/core/RegularDrift.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "74a1287a46e2ad8f740fca0d9df956ee0dbd09e779dbfb753c22da2cbe6afe5d",
+      "after_sha256": "74a1287a46e2ad8f740fca0d9df956ee0dbd09e779dbfb753c22da2cbe6afe5d"
+    },
+    {
+      "path": "formal/mt/core/ScanBounds.lean",
+      "source_changed": false,
+      "theorem_headers": 16,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "8a75c01fad436205a6ae9cc84fd1c80ec18f8a94910ba761063e8fd6d74f08ee",
+      "after_sha256": "8a75c01fad436205a6ae9cc84fd1c80ec18f8a94910ba761063e8fd6d74f08ee"
+    },
+    {
+      "path": "formal/mt/core/StoppedKernel.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "9e9d818ee08fecbbce0036519195789e1fb89bfcb71fe926a88c315898ca992b",
+      "after_sha256": "9e9d818ee08fecbbce0036519195789e1fb89bfcb71fe926a88c315898ca992b"
+    },
+    {
+      "path": "formal/mt/core/TailLaw.lean",
+      "source_changed": false,
+      "theorem_headers": 11,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "3b15478a81f94a8daebc810c4d1c45b6e25f85057b9b33fcb07160fde3b7820d",
+      "after_sha256": "3b15478a81f94a8daebc810c4d1c45b6e25f85057b9b33fcb07160fde3b7820d"
+    },
+    {
+      "path": "formal/mt/core/TailScan.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "afd1ad78deded85e6c1da0df98d275a8d24b699252742ef2d9110cdec08f6ade",
+      "after_sha256": "afd1ad78deded85e6c1da0df98d275a8d24b699252742ef2d9110cdec08f6ade"
+    },
+    {
+      "path": "formal/mt/paper/Accounting.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c07fccee2e76a525a79b67479f1eddd7e00d9ea36c332275b69b11c113dac4f6",
+      "after_sha256": "c07fccee2e76a525a79b67479f1eddd7e00d9ea36c332275b69b11c113dac4f6"
+    },
+    {
+      "path": "formal/mt/paper/Barrier.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "af67c3d1274b6dfe5d99e356d569f1bbf23a4bce1c9d53b78c0f89ed3ef7f402",
+      "after_sha256": "af67c3d1274b6dfe5d99e356d569f1bbf23a4bce1c9d53b78c0f89ed3ef7f402"
+    },
+    {
+      "path": "formal/mt/tightness/ExceptionalBound.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "43c2301963a6d60539a8e9779b9a73278575824788b99e958bd9f83d649e42bd",
+      "after_sha256": "43c2301963a6d60539a8e9779b9a73278575824788b99e958bd9f83d649e42bd"
+    },
+    {
+      "path": "formal/mt/tightness/InitialBadMoment.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "8942c63279166c647239a682cd4a8800df6d63a39ce2546ce62861ff15d4b37f",
+      "after_sha256": "8942c63279166c647239a682cd4a8800df6d63a39ce2546ce62861ff15d4b37f"
+    },
+    {
+      "path": "formal/mt/tightness/LinearAsymptotics.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "35b0e5ef98e08f07c60b30af65db73de2fa0abfa0bddb428e3eec0a185546e69",
+      "after_sha256": "35b0e5ef98e08f07c60b30af65db73de2fa0abfa0bddb428e3eec0a185546e69"
+    },
+    {
+      "path": "formal/mt/tightness/LinearPotential.lean",
+      "source_changed": false,
+      "theorem_headers": 17,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "886a51b59b6273ba8cf1e6306238bb0679b69889e55dd400ea73517bc8efa99c",
+      "after_sha256": "886a51b59b6273ba8cf1e6306238bb0679b69889e55dd400ea73517bc8efa99c"
+    },
+    {
+      "path": "formal/mt/tightness/LowerBound.lean",
+      "source_changed": false,
+      "theorem_headers": 20,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b0473f6052385830f7482bdfd08d973ebe2a4619cb13a0a32a6ac85c40380181",
+      "after_sha256": "b0473f6052385830f7482bdfd08d973ebe2a4619cb13a0a32a6ac85c40380181"
+    },
+    {
+      "path": "formal/mt/tightness/TightnessResults.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "956e51a61c8845414ee622172f4334074e256fa1a9294b139d34417a87fc6dba",
+      "after_sha256": "956e51a61c8845414ee622172f4334074e256fa1a9294b139d34417a87fc6dba"
+    },
+    {
+      "path": "formal/mt/tightness/UniformScan.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6b29bb9eec6322429b3f7ebb1555f5b3341df7e43183fbe2a3fd6535f09e59b3",
+      "after_sha256": "6b29bb9eec6322429b3f7ebb1555f5b3341df7e43183fbe2a3fd6535f09e59b3"
+    },
+    {
+      "path": "library/MT/Core/Graph.lean",
+      "source_changed": false,
+      "theorem_headers": 22,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6e4d3ec172faa60aedb75a2c47451494e83284d38f37e560f86e319a0c295718",
+      "after_sha256": "6e4d3ec172faa60aedb75a2c47451494e83284d38f37e560f86e319a0c295718"
+    },
+    {
+      "path": "library/MT/Core/Repair.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1a6769c311f2ee6e8df0c131d22a3cdd6894f7c443f1fe4436586932e2d815b3",
+      "after_sha256": "1a6769c311f2ee6e8df0c131d22a3cdd6894f7c443f1fe4436586932e2d815b3"
+    },
+    {
+      "path": "library/MT/Dependency/Decomposition.lean",
+      "source_changed": true,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0434dbfdb5b01f05b7e1f838dc276122d00d9fe330505645fc9a69a3b25a2444",
+      "after_sha256": "7bb4836960534b20a0d87da823df65421478fabe0e024228c403554f32de7511"
+    },
+    {
+      "path": "library/MT/Dependency/Partition.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b6b76e4301554936d57e308e1f380bc6398c5e089ff805959d679fbc627effcd",
+      "after_sha256": "b6b76e4301554936d57e308e1f380bc6398c5e089ff805959d679fbc627effcd"
+    },
+    {
+      "path": "library/MT/Dependency/Probabilistic.lean",
+      "source_changed": true,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "30a2a2f39929123f5de75d5208ac0a3168ad1699091ce0087a5c30ee18b0cf74",
+      "after_sha256": "3cbfe807e46044109647b4ded6c420adc4e0855acdfee1f102f87ff9def11d84"
+    },
+    {
+      "path": "library/MT/Drift/Additive.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d9e04c87dc3f806aea0e5a368ddc25dd18e768192a9c5e1d7a71f242e9957396",
+      "after_sha256": "d9e04c87dc3f806aea0e5a368ddc25dd18e768192a9c5e1d7a71f242e9957396"
+    },
+    {
+      "path": "library/MT/Finite/Drift/Basic.lean",
+      "source_changed": false,
+      "theorem_headers": 17,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "40f6e29c72fcdbeb87361a55c455a5b1c6e9be0061ceecccaf8c4c52e7ace032",
+      "after_sha256": "40f6e29c72fcdbeb87361a55c455a5b1c6e9be0061ceecccaf8c4c52e7ace032"
+    },
+    {
+      "path": "library/MT/Finite/Drift/Process.lean",
+      "source_changed": true,
+      "theorem_headers": 20,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "89a35a8470bc12c32e8678d92ae1fa56259c9276f6758dbca1be42c9906471eb",
+      "after_sha256": "9c1e2cf70a7422d276c18b38a923fb180b6d2063def5893e8308df2dbe2ec1f7"
+    },
+    {
+      "path": "library/MT/Finite/Lumping/Basic.lean",
+      "source_changed": false,
+      "theorem_headers": 15,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d6b76ce0912b05b48a2fb1e9981d3a4b8fede176daf6ab93ee85b636488106d0",
+      "after_sha256": "d6b76ce0912b05b48a2fb1e9981d3a4b8fede176daf6ab93ee85b636488106d0"
+    },
+    {
+      "path": "library/MT/Finite/Potential/Basic.lean",
+      "source_changed": false,
+      "theorem_headers": 27,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0dbe0e20ed41f36b62ca7ceab6bce3df6a6cea3251240a07879553ee11b1f578",
+      "after_sha256": "0dbe0e20ed41f36b62ca7ceab6bce3df6a6cea3251240a07879553ee11b1f578"
+    },
+    {
+      "path": "library/MT/Finite/Potential/Expectation.lean",
+      "source_changed": true,
+      "theorem_headers": 19,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "af2f05fd407ec77bbec409fae102c7b8b74ef7029026a7ec36a203d5a21a93a6",
+      "after_sha256": "23c6da371d6be4bef24f5e2f00d492924c12b6acd3b8d18c2a89f401c245a123"
+    },
+    {
+      "path": "library/MT/Finite/Potential/Refutation.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c19b33106eebbff151a2b8342709ab1bdb54283291b7a708c9f1ac47abc94432",
+      "after_sha256": "c19b33106eebbff151a2b8342709ab1bdb54283291b7a708c9f1ac47abc94432"
+    },
+    {
+      "path": "library/MT/Finite/Potential/Tail.lean",
+      "source_changed": true,
+      "theorem_headers": 23,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "91e3e8fb3072f3b5a469d3d9ebf05243a83d5c8792643a89c56cc236a0ce4037",
+      "after_sha256": "999d3665ce13365cbc502fc076e07990bd496e0cafa7e44cdbbb190ae5fa5aed"
+    },
+    {
+      "path": "library/MT/Finite/Potential/TailCertificate.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "3cec732441719240f55a9482315b74be9bd42f340d23df3dcd48ad095a169b63",
+      "after_sha256": "3cec732441719240f55a9482315b74be9bd42f340d23df3dcd48ad095a169b63"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/AugmentedExistence.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "7b2a2d3d47402a5455ad1ca6ccd092d5c33d80a7652dacea4321d8925b67e403",
+      "after_sha256": "7b2a2d3d47402a5455ad1ca6ccd092d5c33d80a7652dacea4321d8925b67e403"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/ChoiceSum.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b333844dfff7104c31b44c986d230c7a2310524abb298e82efa26f43180f1076",
+      "after_sha256": "b333844dfff7104c31b44c986d230c7a2310524abb298e82efa26f43180f1076"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/CoinSaving.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "33b94ae4a2895eb88a4e314755a9f958a0c1efb9420e1e1a3e89d5b876eaf01c",
+      "after_sha256": "33b94ae4a2895eb88a4e314755a9f958a0c1efb9420e1e1a3e89d5b876eaf01c"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/DecoratedBudget.lean",
+      "source_changed": true,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "42683890463e75a28eda8a88c82be03b6e0bdf22bde4c21aeae662203c02e102",
+      "after_sha256": "defa052dde955d23af7edd200e057c7516cca324954080a0b3f029d7c74b67e6"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/ExpansionWeight.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "936e96dfcda54dbd9d91a579c431eef7863cd5744ca07803279fdf8f67c221a4",
+      "after_sha256": "936e96dfcda54dbd9d91a579c431eef7863cd5744ca07803279fdf8f67c221a4"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/Expectation.lean",
+      "source_changed": true,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "82d2de48fb03e46e50b9c2b81710de6224263f036d0718d393a14176791f94f1",
+      "after_sha256": "485e50ada30cccf3a10f4513713725e362c7e55f6eee0846ebe73e3a79d96d17"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/OrdinalOccurrence.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "247d47d66add69b3feda638a678cc3726cb1fa94fd26a66c71fc6ac5e745df12",
+      "after_sha256": "247d47d66add69b3feda638a678cc3726cb1fa94fd26a66c71fc6ac5e745df12"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/ProductDiscount.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d8a2fdbc44a5628881512c38b88f588e6f1776f40c2e711972017710c293aa05",
+      "after_sha256": "d8a2fdbc44a5628881512c38b88f588e6f1776f40c2e711972017710c293aa05"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/RefinedBudget.lean",
+      "source_changed": true,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "bc324271aa2f5b1ae4cc612f6fbd491a314fb77dba2be7816d6789ec02a2f65c",
+      "after_sha256": "f47c65a8d63a027102eebfb82a66f68193b05c22095de3dbd5d4c4341db1d286"
+    },
+    {
+      "path": "library/MT/HLS/Bounds/WitnessBudget.lean",
+      "source_changed": true,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "06d58da5334bafe7faba13c0f07452b62bf5c90f08207888a538bdf4342b41eb",
+      "after_sha256": "5bdca0d5b91d7467c1904c4933e5fe44917982996a28dde69044e89e36dc6004"
+    },
+    {
+      "path": "library/MT/HLS/DAG/CliqueRanks.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f72f8c61dae3eba579ff07d2004dc6d3a28841dd157b65918385f52a5a216d78",
+      "after_sha256": "f72f8c61dae3eba579ff07d2004dc6d3a28841dd157b65918385f52a5a216d78"
+    },
+    {
+      "path": "library/MT/HLS/DAG/ExpansionGraph.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "193b87ed1f814016ac24227e20be2e0d70202594826c528b656315ac48f4929b",
+      "after_sha256": "193b87ed1f814016ac24227e20be2e0d70202594826c528b656315ac48f4929b"
+    },
+    {
+      "path": "library/MT/HLS/DAG/ExpansionVertices.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "143f009ef1cab0ee28722fff37c2d642f4fcf2b27d3d61787760c6408109fad2",
+      "after_sha256": "143f009ef1cab0ee28722fff37c2d642f4fcf2b27d3d61787760c6408109fad2"
+    },
+    {
+      "path": "library/MT/HLS/DAG/FiniteDAG.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "2015b296d99a522f50e827e391862bd6ce375355d7d70f453c02e117dd574dcc",
+      "after_sha256": "2015b296d99a522f50e827e391862bd6ce375355d7d70f453c02e117dd574dcc"
+    },
+    {
+      "path": "library/MT/HLS/DAG/Matching.lean",
+      "source_changed": false,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "68da716ac9f8752bc75c79f2dba7912880b3d7754b131cf420d04f49faa24074",
+      "after_sha256": "68da716ac9f8752bc75c79f2dba7912880b3d7754b131cf420d04f49faa24074"
+    },
+    {
+      "path": "library/MT/HLS/DAG/MatchingArcUniqueness.lean",
+      "source_changed": false,
+      "theorem_headers": 1,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6d7157da9b6fe841359c3c76ccc24f439564e5a36dadb8f1fa6d44ac3065fddf",
+      "after_sha256": "6d7157da9b6fe841359c3c76ccc24f439564e5a36dadb8f1fa6d44ac3065fddf"
+    },
+    {
+      "path": "library/MT/HLS/DAG/MatchingSelection.lean",
+      "source_changed": false,
+      "theorem_headers": 15,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "245b3b3fffdcb820e268dba689afa5bea1879b2a66d8304f79bf391370ac7d65",
+      "after_sha256": "245b3b3fffdcb820e268dba689afa5bea1879b2a66d8304f79bf391370ac7d65"
+    },
+    {
+      "path": "library/MT/HLS/DAG/OrderedDAG.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "85fa53f7df26815632b9478f93b7b5656ee87135f4db6d3ad29f14565fe1c16f",
+      "after_sha256": "85fa53f7df26815632b9478f93b7b5656ee87135f4db6d3ad29f14565fe1c16f"
+    },
+    {
+      "path": "library/MT/HLS/DAG/OrientationScore.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "85cf8c1e68c3577c0fb26f23bc732565106c6b813a04d9548357b5ee0a698536",
+      "after_sha256": "85cf8c1e68c3577c0fb26f23bc732565106c6b813a04d9548357b5ee0a698536"
+    },
+    {
+      "path": "library/MT/HLS/DAG/PairKeys.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "cfa4afc66bd6f9c07b3248e28eb533f782355f8777f8d5fae815f2286d3647f3",
+      "after_sha256": "cfa4afc66bd6f9c07b3248e28eb533f782355f8777f8d5fae815f2286d3647f3"
+    },
+    {
+      "path": "library/MT/HLS/DAG/ParitySelection.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "da142350e2b89b1e424f97f82c5a71a3783e9388327c1b5c3cfe50fe9a0fad44",
+      "after_sha256": "da142350e2b89b1e424f97f82c5a71a3783e9388327c1b5c3cfe50fe9a0fad44"
+    },
+    {
+      "path": "library/MT/HLS/DAG/RealDAG.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "2b3746bbfca5845771b26d38b9f6028521e15aada4be4ee45d34955f286f4d1c",
+      "after_sha256": "2b3746bbfca5845771b26d38b9f6028521e15aada4be4ee45d34955f286f4d1c"
+    },
+    {
+      "path": "library/MT/HLS/DAG/RealDAGCounts.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6a67bc9efe1a956fa8d8324f070f3fedf9b60170076a391dbc35b9dfaa8063aa",
+      "after_sha256": "6a67bc9efe1a956fa8d8324f070f3fedf9b60170076a391dbc35b9dfaa8063aa"
+    },
+    {
+      "path": "library/MT/HLS/DAG/TimeDAG.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "98ac9694dfddbac16f7c5dc5ec0271881f5fe05a46509cc30a5f96bf84a5a8d6",
+      "after_sha256": "98ac9694dfddbac16f7c5dc5ec0271881f5fe05a46509cc30a5f96bf84a5a8d6"
+    },
+    {
+      "path": "library/MT/HLS/DAG/TopologicalOrder.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "48330084b7260a1701a137f9ba109ea70d377b724364ee52c2075d5ce863b9ba",
+      "after_sha256": "48330084b7260a1701a137f9ba109ea70d377b724364ee52c2075d5ce863b9ba"
+    },
+    {
+      "path": "library/MT/HLS/DAG/WitnessDAG.lean",
+      "source_changed": false,
+      "theorem_headers": 15,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "914565c1ce86d780842a7d17f8067bd51353cf5fef6fd24181e0e5d488c998d3",
+      "after_sha256": "914565c1ce86d780842a7d17f8067bd51353cf5fef6fd24181e0e5d488c998d3"
+    },
+    {
+      "path": "library/MT/HLS/DAG/WitnessLayers.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f264b591fc587c588442f90f3d4aa134c3c3d255b2d094def9b3acf14bfe34f3",
+      "after_sha256": "f264b591fc587c588442f90f3d4aa134c3c3d255b2d094def9b3acf14bfe34f3"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/CanonicalEncoding.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "49f85ca8be3f8620fdf0da571670ff39fa40d8f10931981d7933b7d4b1eb5f57",
+      "after_sha256": "49f85ca8be3f8620fdf0da571670ff39fa40d8f10931981d7933b7d4b1eb5f57"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/ChoiceRecovery.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "445d49fa2774255b57e20a484e8c27d0a15a4f3f1594ee2a3cf9c8015564d8c8",
+      "after_sha256": "445d49fa2774255b57e20a484e8c27d0a15a4f3f1594ee2a3cf9c8015564d8c8"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/ColoredExpansion.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "37d29feefecf52d967bdf4cb82d4d14daf55ea1cb9ce483d2584650c297a5db9",
+      "after_sha256": "37d29feefecf52d967bdf4cb82d4d14daf55ea1cb9ce483d2584650c297a5db9"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/ExpansionDecoder.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "eac7d6c7b60a12e4fbdd3f5436365ca9bd60c590ca0a343358c37d85ea098b5f",
+      "after_sha256": "eac7d6c7b60a12e4fbdd3f5436365ca9bd60c590ca0a343358c37d85ea098b5f"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/ExpansionFamily.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "17abe9c85ab7313851bdab5fca411e6d8cbc35eaf00bf9320a6656a5b20f76f1",
+      "after_sha256": "17abe9c85ab7313851bdab5fca411e6d8cbc35eaf00bf9320a6656a5b20f76f1"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/ExpansionReversibility.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6ac0ccf30d963aa63a646a2aec49f2813b860165d2072e4d06960f8ae8acee22",
+      "after_sha256": "6ac0ccf30d963aa63a646a2aec49f2813b860165d2072e4d06960f8ae8acee22"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/LabelRanks.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "2564a74512f81ebc33e6335b995d42d1c5de0c2dd42f73f06de87a1974644e27",
+      "after_sha256": "2564a74512f81ebc33e6335b995d42d1c5de0c2dd42f73f06de87a1974644e27"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/NodeIso.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "fb92ca36a76631a54044f6363ba3766b4fdccd4ef7cb37d3666c140b65ec366a",
+      "after_sha256": "fb92ca36a76631a54044f6363ba3766b4fdccd4ef7cb37d3666c140b65ec366a"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/Normalization.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f28b5f9a2c43210af71746f3fbb6d116492bbcc1aef258665d68dbccd367934c",
+      "after_sha256": "f28b5f9a2c43210af71746f3fbb6d116492bbcc1aef258665d68dbccd367934c"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/NormalizationCheck.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "9d210a48e4cd3616ef777ecab9b4627e090169879a782b34b6a804bf86d1813f",
+      "after_sha256": "9d210a48e4cd3616ef777ecab9b4627e090169879a782b34b6a804bf86d1813f"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/NormalizationReversal.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "8a2593ebb7728cd723698fcfd7ede1c2fc33b18e036a57793276565e3c2411af",
+      "after_sha256": "8a2593ebb7728cd723698fcfd7ede1c2fc33b18e036a57793276565e3c2411af"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/OrderedReversal.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "739dfab81d64c8a737174d88888acaeb93e7f6d402170e5de5f673de9b751f4e",
+      "after_sha256": "739dfab81d64c8a737174d88888acaeb93e7f6d402170e5de5f673de9b751f4e"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/OriginRecovery.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f9bf43206f791061c9bf331f0362a3da286b0d2072a95b19cc51f5e9694c6992",
+      "after_sha256": "f9bf43206f791061c9bf331f0362a3da286b0d2072a95b19cc51f5e9694c6992"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/OriginalIso.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b66bd75d88fe9b585b3d2951da76f4806e6c27a1e7ce5faa6edfe0d466b5cd02",
+      "after_sha256": "b66bd75d88fe9b585b3d2951da76f4806e6c27a1e7ce5faa6edfe0d466b5cd02"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/PrefixCheck.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "4ffa558c0eaf2bc44b7f0ce5a7f91e8cde3b6caf53c3b76bf440a26393208b81",
+      "after_sha256": "4ffa558c0eaf2bc44b7f0ce5a7f91e8cde3b6caf53c3b76bf440a26393208b81"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/RelativeCoins.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "91771a42b4e97e122b51354fec80a4ba08be2d9c98f7c47260c04a3c1a20ef7d",
+      "after_sha256": "91771a42b4e97e122b51354fec80a4ba08be2d9c98f7c47260c04a3c1a20ef7d"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/Reversal.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0a60353dd962d975567e25032d10c37612fefc2780c6eaa6ea6bd9c0c367ae14",
+      "after_sha256": "0a60353dd962d975567e25032d10c37612fefc2780c6eaa6ea6bd9c0c367ae14"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/ReversalSlots.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "7c0d6c208ad8d670546db60944d619b875a877681e21770314abde7eec5b88d8",
+      "after_sha256": "7c0d6c208ad8d670546db60944d619b875a877681e21770314abde7eec5b88d8"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/StableEncoding.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "92767785d884a31babe283b0d310eda026ae4b9135e04cc5e0f401ed7bfa4a1e",
+      "after_sha256": "92767785d884a31babe283b0d310eda026ae4b9135e04cc5e0f401ed7bfa4a1e"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/SwappedTests.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "40ec2b7820033116276591a50c1c9a5e65d3c3dd19152003fd7caec9b72f7694",
+      "after_sha256": "40ec2b7820033116276591a50c1c9a5e65d3c3dd19152003fd7caec9b72f7694"
+    },
+    {
+      "path": "library/MT/HLS/Encoding/TableCheck.lean",
+      "source_changed": false,
+      "theorem_headers": 11,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1abe6326b0fefd1958de27a383939ef22e8081c3dd1c0fe896856e9c0b3fcd0f",
+      "after_sha256": "1abe6326b0fefd1958de27a383939ef22e8081c3dd1c0fe896856e9c0b3fcd0f"
+    },
+    {
+      "path": "library/MT/HLS/Parameters.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "ca74367f01c4c2ff1aad8ff791f17224a91ca87a9ea3ff35a435b535e6aba56d",
+      "after_sha256": "ca74367f01c4c2ff1aad8ff791f17224a91ca87a9ea3ff35a435b535e6aba56d"
+    },
+    {
+      "path": "library/MT/HLS/Probability/AugmentedCoordinates.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c9e20f161d418a4b10a16d74f6399335359bb9129927fcf66a354d101631bd7c",
+      "after_sha256": "c9e20f161d418a4b10a16d74f6399335359bb9129927fcf66a354d101631bd7c"
+    },
+    {
+      "path": "library/MT/HLS/Probability/AugmentedDependence.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b6dcaa283f64b29fcc3480989df11029348fb6689629ffe20523e9a7bc5a7855",
+      "after_sha256": "b6dcaa283f64b29fcc3480989df11029348fb6689629ffe20523e9a7bc5a7855"
+    },
+    {
+      "path": "library/MT/HLS/Probability/AugmentedPair.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "41031ac6af8974830bc34aa28a4b8d3e5088d3fd1fb8520c5f64547ea51a78dc",
+      "after_sha256": "41031ac6af8974830bc34aa28a4b8d3e5088d3fd1fb8520c5f64547ea51a78dc"
+    },
+    {
+      "path": "library/MT/HLS/Probability/AugmentedSpace.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0774ddd12db100199fbedb64a42a7481b61e576e20fa5917fb04d2e5101e0b99",
+      "after_sha256": "0774ddd12db100199fbedb64a42a7481b61e576e20fa5917fb04d2e5101e0b99"
+    },
+    {
+      "path": "library/MT/HLS/Probability/BlockAssembly.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6d45a12ff9853d6c9495d00b38943d53a9226efbc9f09d1e66545b57e028d75d",
+      "after_sha256": "6d45a12ff9853d6c9495d00b38943d53a9226efbc9f09d1e66545b57e028d75d"
+    },
+    {
+      "path": "library/MT/HLS/Probability/BlockIntersection.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "70926e5b84bfc7eb50f4f5972a88ec38d6f855553af0c8c8990339f57138886b",
+      "after_sha256": "70926e5b84bfc7eb50f4f5972a88ec38d6f855553af0c8c8990339f57138886b"
+    },
+    {
+      "path": "library/MT/HLS/Probability/BlockQueries.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "39419e5207bf62df318e3c75c7eb60b3ef792113f26aa756282167f242d24fe3",
+      "after_sha256": "39419e5207bf62df318e3c75c7eb60b3ef792113f26aa756282167f242d24fe3"
+    },
+    {
+      "path": "library/MT/HLS/Probability/CoinQueryLaw.lean",
+      "source_changed": false,
+      "theorem_headers": 1,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c1b55de2469bb1239f82196fc45016f0d3c674a3539133f860ffe6763bf4f753",
+      "after_sha256": "c1b55de2469bb1239f82196fc45016f0d3c674a3539133f860ffe6763bf4f753"
+    },
+    {
+      "path": "library/MT/HLS/Probability/FootprintBlocks.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "cfc5fa8902fd17906c83590fa7a856f3c37d78c157a1cde6500cd83dfb1275a7",
+      "after_sha256": "cfc5fa8902fd17906c83590fa7a856f3c37d78c157a1cde6500cd83dfb1275a7"
+    },
+    {
+      "path": "library/MT/HLS/Probability/PairProbability.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d83eb624b7969f62240b8243a293031054342dcc2f36836b4a9e0305e04594a9",
+      "after_sha256": "d83eb624b7969f62240b8243a293031054342dcc2f36836b4a9e0305e04594a9"
+    },
+    {
+      "path": "library/MT/HLS/Probability/QueryLaw.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b92d6bae7ce9a1c2995e1baefee65d9da280913567cb74e59388aac8bca55b25",
+      "after_sha256": "b92d6bae7ce9a1c2995e1baefee65d9da280913567cb74e59388aac8bca55b25"
+    },
+    {
+      "path": "library/MT/HLS/Probability/RefinedProbability.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "e1e7b768fda3ad8398fd61f0f13cfc75e4379f51a8db763c0af16ef197c3035f",
+      "after_sha256": "e1e7b768fda3ad8398fd61f0f13cfc75e4379f51a8db763c0af16ef197c3035f"
+    },
+    {
+      "path": "library/MT/HLS/Probability/RootUnion.lean",
+      "source_changed": true,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f21bb1d31771fa5c8c43a8e3ea5519906baf3ad3ff828bc83e17e1f0f77e2580",
+      "after_sha256": "e2b9b6cc5fb2b6811ee6d5ec35ed5a4bdbd75ca62b65ba510903b87a20204816"
+    },
+    {
+      "path": "library/MT/HLS/Probability/UnitChecks.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "548becb96f4fe324cb9a5e631be2aab73ddab4d823f5d11450cf2d26689fc4ed",
+      "after_sha256": "548becb96f4fe324cb9a5e631be2aab73ddab4d823f5d11450cf2d26689fc4ed"
+    },
+    {
+      "path": "library/MT/Integration/MoserTardosRepair.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "68546f50515387ed33239df54b6d1b423309e72bea1c287d72a453475500fc19",
+      "after_sha256": "68546f50515387ed33239df54b6d1b423309e72bea1c287d72a453475500fc19"
+    },
+    {
+      "path": "library/MT/Integration/Policy/HLSCounting.lean",
+      "source_changed": true,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "723b0f54f6dd62223002584bfb7499a36691b769dfaa290809c2df12b8fb39f6",
+      "after_sha256": "204538621ade65ee77aadf3457f39c7614dc6c71164bcadcee51a359e52c01de"
+    },
+    {
+      "path": "library/MT/Integration/Policy/HLSDAG.lean",
+      "source_changed": false,
+      "theorem_headers": 16,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "fa668aa35f390e3d304f4d7aa03ecce39e24b463372761dc4679af0f95e82dcd",
+      "after_sha256": "fa668aa35f390e3d304f4d7aa03ecce39e24b463372761dc4679af0f95e82dcd"
+    },
+    {
+      "path": "library/MT/Integration/Policy/HLSExpectation.lean",
+      "source_changed": true,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "5a92f37e1ffe3a7c22100b3124d3c0e9e6bf9e8df2ab77d10c72c59eb3003012",
+      "after_sha256": "f8293bc12b78e8f85bbc09486c282b1dd241eb92783e99d4b1cbcc97712f6ea1"
+    },
+    {
+      "path": "library/MT/Integration/Policy/History.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "9265366ab64fbc6af85a076e32b64d43270de5945cd8e6d99136e7970d27f49c",
+      "after_sha256": "9265366ab64fbc6af85a076e32b64d43270de5945cd8e6d99136e7970d27f49c"
+    },
+    {
+      "path": "library/MT/Integration/Policy/MoserTardos.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0f63f52f26c5f0a49097c0cff75528b01014510be8d4c257e90849964c3d380d",
+      "after_sha256": "0f63f52f26c5f0a49097c0cff75528b01014510be8d4c257e90849964c3d380d"
+    },
+    {
+      "path": "library/MT/LLL/General.lean",
+      "source_changed": true,
+      "theorem_headers": 30,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "fb9fa660f684bc077270db665f1e7d99a3821293fd6d015908dc21a39dbfb0e1",
+      "after_sha256": "9362d02b44252e8178e3163a620cbec3a2fe03a5584fc4d1fd2a32ba7162211e"
+    },
+    {
+      "path": "library/MT/LLL/Lopsided.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "2d11caf322bc2d59128a5ed91df49c0a10ffe84218b118b1880d7e6ff4ce57d3",
+      "after_sha256": "2d11caf322bc2d59128a5ed91df49c0a10ffe84218b118b1880d7e6ff4ce57d3"
+    },
+    {
+      "path": "library/MT/LLL/Variable.lean",
+      "source_changed": false,
+      "theorem_headers": 29,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c8772e34215fae9eff66898ca8533b0f554f1c8eceec97bbe36e834d5edf81d4",
+      "after_sha256": "c8772e34215fae9eff66898ca8533b0f554f1c8eceec97bbe36e834d5edf81d4"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/ConstantLog.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "98a49e02d217815fc43a3436936b4f445b45ff6ff3f070472ba057af9c4f1d41",
+      "after_sha256": "98a49e02d217815fc43a3436936b4f445b45ff6ff3f070472ba057af9c4f1d41"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/Convergence.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "762bf3ed7954b9cebca5c2b72db4c684f556c3bdbf77b0fddc5eac51d5f9a74b",
+      "after_sha256": "762bf3ed7954b9cebca5c2b72db4c684f556c3bdbf77b0fddc5eac51d5f9a74b"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/Drift.lean",
+      "source_changed": false,
+      "theorem_headers": 20,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0cf406cfafe065ea148e0d541d03e20789b6a0f5ccb7376f14b5746bfadc5e74",
+      "after_sha256": "0cf406cfafe065ea148e0d541d03e20789b6a0f5ccb7376f14b5746bfadc5e74"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/DriftCost.lean",
+      "source_changed": true,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "4884e6fea4872734cc99e2abb557587b13886f2fab226b235d22bc493fa4125f",
+      "after_sha256": "445b6127018864c1328fa5e9050c35a934ab13c4022bb8d550339506534b2734"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/Expectation.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c070ca3da8be3397e4b04d280520be8f335dc89035785606238fdbdf039f580b",
+      "after_sha256": "c070ca3da8be3397e4b04d280520be8f335dc89035785606238fdbdf039f580b"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/OccurrenceExpectation.lean",
+      "source_changed": true,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "363e258cc7a9ccd9f2300bf501ab3f58db75dfed2122e7e64ef1074192e030d9",
+      "after_sha256": "b943455593460348c1012c96d63bd9dec714c165b8c54d86536ef9368bf38c2b"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/Pegden.lean",
+      "source_changed": true,
+      "theorem_headers": 44,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1c78e238db137a765e299130a849eddd5d51acdec7e3058c817eefa2a3ee281a",
+      "after_sha256": "541c1c25ded528a7e6a8a0580b366774fe273c90a8b985280f1fd635cf8db72a"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/Termination.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "3d43ffc8b97a85ee027f165db90efb9cd3f0c30ae7c87355b5b6ac33eb585691",
+      "after_sha256": "3d43ffc8b97a85ee027f165db90efb9cd3f0c30ae7c87355b5b6ac33eb585691"
+    },
+    {
+      "path": "library/MT/MoserTardos/Bounds/WeightSum.lean",
+      "source_changed": false,
+      "theorem_headers": 16,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "4b187e3d6ef8f574ae5c8361b73199a50dc0d35ead465705333ef0dc105348e0",
+      "after_sha256": "4b187e3d6ef8f574ae5c8361b73199a50dc0d35ead465705333ef0dc105348e0"
+    },
+    {
+      "path": "library/MT/MoserTardos/Counting/Counting.lean",
+      "source_changed": true,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f44b6f017215ae1622391f4cac0e6a2c6ecec0faefc8dc6fa7b4560caa3c056a",
+      "after_sha256": "0dec353f7d9491d49b051446267ca870738ddee048cc0940ad3f41d243a01563"
+    },
+    {
+      "path": "library/MT/MoserTardos/Counting/OccurrenceCounting.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "7358f5aee02932cd8cbfa7b540443ef65ba60c1900a7328cde0dbd406351e001",
+      "after_sha256": "7358f5aee02932cd8cbfa7b540443ef65ba60c1900a7328cde0dbd406351e001"
+    },
+    {
+      "path": "library/MT/MoserTardos/Counting/ResamplingCount.lean",
+      "source_changed": true,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "8b12699645effbb303f9afa2ad3ec5319dd54db817ec55f3d8cff77154f3e949",
+      "after_sha256": "59f04777974543df7e3f7065a58b8a372a672a897ef20c7a5273b479157cd52a"
+    },
+    {
+      "path": "library/MT/MoserTardos/Probability/Intersection.lean",
+      "source_changed": false,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "3525a797e7559d4e364dadfcf51d4748036ec355084af8e185534d1ba38737ff",
+      "after_sha256": "3525a797e7559d4e364dadfcf51d4748036ec355084af8e185534d1ba38737ff"
+    },
+    {
+      "path": "library/MT/MoserTardos/Probability/OccurrenceProbability.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "fc7f521d54721b9010ecf3bb92c17a12836396c68c5f14d9e472fe1326b10447",
+      "after_sha256": "fc7f521d54721b9010ecf3bb92c17a12836396c68c5f14d9e472fe1326b10447"
+    },
+    {
+      "path": "library/MT/MoserTardos/Probability/PastIndependence.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "88e714bebb423c1186f6b6b5f065a478130e4d58b3b750874ca024c3dd512b21",
+      "after_sha256": "88e714bebb423c1186f6b6b5f065a478130e4d58b3b750874ca024c3dd512b21"
+    },
+    {
+      "path": "library/MT/MoserTardos/Probability/Probability.lean",
+      "source_changed": false,
+      "theorem_headers": 15,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "cd6753cdbb8475a8ef3547aa9e2e9eba9f37f2df66951564e565a7e5412b0568",
+      "after_sha256": "cd6753cdbb8475a8ef3547aa9e2e9eba9f37f2df66951564e565a7e5412b0568"
+    },
+    {
+      "path": "library/MT/MoserTardos/Probability/ProbabilityGeneral.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "4923954fe7ec5b07321e346b079eacc0a59a9ebde446ab87ac1bf29ef0e47d11",
+      "after_sha256": "4923954fe7ec5b07321e346b079eacc0a59a9ebde446ab87ac1bf29ef0e47d11"
+    },
+    {
+      "path": "library/MT/MoserTardos/Probability/RandomInitExpectation.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0d474ff67b8f160bcb77c4165656b418b0efd3a673e92b3857f3ffd3c0c4dfa8",
+      "after_sha256": "0d474ff67b8f160bcb77c4165656b418b0efd3a673e92b3857f3ffd3c0c4dfa8"
+    },
+    {
+      "path": "library/MT/MoserTardos/Process/Basic.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "700282afa8e020f59f9536959178fb6ddd6d8b285ec892f0423da247376c3003",
+      "after_sha256": "700282afa8e020f59f9536959178fb6ddd6d8b285ec892f0423da247376c3003"
+    },
+    {
+      "path": "library/MT/MoserTardos/Process/FullResampling.lean",
+      "source_changed": false,
+      "theorem_headers": 18,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "cda3239d04818703749986525f1f7650b11c894fd3e789fadc397a0361c2178b",
+      "after_sha256": "cda3239d04818703749986525f1f7650b11c894fd3e789fadc397a0361c2178b"
+    },
+    {
+      "path": "library/MT/MoserTardos/Process/LogSpace.lean",
+      "source_changed": false,
+      "theorem_headers": 1,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "07acccf6208d25bbd2e17084c00540f1f49db0037243dda6ea6168f96a325886",
+      "after_sha256": "07acccf6208d25bbd2e17084c00540f1f49db0037243dda6ea6168f96a325886"
+    },
+    {
+      "path": "library/MT/MoserTardos/Process/Process.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "33e2887976bd61d43f0654f5ae8c716fefd07744044547dcaa01dcb0db47c947",
+      "after_sha256": "33e2887976bd61d43f0654f5ae8c716fefd07744044547dcaa01dcb0db47c947"
+    },
+    {
+      "path": "library/MT/MoserTardos/Process/RandomInitialization.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "990d340d27476668d1bbec5448e118592818bf551d3c7a914123e1243bfbe66e",
+      "after_sha256": "990d340d27476668d1bbec5448e118592818bf551d3c7a914123e1243bfbe66e"
+    },
+    {
+      "path": "library/MT/MoserTardos/Process/RandomTrajectory.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "7854bf9ba3c800d2f6c40f909f08927435397f89c8f67f3ff7177cd5f8142798",
+      "after_sha256": "7854bf9ba3c800d2f6c40f909f08927435397f89c8f67f3ff7177cd5f8142798"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Canonical.lean",
+      "source_changed": false,
+      "theorem_headers": 15,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0813554d4e13e94ef0a6a32cac29afab57e44a3e082cac79a731816de1112ec7",
+      "after_sha256": "0813554d4e13e94ef0a6a32cac29afab57e44a3e082cac79a731816de1112ec7"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Check.lean",
+      "source_changed": false,
+      "theorem_headers": 1,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b20d16c30ce61c6a0a5ba50bce904c942f275a17d49523d7c31542e814b4aa4f",
+      "after_sha256": "b20d16c30ce61c6a0a5ba50bce904c942f275a17d49523d7c31542e814b4aa4f"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/CheckBirth.lean",
+      "source_changed": false,
+      "theorem_headers": 22,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "4d2ab48e3c3c3b9400a3e33b3d719f4286a37d40244407ffb76be3d8da715f2c",
+      "after_sha256": "4d2ab48e3c3c3b9400a3e33b3d719f4286a37d40244407ffb76be3d8da715f2c"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/CheckBridge.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "a963e0061fcc155d321b7d2f1212bf3c56769de548fc13e82545adc7023878d1",
+      "after_sha256": "a963e0061fcc155d321b7d2f1212bf3c56769de548fc13e82545adc7023878d1"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/CheckInvariance.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "438874b80e608c65519182a507ac808c208034cceef635a32f60e202cda7b8ea",
+      "after_sha256": "438874b80e608c65519182a507ac808c208034cceef635a32f60e202cda7b8ea"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/CheckOrder.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "8f141c49ea2b8f1d8812a74fe5d15327ead253b1eccbb8030714a265b29ed68c",
+      "after_sha256": "8f141c49ea2b8f1d8812a74fe5d15327ead253b1eccbb8030714a265b29ed68c"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/CheckShape.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "171fc97d2a1e45ef85069773a74f68e9581f79eafb39f8f5ebc95bbaa019ce34",
+      "after_sha256": "171fc97d2a1e45ef85069773a74f68e9581f79eafb39f8f5ebc95bbaa019ce34"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Correspondence.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "ca244f190ee816b7cbef7293b71852bf9d07db7ce480fa3a7b469e341b828dbf",
+      "after_sha256": "ca244f190ee816b7cbef7293b71852bf9d07db7ce480fa3a7b469e341b828dbf"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Growing.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c16aec0bec8db3e3d0f65de32e20a733a928af5dc978dbc548b35cb46ec54009",
+      "after_sha256": "c16aec0bec8db3e3d0f65de32e20a733a928af5dc978dbc548b35cb46ec54009"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Injectivity.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1cad5aa73ed6be54099808d5cf92a7e36c86036552e5c180476f4ac6a9920595",
+      "after_sha256": "1cad5aa73ed6be54099808d5cf92a7e36c86036552e5c180476f4ac6a9920595"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/InjectivityBridge.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "feb245525df1d3d576735bc3b77faa16c267a6ce73feca9149d146ef131d9fc4",
+      "after_sha256": "feb245525df1d3d576735bc3b77faa16c267a6ce73feca9149d146ef131d9fc4"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/LabelsAtDepthBridge.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d91eb9fb43ba51c582d63e17a1635ed0ebf576fce6c5bad960c21b2bc083f935",
+      "after_sha256": "d91eb9fb43ba51c582d63e17a1635ed0ebf576fce6c5bad960c21b2bc083f935"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Occurrence.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "52083b457d09a7022ec8dbbcbd25739bf690aefaf585f5e669c4fe232daa185f",
+      "after_sha256": "52083b457d09a7022ec8dbbcbd25739bf690aefaf585f5e669c4fe232daa185f"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/RealTree.lean",
+      "source_changed": false,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "657dbe2ee99b6d9aa827323b636623616f65ad417f89b3a94d01d57190ec4c77",
+      "after_sha256": "657dbe2ee99b6d9aa827323b636623616f65ad417f89b3a94d01d57190ec4c77"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/ToGrowingTreeCheckBridge.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d3958f200e2afc85725d28c1204fcb8b70775b5ac748aa481e4a59136aecc628",
+      "after_sha256": "d3958f200e2afc85725d28c1204fcb8b70775b5ac748aa481e4a59136aecc628"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/WTreeCountable.lean",
+      "source_changed": false,
+      "theorem_headers": 1,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "17ae8a05e9de1a8b0c6afbcf8e9f4a9c8b4601df76a8087e955c6002dc2970bd",
+      "after_sha256": "17ae8a05e9de1a8b0c6afbcf8e9f4a9c8b4601df76a8087e955c6002dc2970bd"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/WTreeToGrowingTree.lean",
+      "source_changed": false,
+      "theorem_headers": 11,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1e65a26cc699f721cd13d7134a13bc13a916ecf5c6e6ff7ecb92f6cddf6cf464",
+      "after_sha256": "1e65a26cc699f721cd13d7134a13bc13a916ecf5c6e6ff7ecb92f6cddf6cf464"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Weight.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "a20aed6df8241b75b18be6fd58593c1320cf5849ec10beb8fd0544c69ebdffbd",
+      "after_sha256": "a20aed6df8241b75b18be6fd58593c1320cf5849ec10beb8fd0544c69ebdffbd"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/Witness.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "77693762fbe872d54a0da8663730ade10c34a8538b6b7f232259582c0d907fc9",
+      "after_sha256": "77693762fbe872d54a0da8663730ade10c34a8538b6b7f232259582c0d907fc9"
+    },
+    {
+      "path": "library/MT/MoserTardos/Witness/WitnessFamily.lean",
+      "source_changed": true,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "a5e3562ea730670dbf9de1b566e111dae23bd0a39c8f46a1b3a28b9531171a6e",
+      "after_sha256": "155381bfecfd013e9a2beb9c851bdd7c5199459b62a2d53aa9bd346ea6f79ba8"
+    },
+    {
+      "path": "library/MT/Repair/Hazards.lean",
+      "source_changed": true,
+      "theorem_headers": 23,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0838f83c1ab6f6b3e34df188abf6a488a9e0f92ac38ef6a64f5fc6d1150d45af",
+      "after_sha256": "c97e1fd7fb1bed9e6ff40799998addc1b1fbb7525f2b22c4da73c1cac8d305db"
+    },
+    {
+      "path": "library/MT/Repair/ObservableAlgebra.lean",
+      "source_changed": false,
+      "theorem_headers": 31,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "bf86d3fdd29906332dc2e256a905d48898d21f17e1d21c04abf8881a465ccd99",
+      "after_sha256": "bf86d3fdd29906332dc2e256a905d48898d21f17e1d21c04abf8881a465ccd99"
+    },
+    {
+      "path": "library/MT/Repair/ObservableKernel.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "ca201db3f76c68ad62906bbd479b28b4cf2497de01f9b06728bbea9eb80172b2",
+      "after_sha256": "ca201db3f76c68ad62906bbd479b28b4cf2497de01f9b06728bbea9eb80172b2"
+    },
+    {
+      "path": "library/MT/Repair/SemanticHazards.lean",
+      "source_changed": false,
+      "theorem_headers": 27,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "9f2268261da0e259dde1ec2e7464496a817b5c68dda9d3eca2034f4ea6c324a2",
+      "after_sha256": "9f2268261da0e259dde1ec2e7464496a817b5c68dda9d3eca2034f4ea6c324a2"
+    },
+    {
+      "path": "library/MT/Shearer/BDD.lean",
+      "source_changed": true,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "875ba8752b3df94a3db83d5d1d2af4748f1b73a1ae7a96f4cfa5b58d846ebc2f",
+      "after_sha256": "78ea33f8bc20d08c5b3056b51f22b0b226a9d88f0696875c15e09616f6e2a636"
+    },
+    {
+      "path": "library/MT/Shearer/BDDBudget.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "cbf725809729853ba7874e22f849892ea1a320f976a9b59a67328be665570481",
+      "after_sha256": "cbf725809729853ba7874e22f849892ea1a320f976a9b59a67328be665570481"
+    },
+    {
+      "path": "library/MT/Shearer/BDDExpectation.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "31d4d59dc0e8c6963109328bfc468edaab3f7264ba392a1b01bcac7547a249e9",
+      "after_sha256": "31d4d59dc0e8c6963109328bfc468edaab3f7264ba392a1b01bcac7547a249e9"
+    },
+    {
+      "path": "library/MT/Shearer/Basic.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1d5cfb68bc64f47b1816aa8745bef4518573def73267ef893f9a0b5001413e95",
+      "after_sha256": "1d5cfb68bc64f47b1816aa8745bef4518573def73267ef893f9a0b5001413e95"
+    },
+    {
+      "path": "library/MT/Shearer/ComponentOccurrence.lean",
+      "source_changed": false,
+      "theorem_headers": 6,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b7b58ebe3a146c6308903ba7b07cf5a3dfed57c148cdd98bd920538e33776d2b",
+      "after_sha256": "b7b58ebe3a146c6308903ba7b07cf5a3dfed57c148cdd98bd920538e33776d2b"
+    },
+    {
+      "path": "library/MT/Shearer/Expectation.lean",
+      "source_changed": true,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "7c0398449e523b9db5f2580b2081713df66bfdb0a881fc92768185980e55a51e",
+      "after_sha256": "08a3f9d579520d54e60f43b098a2902a2f559c7d5e567dd8c399b54c897d1c9f"
+    },
+    {
+      "path": "library/MT/Shearer/Induction.lean",
+      "source_changed": false,
+      "theorem_headers": 5,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d3244a307270808cc0d0caf46caf60d8030d00d33a2331555f06f601c26dbaad",
+      "after_sha256": "d3244a307270808cc0d0caf46caf60d8030d00d33a2331555f06f601c26dbaad"
+    },
+    {
+      "path": "library/MT/Shearer/LayerProfile.lean",
+      "source_changed": false,
+      "theorem_headers": 11,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "8485d6f7ff68039865b81d7ecb610f76387133cf5a8dba7cd80aa3c1ee63d370",
+      "after_sha256": "8485d6f7ff68039865b81d7ecb610f76387133cf5a8dba7cd80aa3c1ee63d370"
+    },
+    {
+      "path": "library/MT/Shearer/MT.lean",
+      "source_changed": false,
+      "theorem_headers": 7,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "0f13f522a3f02a22b7a09634078620e80dcef250a81ac010a46dc5d85b734ed5",
+      "after_sha256": "0f13f522a3f02a22b7a09634078620e80dcef250a81ac010a46dc5d85b734ed5"
+    },
+    {
+      "path": "library/MT/Shearer/Occurrence.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "98a6a9a302ad28f03234fbf7b9ac606f1f0171cdbabc5ad1325ecdc099aa144d",
+      "after_sha256": "98a6a9a302ad28f03234fbf7b9ac606f1f0171cdbabc5ad1325ecdc099aa144d"
+    },
+    {
+      "path": "library/MT/Shearer/Polynomial.lean",
+      "source_changed": true,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "e219f9d60a421f35e39845ca233f5567a52603013093d3df591ecd775138079c",
+      "after_sha256": "ec857fc4092d033cae6720dd04f728eeb8bd12281c8720951e6fd1a3d7c86f8b"
+    },
+    {
+      "path": "library/MT/Shearer/SequenceProbability.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "781b42277c0f2a68a2890bd72435790f311c43c3d605d095fea9209aefeb7523",
+      "after_sha256": "781b42277c0f2a68a2890bd72435790f311c43c3d605d095fea9209aefeb7523"
+    },
+    {
+      "path": "library/MT/Shearer/Slack.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "79d001103cda17fad1f71a450123be15f84184c8c5b0f5af40947df3fbda2306",
+      "after_sha256": "79d001103cda17fad1f71a450123be15f84184c8c5b0f5af40947df3fbda2306"
+    },
+    {
+      "path": "library/MT/Shearer/SlackExpectation.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "3a34f1c1c1b8ae724bfd5effc64c86b29fb66b0b313d5f57e9e47b10e8e6a867",
+      "after_sha256": "3a34f1c1c1b8ae724bfd5effc64c86b29fb66b0b313d5f57e9e47b10e8e6a867"
+    },
+    {
+      "path": "library/MT/Shearer/Stable.lean",
+      "source_changed": true,
+      "theorem_headers": 37,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d742f3b4413819d23e26a6acb738517007e12c97472ab754b981d3cf2a64cf43",
+      "after_sha256": "2e96e4772c30e6e69471bd0367bfd8a5c0e4504b553429b9bb9df944eb7048c7"
+    },
+    {
+      "path": "library/MT/Shearer/Witness.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "dc2140cb2361f83f6614c94ddbcbca721a54ba2fcab713896c92cca5ed76c33d",
+      "after_sha256": "dc2140cb2361f83f6614c94ddbcbca721a54ba2fcab713896c92cca5ed76c33d"
+    },
+    {
+      "path": "research/biased-resampling/formal/AdaptiveWork.lean",
+      "source_changed": false,
+      "theorem_headers": 19,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "51e62e44116dab0aadf352d2d04abc35888a85354846057098df288203d5d38a",
+      "after_sha256": "51e62e44116dab0aadf352d2d04abc35888a85354846057098df288203d5d38a"
+    },
+    {
+      "path": "research/biased-resampling/formal/BiasedControls.lean",
+      "source_changed": false,
+      "theorem_headers": 19,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f7c55a09201e514b2abd37e47d3f102380cb705de40411cc81300dc32071f032",
+      "after_sha256": "f7c55a09201e514b2abd37e47d3f102380cb705de40411cc81300dc32071f032"
+    },
+    {
+      "path": "research/biased-resampling/formal/BiasedDefinitions.lean",
+      "source_changed": false,
+      "theorem_headers": 0,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "59948d89c6500527bdc145686d4c99065b4884ef16c327f4bb51a5359437f311",
+      "after_sha256": "59948d89c6500527bdc145686d4c99065b4884ef16c327f4bb51a5359437f311"
+    },
+    {
+      "path": "research/biased-resampling/formal/BiasedDrift.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "1096e0e9a011b03e599959264e3b68f798326ae4a00b542d8d551243a0da55f8",
+      "after_sha256": "1096e0e9a011b03e599959264e3b68f798326ae4a00b542d8d551243a0da55f8"
+    },
+    {
+      "path": "research/biased-resampling/formal/BiasedLaw.lean",
+      "source_changed": false,
+      "theorem_headers": 44,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6ed5a70e4800206c434ad3423c2c56df1bc8d31c930f6ff16d1c19c1eff7ba29",
+      "after_sha256": "6ed5a70e4800206c434ad3423c2c56df1bc8d31c930f6ff16d1c19c1eff7ba29"
+    },
+    {
+      "path": "research/biased-resampling/formal/BiasedLower.lean",
+      "source_changed": false,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f5d09ef8291faa10042c3fe7d2f7c4128a03b09d176ea1390c200490247ca864",
+      "after_sha256": "f5d09ef8291faa10042c3fe7d2f7c4128a03b09d176ea1390c200490247ca864"
+    },
+    {
+      "path": "research/biased-resampling/formal/BiasedResults.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "533168c2e5e1c4a8e4bef549d243837fa8176bbf003c86121281cc81589204cb",
+      "after_sha256": "533168c2e5e1c4a8e4bef549d243837fa8176bbf003c86121281cc81589204cb"
+    },
+    {
+      "path": "research/biased-resampling/formal/GenericLower.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "3ff492ba338b4f99bd0f92f6a36fe16d0a78e8054f6d4a856491a54428a0008d",
+      "after_sha256": "3ff492ba338b4f99bd0f92f6a36fe16d0a78e8054f6d4a856491a54428a0008d"
+    },
+    {
+      "path": "research/certificate-existence/formal/CertificateConstruction.lean",
+      "source_changed": false,
+      "theorem_headers": 31,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "c629fdc268c1eb8c62d0e13fa288fb62861cff58ce1d5e8133b816f5fc20f0ed",
+      "after_sha256": "c629fdc268c1eb8c62d0e13fa288fb62861cff58ce1d5e8133b816f5fc20f0ed"
+    },
+    {
+      "path": "research/certificate-existence/formal/CertificateResults.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "6d91a06d4e134b3434f2c109f7887809eb0944b05f10ba96852a0c96cca43240",
+      "after_sha256": "6d91a06d4e134b3434f2c109f7887809eb0944b05f10ba96852a0c96cca43240"
+    },
+    {
+      "path": "research/certificate-existence/formal/ExponentialObstruction.lean",
+      "source_changed": false,
+      "theorem_headers": 19,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "30a5ec29e43f2d6b8dc41ec7215dbf8492535b1956f25673244d683ac8221e3b",
+      "after_sha256": "30a5ec29e43f2d6b8dc41ec7215dbf8492535b1956f25673244d683ac8221e3b"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborAsymptotics.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "fc70eb28c8914c1a295a94157e7ac0b7b0f2bde921a2807abf906d99eaa5ac70",
+      "after_sha256": "fc70eb28c8914c1a295a94157e7ac0b7b0f2bde921a2807abf906d99eaa5ac70"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborBase.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "731f147c7aeece250401bcdfaa1fe4011fabd7712a3bd80b182377412cd44f87",
+      "after_sha256": "731f147c7aeece250401bcdfaa1fe4011fabd7712a3bd80b182377412cd44f87"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborDual.lean",
+      "source_changed": false,
+      "theorem_headers": 12,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d0d20c2298cee2eb059aff6f675fc153bfa265974908c51ef3d930d14a2b84c1",
+      "after_sha256": "d0d20c2298cee2eb059aff6f675fc153bfa265974908c51ef3d930d14a2b84c1"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborEmbedding.lean",
+      "source_changed": false,
+      "theorem_headers": 4,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "b4a211ce6a4787212a7a2c395364600808ee8efd50ff980357ef319a39f51282",
+      "after_sha256": "b4a211ce6a4787212a7a2c395364600808ee8efd50ff980357ef319a39f51282"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborFlux.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d144c886f82be00af63513096f47eaa68b6638256482a989db0d044677e5838f",
+      "after_sha256": "d144c886f82be00af63513096f47eaa68b6638256482a989db0d044677e5838f"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborGauge.lean",
+      "source_changed": false,
+      "theorem_headers": 14,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "5e6a6e73a929fbd1f6b7325fa5674eb0a8c0e53c94b5edf2a6b149a517489ce1",
+      "after_sha256": "5e6a6e73a929fbd1f6b7325fa5674eb0a8c0e53c94b5edf2a6b149a517489ce1"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborProduct.lean",
+      "source_changed": false,
+      "theorem_headers": 10,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "d75d7f25443abe033142b8f387fa938b96035bfd3e525f6c4c74c1bc395de6ac",
+      "after_sha256": "d75d7f25443abe033142b8f387fa938b96035bfd3e525f6c4c74c1bc395de6ac"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborResults.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "051d439f64204ff5606eadaf77ffbd052c7f068fe70308aaca42d0636a640e38",
+      "after_sha256": "051d439f64204ff5606eadaf77ffbd052c7f068fe70308aaca42d0636a640e38"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborTransfer.lean",
+      "source_changed": false,
+      "theorem_headers": 2,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "78cc3c428e22d4b8330848740a86b9c2eb9e3dacd9e082561b2ca25d00647a44",
+      "after_sha256": "78cc3c428e22d4b8330848740a86b9c2eb9e3dacd9e082561b2ca25d00647a44"
+    },
+    {
+      "path": "research/certificate-existence/formal/NeighborWitness.lean",
+      "source_changed": false,
+      "theorem_headers": 11,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "bcdc526ba6d6b91e892cef8e46acb730d6c637c51e44b486c650381d7fd74d1b",
+      "after_sha256": "bcdc526ba6d6b91e892cef8e46acb730d6c637c51e44b486c650381d7fd74d1b"
+    },
+    {
+      "path": "research/certificate-existence/formal/SeparableBase.lean",
+      "source_changed": false,
+      "theorem_headers": 3,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "52a28304e076ab539a2f5d4dec8275e3b2c84144547336b84433f37f853fb31c",
+      "after_sha256": "52a28304e076ab539a2f5d4dec8275e3b2c84144547336b84433f37f853fb31c"
+    },
+    {
+      "path": "research/certificate-existence/formal/SeparableProduct.lean",
+      "source_changed": false,
+      "theorem_headers": 27,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "540a45d1461a7db755b378ae8eadd19bdd5b27d384617a0e51badf94a1d388ea",
+      "after_sha256": "540a45d1461a7db755b378ae8eadd19bdd5b27d384617a0e51badf94a1d388ea"
+    },
+    {
+      "path": "research/certificate-existence/formal/SeparableSequence.lean",
+      "source_changed": true,
+      "theorem_headers": 8,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "afaf8456ca0eca7250e425592c8fd66904e257829762b2be4779a49638af3408",
+      "after_sha256": "6461c7e562c1c8d9b066ddeeb758213aaf998b24e52c7b4627d9acfecb6fe050"
+    },
+    {
+      "path": "research/certificate-existence/formal/SeparableWitness.lean",
+      "source_changed": false,
+      "theorem_headers": 13,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "fb9b811a327c7975b0190e7bb8159a599cc63c392c6e3ac109970c6c5c93e4b6",
+      "after_sha256": "fb9b811a327c7975b0190e7bb8159a599cc63c392c6e3ac109970c6c5c93e4b6"
+    },
+    {
+      "path": "research/certificate-existence/formal/SeparationResults.lean",
+      "source_changed": false,
+      "theorem_headers": 9,
+      "headers_equal": true,
+      "outside_proofs_equal": true,
+      "before_sha256": "f7b0ae02529c4c0d756c61dced72b4c7a2546a69a1c97b65d7fe9a3323693333",
+      "after_sha256": "f7b0ae02529c4c0d756c61dced72b4c7a2546a69a1c97b65d7fe9a3323693333"
+    }
+  ]
+}
